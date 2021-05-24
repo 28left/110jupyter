@@ -45,3 +45,15 @@ parse:
     # including those that are enabled by default!
     - dollarmath
     - amsmath
+
+
+# Information about where the book exists on the web
+repository:
+  url                       : https://github.com/28left/110jupyter  # Online location of your book
+  path_to_book              : docs/  # Optional path to your book, relative to the repository root
+  branch                    : master  # Which branch of the repository should be used when creating links (optional)
+  
+# Set launch button for notebook  
+launch_buttons:
+  notebook_interface: "classic" # "jupyterlab" or "classic"
+  binderhub_url: "https://binder.jupytr.cloud.psu.edu"  # The URL for your BinderHub (e.g., https://mybinder.org)
