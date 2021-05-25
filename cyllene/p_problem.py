@@ -1,3 +1,4 @@
+# %%
 import random
 from sympy import latex, simplify
 
@@ -307,7 +308,7 @@ class ExpressionProblem(BaseProblem):
 #      - `question`: type `str`, Question text
 #      - `choice_text`: list of `str`, where the first entry contains the correct answer
 
-# In[ ]:
+# %%
 
 
 class MultipleChoice(BaseProblem):
@@ -508,4 +509,4 @@ class TrueFalse(BaseProblem):
         else:
             # use standard cell output
             display(Markdown(result_string))
-                
+
