@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working With Jupyter Notebooks &#8212; Course Packet Math 110</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Limit of a Function" href="110_02_01_limits.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/PSL1.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Course Packet Math 110</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to Math 110
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="content.html">
+   Limits
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="110_02_01_limits.html">
+     Limit of a Function
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Working With Jupyter Notebooks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/110_0_jupyter_tutorial_pure.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/28left/110jupyter"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_0_jupyter_tutorial_pure.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110book/110_0_jupyter_tutorial_pure.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-cell-structure">
+   The cell structure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#initializing-the-notebook">
+   Initializing the notebook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computing-with-jupyter-notebooks">
+   Computing with Jupyter notebooks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#answering-problems">
+   Answering problems
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problem-1">
+     Problem 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problem-2">
+     Problem 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problem-3">
+     Problem 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entering-algebraic-expressions">
+   Entering algebraic expressions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problem-4">
+     Problem 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problem-5">
+     Problem 5
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generating-new-problems-with-shift-enter">
+   Generating new problems with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Shift+Enter
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-practice">
+     🔄 More Practice
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="working-with-jupyter-notebooks">
+<h1>Working With Jupyter Notebooks<a class="headerlink" href="#working-with-jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
+<p>Jupyter notebooks are interactive online notebooks that run directly in your web browser and can both display text and run code (such as Python).</p>
+<p>In our course we will use Jupyter to provide some interactive content where you can learn new material and practice it at the same time, with instant feedback.</p>
+<div class="section" id="the-cell-structure">
+<h2>The cell structure<a class="headerlink" href="#the-cell-structure" title="Permalink to this headline">¶</a></h2>
+<p>Every notebook is made up of <strong>cells</strong>. You can navigate between cells using the arrow keys or by clicking on them with the mouse pointer.</p>
+<p>Cells can either be <strong>code cells</strong> or <strong>text cells</strong> (using a formatting language called <em>Markdown</em>).</p>
+<p>All cells you have seen in this notebook so far have been text cells. They can display text with various formatting, such as <em>italics</em> or <strong>bold</strong>, as well as math formulas, for example <span class="math notranslate nohighlight">\(\dfrac{x^2-9}{x+3}\)</span>.</p>
+<p>If you double-click a text cell, or select it with the keyboard or your mouse and press <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>, you will see the raw format (markdown) version of the text. If you press</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>,</p>
+</div></blockquote>
+<p>the text cell will be formatted and display nicely.</p>
+<hr class="docutils" />
+<p>Cells can also be code cells and contain lines of code in a <em>programming language</em>, typically <em>Python</em>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I love math!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>I love math!
+I love math!
+I love math!
+I love math!
+I love math!
+I love math!
+I love math!
+I love math!
+I love math!
+I love math!
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you select a code cell and press</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>,</p>
+</div></blockquote>
+<p>Jupyter will run the code in that cell. Any output that the computation produces will be shown <strong>right beneath the code cell</strong>. Try that with the code cell above. Select it and press <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>.</p>
+<p>We will use code cells mainly for <em>two purposes</em>:</p>
+<ol class="simple">
+<li><p><strong>to perform mathematical computations</strong></p></li>
+<li><p><strong>to enter and evaluate answers to problems</strong></p></li>
+</ol>
+</div>
+<div class="section" id="initializing-the-notebook">
+<h2>Initializing the notebook<a class="headerlink" href="#initializing-the-notebook" title="Permalink to this headline">¶</a></h2>
+<p>The following code cell initializes the next part of the notebook. In particular, it loads the problems that you will be asked to solve. So please go ahead and run this cell using <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Notebook Initialization</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">cyllene</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">%</span><span class="k">initialize</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Initialization successful!
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<!-- The notebooks we will be using will have their code cells hidden by default. You can make them visible, if you want, by clicking on the `eye` button ![eye button](./eye_button.png "Hide code button") in the toolbar above. This button will toggle code cells from hidden to visible and back. -->
+<!-- ### Go ahead and press the 'eye' button to make all code cells invisible.
+
+(If you know some Python and you would like to experiment, you can of course make all code sections visible and play around with the code. You can't "break" anything. For example, in the code cell above, change the 10 to a 4 and hit `SHIFT+ENTER`.) --></div>
+<div class="section" id="computing-with-jupyter-notebooks">
+<h2>Computing with Jupyter notebooks<a class="headerlink" href="#computing-with-jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
+<p>You can use code cells like a powerful calculator. Give it a try.</p>
+<p>Go ahead and execute (i.e <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>) the cell below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2021</span><span class="o">*</span><span class="p">(</span><span class="mi">17</span><span class="o">-</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22231
+</pre></div>
+</div>
+</div>
+</div>
+<p>As you see, you enter calculations into code cells pretty much like you would enter it into a calculator, using <code class="docutils literal notranslate"><span class="pre">*</span></code> for multiplication.</p>
+<p>We use <code class="docutils literal notranslate"><span class="pre">/</span></code> for divison and <code class="docutils literal notranslate"><span class="pre">^</span></code> for exponentiation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">^</span><span class="mi">7</span><span class="o">/</span><span class="mi">64</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can also use <code class="docutils literal notranslate"><span class="pre">**</span></code> for exponentiation. (This is actually the standard notation in Python.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">**</span><span class="mi">8</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>256
+</pre></div>
+</div>
+</div>
+</div>
+<p>As usual, exponentiation binds stronger than the other operations. If you want to change that, you have to use parentheses <code class="docutils literal notranslate"><span class="pre">(,)</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="mi">7</span><span class="o">/</span><span class="mi">64</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0787607977571199
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="answering-problems">
+<h2>Answering problems<a class="headerlink" href="#answering-problems" title="Permalink to this headline">¶</a></h2>
+<p>We also use cells to enter answers to problems.</p>
+<p><em>Answer cells start with the line <code class="docutils literal notranslate"><span class="pre">%%answer</span></code>, followed by the problem name. You input your answer in the line below that and, as usual, press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>.</em></p>
+<div class="section" id="problem-1">
+<h3>Problem 1<a class="headerlink" href="#problem-1" title="Permalink to this headline">¶</a></h3>
+<p>What is the smallest <a class="reference external" href="https://en.wikipedia.org/wiki/Sphenic_number"><em>sphenic</em></a> number?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">answer</span> Problem 1
+30
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>You entered: <br>✅  $\displaystyle 30$    (<em>Correct</em>) <br></p>
+</div>
+</div>
+<p>Try solving the next problem yourself.</p>
+</div>
+<div class="section" id="problem-2">
+<h3>Problem 2<a class="headerlink" href="#problem-2" title="Permalink to this headline">¶</a></h3>
+<p><span class="math notranslate nohighlight">\( \dfrac{2}{3} - \dfrac{1}{2} = \)</span> ?</p>
+<p>(<em>Fractions are entered as <code class="docutils literal notranslate"><span class="pre">a/b</span></code>.</em>)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">answer</span> Problem 2
+1/6
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>You entered: <br>✅  $\displaystyle \frac{1}{6}$    (<em>Correct</em>) <br></p>
+</div>
+</div>
+</div>
+<div class="section" id="problem-3">
+<h3>Problem 3<a class="headerlink" href="#problem-3" title="Permalink to this headline">¶</a></h3>
+<p><span class="math notranslate nohighlight">\( 1.01+0.22 = \)</span> ?</p>
+<p>(<em>Decimal fractions are simply entered in the form <code class="docutils literal notranslate"><span class="pre">X.XXX</span></code>.</em>)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">answer</span> Problem 3
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your answer is empty. Please try again!
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="entering-algebraic-expressions">
+<h2>Entering algebraic expressions<a class="headerlink" href="#entering-algebraic-expressions" title="Permalink to this headline">¶</a></h2>
+<p>We will also need to enter algebraic expressions containing variables, such as <span class="math notranslate nohighlight">\(x\)</span>, along with operations like multiplication and exponentiation. The basic format remains the pretty much the same.</p>
+<p>When entering answers, as usual in mathematical notation, you may omit the multiplication symbol <code class="docutils literal notranslate"><span class="pre">*</span></code>.</p>
+<div class="section" id="problem-4">
+<h3>Problem 4<a class="headerlink" href="#problem-4" title="Permalink to this headline">¶</a></h3>
+<p>Simplify:   <span class="math notranslate nohighlight">\(\qquad 5x - 3x\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">answer</span> Problem 4
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your answer is empty. Please try again!
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<p>The general template to input fractional expressions like <span class="math notranslate nohighlight">\(\dfrac{x^2-9}{x+3}\)</span> is <code class="docutils literal notranslate"><span class="pre">(...)/(...)</span></code>.</p>
+</div>
+<div class="section" id="problem-5">
+<h3>Problem 5<a class="headerlink" href="#problem-5" title="Permalink to this headline">¶</a></h3>
+<p>Enter the fraction <span class="math notranslate nohighlight">\(\qquad \dfrac{x+3}{x^2-1}\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">answer</span> Problem 5
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your answer is empty. Please try again!
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="generating-new-problems-with-shift-enter">
+<h2>Generating new problems with <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code><a class="headerlink" href="#generating-new-problems-with-shift-enter" title="Permalink to this headline">¶</a></h2>
+<p>If you come across a problem heading starting with 🔄 symbol, this means you can generate new versions of this problem as often as you like. Simply select the problem cell and hit <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>. Give it a try below.</p>
+<div class="section" id="more-practice">
+<h3>🔄 More Practice<a class="headerlink" href="#more-practice" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Run this cell to generate a new problem</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="n">generate_problem</span><span class="p">(</span><span class="s1">&#39;6&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/Users/janreimann/Documents/GIT/110jupyter/110book/110_0_jupyter_tutorial_pure.ipynb</span>, line 1)</p>
+<p>Non-consecutive header level increase; 0 to 3 [myst.header]</p>
+</div>
+<p>Solve $ 2x+6 = 2$ for $x$.</p>
+<p><em>Enter the answer(s) in the cell below.</em></p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">answer</span> Problem 6
+-3/2
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>You entered: <br>❌  $\displaystyle - \frac{3}{2}$    (<em>Incorrect</em>) <br></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "28left/110jupyter",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="110_02_01_limits.html" title="previous page">Limit of a Function</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Penn State Learning<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
