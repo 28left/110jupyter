@@ -81,3 +81,4 @@ def graph(expr):
             ylim=(yran[0],yran[1]))
     except:
         sp.plot(expr)
+

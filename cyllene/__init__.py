@@ -7,6 +7,9 @@ import cyllene.m_input_tweaks
 import cyllene.m_magics
 
 from cyllene.m_user_cmd import function, expression, graph
+from cyllene.f_sheets import function_to_sheet
+from cyllene.f_table import function_to_table, output_table
+
 
 # Reserve some (real-valued) symbols in Sympy
 from sympy import symbols

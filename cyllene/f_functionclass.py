@@ -59,6 +59,12 @@ class Function:
         """
         # self.domain = fa.get_domain(self.sym_form)
 
+        # lambda form is a callable function, so you can evaluate the function 
+        # as 'f(3)', for example
+        self.lambda_form = sp.lambdify(self.variables[0], self.sym_form) 
+
+    # def lambda_form(self):
+    #     return sp.lambdify(self.variables[0], self.sym_form)
 
 
     def eval_at(self, val):
