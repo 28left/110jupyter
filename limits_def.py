@@ -11,7 +11,7 @@ s = random.randint(-2,2)
 
 
 def g(x):
-    if x >= r:
+    if x >= s:
         return f1(x)
     else:
         return f2(x)
