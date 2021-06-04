@@ -131,3 +131,7 @@ def min_sp_list_y(mylist, func):
 def is_linear(func):
 
     return bool(sp.diff(func).is_constant())
+
+
+def sign(x):
+    return 2*int(x>0)-1

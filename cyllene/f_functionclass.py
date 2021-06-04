@@ -61,11 +61,13 @@ class Function:
 
         # lambda form is a callable function, so you can evaluate the function 
         # as 'f(3)', for example
-        self.lambda_form = sp.lambdify(self.variables[0], self.sym_form) 
+        if self.variables:
+            self.lambda_form = sp.lambdify(self.variables[0], self.sym_form) 
+        else:
+            self.lambda_form = sp.lambdify(x, self.sym_form) 
 
     # def lambda_form(self):
     #     return sp.lambdify(self.variables[0], self.sym_form)
-
 
     def eval_at(self, val):
 

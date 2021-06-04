@@ -1,1 +1,17 @@
-{}
+{
+  "limits_def": {
+    "limit_val": {
+      "output_type": "display_data",
+      "metadata": {
+        "scrapbook": {
+          "name": "limit_val",
+          "mime_prefix": "application/papermill.record/"
+        }
+      },
+      "data": {
+        "application/papermill.record/text/plain": "-1",
+        "application/papermill.record/text/latex": "$\\displaystyle -1$"
+      }
+    }
+  }
+}

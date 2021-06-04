@@ -63,4 +63,5 @@ launch_buttons:
   binderhub_url: https://binder.jupytr.cloud.psu.edu  # The URL for your BinderHub (e.g., https://mybinder.org)
   thebe                  : true
 
-  
+# Exlude Try-it-yourself notebooks
+exclude_patterns: [limits_def_TIY.ipynb]  

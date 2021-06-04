@@ -65,6 +65,10 @@ class BaseProblem():
         name (string): problem name
         statement (string): general statement of the problem, such as
             "Find the derivative of the following function."
+        supplemental (any): supplemental information (e.g. table, graph) that
+            will be passed to 'display()' in state_problem()
+        statement_after (string): text that should be displayed after the
+            supplemental content
         type (string): 'expression' | 'multchoice' | 'truefalse' | 'text'
         status (const string): current status of the problem
             'correct' | 'incorrect' | 'undecided'
@@ -76,6 +80,8 @@ class BaseProblem():
                  statement, 
                  problem_type,
                  num_inputs=1,
+                 supplemental = None,
+                 statement_after = '',
                  input_widget=False,
                  output_widget=False,
                  regen=False
@@ -85,6 +91,8 @@ class BaseProblem():
         self.statement = statement
         self.problem_type = problem_type
         self.num_inputs = num_inputs
+        self.supplemental = supplemental
+        self.statement_after = statement_after
         self.input_widget = input_widget
         self.output_widget = output_widget
         self.regen = regen
@@ -100,6 +108,10 @@ class BaseProblem():
             title = '### Problem ' + self.name 
         display(Markdown(title))
         display(Markdown(self.statement))
+        if self.supplemental:
+            display(self.supplemental)
+        if self.statement_after:
+            display(Markdown(self.statement_after))
 
     def add_problem_to_stack(self):
         ProbStack.add(self)
@@ -107,10 +119,7 @@ class BaseProblem():
 
 class ExpressionProblem(BaseProblem):
     """
-    attributes:
-        name (string): problem name
-        statement (string): general statement of the problem, such as
-            "Find the derivative of the following function."
+    additional attributes:
         expression (Function, or array of): mathematical expression to 
             be used in problem. 
             Example: 3x^2-1
@@ -130,6 +139,8 @@ class ExpressionProblem(BaseProblem):
                  expression, 
                  answer_type, 
                  correct_answer,
+                 supplemental=None,
+                 statement_after='',
                  eval_mode='full',
                  input_widget=False,
                  output_widget=False,
@@ -137,7 +148,17 @@ class ExpressionProblem(BaseProblem):
                 ):
 
         # call the parent constructor 
-        super().__init__(name, statement, 'expression', num_inputs, input_widget, output_widget, regen)
+        super().__init__(
+            name, 
+            statement, 
+            'expression', 
+            num_inputs, 
+            supplemental,
+            statement_after,
+            input_widget,
+            output_widget,
+            regen
+        )
 
         if type(expression) != list:
             expression = [expression]
