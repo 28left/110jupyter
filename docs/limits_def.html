@@ -51,6 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Limits" href="content.html" />
@@ -147,11 +148,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/limits_def.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="_sources/limits_def.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/limits_def.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -190,7 +194,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/limits_def.ipynb"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/limits_def.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -216,12 +220,24 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition">
-   Definition
+  <a class="reference internal nav-link" href="#definition-of-a-limit">
+   Definition of a Limit
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#exercise">
+     Exercise
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#one-sided-limits">
+   One-Sided Limits
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
      Exercise
     </a>
    </li>
@@ -240,55 +256,107 @@
                 
   <div class="section" id="limit-of-a-function">
 <h1>Limit of a Function<a class="headerlink" href="#limit-of-a-function" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="definition">
-<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="definition-of-a-limit">
+<h2>Definition of a Limit<a class="headerlink" href="#definition-of-a-limit" title="Permalink to this headline">¶</a></h2>
 <p>The function <span class="math notranslate nohighlight">\(f(x)\)</span> has a limit of L as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[ \lim_{x\to a} f(x) = L\]</div>
 <p>if the value of <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to the number <span class="math notranslate nohighlight">\(L\)</span> as we please by taking x values <em>sufficiently close</em> to, but not equal to, <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<p>Keep in mind that the value of a limit does not depend on the value of the function at <span class="math notranslate nohighlight">\(x=a\)</span>.  In fact, it is possible that <span class="math notranslate nohighlight">\(\lim\limits_{x\to a}f(x) = L\)</span> even though</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(a)\)</span> does not exist, or</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(a)\)</span> exists, but is not equal to <span class="math notranslate nohighlight">\(L\)</span>.</p></li>
+</ul>
 <div class="section" id="exercise">
 <h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>Below, we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(2\)</span>. What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim_{x\to 2} f(x)\)</span> should be?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="mf">2.01</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(1\)</span> (but <strong>not equal to</strong> <span class="math notranslate nohighlight">\(1\)</span>). What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim_{x\to 1} f(x)\)</span> would be?</p>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 5.0401\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="mf">2.001</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 5.004001\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="mf">2.00000001</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 5.00000004\]</div>
-</div>
+<div class="output text_html"><style  type="text/css" >
+</style><table id="T_08adc_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
+                <tr>
+                                <td id="T_08adc_row0_col0" class="data row0 col0" >1.100000</td>
+                        <td id="T_08adc_row0_col1" class="data row0 col1" >0.0600000000000014</td>
+            </tr>
+            <tr>
+                                <td id="T_08adc_row1_col0" class="data row1 col0" >1.010000</td>
+                        <td id="T_08adc_row1_col1" class="data row1 col1" >-0.899400000000000</td>
+            </tr>
+            <tr>
+                                <td id="T_08adc_row2_col0" class="data row2 col0" >1.001000</td>
+                        <td id="T_08adc_row2_col1" class="data row2 col1" >-0.989994000000002</td>
+            </tr>
+            <tr>
+                                <td id="T_08adc_row3_col0" class="data row3 col0" >1.000100</td>
+                        <td id="T_08adc_row3_col1" class="data row3 col1" >-0.998999940000000</td>
+            </tr>
+    </tbody></table></div></div>
 </div>
 <div class="dropdown admonition">
 <p class="admonition-title">Click the button to show solution.</p>
-<p>The values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="math notranslate nohighlight">\(5\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(2\)</span>.
-This suggests that</p>
-<div class="math notranslate nohighlight">
-\[    \lim_{x \to 2} f(x) = 5\]</div>
+<p>The values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="pasted-inline"><span class="output text_latex math notranslate nohighlight">\(\displaystyle -1\)</span></span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1\)</span>.
+This suggests that <span class="math notranslate nohighlight">\(\lim_{x \to 2} f(x) =\)</span>  <span class="pasted-inline"><span class="output text_latex math notranslate nohighlight">\(\displaystyle -1\)</span></span>.</p>
 </div>
+</div>
+</div>
+<div class="section" id="one-sided-limits">
+<h2>One-Sided Limits<a class="headerlink" href="#one-sided-limits" title="Permalink to this headline">¶</a></h2>
+<p>The function <span class="math notranslate nohighlight">\(f(x)\)</span> has the <strong>right-hand limit</strong> <span class="math notranslate nohighlight">\(L\)</span> as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span> from the right,</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to a^+} f(x) = L \]</div>
+<p>if the values of <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(L\)</span> as we please by taking <span class="math notranslate nohighlight">\(x\)</span>  sufficiently close to (but not equal to) <span class="math notranslate nohighlight">\(a\)</span> and to the right of <span class="math notranslate nohighlight">\(a\)</span> (i.e., <span class="math notranslate nohighlight">\(x&gt;a\)</span>).</p>
+<p>Similarly, the function <span class="math notranslate nohighlight">\(f(x)\)</span> has the <strong>left-hand limit</strong> <span class="math notranslate nohighlight">\(M\)</span> as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span> from the left,</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to a^-} f(x) = M\]</div>
+<p>if the values of <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(M\)</span> as we please by taking <span class="math notranslate nohighlight">\(x\)</span> sufficiently close to (but not equal to) <span class="math notranslate nohighlight">\(a\)</span> and to the left of <span class="math notranslate nohighlight">\(a\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;a\)</span>).</p>
+<div class="section" id="id1">
+<h3>Exercise<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(1\)</span> (but <strong>not equal to</strong> <span class="math notranslate nohighlight">\(1\)</span>). The first four values are for inputs <span class="math notranslate nohighlight">\(x &lt; 1\)</span>, the next four are for inputs <span class="math notranslate nohighlight">\(x&gt; 1\)</span>.</p>
+<p>What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim_{x\to 1^+} f(x)\)</span> and <span class="math notranslate nohighlight">\(\lim_{x\to 1^-} f(x)\)</span>  would be?</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><style  type="text/css" >
+</style><table id="T_174af_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
+                <tr>
+                                <td id="T_174af_row0_col0" class="data row0 col0" >0.900000</td>
+                        <td id="T_174af_row0_col1" class="data row0 col1" >1.810000</td>
+            </tr>
+            <tr>
+                                <td id="T_174af_row1_col0" class="data row1 col0" >0.990000</td>
+                        <td id="T_174af_row1_col1" class="data row1 col1" >1.980100</td>
+            </tr>
+            <tr>
+                                <td id="T_174af_row2_col0" class="data row2 col0" >0.999000</td>
+                        <td id="T_174af_row2_col1" class="data row2 col1" >1.998001</td>
+            </tr>
+            <tr>
+                                <td id="T_174af_row3_col0" class="data row3 col0" >0.999900</td>
+                        <td id="T_174af_row3_col1" class="data row3 col1" >1.999800</td>
+            </tr>
+            <tr>
+                                <td id="T_174af_row4_col0" class="data row4 col0" >1.000100</td>
+                        <td id="T_174af_row4_col1" class="data row4 col1" >1.000600</td>
+            </tr>
+            <tr>
+                                <td id="T_174af_row5_col0" class="data row5 col0" >1.001000</td>
+                        <td id="T_174af_row5_col1" class="data row5 col1" >1.006003</td>
+            </tr>
+            <tr>
+                                <td id="T_174af_row6_col0" class="data row6 col0" >1.010000</td>
+                        <td id="T_174af_row6_col1" class="data row6 col1" >1.060300</td>
+            </tr>
+            <tr>
+                                <td id="T_174af_row7_col0" class="data row7 col0" >1.100000</td>
+                        <td id="T_174af_row7_col1" class="data row7 col1" >1.630000</td>
+            </tr>
+    </tbody></table></div></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Click the button to show solution.</p>
+<p>If approaching from the left (<span class="math notranslate nohighlight">\(x&lt; 1\)</span>), the values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="math notranslate nohighlight">\(2\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1\)</span>. This suggests that <span class="math notranslate nohighlight">\(\lim_{x \to 1^-} f(x) = 2\)</span>.</p>
+<p>If approaching from the right (<span class="math notranslate nohighlight">\(x&gt; 1\)</span>), the values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="math notranslate nohighlight">\(1\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1\)</span>. This suggests that <span class="math notranslate nohighlight">\(\lim_{x \to 1^+} f(x) = 1\)</span>.</p>
+</div>
+<p><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block reference external" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?filepath=limits_def_TIY.ipynb"><span>Try it yourself!</span></a></p>
 </div>
 </div>
 </div>
