@@ -4,3 +4,5 @@ numpy
 sympy
 pandas
 ipysheet
+ipywidgets
+jupyter_contrib_nbextensions
