@@ -104,7 +104,7 @@ glue("limit_table2", table2, display=False)
 
 # ## Try It Yourself!
 # 
-# ```{link-button} https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?filepath=limits_def_TIY.ipynb
+# ```{link-button} https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?filepath=110_02_01_limits_def_TIY.ipynb
 #     :type: url
 #     :text: Click to launch activity
 #     :classes: btn-outline-warning btn-block

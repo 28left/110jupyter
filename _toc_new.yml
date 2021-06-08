@@ -1,7 +1,0 @@
-format: jb-book
-root: index
-chapters: 
-  - file: limits.md
-  sections:
-    - file: 110_02_01_limits_def.md
-    - file: 110_02_02_prop_lim.md
