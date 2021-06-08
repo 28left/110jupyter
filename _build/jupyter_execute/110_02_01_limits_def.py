@@ -48,7 +48,7 @@ glue("limit_table", table, display=False)
 # ```{admonition} Click the button to show solution.
 # :class: tip, dropdown
 # The values $f(x)$ get closer to {glue:}`limit_val` as $x$ gets closer to $1$.
-# This suggests that $\lim_{x \to 2} f(x) =$  {glue:}`limit_val`.
+# This suggests that $\lim_{x \to 1} f(x) =$  {glue:}`limit_val`.
 # ```
 
 # ## One-Sided Limits
