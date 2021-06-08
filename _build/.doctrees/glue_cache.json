@@ -1,16 +1,16 @@
 {
   "110_02_01_limits_def": {
-    "limit_table": {
+    "limit_table2": {
       "output_type": "display_data",
       "metadata": {
         "scrapbook": {
-          "name": "limit_table",
+          "name": "limit_table2",
           "mime_prefix": "application/papermill.record/"
         }
       },
       "data": {
-        "application/papermill.record/text/plain": "<pandas.io.formats.style.Styler at 0x12afa6400>",
-        "application/papermill.record/text/html": "<style  type=\"text/css\" >\n</style><table id=\"T_c681e_\" ><thead>    <tr>        <th class=\"col_heading level0 col0\" >x</th>        <th class=\"col_heading level0 col1\" >f(x)</th>    </tr></thead><tbody>\n                <tr>\n                                <td id=\"T_c681e_row0_col0\" class=\"data row0 col0\" >1.100000</td>\n                        <td id=\"T_c681e_row0_col1\" class=\"data row0 col1\" >4.63000000000000</td>\n            </tr>\n            <tr>\n                                <td id=\"T_c681e_row1_col0\" class=\"data row1 col0\" >1.010000</td>\n                        <td id=\"T_c681e_row1_col1\" class=\"data row1 col1\" >4.06030000000000</td>\n            </tr>\n            <tr>\n                                <td id=\"T_c681e_row2_col0\" class=\"data row2 col0\" >1.001000</td>\n                        <td id=\"T_c681e_row2_col1\" class=\"data row2 col1\" >4.00600300000000</td>\n            </tr>\n            <tr>\n                                <td id=\"T_c681e_row3_col0\" class=\"data row3 col0\" >1.000100</td>\n                        <td id=\"T_c681e_row3_col1\" class=\"data row3 col1\" >4.00060003000000</td>\n            </tr>\n    </tbody></table>"
+        "application/papermill.record/text/plain": "<pandas.io.formats.style.Styler at 0x120d8d970>",
+        "application/papermill.record/text/html": "<style  type=\"text/css\" >\n</style><table id=\"T_36ff4_\" ><thead>    <tr>        <th class=\"col_heading level0 col0\" >x</th>        <th class=\"col_heading level0 col1\" >f(x)</th>    </tr></thead><tbody>\n                <tr>\n                                <td id=\"T_36ff4_row0_col0\" class=\"data row0 col0\" >0.900000</td>\n                        <td id=\"T_36ff4_row0_col1\" class=\"data row0 col1\" >1.810000</td>\n            </tr>\n            <tr>\n                                <td id=\"T_36ff4_row1_col0\" class=\"data row1 col0\" >0.990000</td>\n                        <td id=\"T_36ff4_row1_col1\" class=\"data row1 col1\" >1.980100</td>\n            </tr>\n            <tr>\n                                <td id=\"T_36ff4_row2_col0\" class=\"data row2 col0\" >0.999000</td>\n                        <td id=\"T_36ff4_row2_col1\" class=\"data row2 col1\" >1.998001</td>\n            </tr>\n            <tr>\n                                <td id=\"T_36ff4_row3_col0\" class=\"data row3 col0\" >0.999900</td>\n                        <td id=\"T_36ff4_row3_col1\" class=\"data row3 col1\" >1.999800</td>\n            </tr>\n            <tr>\n                                <td id=\"T_36ff4_row4_col0\" class=\"data row4 col0\" >1.000100</td>\n                        <td id=\"T_36ff4_row4_col1\" class=\"data row4 col1\" >1.000600</td>\n            </tr>\n            <tr>\n                                <td id=\"T_36ff4_row5_col0\" class=\"data row5 col0\" >1.001000</td>\n                        <td id=\"T_36ff4_row5_col1\" class=\"data row5 col1\" >1.006003</td>\n            </tr>\n            <tr>\n                                <td id=\"T_36ff4_row6_col0\" class=\"data row6 col0\" >1.010000</td>\n                        <td id=\"T_36ff4_row6_col1\" class=\"data row6 col1\" >1.060300</td>\n            </tr>\n            <tr>\n                                <td id=\"T_36ff4_row7_col0\" class=\"data row7 col0\" >1.100000</td>\n                        <td id=\"T_36ff4_row7_col1\" class=\"data row7 col1\" >1.630000</td>\n            </tr>\n    </tbody></table>"
       }
     },
     "limit_val": {
@@ -26,17 +26,17 @@
         "application/papermill.record/text/latex": "$\\displaystyle 4$"
       }
     },
-    "limit_table2": {
+    "limit_table": {
       "output_type": "display_data",
       "metadata": {
         "scrapbook": {
-          "name": "limit_table2",
+          "name": "limit_table",
           "mime_prefix": "application/papermill.record/"
         }
       },
       "data": {
-        "application/papermill.record/text/plain": "<pandas.io.formats.style.Styler at 0x12d66cb50>",
-        "application/papermill.record/text/html": "<style  type=\"text/css\" >\n</style><table id=\"T_87109_\" ><thead>    <tr>        <th class=\"col_heading level0 col0\" >x</th>        <th class=\"col_heading level0 col1\" >f(x)</th>    </tr></thead><tbody>\n                <tr>\n                                <td id=\"T_87109_row0_col0\" class=\"data row0 col0\" >0.900000</td>\n                        <td id=\"T_87109_row0_col1\" class=\"data row0 col1\" >1.810000</td>\n            </tr>\n            <tr>\n                                <td id=\"T_87109_row1_col0\" class=\"data row1 col0\" >0.990000</td>\n                        <td id=\"T_87109_row1_col1\" class=\"data row1 col1\" >1.980100</td>\n            </tr>\n            <tr>\n                                <td id=\"T_87109_row2_col0\" class=\"data row2 col0\" >0.999000</td>\n                        <td id=\"T_87109_row2_col1\" class=\"data row2 col1\" >1.998001</td>\n            </tr>\n            <tr>\n                                <td id=\"T_87109_row3_col0\" class=\"data row3 col0\" >0.999900</td>\n                        <td id=\"T_87109_row3_col1\" class=\"data row3 col1\" >1.999800</td>\n            </tr>\n            <tr>\n                                <td id=\"T_87109_row4_col0\" class=\"data row4 col0\" >1.000100</td>\n                        <td id=\"T_87109_row4_col1\" class=\"data row4 col1\" >1.000600</td>\n            </tr>\n            <tr>\n                                <td id=\"T_87109_row5_col0\" class=\"data row5 col0\" >1.001000</td>\n                        <td id=\"T_87109_row5_col1\" class=\"data row5 col1\" >1.006003</td>\n            </tr>\n            <tr>\n                                <td id=\"T_87109_row6_col0\" class=\"data row6 col0\" >1.010000</td>\n                        <td id=\"T_87109_row6_col1\" class=\"data row6 col1\" >1.060300</td>\n            </tr>\n            <tr>\n                                <td id=\"T_87109_row7_col0\" class=\"data row7 col0\" >1.100000</td>\n                        <td id=\"T_87109_row7_col1\" class=\"data row7 col1\" >1.630000</td>\n            </tr>\n    </tbody></table>"
+        "application/papermill.record/text/plain": "<pandas.io.formats.style.Styler at 0x120f0b7c0>",
+        "application/papermill.record/text/html": "<style  type=\"text/css\" >\n</style><table id=\"T_d03fc_\" ><thead>    <tr>        <th class=\"col_heading level0 col0\" >x</th>        <th class=\"col_heading level0 col1\" >f(x)</th>    </tr></thead><tbody>\n                <tr>\n                                <td id=\"T_d03fc_row0_col0\" class=\"data row0 col0\" >1.100000</td>\n                        <td id=\"T_d03fc_row0_col1\" class=\"data row0 col1\" >4.63000000000000</td>\n            </tr>\n            <tr>\n                                <td id=\"T_d03fc_row1_col0\" class=\"data row1 col0\" >1.010000</td>\n                        <td id=\"T_d03fc_row1_col1\" class=\"data row1 col1\" >4.06030000000000</td>\n            </tr>\n            <tr>\n                                <td id=\"T_d03fc_row2_col0\" class=\"data row2 col0\" >1.001000</td>\n                        <td id=\"T_d03fc_row2_col1\" class=\"data row2 col1\" >4.00600300000000</td>\n            </tr>\n            <tr>\n                                <td id=\"T_d03fc_row3_col0\" class=\"data row3 col0\" >1.000100</td>\n                        <td id=\"T_d03fc_row3_col1\" class=\"data row3 col1\" >4.00060003000000</td>\n            </tr>\n    </tbody></table>"
       }
     }
   }
