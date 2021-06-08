@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Limit of a Function &#8212; Course Packet Math 110</title>
+    <title>Examples: Computing Limits from Graphs &#8212; Course Packet Math 110</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -97,11 +97,14 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/limits_def.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+        <a class="dropdown-buttons"
+            href="_sources/110_02_03_lim_graphs.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/110_02_03_lim_graphs.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -119,7 +122,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2Flimits_def.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_02_03_lim_graphs.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -140,7 +143,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/limits_def.ipynb"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_02_03_lim_graphs.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -166,16 +169,14 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition">
-   Definition
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exercise">
-     Exercise
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
  </li>
 </ul>
 
@@ -188,70 +189,67 @@
         
               <div>
                 
-  <div class="section" id="limit-of-a-function">
-<h1>Limit of a Function<a class="headerlink" href="#limit-of-a-function" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="definition">
-<h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
-<p>The function <span class="math notranslate nohighlight">\(f(x)\)</span> has a limit of L as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span>,</p>
+  <div class="section" id="examples-computing-limits-from-graphs">
+<h1>Examples: Computing Limits from Graphs<a class="headerlink" href="#examples-computing-limits-from-graphs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>Let <span class="math notranslate nohighlight">\(f(x)\)</span> be defined by the following graph.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/110_02_03_lim_graphs_1.png"><img alt="A graph defining a function f(x)" class="bg-primary mb-1 align-center" src="_images/110_02_03_lim_graphs_1.png" style="width: 600px;" /></a>
+<p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x \to a^-} f(x)\)</span>, <span class="math notranslate nohighlight">\(\lim\limits_{x \to a^+} f(x)\)</span>, and <span class="math notranslate nohighlight">\(\lim\limits_{x \to a} f(x)\)</span> for <span class="math notranslate nohighlight">\(a = -3, 0, 2\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\mathbf{a=-3} \quad\)</span> (Click to show solution)</p>
+<p>The two one-sided limits both exist and are both equal to 2.</p>
 <div class="math notranslate nohighlight">
-\[ \lim_{x\to a} f(x) = L\]</div>
-<p>if the value of <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to the number <span class="math notranslate nohighlight">\(L\)</span> as we please by taking x values <em>sufficiently close</em> to, but not equal to, <span class="math notranslate nohighlight">\(a\)</span>.</p>
-<div class="section" id="exercise">
-<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
-<p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(2\)</span> (but <strong>not equal to <span class="math notranslate nohighlight">\(2\)</span></strong>). What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim_{x\to 2} f(x)\)</span> should be?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="n">function_to_table</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">[</span><span class="mf">2.1</span><span class="p">,</span> <span class="mf">2.01</span><span class="p">,</span> <span class="mf">2.0001</span><span class="p">])</span>
-<span class="n">output_table</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-</pre></div>
+\[\lim_{x\to -3^-} f(x)=2  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to -3^+} f(x)=2\]</div>
+<p>Therefore, the limit exists and <span class="math notranslate nohighlight">\(\lim\limits_{x\to -3} f(x) = 2.\)</span></p>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><style  type="text/css" >
-</style><table id="T_68d3b_" ><thead>    <tr>        <th class="col_heading level0 col0" >$x$</th>        <th class="col_heading level0 col1" >$f(x)$</th>    </tr></thead><tbody>
-                <tr>
-                                <td id="T_68d3b_row0_col0" class="data row0 col0" >2.100000</td>
-                        <td id="T_68d3b_row0_col1" class="data row0 col1" >5.41000000000000</td>
-            </tr>
-            <tr>
-                                <td id="T_68d3b_row1_col0" class="data row1 col0" >2.010000</td>
-                        <td id="T_68d3b_row1_col1" class="data row1 col1" >5.04010000000000</td>
-            </tr>
-            <tr>
-                                <td id="T_68d3b_row2_col0" class="data row2 col0" >2.000100</td>
-                        <td id="T_68d3b_row2_col1" class="data row2 col1" >5.00040001000000</td>
-            </tr>
-    </tbody></table></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="mf">2.001</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 5.004001\]</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">(</span><span class="mf">2.00000001</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 5.00000004\]</div>
-</div>
-</div>
-<div class="dropdown admonition">
-<p class="admonition-title">Click the button to show solution.</p>
-<p>The values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="math notranslate nohighlight">\(5\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(2\)</span>.
-This suggests that</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\mathbf{a=0} \quad\)</span> (Click to show solution)</p>
+<p>The limit from the left does not exist and the limit from the right exists and is equal to 0.</p>
 <div class="math notranslate nohighlight">
-\[    \lim_{x \to 2} f(x) = 5\]</div>
+\[\lim_{x\to 0^-} f(x) = -\infty ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 0^+} f(x)=0\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 0} f(x)\)</span> does not exist. Observation: If either of the one-sided limits does not exist (DNE) as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span>, then the <span class="math notranslate nohighlight">\(\lim_{x\to a} f(x)\)</span> does not exist.</p>
 </div>
+<div class="tip dropdown admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\mathbf{a=2} \quad\)</span> (Click to show solution)</p>
+<p>The two one-sided limits both exist, but are not equal to each other.</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 2^-} f(x)= 2 ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 2^+} f(x)=-4\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 2} f(x)\)</span> does not exist.</p>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>Let <span class="math notranslate nohighlight">\(f(x)\)</span> be defined by the following graph.</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/110_02_03_lim_graphs_2.png"><img alt="A graph defining a function f(x)" class="bg-primary mb-1 align-center" src="_images/110_02_03_lim_graphs_2.png" style="width: 600px;" /></a>
+<p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x \to a^-} f(x)\)</span>, <span class="math notranslate nohighlight">\(\lim\limits_{x \to a^+} f(x)\)</span>, and <span class="math notranslate nohighlight">\(\lim\limits_{x \to a} f(x)\)</span> for <span class="math notranslate nohighlight">\(a = -1, 1, 4, 6\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\mathbf{a=-1} \quad\)</span> (Click to show solution)</p>
+<p>The two one-sided limits both exist and are both equal to 1.</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to -1^-} f(x)=1  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to -1^+} f(x)=1\]</div>
+<p>Therefore, the limit exists and <span class="math notranslate nohighlight">\(\lim\limits_{x\to -1} f(x) = 1\)</span>.  Observation: Although <span class="math notranslate nohighlight">\(f(-1)\)</span> is not defined, the limit as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(-1\)</span> still exists.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\mathbf{a=1} \quad\)</span> (Click to show solution)</p>
+<p>The two one-sided limits both exist and are both equal to 3.</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 1^-} f(x)=3  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 1^+} f(x)=3\]</div>
+<p>Therefore, the limit exists and <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1} f(x) = 3\)</span>.  Observation: Although <span class="math notranslate nohighlight">\(f(1)\)</span> is defined, it is not equal to the value of the limit as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(1\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\mathbf{a=4} \quad\)</span> (Click to show solution)</p>
+<p>The two one-sided limits both exist, but are not equal to each other.</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 4^-} f(x)= 1 ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 4^+} f(x)=4\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 4} f(x)\)</span> does not exist.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title"><span class="math notranslate nohighlight">\(\mathbf{a=6} \quad\)</span> (Click to show solution)</p>
+<p>Neither one-sided limit exists.</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 6^-} f(x) = \infty ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 6^+} f(x)= -\infty\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 6} f(x)\)</span> does not exist.</p>
 </div>
 </div>
 </div>
@@ -292,7 +290,7 @@ This suggests that</p>
         
           By Penn State Learning<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>
