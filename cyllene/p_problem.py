@@ -12,6 +12,7 @@ import cyllene.f_define as fd
 import cyllene.f_compare as fc
 
 
+NoneType = type(None)
 
 """
 Add answer cells for problems
@@ -108,8 +109,10 @@ class BaseProblem():
             title = '### Problem ' + self.name 
         display(Markdown(title))
         display(Markdown(self.statement))
-        if self.supplemental:
+
+        if type(self.supplemental) != NoneType:
             display(self.supplemental)
+
         if self.statement_after:
             display(Markdown(self.statement_after))
 
@@ -174,7 +177,7 @@ class ExpressionProblem(BaseProblem):
 
         self.current_answer = ['']
 
-    
+
     def check_answer(self, answer):
         """
         Checks whether answer is a correct expression
@@ -317,7 +320,36 @@ class ExpressionProblem(BaseProblem):
             display(Markdown(result_string))
 
 
+class ParameterProblem(ExpressionProblem):
 
+    def __init__(self,
+                 name,
+                 num_inputs,
+                 answer_type, 
+                 parameters,
+                 generator,
+                 eval_mode='full',
+                 input_widget=False,
+                 output_widget=False,
+                ):
+        
+        self.name = name
+        self.num_inputs = num_inputs
+        self.answer_type = answer_type
+        self.eval_mode = eval_mode
+        self.input_widget = input_widget
+        self.output_widget = output_widget
+        self.regen = True
+
+        self.generator = generator
+        self.parameters = parameters
+
+        self.generate()
+
+
+    def generate(self):
+        [self.statement, self.expression, self.supplemental, self.statement_after, self.correct_answer] = self.generator(self.parameters)
+        
 
 # # Multiple choice widget
 # 
@@ -327,8 +359,6 @@ class ExpressionProblem(BaseProblem):
 #  - initialization: pass two arguments
 #      - `question`: type `str`, Question text
 #      - `choice_text`: list of `str`, where the first entry contains the correct answer
-
-# In[ ]:
 
 
 class MultipleChoice(BaseProblem):

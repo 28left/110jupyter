@@ -63,5 +63,9 @@ launch_buttons:
   binderhub_url: https://binder.jupytr.cloud.psu.edu  # The URL for your BinderHub (e.g., https://mybinder.org)
   thebe                  : true
 
+
+# Only build TOC files
+only_build_toc_files: true
+
 # Exlude Try-it-yourself notebooks
-exclude_patterns: [limits_def_TIY.ipynb]  
+exclude_patterns: [110_02_01_limits_def_TIY.ipynb, old_stuff/*]  

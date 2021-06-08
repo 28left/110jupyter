@@ -1,7 +1,7 @@
-# Table of content
-# Learn more at https://jupyterbook.org/customize/toc.html
-#
-- file: intro
-- file: content
+format: jb-book
+root: intro
+chapters:
+- file: limits
   sections:
-    - file: limits_def
+  - file: 110_02_01_limits_def.md
+  - file: 110_02_02_prop_lim.md

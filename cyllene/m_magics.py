@@ -44,6 +44,8 @@ def Problem(line):
 def problem(line):
     try:
         problem = ProbStack.stack[line]
+        if problem.regen:
+            problem.generate()
         problem.state_problem()
         # add_answer_cell(problem)
     except:
