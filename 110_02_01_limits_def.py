@@ -21,7 +21,7 @@ def g_right(x):
         return f2(x)
 
 def g(x):
-    if x >= r:
+    if x >= s:
         return g1(x)
     else:
         return g2(x)
