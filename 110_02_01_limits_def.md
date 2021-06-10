@@ -125,7 +125,23 @@ If approaching from the left ($x< 1$), the values $f(x)$ get closer to $2$ as $x
 If approaching from the right ($x> 1$), the values $f(x)$ get closer to $1$ as $x$ gets closer to $1$. This suggests that $\lim_{x \to 1^+} f(x) = 1$.
 ```
 
+
+## Limit vs. One-Sided Limits
+
+```{admonition} Fact
+:class: info
+
+If both one-sided limits exist and are equal to the same value, $L$, then we can say that the limit exists, and is also equal to $L$.  In other words, 
+
+$$\lim_{x\to a} f(x) = L$$
+
+means the same thing as
+
+$$\lim_{x\to a^-} f(x) = L ~~~~ \hbox{and} ~~~~ \lim_{x\to a^+} f(x)= L.$$
+```
+
 +++
+
 ## Try It Yourself!
 
 ```{link-button} https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?filepath=110_02_01_limits_def_TIY.ipynb

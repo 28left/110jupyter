@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# (lim:prop_lim)=
 # # Properties of Finite Limits
 # 
 # Suppose $\displaystyle \lim_{x\to a} f(x) = L$ and $\displaystyle \lim_{x\to a} g(x) = M$

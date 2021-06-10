@@ -3,7 +3,7 @@
 
 # # Examples: Computing Limits from Graphs
 # 
-# ## Example 1
+# ## Example (First Graph) 
 # 
 # Let $f(x)$ be defined by the following graph.  
 # 
@@ -47,7 +47,7 @@
 # Therefore, $\lim\limits_{x\to 2} f(x)$ does not exist.
 # ```
 
-# ## Example 2
+# ## Example (Second Graph)
 # 
 # Let $f(x)$ be defined by the following graph.  
 # 
