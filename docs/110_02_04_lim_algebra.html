@@ -54,6 +54,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Indeterminate Forms" href="110_02_05_lim_indeterminate.html" />
     <link rel="prev" title="Examples: Computing Limits from Graphs" href="110_02_03_lim_graphs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -120,6 +121,11 @@
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      Examples: Computing Limits Algebraically
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="110_02_05_lim_indeterminate.html">
+     Indeterminate Forms
     </a>
    </li>
   </ul>
@@ -240,8 +246,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-rational-function">
-   Example: Rational Function
+  <a class="reference internal nav-link" href="#example-rational-function-1">
+   Example: Rational Function (1)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-rational-function-2">
+   Example: Rational Function (2)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -270,8 +281,8 @@
 <p><span class="math notranslate nohighlight">\(f\)</span> is a constant function, hence a polynomial. Therefore, by Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1} f(x) = f(1) = 2\)</span>. Since the limit exists, the one-sided limits exist, too and coincide with the limit. Thus, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^{-}}f(x) = 2\)</span>.</p>
 </div>
 </div>
-<div class="section" id="example-rational-function">
-<h2>Example: Rational Function<a class="headerlink" href="#example-rational-function" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-rational-function-1">
+<h2>Example: Rational Function (1)<a class="headerlink" href="#example-rational-function-1" title="Permalink to this headline">¶</a></h2>
 <p>Evaluate</p>
 <div class="math notranslate nohighlight">
 \[\lim\limits_{x\to -1} \dfrac{x^3 +4x^2-x-3}{2x^2+1}.\]</div>
@@ -284,6 +295,18 @@
 Again by Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to -1} g(x)\)</span> exists and equals</p>
 <div class="math notranslate nohighlight">
 \[g(-1) = \frac{(-1)^3 + 4(-1)^2 - (-1) -3}{2(-1)^2+1} = \frac{1}{3}.\]</div>
+</div>
+</div>
+<div class="section" id="example-rational-function-2">
+<h2>Example: Rational Function (2)<a class="headerlink" href="#example-rational-function-2" title="Permalink to this headline">¶</a></h2>
+<p>Evaluate</p>
+<div class="math notranslate nohighlight">
+\[\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}.\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Solution</p>
+<p>For <span class="math notranslate nohighlight">\(x=2\)</span>, the denominator of the expression above is zero, so we cannot apply Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a> in this case. We observe that, as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(2\)</span>, the values of the denominator get closer to <span class="math notranslate nohighlight">\(0\)</span>, while the values of the numerator approach <span class="math notranslate nohighlight">\(11\)</span>.</p>
+<p>Moreover, if we approach <span class="math notranslate nohighlight">\(2\)</span> from the left, the values of <span class="math notranslate nohighlight">\((x^2 +4x-1)/(x-2)\)</span> will be negative and approach <span class="math notranslate nohighlight">\(-\infty\)</span>, while if we approach from the right, the values are positive and approach <span class="math notranslate nohighlight">\(+\infty\)</span>.</p>
+<p>Therefore, neither the left-hand limit nor the right-limit exists, and hence <span class="math notranslate nohighlight">\(\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}\)</span> does not exist either.</p>
 </div>
 </div>
 <div class="section" id="example-piecewise-polynomial-function">
@@ -361,6 +384,7 @@ x^2-5x-6 &amp; \hbox{if } x&gt;6 \\
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="110_02_03_lim_graphs.html" title="previous page">Examples: Computing Limits from Graphs</a>
+    <a class='right-next' id="next-link" href="110_02_05_lim_indeterminate.html" title="next page">Indeterminate Forms</a>
 
         </div>
         

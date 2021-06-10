@@ -13,7 +13,7 @@
 # $f$ is a constant function, hence a polynomial. Therefore, by Property 7 of {ref}`lim:prop_lim`, $\lim\limits_{x\to 1} f(x) = f(1) = 2$. Since the limit exists, the one-sided limits exist, too and coincide with the limit. Thus, $\lim\limits_{x\to 1^{-}}f(x) = 2$.
 # ```
 # 
-# ## Example: Rational Function
+# ## Example: Rational Function (1)
 # 
 # Evaluate 
 # 
@@ -32,6 +32,21 @@
 # $$g(-1) = \frac{(-1)^3 + 4(-1)^2 - (-1) -3}{2(-1)^2+1} = \frac{1}{3}.$$
 # ```
 # 
+# ## Example: Rational Function (2)
+# 
+# Evaluate 
+# 
+# $$\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}.$$
+# 
+# ```{admonition} Solution
+# :class: tip, dropdown
+# 
+# For $x=2$, the denominator of the expression above is zero, so we cannot apply Property 7 of {ref}`lim:prop_lim` in this case. We observe that, as $x$ gets closer to $2$, the values of the denominator get closer to $0$, while the values of the numerator approach $11$. 
+# 
+# Moreover, if we approach $2$ from the left, the values of $(x^2 +4x-1)/(x-2)$ will be negative and approach $-\infty$, while if we approach from the right, the values are positive and approach $+\infty$. 
+# 
+# Therefore, neither the left-hand limit nor the right-limit exists, and hence $\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}$ does not exist either. 
+# ```
 # 
 # ## Example: Piecewise Polynomial Function
 # 
