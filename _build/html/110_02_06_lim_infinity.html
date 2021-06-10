@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Examples: Computing Limits Algebraically &#8212; Course Packet Math 110</title>
+    <title>Limits at Infinity of a Function &#8212; Course Packet Math 110</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Indeterminate Forms" href="110_02_05_lim_indeterminate.html" />
-    <link rel="prev" title="Examples: Computing Limits from Graphs" href="110_02_03_lim_graphs.html" />
+    <link rel="prev" title="Indeterminate Forms" href="110_02_05_lim_indeterminate.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -118,8 +117,8 @@
      Examples: Computing Limits from Graphs
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="110_02_04_lim_algebra.html">
      Examples: Computing Limits Algebraically
     </a>
    </li>
@@ -128,8 +127,8 @@
      Indeterminate Forms
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="110_02_06_lim_infinity.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Limits at Infinity of a Function
     </a>
    </li>
@@ -175,11 +174,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="_sources/110_02_04_lim_algebra.ipynb"><button type="button"
+            href="_sources/110_02_06_lim_infinity.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/110_02_04_lim_algebra.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/110_02_06_lim_infinity.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -199,7 +198,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_02_04_lim_algebra.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_02_06_lim_infinity.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -220,7 +219,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_02_04_lim_algebra.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_02_06_lim_infinity.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -246,23 +245,13 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-constant-function">
-   Example: Constant Function
+  <a class="reference internal nav-link" href="#properties-of-limits-at-infinity">
+   Properties of Limits at Infinity
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-rational-function-1">
-   Example: Rational Function (1)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-rational-function-2">
-   Example: Rational Function (2)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-piecewise-polynomial-function">
-   Example: Piecewise Polynomial Function
+  <a class="reference internal nav-link" href="#limits-at-infinity-of-rational-functions">
+   Limits at Infinity of Rational Functions
   </a>
  </li>
 </ul>
@@ -276,89 +265,66 @@
         
               <div>
                 
-  <div class="section" id="examples-computing-limits-algebraically">
-<h1>Examples: Computing Limits Algebraically<a class="headerlink" href="#examples-computing-limits-algebraically" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="example-constant-function">
-<h2>Example: Constant Function<a class="headerlink" href="#example-constant-function" title="Permalink to this headline">¶</a></h2>
-<p>If <span class="math notranslate nohighlight">\(f(x) = 2\)</span>, find <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^{-}}f(x)\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p><span class="math notranslate nohighlight">\(f\)</span> is a constant function, hence a polynomial. Therefore, by Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1} f(x) = f(1) = 2\)</span>. Since the limit exists, the one-sided limits exist, too and coincide with the limit. Thus, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^{-}}f(x) = 2\)</span>.</p>
-</div>
-</div>
-<div class="section" id="example-rational-function-1">
-<h2>Example: Rational Function (1)<a class="headerlink" href="#example-rational-function-1" title="Permalink to this headline">¶</a></h2>
-<p>Evaluate</p>
+  <div class="section" id="limits-at-infinity-of-a-function">
+<h1>Limits at Infinity of a Function<a class="headerlink" href="#limits-at-infinity-of-a-function" title="Permalink to this headline">¶</a></h1>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The function <span class="math notranslate nohighlight">\(f(x)\)</span> has the limit <span class="math notranslate nohighlight">\(L\)</span> as <span class="math notranslate nohighlight">\(x\)</span> increases without bound (as <span class="math notranslate nohighlight">\(x\)</span> approaches infinity),</p>
 <div class="math notranslate nohighlight">
-\[\lim\limits_{x\to -1} \dfrac{x^3 +4x^2-x-3}{2x^2+1}.\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p>The function</p>
+\[\lim_{x\to \infty} f(x) = L \]</div>
+<p>if <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(L\)</span> by taking <span class="math notranslate nohighlight">\(x\)</span> large enough.</p>
+<p>Similarly, the function <span class="math notranslate nohighlight">\(f(x)\)</span> has the limit <span class="math notranslate nohighlight">\(M\)</span> as <span class="math notranslate nohighlight">\(x\)</span> decreases without bound (as <span class="math notranslate nohighlight">\(x\)</span> approaches negative infinity),</p>
 <div class="math notranslate nohighlight">
-\[ g(x) = \dfrac{x^3 +4x^2-x-3}{2x^2+1}\]</div>
-<p>is a rational function, and since <span class="math notranslate nohighlight">\(2(-1)^2 + 1 = 3 \neq 0\)</span>, it follows that <span class="math notranslate nohighlight">\(-1\)</span> is in the domain of <span class="math notranslate nohighlight">\(g\)</span>.
-Again by Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to -1} g(x)\)</span> exists and equals</p>
+\[\lim_{x\to -\infty} f(x) = M \]</div>
+<p>if <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(M\)</span> by taking <span class="math notranslate nohighlight">\(x\)</span>  to be negative and sufficiently large in absolute value.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Example</p>
+<p>The following graph illustrates a function <span class="math notranslate nohighlight">\(f(x)\)</span> that approaches a value of 400 as <span class="math notranslate nohighlight">\(x\)</span> increases without bound.  In other words,</p>
 <div class="math notranslate nohighlight">
-\[g(-1) = \frac{(-1)^3 + 4(-1)^2 - (-1) -3}{2(-1)^2+1} = \frac{1}{3}.\]</div>
+\[\lim\limits_{x\to \infty} f(x) = 400.\]</div>
+<p><img alt="The graph approaches the value 400 as x increases without bound" src="_images/110_02_06_lim_infinity_1.png" /></p>
 </div>
-</div>
-<div class="section" id="example-rational-function-2">
-<h2>Example: Rational Function (2)<a class="headerlink" href="#example-rational-function-2" title="Permalink to this headline">¶</a></h2>
-<p>Evaluate</p>
+<div class="section" id="properties-of-limits-at-infinity">
+<h2>Properties of Limits at Infinity<a class="headerlink" href="#properties-of-limits-at-infinity" title="Permalink to this headline">¶</a></h2>
+<p>All previous properties for limits apply when <span class="math notranslate nohighlight">\(a\)</span> is replaced with <span class="math notranslate nohighlight">\(\infty\)</span> or <span class="math notranslate nohighlight">\(-\infty\)</span>.  Furthermore, the following additional properties are especially useful when evaluating limits at infinity.  For all <span class="math notranslate nohighlight">\(n&gt;0\)</span>, we have</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to \infty} \dfrac{1}{x^n}=0 \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} \dfrac{1}{x^n}=0\)</span>, provided that <span class="math notranslate nohighlight">\(x^n\)</span> is defined for <span class="math notranslate nohighlight">\(x&lt;0\)</span>.</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Example</p>
+<p>Notice how the graph of <span class="math notranslate nohighlight">\(y=1/x\)</span> approaches the <span class="math notranslate nohighlight">\(x\)</span>-axis as <span class="math notranslate nohighlight">\(x\)</span> approaches positive and negative infinity.  In other words,</p>
 <div class="math notranslate nohighlight">
-\[\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}.\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p>For <span class="math notranslate nohighlight">\(x=2\)</span>, the denominator of the expression above is zero, so we cannot apply Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a> in this case. We observe that, as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(2\)</span>, the values of the denominator get closer to <span class="math notranslate nohighlight">\(0\)</span>, while the values of the numerator approach <span class="math notranslate nohighlight">\(11\)</span>.</p>
-<p>Moreover, if we approach <span class="math notranslate nohighlight">\(2\)</span> from the left, the values of <span class="math notranslate nohighlight">\((x^2 +4x-1)/(x-2)\)</span> will be negative and approach <span class="math notranslate nohighlight">\(-\infty\)</span>, while if we approach from the right, the values are positive and approach <span class="math notranslate nohighlight">\(+\infty\)</span>.</p>
-<p>Therefore, neither the left-hand limit nor the right-limit exists, and hence <span class="math notranslate nohighlight">\(\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}\)</span> does not exist either.</p>
+\[\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} \frac{1}{x} = 0.\]</div>
+<p><img alt="The graph of y=1/x" src="_images/110_02_06_lim_infinity_2.png" /></p>
 </div>
-</div>
-<div class="section" id="example-piecewise-polynomial-function">
-<h2>Example: Piecewise Polynomial Function<a class="headerlink" href="#example-piecewise-polynomial-function" title="Permalink to this headline">¶</a></h2>
-<p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 6} h(x)\)</span>, where</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-h(x)=
-\begin{cases} 
-x^2-4x-12 &amp; \hbox{if } x&lt;6 \\
-8 &amp; \hbox{if } x=6 \\
-x^2-5x-6 &amp; \hbox{if } x&gt;6 \\  
-\end{cases}
-\end{equation*}\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Find the limit from the left.</p>
-<p>In this case, since we are approaching 6 from the left, we can assume that <span class="math notranslate nohighlight">\(x&lt;6\)</span>, and therefore <span class="math notranslate nohighlight">\(h(x) = x^2-4x-12\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\lim_{x\to 6^{-}} h(x) 
-&amp;= \lim_{x\to 6^-} x^2-4x-12\\ \\
-&amp;= 6^2-4(6)-12 &amp;&amp; \text{Plug in $x=6$ (Property 7)}\\ \\
-&amp;= 36-24-12 &amp;&amp; \text{Simplify}\\ \\
-&amp;= 0
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find the limit from the right.</p>
-<p>In this case, since we are approaching 6 from the right, we can assume that <span class="math notranslate nohighlight">\(x&gt;6\)</span>, and therefore <span class="math notranslate nohighlight">\(h(x) = x^2-5x-6\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\lim_{x\to 6^{+}} h(x) 
-&amp;= \lim_{x\to 6^+} x^2-5x-6\\ \\
-&amp;= 6^2-5(6)-6  &amp;&amp; \text{Plug in $x=6$ (Property 7)}\\ \\
-&amp;= 36-30-6 &amp;&amp; \text{Simplify}\\ \\
-&amp;= 0
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Check to see if the two limits are equal.</p>
-<p>Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to 6^-} h(x) = \lim_{x\to 6^+} h(x) = 0\)</span>, we conclude that the limit exists and</p>
+<div class="tip admonition">
+<p class="admonition-title">Example</p>
+<p>Notice how the graph of <span class="math notranslate nohighlight">\(y=1/\sqrt{x}\)</span> approaches the <span class="math notranslate nohighlight">\(x\)</span>-axis as <span class="math notranslate nohighlight">\(x\)</span> approaches positive infinity.  In other words,</p>
 <div class="math notranslate nohighlight">
-\[\lim_{x\to 6} h(x) = 0.\]</div>
+\[\lim_{x\to \infty} \frac{1}{\sqrt{x}} = 0.\]</div>
+<p>Furthermore, there is no discussion of the limit as <span class="math notranslate nohighlight">\(x\)</span> approaches negative infinity since <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> is not defined for negative values of <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p><img alt="The graph of y=1/\sqrt{x}" src="_images/110_02_06_lim_infinity_3.png" /></p>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Keep in mind that just because <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 6} h(x) \neq h(6) = 8\)</span>, this does not mean that the limit does not exist.</p>
+</div>
+<div class="section" id="limits-at-infinity-of-rational-functions">
+<h2>Limits at Infinity of Rational Functions<a class="headerlink" href="#limits-at-infinity-of-rational-functions" title="Permalink to this headline">¶</a></h2>
+<p>For Rational Functions, a limit at infinity, whether it be <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to\infty}\)</span> or <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to -\infty}\)</span>, can be determined by comparing the degree of the polynomial in the numerator to the degree of the polynomial in the denominator.</p>
+<p>For infinite limits of Rational Functions, if the</p>
+<ul class="simple">
+<li><p>highest power is in the denominator, then the limit will equal <span class="math notranslate nohighlight">\(0\)</span></p></li>
+<li><p>highest power in the numerator, then the limit will equal <span class="math notranslate nohighlight">\(\pm\infty\)</span> (DNE)</p></li>
+<li><p>highest power is the same in both the numerator and denominator, then the limit will equal the ratio of the leading coefficients, i.e. the ratio of the coefficients in front of the highest powers in the numerator and the denominator.</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Example</p>
+<p>Applying the guidelines:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to\infty}\frac{x+3}{6x^2+3x+1}\)</span> = 0 (highest power is in denominator)   <br>   </p></li>
+<li><p><span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to-\infty}\frac{6x^{3}+3}{x^{2}+4x-7}\)</span> = <span class="math notranslate nohighlight">\(-\infty\)</span> or DNE (highest power is in numerator)  <br>   </p></li>
+<li><p><span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to\infty}\frac{4x^5+3x-8}{9x^5-6x^3}\)</span> = <span class="math notranslate nohighlight">\(4/9\)</span> (highest powers are the same)</p></li>
+</ol>
 </div>
 </div>
 </div>
@@ -388,8 +354,7 @@ x^2-5x-6 &amp; \hbox{if } x&gt;6 \\
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="110_02_03_lim_graphs.html" title="previous page">Examples: Computing Limits from Graphs</a>
-    <a class='right-next' id="next-link" href="110_02_05_lim_indeterminate.html" title="next page">Indeterminate Forms</a>
+    <a class='left-prev' id="prev-link" href="110_02_05_lim_indeterminate.html" title="previous page">Indeterminate Forms</a>
 
         </div>
         
