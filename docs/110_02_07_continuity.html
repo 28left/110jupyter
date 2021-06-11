@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indeterminate Forms &#8212; Course Packet Math 110</title>
+    <title>Continuity &#8212; Course Packet Math 110</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Limits at Infinity" href="110_02_06_lim_infinity.html" />
-    <link rel="prev" title="Examples: Computing Limits Algebraically" href="110_02_04_lim_algebra.html" />
+    <link rel="prev" title="Limits at Infinity" href="110_02_06_lim_infinity.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -123,8 +122,8 @@
      Examples: Computing Limits Algebraically
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="110_02_05_lim_indeterminate.html">
      Indeterminate Forms
     </a>
    </li>
@@ -133,9 +132,9 @@
      Limits at Infinity
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="110_02_07_continuity.html">
-     Limits at Infinity
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Continuity
     </a>
    </li>
   </ul>
@@ -180,11 +179,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="_sources/110_02_05_lim_indeterminate.ipynb"><button type="button"
+            href="_sources/110_02_07_continuity.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/110_02_05_lim_indeterminate.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/110_02_07_continuity.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -204,7 +203,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_02_05_lim_indeterminate.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_02_07_continuity.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -225,7 +224,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_02_05_lim_indeterminate.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_02_07_continuity.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -251,14 +250,31 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-1">
-   Example 1
+  <a class="reference internal nav-link" href="#defintion-and-properties">
+   Defintion and Properties
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-2">
-   Example 2
+  <a class="reference internal nav-link" href="#examples">
+   Examples
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-continuity-at-a-point">
+     Example: Continuity at a point
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-discontinuities">
+     Example: Discontinuities
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-choosing-a-parameter-to-make-a-function-continuous">
+     Example: Choosing a parameter to make a function continuous
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -271,81 +287,164 @@
         
               <div>
                 
-  <div class="section" id="indeterminate-forms">
-<h1>Indeterminate Forms<a class="headerlink" href="#indeterminate-forms" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="continuity">
+<h1>Continuity<a class="headerlink" href="#continuity" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="defintion-and-properties">
+<h2>Defintion and Properties<a class="headerlink" href="#defintion-and-properties" title="Permalink to this headline">¶</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>If <span class="math notranslate nohighlight">\(\lim\limits_{x\to a} f(x) = 0\)</span> and <span class="math notranslate nohighlight">\(\lim\limits_{x\to a}g(x) = 0\)</span>, then</p>
+<p>A function <span class="math notranslate nohighlight">\(f(x)\)</span> is <strong>continuous at a number <span class="math notranslate nohighlight">\(x = a\)</span></strong> if the following conditions are satisfied:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(a)\)</span> is defined</p></li>
+<li><p><span class="math notranslate nohighlight">\(\displaystyle{\lim_{x \to \\a}} f(x)\)</span> exists (rule for existence:
+<span class="math notranslate nohighlight">\(\displaystyle{\lim_{x \to \\a^-}} f(x) = \displaystyle{\lim_{x \to \\a^+}} f(x)\)</span> )</p></li>
+<li><p><span class="math notranslate nohighlight">\(\displaystyle{\lim_{x \to \\a}} f(x) = f(a)\)</span></p></li>
+</ul>
+<p>The function <span class="math notranslate nohighlight">\(f(x)\)</span> is <strong>continuous on the interval <span class="math notranslate nohighlight">\((a, b)\)</span></strong> if it is continuous at each point in the interval.\</p>
+<p>If <span class="math notranslate nohighlight">\(f(x)\)</span> is not continuous at <span class="math notranslate nohighlight">\(x=a\)</span>, then <span class="math notranslate nohighlight">\(f(x)\)</span> is said to be <strong>discontinuous</strong> at <span class="math notranslate nohighlight">\(x=a\)</span>.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Properties of Continuous Functions</p>
+<p>If <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> are continuous at <span class="math notranslate nohighlight">\(x = a\)</span> then:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\([f(x)]^n\)</span> where <span class="math notranslate nohighlight">\(n\)</span> is a real number, is continuous at <span class="math notranslate nohighlight">\(x=a\)</span> whenever it is defined at that number.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) \pm g(x)\)</span> is continuous at <span class="math notranslate nohighlight">\(x = a\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) \times g(x)\)</span> is continuous at <span class="math notranslate nohighlight">\(x = a\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\dfrac{f(x)}{g(x)}\)</span> is continuous at <span class="math notranslate nohighlight">\(x = a\)</span> provided <span class="math notranslate nohighlight">\(g(a)\neq 0\)</span></p></li>
+</ul>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Continuity of Polynomial and Rational Functions</p>
+<p>Polynomial and rational functions are continuous on their domains.</p>
+<ul class="simple">
+<li><p>A polynomial function <span class="math notranslate nohighlight">\(y = p(x)\)</span> is continuous everywhere.</p></li>
+<li><p>A rational function <span class="math notranslate nohighlight">\(R(x) = \dfrac{p(x)}{q(x)}\)</span> is continuous everywhere <span class="math notranslate nohighlight">\(q(x) \neq 0\)</span>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-continuity-at-a-point">
+<h3>Example: Continuity at a point<a class="headerlink" href="#example-continuity-at-a-point" title="Permalink to this headline">¶</a></h3>
+<p>Is the function <span class="math notranslate nohighlight">\(f(x)\)</span> continuous at <span class="math notranslate nohighlight">\(x=1\)</span>?\</p>
 <div class="math notranslate nohighlight">
-\[\lim_{x\to a}\frac{f(x)}{g(x)}\]</div>
-<p>is called an <strong>indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span></strong>.</p>
-</div>
-<p>To evaluate an indeterminate form, simplify the ratio <span class="math notranslate nohighlight">\(f(x)/g(x)\)</span> by factoring or rationalizing the expression and then canceling out common factors.</p>
-<div class="section" id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
-<p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to 5} \dfrac{x-5}{x^2-25}.\)</span></p>
+\[\begin{split}
+f(x) =
+\begin{cases}
+-x^3+x^2-1 	&amp; \hbox{if } x\leq 1 \\
+3x^2-x-3	&amp; \hbox{if } x &gt; 1
+\end{cases}
+\end{split}\]</div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Evaluate the limit of numerator and denominator.</p>
-<p>We evaluate these limits by plugging in <span class="math notranslate nohighlight">\(x=5\)</span>:</p>
+<p class="admonition-title">Step 1: Determine if <span class="math notranslate nohighlight">\(f(x)\)</span> is defined at <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+<p>When <span class="math notranslate nohighlight">\(x=1\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> is defined by <span class="math notranslate nohighlight">\(f(x) = -x^3+x^2-1\)</span>.  Therefore,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f(1) 
+&amp;= -(1)^3+(1)^2-1 &amp; \hbox{Plug in $x=1$}\\
+&amp;= -1 
+\end{align*}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(f(x)\)</span> is defined at <span class="math notranslate nohighlight">\(x=1\)</span>, we now check to see if the limit exists.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Determine if the limit at <span class="math notranslate nohighlight">\(x=1\)</span> exists.</p>
+<p>For the left-hand limit, <span class="math notranslate nohighlight">\(x\to1^-\)</span> means <span class="math notranslate nohighlight">\(x&lt; 1\)</span>, and therefore <span class="math notranslate nohighlight">\(f(x) = -x^3+x^2-1\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{x\to 1^-} f(x) 
+&amp;= \lim_{x\to 1^-} -x^3+x^2-1\\
+&amp;= -1^3+1^2-1 &amp; \hbox{Plug in $x=1$}\\
+&amp;= -1 
+\end{align*}\]</div>
+<p>For the right-hand limit, <span class="math notranslate nohighlight">\(x\to1^+\)</span> means <span class="math notranslate nohighlight">\(x&gt; 1\)</span>, and therefore <span class="math notranslate nohighlight">\(f(x) = 3x^2-x-3\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{x\to 1^+} f(x) 
+&amp;= \lim_{x\to 1^+} 3x^2-x-3 \\
+&amp;= 3(1)^2-1-3 &amp; \hbox{Plug in $x=1$} \\
+&amp;= -1 
+\end{align*}\]</div>
+<p>Since both one-sided limits exist and are equal to <span class="math notranslate nohighlight">\(-1\)</span>, we conclude that</p>
 <div class="math notranslate nohighlight">
-\[\lim_{x\to 5} x-5 = 5 - 5 = 0 ~~~~ \hbox{and} ~~~~~ \lim_{x\to 5} x^2 - 25 = 5^2-25 = 0\]</div>
-<p>This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to do more work to evaluate it.</p>
+\[\lim_{x\to 1} f(x) = -1\]</div>
+<p>Since the limit exists, we now check to see if the value of the function and the limit are equal to each other.</p>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Factor numerator and/or denominator and simplify.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\frac{x-5}{x^2-25}
-&amp;= \frac{x-5}{(x-5)(x+5)} &amp;&amp; \hbox{Since $A^2 - B^2 = (A-B)(A+B)$}\\ \\
-&amp;= \frac{1}{x+5} &amp;&amp; \hbox{Assuming $x \neq 5$}
-\end{align*}\]</div>
-<p>When computing the limit as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(5\)</span>, we are initially assuming that <span class="math notranslate nohighlight">\(x\)</span> is not equal to <span class="math notranslate nohighlight">\(5\)</span>.  This means that we can replace <span class="math notranslate nohighlight">\(\dfrac{x-5}{x^2-25}\)</span> with <span class="math notranslate nohighlight">\(\dfrac{1}{x+5}\)</span> when computing the limit, as shown in the next step.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Evaluate the limit using the simplified function.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\lim_{x\to 5}\frac{x-5}{x^2-25}
-&amp;= \lim_{x\to 5} \frac{1}{x+5} \\ \\
-&amp;= \frac{1}{5+5}  &amp;&amp; \hbox{Plug in $x=5$ (Property 7)}\\ \\
-&amp;= \frac{1}{10} &amp;&amp; \hbox{Simplify}
-\end{align*}\]</div>
-</div>
-</div>
-<div class="section" id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
-<p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to 10} \dfrac{\sqrt{x-6}-2}{x-10}\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Evaluate the limit of numerator and denominator.</p>
-<p>Plug in <span class="math notranslate nohighlight">\(x=10\)</span>:</p>
+<p class="admonition-title">Step 3: Compare <span class="math notranslate nohighlight">\(f(1)\)</span> and <span class="math notranslate nohighlight">\(\lim\limits_{x \to 1} f(x)\)</span>.</p>
+<p>Both the function at <span class="math notranslate nohighlight">\(x=1\)</span> and the limit of the function as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(1\)</span> are equal to <span class="math notranslate nohighlight">\(-1\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[\lim_{x\to 10} \sqrt{x-6}-2 = \sqrt{10-6} - 2 = 0 ~~~~ \hbox{and} ~~~~~ \lim_{x\to 10} x-10 = 10-10 = 0\]</div>
-<p>This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to do more work to evaluate it.</p>
+\[f(1) = -1 = \lim_{x\to 1}f(x)\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Simplify the function.</p>
-<p>We simplify the function by multiplying and dividing by <span class="math notranslate nohighlight">\(\sqrt{x-6} + 2\)</span>, which is the conjugate of <span class="math notranslate nohighlight">\(\sqrt{x-6} - 2\)</span>.</p>
+<p class="admonition-title">Step 4: Conclusion</p>
+<p>Since <span class="math notranslate nohighlight">\(f(1)\)</span> is defined, <span class="math notranslate nohighlight">\(\lim\limits_{x \to 1} f(x)\)</span> exists, and <span class="math notranslate nohighlight">\(\lim\limits_{x \to 1}f(x) = f(1)\)</span>,
+we conclude that <span class="math notranslate nohighlight">\(f(x)\)</span> is continuous at <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+</div>
+</div>
+<div class="section" id="example-discontinuities">
+<h3>Example: Discontinuities<a class="headerlink" href="#example-discontinuities" title="Permalink to this headline">¶</a></h3>
+<p>Find the discontinuities of <span class="math notranslate nohighlight">\(f(x)\)</span> where</p>
+<div class="math notranslate nohighlight">
+\[f(x) = \frac{2x^4-2x^3-12x^2}{x^4-9x^2}.\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Factor the denominator.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{\sqrt{x-6}-2}{x-10} \cdot \frac{\sqrt{x-6} + 2}{\sqrt{x-6} + 2}
-&amp;= \frac{(\sqrt{x-6}-2)(\sqrt{x-6}+2)}{(x-10)(\sqrt{x-6}+2)}\\ \\
-&amp;= \frac{\sqrt{x-6}\sqrt{x-6} + 2\sqrt{x-6} - 2\sqrt{x-6} - 4}{(x-10)(\sqrt{x-6}+2)} &amp;&amp; \hbox{FOIL}\\ \\
-&amp;= \frac{x-6 + \cancel{2\sqrt{x-6}} - \cancel{2\sqrt{x-6}} - 4}{(x-10)(\sqrt{x-6}+2)}&amp;&amp; \hbox{Simplify}\\ \\
-&amp;= \frac{x- 6 - 4}{(x-10)(\sqrt{x-6}+2)}\\ \\
-&amp;= \frac{x- 10}{(x-10)(\sqrt{x-6}+2)}\\ \\
-&amp;= \frac{1}{\sqrt{x-6}+2} &amp;&amp; \hbox{If $x\neq 10$}
+x^4-9x^2
+&amp;= x^2(x^2-9) &amp;&amp; \hbox{Pull out common factor of $x^2$}\\
+&amp;= x^2(x-3)(x+3) &amp;&amp; \hbox{Since $A^2 - B^2 = (A-B)(A+B)$}
 \end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Evaluate the limit using the simplified function.</p>
+<p class="admonition-title">Step 2: Set each factor of the denominator equal to zero.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\lim_{x\to 10} \frac{\sqrt{x-6}-2}{x-10} 
-&amp;= \lim_{x\to 10} \frac{1}{\sqrt{x-6}+2}\\ \\
-&amp;= \frac{1}{\sqrt{10-6}+2} &amp;&amp; \hbox{Plug in $x=10$}\\ \\
-&amp;= \frac{1}{\sqrt{4}+2} &amp;&amp; \hbox{Simplify}\\ \\
-&amp;= \frac{1}{4}
+x^2 &amp;= 0 ~~~~\hbox{ when $x=0$}\\
+x-3 &amp;= 0 ~~~~\hbox{ when $x = 3$}\\
+x+3 &amp;= 0 ~~~~\hbox{ when $x = -3$}
 \end{align*}\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(f(x)\)</span> has discontinuities at <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(x=3\)</span>, and <span class="math notranslate nohighlight">\(x=-3\)</span>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Remember, rational functions have discontinuities whenever the <em>denominator</em> is equal to zero.  There is no need to factor and/or simplify the <em>numerator</em> when finding discontinuities of a rational function.</p>
+</div>
+</div>
+<div class="section" id="example-choosing-a-parameter-to-make-a-function-continuous">
+<h3>Example: Choosing a parameter to make a function continuous<a class="headerlink" href="#example-choosing-a-parameter-to-make-a-function-continuous" title="Permalink to this headline">¶</a></h3>
+<p>Find the value of <span class="math notranslate nohighlight">\(k\)</span> that makes <span class="math notranslate nohighlight">\(f(x)\)</span> continuous at <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f(x) = 
+\begin{cases}
+x+k &amp; \hbox{ if $x &lt; 2$}\\
+x^2 + kx - 7 &amp; \hbox{ if $x \geq 2$}
+\end{cases}
+\end{split}\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Evaluate <span class="math notranslate nohighlight">\(\displaystyle{\lim_{x \to 2}}  f(x)\)</span> from left and right.</p>
+<p><strong>Left</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{x \to 2^-} f(x) 
+&amp;= \lim_{x \to 2^-} x+k \\
+&amp;=2+k 
+\end{align*}\]</div>
+<p><strong>Right</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{x \to 2^+} f(x) 
+&amp;= \lim_{x \to 2^+} x^2 + kx -7 \\
+&amp;=2^2+k(2)-7 \\
+&amp;=2k-3 
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Set the left and right limits equal to each other.</p>
+<div class="math notranslate nohighlight">
+\[2+k = 2k-3\]</div>
+<p>Solve for <span class="math notranslate nohighlight">\(k\)</span> by adding 3 to both sides and subtracting <span class="math notranslate nohighlight">\(k\)</span> from both sides.  Thus <span class="math notranslate nohighlight">\(k=5\)</span> makes the function <span class="math notranslate nohighlight">\(f(x)\)</span> continuous at <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+</div>
 </div>
 </div>
 </div>
@@ -375,8 +474,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="110_02_04_lim_algebra.html" title="previous page">Examples: Computing Limits Algebraically</a>
-    <a class='right-next' id="next-link" href="110_02_06_lim_infinity.html" title="next page">Limits at Infinity</a>
+    <a class='left-prev' id="prev-link" href="110_02_06_lim_infinity.html" title="previous page">Limits at Infinity</a>
 
         </div>
         

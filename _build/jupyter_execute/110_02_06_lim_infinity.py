@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Limits at Infinity of a Function
+# # Limits at Infinity
 # 
 # ```{admonition} Definition
 # :class: info

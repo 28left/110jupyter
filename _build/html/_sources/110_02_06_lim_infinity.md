@@ -11,7 +11,7 @@ kernelspec:
   language: python
   name: python394jvsc74a57bd0085761d8a84a55f3b91b6696b289e6480df59aded311489218ab7e58f5e20cd3
 ---
-# Limits at Infinity of a Function
+# Limits at Infinity
 
 ```{admonition} Definition
 :class: info
