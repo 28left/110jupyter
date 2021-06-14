@@ -190,6 +190,57 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#difference-of-squares">
+   Difference of Squares
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-4">
+     Example 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-5">
+     Example 5
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ac-grouping-method">
+   AC Grouping Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-6">
+     Example 6
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-7">
+     Example 7
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-special-case-of-the-ac-grouping-method">
+   A Special Case of the AC Grouping Method
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-8">
+     Example 8
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-9">
+     Example 9
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -285,6 +336,317 @@
 &amp;= x^3(2x^3+1)^{-1/2}(8x^3+4 + 3x^3) &amp;&amp; \hbox{Simplify expression inside $[ ~ ]$}\\ \\
 &amp;= x^3(2x^3+1)^{-1/2}(11x^3+4) &amp;&amp; \hbox{Combine like terms}\\ \\
 &amp;= \frac{x^3(11x^3+4)}{\sqrt{2x^3+1}}
+\end{align*}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="difference-of-squares">
+<h2>Difference of Squares<a class="headerlink" href="#difference-of-squares" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Applying FOIL to product <span class="math notranslate nohighlight">\((A+B)(A-B)\)</span>.</p>
+<p>When applying the FOIL technique to a product of the form <span class="math notranslate nohighlight">\((A+B)(A-B)\)</span>, we get the following result.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(A+B)(A-B)
+&amp;= A\cdot A - A\cdot B + B\cdot A - B\cdot B \\
+&amp;= A^2 \cancel{- AB} \cancel{+ AB} - B^2\\
+&amp;= A^2 - B^2
+\end{align*}\]</div>
+<p>We refer to <span class="math notranslate nohighlight">\(A^2-B^2\)</span> as a difference of squares and can reinterpret the above calculation as a way to factor any difference of squares.</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{A^2-B^2 = (A+B)(A-B)}
+\]</div>
+</div>
+<div class="section" id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h3>
+<p>Factor <span class="math notranslate nohighlight">\(x^2-25\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Rewrite the expression as a difference of squares.</p>
+<div class="math notranslate nohighlight">
+\[x^2 - 25 = x^2 - 5^2\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Apply the difference of squares formula with <span class="math notranslate nohighlight">\(A=x\)</span> and <span class="math notranslate nohighlight">\(B=5\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x^2 - 25
+&amp;= x^2 - 5^2 &amp;&amp; \hbox{Step 1} \\
+&amp;= (x+5)(x-5) &amp;&amp; \hbox{Difference of squares}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="example-5">
+<h3>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h3>
+<p>Factor <span class="math notranslate nohighlight">\(9x^3-4x^5\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine the factors common to both terms.</p>
+<ul class="simple">
+<li><p>Constant factors: <span class="math notranslate nohighlight">\(9\)</span> and <span class="math notranslate nohighlight">\(-4\)</span> do not have any factors in common.</p></li>
+<li><p>Powers of <span class="math notranslate nohighlight">\(x\)</span>: the smallest power of <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(3\)</span>.</p></li>
+</ul>
+<p>Therefore, the factor common to both terms is <span class="math notranslate nohighlight">\(x^3\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Pull out the common factor of <span class="math notranslate nohighlight">\(x^3\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+9x^3-4x^5 
+&amp;= x^3(9) - x^3(4x^2)\\
+&amp;= x^3(9-4x^2) &amp;&amp; \hbox{Pull out common factor}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Apply difference of squares with <span class="math notranslate nohighlight">\(A=3\)</span> and <span class="math notranslate nohighlight">\(B=2x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+9x^3-4x^5
+&amp;= x^3(9-4x^2) &amp;&amp; \hbox{Step 2}\\
+&amp;=  x^3[3^2-(2x)^2] &amp;&amp; \hbox{Step 3} \\
+&amp;= x^3(3+2x)(3-2x) &amp;&amp; \hbox{Difference of squares}
+\end{align*}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="ac-grouping-method">
+<h2>AC Grouping Method<a class="headerlink" href="#ac-grouping-method" title="Permalink to this headline">¶</a></h2>
+<p>The AC grouping method is a technique for factoring certain quadratic expressions of the form</p>
+<div class="math notranslate nohighlight">
+\[ax^2 + bx + c.\]</div>
+<p>The process is broken down into the following five steps.</p>
+<div class="info admonition">
+<p class="admonition-title">Steps of the AC Grouping Method.</p>
+<ol class="simple">
+<li><p>Find two integers, <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(s\)</span>, that multiply to <span class="math notranslate nohighlight">\(a\times c\)</span> and sum to <span class="math notranslate nohighlight">\(b\)</span>.</p></li>
+<li><p>Replace <span class="math notranslate nohighlight">\(bx\)</span> with <span class="math notranslate nohighlight">\(rx\)</span> + <span class="math notranslate nohighlight">\(sx\)</span>.</p></li>
+<li><p>Group terms with common factors.</p></li>
+<li><p>Pull out common factors from each group.</p></li>
+<li><p>Pull out common factor.</p></li>
+</ol>
+</div>
+<div class="section" id="example-6">
+<h3>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h3>
+<p>Factor <span class="math notranslate nohighlight">\(6x^2 + 7x - 5\)</span> using the AC grouping method.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Find two integers that multiply to <span class="math notranslate nohighlight">\(6(-5) = -30\)</span> and sum to <span class="math notranslate nohighlight">\(7\)</span>.</p>
+<p>Since the product is negative, the two numbers must have opposite signs.  And since the sum is positive, the larger number in absolute value, must be positive.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Product equals <span class="math notranslate nohighlight">\(-30\)</span></p></th>
+<th class="head"><p>Sum equals <span class="math notranslate nohighlight">\(7\)</span>?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(-1 \times 30 = -30\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-1 + 30 = 29\)</span>     <em>NO</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(-2 \times 15 =-30\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-2 + 15 = 13\)</span>     <em>NO</em></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(-3 \times 10 =-30\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-3 + 10 = 7\)</span>     <strong>YES</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Since <span class="math notranslate nohighlight">\(7 = -3+10\)</span>, replace the linear term, <span class="math notranslate nohighlight">\(7x\)</span>, with  <span class="math notranslate nohighlight">\(-3x+10x\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[6x^2 - 3x + 10x - 5\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Group terms with common factors.</p>
+<div class="math notranslate nohighlight">
+\[(6x^2 - 3x) + (10x - 5)\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Pull out common factors from each group.</p>
+<div class="math notranslate nohighlight">
+\[3x(2x-1) +  5(2x-1)\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Pull out common factor of <span class="math notranslate nohighlight">\(2x-1\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[(2x-1)(3x+5)\]</div>
+<p>Therefore,</p>
+<div class="math notranslate nohighlight">
+\[6x^2 + 7x - 5 = (2x-1)(3x+5)\]</div>
+</div>
+<div class="warning dropdown admonition">
+<p class="admonition-title">Check Your Work.</p>
+<p>After factoring a polynomial, it’s always a good idea to check your work by expanding the product using the distributive property of multiplication and/or the FOIL method:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(2x-1)(3x+5)
+&amp;= (2x)(3x) + (2x)(5) + (-1)(3x) + (-1)(5) &amp;&amp; \hbox{FOIL}\\
+&amp;= 6x^2 + 10x - 3x - 5 &amp;&amp; \hbox{Simplify}\\
+&amp;= 6x^2 + 7x -5  &amp;&amp; \hbox{Combine like terms}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="example-7">
+<h3>Example 7<a class="headerlink" href="#example-7" title="Permalink to this headline">¶</a></h3>
+<p>Factor <span class="math notranslate nohighlight">\(x^2 - 13x + 36\)</span> using the AC grouping method.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Find two integers that multiply to <span class="math notranslate nohighlight">\(1\times 36 = 36\)</span> and sum to <span class="math notranslate nohighlight">\(-13\)</span>.</p>
+<p>Since the product is positive, the two numbers must have the same sign.  And since the sum is negative, both numbers must be negative.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Product equals <span class="math notranslate nohighlight">\(36\)</span></p></th>
+<th class="head"><p>Sum equals <span class="math notranslate nohighlight">\(-13\)</span>?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(-1 \times -36\)</span></p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(-2 \times -18\)</span></p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(-3 \times -12\)</span></p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(-4 \times -9\)</span></p></td>
+<td><p><strong>YES</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Since <span class="math notranslate nohighlight">\(-13 = -4-9\)</span>, replace the linear term, <span class="math notranslate nohighlight">\(-13x\)</span>, with  <span class="math notranslate nohighlight">\(-4x-9x\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[x^2 - 4x - 9x + 36\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Group terms with common factors.</p>
+<div class="math notranslate nohighlight">
+\[(x^2 - 4x) + (-9x + 36)\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Pull out common factors from each group.</p>
+<div class="math notranslate nohighlight">
+\[x(x-4) +  (-9)(x-4)\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Pull out common factor of <span class="math notranslate nohighlight">\(x-4\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[(x-4)(x-9)\]</div>
+<p>Therefore,</p>
+<div class="math notranslate nohighlight">
+\[x^2 - 13x + 36 = (x-4)(x-9)\]</div>
+</div>
+<div class="warning dropdown admonition">
+<p class="admonition-title">Check Your Work.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(x-4)(x-9)
+&amp;= x^2 -9x -4x + 36 &amp;&amp; \hbox{FOIL}\\
+&amp;= x^2 - 13x + 36 &amp;&amp; \hbox{Combine like terms}
+\end{align*}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="a-special-case-of-the-ac-grouping-method">
+<h2>A Special Case of the AC Grouping Method<a class="headerlink" href="#a-special-case-of-the-ac-grouping-method" title="Permalink to this headline">¶</a></h2>
+<div class="error admonition">
+<p class="admonition-title">Important Observation</p>
+<p>If the coefficient of <span class="math notranslate nohighlight">\(x^2\)</span> is one (i.e., <span class="math notranslate nohighlight">\(a=1\)</span> in <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span>), then Step 1 of the <span class="math notranslate nohighlight">\(AC\)</span> grouping method is to find two numbers that multiply to <span class="math notranslate nohighlight">\(c\)</span> and sum to <span class="math notranslate nohighlight">\(b\)</span>. Once these numbers have been found, then the factorization can be written as</p>
+<div class="math notranslate nohighlight">
+\[x^2 + bx + c = (x+r)(x+s)\]</div>
+<p>where <span class="math notranslate nohighlight">\(r+s = b\)</span> and <span class="math notranslate nohighlight">\(rs = c\)</span>.</p>
+</div>
+<div class="section" id="example-8">
+<h3>Example 8<a class="headerlink" href="#example-8" title="Permalink to this headline">¶</a></h3>
+<p>Factor <span class="math notranslate nohighlight">\(x^2 - 4x - 12\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Find two integers that multiply to <span class="math notranslate nohighlight">\(-12\)</span> and sum to <span class="math notranslate nohighlight">\(-4\)</span>.</p>
+<p>Since the product is negative, the two numbers must have opposite signs.  And since the sum is negative, the larger number in absolute value, must be negative.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Product equals <span class="math notranslate nohighlight">\(-12\)</span></p></th>
+<th class="head"><p>Sum equals <span class="math notranslate nohighlight">\(-4\)</span>?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1 \times -12\)</span></p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2 \times -6\)</span></p></td>
+<td><p><strong>YES</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Apply special case of AC Grouping.</p>
+<p>Since the coefficient of <span class="math notranslate nohighlight">\(x^2\)</span> is one, then the factorization is given by</p>
+<div class="math notranslate nohighlight">
+\[x^2 - 4x - 12 = (x+2)(x-6).\]</div>
+</div>
+<div class="warning dropdown admonition">
+<p class="admonition-title">Check Your Work.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(x+2)(x-6)
+&amp;= x^2 -6x +2x - 12 &amp;&amp; \hbox{FOIL}\\
+&amp;= x^2 - 4x - 12 &amp;&amp; \hbox{Combine like terms}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="example-9">
+<h3>Example 9<a class="headerlink" href="#example-9" title="Permalink to this headline">¶</a></h3>
+<p>Factor <span class="math notranslate nohighlight">\(7x^4 + 35x^3 + 42x^2\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine the factors common to both terms.</p>
+<ul class="simple">
+<li><p>Constant factors: <span class="math notranslate nohighlight">\(7\)</span>, <span class="math notranslate nohighlight">\(35\)</span>, and <span class="math notranslate nohighlight">\(42\)</span> are all multiples of <span class="math notranslate nohighlight">\(7\)</span>.</p></li>
+<li><p>Powers of <span class="math notranslate nohighlight">\(x\)</span>: the smallest power of <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(2\)</span>.</p></li>
+</ul>
+<p>Therefore, the factor common to all three terms is <span class="math notranslate nohighlight">\(7x^2\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Pull out the common factor of <span class="math notranslate nohighlight">\(7x^2\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+7x^4 + 35x^3 + 42x^2
+&amp;= 7x^2(x^2) + 7x^2(5x) + 7x^2(6) \\ 
+&amp;= 7x^2(x^2 + 5x + 6) &amp;&amp; \hbox{Pull out common factor}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Factor <span class="math notranslate nohighlight">\(x^2 + 5x + 6\)</span> by finding two integers that multiply to <span class="math notranslate nohighlight">\(6\)</span> and sum to <span class="math notranslate nohighlight">\(5\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Product equals <span class="math notranslate nohighlight">\(6\)</span></p></th>
+<th class="head"><p>Sum equals <span class="math notranslate nohighlight">\(5\)</span>?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(1 \times 6\)</span></p></td>
+<td><p>NO</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(2 \times 3\)</span></p></td>
+<td><p><strong>YES</strong></p></td>
+</tr>
+</tbody>
+</table>
+<p>Therefore,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+7x^4 + 35x^3 + 42x^2
+&amp;= 7x^2(x^2 + 5x + 6) &amp;&amp; \hbox{Step 2} \\
+&amp;= 7x^2(x+2)(x+3) &amp;&amp; \hbox{AC grouping}
+\end{align*}\]</div>
+</div>
+<div class="warning dropdown admonition">
+<p class="admonition-title">Check Your Work.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+7x^2(x+2)(x+3)
+&amp;= 7x^2(x^2 + 3x + 2x + 6) &amp;&amp; \hbox{FOIL}\\
+&amp;= 7x^2(x^2 + 5x + 6) &amp;&amp; \hbox{Combine like terms}\\ 
+&amp;= 7x^2(x^2) + 7x^2(5x) + 7x^2(6) &amp;&amp; \hbox{Distribute $7x^2$}\\
+&amp;= 7x^4 + 35x^3 + 42x^2 &amp;&amp; \hbox{Simplify}
 \end{align*}\]</div>
 </div>
 </div>
