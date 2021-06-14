@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factoring Techniques &#8212; Course Packet Math 110</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-2 bd-sidebar site-navigation show single-page" id="site-navigation">
+    
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="_sources/110_01_02_factoring.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/110_01_02_factoring.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/28left/110jupyter"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_01_02_factoring.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_01_02_factoring.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pull-out-common-factors">
+   Pull out Common Factors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1">
+     Example 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2">
+     Example 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-3">
+     Example 3
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="factoring-techniques">
+<h1>Factoring Techniques<a class="headerlink" href="#factoring-techniques" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pull-out-common-factors">
+<h2>Pull out Common Factors<a class="headerlink" href="#pull-out-common-factors" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Common factors</p>
+<p>The act of pulling out common factors from a sum can be thought of as applying the distributive property of multiplication in reverse.</p>
+<div class="math notranslate nohighlight">
+\[AB + AC = A(B+C)\]</div>
+<p>e.g., <span class="math notranslate nohighlight">\(21 + 14 = 7\cdot 3 + 7\cdot 2 = 7(3+2)\)</span></p>
+</div>
+<div class="section" id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
+<p>Factor <span class="math notranslate nohighlight">\(10x^5 + 15x^4\)</span> by pulling out common factors.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine the factors common to both terms.</p>
+<ul class="simple">
+<li><p>Constant factors: <span class="math notranslate nohighlight">\(10\)</span> and <span class="math notranslate nohighlight">\(15\)</span> are both multiples of <span class="math notranslate nohighlight">\(5\)</span>.</p></li>
+<li><p>Powers of <span class="math notranslate nohighlight">\(x\)</span>: the smallest power of <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(4\)</span>.</p></li>
+</ul>
+<p>Therefore, the factor common to both terms is <span class="math notranslate nohighlight">\(5x^4\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Pull out the common factor of <span class="math notranslate nohighlight">\(5x^4\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+10x^5 + 15x^4 
+&amp;= 5x^4\cdot 2x  + 5x^4\cdot3  &amp;&amp; \hbox{Write each term as a multiple of $5x^4$} \\
+&amp;= 5x^4(2x + 3) &amp;&amp; \hbox{Pull out common factor}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
+<p>Factor</p>
+<div class="math notranslate nohighlight">
+\[4x^3(2x^3+1)^5 + 30x^6(2x^3+1)^4\]</div>
+<p>by first pulling out common factors.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine the factors common to both terms.</p>
+<ul class="simple">
+<li><p>Constant factors: <span class="math notranslate nohighlight">\(4\)</span> and <span class="math notranslate nohighlight">\(30\)</span> are both multiples of <span class="math notranslate nohighlight">\(2\)</span>.</p></li>
+<li><p>Powers of <span class="math notranslate nohighlight">\(x\)</span>: the smallest power of <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(3\)</span>.</p></li>
+<li><p>Powers of <span class="math notranslate nohighlight">\(2x^3+1\)</span>: the smallest power of <span class="math notranslate nohighlight">\(2x^3+1\)</span> is <span class="math notranslate nohighlight">\(4\)</span>.</p></li>
+</ul>
+<p>Therefore, the factor common to both terms is <span class="math notranslate nohighlight">\(2x^3(2x^3+1)^4\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Pull out the common factor of <span class="math notranslate nohighlight">\(2x^3(2x^3+1)^4\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+&amp; 4x^3(2x^3+1)^5 + 30x^6(2x^3+1)^4 \\
+&amp;= 2x^3(2x^3+1)^4\cdot 2(2x^3+1) + 2x^3(2x^3+1)^4 \cdot 15x^3 \\%&amp;&amp; \hbox{Write each term as a multiple of $2x^3(2x^3+1)^4$}\\
+&amp;= 2x^3(2x^3+1)^4[2(2x^3+1) + 15x^3] &amp;&amp; \hbox{Pull out common factor}\\
+&amp;= 2x^3(2x^3+1)^4(4x^3+2 + 15x^3) &amp;&amp; \hbox{Simplify expression inside $[ ~ ]$}\\
+&amp;= 2x^3(2x^3+1)^4(19x^3+2)
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
+<p>Factor</p>
+<div class="math notranslate nohighlight">
+\[4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2}\]</div>
+<p>by first pulling out common factors.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine the factors common to both terms.</p>
+<ul class="simple">
+<li><p>Constant factors: <span class="math notranslate nohighlight">\(4\)</span> and <span class="math notranslate nohighlight">\(3\)</span> do not have any factors in common.</p></li>
+<li><p>Powers of <span class="math notranslate nohighlight">\(x\)</span>: the smallest power of <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(3\)</span>.</p></li>
+<li><p>Powers of <span class="math notranslate nohighlight">\(2x^3+1\)</span>: the smallest power of <span class="math notranslate nohighlight">\(2x^3+1\)</span> is <span class="math notranslate nohighlight">\(-1/2\)</span>.</p></li>
+</ul>
+<p>Therefore, the factor common to both terms is <span class="math notranslate nohighlight">\(x^3(2x^3+1)^{-1/2}\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Pull out the common factor of <span class="math notranslate nohighlight">\(x^3(2x^3+1)^{-1/2}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+&amp; 4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2} \\ \\ 
+&amp;= x^3(2x^3+1)^{-1/2}\cdot 4(2x^3+1) + x^3(2x^3+1)^{-1/2} \cdot 3x^3 \\ \\
+&amp;= x^3(2x^3+1)^{-1/2}[4(2x^3+1) + 3x^3] &amp;&amp; \hbox{Pull out common factor}\\ \\
+&amp;= x^3(2x^3+1)^{-1/2}(8x^3+4 + 3x^3) &amp;&amp; \hbox{Simplify expression inside $[ ~ ]$}\\ \\
+&amp;= x^3(2x^3+1)^{-1/2}(11x^3+4) &amp;&amp; \hbox{Combine like terms}\\ \\
+&amp;= \frac{x^3(11x^3+4)}{\sqrt{2x^3+1}}
+\end{align*}\]</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "28left/110jupyter",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python394jvsc74a57bd0085761d8a84a55f3b91b6696b289e6480df59aded311489218ab7e58f5e20cd3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python394jvsc74a57bd0085761d8a84a55f3b91b6696b289e6480df59aded311489218ab7e58f5e20cd3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Penn State Learning<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
