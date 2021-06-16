@@ -27,11 +27,11 @@ To find all values of $x$ that satisfy an equation (e.g., $f(x) = g(x)$), comple
 Find all values of $x$ such that $x^2 - 4x - 12 = 0$.
 
 
-
+(01_03_example1)=
 ### Example 1
 Factor $x^2 - 4x - 12$.
 
-*Recall from __Example 15__ that* 
+*Recall from [Factoring, Example 8](01_02_example8) that* 
 
 $$x^2 - 4x - 12 = (x+2)(x-6)$$
 

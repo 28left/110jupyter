@@ -330,6 +330,7 @@ $$x^2 + bx + c = (x+r)(x+s)$$
 where $r+s = b$ and $rs = c$.
 ```
 
+(01_02_example8)=
 ### Example 8
 Factor $x^2 - 4x - 12$.
 
