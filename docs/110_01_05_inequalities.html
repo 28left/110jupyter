@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Examples: Computing Limits Algebraically &#8212; Course Packet Math 110</title>
+    <title>Solving Inequalities &#8212; Course Packet Math 110</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Indeterminate Forms" href="110_02_05_lim_indeterminate.html" />
-    <link rel="prev" title="Examples: Computing Limits from Graphs" href="110_02_03_lim_graphs.html" />
+    <link rel="next" title="The Domain of a Function" href="110_01_06_domain.html" />
+    <link rel="prev" title="Graphing" href="110_01_04_graphing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -93,16 +93,16 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="110_01_precalc.html">
    Precalculus Review
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="110_01_01_alg_simplification.html">
      Algebraic Simplification Techniques
@@ -123,8 +123,8 @@
      Graphing
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="110_01_05_inequalities.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Solving Inequalities
     </a>
    </li>
@@ -135,16 +135,16 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="110_02_limits.html">
    Limits and Continuity
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="110_02_01_limits_def.html">
      Limit of a Function
@@ -160,8 +160,8 @@
      Examples: Computing Limits from Graphs
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="110_02_04_lim_algebra.html">
      Examples: Computing Limits Algebraically
     </a>
    </li>
@@ -222,11 +222,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="_sources/110_02_04_lim_algebra.ipynb"><button type="button"
+            href="_sources/110_01_05_inequalities.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/110_02_04_lim_algebra.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/110_01_05_inequalities.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -246,7 +246,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_02_04_lim_algebra.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_01_05_inequalities.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -267,7 +267,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_02_04_lim_algebra.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_01_05_inequalities.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -293,24 +293,21 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-constant-function">
-   Example: Constant Function
+  <a class="reference internal nav-link" href="#how-to-solve-an-inequality">
+   How to Solve an Inequality
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-rational-function-1">
-   Example: Rational Function (1)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-rational-function-2">
-   Example: Rational Function (2)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-piecewise-polynomial-function">
-   Example: Piecewise Polynomial Function
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1">
+     Example 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2">
+     Example 2
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -323,89 +320,89 @@
         
               <div>
                 
-  <div class="section" id="examples-computing-limits-algebraically">
-<h1>Examples: Computing Limits Algebraically<a class="headerlink" href="#examples-computing-limits-algebraically" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="example-constant-function">
-<h2>Example: Constant Function<a class="headerlink" href="#example-constant-function" title="Permalink to this headline">¶</a></h2>
-<p>If <span class="math notranslate nohighlight">\(f(x) = 2\)</span>, find <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^{-}}f(x)\)</span>.</p>
+  <div class="section" id="solving-inequalities">
+<h1>Solving Inequalities<a class="headerlink" href="#solving-inequalities" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="how-to-solve-an-inequality">
+<h2>How to Solve an Inequality<a class="headerlink" href="#how-to-solve-an-inequality" title="Permalink to this headline">¶</a></h2>
+<p>In order to find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> or <span class="math notranslate nohighlight">\(f(x)&lt;0\)</span>, use the following procedure.</p>
+<div class="info admonition">
+<p class="admonition-title">Solving an inequality</p>
+<ul class="simple">
+<li><p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f(x) = 0\)</span> or <span class="math notranslate nohighlight">\(f(x)\)</span> is not defined.</p></li>
+<li><p>Use the values found to break up the number line into intervals and select one number from each interval to plug into <span class="math notranslate nohighlight">\(f(x)\)</span> to determine if <span class="math notranslate nohighlight">\(f(x)\)</span> is positive or negative on that interval.</p></li>
+</ul>
+<p><strong>OR</strong></p>
+<ul class="simple">
+<li><p>Use the values found to help draw the graph of <span class="math notranslate nohighlight">\(f(x)\)</span>.  Portions of the graph that are above the <span class="math notranslate nohighlight">\(x\)</span>-axis correspond to values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> while portions of the graph that are below the <span class="math notranslate nohighlight">\(x\)</span>-axis correspond to values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span>.</p></li>
+</ul>
+</div>
+<div class="section" id="example-1">
+<span id="example1"></span><h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
+<p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 + 2x - 3 &gt; 0\)</span>.</p>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p><span class="math notranslate nohighlight">\(f\)</span> is a constant function, hence a polynomial. Therefore, by Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1} f(x) = f(1) = 2\)</span>. Since the limit exists, the one-sided limits exist, too and coincide with the limit. Thus, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^{-}}f(x) = 2\)</span>.</p>
-</div>
-</div>
-<div class="section" id="example-rational-function-1">
-<h2>Example: Rational Function (1)<a class="headerlink" href="#example-rational-function-1" title="Permalink to this headline">¶</a></h2>
-<p>Evaluate</p>
+<p class="admonition-title">Step 1: Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 + 2x - 3 = 0\)</span>.</p>
+<p>Use the AC method to factor <span class="math notranslate nohighlight">\(x^2 + 2x - 3\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[\lim\limits_{x\to -1} \dfrac{x^3 +4x^2-x-3}{2x^2+1}.\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p>The function</p>
-<div class="math notranslate nohighlight">
-\[ g(x) = \dfrac{x^3 +4x^2-x-3}{2x^2+1}\]</div>
-<p>is a rational function, and since <span class="math notranslate nohighlight">\(2(-1)^2 + 1 = 3 \neq 0\)</span>, it follows that <span class="math notranslate nohighlight">\(-1\)</span> is in the domain of <span class="math notranslate nohighlight">\(g\)</span>.
-Again by Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to -1} g(x)\)</span> exists and equals</p>
-<div class="math notranslate nohighlight">
-\[g(-1) = \frac{(-1)^3 + 4(-1)^2 - (-1) -3}{2(-1)^2+1} = \frac{1}{3}.\]</div>
-</div>
-</div>
-<div class="section" id="example-rational-function-2">
-<h2>Example: Rational Function (2)<a class="headerlink" href="#example-rational-function-2" title="Permalink to this headline">¶</a></h2>
-<p>Evaluate</p>
-<div class="math notranslate nohighlight">
-\[\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}.\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p>For <span class="math notranslate nohighlight">\(x=2\)</span>, the denominator of the expression above is zero, so we cannot apply Property 7 of <a class="reference internal" href="110_02_02_prop_lim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a> in this case. We observe that, as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(2\)</span>, the values of the denominator get closer to <span class="math notranslate nohighlight">\(0\)</span>, while the values of the numerator approach <span class="math notranslate nohighlight">\(11\)</span>.</p>
-<p>Moreover, if we approach <span class="math notranslate nohighlight">\(2\)</span> from the left, the values of <span class="math notranslate nohighlight">\((x^2 +4x-1)/(x-2)\)</span> will be negative and approach <span class="math notranslate nohighlight">\(-\infty\)</span>, while if we approach from the right, the values are positive and approach <span class="math notranslate nohighlight">\(+\infty\)</span>.</p>
-<p>Therefore, neither the left-hand limit nor the right-limit exists, and hence <span class="math notranslate nohighlight">\(\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}\)</span> does not exist either.</p>
-</div>
-</div>
-<div class="section" id="example-piecewise-polynomial-function">
-<h2>Example: Piecewise Polynomial Function<a class="headerlink" href="#example-piecewise-polynomial-function" title="Permalink to this headline">¶</a></h2>
-<p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 6} h(x)\)</span>, where</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{equation*}
-h(x)=
-\begin{cases} 
-x^2-4x-12 &amp; \hbox{if } x&lt;6 \\
-8 &amp; \hbox{if } x=6 \\
-x^2-5x-6 &amp; \hbox{if } x&gt;6 \\  
-\end{cases}
-\end{equation*}\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Find the limit from the left.</p>
-<p>In this case, since we are approaching 6 from the left, we can assume that <span class="math notranslate nohighlight">\(x&lt;6\)</span>, and therefore <span class="math notranslate nohighlight">\(h(x) = x^2-4x-12\)</span>.</p>
+\[ x^2 + 2x - 3 = (x+3)(x-1)  \]</div>
+<p>since <span class="math notranslate nohighlight">\(3\)</span> and <span class="math notranslate nohighlight">\(-1\)</span> are two numbers that multiply to <span class="math notranslate nohighlight">\(-3\)</span> and sum to <span class="math notranslate nohighlight">\(2\)</span>.  Now set each factor equal to zero and solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\lim_{x\to 6^{-}} h(x) 
-&amp;= \lim_{x\to 6^-} x^2-4x-12\\ \\
-&amp;= 6^2-4(6)-12 &amp;&amp; \text{Plug in $x=6$ (Property 7)}\\ \\
-&amp;= 36-24-12 &amp;&amp; \text{Simplify}\\ \\
-&amp;= 0
+x + 3 = 0 ~~~~&amp;\Rightarrow~~~~ x = -3 \\
+x - 1 = 0 ~~~~&amp;\Rightarrow~~~~ x = 1 
 \end{align*}\]</div>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find the limit from the right.</p>
-<p>In this case, since we are approaching 6 from the right, we can assume that <span class="math notranslate nohighlight">\(x&gt;6\)</span>, and therefore <span class="math notranslate nohighlight">\(h(x) = x^2-5x-6\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\lim_{x\to 6^{+}} h(x) 
-&amp;= \lim_{x\to 6^+} x^2-5x-6\\ \\
-&amp;= 6^2-5(6)-6  &amp;&amp; \text{Plug in $x=6$ (Property 7)}\\ \\
-&amp;= 36-30-6 &amp;&amp; \text{Simplify}\\ \\
-&amp;= 0
-\end{align*}\]</div>
+<p>Use one of the following two methods to solve the inequality.</p>
+<div class="tip admonition">
+<p class="admonition-title">Method 1</p>
+<ul class="simple">
+<li><p>Use the values of <span class="math notranslate nohighlight">\(x\)</span> found in <strong>Step 1</strong> to break up the number line and plug in one value from each interval into <span class="math notranslate nohighlight">\(f(x) = (x+3)(x-1)\)</span>. \</p></li>
+<li><p>Since <span class="math notranslate nohighlight">\(f(-3) = 0\)</span> and <span class="math notranslate nohighlight">\(f(1) = 0\)</span>, pick one value less <span class="math notranslate nohighlight">\(-3\)</span>, one value between <span class="math notranslate nohighlight">\(-3\)</span> and <span class="math notranslate nohighlight">\(1\)</span>, and one value greater than <span class="math notranslate nohighlight">\(1\)</span>.  For example, since <span class="math notranslate nohighlight">\(f(-4) = 5 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f(x) &gt;0 \)</span> for all <span class="math notranslate nohighlight">\(x &lt; -3\)</span>.  And since <span class="math notranslate nohighlight">\(f(2) = 5 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> for all <span class="math notranslate nohighlight">\(x &gt; 1\)</span>.  However, <span class="math notranslate nohighlight">\(f(0) = -3 &lt; 0\)</span>, and therefore <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>.</p></li>
+</ul>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Check to see if the two limits are equal.</p>
-<p>Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to 6^-} h(x) = \lim_{x\to 6^+} h(x) = 0\)</span>, we conclude that the limit exists and</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to 6} h(x) = 0.\]</div>
+<p>The calculations of method 1 are summarized in the following diagram.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/110_01_05_inequalities_3_0.svg" src="_images/110_01_05_inequalities_3_0.svg" /></div>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Keep in mind that just because <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 6} h(x) \neq h(6) = 8\)</span>, this does not mean that the limit does not exist.</p>
+<p>Therefore, <span class="math notranslate nohighlight">\(x^2+2x-3 &gt;0\)</span> whenever <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Method 2</p>
+<p>Sketch the graph of <span class="math notranslate nohighlight">\(y=x^2+2x-3\)</span> by drawing a parabola that opens upward and goes through the points <span class="math notranslate nohighlight">\((-3,0)\)</span> and <span class="math notranslate nohighlight">\((1,0)\)</span>.</p>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/110_01_05_inequalities_5_0.svg" src="_images/110_01_05_inequalities_5_0.svg" /></div>
+</div>
+<p>Finding values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2+2x-3 &gt; 0\)</span> is equivalent to identifying the portions of the graph of <span class="math notranslate nohighlight">\(x^2+2x-3\)</span> that are above the <span class="math notranslate nohighlight">\(x\)</span>-axis.  Based on the graph shown above, <span class="math notranslate nohighlight">\(x^2+2x-3 &gt;0\)</span> whenever <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
+</div>
+<div class="section" id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
+<p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(\dfrac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Find all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} = 0\)</span> or is not defined.</p>
+<p><span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} = 0\)</span> whenever the numerator is equal to zero, which only happens when <span class="math notranslate nohighlight">\(x=0\)</span> (since <span class="math notranslate nohighlight">\(x^2+3\)</span> is never equal to zero).</p>
+<p><span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> is not defined whenever the denominator is equal to zero, which only happens when <span class="math notranslate nohighlight">\(x=-2\)</span> or <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+</div>
+<p>Use one of the following two methods to solve the inequality.</p>
+<div class="tip admonition">
+<p class="admonition-title">Method 1</p>
+<p>Break up the number line at <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> and plug in one value from each interval to determine the sign of <span class="math notranslate nohighlight">\(f(x) = \frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> on that interval.</p>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/110_01_05_inequalities_7_0.svg" src="_images/110_01_05_inequalities_7_0.svg" /></div>
+</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span> when <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Method 2</p>
+<p>Break up the number line at <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> and plug in one value from each interval to determine the sign of <span class="math notranslate nohighlight">\(f(x) = \frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> on that interval.</p>
+<p>Notice that <span class="math notranslate nohighlight">\(x^2\)</span> and <span class="math notranslate nohighlight">\(x^2+3\)</span> are both positive for <span class="math notranslate nohighlight">\(x\neq 0\)</span>, therefore <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3}&lt;0\)</span> whenever <span class="math notranslate nohighlight">\(4-x^2 &lt; 0\)</span>.</p>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/110_01_05_inequalities_9_0.svg" src="_images/110_01_05_inequalities_9_0.svg" /></div>
+</div>
+<p>The graph of <span class="math notranslate nohighlight">\(y = 4-x^2\)</span> as shown above is below the <span class="math notranslate nohighlight">\(x\)</span>-axis (i.e., <span class="math notranslate nohighlight">\(4-x^2 &lt; 0\)</span>) if <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span> when <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.</p>
 </div>
 </div>
 </div>
@@ -435,8 +432,8 @@ x^2-5x-6 &amp; \hbox{if } x&gt;6 \\
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="110_02_03_lim_graphs.html" title="previous page">Examples: Computing Limits from Graphs</a>
-    <a class='right-next' id="next-link" href="110_02_05_lim_indeterminate.html" title="next page">Indeterminate Forms</a>
+    <a class='left-prev' id="prev-link" href="110_01_04_graphing.html" title="previous page">Graphing</a>
+    <a class='right-next' id="next-link" href="110_01_06_domain.html" title="next page">The Domain of a Function</a>
 
         </div>
         

@@ -7,6 +7,8 @@ chapters:
   - file: 110_01_02_factoring.md
   - file: 110_01_03_solving_equations.md
   - file: 110_01_04_graphing.md
+  - file: 110_01_05_inequalities.md
+  - file: 110_01_06_domain.md
 - file: 110_02_limits
   sections:
   - file: 110_02_01_limits_def.md
