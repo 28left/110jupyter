@@ -355,6 +355,35 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#an-applied-example">
+   An Applied Example
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-7">
+     Example 7
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-derivative-to-compute-limits">
+   Using the derivative to compute limits
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-8">
+     Example 8
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-9">
+     Example 9
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -703,6 +732,119 @@ h'(x) &amp;= \frac{x^4(4x-7)^2[5(4x-7) - 12x ]}{(4x-7)^6}
 \[\begin{align*}
 h'(x) &amp;= \frac{x^4\cancel{(4x-7)^2}[20x-35 - 12x]}{(4x-7)^{\cancel{6}4}} \\ \\
 &amp;= \frac{x^4(8x-35)}{(4x-7)^4} 
+\end{align*}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="an-applied-example">
+<h2>An Applied Example<a class="headerlink" href="#an-applied-example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-7">
+<h3>Example 7<a class="headerlink" href="#example-7" title="Permalink to this headline">¶</a></h3>
+<p>Penn State Learning has a weekly demand funciton for their calculators which is given by</p>
+<div class="math notranslate nohighlight">
+\[p = d(x) = 300 - 2x^2\]</div>
+<p>where <span class="math notranslate nohighlight">\(p\)</span> is measured in dollars and <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of calculators. What is the instantaneous rate of change of the unit price when the quantity demanded is <span class="math notranslate nohighlight">\(5000\)</span> calculators?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p>Notice that <span class="math notranslate nohighlight">\(x = 5\)</span> because units are in thousands of calculators demanded.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Compute the derivative.</p>
+<p>In order to compute the instantaneous rate of change, we need to compute the derivative, <span class="math notranslate nohighlight">\(d'(x)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+d'(x) &amp;= \frac{d}{dx}(300 - 2x^2)\\ \\
+&amp;= \frac{d}{dx}300 - \frac{d}{dx}2x^2 &amp;&amp; \hbox{Difference Rule}\\ \\
+&amp;= 0 - 2\frac{d}{dx}x^2 &amp;&amp; \hbox{$\dfrac{d}{dx}c = 0$, $\dfrac{d}{dx}[cf(x)] = c\dfrac{d}{dx}[f(x)]$} \\ \\
+&amp;= - 2\cdot 2x &amp;&amp; \hbox{Power Rule}\\ \\
+&amp;= -4x
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Plug in <span class="math notranslate nohighlight">\(x=5\)</span>.</p>
+<p>Lastly, substitute <span class="math notranslate nohighlight">\(x = 5\)</span> into <span class="math notranslate nohighlight">\(d'(x)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[d'(5) = -4\cdot5 = -20\]</div>
+<p>Therefore, the instantaneous rate of change of the unit price is <span class="math notranslate nohighlight">\(-20\)</span> dollars per thousand calculators when the quantity demanded is 5000 calculators.  This means that the unit price would decrease by approximately 20 dollars if the demand increased from 5000 to 6000 calculators.</p>
+</div>
+</div>
+</div>
+<div class="section" id="using-the-derivative-to-compute-limits">
+<h2>Using the derivative to compute limits<a class="headerlink" href="#using-the-derivative-to-compute-limits" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-8">
+<h3>Example 8<a class="headerlink" href="#example-8" title="Permalink to this headline">¶</a></h3>
+<p>Use the limit definition of the derivative to evaluate</p>
+<div class="math notranslate nohighlight">
+\[\lim_{h\to 0}\dfrac{(x+h)^2-5(x+h)-(x^2-5x)}{h}.\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Recall the limit definition of the derivative.</p>
+<p>Begin with the limit definition of the derivative.</p>
+<div class="math notranslate nohighlight">
+\[
+f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
+\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Identify <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Identify the <span class="math notranslate nohighlight">\(f(x)\)</span> in the limit definition of <span class="math notranslate nohighlight">\(f'(x)\)</span> for our problem.  If we focus on the <span class="math notranslate nohighlight">\(f(x)\)</span> that is being subtracted in the numerator of the limit definition of <span class="math notranslate nohighlight">\(f'(x)\)</span>, this appears to coincide with the <span class="math notranslate nohighlight">\((x^2-5x)\)</span> that is being subtracted in the numerator of our limit.  So we hypothesize that</p>
+<div class="math notranslate nohighlight">
+\[f(x) = x^2 - 5x.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Verify choice of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Verify that the given limit is equal to the limit definition of the derivative of <span class="math notranslate nohighlight">\(f(x) = x^2-5x\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(f(x) = x^2-5x\)</span> then <span class="math notranslate nohighlight">\(f(x+h) = (x+h)^2 - 5(x+h)\)</span> and therefore</p>
+<div class="math notranslate nohighlight">
+\[\lim_{h\to 0}\dfrac{(x+h)^2-5(x+h)-(x^2-5x)}{h} = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h} = f'(x)\]</div>
+<p>Since the given limit is equal to the derivative of <span class="math notranslate nohighlight">\(x^2-5x\)</span>, we can evaluate the limit by computing the derivative of <span class="math notranslate nohighlight">\(x^2-5x\)</span> instead of algebraically simplifying it.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Evaluate the limit by computing the derivative.</p>
+<p>Evaluate the given limit by computing the derivative of <span class="math notranslate nohighlight">\(f(x) = x^2-5x\)</span> using the basic rules of differentiation.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{h\to 0}\dfrac{(x+h)^2-5(x+h)-(x^2-5x)}{h} 
+&amp;= \frac{d}{dx}(x^2-5x)\\ \\
+&amp;= \frac{d}{dx}x^2 - \frac{d}{dx}5x &amp;&amp; \hbox{Difference Rule}\\ \\
+&amp;= 2x - 5
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="example-9">
+<h3>Example 9<a class="headerlink" href="#example-9" title="Permalink to this headline">¶</a></h3>
+<p>Use the limit definition of the derivative to evaluate</p>
+<div class="math notranslate nohighlight">
+\[\lim_{h\to 0}\dfrac{(2+h)^3-8}{h}.\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Recall the limit definition of the derivative.</p>
+<div class="math notranslate nohighlight">
+\[
+f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
+\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Identify <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Identity the <span class="math notranslate nohighlight">\(f(x)\)</span> in the limit definition of <span class="math notranslate nohighlight">\(f'(x)\)</span> for our problem.  If we focus on the <span class="math notranslate nohighlight">\(f(x+h)\)</span> in the numerator of the limit definition of <span class="math notranslate nohighlight">\(f'(x)\)</span>, this appears to coincide with the <span class="math notranslate nohighlight">\((2+h)^3\)</span> in the numerator of our limit.  So we hypothesize that</p>
+<div class="math notranslate nohighlight">
+\[f(x) = x^3 ~~~~\hbox{ and } ~~~~ x = 2.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Verify choice of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Verify that the given limit is equal to the limit definition of the derivative of the function <span class="math notranslate nohighlight">\(f(x) = x^3\)</span> at <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(f(x) = x^3\)</span> then <span class="math notranslate nohighlight">\(f(2+h) = (2+h)^3\)</span> and <span class="math notranslate nohighlight">\(f(2) = 2^3 = 8\)</span>. Therefore</p>
+<div class="math notranslate nohighlight">
+\[\lim_{h\to 0}\dfrac{(2+h)^3-8}{h} = \lim_{h\to 0} \frac{f(2+h) - f(2)}{h} = f'(2)\]</div>
+<p>Since the given limit is equal to the derivative of <span class="math notranslate nohighlight">\(x^3\)</span> at <span class="math notranslate nohighlight">\(x=2\)</span>, we can evaluate the limit by computing the derivative of <span class="math notranslate nohighlight">\(x^3\)</span> instead of algebraically simplifying it.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Evaluate the limit by computing the derivative.</p>
+<p>Evaluate the given limit by computing the derivative of <span class="math notranslate nohighlight">\(f(x) = x^3\)</span> and then plugging in <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{h\to 0}\dfrac{(2+h)^3-8}{h} 
+&amp;= f'(2) \\ \\
+&amp;= 3\cdot 2^2  &amp;&amp; \hbox{since $f'(x) = 3x^2$}\\ \\
+&amp;= 12
 \end{align*}\]</div>
 </div>
 </div>
