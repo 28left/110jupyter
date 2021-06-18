@@ -18,3 +18,8 @@ chapters:
   - file: 110_02_05_lim_indeterminate.md
   - file: 110_02_06_lim_infinity.md
   - file: 110_02_07_continuity.md
+- file: 110_03_derivatives
+  sections:
+  - file: 110_03_01_derivative.md
+  - file: 110_03_02_rules.md
+

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Domain of a Function &#8212; Course Packet Math 110</title>
+    <title>The Concept of the Derivative &#8212; Course Packet Math 110</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Limits and Continuity" href="110_02_limits.html" />
-    <link rel="prev" title="Solving Inequalities" href="110_01_05_inequalities.html" />
+    <link rel="next" title="Basic Rules of Differentiation" href="110_03_02_rules.html" />
+    <link rel="prev" title="Derivatives" href="110_03_derivatives.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -93,16 +93,16 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="110_01_precalc.html">
    Precalculus Review
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="110_01_01_alg_simplification.html">
      Algebraic Simplification Techniques
@@ -128,8 +128,8 @@
      Solving Inequalities
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="110_01_06_domain.html">
      The Domain of a Function
     </a>
    </li>
@@ -182,18 +182,18 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="110_03_derivatives.html">
    Derivatives
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="110_03_01_derivative.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      The Concept of the Derivative
     </a>
    </li>
@@ -244,11 +244,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="_sources/110_01_06_domain.ipynb"><button type="button"
+            href="_sources/110_03_01_derivative.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/110_01_06_domain.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/110_03_01_derivative.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -268,7 +268,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_01_06_domain.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2F110_03_01_derivative.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -289,7 +289,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_01_06_domain.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/110_03_01_derivative.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -315,8 +315,13 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interval-notation">
-   Interval Notation
+  <a class="reference internal nav-link" href="#the-basic-definitions">
+   The Basic Definitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computing-derivatives-using-the-limit-definition">
+   Computing Derivatives Using the Limit Definition
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -327,16 +332,6 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#example-2">
      Example 2
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-3">
-     Example 3
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-4">
-     Example 4
     </a>
    </li>
   </ul>
@@ -352,105 +347,135 @@
         
               <div>
                 
-  <div class="section" id="the-domain-of-a-function">
-<h1>The Domain of a Function<a class="headerlink" href="#the-domain-of-a-function" title="Permalink to this headline">¶</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Definition</p>
-<p>The <strong>domain</strong> of a function is the set of all values of <span class="math notranslate nohighlight">\(x\)</span> for which the function is defined.</p>
-</div>
-<p>When determining the domain of a given function, do not include any value that leads to one or more of the following:</p>
-<ul class="simple">
-<li><p>division by zero</p></li>
-<li><p>the square root of a negative number</p></li>
-<li><p>the logarithm of zero or a negative number</p></li>
-</ul>
-<p>Students should be familiar with the concepts of division and square roots.  Logarithms will be discussed in class and in a subsequent PSL Course Packet.   While there are other functions that lead to restrictions on the domain, we will limit our discussion to division, square roots, and logarithms.</p>
-<div class="section" id="interval-notation">
-<h2>Interval Notation<a class="headerlink" href="#interval-notation" title="Permalink to this headline">¶</a></h2>
-<p>The domain of a function is typically written as a union of intervals.  In this course, we will make use of interval notation to express domains.  This notation is summarized in the following table.</p>
-<p><img alt="Table of interval types" src="_images/110_01_06_interval_types.png" /></p>
-<p>Given two intervals, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, then the union of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\cup B\)</span>, represents the collection of values that are in <span class="math notranslate nohighlight">\(A\)</span> or in <span class="math notranslate nohighlight">\(B\)</span>.  For example,</p>
+  <div class="section" id="the-concept-of-the-derivative">
+<h1>The Concept of the Derivative<a class="headerlink" href="#the-concept-of-the-derivative" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-basic-definitions">
+<h2>The Basic Definitions<a class="headerlink" href="#the-basic-definitions" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Slope of a Tangent Line</p>
+<p>The <strong>slope of the tangent line</strong> to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at the point <span class="math notranslate nohighlight">\(P(x, f(x))\)</span> is given by</p>
 <div class="math notranslate nohighlight">
-\[(-\infty,5) \cup [7,10)\]</div>
-<p>represents the values that are less than <span class="math notranslate nohighlight">\(5\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;5\)</span>) or greater than or equal to <span class="math notranslate nohighlight">\(7\)</span> and less than <span class="math notranslate nohighlight">\(10\)</span> (i.e., <span class="math notranslate nohighlight">\(7\leq x &lt; 10\)</span>).</p>
+\[\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
+<p>if the limit exists.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Average and Instantaneous Rate of Change</p>
+<p>The <strong>average rate of change</strong> of <span class="math notranslate nohighlight">\(f(x)\)</span> over the interval <span class="math notranslate nohighlight">\((x, x+h)\)</span> or slope of the secant line to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> through the points <span class="math notranslate nohighlight">\((x,f(x))\)</span> and <span class="math notranslate nohighlight">\((x+h, f(x+h))\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[ \frac{f(x+h) - f(x)}{h}.\]</div>
+<p>The <strong>instantaneous rate of change</strong> of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x\)</span> or slope of the tangent line to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\((x,f(x))\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
+<p>if the limit exists.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">The Limit Definition of the Derivative}</p>
+<p>The <strong>derivative</strong> of a function <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> is the function <span class="math notranslate nohighlight">\(f'(x)\)</span> which is defined as follows</p>
+<div class="math notranslate nohighlight">
+\[f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
+<p>and the domain of <span class="math notranslate nohighlight">\(f'(x)\)</span> is the set of all <span class="math notranslate nohighlight">\(x\)</span> where the limit exists.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Differentiability and Continuity</p>
+<p>If a function is differentiable at <span class="math notranslate nohighlight">\(x=a\)</span>, then it is continuous at <span class="math notranslate nohighlight">\(x=a\)</span>. If a function is continuous at <span class="math notranslate nohighlight">\(x=a\)</span>, then it <strong>is not necessarily</strong> differentiable at <span class="math notranslate nohighlight">\(x=a\)</span>.</p>
+</div>
+</div>
+<div class="section" id="computing-derivatives-using-the-limit-definition">
+<h2>Computing Derivatives Using the Limit Definition<a class="headerlink" href="#computing-derivatives-using-the-limit-definition" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="example-1">
 <h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
-<p>Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span>.</p>
+<p>Find the slope of the tangent line to the function</p>
+<div class="math notranslate nohighlight">
+\[f(x)=3x^2+12\]</div>
+<p>at <span class="math notranslate nohighlight">\(x=5\)</span> using the limit definition of the derivative.</p>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span> using an inequality.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(1/x\)</span> includes all real numbers except <span class="math notranslate nohighlight">\(x=0\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;0\)</span> or <span class="math notranslate nohighlight">\(x&gt;0\)</span>) since division by zero is not defined.</p>
+<p class="admonition-title">Step 1: Write down the limit definition of a derivative.</p>
+<div class="math notranslate nohighlight">
+\[ 
+\boxed{f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}}
+\]</div>
+<p>Remember: <span class="math notranslate nohighlight">\(f(x+h)\)</span> means that we take <span class="math notranslate nohighlight">\(f(x)\)</span> and replace <span class="math notranslate nohighlight">\(x\)</span> with <span class="math notranslate nohighlight">\((x+h)\)</span>.  For example, if <span class="math notranslate nohighlight">\(f(x) = x^2\)</span>, then <span class="math notranslate nohighlight">\(f(x+h)=(x+h)^2=x^2+2xh+h^2.\)</span></p>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span>.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(1/x\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x&lt;0\)</span> or <span class="math notranslate nohighlight">\(x&gt;0\)</span>, which can be written
-in interval notation as</p>
+<p class="admonition-title">Step 2: Plug <span class="math notranslate nohighlight">\(f(x+h)\)</span> and <span class="math notranslate nohighlight">\(f(x)\)</span> into definition.</p>
+<p>Plug <span class="math notranslate nohighlight">\(f(x+h)\)</span> and <span class="math notranslate nohighlight">\(f(x)\)</span> into the limit definition of the derivative.
+Using brackets will help avoid errors from forgetting to distribute the negative sign:</p>
 <div class="math notranslate nohighlight">
-\[(-\infty,0) \cup (0,\infty).\]</div>
+\[ f'(x)=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: FOIL and Simplify</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(x) &amp;=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\\ \\
+&amp;=\lim_{h \to 0} \frac{[3(x^2+2xh+h^2)+12]-[3x^2+12]}{h} &amp;&amp; \hbox{FOIL $(x+h)^2$}\\ \\
+&amp;=\lim_{h \to 0} \frac{3x^2+6xh+3h^2+12-3x^2-12}{h} &amp;&amp; \hbox{Distribute the '3' and the minus sign}\\ \\
+&amp;=\lim_{h \to 0} \frac{\cancel{3x^2}+6xh+3h^2+\cancel{12}-\cancel{3x^2}-\cancel{12}}{h} &amp;&amp; \hbox{Simplify}\\ \\
+&amp;=\lim_{h \to 0} \frac{6xh+3h^2}{h}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Factor out <span class="math notranslate nohighlight">\(h\)</span> and cancel.</p>
+<p>Factor out an <span class="math notranslate nohighlight">\(h\)</span> in the numerator and cancel it with the factor of <span class="math notranslate nohighlight">\(h\)</span> in the denominator.</p>
+<div class="math notranslate nohighlight">
+\[f'(x)=\lim_{h \to 0} \frac{6xh+3h^2}{h}=\lim_{h \to 0} \frac{h(6x+3h)}{h}=\lim_{h \to 0} 6x+3h\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Evaluate the limit.</p>
+<div class="math notranslate nohighlight">
+\[f'(x)=\lim_{h \to 0} 6x+3h=6x+3(0)=6x\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 6: Plug <span class="math notranslate nohighlight">\(x=5\)</span> into evaluated limit.</p>
+<p>We have found that <span class="math notranslate nohighlight">\(f'(x) = 6x\)</span> is the derivative of our function and the general form of the slope of the tangent line. All that’s left for us to do is to plug in <span class="math notranslate nohighlight">\(x=5\)</span>. Therefore, the slope of the tangent line when <span class="math notranslate nohighlight">\(x=5\)</span> is <span class="math notranslate nohighlight">\(30\)</span>.</p>
 </div>
 </div>
 <div class="section" id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
-<p>Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> using an inequality.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> includes all nonnegative real numbers (i.e., <span class="math notranslate nohighlight">\(x\geq 0\)</span>) since the square root of a negative number is not defined.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\geq 0\)</span>, which can be written in interval notation as</p>
+<p>Find the derivative of the function</p>
 <div class="math notranslate nohighlight">
-\[[0,\infty).\]</div>
-</div>
-</div>
-<div class="section" id="example-3">
-<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
-<p>Determine the domain of the function <span class="math notranslate nohighlight">\(f(x) = \sqrt{x^2 + 2x - 3}\)</span>.</p>
+\[f(x)=3\sqrt{x}\]</div>
+<p>using the limit definition of the derivative.</p>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Describe the domain using an inequality.</p>
-<p>Since <span class="math notranslate nohighlight">\(f\)</span> is a square root function, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that
-$<span class="math notranslate nohighlight">\(x^2 + 2x - 3 \geq 0\)</span>$
-since the square root of a negative number is not defined.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Solve the inequality in Step 1.</p>
-<p>Recall from <a class="reference internal" href="110_01_05_inequalities.html#example1"><span class="std std-ref">Solving Inequalities, Example 1</span></a> that</p>
-<div class="math notranslate nohighlight">
-\[x^2 + 2x - 3 = 0\]</div>
-<p>when <span class="math notranslate nohighlight">\(x=-3\)</span> or <span class="math notranslate nohighlight">\(x=1\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[x^2 + 2x - 3 &gt; 0\]</div>
-<p>when <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
-<p>Therefore, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\leq -3\)</span> or <span class="math notranslate nohighlight">\(x\geq 1\)</span>, which can be written in interval notation as</p>
+<p class="admonition-title">Step 1: Write down the limit definition of a derivative.</p>
 <div class="math notranslate nohighlight">
 \[
-(-\infty, -3] \cup [1, \infty).
+\boxed{f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}}
 \]</div>
 </div>
-</div>
-<div class="section" id="example-4">
-<h3>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h3>
-<p>Determine the domain of the function <span class="math notranslate nohighlight">\(f(x) = \dfrac{x}{x^2 + 2x - 3}\)</span>.</p>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Describe the domain by excluding all <span class="math notranslate nohighlight">\(x\)</span> that make <span class="math notranslate nohighlight">\(f(x)\)</span> undefined.</p>
-<p>Since <span class="math notranslate nohighlight">\(f\)</span> involves the operation of division, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that</p>
-<div class="math notranslate nohighlight">
-\[x^2 +2x - 3 \neq 0\]</div>
-<p>since division by zero is not defined.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find all values of <span class="math notranslate nohighlight">\(x\)</span> that lead to division by zero.</p>
-<p>Solve the equation <span class="math notranslate nohighlight">\(x^2 + 2x - 3 = 0\)</span>.  Recall from <a class="reference internal" href="110_01_05_inequalities.html#example1"><span class="std std-ref">Solving Inequalities, Example 1</span></a> that</p>
-<div class="math notranslate nohighlight">
-\[x^2 + 2x - 3 = 0\]</div>
-<p>when <span class="math notranslate nohighlight">\(x=-3\)</span> or <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+<p class="admonition-title">Step 2: Plug <span class="math notranslate nohighlight">\(f(x+h)\)</span> and <span class="math notranslate nohighlight">\(f(x)\)</span> into definition.</p>
+<p>Plug <span class="math notranslate nohighlight">\(f(x+h)\)</span> and <span class="math notranslate nohighlight">\(f(x)\)</span> into the limit definition of the derivative.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(x) 
+= \lim_{h \to 0} \frac{3\sqrt{x+h}-3\sqrt{x}}{h} 
+= \lim_{h \to 0} \frac{3(\sqrt{x+h}-\sqrt{x})}{h} 
+\end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Exclude the values found in Step 2 from the domain.</p>
-<p>Since the only values of <span class="math notranslate nohighlight">\(x\)</span> that lead to division by zero are <span class="math notranslate nohighlight">\(x=-3\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x&lt;-3\)</span>, or <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>, or <span class="math notranslate nohighlight">\(x&gt;1\)</span>, which can be written in interval notation as</p>
+<p class="admonition-title">Step 3: Rationalize, FOIL, and Simplify.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(x) 
+&amp;= \lim_{h \to 0} \frac{3(\sqrt{x+h}-\sqrt{x})}{h}\cdot \frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}} &amp;&amp; \hbox{Rationalize} \\ \\
+&amp;= \lim_{h \to 0} \frac{3(\sqrt{x+h}-\sqrt{x})(\sqrt{x+h}+\sqrt{x})}{h(\sqrt{x+h}+\sqrt{x})}  \\ \\
+&amp;= \lim_{h \to 0} \frac{3(\sqrt{x+h}\sqrt{x+h} + \sqrt{x+h}\sqrt{x}-\sqrt{x}\sqrt{x+h} - \sqrt{x}\sqrt{x})}{h(\sqrt{x+h}+\sqrt{x})} &amp;&amp; \hbox{FOIL} \\ \\
+&amp;= \lim_{h \to 0} \frac{3(x+h + \cancel{\sqrt{x+h}\sqrt{x}}-\cancel{\sqrt{x}\sqrt{x+h}} - x)}{h(\sqrt{x+h}+\sqrt{x})} &amp;&amp; \hbox{Simplify} \\ \\
+&amp;= \lim_{h \to 0} \frac{3(\cancel{x}+h-\cancel{x})}{h(\sqrt{x+h}+\sqrt{x})}  \\ \\
+&amp;= \lim_{h \to 0} \frac{3 h}{h(\sqrt{x+h}+\sqrt{x})} 
+\end{align*}\]</div>
+<p>Notice how making use of the formula <span class="math notranslate nohighlight">\((\sqrt{A} - \sqrt{B})(\sqrt{A} + \sqrt{B}) = A - B\)</span> can help eliminate some of the above computations.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Cancel the <span class="math notranslate nohighlight">\(h\)</span> in the numerator with the <span class="math notranslate nohighlight">\(h\)</span> in the denominator.</p>
 <div class="math notranslate nohighlight">
-\[
-(-\infty, -3) \cup (-3, 1) \cup (1, \infty).
-\]</div>
+\[f'(x) = \lim_{h \to 0} \frac{3 \cancel{h}}{\cancel{h}(\sqrt{x+h}+\sqrt{x})} = \lim_{h \to 0} \frac{3}{\sqrt{x+h}+\sqrt{x}} \]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Evaluate the limit.</p>
+<div class="math notranslate nohighlight">
+\[f'(x) = \lim_{h \to 0} \frac{3}{\sqrt{x+h}+\sqrt{x}} = \frac{3}{\sqrt{x + 0}+\sqrt{x}} = \frac{3}{\sqrt{x}+\sqrt{x}} = \frac{3}{2\sqrt{x}}\]</div>
 </div>
 </div>
 </div>
@@ -481,8 +506,8 @@ since the square root of a negative number is not defined.</p>
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="110_01_05_inequalities.html" title="previous page">Solving Inequalities</a>
-    <a class='right-next' id="next-link" href="110_02_limits.html" title="next page">Limits and Continuity</a>
+    <a class='left-prev' id="prev-link" href="110_03_derivatives.html" title="previous page">Derivatives</a>
+    <a class='right-next' id="next-link" href="110_03_02_rules.html" title="next page">Basic Rules of Differentiation</a>
 
         </div>
         
