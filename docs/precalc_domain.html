@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Domain of a Function &#8212; Course Packet Math 110</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Limits and Continuity" href="limits_.html" />
+    <link rel="prev" title="Solving Inequalities" href="precalc_inequalities.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/PSU_SCI_RGB_2C.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Course Packet Math 110</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to Math 110
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="precalc_.html">
+   Precalculus Review
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="precalc_simplification.html">
+     Algebraic Simplification Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="precalc_factoring.html">
+     Factoring Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="precalc_solvingequations.html">
+     Solving Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="precalc_graphing.html">
+     Graphing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="precalc_inequalities.html">
+     Solving Inequalities
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     The Domain of a Function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="limits_.html">
+   Limits and Continuity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_def.html">
+     Limit of a Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_proplim.html">
+     Properties of Finite Limits
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_graphs.html">
+     Examples: Computing Limits from Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_algebra.html">
+     Examples: Computing Limits Algebraically
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_indeterminate.html">
+     Indeterminate Forms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_infinity.html">
+     Limits at Infinity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_continuity.html">
+     Continuity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="derivatives_.html">
+   Derivatives
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="derivatives_def.html">
+     The Concept of the Derivative
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="derivatives_rules.html">
+     Basic Rules of Differentiation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="implicit_.html">
+   Implicit Differentiation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="implicit_differentiation.html">
+     Implicit Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="implicit_relatedrates.html">
+     Related Rates
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="curvesketching_.html">
+   Curve Sketching
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="curvesketching_increasedecrease.html">
+     Intervals of Increase &amp; Decrease
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="_sources/precalc_domain.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/precalc_domain.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/28left/110jupyter"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2Fprecalc_domain.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/28left/110jupyter/master?urlpath=tree/precalc_domain.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interval-notation">
+   Interval Notation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1">
+     Example 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2">
+     Example 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-3">
+     Example 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-4">
+     Example 4
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="the-domain-of-a-function">
+<h1>The Domain of a Function<a class="headerlink" href="#the-domain-of-a-function" title="Permalink to this headline">¶</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Definition</p>
+<p>The <strong>domain</strong> of a function is the set of all values of <span class="math notranslate nohighlight">\(x\)</span> for which the function is defined.</p>
+</div>
+<p>When determining the domain of a given function, do not include any value that leads to one or more of the following:</p>
+<ul class="simple">
+<li><p>division by zero</p></li>
+<li><p>the square root of a negative number</p></li>
+<li><p>the logarithm of zero or a negative number</p></li>
+</ul>
+<p>Students should be familiar with the concepts of division and square roots.  Logarithms will be discussed in class and in a subsequent PSL Course Packet.   While there are other functions that lead to restrictions on the domain, we will limit our discussion to division, square roots, and logarithms.</p>
+<div class="section" id="interval-notation">
+<h2>Interval Notation<a class="headerlink" href="#interval-notation" title="Permalink to this headline">¶</a></h2>
+<p>The domain of a function is typically written as a union of intervals.  In this course, we will make use of interval notation to express domains.  This notation is summarized in the following table.</p>
+<p><img alt="Table of interval types" src="_images/pic_precalc_intervaltypes.png" /></p>
+<p>Given two intervals, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, then the union of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\cup B\)</span>, represents the collection of values that are in <span class="math notranslate nohighlight">\(A\)</span> or in <span class="math notranslate nohighlight">\(B\)</span>.  For example,</p>
+<div class="math notranslate nohighlight">
+\[(-\infty,5) \cup [7,10)\]</div>
+<p>represents the values that are less than <span class="math notranslate nohighlight">\(5\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;5\)</span>) or greater than or equal to <span class="math notranslate nohighlight">\(7\)</span> and less than <span class="math notranslate nohighlight">\(10\)</span> (i.e., <span class="math notranslate nohighlight">\(7\leq x &lt; 10\)</span>).</p>
+<div class="section" id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
+<p>Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span> using an inequality.</p>
+<p>The domain of <span class="math notranslate nohighlight">\(1/x\)</span> includes all real numbers except <span class="math notranslate nohighlight">\(x=0\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;0\)</span> or <span class="math notranslate nohighlight">\(x&gt;0\)</span>) since division by zero is not defined.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span>.</p>
+<p>The domain of <span class="math notranslate nohighlight">\(1/x\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x&lt;0\)</span> or <span class="math notranslate nohighlight">\(x&gt;0\)</span>, which can be written
+in interval notation as</p>
+<div class="math notranslate nohighlight">
+\[(-\infty,0) \cup (0,\infty).\]</div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
+<p>Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> using an inequality.</p>
+<p>The domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> includes all nonnegative real numbers (i.e., <span class="math notranslate nohighlight">\(x\geq 0\)</span>) since the square root of a negative number is not defined.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>.</p>
+<p>The domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\geq 0\)</span>, which can be written in interval notation as</p>
+<div class="math notranslate nohighlight">
+\[[0,\infty).\]</div>
+</div>
+</div>
+<div class="section" id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
+<p>Determine the domain of the function <span class="math notranslate nohighlight">\(f(x) = \sqrt{x^2 + 2x - 3}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Describe the domain using an inequality.</p>
+<p>Since <span class="math notranslate nohighlight">\(f\)</span> is a square root function, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that
+$<span class="math notranslate nohighlight">\(x^2 + 2x - 3 \geq 0\)</span>$
+since the square root of a negative number is not defined.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Solve the inequality in Step 1.</p>
+<p>Recall from <a class="reference internal" href="precalc_inequalities.html#example1"><span class="std std-ref">Solving Inequalities, Example 1</span></a> that</p>
+<div class="math notranslate nohighlight">
+\[x^2 + 2x - 3 = 0\]</div>
+<p>when <span class="math notranslate nohighlight">\(x=-3\)</span> or <span class="math notranslate nohighlight">\(x=1\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[x^2 + 2x - 3 &gt; 0\]</div>
+<p>when <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
+<p>Therefore, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\leq -3\)</span> or <span class="math notranslate nohighlight">\(x\geq 1\)</span>, which can be written in interval notation as</p>
+<div class="math notranslate nohighlight">
+\[
+(-\infty, -3] \cup [1, \infty).
+\]</div>
+</div>
+</div>
+<div class="section" id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h3>
+<p>Determine the domain of the function <span class="math notranslate nohighlight">\(f(x) = \dfrac{x}{x^2 + 2x - 3}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Describe the domain by excluding all <span class="math notranslate nohighlight">\(x\)</span> that make <span class="math notranslate nohighlight">\(f(x)\)</span> undefined.</p>
+<p>Since <span class="math notranslate nohighlight">\(f\)</span> involves the operation of division, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[x^2 +2x - 3 \neq 0\]</div>
+<p>since division by zero is not defined.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find all values of <span class="math notranslate nohighlight">\(x\)</span> that lead to division by zero.</p>
+<p>Solve the equation <span class="math notranslate nohighlight">\(x^2 + 2x - 3 = 0\)</span>.  Recall from <a class="reference internal" href="precalc_inequalities.html#example1"><span class="std std-ref">Solving Inequalities, Example 1</span></a> that</p>
+<div class="math notranslate nohighlight">
+\[x^2 + 2x - 3 = 0\]</div>
+<p>when <span class="math notranslate nohighlight">\(x=-3\)</span> or <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Exclude the values found in Step 2 from the domain.</p>
+<p>Since the only values of <span class="math notranslate nohighlight">\(x\)</span> that lead to division by zero are <span class="math notranslate nohighlight">\(x=-3\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x&lt;-3\)</span>, or <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>, or <span class="math notranslate nohighlight">\(x&gt;1\)</span>, which can be written in interval notation as</p>
+<div class="math notranslate nohighlight">
+\[
+(-\infty, -3) \cup (-3, 1) \cup (1, \infty).
+\]</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "28left/110jupyter",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python394jvsc74a57bd0085761d8a84a55f3b91b6696b289e6480df59aded311489218ab7e58f5e20cd3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python394jvsc74a57bd0085761d8a84a55f3b91b6696b289e6480df59aded311489218ab7e58f5e20cd3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="precalc_inequalities.html" title="previous page">Solving Inequalities</a>
+    <a class='right-next' id="next-link" href="limits_.html" title="next page">Limits and Continuity</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Department of Mathematics, Penn State University Park<br/>
+        
+            &copy; Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
