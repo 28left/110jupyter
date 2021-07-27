@@ -22,8 +22,11 @@ chapters:
   sections:
   - file: derivatives_def.md
   - file: derivatives_rules.md
+- file: 110_05_implicit
+  sections:
+  - file: 110_05_01_implicit_differentiation.md
+  - file: 110_05_02_related_rates.md
 - file: curvesketching_
   sections:
   - file: curvesketching_increasedecrease.md
-
 
