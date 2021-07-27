@@ -40,7 +40,7 @@ if the limit exists.
 ```
 
 
-```{admonition} The Limit Definition of the Derivative}
+```{admonition} The Limit Definition of the Derivative
 :class: info
 
 The **derivative** of a function $f(x)$ with respect to $x$ is the function $f'(x)$ which is defined as follows 

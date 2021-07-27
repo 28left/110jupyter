@@ -1,29 +1,32 @@
 format: jb-book
 root: intro
 chapters:
-- file: 110_01_precalc
+- file: precalc_
   sections:
-  - file: 110_01_01_alg_simplification.md
-  - file: 110_01_02_factoring.md
-  - file: 110_01_03_solving_equations.md
-  - file: 110_01_04_graphing.md
-  - file: 110_01_05_inequalities.md
-  - file: 110_01_06_domain.md
-- file: 110_02_limits
+  - file: precalc_simplification.md
+  - file: precalc_factoring.md
+  - file: precalc_solvingequations.md
+  - file: precalc_graphing.md
+  - file: precalc_inequalities.md
+  - file: precalc_domain.md
+- file: limits_
   sections:
-  - file: 110_02_01_limits_def.md
-  - file: 110_02_02_prop_lim.md
-  - file: 110_02_03_lim_graphs.md 
-  - file: 110_02_04_lim_algebra.md
-  - file: 110_02_05_lim_indeterminate.md
-  - file: 110_02_06_lim_infinity.md
-  - file: 110_02_07_continuity.md
-- file: 110_03_derivatives
+  - file: limits_def.md
+  - file: limits_proplim.md
+  - file: limits_graphs.md 
+  - file: limits_algebra.md
+  - file: limits_indeterminate.md
+  - file: limits_infinity.md
+  - file: limits_continuity.md
+- file: derivatives_
   sections:
-  - file: 110_03_01_derivative.md
-  - file: 110_03_02_rules.md
+  - file: derivatives_def.md
+  - file: derivatives_rules.md
 - file: 110_05_implicit
   sections:
   - file: 110_05_01_implicit_differentiation.md
   - file: 110_05_02_related_rates.md
+- file: curvesketching_
+  sections:
+  - file: curvesketching_increasedecrease.md
 

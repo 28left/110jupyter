@@ -83,7 +83,7 @@ Since $y=2x+3$ is in slope-intercept form, the line has slope $2$ and a $y$-inte
 Once we know slope and $y$-intercept, we can draw the graph.
 
 ```{code-cell}
-:tags: [remove-input, hide-output]
+:tags: [remove-input]
 
 %%itikz
 \documentclass[tikz]{standalone}
@@ -127,7 +127,7 @@ Since $y - 3 = -2(x - 4)$ is in point-slope form, the line has slope $-2$ and go
 Now draw a graph with slope $-2$ that goes through the point $(4,3)$.
 
 ```{code-cell}
-:tags: [remove-input, hide-output]
+:tags: [remove-input]
 
 %%itikz
 \documentclass[tikz]{standalone}
@@ -175,7 +175,7 @@ Since $y - 1 = \frac{2}{5}(x + 2)$ is in point-slope form, the line has slope $2
 Draw the line with slope equal to $2/5$ that goes through the point $(-2,1)$
 
 ```{code-cell}
-:tags: [remove-input, hide-output]
+:tags: [remove-input]
 
 %%itikz
 \documentclass[tikz]{standalone}
@@ -373,7 +373,7 @@ Draw the graph of a parabola that opens upward (since the coefficient of $x^2$ i
 
 
 ```{code-cell}
-:tags: [remove-input, hide-output]
+:tags: [remove-input]
 
 %%itikz
 \documentclass[tikz]{standalone}
