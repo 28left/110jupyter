@@ -347,6 +347,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finding-intervals-of-increase-decrease-using-the-derivative">
+   Finding Intervals of Increase/Decrease using the Derivative
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -369,6 +392,85 @@
 <p class="admonition-title">Theorem</p>
 <p>If <span class="math notranslate nohighlight">\(f'(x) &gt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is increasing on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p>
 </div>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>A function <span class="math notranslate nohighlight">\(f\)</span> is decreasing on the interval <span class="math notranslate nohighlight">\((a,b)\)</span> if for any two numbers <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(d\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\(f(c) &gt; f(d)\)</span> whenever <span class="math notranslate nohighlight">\(c&lt;d\)</span>.</p>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/curvesketching_increasedecrease_5_0.svg" src="_images/curvesketching_increasedecrease_5_0.svg" /></div>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Theorem</p>
+<p>If <span class="math notranslate nohighlight">\(f'(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is decreasing on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>The following is the graph of a continuous function that is increasing on the intervals <span class="math notranslate nohighlight">\((1,2)\)</span> and <span class="math notranslate nohighlight">\((4,6)\)</span> and decreasing on the intervals <span class="math notranslate nohighlight">\((2,4)\)</span> and <span class="math notranslate nohighlight">\((6,7)\)</span>.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="_images/curvesketching_increasedecrease_7_0.svg" src="_images/curvesketching_increasedecrease_7_0.svg" /></div>
+</div>
+</div>
+<div class="section" id="finding-intervals-of-increase-decrease-using-the-derivative">
+<h2>Finding Intervals of Increase/Decrease using the Derivative<a class="headerlink" href="#finding-intervals-of-increase-decrease-using-the-derivative" title="Permalink to this headline">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Follow these steps</p>
+<ol class="simple">
+<li><p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f'(x) = 0\)</span> or <span class="math notranslate nohighlight">\(f'(x)\)</span> does not exist. <br><br></p></li>
+<li><p>Break up domain of <span class="math notranslate nohighlight">\(f\)</span> into open intervals between values found in Step 1. <br><br></p></li>
+<li><p>Evaluate <span class="math notranslate nohighlight">\(f'(x)\)</span> at one value, <span class="math notranslate nohighlight">\(c\)</span>, from each interval, <span class="math notranslate nohighlight">\((a,b)\)</span>, found in Step 2. <br></p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(f'(c) &gt; 0\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is increasing on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(f'(c) &lt; 0\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is decreasing on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>Determine the intervals where</p>
+<div class="math notranslate nohighlight">
+\[f(x) = x^3 + 3 x^2 - 9 x -8\]</div>
+<p>is increasing and where it is decreasing.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Compute <span class="math notranslate nohighlight">\(f'(x)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[f'(x) = 3 x^2 + 6 x - 9\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f'(x) = 0\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(x) 
+&amp;= 3 (x^2 + 2 x - 3) \\
+&amp;= 3 (x + 3)(x - 1)   
+\end{align*}\]</div>
+<p>which is equal to zero when <span class="math notranslate nohighlight">\(x=-3\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f'(x)\)</span> does not exist.</p>
+<p>Notice that <span class="math notranslate nohighlight">\(f'(x)\)</span> is defined for all real numbers.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Break up the domain of <span class="math notranslate nohighlight">\(f\)</span> into subintervals based on the values found in Steps 2 and 3.</p>
+<p>Since we found <span class="math notranslate nohighlight">\(x=-3\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span> to be the only values where <span class="math notranslate nohighlight">\(f'(x)\)</span> could change sign, we break up the domain of <span class="math notranslate nohighlight">\(f\)</span> (which is <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>) into the following subintervals:</p>
+<p>$<span class="math notranslate nohighlight">\((-\infty,-3), ~(-3,1), ~\hbox{ and }~  (1,\infty)\)</span>$\</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Plug one number from each subinterval into <span class="math notranslate nohighlight">\(f'(x)\)</span>  to determine the sign of <span class="math notranslate nohighlight">\(f'(x)\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{(-\infty,-3)}\)</span>: Plug <span class="math notranslate nohighlight">\(x=-4\)</span> into <span class="math notranslate nohighlight">\(f'(x)\)</span>.
+Since <span class="math notranslate nohighlight">\(f'(-4) = 3(-1)(-5) &gt; 0\)</span>,
+<span class="math notranslate nohighlight">\(f\)</span> is increasing on <span class="math notranslate nohighlight">\((-\infty,-3)\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{(-3,1)}\)</span>: Plug <span class="math notranslate nohighlight">\(x=0\)</span> into <span class="math notranslate nohighlight">\(f'(x)\)</span>.
+Since <span class="math notranslate nohighlight">\(f'(0) = 3(3)(-1) &lt; 0\)</span>,
+<span class="math notranslate nohighlight">\(f\)</span> is decreasing on <span class="math notranslate nohighlight">\((-3,1)\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{(1,\infty)}\)</span>:  Plug <span class="math notranslate nohighlight">\(x=2\)</span> into <span class="math notranslate nohighlight">\(f'(x)\)</span>.
+Since <span class="math notranslate nohighlight">\(f'(2) = 3(5)(1) &gt; 0\)</span>,<br />
+<span class="math notranslate nohighlight">\(f\)</span> is increasing on <span class="math notranslate nohighlight">\((1,\infty)\)</span>.</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -383,13 +485,13 @@
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python394jvsc74a57bd0085761d8a84a55f3b91b6696b289e6480df59aded311489218ab7e58f5e20cd3",
+            kernelName: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python394jvsc74a57bd0085761d8a84a55f3b91b6696b289e6480df59aded311489218ab7e58f5e20cd3'</script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
