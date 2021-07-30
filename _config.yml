@@ -62,7 +62,7 @@ repository:
 # Set launch button for notebook  
 launch_buttons:
   notebook_interface: classic # "jupyterlab" or "classic"
-  binderhub_url: https://binder.jupytr.cloud.psu.edu  # The URL for your BinderHub (e.g., https://mybinder.org)
+  binderhub_url: https://mybinder.org  # The URL for your BinderHub (e.g., https://mybinder.org)
   thebe                  : true
 
 
