@@ -1,0 +1,353 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.6.14)  2 AUG 2021 19:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**pics_2_1.tex
+(./pics_2_1.tex
+LaTeX2e <2021-06-01>
+L3 programming layer <2021-06-01>
+(/usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
+dalone
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count182
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count183
+\c@sapage=\count184
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2018/03/26 v1.3a Default configuration file for 'standalon
+e' class
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+\sa@box=\box50
+\sa@yoffset=\skip49
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2020/06/11 v0.70 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count193
+\pstFP@xia=\count194
+\pstFP@xib=\count195
+\pstFP@xfa=\count196
+\pstFP@xfb=\count197
+\pstFP@rega=\count198
+\pstFP@regb=\count199
+\pstFP@regs=\count266
+\pstFP@times=\count267
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen139
+\pgfutil@tempdimb=\dimen140
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks21
+))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Loading pgffor.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen141
+\pgf@xa=\dimen142
+\pgf@xb=\dimen143
+\pgf@xc=\dimen144
+\pgf@y=\dimen145
+\pgf@ya=\dimen146
+\pgf@yb=\dimen147
+\pgf@yc=\dimen148
+\c@pgf@counta=\count268
+\c@pgf@countb=\count269
+\c@pgf@countc=\count270
+\c@pgf@countd=\count271
+\pgfutil@tempcnta=\count272
+\pgfutil@tempcntb=\count273
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen149
+\pgfmath@count=\count274
+\pgfmath@box=\box51
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count275
+))
+\pgffor@iter=\dimen150
+\pgffor@skip=\dimen151
+\pgffor@stack=\toks25
+\pgffor@toks=\toks26
+)
+\psLoopIndex=\count276
+
+`PSTricks' v3.02  <2021/05/31> (tvz,hv)
+\pst@dima=\dimen152
+\pst@dimb=\dimen153
+\pst@dimc=\dimen154
+\pst@dimd=\dimen155
+\pst@dimg=\dimen156
+\pst@dimh=\dimen157
+\pst@dimm=\dimen158
+\pst@dimn=\dimen159
+\pst@dimo=\dimen160
+\pst@dimp=\dimen161
+\pst@hbox=\box52
+\pst@ibox=\box53
+\pst@boxg=\box54
+\pst@cnta=\count277
+\pst@cntb=\count278
+\pst@cntc=\count279
+\pst@cntd=\count280
+\pst@cntg=\count281
+\pst@cnth=\count282
+\pst@cntm=\count283
+\pst@cntn=\count284
+\pst@cnto=\count285
+\pst@cntp=\count286
+\@zero=\count287
+\pst@toks=\toks27
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen162
+\psxunit=\dimen163
+\psyunit=\dimen164
+\pst@C@@rType=\count288
+\pslinewidth=\dimen165
+\psk@startLW=\dimen166
+\psk@endLW=\dimen167
+\pst@customdefs=\toks28
+\pslinearc=\dimen168
+\pst@symbolStep=\dimen169
+\pst@symbolWidth=\dimen170
+\pst@symbolLinewidth=\dimen171
+\everypsbox=\toks29
+\psframesep=\dimen172
+\pslabelsep=\dimen173
+\sh@wgridXunit=\dimen174
+\sh@wgridYunit=\dimen175
+\pst@shift=\dimen176
+)
+File: pstricks.tex 2021/05/31 v3.02 `PSTricks' (tvz,hv)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>
+\multido@count=\count289
+\multidocount=\count290
+\multido@stuff=\toks30
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+Package: pst-plot 2011/04/13 package wrapper for pst-plot.tex (hv)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pst-tools/pst-tools.tex
+`PST-tools' v0.10, 2020/03/24 (hv)
+\randomi=\count291
+\ranval=\count292
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pst-node/pst-node.tex
+ v1.42a, 2020/04/01
+\psrow=\count293
+\pscol=\count294
+\psmatrixcnt=\count295
+\psrowsep=\skip50
+\pscolsep=\skip51
+\pst@args=\count296
+\num@pts=\count297
+\pst@argcnt=\count298
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pst-arrow/pst-arrow.tex
+`pst-arrow' v0.01, 2016/09/01 (dr,hv)
+\pshooklength=\dimen177
+\pshookwidth=\dimen178
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+`PST-3d' v1.11, 2010/02/14 (tvz))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pst-math/pst-math.tex
+`pst-math' v0.64 , (CJ,hv)) `pstricks-add' v3.89a, 2020/02/12 (dr,hv)
+\psparallelogramsep=\dimen179
+\pst@cntC=\count299
+\pst@stepcount=\count300
+\chart@ColorIndex=\dimen180
+\chart@ColorStep=\dimen181
+\pst@chartHeight=\dimen182
+\pst@chartStackDepth=\dimen183
+\pst@chartStackWidth=\dimen184
+\chart@Toggle=\count301
+\psVectorCtr=\count302
+)
+ v1.92, 2019/05/16 (tvz,hv)
+\pstRadUnit=\dimen185
+\pstRadUnitInv=\dimen186
+\pst@linecnt=\count303
+\RCD@file=\read2
+\psxlabelsep=\dimen187
+\psylabelsep=\dimen188
+\psk@subticksize=\dimen189
+\pst@xticksizeA=\dimen190
+\pst@xticksizeB=\dimen191
+\pst@xticksizeC=\dimen192
+\pst@yticksizeA=\dimen193
+\pst@yticksizeB=\dimen194
+\pst@yticksizeC=\dimen195
+\@digitcounter=\count304
+\psk@llx=\dimen196
+\psk@lly=\dimen197
+\psk@urx=\dimen198
+\psk@ury=\dimen199
+\pst@xunit=\dimen256
+\pst@yunit=\dimen257
+)
+File: pst-plot.tex 2019/05/16 1.92 `pst-plot' (tvz,hv)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2021-05-07 L3 backend support: dvips
+\l__pdf_internal_box=\box55
+\g__pdf_backend_object_int=\count305
+\l__pdf_backend_content_box=\box56
+\l__pdf_backend_model_box=\box57
+\g__pdf_backend_annotation_int=\count306
+\g__pdf_backend_link_int=\count307
+\g__pdf_backend_link_sf_int=\count308
+)
+(./pics_2_1.aux)
+\openout1 = `pics_2_1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \begin{center}
+                  
+? x
+ 
+Here is how much of TeX's memory you used:
+ 10053 strings out of 478537
+ 184886 string characters out of 5850245
+ 533659 words of memory out of 5000000
+ 27922 multiletter control sequences out of 15000+600000
+ 403430 words of font info for 27 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,0n,71p,620b,73s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

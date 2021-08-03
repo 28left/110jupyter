@@ -1,0 +1,52 @@
+\documentclass{standalone}
+\usepackage{pstricks, pst-plot}
+
+\begin{document}
+
+\begin{center}
+\begin{pspicture}(12,6)
+\psellipse[fillcolor=white,fillstyle=solid](3,3)(2,3)
+\psellipse[fillcolor=white,fillstyle=solid](9,3)(2,3)
+
+
+\rput(3,5){\huge $A$} 
+\rput(9,5){\huge $B$} 
+
+\rput(3,4){\red \sf Domain} 
+\rput(9,4){\red \sf Range}
+
+\rput(3,2){$\bullet$} 
+\rput(3,1.5){\huge $x$} 
+
+\rput(9,2){$\bullet$} 
+\rput(9,1.5){\huge $f(x)$}
+
+
+\psarc(6,-2){5}{53}{127}
+\psarcn[arrowscale=3]{->}(6,-2){5}{127}{87}
+
+\end{pspicture}
+
+\end{center}
+
+
+
+\begin{center}
+\begin{pspicture}[shift=-2](-1.25,-1.00)(1.25,3.25)
+    \psframe[fillcolor=white,fillstyle=solid,linecolor=white](-1.55,-1.00)(1.55,3.25)
+    \psset{unit=0.25}
+    \rput(0,12){$9-x^2$}
+    \psaxes[Dx=3,Dy=9]{->}(0,0)(-5,-4)(5,11) 
+    %\psaxes[Dx=3,Dy=9]{->}(0,0)(-5,-1)(5,16) 
+    %\psplot[linewidth=2pt]{-5}{5}{9} 
+    %\psplot[linewidth=2pt]{-3.8}{3.8}{x x mul} 
+    %\psplot[linewidth=2pt,linecolor=red]{-3}{3}{x x mul}
+    %\psplot[linewidth=2pt]{-5}{5}{9} 
+    \psplot[linewidth=2pt]{-3.61}{3.61}{9 x x mul sub} 
+    \psplot[linewidth=2pt,linecolor=red]{-3}{3}{9 x x mul sub}
+
+\end{pspicture}
+\end{center}
+
+
+\end{document}

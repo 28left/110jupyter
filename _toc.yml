@@ -11,6 +11,7 @@ chapters:
   - file: precalc_domain.md
 - file: limits_
   sections:
+  - file: limits_functionsgraphs.md
   - file: limits_def.md
   - file: limits_proplim.md
   - file: limits_graphs.md 
