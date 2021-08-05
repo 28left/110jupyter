@@ -32,7 +32,7 @@ Students should be familiar with the concepts of division and square roots.  Log
 
 The domain of a function is typically written as a union of intervals.  In this course, we will make use of interval notation to express domains.  This notation is summarized in the following table.
 
-![Table of interval types](./pic_precalc_intervaltypes.png)
+![Table of interval types](./images/pic_precalc_intervaltypes.png)
 
 Given two intervals, $A$ and $B$, then the union of $A$ and $B$, denoted $A\cup B$, represents the collection of values that are in $A$ or in $B$.  For example,
 

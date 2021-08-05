@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1627957676 "/Users/janreimann/Documents/GIT/110jupyter/latex_pictures/pics_2_1.tex" "pics_2_1.pdf" "pics_2_1" 1627957677
-  "/Users/janreimann/Documents/GIT/110jupyter/latex_pictures/pics_2_1.tex" 1627957676 1178 fdf84147d1e94f6eb6dbe92ca321d817 ""
-  "/dev/null" 1627957633 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1628028464 "/Users/janreimann/Documents/GIT/110jupyter/latex_pictures/pics_2_1.tex" "pics_2_1.pdf" "pics_2_1" 1628028464
+  "/Users/janreimann/Documents/GIT/110jupyter/latex_pictures/pics_2_1.tex" 1628015092 5545 b619e423587a152818e4e605db761675 ""
+  "/dev/null" 1628028455 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -71,9 +71,9 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1623723176 5184918 edc7760058d1085fc27d2bf72f6d6bd9 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1623723213 2813066 146270937d009b944930795940a4a28b ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "pics_2_1.aux" 1627957677 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "pics_2_1.tex" 1627957676 1178 fdf84147d1e94f6eb6dbe92ca321d817 ""
+  "pics_2_1.aux" 1628028464 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "pics_2_1.tex" 1628015092 5545 b619e423587a152818e4e605db761675 ""
   (generated)
+  "pics_2_1.aux"
   "pics_2_1.log"
   "pics_2_1.pdf"
-  "pics_2_1.aux"

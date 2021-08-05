@@ -1,9 +1,9 @@
-\documentclass{standalone}
-\usepackage{pstricks, pst-plot}
+\documentclass[pstricks=true, border=12pt]{standalone}
+\usepackage{pst-plot}
 
 \begin{document}
 
-\begin{center}
+
 \begin{pspicture}(12,6)
 \psellipse[fillcolor=white,fillstyle=solid](3,3)(2,3)
 \psellipse[fillcolor=white,fillstyle=solid](9,3)(2,3)
@@ -27,11 +27,9 @@
 
 \end{pspicture}
 
-\end{center}
 
 
 
-\begin{center}
 \begin{pspicture}[shift=-2](-1.25,-1.00)(1.25,3.25)
     \psframe[fillcolor=white,fillstyle=solid,linecolor=white](-1.55,-1.00)(1.55,3.25)
     \psset{unit=0.25}
@@ -46,7 +44,156 @@
     \psplot[linewidth=2pt,linecolor=red]{-3}{3}{9 x x mul sub}
 
 \end{pspicture}
-\end{center}
+
+
+
+
+\begin{pspicture}[shift=-2](-2,-1)(2,3.5)
+    \psframe[fillcolor=white,fillstyle=solid,linecolor=white](-2,-1)(2,3.5)
+    \psset{unit=0.25}
+    \rput(0,13){$9-x^2$}
+    \psaxes[Dx=3,Dy=9]{->}(0,0)(-5,-1)(5,11)
+    \psplot[linewidth=2pt,linecolor=red]{-3}{3}{9 x x mul sub}
+\end{pspicture}
+
+
+\begin{pspicture}(-1.5,-0.75)(3,3)
+    \psset{unit=0.75}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-2,-1)(4,4)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-2,-1)(4,4)
+    \rput(3.8,-0.5){$x$}
+    \rput(0.3,3.75){$y$}
+    \psplot[linewidth=2pt]{-2}{4}{x 1 sub 2 div dup dup mul mul x 2 div sub 2.5 add}
+\end{pspicture}
+
+
+\begin{pspicture}(-1.5,-0.75)(3,3)
+    \psset{unit=0.75}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-2,-1)(4,4)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-2,-1)(4,4)
+    \rput(3.8,-0.3){$x$}
+    \rput(0.3,3.75){$y$}
+    \psclip{\psframe[linestyle=none](-2,-1)(4,4)}
+    \parametricplot[linewidth=2pt]{-1}{4}{t 1 sub 2 div dup dup mul mul t 2 div sub 3 mul 2 add t }
+    \endpsclip
+\end{pspicture}
+
+
+
+\begin{pspicture}(-1.5,-0.75)(3,3)
+    \psset{unit=0.75}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-2,-1)(4,4)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-2,-1)(4,4)
+    \rput(3.8,-0.5){$x$}
+    \rput(0.3,3.75){$y$}
+    \psplot[linewidth=2pt]{-2}{0}{-1 x mul sqrt}
+    \psplot[linewidth=2pt]{1}{4}{x 1 sub sqrt}
+\end{pspicture}
+
+
+
+\begin{pspicture}(-1.5,-0.75)(3,3)
+    \psset{unit=0.75}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-2,-1)(4,4)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-2,-1)(4,4)
+    \rput(3.8,-0.5){$x$}
+    \rput(0.3,3.75){$y$}
+    \psplot[linewidth=2pt,plotpoints=200]{-2}{-1}{x 1 add -1 mul}
+    \psplot[linewidth=2pt,plotpoints=200]{-1}{1}{1 x x mul sub sqrt}
+    \psplot[linewidth=2pt,plotpoints=200]{1}{4}{x 1 sub}
+\end{pspicture}
+
+
+
+
+\begin{pspicture}(-1.5,-1.5)(1.5,1.5)
+    \psset{unit=1.5cm}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-1,-1)(1,1)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-1,-1)(1,1)
+    \psclip{\psframe[linestyle=none](-1,-1)(1,1)}
+        \parametricplot[linewidth=2pt]{-1}{1}{t t t mul}
+    \endpsclip
+    \rput(0.9,-0.1){$x$}
+    \rput(0.1,0.9){$y$}
+\end{pspicture}
+
+
+
+
+\begin{pspicture}(-1.5,-1.5)(1.5,1.5)
+    \psset{unit=1.5cm}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-1,-1)(1,1)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-1,-1)(1,1)
+    \psclip{\psframe[linestyle=none](-1,-1)(1,1)}
+        \parametricplot[linewidth=2pt]{-2}{-0.1}{t 0.5 mul 1 t div 0.5 mul}
+        \parametricplot[linewidth=2pt]{0.1}{2}{t 0.5 mul 1 t div 0.5 mul}
+    \endpsclip
+    \rput(0.9,-0.1){$x$}
+    \rput(0.1,0.9){$y$}
+\end{pspicture}
+
+
+
+\begin{pspicture}(-1.5,-1.5)(1.5,1.5)
+    \psset{unit=1.5cm}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-1,-1)(1,1)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-1,-1)(1,1)
+    \psclip{\psframe[linestyle=none](-1,-1)(1,1)}
+        \parametricplot[linewidth=2pt]{0}{1}{t t sqrt}
+    \endpsclip
+    \rput(0.9,-0.1){$x$}
+    \rput(0.1,0.9){$y$}
+\end{pspicture}
+    
+
+
+\begin{pspicture}(-1.5,-1.5)(1.5,1.5)
+    \psset{unit=1.5cm}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-1,-1)(1,1)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-1,-1)(1,1)
+    \psclip{\psframe[linestyle=none](-1,-1)(1,1)}
+        \parametricplot[linewidth=2pt]{-1}{1}{t t t t mul mul}
+    \endpsclip
+    \rput(0.9,-0.1){$x$}
+    \rput(0.1,0.9){$y$}
+\end{pspicture}
+
+
+\begin{pspicture}(-1.5,-1.5)(1.5,1.5)
+    \psset{unit=1.5cm}
+    \psframe[fillstyle=solid,fillcolor=white,linecolor=white](-1,-1)(1,1)
+    \psaxes[Dx=10,Dy=10]{->}(0,0)(-1,-1)(1,1)
+    \psclip{\psframe[linestyle=none](-1,-1)(1,1)}
+        \parametricplot[linewidth=2pt]{-1}{1}{t t mul t}
+    \endpsclip
+    \rput(0.9,-0.1){$x$}
+    \rput(0.1,0.9){$y$}
+\end{pspicture}
+
+
+
+
+\begin{pspicture}(-4,-1)(4,5)
+    \psframe[fillcolor=white,fillstyle=solid,linecolor=white](-3.9,-0.9)(3.9,5)
+    \psaxes{->}(0,0)(-3.9,-0.9)(3.9,5)
+    \rput(-3,4){\red $\bullet$} 
+    \rput(-2,3){\red $\bullet$} 
+    \rput(-1,2){\red $\bullet$} 
+    \rput(0,0){\red $\bullet$} 
+    \rput(1,1){\red $\bullet$} 
+    \rput(2,1.41){\red $\bullet$} 
+    \rput(3,1.73){\red $\bullet$} 
+    \psplot[linecolor=red,linewidth=2pt]{-3.9}{-0.05}{x -1 mul 1 add}
+    \psellipse[fillcolor=white,fillstyle=solid](0,1)(0.1,0.1)
+    \rput(0,1){\red $\circ$} 
+    \psplot[linecolor=red,linewidth=2pt]{0}{4}{x sqrt} 
+    \end{pspicture}
+
+    
+
+
+
+
 
 
 \end{document}
