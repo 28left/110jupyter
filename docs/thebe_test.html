@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Derivatives &#8212; Course Packet Math 110</title>
+    <title>Thebe Test &#8212; Course Packet Math 110</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="The Concept of the Derivative" href="derivatives_def.html" />
-    <link rel="prev" title="Continuity" href="limits_continuity.html" />
+    <link rel="next" title="Limits and Continuity" href="limits_.html" />
+    <link rel="prev" title="The Domain of a Function" href="precalc_domain.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -91,16 +91,16 @@
  </li>
 </ul>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="precalc_.html">
    Precalculus Review
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="precalc_simplification.html">
      Algebraic Simplification Techniques
@@ -131,8 +131,8 @@
      The Domain of a Function
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="thebe_test.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Thebe Test
     </a>
    </li>
@@ -190,11 +190,11 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="derivatives_.html">
    Derivatives
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
@@ -290,9 +290,12 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="_sources/thebe_test.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/derivatives_.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/thebe_test.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -312,7 +315,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2Fderivatives_.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/28left/110jupyter/issues/new?title=Issue%20on%20page%20%2Fthebe_test.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -328,6 +331,26 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/thebe_test.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -341,12 +364,19 @@
         
               <div>
                 
-  <!-- #region -->
-<div class="section" id="derivatives">
-<h1>Derivatives<a class="headerlink" href="#derivatives" title="Permalink to this headline">¶</a></h1>
-<p>In this chapter, we introduce the notion of derivative.</p>
-<!-- #endregion -->
-<div class="toctree-wrapper compound">
+  <div class="section" id="thebe-test">
+<h1>Thebe Test<a class="headerlink" href="#thebe-test" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -375,8 +405,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="limits_continuity.html" title="previous page">Continuity</a>
-    <a class='right-next' id="next-link" href="derivatives_def.html" title="next page">The Concept of the Derivative</a>
+    <a class='left-prev' id="prev-link" href="precalc_domain.html" title="previous page">The Domain of a Function</a>
+    <a class='right-next' id="next-link" href="limits_.html" title="next page">Limits and Continuity</a>
 
         </div>
         

@@ -9,6 +9,7 @@ chapters:
   - file: precalc_graphing.md
   - file: precalc_inequalities.md
   - file: precalc_domain.md
+  - file: thebe_test.md
 - file: limits_
   sections:
   - file: limits_functionsgraphs.md
