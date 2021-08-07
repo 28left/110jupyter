@@ -57,7 +57,7 @@ parse:
 repository:
   url                       : https://github.com/28left/110jupyter  # Online location of your book
   # path_to_book              : 110book/  # Optional path to your book, relative to the repository root
-  branch                    : master  # Which branch of the repository should be used when creating links (optional)
+  branch                    : testing  # Which branch of the repository should be used when creating links (optional)
   
 # Set launch button for notebook  
 launch_buttons:
