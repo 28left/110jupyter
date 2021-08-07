@@ -1,0 +1,10 @@
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=2.5]
+\draw[white,fill=white] (-1.5,-1.5) rectangle (2.7,2.2);
+      \draw[->] (-1.5,0) -- (2.5,0) node[below] {$x$};
+      \draw[->] (0,-1.5) -- (0,2) node[right] {$y$};
+      \draw[domain=-1.5:2,smooth,variable=\x,black,ultra thick] plot ({\x},{0.75*\x+0.5});
+      \fill (1,1.25) circle [radius = 2pt] node[below right] {$(a,b)$};
+    \end{tikzpicture}
+\end{document}

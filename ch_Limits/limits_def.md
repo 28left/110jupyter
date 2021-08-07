@@ -36,6 +36,9 @@ Keep in mind that the value of a limit does not depend on the value of the funct
 ```{code-cell} ipython3
 :tags: [remove-cell, thebe-init]
 
+import sys, os
+sys.path.append(os.path.abspath('..'))
+
 from cyllene import *
 f = function('3x^2+1')
 

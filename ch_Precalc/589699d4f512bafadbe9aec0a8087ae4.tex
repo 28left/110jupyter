@@ -1,0 +1,22 @@
+\documentclass[tikz]{standalone}
+\begin {document}
+\begin{tikzpicture}[scale=1.5]
+\draw[white,fill=white] (-6.5,-0.6) rectangle (4,0.6);
+\draw[->](-4,0) -- (4,0) ;
+\foreach \x in {-2,0,2}
+	\draw (\x, 3pt) -- (\x, -3pt) node[below, scale=1.5] {$\x$} ;
+	
+\node[above, scale=1.5] at (-3,0){$-$};
+\node[above, scale=1.5] at (-1,0){$+$};
+\node[above, scale=1.5] at (1,0){$+$} ;
+\node[above, scale=1.5] at (3,0){$-$} ;
+
+	\draw (-3, 2pt) -- (-3, -2pt) node[below, scale=1.5] {$-3$} ;
+	\draw (-1, 2pt) -- (-1, -2pt) node[below, scale=1.5] { $-1$} ;
+	\draw (1, 2pt) -- (1, -2pt) node[below, scale=1.5] { $1$} ;
+	\draw (3, 2pt) -- (3, -2pt) node[below, scale=1.5] {$3$} ;
+
+\node[left, scale=1.5] at (-4,0.25){sign of $f(x)$};
+
+\end{tikzpicture} 
+\end{document}

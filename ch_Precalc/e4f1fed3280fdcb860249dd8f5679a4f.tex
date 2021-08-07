@@ -1,0 +1,20 @@
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=2]
+
+\draw[black,fill=white] (-3.5,-4.3) rectangle (3.5,4.3);
+\draw[very thin,color=lightgray,step=1] (-2.9,-3.9) grid (2.9,3.9);
+
+      \draw[->] (-3,0) -- (3,0) node[below] {$x$};
+      \draw[->] (0,-4) -- (0,4) node[right] {$y$};
+      \draw[domain=-1.57:1.57,smooth,variable=\x,black,ultra thick,samples=100] plot ({\x},\x^3);
+      \node at (2.4,3.2){$y = x^3$};
+       
+      % tick marks
+\foreach \x in {-2,-1,1,2} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {-3,-2,-1,1,2,3} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+    \end{tikzpicture}
+\end{document}

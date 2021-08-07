@@ -1,0 +1,24 @@
+\documentclass[tikz]{standalone}
+\begin {document}
+\begin{tikzpicture}[xscale=1,yscale=0.6]
+
+\draw[white,fill=white] (-5.3,-5.3) rectangle (3.3,5.3);
+%\draw[very thin,color=lightgray,step=1] (-4.9,-4.9) grid (2.9,4.9);
+
+\draw[->] (-5,0) -- (3,0) node[below] {$x$};
+\draw[->] (0,-5) -- (0,5) node[right] {$y$};
+       
+\draw [fill=black] (-3,0) ellipse [x radius = 0.15, y radius = 0.25];
+\draw [fill=black] (1,0) ellipse [x radius = 0.15, y radius = 0.25];
+
+% tick marks
+\foreach \x in {-4,-2,2} 
+	\draw [thick] (\x cm,6pt) -- (\x cm,-6pt) node[below] {$\x$};
+\foreach \y in {} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+	
+\clip (-6,-5) rectangle (6,5);
+\draw[domain=-4:2,smooth,variable=\x,black,ultra thick] plot ({\x},{\x*\x + 2*\x - 3}); 
+%\node at (4.1, 4.5){$y = x^2 + 2x - 3$};
+\end{tikzpicture}
+\end{document}
