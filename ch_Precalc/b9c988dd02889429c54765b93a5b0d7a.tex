@@ -1,0 +1,21 @@
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=2]
+
+\draw[black,fill=white] (-0.8,-0.8) rectangle (10.3,4.3);
+\draw[very thin,color=lightgray,step=1] (0,0) grid (9.9,3.9);
+
+      \draw[->] (-0.5,0) -- (10,0) node[below] {$x$};
+      \draw[->] (0,-0.5) -- (0,4) node[right] {$y$};
+      \draw[domain=0:1,smooth,variable=\x,black,ultra thick,samples=100] plot ({\x},\x^0.5);
+      \draw[domain=1:10,smooth,variable=\x,black,ultra thick,samples=36] plot ({\x},\x^0.5);
+      \node at (7,3.2){$y = \sqrt{x}$};
+       
+      % tick marks
+\foreach \x in {1,...,9} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {1,2,3} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+    \end{tikzpicture}
+\end{document}

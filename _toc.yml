@@ -1,34 +1,32 @@
 format: jb-book
 root: intro
 chapters:
-- file: precalc_
+- file: ch_Precalc/precalc_
   sections:
-  - file: precalc_simplification.md
-  - file: precalc_factoring.md
-  - file: precalc_solvingequations.md
-  - file: precalc_graphing.md
-  - file: precalc_inequalities.md
-  - file: precalc_domain.md
-  - file: thebe_test.md
-- file: limits_
+  - file: ch_Precalc/precalc_simplification.md
+  - file: ch_Precalc/precalc_factoring.md
+  - file: ch_Precalc/precalc_solvingequations.md
+  - file: ch_Precalc/precalc_graphing.md
+  - file: ch_Precalc/precalc_inequalities.md
+  - file: ch_Precalc/precalc_domain.md
+- file: ch_Limits/limits_
   sections:
-  - file: limits_functionsgraphs.md
-  - file: limits_def.md
-  - file: limits_proplim.md
-  - file: limits_graphs.md 
-  - file: limits_algebra.md
-  - file: limits_indeterminate.md
-  - file: limits_infinity.md
-  - file: limits_continuity.md
-- file: derivatives_
+  - file: ch_Limits/limits_def.md
+  - file: ch_Limits/limits_proplim.md
+  - file: ch_Limits/limits_graphs.md 
+  - file: ch_Limits/limits_algebra.md
+  - file: ch_Limits/limits_indeterminate.md
+  - file: ch_Limits/limits_infinity.md
+  - file: ch_Limits/limits_continuity.md
+- file: ch_Derivatives/derivatives_
   sections:
-  - file: derivatives_def.md
-  - file: derivatives_rules.md
-- file: implicit_
+  - file: ch_Derivatives/derivatives_def.md
+  - file: ch_Derivatives/derivatives_rules.md
+- file: ch_Implicit/implicit_
   sections:
-  - file: implicit_differentiation.md
-  - file: implicit_relatedrates.md
-- file: curvesketching_
+  - file: ch_Implicit/implicit_differentiation.md
+  - file: ch_Implicit/implicit_relatedrates.md
+- file: ch_Curvesketching/curvesketching_
   sections:
-  - file: curvesketching_increasedecrease.md
+  - file: ch_Curvesketching/curvesketching_increasedecrease.md
 
