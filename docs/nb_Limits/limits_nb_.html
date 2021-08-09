@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Limits at Infinity &#8212; Math 110 Companion Site</title>
+    <title>Limits and Continuity &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -42,8 +42,6 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -51,13 +49,11 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Continuity" href="limits_continuity.html" />
-    <link rel="prev" title="Indeterminate Forms" href="limits_indeterminate.html" />
+    <link rel="next" title="More Examples – Limits. Try it Yourself!" href="limits_nb_TIY2.html" />
+    <link rel="prev" title="Intervals of Increase &amp; Decrease" href="../ch_Curvesketching/curvesketching_increasedecrease.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -99,7 +95,7 @@
   Course Packets e-book
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Precalc/precalc_.html">
    Precalculus Review
@@ -142,48 +138,48 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="limits_.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Limits/limits_.html">
    Limits and Continuity
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_def.html">
+    <a class="reference internal" href="../ch_Limits/limits_def.html">
      Limit of a Function
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_proplim.html">
+    <a class="reference internal" href="../ch_Limits/limits_proplim.html">
      Properties of Finite Limits
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_graphs.html">
+    <a class="reference internal" href="../ch_Limits/limits_graphs.html">
      Examples: Computing Limits from Graphs
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_algebra.html">
+    <a class="reference internal" href="../ch_Limits/limits_algebra.html">
      Examples: Computing Limits Algebraically
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_indeterminate.html">
+    <a class="reference internal" href="../ch_Limits/limits_indeterminate.html">
      Indeterminate Forms
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_infinity.html">
      Limits at Infinity
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_continuity.html">
+    <a class="reference internal" href="../ch_Limits/limits_continuity.html">
      Continuity
     </a>
    </li>
@@ -256,11 +252,23 @@
   Computational Examples – Try it yourself notebooks
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
    Limits and Continuity
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_nb_TIY2.html">
+     More Examples – Limits. Try it Yourself!
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -301,12 +309,9 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/ch_Limits/limits_infinity.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Limits/limits_infinity.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/nb_Limits/limits_nb_.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -326,69 +331,11 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Limits/limits_infinity.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-1">
-   Example 1
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#properties-of-limits-at-infinity">
-   Properties of Limits at Infinity
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-2">
-   Example 2
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-3">
-   Example 3
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#limits-at-infinity-of-rational-functions">
-   Limits at Infinity of Rational Functions
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-4">
-   Example 4
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -397,76 +344,13 @@
         
               <div>
                 
-  <div class="section" id="limits-at-infinity">
-<h1>Limits at Infinity<a class="headerlink" href="#limits-at-infinity" title="Permalink to this headline">¶</a></h1>
-<div class="info admonition">
-<p class="admonition-title">Definition</p>
-<p>The function <span class="math notranslate nohighlight">\(f(x)\)</span> has the limit <span class="math notranslate nohighlight">\(L\)</span> as <span class="math notranslate nohighlight">\(x\)</span> increases without bound (as <span class="math notranslate nohighlight">\(x\)</span> approaches infinity),</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to \infty} f(x) = L \]</div>
-<p>if <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(L\)</span> by taking <span class="math notranslate nohighlight">\(x\)</span> large enough.</p>
-<p>Similarly, the function <span class="math notranslate nohighlight">\(f(x)\)</span> has the limit <span class="math notranslate nohighlight">\(M\)</span> as <span class="math notranslate nohighlight">\(x\)</span> decreases without bound (as <span class="math notranslate nohighlight">\(x\)</span> approaches negative infinity),</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to -\infty} f(x) = M \]</div>
-<p>if <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(M\)</span> by taking <span class="math notranslate nohighlight">\(x\)</span>  to be negative and sufficiently large in absolute value.</p>
-</div>
-<div class="section" id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
-<p>The following graph illustrates a function <span class="math notranslate nohighlight">\(f(x)\)</span> that approaches a value of 400 as <span class="math notranslate nohighlight">\(x\)</span> increases without bound.  In other words,</p>
-<div class="math notranslate nohighlight">
-\[\lim\limits_{x\to \infty} f(x) = 400.\]</div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/limits_infinity_3_0.svg" src="../_images/limits_infinity_3_0.svg" /></div>
-</div>
-</div>
-<div class="section" id="properties-of-limits-at-infinity">
-<h2>Properties of Limits at Infinity<a class="headerlink" href="#properties-of-limits-at-infinity" title="Permalink to this headline">¶</a></h2>
-<p>All previous properties for limits apply when <span class="math notranslate nohighlight">\(a\)</span> is replaced with <span class="math notranslate nohighlight">\(\infty\)</span> or <span class="math notranslate nohighlight">\(-\infty\)</span>.  Furthermore, the following additional properties are especially useful when evaluating limits at infinity.  For all <span class="math notranslate nohighlight">\(n&gt;0\)</span>, we have</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to \infty} \dfrac{1}{x^n}=0 \)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} \dfrac{1}{x^n}=0\)</span>, provided that <span class="math notranslate nohighlight">\(x^n\)</span> is defined for <span class="math notranslate nohighlight">\(x&lt;0\)</span>.</p></li>
+  <div class="section" id="limits-and-continuity">
+<h1>Limits and Continuity<a class="headerlink" href="#limits-and-continuity" title="Permalink to this headline">¶</a></h1>
+<p>Limits are the most important concept in calculus. You will find some activity notebooks which will show you more computational examples and, if you want, let you work through even more examples yourself.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="limits_nb_TIY2.html">More Examples – Limits. Try it Yourself!</a></li>
 </ul>
-</div>
-<div class="section" id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
-<p>Notice how the graph of <span class="math notranslate nohighlight">\(y=1/x\)</span> approaches the <span class="math notranslate nohighlight">\(x\)</span>-axis as <span class="math notranslate nohighlight">\(x\)</span> approaches positive and negative infinity.  In other words,</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} \frac{1}{x} = 0.\]</div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/limits_infinity_5_0.svg" src="../_images/limits_infinity_5_0.svg" /></div>
-</div>
-</div>
-<div class="section" id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
-<p>Notice how the graph of <span class="math notranslate nohighlight">\(y=1/\sqrt{x}\)</span> approaches the <span class="math notranslate nohighlight">\(x\)</span>-axis as <span class="math notranslate nohighlight">\(x\)</span> approaches positive infinity.  In other words,</p>
-<div class="math notranslate nohighlight">
-\[\lim_{x\to \infty} \frac{1}{\sqrt{x}} = 0.\]</div>
-<p>Furthermore, there is no discussion of the limit as <span class="math notranslate nohighlight">\(x\)</span> approaches negative infinity since <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> is not defined for negative values of <span class="math notranslate nohighlight">\(x\)</span>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/limits_infinity_7_0.svg" src="../_images/limits_infinity_7_0.svg" /></div>
-</div>
-</div>
-<div class="section" id="limits-at-infinity-of-rational-functions">
-<h2>Limits at Infinity of Rational Functions<a class="headerlink" href="#limits-at-infinity-of-rational-functions" title="Permalink to this headline">¶</a></h2>
-<p>For Rational Functions, a limit at infinity, whether it be <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to\infty}\)</span> or <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to -\infty}\)</span>, can be determined by comparing the degree of the polynomial in the numerator to the degree of the polynomial in the denominator.</p>
-<p>For infinite limits of Rational Functions, if the</p>
-<ul class="simple">
-<li><p>highest power is in the denominator, then the limit will equal <span class="math notranslate nohighlight">\(0\)</span></p></li>
-<li><p>highest power in the numerator, then the limit will equal <span class="math notranslate nohighlight">\(\pm\infty\)</span> (DNE)</p></li>
-<li><p>highest power is the same in both the numerator and denominator, then the limit will equal the ratio of the leading coefficients, i.e. the ratio of the coefficients in front of the highest powers in the numerator and the denominator.</p></li>
-</ul>
-</div>
-<div class="section" id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
-<p>Applying the guidelines:</p>
-<ol class="simple">
-<li><p><span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to\infty}\frac{x+3}{6x^2+3x+1}\)</span> = 0 (highest power is in denominator)   <br>   </p></li>
-<li><p><span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to-\infty}\frac{6x^{3}+3}{x^{2}+4x-7}\)</span> = <span class="math notranslate nohighlight">\(-\infty\)</span> or DNE (highest power is in numerator)  <br>   </p></li>
-<li><p><span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to\infty}\frac{4x^5+3x-8}{9x^5-6x^3}\)</span> = <span class="math notranslate nohighlight">\(4/9\)</span> (highest powers are the same)</p></li>
-</ol>
 </div>
 </div>
 
@@ -483,7 +367,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ch_Limits"
+            path: "./nb_Limits"
         },
         predefinedOutput: true
     }
@@ -495,8 +379,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="limits_indeterminate.html" title="previous page">Indeterminate Forms</a>
-    <a class='right-next' id="next-link" href="limits_continuity.html" title="next page">Continuity</a>
+    <a class='left-prev' id="prev-link" href="../ch_Curvesketching/curvesketching_increasedecrease.html" title="previous page">Intervals of Increase &amp; Decrease</a>
+    <a class='right-next' id="next-link" href="limits_nb_TIY2.html" title="next page">More Examples – Limits. Try it Yourself!</a>
 
         </div>
         

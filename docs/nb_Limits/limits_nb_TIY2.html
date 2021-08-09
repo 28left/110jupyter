@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Domain of a Function &#8212; Math 110 Companion Site</title>
+    <title>More Examples – Limits. Try it Yourself! &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -56,8 +56,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Limits and Continuity" href="../ch_Limits/limits_.html" />
-    <link rel="prev" title="Solving Inequalities" href="precalc_inequalities.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -99,44 +97,44 @@
   Course Packets e-book
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="precalc_.html">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Precalc/precalc_.html">
    Precalculus Review
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="precalc_simplification.html">
+    <a class="reference internal" href="../ch_Precalc/precalc_simplification.html">
      Algebraic Simplification Techniques
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="precalc_factoring.html">
+    <a class="reference internal" href="../ch_Precalc/precalc_factoring.html">
      Factoring Techniques
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="precalc_solvingequations.html">
+    <a class="reference internal" href="../ch_Precalc/precalc_solvingequations.html">
      Solving Equations
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="precalc_graphing.html">
+    <a class="reference internal" href="../ch_Precalc/precalc_graphing.html">
      Graphing
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="precalc_inequalities.html">
+    <a class="reference internal" href="../ch_Precalc/precalc_inequalities.html">
      Solving Inequalities
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_domain.html">
      The Domain of a Function
     </a>
    </li>
@@ -258,7 +256,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
+  <a class="reference internal" href="limits_nb_.html">
    Limits and Continuity
   </a>
  </li>
@@ -301,14 +299,11 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/ch_Precalc/precalc_domain.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+        
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Precalc/precalc_domain.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/nb_Limits/limits_nb_TIY2.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -331,7 +326,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Precalc/precalc_domain.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/nb_Limits/limits_nb_TIY2.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -357,31 +352,9 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#interval-notation">
-   Interval Notation
+  <a class="reference internal nav-link" href="#estimating-limits">
+   Estimating limits
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-1">
-     Example 1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-2">
-     Example 2
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-3">
-     Example 3
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-4">
-     Example 4
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -394,109 +367,122 @@
         
               <div>
                 
-  <div class="section" id="the-domain-of-a-function">
-<h1>The Domain of a Function<a class="headerlink" href="#the-domain-of-a-function" title="Permalink to this headline">¶</a></h1>
-<div class="tip admonition">
-<p class="admonition-title">Definition</p>
-<p>The <strong>domain</strong> of a function is the set of all values of <span class="math notranslate nohighlight">\(x\)</span> for which the function is defined.</p>
-</div>
-<p>When determining the domain of a given function, do not include any value that leads to one or more of the following:</p>
-<ul class="simple">
-<li><p>division by zero</p></li>
-<li><p>the square root of a negative number</p></li>
-<li><p>the logarithm of zero or a negative number</p></li>
-</ul>
-<p>Students should be familiar with the concepts of division and square roots.  Logarithms will be discussed in class and in a subsequent PSL Course Packet.   While there are other functions that lead to restrictions on the domain, we will limit our discussion to division, square roots, and logarithms.</p>
-<div class="section" id="interval-notation">
-<h2>Interval Notation<a class="headerlink" href="#interval-notation" title="Permalink to this headline">¶</a></h2>
-<p>The domain of a function is typically written as a union of intervals.  In this course, we will make use of interval notation to express domains.  This notation is summarized in the following table.</p>
-<p><img alt="Table of interval types" src="../_images/pic_precalc_intervaltypes.png" /></p>
-<p>Given two intervals, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, then the union of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\cup B\)</span>, represents the collection of values that are in <span class="math notranslate nohighlight">\(A\)</span> or in <span class="math notranslate nohighlight">\(B\)</span>.  For example,</p>
-<div class="math notranslate nohighlight">
-\[(-\infty,5) \cup [7,10)\]</div>
-<p>represents the values that are less than <span class="math notranslate nohighlight">\(5\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;5\)</span>) or greater than or equal to <span class="math notranslate nohighlight">\(7\)</span> and less than <span class="math notranslate nohighlight">\(10\)</span> (i.e., <span class="math notranslate nohighlight">\(7\leq x &lt; 10\)</span>).</p>
-<div class="section" id="example-1">
-<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
-<p>Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span> using an inequality.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(1/x\)</span> includes all real numbers except <span class="math notranslate nohighlight">\(x=0\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;0\)</span> or <span class="math notranslate nohighlight">\(x&gt;0\)</span>) since division by zero is not defined.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span>.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(1/x\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x&lt;0\)</span> or <span class="math notranslate nohighlight">\(x&gt;0\)</span>, which can be written
-in interval notation as</p>
-<div class="math notranslate nohighlight">
-\[(-\infty,0) \cup (0,\infty).\]</div>
+  <div class="section" id="more-examples-limits-try-it-yourself">
+<h1>More Examples – Limits. Try it Yourself!<a class="headerlink" href="#more-examples-limits-try-it-yourself" title="Permalink to this headline">¶</a></h1>
+<div class="cell tag_thebe-init tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
+
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="kn">from</span> <span class="nn">cyllene</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">%</span><span class="k">initialize</span> limits_def
+</pre></div>
 </div>
 </div>
-<div class="section" id="example-2">
-<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
-<p>Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> using an inequality.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> includes all nonnegative real numbers (i.e., <span class="math notranslate nohighlight">\(x\geq 0\)</span>) since the square root of a negative number is not defined.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\geq 0\)</span>, which can be written in interval notation as</p>
-<div class="math notranslate nohighlight">
-\[[0,\infty).\]</div>
-</div>
-</div>
-<div class="section" id="example-3">
-<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
-<p>Determine the domain of the function <span class="math notranslate nohighlight">\(f(x) = \sqrt{x^2 + 2x - 3}\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Describe the domain using an inequality.</p>
-<p>Since <span class="math notranslate nohighlight">\(f\)</span> is a square root function, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that
-$<span class="math notranslate nohighlight">\(x^2 + 2x - 3 \geq 0\)</span>$
-since the square root of a negative number is not defined.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Solve the inequality in Step 1.</p>
-<p>Recall from <a class="reference internal" href="precalc_inequalities.html#example1"><span class="std std-ref">Solving Inequalities, Example 1</span></a> that</p>
-<div class="math notranslate nohighlight">
-\[x^2 + 2x - 3 = 0\]</div>
-<p>when <span class="math notranslate nohighlight">\(x=-3\)</span> or <span class="math notranslate nohighlight">\(x=1\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[x^2 + 2x - 3 &gt; 0\]</div>
-<p>when <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
-<p>Therefore, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\leq -3\)</span> or <span class="math notranslate nohighlight">\(x\geq 1\)</span>, which can be written in interval notation as</p>
-<div class="math notranslate nohighlight">
-\[
-(-\infty, -3] \cup [1, \infty).
-\]</div>
-</div>
-</div>
-<div class="section" id="example-4">
-<h3>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h3>
-<p>Determine the domain of the function <span class="math notranslate nohighlight">\(f(x) = \dfrac{x}{x^2 + 2x - 3}\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Describe the domain by excluding all <span class="math notranslate nohighlight">\(x\)</span> that make <span class="math notranslate nohighlight">\(f(x)\)</span> undefined.</p>
-<p>Since <span class="math notranslate nohighlight">\(f\)</span> involves the operation of division, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> such that</p>
-<div class="math notranslate nohighlight">
-\[x^2 +2x - 3 \neq 0\]</div>
-<p>since division by zero is not defined.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find all values of <span class="math notranslate nohighlight">\(x\)</span> that lead to division by zero.</p>
-<p>Solve the equation <span class="math notranslate nohighlight">\(x^2 + 2x - 3 = 0\)</span>.  Recall from <a class="reference internal" href="precalc_inequalities.html#example1"><span class="std std-ref">Solving Inequalities, Example 1</span></a> that</p>
-<div class="math notranslate nohighlight">
-\[x^2 + 2x - 3 = 0\]</div>
-<p>when <span class="math notranslate nohighlight">\(x=-3\)</span> or <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Exclude the values found in Step 2 from the domain.</p>
-<p>Since the only values of <span class="math notranslate nohighlight">\(x\)</span> that lead to division by zero are <span class="math notranslate nohighlight">\(x=-3\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x&lt;-3\)</span>, or <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>, or <span class="math notranslate nohighlight">\(x&gt;1\)</span>, which can be written in interval notation as</p>
-<div class="math notranslate nohighlight">
-\[
-(-\infty, -3) \cup (-3, 1) \cup (1, \infty).
-\]</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Initialization successful!
+</pre></div>
 </div>
 </div>
 </div>
+<div class="section" id="estimating-limits">
+<h2>Estimating limits<a class="headerlink" href="#estimating-limits" title="Permalink to this headline">¶</a></h2>
+<p>We first generate a random function <span class="math notranslate nohighlight">\(f\)</span> and pick a number <span class="math notranslate nohighlight">\(r\)</span> between <span class="math notranslate nohighlight">\(-2\)</span> and <span class="math notranslate nohighlight">\(2\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="s1">&#39;random&#39;</span><span class="p">)</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">1.2</span>
+</pre></div>
 </div>
+</div>
+</div>
+<p>Next, we generate a table of values of <span class="math notranslate nohighlight">\(f\)</span> around <span class="math notranslate nohighlight">\(r\)</span>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">function_to_table</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">[</span><span class="n">r</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">r</span><span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">r</span><span class="o">-</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>x</th>
+      <th>f(x)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.100</td>
+      <td>-1.47655089902162</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.190</td>
+      <td>-1.86976653561719</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.199</td>
+      <td>-1.90743938022689</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.201</td>
+      <td>-1.91577271548923</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.210</td>
+      <td>-1.95310179804325</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1.300</td>
+      <td>-2.31182132233746</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest would be a reasonable estimate for <span class="math notranslate nohighlight">\(\lim_{x\to r} f(x)\)</span>?</p>
+<div class="cell tag_hide-cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sp</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">x</span><span class="p">,</span><span class="mf">1.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle -1.91160778396977\]</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"a45b7c97670a4a7dbe3b3c96eb1472de": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "471891789eb94e5bb207973b992c54c3": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_6bb9378fbae4408799b0d35883f0f49c", "IPY_MODEL_697cfd4e353c4bea8be2982b3f3631da"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_a45b7c97670a4a7dbe3b3c96eb1472de", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "6bb9378fbae4408799b0d35883f0f49c": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [-1.9999, -1.999, -1.99, -1.9]}}, "697cfd4e353c4bea8be2982b3f3631da": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [17.99800004, 17.980004, 17.8004, 16.04]}}}, "version_major": 2, "version_minor": 0}
+</script>
+
 
     <script type="text/x-thebe-config">
     {
@@ -511,7 +497,7 @@ since the square root of a negative number is not defined.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ch_Precalc"
+            path: "./nb_Limits"
         },
         predefinedOutput: true
     }
@@ -523,8 +509,6 @@ since the square root of a negative number is not defined.</p>
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="precalc_inequalities.html" title="previous page">Solving Inequalities</a>
-    <a class='right-next' id="next-link" href="../ch_Limits/limits_.html" title="next page">Limits and Continuity</a>
 
         </div>
         

@@ -1,33 +1,40 @@
 format: jb-book
 root: intro
-chapters:
-- file: ch_Precalc/precalc_
-  sections:
-  - file: ch_Precalc/precalc_simplification.md
-  - file: ch_Precalc/precalc_factoring.md
-  - file: ch_Precalc/precalc_solvingequations.md
-  - file: ch_Precalc/precalc_graphing.md
-  - file: ch_Precalc/precalc_inequalities.md
-  - file: ch_Precalc/precalc_domain.md
-- file: ch_Limits/limits_
-  sections:
-  - file: ch_Limits/limits_def.md
-  - file: ch_Limits/limits_def_TIY2.ipynb
-  - file: ch_Limits/limits_proplim.md
-  - file: ch_Limits/limits_graphs.md 
-  - file: ch_Limits/limits_algebra.md
-  - file: ch_Limits/limits_indeterminate.md
-  - file: ch_Limits/limits_infinity.md
-  - file: ch_Limits/limits_continuity.md
-- file: ch_Derivatives/derivatives_
-  sections:
-  - file: ch_Derivatives/derivatives_def.md
-  - file: ch_Derivatives/derivatives_rules.md
-- file: ch_Implicit/implicit_
-  sections:
-  - file: ch_Implicit/implicit_differentiation.md
-  - file: ch_Implicit/implicit_relatedrates.md
-- file: ch_Curvesketching/curvesketching_
-  sections:
-  - file: ch_Curvesketching/curvesketching_increasedecrease.md
+parts:
+- caption: Course Packets e-book
+  chapters:
+  - file: ch_Precalc/precalc_
+    sections:
+    - file: ch_Precalc/precalc_simplification.md
+    - file: ch_Precalc/precalc_factoring.md
+    - file: ch_Precalc/precalc_solvingequations.md
+    - file: ch_Precalc/precalc_graphing.md
+    - file: ch_Precalc/precalc_inequalities.md
+    - file: ch_Precalc/precalc_domain.md
+  - file: ch_Limits/limits_
+    sections:
+    - file: ch_Limits/limits_def.md
+    - file: ch_Limits/limits_proplim.md
+    - file: ch_Limits/limits_graphs.md 
+    - file: ch_Limits/limits_algebra.md
+    - file: ch_Limits/limits_indeterminate.md
+    - file: ch_Limits/limits_infinity.md
+    - file: ch_Limits/limits_continuity.md
+  - file: ch_Derivatives/derivatives_
+    sections:
+    - file: ch_Derivatives/derivatives_def.md
+    - file: ch_Derivatives/derivatives_rules.md
+  - file: ch_Implicit/implicit_
+    sections:
+    - file: ch_Implicit/implicit_differentiation.md
+    - file: ch_Implicit/implicit_relatedrates.md
+  - file: ch_Curvesketching/curvesketching_
+    sections:
+    - file: ch_Curvesketching/curvesketching_increasedecrease.md
+- caption: Computational Examples – Try it yourself notebooks
+  chapters:
+  - file: nb_Limits/limits_nb_
+    sections:
+    - file: nb_Limits/limits_nb_TIY2.ipynb
+
 
