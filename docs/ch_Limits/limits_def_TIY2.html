@@ -359,6 +359,24 @@
                 
   <div class="section" id="more-examples-limits-try-it-yourself">
 <h1>More Examples – Limits. Try it Yourself!<a class="headerlink" href="#more-examples-limits-try-it-yourself" title="Permalink to this headline">¶</a></h1>
+<div class="cell tag_thebe-init tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
+
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="kn">from</span> <span class="nn">cyllene</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">%</span><span class="k">initialize</span> limits_def
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Initialization successful!
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="estimating-limits">
 <h2>Estimating limits<a class="headerlink" href="#estimating-limits" title="Permalink to this headline">¶</a></h2>
 <p>We first generate a random function <span class="math notranslate nohighlight">\(f\)</span> and pick a number <span class="math notranslate nohighlight">\(r\)</span> between <span class="math notranslate nohighlight">\(-2\)</span> and <span class="math notranslate nohighlight">\(2\)</span>.</p>
@@ -404,32 +422,32 @@
     <tr>
       <th>0</th>
       <td>1.100</td>
-      <td>2.33921419057029</td>
+      <td>3.39116499156263</td>
     </tr>
     <tr>
       <th>1</th>
       <td>1.190</td>
-      <td>2.38227685039287</td>
+      <td>3.45687720348872</td>
     </tr>
     <tr>
       <th>2</th>
       <td>1.199</td>
-      <td>2.38649825942928</td>
+      <td>3.46337985210979</td>
     </tr>
     <tr>
       <th>3</th>
       <td>1.201</td>
-      <td>2.38743432473784</td>
+      <td>3.46482322781408</td>
     </tr>
     <tr>
       <th>4</th>
       <td>1.210</td>
-      <td>2.39163756286070</td>
+      <td>3.47131099154196</td>
     </tr>
     <tr>
       <th>5</th>
       <td>1.300</td>
-      <td>2.43288079822936</td>
+      <td>3.53553390593274</td>
     </tr>
   </tbody>
 </table>
@@ -444,7 +462,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 2.38696638385467\]</div>
+\[\displaystyle 3.46410161513775\]</div>
 </div>
 </div>
 </div>
@@ -452,7 +470,7 @@
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"06dc19fd87014c6faec5792e6fbc789f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "96e9a76cd2b04f71a5eb4e4741ae91da": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_e37390e0799544e8bfb709771dd6be6e", "IPY_MODEL_8a9dd0ac1b05455da0defbf343c291dc"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_06dc19fd87014c6faec5792e6fbc789f", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "e37390e0799544e8bfb709771dd6be6e": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [-0.9999, -0.999, -0.99, -0.9]}}, "8a9dd0ac1b05455da0defbf343c291dc": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [2.9996999900000003, 2.996999, 2.9699, 2.69]}}}, "version_major": 2, "version_minor": 0}
+{"state": {"b3253be3a0164522959a3f247d389ab0": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "ae922fe060824aa7b2b9262222397bc7": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_7bb161bd397b4f6e90d8eeb7c8037929", "IPY_MODEL_74a2256cff2d47dca3df937a658ba679"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_b3253be3a0164522959a3f247d389ab0", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "7bb161bd397b4f6e90d8eeb7c8037929": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1.0001, 1.001, 1.01, 1.1]}}, "74a2256cff2d47dca3df937a658ba679": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [-2.00070005, -2.007004999999999, -2.0705, -2.7500000000000004]}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
