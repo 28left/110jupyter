@@ -382,24 +382,6 @@
                 
   <div class="section" id="more-examples-limits-try-it-yourself">
 <h1>More Examples – Limits. Try it Yourself!<a class="headerlink" href="#more-examples-limits-try-it-yourself" title="Permalink to this headline">¶</a></h1>
-<div class="cell tag_thebe-init tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
-
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
-
-<span class="kn">from</span> <span class="nn">cyllene</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="o">%</span><span class="k">initialize</span> limits_def
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Initialization successful!
-</pre></div>
-</div>
-</div>
-</div>
 <div class="section" id="estimating-limits">
 <h2>Estimating limits<a class="headerlink" href="#estimating-limits" title="Permalink to this headline">¶</a></h2>
 <p>We first generate a random function <span class="math notranslate nohighlight">\(f\)</span> and pick a number <span class="math notranslate nohighlight">\(r\)</span> between <span class="math notranslate nohighlight">\(-2\)</span> and <span class="math notranslate nohighlight">\(2\)</span>.</p>
@@ -407,12 +389,17 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="s1">&#39;random&#39;</span><span class="p">)</span>
 <span class="n">r</span> <span class="o">=</span> <span class="mf">1.2</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="s2">&quot;Function $f(x)$ set, $r = $&quot;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<p>Function $f(x)$ set, $r = $1.2</p>
+</div>
 </div>
 <p>Next, we generate a table of values of <span class="math notranslate nohighlight">\(f\)</span> around <span class="math notranslate nohighlight">\(r\)</span>:</p>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">function_to_table</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">[</span><span class="n">r</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">r</span><span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">r</span><span class="o">-</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.1</span><span class="p">])</span>
 </pre></div>
@@ -445,39 +432,40 @@
     <tr>
       <th>0</th>
       <td>1.100</td>
-      <td>1.28057916498749</td>
+      <td>-3.52344910097838</td>
     </tr>
     <tr>
       <th>1</th>
       <td>1.190</td>
-      <td>1.29861786044028</td>
+      <td>-3.13023346438281</td>
     </tr>
     <tr>
       <th>2</th>
       <td>1.199</td>
-      <td>1.30039435767624</td>
+      <td>-3.09256061977311</td>
     </tr>
     <tr>
       <th>3</th>
       <td>1.201</td>
-      <td>1.30078847631158</td>
+      <td>-3.08422728451077</td>
     </tr>
     <tr>
       <th>4</th>
       <td>1.210</td>
-      <td>1.30255906172255</td>
+      <td>-3.04689820195675</td>
     </tr>
     <tr>
       <th>5</th>
       <td>1.300</td>
-      <td>1.32000612179591</td>
+      <td>-2.68817867766254</td>
     </tr>
   </tbody>
 </table>
 </div></div></div>
 </div>
 <p>What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest would be a reasonable estimate for <span class="math notranslate nohighlight">\(\lim_{x\to r} f(x)\)</span>?</p>
-<div class="cell tag_hide-cell docutils container">
+<p>Let’s confirm our estimate by formally computing the limit.</p>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sp</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">x</span><span class="p">,</span><span class="mf">1.2</span><span class="p">)</span>
 </pre></div>
@@ -485,7 +473,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 1.30059144685139\]</div>
+\[\displaystyle -3.08839221603023\]</div>
 </div>
 </div>
 </div>
@@ -493,7 +481,7 @@
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"8bad304e2f934a4c9f9b524d1df7c761": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "9278b368e28345cebbbc21c8b5dcb6ab": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_206e4502039c4db0889090a733c281bc", "IPY_MODEL_7ec31b94e2d44b7a877ae21f976c3b5b"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_8bad304e2f934a4c9f9b524d1df7c761", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "206e4502039c4db0889090a733c281bc": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [1.0001, 1.001, 1.01, 1.1]}}, "7ec31b94e2d44b7a877ae21f976c3b5b": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [6.00090003, 6.009002999999998, 6.0903, 6.9300000000000015]}}}, "version_major": 2, "version_minor": 0}
+{"state": {"3ad248be551742f18c1732c45eab8f21": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "1d220f4eb3894fc0a9993e1f77d79109": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_cab524241f9948ecabe029106bae2a2f", "IPY_MODEL_d7ffe7a20dc34f40b0a432c070b866c9"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_3ad248be551742f18c1732c45eab8f21", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "cab524241f9948ecabe029106bae2a2f": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [0.0001, 0.001, 0.01, 0.1]}}, "d7ffe7a20dc34f40b0a432c070b866c9": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [0.99989997, 0.998997, 0.9897, 0.87]}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
