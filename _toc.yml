@@ -31,7 +31,7 @@ parts:
   - file: ch_Curvesketching/curvesketching_
     sections:
     - file: ch_Curvesketching/curvesketching_increasedecrease.md
-- caption: Computational Examples – Try it yourself notebooks
+- caption: Try it yourself notebooks
   chapters:
   - file: nb_Limits/limits_nb_
     sections:
