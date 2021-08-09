@@ -2,4 +2,4 @@ jupyter contrib nbextension install --user
 jupyter nbextension enable hide_input_all/main
 jupyter nbextension enable hide_input/main
 jupyter nbextension enable init_cell/main
-jupyter trust *TIY*.ipynb
+jupyter trust ch_Limits/limits_def_TIY2.ipynb
