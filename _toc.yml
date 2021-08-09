@@ -12,6 +12,7 @@ chapters:
 - file: ch_Limits/limits_
   sections:
   - file: ch_Limits/limits_def.md
+  - file: ch_Limits/limits_def_TIY2.ipynb
   - file: ch_Limits/limits_proplim.md
   - file: ch_Limits/limits_graphs.md 
   - file: ch_Limits/limits_algebra.md
