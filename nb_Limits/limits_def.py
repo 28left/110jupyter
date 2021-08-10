@@ -2,8 +2,30 @@ import sympy as sp
 import random
 
 from cyllene import *
+from IPython.display import Markdown
 
 
+
+
+def show_values(f,r):
+    display(Markdown("Current values: "))
+    display(Markdown("$f(x)= "+sp.latex(f(x))+"$"))
+    display(Markdown("$r =  "+sp.latex(r)+"$"))
+
+
+def show_limit_estimate(f,r):
+
+    display(Markdown("As the values of $x$ get closer and closer to <br>")) 
+    display(Markdown("`"+str(r)+"`"))
+    display(Markdown("the values $f(x)$ seem to get close to somewhere around")) 
+    display(Markdown("`"+str((sp.N(f(r-0.001),4)+sp.N(f(r+0.001),4))/2)+"`"))
+
+def limit(f,r):
+
+    return sp.limit(f(x),x,r)
+
+    
+                     
 f1 = None
 f2 = None    
 g1 = None

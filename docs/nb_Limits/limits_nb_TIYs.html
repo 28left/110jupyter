@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Limits and Continuity &#8212; Math 110 Companion Site</title>
+    <title>Worked Examples: Estimating Limits &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,8 +42,6 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -51,11 +49,12 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Limit of a Function" href="limits_def.html" />
-    <link rel="prev" title="The Domain of a Function" href="../ch_Precalc/precalc_domain.html" />
+    <link rel="prev" title="More Examples – Limits. Try it Yourself!" href="limits_nb_TIY2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -97,7 +96,7 @@
   Course Packets e-book
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Precalc/precalc_.html">
    Precalculus Review
@@ -140,48 +139,48 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Limits/limits_.html">
    Limits and Continuity
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_def.html">
+    <a class="reference internal" href="../ch_Limits/limits_def.html">
      Limit of a Function
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_proplim.html">
+    <a class="reference internal" href="../ch_Limits/limits_proplim.html">
      Properties of Finite Limits
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_graphs.html">
+    <a class="reference internal" href="../ch_Limits/limits_graphs.html">
      Examples: Computing Limits from Graphs
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_algebra.html">
+    <a class="reference internal" href="../ch_Limits/limits_algebra.html">
      Examples: Computing Limits Algebraically
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_indeterminate.html">
+    <a class="reference internal" href="../ch_Limits/limits_indeterminate.html">
      Indeterminate Forms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_infinity.html">
+    <a class="reference internal" href="../ch_Limits/limits_infinity.html">
      Limits at Infinity
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_continuity.html">
+    <a class="reference internal" href="../ch_Limits/limits_continuity.html">
      Continuity
     </a>
    </li>
@@ -254,20 +253,25 @@
   Try it yourself notebooks
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="limits_nb_.html">
    Limits and Continuity
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../nb_Limits/limits_nb_TIY2.html">
-     Computational Examples: Limits
+    <a class="reference internal" href="limits_nb_TIY2.html">
+     More Examples – Limits. Try it Yourself!
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Worked Examples: Estimating Limits
     </a>
    </li>
   </ul>
@@ -313,9 +317,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Limits/limits_.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/nb_Limits/limits_nb_TIYs.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -333,11 +337,44 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/nb_Limits/limits_nb_TIYs.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estimating-a-limit-using-a-table">
+   Estimating a limit using a table
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -346,19 +383,97 @@
         
               <div>
                 
-  <div class="section" id="limits-and-continuity">
-<h1>Limits and Continuity<a class="headerlink" href="#limits-and-continuity" title="Permalink to this headline">¶</a></h1>
-<p>Limits are the most important concept in calculus. After reviewing the basic concepts, we will go over examples from various perspectives: graphical, algebraic, limits at infinity. Finally, we discuss the concept of <em>continuity</em>, which is based on limits.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="limits_def.html">Limit of a Function</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_indeterminate.html">Indeterminate Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_infinity.html">Limits at Infinity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_continuity.html">Continuity</a></li>
-</ul>
+  <div class="section" id="worked-examples-estimating-limits">
+<h1>Worked Examples: Estimating Limits<a class="headerlink" href="#worked-examples-estimating-limits" title="Permalink to this headline">¶</a></h1>
+<div class="cell tag_thebe-init tag_thebelab-init tag_hide-cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
+
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Markdown</span>
+
+<span class="kn">from</span> <span class="nn">cyllene.f_table</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="estimating-a-limit-using-a-table">
+<h2>Estimating a limit using a table<a class="headerlink" href="#estimating-a-limit-using-a-table" title="Permalink to this headline">¶</a></h2>
+<p>We first set function <span class="math notranslate nohighlight">\(f\)</span> and pick a number <span class="math notranslate nohighlight">\(r\)</span> at which we want to evaluate the limit.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">display</span> latex
+
+<span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="n">x</span><span class="o">^</span><span class="mi">3</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="mi">5</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">1.2</span>
+
+<span class="n">display</span><span class="p">(</span><span class="s2">&quot;You set: &quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s2">&quot;$f(x) =$&quot;</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s2">&quot;$r =$&quot;</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">You set: </div><div class="output text_html"><script type="math/tex">f(x) =</script></div><div class="output text_html"><html><script type="math/tex; mode=display">\newcommand{\Bold}[1]{\mathbf{#1}}x \ {\mapsto}\ x^{3} - 2 \, x^{2} + 5</script></html></div><div class="output text_html"><script type="math/tex">r =</script></div><div class="output text_html"><html><script type="math/tex; mode=display">\newcommand{\Bold}[1]{\mathbf{#1}}1.20000000000000</script></html></div></div>
+</div>
+<hr class="docutils" />
+<p>Next, we generate a table of values of <span class="math notranslate nohighlight">\(f\)</span> around <span class="math notranslate nohighlight">\(r\)</span>:</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_df5ae_">
+  <thead>
+    <tr>
+      <th class="col_heading level0 col0" >x</th>
+      <th class="col_heading level0 col1" >f(x)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_df5ae_row0_col0" class="data row0 col0" >1.10000000000000</td>
+      <td id="T_df5ae_row0_col1" class="data row0 col1" >3.91100000000000</td>
+    </tr>
+    <tr>
+      <td id="T_df5ae_row1_col0" class="data row1 col0" >1.19000000000000</td>
+      <td id="T_df5ae_row1_col1" class="data row1 col1" >3.85295900000000</td>
+    </tr>
+    <tr>
+      <td id="T_df5ae_row2_col0" class="data row2 col0" >1.19900000000000</td>
+      <td id="T_df5ae_row2_col1" class="data row2 col1" >3.84848159900000</td>
+    </tr>
+    <tr>
+      <td id="T_df5ae_row3_col0" class="data row3 col0" >1.20100000000000</td>
+      <td id="T_df5ae_row3_col1" class="data row3 col1" >3.84752160100000</td>
+    </tr>
+    <tr>
+      <td id="T_df5ae_row4_col0" class="data row4 col0" >1.21000000000000</td>
+      <td id="T_df5ae_row4_col1" class="data row4 col1" >3.84336100000000</td>
+    </tr>
+    <tr>
+      <td id="T_df5ae_row5_col0" class="data row5 col0" >1.30000000000000</td>
+      <td id="T_df5ae_row5_col1" class="data row5 col1" >3.81700000000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest would be a reasonable estimate for <span class="math notranslate nohighlight">\(\lim_{x\to r} f(x)\)</span>?</p>
+<p>It looks like as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1.2\)</span>, the values get closer to a value somewhere near <span class="math notranslate nohighlight">\(3.84\)</span>.</p>
+<hr class="docutils" />
+<p>Let’s confirm our estimate by formally computing the limit.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">display</span> latex
+
+<span class="n">limit</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><html><script type="math/tex; mode=display">\newcommand{\Bold}[1]{\mathbf{#1}}x \ {\mapsto}\ 3.848</script></html></div></div>
+</div>
 </div>
 </div>
 
@@ -371,24 +486,23 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "sagemath"
         },
         kernelOptions: {
-            kernelName: "python3",
-            path: "./ch_Limits"
+            kernelName: "sagemath",
+            path: "./nb_Limits"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'sagemath'</script>
 
               </div>
               
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../ch_Precalc/precalc_domain.html" title="previous page">The Domain of a Function</a>
-    <a class='right-next' id="next-link" href="limits_def.html" title="next page">Limit of a Function</a>
+    <a class='left-prev' id="prev-link" href="limits_nb_TIY2.html" title="previous page">More Examples – Limits. Try it Yourself!</a>
 
         </div>
         
