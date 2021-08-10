@@ -2,30 +2,53 @@ import sympy as sp
 import random
 
 from cyllene import *
-from IPython.display import Markdown
-
-
+from IPython.display import Markdown, Latex
 
 
 def show_values(f,r):
     display(Markdown("Current values: "))
-    display(Markdown("$f(x)= "+sp.latex(f(x))+"$"))
-    display(Markdown("$r =  "+sp.latex(r)+"$"))
+    display(Latex("$f(x)= "+sp.latex(f(x))+"$"))
+    display(Latex("r =  "+sp.latex(r)))
 
 
 def show_limit_estimate(f,r):
 
-    display(Markdown("As the values of $x$ get closer and closer to <br>")) 
+    display(Markdown("As the values of x get closer and closer to <br>")) 
     display(Markdown("`"+str(r)+"`"))
-    display(Markdown("the values $f(x)$ seem to get close to somewhere around")) 
+    display(Markdown("the values f(x) seem to get close to somewhere around")) 
     display(Markdown("`"+str((sp.N(f(r-0.001),4)+sp.N(f(r+0.001),4))/2)+"`"))
 
 def limit(f,r):
 
     return sp.limit(f(x),x,r)
 
+def show_limit_analysis(f,r):
+    display(Markdown("We have set: "))
+    display(Latex("$f(x)= "+sp.latex(f(x))+"$"))
+    display(Latex("$r =  "+sp.latex(r)+"$"))
+
+    display(Markdown("---"))
     
-                     
+    display(Markdown("We generate a table of values of f around (but *not exactly at*) r"))
+
+    display(show_table(f, [r-0.1, r-0.01, r-0.001, r+0.001, r+0.01, r+0.1]))
+
+    display(Markdown("---"))
+
+    display(Markdown("As the values of x get closer and closer to <br>")) 
+    display(Markdown("`"+str(r)+"`"))
+    display(Markdown("the values f(x) seem to get close to somewhere around")) 
+    display(Markdown("`"+str((sp.N(f(r-0.001),4)+sp.N(f(r+0.001),4))/2)+"`"))
+
+
+
+
+
+
+
+
+
+
 f1 = None
 f2 = None    
 g1 = None

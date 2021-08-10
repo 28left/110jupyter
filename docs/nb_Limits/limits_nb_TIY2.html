@@ -52,7 +52,7 @@
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -370,54 +370,16 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#we-first-choose-a-function-f-and-pick-a-number-r-between-2-and-2">
-     We first choose a function
+    <a class="reference internal nav-link" href="#choose-a-function-f-and-a-number-r">
+     Choose a function
      <span class="math notranslate nohighlight">
       \(f\)
      </span>
-     and pick a number
+     and a number
      <span class="math notranslate nohighlight">
       \(r\)
-     </span>
-     between
-     <span class="math notranslate nohighlight">
-      \(-2\)
-     </span>
-     and
-     <span class="math notranslate nohighlight">
-      \(2\)
      </span>
      .
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#next-we-generate-a-table-of-values-of-f-around-but-not-exactly-at-r">
-     Next, we generate a table of values of
-     <span class="math notranslate nohighlight">
-      \(f\)
-     </span>
-     around (but
-     <em>
-      not exactly at
-     </em>
-     )
-     <span class="math notranslate nohighlight">
-      \(r\)
-     </span>
-     :
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#what-do-the-values-f-x-suggest-would-be-a-reasonable-estimate-for-lim-x-to-r-f-x">
-     What do the values
-     <span class="math notranslate nohighlight">
-      \(f(x)\)
-     </span>
-     suggest would be a reasonable estimate for
-     <span class="math notranslate nohighlight">
-      \(\lim_{x\to r} f(x)\)
-     </span>
-     ?
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -460,81 +422,62 @@
 </div>
 <div class="section" id="estimating-limits-using-a-table">
 <h2>Estimating limits using a table<a class="headerlink" href="#estimating-limits-using-a-table" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="we-first-choose-a-function-f-and-pick-a-number-r-between-2-and-2">
-<h3>We first choose a function <span class="math notranslate nohighlight">\(f\)</span> and pick a number <span class="math notranslate nohighlight">\(r\)</span> between <span class="math notranslate nohighlight">\(-2\)</span> and <span class="math notranslate nohighlight">\(2\)</span>.<a class="headerlink" href="#we-first-choose-a-function-f-and-pick-a-number-r-between-2-and-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="choose-a-function-f-and-a-number-r">
+<h3>Choose a function <span class="math notranslate nohighlight">\(f\)</span> and a number <span class="math notranslate nohighlight">\(r\)</span>.<a class="headerlink" href="#choose-a-function-f-and-a-number-r" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="s1">&#39;x^3-3x+5&#39;</span><span class="p">)</span>
 <span class="n">r</span> <span class="o">=</span> <span class="mf">1.2</span>
 
-<span class="n">show_values</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
+<span class="n">show_limit_analysis</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<p>Current values:</p>
-<p>$f(x)= x^{3} - 3 x + 5$</p>
-<p>$r =  1.2$</p>
-</div>
-</div>
-</div>
-<div class="section" id="next-we-generate-a-table-of-values-of-f-around-but-not-exactly-at-r">
-<h3>Next, we generate a table of values of <span class="math notranslate nohighlight">\(f\)</span> around (but <em>not exactly at</em>) <span class="math notranslate nohighlight">\(r\)</span>:<a class="headerlink" href="#next-we-generate-a-table-of-values-of-f-around-but-not-exactly-at-r" title="Permalink to this headline">¶</a></h3>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_table</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">[</span><span class="n">r</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">r</span><span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">r</span><span class="o">-</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.1</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
+<p>We have set:</p>
+<div class="output text_latex math notranslate nohighlight">
+\[f(x)= x^{3} - 3 x + 5\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[r =  1.2\]</div>
+<hr class="docutils" />
+<p>We generate a table of values of f around (but <em>not exactly at</em>) r</p>
 <div class="output text_html"><style  type="text/css" >
-</style><table id="T_fdeb8_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
+</style><table id="T_a7d2f_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_fdeb8_row0_col0" class="data row0 col0" >1.100000</td>
-                        <td id="T_fdeb8_row0_col1" class="data row0 col1" >3.03100000000000</td>
+                                <td id="T_a7d2f_row0_col0" class="data row0 col0" >1.100000</td>
+                        <td id="T_a7d2f_row0_col1" class="data row0 col1" >3.03100000000000</td>
             </tr>
             <tr>
-                                <td id="T_fdeb8_row1_col0" class="data row1 col0" >1.190000</td>
-                        <td id="T_fdeb8_row1_col1" class="data row1 col1" >3.11515900000000</td>
+                                <td id="T_a7d2f_row1_col0" class="data row1 col0" >1.190000</td>
+                        <td id="T_a7d2f_row1_col1" class="data row1 col1" >3.11515900000000</td>
             </tr>
             <tr>
-                                <td id="T_fdeb8_row2_col0" class="data row2 col0" >1.199000</td>
-                        <td id="T_fdeb8_row2_col1" class="data row2 col1" >3.12668359900000</td>
+                                <td id="T_a7d2f_row2_col0" class="data row2 col0" >1.199000</td>
+                        <td id="T_a7d2f_row2_col1" class="data row2 col1" >3.12668359900000</td>
             </tr>
             <tr>
-                                <td id="T_fdeb8_row3_col0" class="data row3 col0" >1.201000</td>
-                        <td id="T_fdeb8_row3_col1" class="data row3 col1" >3.12932360100000</td>
+                                <td id="T_a7d2f_row3_col0" class="data row3 col0" >1.201000</td>
+                        <td id="T_a7d2f_row3_col1" class="data row3 col1" >3.12932360100000</td>
             </tr>
             <tr>
-                                <td id="T_fdeb8_row4_col0" class="data row4 col0" >1.210000</td>
-                        <td id="T_fdeb8_row4_col1" class="data row4 col1" >3.14156100000000</td>
+                                <td id="T_a7d2f_row4_col0" class="data row4 col0" >1.210000</td>
+                        <td id="T_a7d2f_row4_col1" class="data row4 col1" >3.14156100000000</td>
             </tr>
             <tr>
-                                <td id="T_fdeb8_row5_col0" class="data row5 col0" >1.300000</td>
-                        <td id="T_fdeb8_row5_col1" class="data row5 col1" >3.29700000000000</td>
+                                <td id="T_a7d2f_row5_col0" class="data row5 col0" >1.300000</td>
+                        <td id="T_a7d2f_row5_col1" class="data row5 col1" >3.29700000000000</td>
             </tr>
-    </tbody></table></div></div>
-</div>
-</div>
-<div class="section" id="what-do-the-values-f-x-suggest-would-be-a-reasonable-estimate-for-lim-x-to-r-f-x">
-<h3>What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest would be a reasonable estimate for <span class="math notranslate nohighlight">\(\lim_{x\to r} f(x)\)</span>?<a class="headerlink" href="#what-do-the-values-f-x-suggest-would-be-a-reasonable-estimate-for-lim-x-to-r-f-x" title="Permalink to this headline">¶</a></h3>
-<div class="cell tag_hide-input docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_limit_estimate</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<p>As the values of $x$ get closer and closer to <br></p>
+    </tbody></table></div><hr class="docutils" />
+<p>As the values of x get closer and closer to <br></p>
 <p><code class="docutils literal notranslate"><span class="pre">1.2</span></code></p>
-<p>the values $f(x)$ seem to get close to somewhere around</p>
+<p>the values f(x) seem to get close to somewhere around</p>
 <p><code class="docutils literal notranslate"><span class="pre">3.128</span></code></p>
 </div>
 </div>
 </div>
 <div class="section" id="confirm-estimate-by-formally-computing-the-limit">
 <h3>Confirm estimate by formally computing the limit.<a class="headerlink" href="#confirm-estimate-by-formally-computing-the-limit" title="Permalink to this headline">¶</a></h3>
-<div class="cell tag_hide-input docutils container">
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">limit</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
 </pre></div>
@@ -551,7 +494,7 @@
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"0853786b389346a18a73459db953f7f6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "00b7d0d4c0b746d0bef803919cc69b4f": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_daa7350db65448639db2019e7fbf788d", "IPY_MODEL_42eed427e7494c9ebb9a6c1c569b628b"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_0853786b389346a18a73459db953f7f6", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "daa7350db65448639db2019e7fbf788d": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [0.0001, 0.001, 0.01, 0.1]}}, "42eed427e7494c9ebb9a6c1c569b628b": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [3.0002999800000003, 3.0029980000000003, 3.0298, 3.2800000000000002]}}}, "version_major": 2, "version_minor": 0}
+{"state": {"1e97871d283f4cc298555a1083bc29f4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "289725f2c484424ab356eef47c9a57f2": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_4b2d06fadf094ff3816e7c7e11d55fdb", "IPY_MODEL_44555e45e47941e3b963ef0ba69307af"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_1e97871d283f4cc298555a1083bc29f4", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "4b2d06fadf094ff3816e7c7e11d55fdb": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [2.0001, 2.001, 2.01, 2.1]}}, "44555e45e47941e3b963ef0ba69307af": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [-13.000900010000002, -13.009000999999998, -13.090099999999998, -13.91]}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
