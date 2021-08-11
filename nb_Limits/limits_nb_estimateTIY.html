@@ -394,6 +394,7 @@
 <div class="section" id="estimating-limits-by-evaluating-a-function">
 <h2>Estimating limits by evaluating a function<a class="headerlink" href="#estimating-limits-by-evaluating-a-function" title="Permalink to this headline">¶</a></h2>
 <p>In this example, we will randomly generate a function <span class="math notranslate nohighlight">\(g(x)\)</span>. We will not know the function <span class="math notranslate nohighlight">\(g(x)\)</span> explicitely, but we can evaluate <span class="math notranslate nohighlight">\(g\)</span> for specific <span class="math notranslate nohighlight">\(x\)</span> to estimate limits.</p>
+<p>Let’s generate a function <span class="math notranslate nohighlight">\(g(x)\)</span> and a number <span class="math notranslate nohighlight">\(s\)</span>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="p">,</span><span class="n">s</span> <span class="o">=</span> <span class="n">generate_example</span><span class="p">()</span>
@@ -404,7 +405,7 @@
 <div class="output text_latex math notranslate nohighlight">
 \[\text{New $g(x), s$ generated}\]</div>
 <div class="output text_latex math notranslate nohighlight">
-\[s = -0.1\]</div>
+\[s = 2.1\]</div>
 <p><strong>Problem</strong>: <em>Estimate the one-sided limits</em></p>
 <div class="output text_latex math notranslate nohighlight">
 \[ \lim_{x \to s^-} g(x) \text{ and } \lim_{x \to s^+} g(x)\]</div>
@@ -419,30 +420,30 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><style  type="text/css" >
-</style><table id="T_7f368_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
+</style><table id="T_50044_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_7f368_row0_col0" class="data row0 col0" >-0.200000</td>
-                        <td id="T_7f368_row0_col1" class="data row0 col1" >-2.48000000000000</td>
+                                <td id="T_50044_row0_col0" class="data row0 col0" >2.000000</td>
+                        <td id="T_50044_row0_col1" class="data row0 col1" >-31.0000000000000</td>
             </tr>
             <tr>
-                                <td id="T_7f368_row1_col0" class="data row1 col0" >-0.110000</td>
-                        <td id="T_7f368_row1_col1" class="data row1 col1" >-2.24420000000000</td>
+                                <td id="T_50044_row1_col0" class="data row1 col0" >2.090000</td>
+                        <td id="T_50044_row1_col1" class="data row1 col1" >-33.2986000000000</td>
             </tr>
             <tr>
-                                <td id="T_7f368_row2_col0" class="data row2 col0" >-0.101000</td>
-                        <td id="T_7f368_row2_col1" class="data row2 col1" >-2.22240200000000</td>
+                                <td id="T_50044_row2_col0" class="data row2 col0" >2.099000</td>
+                        <td id="T_50044_row2_col1" class="data row2 col1" >-33.5338060000000</td>
             </tr>
             <tr>
-                                <td id="T_7f368_row3_col0" class="data row3 col0" >-0.099000</td>
-                        <td id="T_7f368_row3_col1" class="data row3 col1" >12.1823980000000</td>
+                                <td id="T_50044_row3_col0" class="data row3 col0" >2.101000</td>
+                        <td id="T_50044_row3_col1" class="data row3 col1" >-23.5862060000000</td>
             </tr>
             <tr>
-                                <td id="T_7f368_row4_col0" class="data row4 col0" >-0.090000</td>
-                        <td id="T_7f368_row4_col1" class="data row4 col1" >12.2038000000000</td>
+                                <td id="T_50044_row4_col0" class="data row4 col0" >2.110000</td>
+                        <td id="T_50044_row4_col1" class="data row4 col1" >-23.8226000000000</td>
             </tr>
             <tr>
-                                <td id="T_7f368_row5_col0" class="data row5 col0" >0.000000</td>
-                        <td id="T_7f368_row5_col1" class="data row5 col1" >12.4000000000000</td>
+                                <td id="T_50044_row5_col0" class="data row5 col0" >2.200000</td>
+                        <td id="T_50044_row5_col1" class="data row5 col1" >-26.2400000000000</td>
             </tr>
     </tbody></table></div></div>
 </div>
@@ -456,7 +457,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\displaystyle -2.22000024000002\]</div>
+\[\displaystyle -33.5599973800001\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -467,7 +468,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 12.18000024\]</div>
+\[\displaystyle -23.5600026200001\]</div>
 </div>
 </div>
 <p>These values should give us a good estimate of the limits.</p>
@@ -480,7 +481,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\displaystyle -2.22\]</div>
+\[\displaystyle -33.56\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -491,7 +492,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 12.18\]</div>
+\[\displaystyle -23.56\]</div>
 </div>
 </div>
 <p>Finally, note that in this example both limits are <strong>different from the value of <span class="math notranslate nohighlight">\(g\)</span> at <span class="math notranslate nohighlight">\(s\)</span></strong>:</p>
@@ -503,7 +504,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 26.58\]</div>
+\[\displaystyle -13.56\]</div>
 </div>
 </div>
 <p>Now try this analysis again with different <span class="math notranslate nohighlight">\(g\)</span> and <span class="math notranslate nohighlight">\(s\)</span>. Activate the <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Code</span></code> option and run the cell <code class="docutils literal notranslate"><span class="pre">g,s</span> <span class="pre">=</span> <span class="pre">generate_example()</span></code> above to generate new <span class="math notranslate nohighlight">\(g,s\)</span>.</p>
