@@ -42,8 +42,6 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe,.cell"
@@ -383,11 +381,21 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#confirm-estimate-by-formally-computing-the-limit">
-     Confirm estimate by formally computing the limit.
+    <a class="reference internal nav-link" href="#confirm-estimate">
+     Confirm estimate
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#try-it-yourself">
+     Try it yourself!
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#estimating-limits-by-evaluating-a-function">
+   Estimating limits by evaluating a function
+  </a>
  </li>
 </ul>
 
@@ -404,20 +412,13 @@
 <h1>Computational Examples: Limits<a class="headerlink" href="#computational-examples-limits" title="Permalink to this headline">¶</a></h1>
 <div class="cell tag_thebe-init tag_thebelab-init tag_hide-cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
-
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
-
-<span class="kn">from</span> <span class="nn">cyllene</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="o">%</span><span class="k">initialize</span> limits_def
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The following line will initialize the notebook by loading some libraries necessary to run the code below</span>
+<span class="o">%</span><span class="k">run</span> limits_def.py
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Initialization successful!
-</pre></div>
-</div>
+<p>Initialization successful</p>
 </div>
 </div>
 <div class="section" id="estimating-limits-using-a-table">
@@ -427,7 +428,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="s1">&#39;x^3-3x+5&#39;</span><span class="p">)</span>
-<span class="n">r</span> <span class="o">=</span> <span class="mf">1.2</span>
+<span class="n">r</span> <span class="o">=</span> <span class="mf">1.3</span>
 
 <span class="n">show_limit_analysis</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
 </pre></div>
@@ -438,45 +439,45 @@
 <div class="output text_latex math notranslate nohighlight">
 \[f(x)= x^{3} - 3 x + 5\]</div>
 <div class="output text_latex math notranslate nohighlight">
-\[r =  1.2\]</div>
+\[r =  1.3\]</div>
+<br><p><strong>Problem</strong>: <em>Estimate</em></p>
+<div class="output text_latex math notranslate nohighlight">
+\[\large \lim_{x \to r} f(x)\]</div>
 <hr class="docutils" />
 <p>We generate a table of values of f around (but <em>not exactly at</em>) r</p>
 <div class="output text_html"><style  type="text/css" >
-</style><table id="T_a7d2f_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
+</style><table id="T_e2f19_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_a7d2f_row0_col0" class="data row0 col0" >1.100000</td>
-                        <td id="T_a7d2f_row0_col1" class="data row0 col1" >3.03100000000000</td>
+                                <td id="T_e2f19_row0_col0" class="data row0 col0" >1.200000</td>
+                        <td id="T_e2f19_row0_col1" class="data row0 col1" >3.12800000000000</td>
             </tr>
             <tr>
-                                <td id="T_a7d2f_row1_col0" class="data row1 col0" >1.190000</td>
-                        <td id="T_a7d2f_row1_col1" class="data row1 col1" >3.11515900000000</td>
+                                <td id="T_e2f19_row1_col0" class="data row1 col0" >1.290000</td>
+                        <td id="T_e2f19_row1_col1" class="data row1 col1" >3.27668900000000</td>
             </tr>
             <tr>
-                                <td id="T_a7d2f_row2_col0" class="data row2 col0" >1.199000</td>
-                        <td id="T_a7d2f_row2_col1" class="data row2 col1" >3.12668359900000</td>
+                                <td id="T_e2f19_row2_col0" class="data row2 col0" >1.299000</td>
+                        <td id="T_e2f19_row2_col1" class="data row2 col1" >3.29493389900000</td>
             </tr>
             <tr>
-                                <td id="T_a7d2f_row3_col0" class="data row3 col0" >1.201000</td>
-                        <td id="T_a7d2f_row3_col1" class="data row3 col1" >3.12932360100000</td>
+                                <td id="T_e2f19_row3_col0" class="data row3 col0" >1.301000</td>
+                        <td id="T_e2f19_row3_col1" class="data row3 col1" >3.29907390100000</td>
             </tr>
             <tr>
-                                <td id="T_a7d2f_row4_col0" class="data row4 col0" >1.210000</td>
-                        <td id="T_a7d2f_row4_col1" class="data row4 col1" >3.14156100000000</td>
+                                <td id="T_e2f19_row4_col0" class="data row4 col0" >1.310000</td>
+                        <td id="T_e2f19_row4_col1" class="data row4 col1" >3.31809100000000</td>
             </tr>
             <tr>
-                                <td id="T_a7d2f_row5_col0" class="data row5 col0" >1.300000</td>
-                        <td id="T_a7d2f_row5_col1" class="data row5 col1" >3.29700000000000</td>
+                                <td id="T_e2f19_row5_col0" class="data row5 col0" >1.400000</td>
+                        <td id="T_e2f19_row5_col1" class="data row5 col1" >3.54400000000000</td>
             </tr>
-    </tbody></table></div><hr class="docutils" />
-<p>As the values of x get closer and closer to <br></p>
-<p><code class="docutils literal notranslate"><span class="pre">1.2</span></code></p>
-<p>the values f(x) seem to get close to somewhere around</p>
-<p><code class="docutils literal notranslate"><span class="pre">3.128</span></code></p>
+    </tbody></table></div><br><p>What do the values suggest a reasonable estimate for the limit would be?</p>
 </div>
 </div>
 </div>
-<div class="section" id="confirm-estimate-by-formally-computing-the-limit">
-<h3>Confirm estimate by formally computing the limit.<a class="headerlink" href="#confirm-estimate-by-formally-computing-the-limit" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="confirm-estimate">
+<h3>Confirm estimate<a class="headerlink" href="#confirm-estimate" title="Permalink to this headline">¶</a></h3>
+<p>You can confirm your estimate by running the cell below. This will compute the limit formally.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">limit</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
@@ -485,18 +486,120 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 3.128\]</div>
+\[\displaystyle 3.297\]</div>
 </div>
 </div>
 </div>
+<div class="section" id="try-it-yourself">
+<h3>Try it yourself!<a class="headerlink" href="#try-it-yourself" title="Permalink to this headline">¶</a></h3>
+<p>Repeat the above analysis for diffwerent values of <span class="math notranslate nohighlight">\(r\)</span> and other choices of <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p>For example, try</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x) = 2^x+x^2-1\)</span>, <span class="math notranslate nohighlight">\(r = 0.5\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \dfrac{1-x}{1+x^2}\)</span>, <span class="math notranslate nohighlight">\(r = -1.8\)</span></p></li>
+</ul>
 </div>
 </div>
-
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"1e97871d283f4cc298555a1083bc29f4": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "289725f2c484424ab356eef47c9a57f2": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_4b2d06fadf094ff3816e7c7e11d55fdb", "IPY_MODEL_44555e45e47941e3b963ef0ba69307af"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_1e97871d283f4cc298555a1083bc29f4", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "4b2d06fadf094ff3816e7c7e11d55fdb": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [2.0001, 2.001, 2.01, 2.1]}}, "44555e45e47941e3b963ef0ba69307af": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [-13.000900010000002, -13.009000999999998, -13.090099999999998, -13.91]}}}, "version_major": 2, "version_minor": 0}
-</script>
-
+<div class="section" id="estimating-limits-by-evaluating-a-function">
+<h2>Estimating limits by evaluating a function<a class="headerlink" href="#estimating-limits-by-evaluating-a-function" title="Permalink to this headline">¶</a></h2>
+<p>Next, we generate a random function <span class="math notranslate nohighlight">\(g(x)\)</span> and pick a number <span class="math notranslate nohighlight">\(s\)</span>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">generate_random_function</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>$g(x)$ generated, $s =$ <code class="docutils literal notranslate"><span class="pre">2.2</span></code> (Round 0)</p>
+<br><p><strong>Problem</strong>: <em>Estimate</em></p>
+<div class="output text_latex math notranslate nohighlight">
+\[\large \lim_{x \to s^+} g(x)\]</div>
+</div>
+</div>
+<p>In this example, we will not know the function <span class="math notranslate nohighlight">\(g(x)\)</span> explicitely, but we can evaluate <span class="math notranslate nohighlight">\(g\)</span> for specific <span class="math notranslate nohighlight">\(x\)</span>, such as:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 26.53\]</div>
+</div>
+</div>
+<p>Use the evaluation cells to compute values <span class="math notranslate nohighlight">\(g(x)\)</span> for <span class="math notranslate nohighlight">\(x\)</span> approaching <span class="math notranslate nohighlight">\(s\)</span> from the right:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="p">(</span><span class="mf">2.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 14.33\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="p">(</span><span class="mf">2.201</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 13.264203\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="p">(</span><span class="mf">2.200001</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 13.250014200003\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="p">(</span><span class="mf">2.200000001</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 13.2500000142\]</div>
+</div>
+</div>
+<p>It looks like <code class="docutils literal notranslate"><span class="pre">13.25</span></code> is a good estimate for the limit. Let’s confirm this.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">limit</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 13.25\]</div>
+</div>
+</div>
+<p>Note that in this case, we cannot simply evaluate <span class="math notranslate nohighlight">\(g\)</span> at <span class="math notranslate nohighlight">\(x=2.2\)</span> to obtain the limit:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="p">(</span><span class="mf">2.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 15.72\]</div>
+</div>
+</div>
+<p>Now try this again with different <span class="math notranslate nohighlight">\(g\)</span> and <span class="math notranslate nohighlight">\(s\)</span>. Activate the <code class="docutils literal notranslate"><span class="pre">Live</span> <span class="pre">Code</span></code> option and run the cell <code class="docutils literal notranslate"><span class="pre">g</span> <span class="pre">=</span> <span class="pre">generate_random_function()</span></code> above to generate new <span class="math notranslate nohighlight">\(g,s\)</span>.</p>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
