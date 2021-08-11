@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Related Rates &#8212; Course Packet Math 110</title>
+    <title>Related Rates &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -50,7 +50,7 @@
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -77,7 +77,7 @@
       <img src="../_static/PSU_SCI_RGB_2C.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Course Packet Math 110</h1>
+      <h1 class="site-logo" id="site-title">Math 110 Companion Site</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -92,6 +92,11 @@
   </a>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Packets e-book
+ </span>
+</p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Precalc/precalc_.html">
@@ -148,11 +153,6 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../ch_Limits/limits_def.html">
      Limit of a Function
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../ch_Limits/limits_def_TIY2.html">
-     More Examples – Limits. Try it Yourself!
     </a>
    </li>
    <li class="toctree-l2">
@@ -249,6 +249,30 @@
   </ul>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Try it yourself notebooks
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
+   Limits and Continuity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nb_Limits/limits_nb_estimateTIY.html">
+     Computational Examples: Limits
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -317,12 +341,18 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/gh-pages?urlpath=tree/ch_Implicit/implicit_relatedrates.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Implicit/implicit_relatedrates.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
+        
+        <a class="jupyterhub-button" href="https://hub.binder.jupytr.cloud.psu.edu/hub/user-redirect/git-pull?repo=https://github.com/28left/110jupyter&urlpath=tree/110jupyter/ch_Implicit/implicit_relatedrates.md&branch=master"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch JupyterHub" data-toggle="tooltip"
+                data-placement="left"><img class="jupyterhub-button-logo"
+                    src="../_static/images/logo_jupyterhub.svg"
+                    alt="Interact on JupyterHub">JupyterHub</button></a>
         
         
         <button type="button" class="btn btn-secondary topbarbtn"
@@ -578,7 +608,7 @@ R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
         requestKernel: true,
         binderOptions: {
             repo: "28left/110jupyter",
-            ref: "gh-pages",
+            ref: "master",
         },
         codeMirrorConfig: {
             theme: "abcdef",

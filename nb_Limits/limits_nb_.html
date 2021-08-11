@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>More Examples – Limits. Try it Yourself! &#8212; Course Packet Math 110</title>
+    <title>Limits and Continuity &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,13 +49,11 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Properties of Finite Limits" href="limits_proplim.html" />
-    <link rel="prev" title="Limit of a Function" href="limits_def.html" />
+    <link rel="next" title="Computational Examples: Limits" href="limits_nb_estimateTIY.html" />
+    <link rel="prev" title="Intervals of Increase &amp; Decrease" href="../ch_Curvesketching/curvesketching_increasedecrease.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -77,7 +75,7 @@
       <img src="../_static/PSU_SCI_RGB_2C.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Course Packet Math 110</h1>
+      <h1 class="site-logo" id="site-title">Math 110 Companion Site</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -92,7 +90,12 @@
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<p class="caption">
+ <span class="caption-text">
+  Course Packets e-book
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Precalc/precalc_.html">
    Precalculus Review
@@ -135,53 +138,48 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="limits_.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Limits/limits_.html">
    Limits and Continuity
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_def.html">
+    <a class="reference internal" href="../ch_Limits/limits_def.html">
      Limit of a Function
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     More Examples – Limits. Try it Yourself!
-    </a>
-   </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_proplim.html">
+    <a class="reference internal" href="../ch_Limits/limits_proplim.html">
      Properties of Finite Limits
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_graphs.html">
+    <a class="reference internal" href="../ch_Limits/limits_graphs.html">
      Examples: Computing Limits from Graphs
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_algebra.html">
+    <a class="reference internal" href="../ch_Limits/limits_algebra.html">
      Examples: Computing Limits Algebraically
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_indeterminate.html">
+    <a class="reference internal" href="../ch_Limits/limits_indeterminate.html">
      Indeterminate Forms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_infinity.html">
+    <a class="reference internal" href="../ch_Limits/limits_infinity.html">
      Limits at Infinity
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_continuity.html">
+    <a class="reference internal" href="../ch_Limits/limits_continuity.html">
      Continuity
     </a>
    </li>
@@ -249,6 +247,30 @@
   </ul>
  </li>
 </ul>
+<p class="caption">
+ <span class="caption-text">
+  Try it yourself notebooks
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Limits and Continuity
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="limits_nb_estimateTIY.html">
+     Computational Examples: Limits
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -289,9 +311,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Limits/limits_def_TIY2.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/nb_Limits/limits_nb_.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -309,44 +331,11 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/gh-pages?urlpath=tree/ch_Limits/limits_def_TIY2.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#estimating-limits">
-   Estimating limits
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -355,111 +344,22 @@
         
               <div>
                 
-  <div class="section" id="more-examples-limits-try-it-yourself">
-<h1>More Examples – Limits. Try it Yourself!<a class="headerlink" href="#more-examples-limits-try-it-yourself" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="estimating-limits">
-<h2>Estimating limits<a class="headerlink" href="#estimating-limits" title="Permalink to this headline">¶</a></h2>
-<p>We first generate a random function <span class="math notranslate nohighlight">\(f\)</span> and pick a number <span class="math notranslate nohighlight">\(r\)</span> between <span class="math notranslate nohighlight">\(-2\)</span> and <span class="math notranslate nohighlight">\(2\)</span>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="s1">&#39;random&#39;</span><span class="p">)</span>
-<span class="n">r</span> <span class="o">=</span> <span class="mf">1.2</span>
-</pre></div>
+  <div class="section" id="limits-and-continuity">
+<h1>Limits and Continuity<a class="headerlink" href="#limits-and-continuity" title="Permalink to this headline">¶</a></h1>
+<p>Limits are the most important concept in calculus. You will find some activity notebooks which will show you more computational examples and, if you want, let you work through even more examples yourself.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="limits_nb_estimateTIY.html">Computational Examples: Limits</a></li>
+</ul>
 </div>
 </div>
-</div>
-<p>Next, we generate a table of values of <span class="math notranslate nohighlight">\(f\)</span> around <span class="math notranslate nohighlight">\(r\)</span>:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">function_to_table</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="p">[</span><span class="n">r</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">r</span><span class="o">-</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">r</span><span class="o">-</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">r</span><span class="o">+</span><span class="mf">0.1</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>x</th>
-      <th>f(x)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1.100</td>
-      <td>5.51000000000000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1.190</td>
-      <td>5.98610000000000</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1.199</td>
-      <td>6.03460100000000</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1.201</td>
-      <td>6.04540100000000</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1.210</td>
-      <td>6.09410000000000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>1.300</td>
-      <td>6.59000000000000</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<p>What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest would be a reasonable estimate for <span class="math notranslate nohighlight">\(\lim_{x\to r} f(x)\)</span>?</p>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sp</span><span class="o">.</span><span class="n">limit</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">x</span><span class="p">,</span><span class="mf">1.2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle 6.04\]</div>
-</div>
-</div>
-</div>
-</div>
-
-
-<script type="application/vnd.jupyter.widget-state+json">
-{"state": {"7da0960616414bbb92054067a35db6e3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": "auto", "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "2bb0128e79ee4022bb5cfd8af26b6319": {"model_name": "SheetModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_dom_classes": [], "_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "SheetModel", "_view_count": null, "_view_module": "ipysheet", "_view_module_version": "~0.4.4", "_view_name": "SheetView", "cells": ["IPY_MODEL_9a852fbf264d480dbe376ba812d8447d", "IPY_MODEL_7bb04f34fd9d4cdb81a28bb99c3a4e7f"], "column_headers": false, "column_resizing": true, "column_width": null, "columns": 4, "layout": "IPY_MODEL_7da0960616414bbb92054067a35db6e3", "named_cells": {}, "row_headers": ["x", "f(x)"], "row_resizing": true, "rows": 2, "search_token": "", "stretch_headers": "all"}}, "9a852fbf264d480dbe376ba812d8447d": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 0, "row_start": 0, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [2.0001, 2.001, 2.01, 2.1]}}, "7bb04f34fd9d4cdb81a28bb99c3a4e7f": {"model_name": "CellRangeModel", "model_module": "ipysheet", "model_module_version": "~0.4.4", "state": {"_model_module": "ipysheet", "_model_module_version": "~0.4.4", "_model_name": "CellRangeModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "choice": null, "column_end": 3, "column_start": 0, "date_format": "YYYY/MM/DD", "name": null, "numeric_format": "0.00000", "read_only": false, "renderer": null, "row_end": 1, "row_start": 1, "squeeze_column": false, "squeeze_row": true, "style": {}, "time_format": "h:mm:ss a", "transpose": false, "type": "numeric", "value": [-12.000199990000002, -12.001999000000001, -12.0199, -12.190000000000001]}}}, "version_major": 2, "version_minor": 0}
-</script>
-
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
             repo: "28left/110jupyter",
-            ref: "gh-pages",
+            ref: "master",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -467,7 +367,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ch_Limits"
+            path: "./nb_Limits"
         },
         predefinedOutput: true
     }
@@ -479,8 +379,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="limits_def.html" title="previous page">Limit of a Function</a>
-    <a class='right-next' id="next-link" href="limits_proplim.html" title="next page">Properties of Finite Limits</a>
+    <a class='left-prev' id="prev-link" href="../ch_Curvesketching/curvesketching_increasedecrease.html" title="previous page">Intervals of Increase &amp; Decrease</a>
+    <a class='right-next' id="next-link" href="limits_nb_estimateTIY.html" title="next page">Computational Examples: Limits</a>
 
         </div>
         
