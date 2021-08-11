@@ -64,7 +64,7 @@ def generate_random_function():
     else: 
         g = function(sp.Piecewise((expression('3x^2+x-1'), x<=s), (expression('3x^2+x-3.47'),x>s)))
 
-    display(Markdown("$g(x)$ generated, $s =$ `" + str(s) + "`" + " (Round "+str(try_counter)+")"))
+    display(Markdown("g(x) generated, s = `" + str(s) + "`" + " (Round "+str(try_counter)+")"))
     display(Markdown('<br>'))
     display(Markdown("**Problem**: *Estimate*  "))
     display(Latex("$\large \lim_{x \\to s^+} g(x)$"))
