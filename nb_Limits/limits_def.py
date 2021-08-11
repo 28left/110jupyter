@@ -60,10 +60,10 @@ def show_limit_analysis(f,r):
 def generate_example():
 
     s = random.randint(-30,30)/10
-    b = (random.randint(-10,10)+1)**2/10
+    b = (random.randint(-10,10)+5)**2/10
     g1 = function('quadratic')
     g2 = function(g1(x)+b)
-    g = function(sp.Piecewise((g1(x), x<s), (b+s, x==s), (g2(x),x>s)))
+    g = function(sp.Piecewise((g1(x), x<s),  (g2(x),x>s), (g1(s)+2*b, True)))
 
     display(Latex("$\\text{New $g(x), s$ generated}$"))
     display(Latex("$s = " + str(s) + "$"))
