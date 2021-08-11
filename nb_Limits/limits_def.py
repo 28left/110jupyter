@@ -24,6 +24,15 @@ def limit(f,r):
 
     return sp.limit(f(x),x,r)
 
+def lim_left(f,r):
+
+    return sp.limit(f(x),x,r, dir='-')
+
+def lim_right(f,r, dir='-'):
+
+    return sp.limit(f(x),x,r)
+
+
 def show_limit_analysis(f,r):
     display(Markdown("We have set: "))
     display(Latex("$f(x)= "+sp.latex(f(x))+"$"))
@@ -46,32 +55,23 @@ def show_limit_analysis(f,r):
     # display(Markdown("the values f(x) seem to get close to somewhere around")) 
     # display(Markdown("`"+str((sp.N(f(r-0.001),4)+sp.N(f(r+0.001),4))/2)+"`"))
 
-try_counter = 0
-s = 2.2
-# g1 = function('3x^2+x-1')
-# g2 = function(g1(x)+b) 
 
 
-def generate_random_function():
-    global try_counter, s
+def generate_example():
 
-    if try_counter > 0:
-        s = random.randint(-30,30)/10
-        b = (random.randint(-10,10)+1)**2/10
-        g1 = function('quadratic')
-        g2 = function(g1(x)+b)
-        g = function(sp.Piecewise((g1(x), x<=s), (g2(x),x>s)))
-    else: 
-        g = function(sp.Piecewise((expression('3x^2+x-1'), x<=s), (expression('3x^2+x-3.47'),x>s)))
+    s = random.randint(-30,30)/10
+    b = (random.randint(-10,10)+1)**2/10
+    g1 = function('quadratic')
+    g2 = function(g1(x)+b)
+    g = function(sp.Piecewise((g1(x), x<s), (b+s, x==s), (g2(x),x>s)))
 
-    display(Markdown("g(x) generated, s = `" + str(s) + "`" + " (Round "+str(try_counter)+")"))
-    display(Markdown('<br>'))
-    display(Markdown("**Problem**: *Estimate*  "))
-    display(Latex("$\large \lim_{x \\to s^+} g(x)$"))
-    
-    try_counter += 1 
+    display(Latex("$\\text{New $g(x), s$ generated}$"))
+    display(Latex("$s = " + str(s) + "$"))
+    # display(Markdown('<br>'))
+    display(Markdown("**Problem**: *Estimate the one-sided limits*  "))
+    display(Latex("$ \lim_{x \\to s^-} g(x) \\text{ and } \lim_{x \\to s^+} g(x)$"))
 
-    return g
+    return g, s
 
 
 

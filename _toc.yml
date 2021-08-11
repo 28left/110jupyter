@@ -35,6 +35,6 @@ parts:
   chapters:
   - file: nb_Limits/limits_nb_
     sections:
-    - file: nb_Limits/limits_nb_TIY2.ipynb
+    - file: nb_Limits/limits_nb_estimateTIY.ipynb
 
 
