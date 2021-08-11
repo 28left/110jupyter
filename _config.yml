@@ -64,7 +64,7 @@ parse:
 launch_buttons:
   notebook_interface: classic # "jupyterlab" or "classic"
   binderhub_url: https://binder.jupytr.cloud.psu.edu  # The URL for your BinderHub (e.g., https://mybinder.org)
-  jupyterhub_url: https://hub.binder.jupytr.cloud.psu.edu
+  jupyterhub_url: ""
   thebe: true
 
 
