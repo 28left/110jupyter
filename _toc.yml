@@ -11,6 +11,9 @@ parts:
     - file: ch_Precalc/precalc_graphing.md
     - file: ch_Precalc/precalc_inequalities.md
     - file: ch_Precalc/precalc_domain.md
+  - file: ch_Functions/functions_
+    sections:
+    - file: ch_Functions/functions_functionsdomainrange.md
   - file: ch_Limits/limits_
     sections:
     - file: ch_Limits/limits_def.md
