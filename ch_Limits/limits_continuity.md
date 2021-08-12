@@ -52,7 +52,7 @@ Polynomial and rational functions are continuous on their domains.
 
 ### Example: Continuity at a point
 
-Is the function $f(x)$ continuous at $x=1$?\\
+Is the function $f(x)$ continuous at $x=1$?
 
 $$
 f(x) =
