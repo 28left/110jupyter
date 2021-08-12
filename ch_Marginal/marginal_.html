@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Limits and Continuity &#8212; Math 110 Companion Site</title>
+    <title>Marginal Analysis &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,8 +52,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Computational Examples: Limits" href="limits_nb_estimateTIY.html" />
-    <link rel="prev" title="Intervals of Increase &amp; Decrease" href="../ch_Curvesketching/curvesketching_increasedecrease.html" />
+    <link rel="next" title="Cost, Revenue, and Profit" href="marginal_costrevprofit.html" />
+    <link rel="prev" title="Basic Rules of Differentiation" href="../ch_Derivatives/derivatives_rules.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -95,7 +95,7 @@
   Course Packets e-book
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Precalc/precalc_.html">
    Precalculus Review
@@ -207,17 +207,34 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../ch_Marginal/marginal_.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
    Marginal Analysis
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="marginal_costrevprofit.html">
+     Cost, Revenue, and Profit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="marginal_marginalanalysis.html">
+     Marginal Analysis
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Implicit/implicit_.html">
    Implicit Differentiation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -238,8 +255,8 @@
   <a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">
    Curve Sketching
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -257,19 +274,19 @@
   Computational Examples – Try it yourself
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
    Limits and Continuity
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_nb_estimateTIY.html">
+    <a class="reference internal" href="../nb_Limits/limits_nb_estimateTIY.html">
      Computational Examples: Limits
     </a>
    </li>
@@ -314,9 +331,12 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Marginal/marginal_.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/nb_Limits/limits_nb_.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Marginal/marginal_.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -336,6 +356,26 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Marginal/marginal_.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -349,12 +389,13 @@
         
               <div>
                 
-  <div class="section" id="limits-and-continuity">
-<h1>Limits and Continuity<a class="headerlink" href="#limits-and-continuity" title="Permalink to this headline">¶</a></h1>
-<p>Limits are the most important concept in calculus. You will find some activity notebooks which will show you more computational examples and, if you want, let you work through even more examples yourself.</p>
+  <div class="section" id="marginal-analysis">
+<h1>Marginal Analysis<a class="headerlink" href="#marginal-analysis" title="Permalink to this headline">¶</a></h1>
+<p>This chapter applies the concept of differentiation to some important settings in economics.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="limits_nb_estimateTIY.html">Computational Examples: Limits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="marginal_costrevprofit.html">Cost, Revenue, and Profit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="marginal_marginalanalysis.html">Marginal Analysis</a></li>
 </ul>
 </div>
 </div>
@@ -372,7 +413,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./nb_Limits"
+            path: "./ch_Marginal"
         },
         predefinedOutput: true
     }
@@ -384,8 +425,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../ch_Curvesketching/curvesketching_increasedecrease.html" title="previous page">Intervals of Increase &amp; Decrease</a>
-    <a class='right-next' id="next-link" href="limits_nb_estimateTIY.html" title="next page">Computational Examples: Limits</a>
+    <a class='left-prev' id="prev-link" href="../ch_Derivatives/derivatives_rules.html" title="previous page">Basic Rules of Differentiation</a>
+    <a class='right-next' id="next-link" href="marginal_costrevprofit.html" title="next page">Cost, Revenue, and Profit</a>
 
         </div>
         

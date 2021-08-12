@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Related Rates &#8212; Math 110 Companion Site</title>
+    <title>Marginal Analysis &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Curve Sketching" href="../ch_Curvesketching/curvesketching_.html" />
-    <link rel="prev" title="Implicit Differentiation" href="implicit_differentiation.html" />
+    <link rel="next" title="Implicit Differentiation" href="../ch_Implicit/implicit_.html" />
+    <link rel="prev" title="Cost, Revenue, and Profit" href="marginal_costrevprofit.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -209,14 +209,9 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../ch_Marginal/marginal_.html">
-   Marginal Analysis
-  </a>
- </li>
  <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="implicit_.html">
-   Implicit Differentiation
+  <a class="reference internal" href="marginal_.html">
+   Marginal Analysis
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -225,12 +220,34 @@
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="implicit_differentiation.html">
-     Implicit Differentiation
+    <a class="reference internal" href="marginal_costrevprofit.html">
+     Cost, Revenue, and Profit
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
+     Marginal Analysis
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Implicit/implicit_.html">
+   Implicit Differentiation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_differentiation.html">
+     Implicit Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_relatedrates.html">
      Related Rates
     </a>
    </li>
@@ -240,8 +257,8 @@
   <a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">
    Curve Sketching
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -264,8 +281,8 @@
   <a class="reference internal" href="../nb_Limits/limits_nb_.html">
    Limits and Continuity
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -317,11 +334,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/ch_Implicit/implicit_relatedrates.ipynb"><button type="button"
+            href="../_sources/ch_Marginal/marginal_marginalanalysis.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Implicit/implicit_relatedrates.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Marginal/marginal_marginalanalysis.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -346,7 +363,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Implicit/implicit_relatedrates.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Marginal/marginal_marginalanalysis.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -372,23 +389,38 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-6">
-   Example 6
+  <a class="reference internal nav-link" href="#marginal-cost-marginal-average-cost-functions">
+   Marginal Cost &amp; Marginal Average Cost Functions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-7">
-   Example 7
+  <a class="reference internal nav-link" href="#marginal-revenue-marginal-average-revenue-functions">
+   Marginal Revenue &amp; Marginal Average Revenue Functions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-8">
-   Example 8
+  <a class="reference internal nav-link" href="#marginal-profit-marginal-average-profit-functions">
+   Marginal Profit &amp; Marginal Average Profit Functions
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-9">
-   Example 9
+  <a class="reference internal nav-link" href="#marginal-analysis-notation">
+   Marginal Analysis Notation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-3">
+   Example 3
   </a>
  </li>
 </ul>
@@ -402,202 +434,201 @@
         
               <div>
                 
-  <div class="section" id="related-rates">
-<h1>Related Rates<a class="headerlink" href="#related-rates" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="marginal-analysis">
+<h1>Marginal Analysis<a class="headerlink" href="#marginal-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="marginal-cost-marginal-average-cost-functions">
+<h2>Marginal Cost &amp; Marginal Average Cost Functions<a class="headerlink" href="#marginal-cost-marginal-average-cost-functions" title="Permalink to this headline">¶</a></h2>
 <div class="info admonition">
-<p class="admonition-title">How to Solve a Related Rates Problem</p>
-<p>Here are a few guidelines to follow when solving a related rates problem.</p>
-<ol class="simple">
-<li><p><strong>Assign a variable</strong> to each quantity that changes and state the known and unknown rates of change with respect to time <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
-<li><p><strong>Find an equation</strong> relating the variables. Don’t forget about business models.</p></li>
-<li><p><strong>Differentiate both sides</strong> of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>. Treat all variables as functions of <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
-<li><p><strong>Replace the variables</strong> and their derivatives by the numerical data given. Watch out for words like “increasing” or “decreasing”, “rising” or “falling”, “away” or “towards”, etc. to determine if a derivative is positive or negative.</p></li>
-<li><p><strong>Solve the equation</strong> for the unknown rate of change.</p></li>
-</ol>
+<p class="admonition-title">Definition</p>
+<p>If <span class="math notranslate nohighlight">\(C(x)\)</span> denotes the total cost function, then <span class="math notranslate nohighlight">\(C'(x)\)</span> denotes the <strong>marginal cost function</strong>, which approximates the extra cost incurred in producing one additional unit</p>
+<div class="math notranslate nohighlight">
+\[C'(x) \approx C(x+1) - C(x)\]</div>
+<p>and <span class="math notranslate nohighlight">\(\overline{C}'(x)\)</span> denotes the <strong>marginal average cost function</strong>.</p>
 </div>
-<div class="section" id="example-6">
-<h2>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h2>
-<p>Given <span class="math notranslate nohighlight">\(p^2x + 6x = 5\)</span> and <span class="math notranslate nohighlight">\(\dfrac{dp}{dt} = 3\)</span>. Compute <span class="math notranslate nohighlight">\(\dfrac{dx}{dt}\)</span> when <span class="math notranslate nohighlight">\(p = 2\)</span>.</p>
+</div>
+<div class="section" id="marginal-revenue-marginal-average-revenue-functions">
+<h2>Marginal Revenue &amp; Marginal Average Revenue Functions<a class="headerlink" href="#marginal-revenue-marginal-average-revenue-functions" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>If <span class="math notranslate nohighlight">\(R(x)\)</span> denotes the total revenue function, then <span class="math notranslate nohighlight">\(R'(x)\)</span> denotes the <strong>marginal revenue function</strong>, which approximates the revenue realized from the sale of one additional unit</p>
+<div class="math notranslate nohighlight">
+\[R'(x) \approx R(x+1) - R(x)\]</div>
+<p>and <span class="math notranslate nohighlight">\(\overline{R}'(x)\)</span> denotes the <strong>marginal average revenue function</strong>.</p>
+</div>
+</div>
+<div class="section" id="marginal-profit-marginal-average-profit-functions">
+<h2>Marginal Profit &amp; Marginal Average Profit Functions<a class="headerlink" href="#marginal-profit-marginal-average-profit-functions" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>If <span class="math notranslate nohighlight">\(P(x)\)</span> denotes the total profit function, then <span class="math notranslate nohighlight">\(P'(x)\)</span> denotes the marginal profit function, which approximates the profit generated from the production and sale of one additional unit</p>
+<div class="math notranslate nohighlight">
+\[P'(x) \approx P(x+1) - P(x)\]</div>
+<p>and <span class="math notranslate nohighlight">\(\overline{P}'(x)\)</span> denotes the marginal average profit function.</p>
+</div>
+</div>
+<div class="section" id="marginal-analysis-notation">
+<h2>Marginal Analysis Notation<a class="headerlink" href="#marginal-analysis-notation" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Function</p></th>
+<th class="head"><p>Average</p></th>
+<th class="head"><p>Marginal Function</p></th>
+<th class="head"><p>Marginal Average</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cost</p></td>
+<td><p><span class="math notranslate nohighlight">\(C(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{C}(x) = \frac{C(x)}{x}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(C'(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\( \overline{C}'(x) = \frac{d}{dx}\overline{C}(x)\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Revenue</p></td>
+<td><p><span class="math notranslate nohighlight">\(R(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{R}(x) = \frac{R(x)}{x}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(R'(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\( \overline{R}'(x) = \frac{d}{dx}\overline{R}(x)\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Profit</p></td>
+<td><p><span class="math notranslate nohighlight">\(P(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{P}(x) = \frac{P(x)}{x}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(P'(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{P}'(x) = \frac{d}{dx}\overline{P}(x)\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>The daily demand for the new PBox5 Game <em>Dr. Mathematica-Exam Day of Reckoning</em> is given by</p>
+<div class="math notranslate nohighlight">
+\[p(x) = \frac{125}{x+2} - \frac{1}{2}x\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of video games sold each day and <span class="math notranslate nohighlight">\(p\)</span> is in dollars. Using the marginal revenue function, <span class="math notranslate nohighlight">\(R'(x)\)</span>, approximate the marginal revenue when 3 video games are sold each day and interpret the result.</p>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
+<p class="admonition-title">Step 1: Compute the total revenue function, <span class="math notranslate nohighlight">\(R(x)\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\text{Variables (as functions of $t$): } &amp; x(t) \text{ and } p(t) \\ 
-\text{Known rate of change: } &amp; \dfrac{dp}{dt} = 3 \\ 
-\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when} p=2
+    R(x) &amp;= x\cdot p(x) \\
+    &amp;= x\left(\frac{125}{x+2} - \frac{1}{2}x \right)\\
+    &amp;= \frac{125x}{x+2}-\frac{1}{2}x^2
 \end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
-<div class="math notranslate nohighlight">
-\[p^2x + 6x = 5\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p class="admonition-title">Step 2: Compute the marginal revenue function, <span class="math notranslate nohighlight">\(R'(x)\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{d}{dt}(p^2x + 6x)
-&amp;= 2pp'x + p^2x' + 6x' &amp;&amp; \hbox{Implicit differentiation &amp; Product Rule}\\
-&amp;= 0 &amp;&amp; \hbox{since $\dfrac{d}{dt} 5 = 0$}
+    R'(x) &amp;= \frac{d}{dx}R(x)\\
+    &amp;= \frac{d}{dx}\left( \frac{125x}{x+2}-\frac{1}{2}x^2 \right) \\
+    &amp;= \frac{125(x+2) -125x}{(x+2)^2} - \frac{1}{2}\cdot 2x \\
+    &amp;=  \frac{125x+250 - 125x}{(x+2)^2} - x \\
+    &amp;=  \frac{250}{(x+2)^2} - x \\
 \end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(x\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(p=2\)</span> into the given equation <span class="math notranslate nohighlight">\(p^2x + 6x = 5\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[(2)^2x + 6x = 5 ~~~~~\Rightarrow~~~~~ 10x = 5 ~~~~~\Rightarrow~~~~~ x = 1/2\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(p=2\)</span>, <span class="math notranslate nohighlight">\(x=1/2\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = 3\)</span>)</p>
-<div class="math notranslate nohighlight">
-\[2(2)(3)\frac{1}{2} + (2)^2x' + 6x' = 0  ~~~~~\Rightarrow~~~~~ 6 + 10x' = 0 ~~~~~\Rightarrow~~~~~ x' = -3/5\]</div>
-<p>Therefore <span class="math notranslate nohighlight">\(\dfrac{dx}{dt} = -3/5\)</span> when <span class="math notranslate nohighlight">\(p=2\)</span> and <span class="math notranslate nohighlight">\(\dfrac{dp}{dt} = 3\)</span>.</p>
-</div>
-</div>
-<div class="section" id="example-7">
-<h2>Example 7<a class="headerlink" href="#example-7" title="Permalink to this headline">¶</a></h2>
-<p>A company is decreasing the production of energy drinks at a rate of 100 cases per day. All cases produced can be sold. The daily demand function is given by</p>
-<div class="math notranslate nohighlight">
-\[p(x) = 50 - \frac{x}{200}\]</div>
-<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of cases produced and sold, and <span class="math notranslate nohighlight">\(p(x)\)</span> is the unit price in dollars. Find the rate of change of the revenue with respect to the time in days when daily production is 300 cases.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
+<p class="admonition-title">Step 3: Plug in <span class="math notranslate nohighlight">\(x=3\)</span> into the marginal revenue function.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-
-\text{Variables (as functions of $t$): } &amp; x(t) = \text{ the quantity produced and sold per day} \\
-&amp; R(t) = \text{ the daily revenue} \\
-\text{Known rate of change: } &amp; \dfrac{dx}{dt} = -100 \text{ since production is decreasing} \\ \\
-\text{Unknown rate of change: } &amp; \dfrac{dR}{dt} \text{ when } x=300
+    R'(3) &amp;= \frac{250}{(3+2)^2} - 3 \\
+    &amp;= \frac{250}{5^2} - 3 \\
+    %&amp;= \frac{250}{25} - 3 \\
+    &amp;= 10 - 3\\
+    &amp;= 7
+\end{align*}\]</div>
+<p>Therefore, the total daily revenue would increase by approximately $7 if sales increased from 3 to 4 units each day.</p>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>If the demand function for math self-help videos is given by</p>
+<div class="math notranslate nohighlight">
+\[p(x) = 35 - 0.1x\]</div>
+<p>and the total cost function to manufacture the videos is given by</p>
+<div class="math notranslate nohighlight">
+\[C(x) = 3x + 21\]</div>
+<p>Evaluate the marginal profit function at <span class="math notranslate nohighlight">\(x=20\)</span> and interpret the result.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Compute the total revenue function, <span class="math notranslate nohighlight">\(R(x)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    R(x) &amp;=  x\cdot p(x)\\
+    &amp;= x(35 - 0.1x)\\
+    &amp;= 35x-0.1x^2
 \end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
+<p class="admonition-title">Step 2: Compute the total profit function, <span class="math notranslate nohighlight">\(P(x)\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
-&amp;= x \left(50 - \frac{x}{200}\right) &amp;&amp; \text{since $p(x) = 50 - \frac{x}{200}$}\\
-&amp;= 50x - \frac{1}{200}x^2 &amp;&amp; \hbox{Simplify}
+    P(x) &amp;= R(x) - C(x)\\
+    &amp;= (35x-0.1x^2)-(3x+21)\\
+    &amp;= 35x-0.1x^2-3x-21\\
+    &amp;=-0.1x^2 +32x -21
 \end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Find an equation which relates the variables.</p>
+<p class="admonition-title">Step 3: Compute the marginal profit function, <span class="math notranslate nohighlight">\(P'(x)\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
-&amp;= x \left(50 - \frac{x}{200}\right) &amp;&amp; \text{since $p(x) = 50 - \frac{x}{200}$}\\
-&amp;= 50x - \frac{1}{200}x^2 &amp;&amp; \hbox{Simplify}
+    P'(x) &amp;= \frac{d}{dx}P(x) \\
+    &amp;= \frac{d}{dx}(-0.1x^2 +32x -21) \\
+    &amp;= -0.1(2x) + 32 \\
+    &amp;= -0.2x+32
 \end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p class="admonition-title">Step 4: Plug in <span class="math notranslate nohighlight">\(x=20\)</span> into the marginal profit function.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{dR}{dt}
-&amp;= \frac{d}{dt}\left(50x - \frac{1}{200}x^2 \right)\\ 
-&amp;= 50 \,\frac{dx}{dt} - \frac{1}{200}\,2x\,\frac{dx}{dt} &amp;&amp; \text{Implicit differentiation &amp; Power Rule}\\
-&amp;= 50 \, \frac{dx}{dt} - \frac{x}{100}\,\frac{dx}{dt} &amp;&amp; \text{Simplify}
+    P'(20) 
+    &amp;= -0.2(20)+32\\
+    &amp;= -\frac{2}{10}(20)+32\\
+    &amp;=-4+32\\
+    &amp;=28
 \end{align*}\]</div>
-<p>Therefore revenue is decreasing at $4700 per day when the level of production is 300 cases per day and decreasing at 100 cases per day.</p>
+<p>Therefore, the total profit will increase by approximately $28 when the 21st video is produced and sold.</p>
 </div>
 </div>
-<div class="section" id="example-8">
-<h2>Example 8<a class="headerlink" href="#example-8" title="Permalink to this headline">¶</a></h2>
-<p>The weekly demand function is given by</p>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<p>The daily cost (in dollars) of producing computer screens is given by</p>
 <div class="math notranslate nohighlight">
-\[2p + x + 4xp = 22\]</div>
-<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of thousands of units demanded weekly and <span class="math notranslate nohighlight">\(p\)</span> is in dollars. If the price is increasing at a rate of 25 cents per week when the weekly demand is 4000 units, at what rate is the demand decreasing?</p>
+\[C(x)=9x^3-30x^2+90x+900\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> denotes the number of thousands of screens produced each day. Calculate the marginal average cost function when 3000 screens are produced each day and interpret the result.</p>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
+<p class="admonition-title">Step 1: Compute and simplify the average cost function, <span class="math notranslate nohighlight">\(\overline{C}(x)\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-
-\text{Variables (as functions of $t$): } &amp; x(t) = \text{ demand in units of a thousand} \\
-&amp;  p(t) = \text{ unit price in dollars}\\ 
-\text{Known rate of change: } &amp; \dfrac{dp}{dt} = \dfrac{25}{100} \text{ since price (in dollars) is increasing } \\
-\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when } x = 4
-
+    \overline{C}(x) 
+    &amp;= \frac{9x^3-30x^2+90x+900}{x} &amp;&amp; \hbox{since $\overline{C}(x) = C(x)/x$}\\ 
+    \\
+    &amp;= \frac{9x^3}{x} -\frac{30x^2}{x}+\frac{90x}{x}+\frac{900}{x}&amp;&amp; \text{separate the terms to make differentiation easier}\\ 
+    \\
+    &amp;=9x^2 -30x+90+900x^{-1} &amp;&amp; \text{simplify}\\
 \end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
-<div class="math notranslate nohighlight">
-\[2p + x + 4xp = 22\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p class="admonition-title">Step 2: Compute the marginal average cost function, <span class="math notranslate nohighlight">\(\overline{C}'(x)\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{d}{dt}(2p + x + 4xp)
-&amp;= 2\frac{dp}{dt} + \frac{dx}{dt} + 4\frac{dx}{dt}p + 4x\frac{dp}{dt} &amp;&amp; \hbox{Implicit differentiation &amp; Product Rule} \\
-&amp;= 0 &amp;&amp; \hbox{since $\dfrac{d}{dt}22 = 0$}
+    \overline{C}'(x) 
+    &amp;= \frac{d}{dx} \overline{C}(x)\\
+    &amp;= \frac{d}{dx}\left(9x^2 -30x+90+900x^{-1}\right)\\
+    &amp;= 9(2x)-30+ 0 + (-1)900x^{-2}\\
+    &amp;=18x-30-\frac{900}{x^2}
 \end{align*}\]</div>
 </div>
 <div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(p\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(x=4\)</span> into the given demand equation <span class="math notranslate nohighlight">\(2p+x+4xp = 22\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[2p + 4 + 4(4)p = 22 ~~~~~\Rightarrow~~~~~ 18p + 4 = 22 ~~~~~\Rightarrow~~~~~ p = 1\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(x=4\)</span>, <span class="math notranslate nohighlight">\(p=1\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = 25/100\)</span>)</p>
+<p class="admonition-title">Step 3: Plug in <span class="math notranslate nohighlight">\(x=3\)</span>,</p>
+<p>We plug in <span class="math notranslate nohighlight">\(x=3\)</span>, since <span class="math notranslate nohighlight">\(x\)</span> denotes the <em>number of thousands</em> of screens produced each day.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-0 &amp;= 2\left(\frac{25}{100}\right) + \frac{dx}{dt} + 4\frac{dx}{dt}(1) + 4(4)\left(\frac{25}{100}\right) \\
-&amp;= \frac{1}{2} + 5\frac{dx}{dt}  + 4 &amp;&amp; \hbox{Simplify} \\
-&amp;= \frac{9}{2} + 5\frac{dx}{dt} 
+    \overline{C}'(3)
+     &amp;=18(3)-30-\frac{900}{3^2} \\
+    &amp;=54-30-100 \\ 
+    &amp;= -76
 \end{align*}\]</div>
-<p>Therefore</p>
-<div class="math notranslate nohighlight">
-\[\frac{9}{2} + 5\frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ 5\frac{dx}{dt} = -\frac{9}{2} ~~~~~\Rightarrow~~~~~ \frac{dx}{dt} = -\frac{9}{10}\]</div>
-<p>and since <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of units, this means that demand is decreasing by <span class="math notranslate nohighlight">\(900\)</span> units per week (i.e., <span class="math notranslate nohighlight">\(9/10\)</span> of one thousand) when the weekly demand is 4000 units and the price is increasing at 25 cents per week.</p>
-</div>
-</div>
-<div class="section" id="example-9">
-<h2>Example 9<a class="headerlink" href="#example-9" title="Permalink to this headline">¶</a></h2>
-<p>The wholesale price <span class="math notranslate nohighlight">\(p\)</span> of an e-tablet writing stylus in dollars is related to the supply <span class="math notranslate nohighlight">\(x\)</span> in thousands by:</p>
-<div class="math notranslate nohighlight">
-\[125p^2 - x^2 = 100\]</div>
-<p>If 20,000 styluses are available at the beginning of a week, and the price is falling at 4 cents per week, at what rate is the supply falling?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-
-\text{Variables (as functions of $t$): } &amp; x(t) = \text{ supply in units of a thousand} \\
-&amp;  p(t) = \text{ unit price in dollars}\\ 
-\text{Known rate of change: } &amp; \dfrac{dp}{dt} = -\dfrac{4}{100} \text{ since price (in dollars) is falling} \\
-\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when } x = 20
-
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
-<div class="math notranslate nohighlight">
-\[125p^2 - x^2 = 100\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-250p\frac{dp}{dt} - 2x\frac{dx}{dt} = 0 &amp;&amp; \text{Power Rule}
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(p\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(x=20\)</span> into the given supply equation <span class="math notranslate nohighlight">\(125p^2 - x^2 = 100\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[125p^2 - 20^2 = 100 ~~~~~\Rightarrow~~~~~ 125p^2 = 500 ~~~~~\Rightarrow~~~~~ p^2 = 4~~~~~\Rightarrow~~~~~ p = 2\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(x=20\)</span>, <span class="math notranslate nohighlight">\(p=2\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = -4/100\)</span>)</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-0 &amp;= 250(2)\left(-\frac{4}{100}\right) - 2(20)\frac{dx}{dt} \\
-&amp;= -500\left(\frac{4}{100}\right) - 40 \frac{dx}{dt} &amp;&amp; \hbox{Simplify} \\
-&amp;= -20 - 40 \frac{dx}{dt} 
-\end{align*}\]</div>
-<p>Therefore</p>
-<div class="math notranslate nohighlight">
-\[-20 - 40 \frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ -40 \frac{dx}{dt} = 20 ~~~~~\Rightarrow~~~~~ \frac{dx}{dt} = -\frac{1}{2}\]</div>
-<p>and since <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of units, this means that supply is falling by <span class="math notranslate nohighlight">\(500\)</span> units per week (i.e., <span class="math notranslate nohighlight">\(1/2\)</span> of one thousand) when the weekly demand is 20,000 styluses and the price is falling at 4 cents per week.</p>
+<p>Therefore, the average cost of producing a thousand screens will decrease by approximately $76 if the level of production is increased from 3000 to 4000 screens.</p>
 </div>
 </div>
 </div>
@@ -615,7 +646,7 @@ R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ch_Implicit"
+            path: "./ch_Marginal"
         },
         predefinedOutput: true
     }
@@ -627,8 +658,8 @@ R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="implicit_differentiation.html" title="previous page">Implicit Differentiation</a>
-    <a class='right-next' id="next-link" href="../ch_Curvesketching/curvesketching_.html" title="next page">Curve Sketching</a>
+    <a class='left-prev' id="prev-link" href="marginal_costrevprofit.html" title="previous page">Cost, Revenue, and Profit</a>
+    <a class='right-next' id="next-link" href="../ch_Implicit/implicit_.html" title="next page">Implicit Differentiation</a>
 
         </div>
         

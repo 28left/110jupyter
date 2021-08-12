@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Limits and Continuity &#8212; Math 110 Companion Site</title>
+    <title>Cost, Revenue, and Profit &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,11 +49,13 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Computational Examples: Limits" href="limits_nb_estimateTIY.html" />
-    <link rel="prev" title="Intervals of Increase &amp; Decrease" href="../ch_Curvesketching/curvesketching_increasedecrease.html" />
+    <link rel="next" title="Marginal Analysis" href="marginal_marginalanalysis.html" />
+    <link rel="prev" title="Marginal Analysis" href="marginal_.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -95,7 +97,7 @@
   Course Packets e-book
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Precalc/precalc_.html">
    Precalculus Review
@@ -207,17 +209,34 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../ch_Marginal/marginal_.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="marginal_.html">
    Marginal Analysis
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Cost, Revenue, and Profit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="marginal_marginalanalysis.html">
+     Marginal Analysis
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Implicit/implicit_.html">
    Implicit Differentiation
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -238,8 +257,8 @@
   <a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">
    Curve Sketching
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -257,19 +276,19 @@
   Computational Examples – Try it yourself
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
    Limits and Continuity
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_nb_estimateTIY.html">
+    <a class="reference internal" href="../nb_Limits/limits_nb_estimateTIY.html">
      Computational Examples: Limits
     </a>
    </li>
@@ -314,9 +333,12 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Marginal/marginal_costrevprofit.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/nb_Limits/limits_nb_.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Marginal/marginal_costrevprofit.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -336,11 +358,59 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Marginal/marginal_costrevprofit.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#total-cost-average-cost-functions">
+   Total Cost &amp; Average Cost Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#total-revenue-average-revenue-functions">
+   Total Revenue &amp; Average Revenue Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#total-profit-average-profit-functions">
+   Total Profit &amp; Average Profit Functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -349,13 +419,109 @@
         
               <div>
                 
-  <div class="section" id="limits-and-continuity">
-<h1>Limits and Continuity<a class="headerlink" href="#limits-and-continuity" title="Permalink to this headline">¶</a></h1>
-<p>Limits are the most important concept in calculus. You will find some activity notebooks which will show you more computational examples and, if you want, let you work through even more examples yourself.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="limits_nb_estimateTIY.html">Computational Examples: Limits</a></li>
-</ul>
+  <div class="section" id="cost-revenue-and-profit">
+<h1>Cost, Revenue, and Profit<a class="headerlink" href="#cost-revenue-and-profit" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="total-cost-average-cost-functions">
+<h2>Total Cost &amp; Average Cost Functions<a class="headerlink" href="#total-cost-average-cost-functions" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The <strong>total cost function</strong>, <span class="math notranslate nohighlight">\(C(x)\)</span> measures the costs incurred from operating a business and is defined by</p>
+<div class="math notranslate nohighlight">
+\[C(x) = F(x) + V(x)\]</div>
+<p>where <span class="math notranslate nohighlight">\(F(x)\)</span> denotes the fixed costs  (i.e., costs that remain the same regardless of the level of production <span class="math notranslate nohighlight">\(x\)</span>) and <span class="math notranslate nohighlight">\(V(x)\)</span> denotes the variable costs (i.e., costs that vary depending on the level of production <span class="math notranslate nohighlight">\(x\)</span>) of operating a business.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The <strong>average cost function</strong>, <span class="math notranslate nohighlight">\(\overline{C}(x)\)</span>, measures the average cost per unit produced and is defined by</p>
+<div class="math notranslate nohighlight">
+\[\overline{C}(x) = \frac{C(x)}{x}.\]</div>
+</div>
+</div>
+<div class="section" id="total-revenue-average-revenue-functions">
+<h2>Total Revenue &amp; Average Revenue Functions<a class="headerlink" href="#total-revenue-average-revenue-functions" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The <strong>total revenue function</strong>, <span class="math notranslate nohighlight">\(R(x)\)</span>, measures the amount of money received from the sale of <span class="math notranslate nohighlight">\(x\)</span> units and is defined by</p>
+<div class="math notranslate nohighlight">
+\[R(x) = x\cdot p(x)\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of units demanded and <span class="math notranslate nohighlight">\(p(x)\)</span> is the unit price.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The <strong>average revenue function</strong>, <span class="math notranslate nohighlight">\(\overline{R}(x)\)</span>, measures the average amount of money received per unit sold and is defined by</p>
+<div class="math notranslate nohighlight">
+\[\overline{R}(x) = \frac{R(x)}{x}.\]</div>
+</div>
+</div>
+<div class="section" id="total-profit-average-profit-functions">
+<h2>Total Profit &amp; Average Profit Functions<a class="headerlink" href="#total-profit-average-profit-functions" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The <strong>total profit function</strong>, <span class="math notranslate nohighlight">\(P(x)\)</span> measures the difference between the total revenue and total cost functions and is defined by</p>
+<div class="math notranslate nohighlight">
+\[P(x) = R(x) - C(x)\]</div>
+<p>where <span class="math notranslate nohighlight">\(R(x)\)</span> is the total revenue function and <span class="math notranslate nohighlight">\(C(x)\)</span> is the total cost function.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The <strong>average profit function</strong>, <span class="math notranslate nohighlight">\(\overline{P}(x)\)</span>, measures the average profit earned per unit produced and sold and is defined by</p>
+<div class="math notranslate nohighlight">
+\[\overline{P}(x) = \frac{P(x)}{x}.\]</div>
+</div>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>A manufacturer of Robot Tutors has a fixed monthly cost of $500 and a processing cost
+of $9 for each robot tutor produced. Assuming each robot sells for $19, compute the total profit and the average profit per robot when 250 robots are produced and sold.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Compute the total cost function, <span class="math notranslate nohighlight">\(C(x)\)</span>.</p>
+<p>Here, <span class="math notranslate nohighlight">\(x\)</span> denotes the number of robots produced.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+C(x) &amp;= F(x) + V(x) &amp;&amp; \text{total cost equals fixed costs plus variable costs}\\
+&amp;= 500  + 9x &amp;&amp; \hbox{\$500 of fixed costs and \$9 for each robot}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Compute the total revenue function, <span class="math notranslate nohighlight">\(R(x)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    R(x) &amp;= x \cdot p(x) &amp;&amp; \text{revenue equals number of units times price per unit}\\
+    &amp;= 19x &amp;&amp; \hbox{since each robot sells for \$19}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Compute the total profit function, <span class="math notranslate nohighlight">\(P(x)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    P(x) &amp;= R(x) - C(x) &amp;&amp; \text{profit equals revenue minus cost}\\
+    &amp;= \left( 19x \right) - \left( 500 + 9x\right) &amp;&amp; \text{using Steps 1 and 2}\\
+    &amp;= 19x - 500 - 9x \\
+    &amp;= 10x - 500 &amp;&amp; 
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Plug in <span class="math notranslate nohighlight">\(x=250\)</span> into the profit function.</p>
+<p>Plug in <span class="math notranslate nohighlight">\(x=250\)</span> into the profit function to find the profit associated with the production and sale of 250 robots.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    P(250) &amp;= 10(250) - 500 \\
+    &amp;= 2500 - 500\\
+    &amp;= 2000
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Plug in <span class="math notranslate nohighlight">\(x=250\)</span> into the average profit function.</p>
+<p>Plug in <span class="math notranslate nohighlight">\(x=250\)</span> into the average profit function to find the average profit associated with each robot when 250 robots are produced and sold.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \overline{P}(250) 
+    &amp;= \frac{P(250)}{250} &amp;&amp; \hbox{since $\overline{P}(x) = \frac{P(x)}{x}$}\\
+    &amp;= \frac{2000}{250} &amp;&amp; \hbox{using Step 4}\\
+    &amp;= 8
+\end{align*}\]</div>
+<p>Therefore, each of the 250 robots produced and sold earns an average profit of $8.</p>
+</div>
 </div>
 </div>
 
@@ -372,7 +538,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./nb_Limits"
+            path: "./ch_Marginal"
         },
         predefinedOutput: true
     }
@@ -384,8 +550,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../ch_Curvesketching/curvesketching_increasedecrease.html" title="previous page">Intervals of Increase &amp; Decrease</a>
-    <a class='right-next' id="next-link" href="limits_nb_estimateTIY.html" title="next page">Computational Examples: Limits</a>
+    <a class='left-prev' id="prev-link" href="marginal_.html" title="previous page">Marginal Analysis</a>
+    <a class='right-next' id="next-link" href="marginal_marginalanalysis.html" title="next page">Marginal Analysis</a>
 
         </div>
         
