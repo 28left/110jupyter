@@ -28,8 +28,6 @@ kernelspec:
 %load_ext itikz
 ```
 
-Let $f(x)$ be defined by the following graph.  
-
 ```{code-cell}
 :tags: [remove-input]
 
