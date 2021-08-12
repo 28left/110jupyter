@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marginal Analysis &#8212; Math 110 Companion Site</title>
+    <title>Elasticity &amp; Total Revenue &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,11 +49,13 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Cost, Revenue, &amp; Profit" href="marginal_costrevprofit.html" />
-    <link rel="prev" title="Basic Rules of Differentiation" href="../ch_Derivatives/derivatives_rules.html" />
+    <link rel="next" title="Implicit Differentiation" href="../ch_Implicit/implicit_.html" />
+    <link rel="prev" title="Elasticity of Demand" href="marginal_elasticitydemand.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -208,7 +210,7 @@
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="marginal_.html">
    Marginal Analysis
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -216,7 +218,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="marginal_costrevprofit.html">
      Cost, Revenue, &amp; Profit
@@ -232,8 +234,8 @@
      Elasticity of Demand
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="marginal_elasticityrevenue.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Elasticity &amp; Total Revenue
     </a>
    </li>
@@ -342,11 +344,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/ch_Marginal/marginal_.ipynb"><button type="button"
+            href="../_sources/ch_Marginal/marginal_elasticityrevenue.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Marginal/marginal_.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Marginal/marginal_elasticityrevenue.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -371,7 +373,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Marginal/marginal_.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Marginal/marginal_elasticityrevenue.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -391,6 +393,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-3">
+   Example 3
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -399,16 +424,182 @@
         
               <div>
                 
-  <div class="section" id="marginal-analysis">
-<h1>Marginal Analysis<a class="headerlink" href="#marginal-analysis" title="Permalink to this headline">¶</a></h1>
-<p>This chapter applies the concept of differentiation to some important settings in economics.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="marginal_costrevprofit.html">Cost, Revenue, &amp; Profit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="marginal_marginalanalysis.html">Marginal Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="marginal_elasticitydemand.html">Elasticity of Demand</a></li>
-<li class="toctree-l1"><a class="reference internal" href="marginal_elasticityrevenue.html">Elasticity &amp; Total Revenue</a></li>
-</ul>
+  <div class="section" id="elasticity-total-revenue">
+<h1>Elasticity &amp; Total Revenue<a class="headerlink" href="#elasticity-total-revenue" title="Permalink to this headline">¶</a></h1>
+<div class="info admonition">
+<p class="admonition-title">Relationship between Elasticity and Total Revenue</p>
+<ol class="simple">
+<li><p>Total Revenue is increasing for those values of <span class="math notranslate nohighlight">\(p\)</span> where <span class="math notranslate nohighlight">\(E(p) &lt; 1\)</span>, that is, when demand is inelastic.</p></li>
+<li><p>Total Revenue is decreasing for those values of <span class="math notranslate nohighlight">\(p\)</span> where <span class="math notranslate nohighlight">\(E(p) &gt; 1\)</span>, that is, when demand is elastic.</p></li>
+<li><p>Total Revenue is maximized for those values of <span class="math notranslate nohighlight">\(p\)</span> where <span class="math notranslate nohighlight">\(E(p) = 1\)</span>, that is, when demand is unitary.</p></li>
+</ol>
+</div>
+<p>Let <span class="math notranslate nohighlight">\(f(x)\)</span> be defined by the following graph.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../_images/marginal_elasticityrevenue_3_0.svg" src="../_images/marginal_elasticityrevenue_3_0.svg" /></div>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>The demand equation for widgets is given by</p>
+<div class="math notranslate nohighlight">
+\[
+p = 2 - \frac{x}{10}.
+\]</div>
+<p>Compute <span class="math notranslate nohighlight">\(E(0.5)\)</span> and <span class="math notranslate nohighlight">\(E(1.5)\)</span> and interpret the results.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine <span class="math notranslate nohighlight">\(x = f(p)\)</span>.</p>
+<p>In other words, solve for demand <span class="math notranslate nohighlight">\(x\)</span>, in terms of price <span class="math notranslate nohighlight">\(p\)</span>, using the demand equation, if possible.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+p &amp;= 2 - \frac{x}{10} &amp;&amp; \hbox{demand equation}\\
+10p &amp;= 20 - x &amp;&amp; \hbox{multiply both sides by $10$}\\
+x + 10p &amp;= 20  &amp;&amp; \hbox{add $x$ to both sides}\\
+x &amp;= 20 - 10p  &amp;&amp; \hbox{subtract $10p$ from both sides}
+\end{align*}\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(f(p) = 20-10p\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Compute <span class="math notranslate nohighlight">\(f'(p)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f'(p) &amp;= \frac{d}{dp}(20-10p) = -10
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Compute <span class="math notranslate nohighlight">\(E(p)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E(p) = -\frac{pf'(p)}{f(p)} 
+&amp;= -\frac{p(-10)}{20-10p}\\
+&amp;= \frac{10p}{20-10p}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Calculate <span class="math notranslate nohighlight">\(E(0.5)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    E(0.5) 
+    &amp;= \frac{10\cdot0.5}{20-10\cdot 0.5}\\
+    &amp;= \frac{5}{20-5}\\
+    &amp;= \frac{1}{3}
+\end{align*}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(E(0.5) &lt; 1\)</span>, demand is inelastic when the price is $0.50 and total revenue would increase if the price increases.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Calculate <span class="math notranslate nohighlight">\(E(1.5)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    E(1.5) 
+    &amp;= \frac{10\cdot1.5}{20-10\cdot1.5}\\
+    &amp;= \frac{15}{20-15}\\
+    &amp;= 3
+\end{align*}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(E(1.5) &gt; 1\)</span>, demand is elastic when the price is $1.50 and total revenue would increase if the price decreases.</p>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>Given the demand equation</p>
+<div class="math notranslate nohighlight">
+\[x + \frac{p}{6} -50 = 0\]</div>
+<p>where <span class="math notranslate nohighlight">\(p\)</span> represents the price in dollars and <span class="math notranslate nohighlight">\(x\)</span> the number of units, determine the value of <span class="math notranslate nohighlight">\(p\)</span> where demand is unitary and interpret the result.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine <span class="math notranslate nohighlight">\(x = f(p)\)</span>.</p>
+<p>In other words, solve for demand <span class="math notranslate nohighlight">\(x\)</span>, in terms of price <span class="math notranslate nohighlight">\(p\)</span>, using the demand equation, if possible.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+x + \frac{p}{6} -50 &amp;= 0 &amp;&amp; \hbox{demand equation}\\
+x + \frac{p}{6} &amp;= 50 &amp;&amp; \hbox{add $50$ to both sides}\\
+x &amp;= 50 - \frac{p}{6} &amp;&amp; \hbox{subtract $p/6$ from both sides}
+\end{align*}\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(f(p) = 50 - \dfrac{p}{6}\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Compute <span class="math notranslate nohighlight">\(f'(p)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(p) 
+&amp;= \frac{d}{dp}\left(50 - \frac{p}{6}\right)\\
+&amp;= \frac{d}{dp}\left(50 - \frac{1}{6}p\right)\\
+&amp;= -\frac{1}{6}    
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Compute <span class="math notranslate nohighlight">\(E(p)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    E(p) = -\frac{pf'(p)}{f(p)}
+    &amp;= -\frac{p(-1/6)}{50 - p/6}\\
+    &amp;= \frac{p(1/6)}{50 - p/6}\\
+    &amp;= \frac{p}{50 - p/6} \cdot \frac{1}{6} \\
+    &amp;=\frac{p}{(50 - p/6)6}\\
+    &amp;= \frac{p}{300 - p}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Recall that demand is unitary when <span class="math notranslate nohighlight">\(E(p) = 1\)</span>.</p>
+<p>Therefore, set <span class="math notranslate nohighlight">\(E(p) = 1\)</span> and solve for <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{p}{300 - p} &amp;= 1 &amp;&amp; \hbox{set $E(p) = 1$}\\
+    p &amp;= 300 - p &amp;&amp; \hbox{multiply both sides by $300-p$}\\
+    2p &amp;= 300 &amp;&amp; \hbox{add $p$ to both sides}\\
+    p &amp;= 150 &amp;&amp; \hbox{divide both sides by $2$}
+\end{align*}\]</div>
+<p>Therefore, when the price is $150, demand is unitary and total revenue is maximized.</p>
+</div>
+</div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<p>Given the demand equation</p>
+<div class="math notranslate nohighlight">
+\[x^2 + 6p = 180\]</div>
+<p>where <span class="math notranslate nohighlight">\(p\)</span> represents the price in dollars and <span class="math notranslate nohighlight">\(x\)</span> the number of units, determine the value of <span class="math notranslate nohighlight">\(p\)</span> where demand is unitary and interpret the result.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine <span class="math notranslate nohighlight">\(x = f(p)\)</span>.</p>
+<p>In other words, solve for demand <span class="math notranslate nohighlight">\(x\)</span>, in terms of price <span class="math notranslate nohighlight">\(p\)</span>, using the demand equation, if possible.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x^2 + 6p &amp;= 180 &amp;&amp; \hbox{demand equation}\\
+    x^2 &amp;= 180-6p &amp;&amp; \hbox{subtract $6p$ from both sides}\\
+    x&amp;= \sqrt{180-6p} &amp;&amp; \text{take the square root of both sides, $x\geq 0$}
+\end{align*}\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(f(p) = \sqrt{180-6p}\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Compute <span class="math notranslate nohighlight">\(f'(p)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    f'(p) &amp;= \frac{d}{dp}\sqrt{180-6p}\\
+    &amp;= \frac{d}{dp}(180-6p)^{1/2} &amp;&amp; \text{}\\
+    &amp;=\frac{1}{2}(180-6p)^{-\frac{1}{2}} (-6) &amp;&amp; \text{using the generalized power rule}\\
+    &amp;=\frac{-3}{\sqrt{180-6p}} &amp;&amp; \text{simplify}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Compute <span class="math notranslate nohighlight">\(E(p)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    E(p) = -\frac{p f'(p)}{f(p)}
+    &amp;=-\frac {p(-3 / \sqrt{180-6p})}{\sqrt{180-6p}}\\    
+    &amp;= \frac {p}{\sqrt{180-6p}} \cdot \frac{3}{\sqrt{180-6p}}\\    
+    &amp;= \frac {3p}{(\sqrt{180-6p})(\sqrt{180-6p})}\\
+    &amp;= \frac{3p}{180-6p} &amp;&amp; \text{combine the square roots}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Recall that demand is unitary when <span class="math notranslate nohighlight">\(E(p) = 1\)</span>.</p>
+<p>Therefore, set <span class="math notranslate nohighlight">\(E(p) = 1\)</span> and solve for <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \frac{3p}{180-6p} &amp;= 1 &amp;&amp; \hbox{set $E(p) = 1$}\\
+    3p &amp;= 180-6p &amp;&amp; \hbox{multiply both sides by $180-6p$}\\
+    9p &amp;= 180 &amp;&amp; \hbox{add $6p$ to both sides}\\
+    p &amp;=20 &amp;&amp; \hbox{divide both sides by $9$}
+\end{align*}\]</div>
+<p>Therefore, when the price is $20, demand is unitary and total revenue is maximized.</p>
+</div>
 </div>
 </div>
 
@@ -437,8 +628,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../ch_Derivatives/derivatives_rules.html" title="previous page">Basic Rules of Differentiation</a>
-    <a class='right-next' id="next-link" href="marginal_costrevprofit.html" title="next page">Cost, Revenue, &amp; Profit</a>
+    <a class='left-prev' id="prev-link" href="marginal_elasticitydemand.html" title="previous page">Elasticity of Demand</a>
+    <a class='right-next' id="next-link" href="../ch_Implicit/implicit_.html" title="next page">Implicit Differentiation</a>
 
         </div>
         
