@@ -24,6 +24,10 @@ parts:
     sections:
     - file: ch_Derivatives/derivatives_def.md
     - file: ch_Derivatives/derivatives_rules.md
+  - file: ch_Marginal/marginal_
+    sections:
+    - file: ch_Marginal/marginal_costrevprofit.md
+    - file: ch_Marginal/marginal_marginalanalysis.md
   - file: ch_Implicit/implicit_
     sections:
     - file: ch_Implicit/implicit_differentiation.md
@@ -31,6 +35,7 @@ parts:
   - file: ch_Curvesketching/curvesketching_
     sections:
     - file: ch_Curvesketching/curvesketching_increasedecrease.md
+
 - caption: Computational Examples – Try it yourself
   chapters:
   - file: nb_Limits/limits_nb_
