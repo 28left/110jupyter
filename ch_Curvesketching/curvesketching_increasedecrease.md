@@ -171,7 +171,7 @@ The following is the graph of a continuous function that is increasing on the in
     - If $f'(c) < 0$, then $f$ is decreasing on $(a,b)$.
 ```
 
-
+(curvesketching:increasedecrease:example2)=
 ## Example 2
 
 Determine the intervals where 
@@ -226,4 +226,15 @@ $f$ is decreasing on $(-3,1)$.
 $\mathbf{(1,\infty)}$:  Plug $x=2$ into $f'(x)$.
 Since $f'(2) = 3(5)(1) > 0$,  
 $f$ is increasing on $(1,\infty)$.
+```
+
+
+## Graphical representation of sign analysis
+
+We will typically represent the above sign analysis by drawing a number line, marking off the values in the domain of $f$ such that $f'(x) = 0$ or $f'(x)$ does not exist, and then putting a $+$ or $-$ above each interval according to the sign of $f'(c)$, where $c$ is the test value taken from the corresponding interval.  The number line associated with the calculations in {ref}`curvesketching:increasedecrease:example2` is shown below.
+
+```{image} ../images/pic_curvesketching_intervalsignanalysis.png
+:alt: graphical representation of sign analysis on the number line
+:width: 600px
+:align: center
 ```

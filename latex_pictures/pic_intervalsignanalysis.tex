@@ -1,0 +1,15 @@
+\documentclass[tikz, border=12pt]{standalone}
+
+\begin{document}
+    \begin{tikzpicture}[baseline=-0.5ex,scale=1.5]
+    \draw[thick,->] (-5,0) -- (3,0);
+    
+    \node at (-4,0.2) {\Large $+$};
+    \node at (0,0.2) {\Large $-$};
+    \node at (2,0.2) {\Large $+$};
+    
+    \foreach \x in {-3,1} 
+        \draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+    \end{tikzpicture}
+
+\end{document}

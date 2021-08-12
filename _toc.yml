@@ -20,6 +20,7 @@ parts:
     - file: ch_Limits/limits_indeterminate.md
     - file: ch_Limits/limits_infinity.md
     - file: ch_Limits/limits_continuity.md
+    - file: ch_Limits/limits_TIY.md
   - file: ch_Derivatives/derivatives_
     sections:
     - file: ch_Derivatives/derivatives_def.md
@@ -38,7 +39,7 @@ parts:
     sections:
     - file: ch_Curvesketching/curvesketching_increasedecrease.md
 
-- caption: Computational Examples – Try it yourself
+- caption: Computational Examples
   chapters:
   - file: nb_Limits/limits_nb_
     sections:

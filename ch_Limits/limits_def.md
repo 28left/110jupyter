@@ -147,7 +147,7 @@ $$\lim_{x\to a^-} f(x) = L ~~~~ \hbox{and} ~~~~ \lim_{x\to a^+} f(x)= L.$$
 
 ## Try It Yourself!
 
-```{link-button} https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?filepath=limits_def_TIY.ipynb
+```{link-button} https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?filepath=ch_Limits/limits_def_TIY.ipynb
     :type: url
     :text: Click to launch activity
     :classes: btn-outline-warning btn-block
