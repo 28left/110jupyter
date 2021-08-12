@@ -11,7 +11,7 @@ kernelspec:
   language: python
   name: python3
 ---
-# Cost, Revenue, and Profit
+# Cost, Revenue, & Profit
 
 ## Total Cost & Average Cost Functions
 
