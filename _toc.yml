@@ -14,6 +14,8 @@ parts:
   - file: ch_Functions/functions_
     sections:
     - file: ch_Functions/functions_functionsdomainrange.md
+    - file: ch_Functions/functions_composition.md
+    - file: ch_Functions/functions_costrevprofit.md
   - file: ch_Limits/limits_
     sections:
     - file: ch_Limits/limits_def.md
