@@ -28,6 +28,7 @@ parts:
     sections:
     - file: ch_Marginal/marginal_costrevprofit.md
     - file: ch_Marginal/marginal_marginalanalysis.md
+    - file: ch_Marginal/marginal_elasticitydemand.md
   - file: ch_Implicit/implicit_
     sections:
     - file: ch_Implicit/implicit_differentiation.md
