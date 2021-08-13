@@ -76,7 +76,7 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 | $\frac{d}{dx}e^x = e^x$ | $\frac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$ |
 ```
 
-### Example 1
+## Example 1
 
 Find all values of $x$ such that $\displaystyle 4^{x-x^2} = \frac{1}{16^x}$.
 
@@ -108,7 +108,7 @@ $$4^{x-x^2} = 4^{-2x}.$$
 \end{align*}
 ```
 
-### Example 2
+## Example 2
 
 Find all values of $x$ such that: 
 
@@ -143,7 +143,7 @@ $$u=8 ~~~~ \hbox{ or } ~~~~ u=32.$$
 \end{align*}
 ```
 
-### Example 3
+## Example 3
 
 Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 
@@ -178,7 +178,7 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 \end{align*}
 ```
 
-### Example 4
+## Example 4
 
 Expand the following expression:
 
@@ -197,7 +197,7 @@ $$\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).$$
 \end{align*}
 ```
 
-### Example 5
+## Example 5
 
 Find the tangent line to $y=\dfrac{e^{27x}}{x^9}$ at the point $(1,e^{27})$.
 
@@ -237,7 +237,7 @@ $$y-e^{27} = 18e^{27}(x-1).$$
 ```
 
 
-### Example 6
+## Example 6
 
 Suppose the unit selling price $p(x)$ and the quantity supplied $x$ of a certain product is given by 
 
@@ -264,7 +264,7 @@ Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 \end{align*}
 ```
 
-### Example 7
+## Example 7
 
 Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 
@@ -290,7 +290,7 @@ Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 ```
 
 
-### Example 8
+## Example 8
 
 Let $\ln(xy)+y^7 = x^3 + 2x$. Find $\dfrac{dy}{dx}$.
 

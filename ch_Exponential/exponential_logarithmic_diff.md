@@ -30,7 +30,7 @@ the process of logarithmic differentiation is carried out in the following manne
 3. Solve the resulting equation for $y'$ (by multiplying both sides by $y$) and then replace $y$ with $f(x)$.
 ```
 
-### Example 9
+## Example 9
 
 Compute the derivative of $f(x) = \dfrac{(5x+1)^7}{x^4\sqrt{x^3+4}}$.
 
@@ -74,7 +74,7 @@ While $f'(x)$ could be computed using the product, quotient, and general power r
 \end{align*}
 ```
 
-### Example 10
+## Example 10
 
 Compute the derivative of $f(x) = \left(3x+5\right)^{x^2}$.
 
