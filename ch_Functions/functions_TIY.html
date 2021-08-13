@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functions, Domain, and Range &#8212; Math 110 Companion Site</title>
+    <title>Try It Yourself &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Composition of Functions" href="functions_composition.html" />
-    <link rel="prev" title="Functions" href="functions_.html" />
+    <link rel="next" title="Limits and Continuity" href="../ch_Limits/limits_.html" />
+    <link rel="prev" title="An Application" href="functions_application.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -150,8 +150,8 @@
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions_functionsdomainrange.html">
      Functions, Domain, and Range
     </a>
    </li>
@@ -180,8 +180,8 @@
      An Application
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="functions_TIY.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Try It Yourself
     </a>
    </li>
@@ -396,11 +396,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/ch_Functions/functions_functionsdomainrange.ipynb"><button type="button"
+            href="../_sources/ch_Functions/functions_TIY.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Functions/functions_functionsdomainrange.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Functions/functions_TIY.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -425,7 +425,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Functions/functions_functionsdomainrange.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Functions/functions_TIY.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -451,38 +451,49 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definitions">
-   Definitions
+  <a class="reference internal nav-link" href="#exercise-1">
+   Exercise 1
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#domain-considerations">
-   Domain Considerations
+  <a class="reference internal nav-link" href="#exercise-2">
+   Exercise 2
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-1">
-     Example 1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-2">
-     Example 2
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#domain-analysis">
-   Domain Analysis
+  <a class="reference internal nav-link" href="#exercise-3">
+   Exercise 3
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-3">
-     Example 3
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4">
+   Exercise 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5">
+   Exercise 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6">
+   Exercise 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-7">
+   Exercise 7
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-8">
+   Exercise 8
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-9">
+   Exercise 9
+  </a>
  </li>
 </ul>
 
@@ -495,138 +506,147 @@
         
               <div>
                 
-  <div class="section" id="functions-domain-and-range">
-<h1>Functions, Domain, and Range<a class="headerlink" href="#functions-domain-and-range" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="definitions">
-<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h2>
-<div class="info admonition">
-<p class="admonition-title">Definition</p>
-<p>A <em><strong>function</strong></em> is a rule that assigns to each element in a set <span class="math notranslate nohighlight">\(A\)</span> <strong>one and only one</strong> element in a set <span class="math notranslate nohighlight">\(B\)</span>.</p>
+  <div class="section" id="try-it-yourself">
+<h1>Try It Yourself<a class="headerlink" href="#try-it-yourself" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="exercise-1">
+<h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
+<p>Let <span class="math notranslate nohighlight">\(f(x) = \dfrac{x - 1}{2x - 6}\)</span> and <span class="math notranslate nohighlight">\(g(x) = \sqrt{2x + 1}\)</span>.</p>
+<p>Determine the domain for <span class="math notranslate nohighlight">\(f+g\)</span>, <span class="math notranslate nohighlight">\(f-g\)</span>, <span class="math notranslate nohighlight">\(fg\)</span>, and <span class="math notranslate nohighlight">\(f/g\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: Domain for <span class="math notranslate nohighlight">\(f+g\)</span>, <span class="math notranslate nohighlight">\(f-g\)</span>, <span class="math notranslate nohighlight">\(fg\)</span>: <span class="math notranslate nohighlight">\([-1/2,3) \cup (3,\infty)\)</span>; Domain for <span class="math notranslate nohighlight">\(f/g\)</span>: <span class="math notranslate nohighlight">\((-1/2,3) \cup (3,\infty)\)</span></p>
 </div>
-<p>It is customary to denote a function by a letter of the alphabet, such as <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(g\)</span>, <span class="math notranslate nohighlight">\(h\)</span>, etc.</p>
-<div class="info admonition">
-<p class="admonition-title">Definition</p>
-<p>The set <span class="math notranslate nohighlight">\(A\)</span> is called the <em><strong>domain</strong></em> of the function. The element in <span class="math notranslate nohighlight">\(B\)</span> that <span class="math notranslate nohighlight">\(f\)</span> associates with <span class="math notranslate nohighlight">\(x\)</span> is written as</p>
+</details></div>
+<div class="section" id="exercise-2">
+<h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h2>
+<p>Let <span class="math notranslate nohighlight">\(f(x) = 3\sqrt{x}\)</span> and <span class="math notranslate nohighlight">\(g(x) = \dfrac{x}{2x-1}\)</span>.</p>
+<p>Determine the rule for the composite functions <span class="math notranslate nohighlight">\(f \circ g\)</span> and <span class="math notranslate nohighlight">\(g \circ f\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\((f\circ g)(x) = 3\sqrt{x/(2x-1)}\)</span>; <span class="math notranslate nohighlight">\((g\circ f)(x) = 3\sqrt{x}/(6\sqrt{x}-1)\)</span></p>
+</div>
+</details></div>
+<div class="section" id="exercise-3">
+<h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h2>
+<p>A manufacturer of Everlasting LED lightbulbs has fixed monthly costs of $25,000 and a processing cost of $3 for each lightbulb produced. Assuming each lightbulb sells for $5, compute the break-even point.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: 12,500 lightbulbs</p>
+</div>
+</details></div>
+<div class="section" id="exercise-4">
+<h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Permalink to this headline">¶</a></h2>
+<p>Determine the degree of the polynomial</p>
 <div class="math notranslate nohighlight">
-\[f(x)\]</div>
-<p>(read “<span class="math notranslate nohighlight">\(f\)</span> of <span class="math notranslate nohighlight">\(x\)</span>”) and is called the <em><strong>value</strong></em> of <span class="math notranslate nohighlight">\(f\)</span> at <span class="math notranslate nohighlight">\(x\)</span>.</p>
+\[(x^4 + x)^2(x^3 + x + 1)^5.\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(23\)</span></p>
 </div>
-<div class="info admonition">
-<p class="admonition-title">Definition</p>
-<p>The set of all possible values of <span class="math notranslate nohighlight">\(f(x)\)</span> resulting from all the possible values of <span class="math notranslate nohighlight">\(x\)</span> in its domain, is called the <em><strong>range</strong></em> of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
-</div>
-<div class="figure align-default" id="illustration-domain-range">
-<img alt="Illustration of domain and range of a function" src="../_images/pic_limits_domainrange.png" />
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Illustration of the domain and the range of a function</span><a class="headerlink" href="#illustration-domain-range" title="Permalink to this image">¶</a></p>
-</div>
-<div class="info admonition">
-<p class="admonition-title">Definition</p>
-<p>Suppose we are given the function <span class="math notranslate nohighlight">\(y=f(x)\)</span>.</p>
-<ul class="simple">
-<li><p>The variable <span class="math notranslate nohighlight">\(x\)</span> is called the <em><strong>independent variable</strong></em>.</p></li>
-<li><p>The variable <span class="math notranslate nohighlight">\(y\)</span>, whose value depends on <span class="math notranslate nohighlight">\(x\)</span>, is called the <em><strong>dependent variable</strong></em>.</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="domain-considerations">
-<h2>Domain Considerations<a class="headerlink" href="#domain-considerations" title="Permalink to this headline">¶</a></h2>
-<p>To determine the domain of a function, we need to find what restrictions, if any, are to be placed on the independent variable.</p>
-<p>In many practical problems, the domain of a function is dictated by the nature of the problem and any restrictions on the function used in the expression.  In this course, these restrictions will be limited to one or more of the following:</p>
-<div class="danger admonition">
-<p class="admonition-title">Key restrictions</p>
-<ul class="simple">
-<li><p><strong>cannot take the square root of a negative number</strong></p></li>
-<li><p><strong>cannot divide by zero</strong></p></li>
-<li><p><strong>cannot take the logarithm of zero or a negative number</strong></p></li>
-</ul>
-</div>
-<div class="section" id="example-1">
-<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
-<p>Determine the domain and range of <span class="math notranslate nohighlight">\(f(x) = x^2 - 1\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Determine the domain of <span class="math notranslate nohighlight">\(f\)</span>.</p>
-<p>Since <span class="math notranslate nohighlight">\(f\)</span> does not include any division, square roots, or logarithms, its domain consists of all real numbers, <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Determine the range of <span class="math notranslate nohighlight">\(f\)</span>.</p>
-<p>Since <span class="math notranslate nohighlight">\(x^2 \geq 0\)</span> for all real <span class="math notranslate nohighlight">\(x\)</span>, by subtracting <span class="math notranslate nohighlight">\(1\)</span> from both sides of the inequality, we obtain <span class="math notranslate nohighlight">\(f(x) = x^2 - 1 \geq -1\)</span> for all real <span class="math notranslate nohighlight">\(x\)</span>.  Therefore, the range of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\([-1,\infty)\)</span>.</p>
-</div>
-<p>Another way to determine the domain and range of <span class="math notranslate nohighlight">\(f\)</span> is to consider the graph of <span class="math notranslate nohighlight">\(y = f(x)\)</span>.  For this example, the graph of <span class="math notranslate nohighlight">\(y = x^2 - 1\)</span> is a parabola that opens up and is shifted down one unit, as illustrated below.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/functions_functionsdomainrange_2_0.svg" src="../_images/functions_functionsdomainrange_2_0.svg" /></div>
-</div>
-<ul class="simple">
-<li><p>The domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all the different <span class="math notranslate nohighlight">\(x\)</span>-coordinates of points on the graph of <span class="math notranslate nohighlight">\(f\)</span>, which is <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
-<li><p>The range of <span class="math notranslate nohighlight">\(f\)</span> consists of all the different <span class="math notranslate nohighlight">\(y\)</span>-coordinates of points on the graph of <span class="math notranslate nohighlight">\(f\)</span>, which is <span class="math notranslate nohighlight">\([-1,\infty)\)</span>.</p></li>
-</ul>
-</div>
-<div class="section" id="example-2">
-<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
-<p>Determine the domain of</p>
+</details></div>
+<div class="section" id="exercise-5">
+<h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Permalink to this headline">¶</a></h2>
+<p>Write</p>
 <div class="math notranslate nohighlight">
-\[g(x) = \dfrac{1}{\sqrt{x}}.\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Consider how the square root restricts the domain.</p>
-<p>Since <span class="math notranslate nohighlight">\(g\)</span> includes the square root function, <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>, we must assume that <span class="math notranslate nohighlight">\(x\geq 0\)</span>.</p>
+\[\dfrac{x}{x^2-4} - \dfrac{2x+1}{x+5}\]</div>
+<p>as a ratio of polynomials and determine its domain.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\((-2x^3 + 13x + 4)/(x^3 + 5x^2 - 4x - 20)\)</span>, Domain: <span class="math notranslate nohighlight">\((-\infty,-5) \cup (-5,-2) \cup (-2,2) \cup (2,\infty)\)</span></p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Consider how division restricts the domain.</p>
-<p>Since <span class="math notranslate nohighlight">\(g\)</span> includes division, we must exclude any value of <span class="math notranslate nohighlight">\(x\)</span> that makes the denominator equal to zero.  In this example, the denominator equals zero only when <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Determine the domain of <span class="math notranslate nohighlight">\(g\)</span>.</p>
-<p>Based on the previous two steps, the domain of <span class="math notranslate nohighlight">\(g\)</span> consists of all real numbers greater than zero, which can be written in interval notation as <span class="math notranslate nohighlight">\((0,\infty)\)</span>.</p>
-</div>
-</div>
-</div>
-<div class="section" id="domain-analysis">
-<h2>Domain Analysis<a class="headerlink" href="#domain-analysis" title="Permalink to this headline">¶</a></h2>
-<p>Let <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> be functions with domains <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, respectively.  The sum, difference, product, and quotient of <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> are functions defined by</p>
+</details></div>
+<div class="section" id="exercise-6">
+<h2>Exercise 6<a class="headerlink" href="#exercise-6" title="Permalink to this headline">¶</a></h2>
+<p>The demand and supply functions for {\em The Best of Math 110: A DVD Collection} are:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-(f+g)(x) &amp;= f(x) + g(x) &amp;&amp; \hbox{Sum}\\
-(f-g)(x) &amp;= f(x) - g(x) &amp;&amp; \hbox{Difference}\\
-(fg)(x) &amp;= f(x) g(x) &amp;&amp; \hbox{Product}\\
-(f/g)(x) &amp;= \frac{f(x)}{g(x)} &amp;&amp; \hbox{Quotient}
+p = d(x) &amp;= -x^2 - 2x + 100\\
+p = s(x) &amp;= 2x^2 + 4x - 140
 \end{align*}\]</div>
-<div class="info admonition">
-<p class="admonition-title">Domains of sums, differences, products, and divisions of functions</p>
-<ul class="simple">
-<li><p>The domain of <span class="math notranslate nohighlight">\(f+g\)</span>, <span class="math notranslate nohighlight">\(f-g\)</span>, and <span class="math notranslate nohighlight">\(fg\)</span> consists of all values of <span class="math notranslate nohighlight">\(x\)</span> that appear in both <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, which is called the <strong>intersection</strong> of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, and is denoted by <span class="math notranslate nohighlight">\(A\cap B\)</span>.</p></li>
-<li><p>The domain of <span class="math notranslate nohighlight">\(f/g\)</span> consists of <span class="math notranslate nohighlight">\(A\cap B\)</span> excluding all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(g(x)=0\)</span>.</p></li>
-</ul>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of thousands of DVDs and <span class="math notranslate nohighlight">\(p\)</span> is in dollars.  Determine the market equilibrium values.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: Equilibrium quantity = 8000; Equilibrium price = $20</p>
 </div>
-<div class="section" id="example-3">
-<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
-<p>Let <span class="math notranslate nohighlight">\(f(x) = \sqrt{x + 2}\)</span> and <span class="math notranslate nohighlight">\(g(x) = \sqrt{5-x}\)</span>.  Determine the domain of <span class="math notranslate nohighlight">\(f+g\)</span>, <span class="math notranslate nohighlight">\(f-g\)</span>, <span class="math notranslate nohighlight">\(fg\)</span>, and <span class="math notranslate nohighlight">\(f/g\)</span>.  Use interval notation to express each domain.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Determine the domain of <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> separately.</p>
-<ul class="simple">
-<li><p>The domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x+2 \geq 0\)</span>, or equivalently, <span class="math notranslate nohighlight">\(x \geq -2\)</span>.  Therefore, the domain of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\([-2,\infty)\)</span>.</p></li>
-<li><p>The domain of <span class="math notranslate nohighlight">\(g\)</span> consists of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(5-x \geq 0\)</span>, or equivalently, <span class="math notranslate nohighlight">\(x \leq 5\)</span>.  Therefore, the domain of <span class="math notranslate nohighlight">\(g\)</span> is <span class="math notranslate nohighlight">\((-\infty,5]\)</span>.</p></li>
-</ul>
+</details></div>
+<div class="section" id="exercise-7">
+<h2>Exercise 7<a class="headerlink" href="#exercise-7" title="Permalink to this headline">¶</a></h2>
+<p>A rectangular field is to be enclosed by 200 feet of fence. One side of the field is a building, so fencing is not required on that side.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../_images/functions_TIY_2_0.svg" src="../_images/functions_TIY_2_0.svg" /></div>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Determine the domain of <span class="math notranslate nohighlight">\(f+g\)</span>, <span class="math notranslate nohighlight">\(f-g\)</span>, and <span class="math notranslate nohighlight">\(fg\)</span>.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(f+g\)</span>, <span class="math notranslate nohighlight">\(f-g\)</span>, and <span class="math notranslate nohighlight">\(fg\)</span> is the intersection of <span class="math notranslate nohighlight">\([-2,\infty)\)</span> (i.e., <span class="math notranslate nohighlight">\(-2 \leq x\)</span>) and <span class="math notranslate nohighlight">\((-\infty,5]\)</span> (i.e., <span class="math notranslate nohighlight">\(x \leq 5\)</span>).  In other words, the domain of all three functions consists of values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(-2 \leq x \leq 5\)</span>, or equivalently, <span class="math notranslate nohighlight">\([-2,5]\)</span>.</p>
+<p>If <span class="math notranslate nohighlight">\(x\)</span> denotes the length of one side of the rectangle perpendicular to the building, determine the function in the variable <span class="math notranslate nohighlight">\(x\)</span> giving the area (in square feet) of the fenced-in region and state the appropriate domain.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: Area: <span class="math notranslate nohighlight">\(200x - 2x^2\)</span>, Domain: <span class="math notranslate nohighlight">\([0,100]\)</span></p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Determine the values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(g(x) = 0\)</span>.</p>
-<p>Set <span class="math notranslate nohighlight">\(g(x) = 0\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\sqrt{x-5} = 0\]</div>
-<p>Solve for <span class="math notranslate nohighlight">\(x\)</span> by squaring both sides.</p>
-<div class="math notranslate nohighlight">
-\[x - 5 = 0\]</div>
-<p>And finally, adding <span class="math notranslate nohighlight">\(5\)</span> to both sides yields <span class="math notranslate nohighlight">\(x=5\)</span> (i.e., <span class="math notranslate nohighlight">\(g(x) = 0\)</span> only when <span class="math notranslate nohighlight">\(x=5\)</span>).</p>
+</details></div>
+<div class="section" id="exercise-8">
+<h2>Exercise 8<a class="headerlink" href="#exercise-8" title="Permalink to this headline">¶</a></h2>
+<p>A game box manufacturer determines that in order to sell <span class="math notranslate nohighlight">\(x\)</span> units, the price per unit in dollars must be <span class="math notranslate nohighlight">\(p(x) = 250 - x\)</span>. The manufacture also determines that the total cost of producing <span class="math notranslate nohighlight">\(x\)</span> units is given by <span class="math notranslate nohighlight">\(C(x) = 2500 + 10x\)</span>.  Determine the profit as a function of <span class="math notranslate nohighlight">\(x\)</span> and state the appropriate domain.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: Profit: <span class="math notranslate nohighlight">\(240x - x^2 - 2500\)</span>, Domain: <span class="math notranslate nohighlight">\([0,250]\)</span></p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Determine the domain of <span class="math notranslate nohighlight">\(f/g\)</span>.</p>
-<p>The domain of <span class="math notranslate nohighlight">\(f/g\)</span> consists of <span class="math notranslate nohighlight">\([-2,5]\)</span>, excluding all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(g(x) = 0\)</span>.  In the previous step, we determined that the only value of <span class="math notranslate nohighlight">\(x\)</span> that satisfies <span class="math notranslate nohighlight">\(g(x) = 0\)</span> is <span class="math notranslate nohighlight">\(x=5\)</span>.  Therefore, the domain of <span class="math notranslate nohighlight">\(f/g\)</span> is <span class="math notranslate nohighlight">\([-2,5)\)</span>.</p>
+</details></div>
+<div class="section" id="exercise-9">
+<h2>Exercise 9<a class="headerlink" href="#exercise-9" title="Permalink to this headline">¶</a></h2>
+<p>A printer needs to make a poster that has a total area of <span class="math notranslate nohighlight">\(200\)</span> in<span class="math notranslate nohighlight">\(^2\)</span>, <span class="math notranslate nohighlight">\(1\)</span> inch margins on the sides, a <span class="math notranslate nohighlight">\(2.5\)</span> inch margin on the top, and a <span class="math notranslate nohighlight">\(1.5\)</span> inch margin on the bottom.  If <span class="math notranslate nohighlight">\(x\)</span> denotes the width (in inches) of the poster, find a function in the variable <span class="math notranslate nohighlight">\(x\)</span> giving the area of the printed (i.e., shaded) region and state the appropriate domain.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../_images/functions_TIY_4_0.svg" src="../_images/functions_TIY_4_0.svg" /></div>
 </div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: Area: <span class="math notranslate nohighlight">\((x-2)(200/x-4)\)</span>, Domain: <span class="math notranslate nohighlight">\([2,50]\)</span></p>
 </div>
-</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -654,8 +674,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="functions_.html" title="previous page">Functions</a>
-    <a class='right-next' id="next-link" href="functions_composition.html" title="next page">Composition of Functions</a>
+    <a class='left-prev' id="prev-link" href="functions_application.html" title="previous page">An Application</a>
+    <a class='right-next' id="next-link" href="../ch_Limits/limits_.html" title="next page">Limits and Continuity</a>
 
         </div>
         

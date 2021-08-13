@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graphing &#8212; Math 110 Companion Site</title>
+    <title>Try It Yourself &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Solving Inequalities" href="precalc_inequalities.html" />
-    <link rel="prev" title="Solving Equations" href="precalc_solvingequations.html" />
+    <link rel="next" title="Functions" href="../ch_Functions/functions_.html" />
+    <link rel="prev" title="The Domain of a Function" href="precalc_domain.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -123,8 +123,8 @@
      Solving Equations
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="precalc_graphing.html">
      Graphing
     </a>
    </li>
@@ -138,8 +138,8 @@
      The Domain of a Function
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="precalc_TIY.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Try It Yourself
     </a>
    </li>
@@ -401,11 +401,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/ch_Precalc/precalc_graphing.ipynb"><button type="button"
+            href="../_sources/ch_Precalc/precalc_TIY.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Precalc/precalc_graphing.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Precalc/precalc_TIY.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -430,7 +430,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Precalc/precalc_graphing.md"><button type="button"
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Precalc/precalc_TIY.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -456,75 +456,59 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#equations-for-a-line">
-   Equations for a Line
+  <a class="reference internal nav-link" href="#exercise-1">
+   Exercise 1
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#slope-intercept-form">
-     Slope-Intercept Form
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#point-slope-form">
-     Point-Slope Form
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-1">
-     Example 1
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-2">
-     Example 2
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-3">
-     Example 3
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#graphing-quadratic-polynomials">
-   Graphing Quadratic Polynomials
+  <a class="reference internal nav-link" href="#exercise-2">
+   Exercise 2
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-4">
-     Example 4
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-5">
-     Example 5
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-6">
-     Example 6
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#graphing-power-and-root-functions">
-   Graphing Power and Root Functions
+  <a class="reference internal nav-link" href="#exercise-3">
+   Exercise 3
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-7">
-     Example 7
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-8">
-     Example 8
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4">
+   Exercise 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5">
+   Exercise 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6">
+   Exercise 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-7">
+   Exercise 7
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-8">
+   Exercise 8
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-9">
+   Exercise 9
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-10">
+   Exercise 10
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-11">
+   Exercise 11
+  </a>
  </li>
 </ul>
 
@@ -537,168 +521,173 @@
         
               <div>
                 
-  <div class="section" id="graphing">
-<h1>Graphing<a class="headerlink" href="#graphing" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="equations-for-a-line">
-<h2>Equations for a Line<a class="headerlink" href="#equations-for-a-line" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="slope-intercept-form">
-<h3>Slope-Intercept Form<a class="headerlink" href="#slope-intercept-form" title="Permalink to this headline">¶</a></h3>
-<p>The equation of the line with slope <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(y\)</span>-intercept equal to <span class="math notranslate nohighlight">\(b\)</span> is</p>
+  <div class="section" id="try-it-yourself">
+<h1>Try It Yourself<a class="headerlink" href="#try-it-yourself" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="exercise-1">
+<h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
+<p>Rewrite</p>
 <div class="math notranslate nohighlight">
-\[
-\boxed{y = mx + b}
-\]</div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_2_0.svg" src="../_images/precalc_graphing_2_0.svg" /></div>
+\[\dfrac{3}{x-1} - \dfrac{5}{2x+1}\]</div>
+<p>as a single ratio.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer:  <span class="math notranslate nohighlight">\(\frac{x+8}{(x-1)(2x+1)}\)</span></p>
 </div>
+</details></div>
+<div class="section" id="exercise-2">
+<h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h2>
+<p>Expand <span class="math notranslate nohighlight">\((8x+11)(2x-5)\)</span> using the FOIL method.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(16x^2 - 18x - 55\)</span></p>
 </div>
-<div class="section" id="point-slope-form">
-<h3>Point-Slope Form<a class="headerlink" href="#point-slope-form" title="Permalink to this headline">¶</a></h3>
-<p>The equation of the line with slope <span class="math notranslate nohighlight">\(m\)</span> that goes through the point <span class="math notranslate nohighlight">\((a,b)\)</span> is</p>
+</details></div>
+<div class="section" id="exercise-3">
+<h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h2>
+<p>Expand <span class="math notranslate nohighlight">\(5x^6(3x-4)^2\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(45x^8 - 120x^7 + 80x^6\)</span></p>
+</div>
+</details></div>
+<div class="section" id="exercise-4">
+<h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Permalink to this headline">¶</a></h2>
+<p>Expand <span class="math notranslate nohighlight">\((1+3x)(1-3x)(2+x)\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(2 + x - 18x^2 - 9x^3\)</span></p>
+</div>
+</details></div>
+<div class="section" id="exercise-5">
+<h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Permalink to this headline">¶</a></h2>
+<p>Factor <span class="math notranslate nohighlight">\(4x^5 - 25x^3\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer:  <span class="math notranslate nohighlight">\(x^3(2x-5)(2x+5)\)</span> (use difference of squares)</p>
+</div>
+</details></div>
+<div class="section" id="exercise-6">
+<h2>Exercise 6<a class="headerlink" href="#exercise-6" title="Permalink to this headline">¶</a></h2>
+<p>Simplify</p>
 <div class="math notranslate nohighlight">
-\[
-\boxed{y - b = m(x-a)}
-\]</div>
+\[\dfrac{2x^4 - 2x^3 -12x^2}{9x^2 - x^4}\]</div>
+<p>by factoring both the numerator and the denominator.  Assume that <span class="math notranslate nohighlight">\(x\neq 0\)</span> and <span class="math notranslate nohighlight">\(x\neq 3\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(-2(x+2)/(x+3)\)</span></p>
+</div>
+</details></div>
+<div class="section" id="exercise-7">
+<h2>Exercise 7<a class="headerlink" href="#exercise-7" title="Permalink to this headline">¶</a></h2>
+<p>Factor and simplify <span class="math notranslate nohighlight">\(10x(x+2)^5 - 5x^2(x+2)^3\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(5x(x+2)^3(2x^2+7x + 8)\)</span></p>
+</div>
+</details></div>
+<div class="section" id="exercise-8">
+<h2>Exercise 8<a class="headerlink" href="#exercise-8" title="Permalink to this headline">¶</a></h2>
+<p>Sketch the graph of the line defined by <span class="math notranslate nohighlight">\(y + 2 = \dfrac{1}{4}(x-5)\)</span>. Use the fact that the line is described in point-slope form.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_4_0.svg" src="../_images/precalc_graphing_4_0.svg" /></div>
+<img alt="../_images/precalc_TIY_2_0.svg" src="../_images/precalc_TIY_2_0.svg" /></div>
 </div>
-<p>Recall that a positive slope means that the line goes up from left-to-right and a negative slope means that the line goes down from left-to-right.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: Line through the point <span class="math notranslate nohighlight">\((5,-2)\)</span> with a slope of <span class="math notranslate nohighlight">\(1/4\)</span>.</p>
 </div>
-<div class="section" id="example-1">
-<h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
-<p>Sketch the graph of the line defined by  <span class="math notranslate nohighlight">\(y = 2x + 3\)</span>.</p>
-<div class="tip admonition">
-<p class="admonition-title">Step 1: Determine slope and <span class="math notranslate nohighlight">\(y\)</span>-intercept</p>
-<p>Since <span class="math notranslate nohighlight">\(y=2x+3\)</span> is in slope-intercept form, the line has slope <span class="math notranslate nohighlight">\(2\)</span> and a <span class="math notranslate nohighlight">\(y\)</span>-intercept of <span class="math notranslate nohighlight">\(3\)</span>.</p>
+</details></div>
+<div class="section" id="exercise-9">
+<h2>Exercise 9<a class="headerlink" href="#exercise-9" title="Permalink to this headline">¶</a></h2>
+<p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 - 16 &gt; 0\)</span>.  Write your answer using interval notation.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\((-\infty,-4) \cup (4,\infty)\)</span></p>
 </div>
-<p>Once we know slope and <span class="math notranslate nohighlight">\(y\)</span>-intercept, we can draw the graph.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_6_0.svg" src="../_images/precalc_graphing_6_0.svg" /></div>
-</div>
-<p>Note that the red dashed lined is not part of the graph and is used only as a guide for drawing a line with slope 2.  In particular, in order for a line to have slope equal to <span class="math notranslate nohighlight">\(2\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 1 unit, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be increased by 2 units.</p>
-</div>
-<div class="section" id="example-2">
-<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
-<p>Sketch the graph of the line defined by  <span class="math notranslate nohighlight">\(y - 3 = -2(x - 4)\)</span>.</p>
-<div class="tip admonition">
-<p class="admonition-title">Step 1: Determine the slope and a point on the line.</p>
-<p>Since <span class="math notranslate nohighlight">\(y - 3 = -2(x - 4)\)</span> is in point-slope form, the line has slope <span class="math notranslate nohighlight">\(-2\)</span> and goes through the point <span class="math notranslate nohighlight">\((4,3)\)</span>.</p>
-</div>
-<p>Now draw a graph with slope <span class="math notranslate nohighlight">\(-2\)</span> that goes through the point <span class="math notranslate nohighlight">\((4,3)\)</span>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_8_0.svg" src="../_images/precalc_graphing_8_0.svg" /></div>
-</div>
-<p>In order for a line to have slope equal to <span class="math notranslate nohighlight">\(-2\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 1 unit, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be decreased by 2 units.</p>
-</div>
-<div class="section" id="example-3">
-<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
-<p>Sketch the graph of the line defined by <span class="math notranslate nohighlight">\(y - 1 = \dfrac{2}{5}(x + 2)\)</span>.</p>
-<div class="tip admonition">
-<p class="admonition-title">Step 1: Determine the slope and a point on the line.</p>
-<p>Since <span class="math notranslate nohighlight">\(y - 1 = \frac{2}{5}(x + 2)\)</span> is in point-slope form, the line has slope <span class="math notranslate nohighlight">\(2/5\)</span> and goes through the point <span class="math notranslate nohighlight">\((-2,1)\)</span>.</p>
-</div>
-<p>Draw the line with slope equal to <span class="math notranslate nohighlight">\(2/5\)</span> that goes through the point <span class="math notranslate nohighlight">\((-2,1)\)</span></p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_10_0.svg" src="../_images/precalc_graphing_10_0.svg" /></div>
-</div>
-<p>In order for a line to have slope equal to <span class="math notranslate nohighlight">\(2/5\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 5 units, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be increased by 2 units.</p>
-</div>
-</div>
-<div class="section" id="graphing-quadratic-polynomials">
-<h2>Graphing Quadratic Polynomials<a class="headerlink" href="#graphing-quadratic-polynomials" title="Permalink to this headline">¶</a></h2>
-<p>The general form of a quadratic polynomial (i.e., a polynomial of degree two) is</p>
+</details></div>
+<div class="section" id="exercise-10">
+<h2>Exercise 10<a class="headerlink" href="#exercise-10" title="Permalink to this headline">¶</a></h2>
+<p>Sketch the graph of</p>
 <div class="math notranslate nohighlight">
-\[y = ax^2 + bx + c\]</div>
-<p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are real numbers and <span class="math notranslate nohighlight">\(a\neq 0\)</span>.  The graph of a quadratic polynomial has the shape of a parabola.  If <span class="math notranslate nohighlight">\(a&gt;0\)</span>, then the parabola opens upward (i.e., looks like the letter ``U’’) and if <span class="math notranslate nohighlight">\(a&lt;0\)</span>, then the parabola opens downward.</p>
-<div class="section" id="example-4">
-<h3>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h3>
-<p>Compare the graphs of <span class="math notranslate nohighlight">\(y = x^2\)</span> and <span class="math notranslate nohighlight">\(y=-x^2\)</span>.</p>
+\[f(x) = 12x^2 - x - 6\]</div>
+<p>by finding the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>-intercepts (see Graphing, <a class="reference internal" href="precalc_graphing.html#precalc-graphing-example6"><span class="std std-ref">Example 6</span></a>).</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_12_0.svg" src="../_images/precalc_graphing_12_0.svg" /></div>
+<img alt="../_images/precalc_TIY_4_0.svg" src="../_images/precalc_TIY_4_0.svg" /></div>
 </div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_13_0.svg" src="../_images/precalc_graphing_13_0.svg" /></div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: Parabola that opens upward and goes through the points <span class="math notranslate nohighlight">\((0,-6)\)</span>, <span class="math notranslate nohighlight">\((3/4,0)\)</span>, and <span class="math notranslate nohighlight">\((-2/3,0)\)</span>.</p>
 </div>
-<p>Notice how the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> is a parabola that goes through the point <span class="math notranslate nohighlight">\((0,0)\)</span> and opens upward while the graph of <span class="math notranslate nohighlight">\(y=-x^2\)</span> is a parabola that also goes through the point <span class="math notranslate nohighlight">\((0,0)\)</span> but opens downward.</p>
+</details></div>
+<div class="section" id="exercise-11">
+<h2>Exercise 11<a class="headerlink" href="#exercise-11" title="Permalink to this headline">¶</a></h2>
+<p>Determine the domain of each of the following functions.  Write your answer using interval notation.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(g(x) = \dfrac{x}{12x^2 - x - 6}\)</span> <br><br></p></li>
+<li><p><span class="math notranslate nohighlight">\(h(x) = \dfrac{x}{\sqrt{12x^2 - x - 6}}\)</span></p></li>
+</ol>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: 1.) <span class="math notranslate nohighlight">\((-\infty,-2/3) \cup (-2/3,3/4) \cup (3/4,\infty)\)</span>,<br />
+2.) <span class="math notranslate nohighlight">\((-\infty,-2/3) \cup (3/4,\infty)\)</span></p>
 </div>
-<div class="section" id="example-5">
-<h3>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h3>
-<p>Compare the graphs of <span class="math notranslate nohighlight">\(y=x^2-4\)</span> and <span class="math notranslate nohighlight">\(y=4-x^2\)</span></p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_15_0.svg" src="../_images/precalc_graphing_15_0.svg" /></div>
-</div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_16_0.svg" src="../_images/precalc_graphing_16_0.svg" /></div>
-</div>
-<p>Notice how the graph of <span class="math notranslate nohighlight">\(y=x^2-4\)</span> looks like the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> with each point shifted down <span class="math notranslate nohighlight">\(4\)</span> units.  Also, the graph of <span class="math notranslate nohighlight">\(y=4-x^2\)</span> looks like the graph of <span class="math notranslate nohighlight">\(y=-x^2\)</span> with each point shifted up <span class="math notranslate nohighlight">\(4\)</span> units.</p>
-</div>
-<div class="section" id="example-6">
-<span id="precalc-graphing-example6"></span><h3>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h3>
-<p>Sketch the graph of <span class="math notranslate nohighlight">\(f(x) = x^2 - 4x -12\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Determine the <span class="math notranslate nohighlight">\(y\)</span>-intercept by evaluating <span class="math notranslate nohighlight">\(f(0)\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-  f(0)
-  &amp;= 0^2 - 4(0) - 12 \\
-  &amp;= -12
-\end{align*}\]</div>
-<p>Therefore the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span> goes through the point <span class="math notranslate nohighlight">\((0,-12)\)</span>.</p>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Determine the <span class="math notranslate nohighlight">\(x\)</span>-intercepts by setting <span class="math notranslate nohighlight">\(f(x)=0\)</span> and solving for <span class="math notranslate nohighlight">\(x\)</span>.</p>
-<p>Recall from <a class="reference internal" href="precalc_factoring.html#example8"><span class="std std-ref">Factoring, Example 8</span></a>  and <a class="reference internal" href="precalc_solvingequations.html#example1"><span class="std std-ref">Solving Equations, Example 1</span></a> that</p>
-<div class="math notranslate nohighlight">
-\[x^2 - 4x - 12 = (x+2)(x-6)\]</div>
-<p>Now set each factor equal to zero and solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-x + 2 = 0 ~~~~&amp;\Rightarrow~~~~ x = -2 \\
-x - 6 = 0 ~~~~&amp;\Rightarrow~~~~ x = 6 
-\end{align*}\]</div>
-<p>Therefore the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span> goes through the points <span class="math notranslate nohighlight">\((-2,0)\)</span> and <span class="math notranslate nohighlight">\((6,0)\)</span>.</p>
-</div>
-<p>Draw the graph of a parabola that opens upward (since the coefficient of <span class="math notranslate nohighlight">\(x^2\)</span> in <span class="math notranslate nohighlight">\(f(x)\)</span> is positive) and goes through the points found in <strong>Steps 1</strong> and <strong>2</strong>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_18_0.svg" src="../_images/precalc_graphing_18_0.svg" /></div>
-</div>
-</div>
-</div>
-<div class="section" id="graphing-power-and-root-functions">
-<h2>Graphing Power and Root Functions<a class="headerlink" href="#graphing-power-and-root-functions" title="Permalink to this headline">¶</a></h2>
-<p>Any function of the form</p>
-<div class="math notranslate nohighlight">
-\[y = x^r\]</div>
-<p>where <span class="math notranslate nohighlight">\(r\)</span> is any real number is called a power function.  Thus <span class="math notranslate nohighlight">\(x^2\)</span>, <span class="math notranslate nohighlight">\(x^3\)</span>, <span class="math notranslate nohighlight">\(x^4\)</span>, etc. are examples of power functions.  Root functions, like the square root (i.e., <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> or <span class="math notranslate nohighlight">\(x^{1/2}\)</span>) and cube root (i.e., <span class="math notranslate nohighlight">\(\sqrt[3]{x}\)</span> or <span class="math notranslate nohighlight">\(x^{1/3}\)</span>) are also examples of power functions</p>
-<div class="section" id="example-7">
-<h3>Example 7<a class="headerlink" href="#example-7" title="Permalink to this headline">¶</a></h3>
-<p>Sketch the graph of <span class="math notranslate nohighlight">\(y = x^3\)</span>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_20_0.svg" src="../_images/precalc_graphing_20_0.svg" /></div>
-</div>
-<p>Notice how the graph of <span class="math notranslate nohighlight">\(y=x^3\)</span> always increases from left-to-right and looks like a horizontal line as it goes through the origin.</p>
-</div>
-<div class="section" id="example-8">
-<h3>Example 8<a class="headerlink" href="#example-8" title="Permalink to this headline">¶</a></h3>
-<p>Sketch the graph of the square root function, <span class="math notranslate nohighlight">\(y = \sqrt{x}\)</span>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/precalc_graphing_22_0.svg" src="../_images/precalc_graphing_22_0.svg" /></div>
-</div>
-<p>Notice how the graph of <span class="math notranslate nohighlight">\(y=\sqrt{x}\)</span> looks like the upper half of a parabola that opens to the right.</p>
-</div>
-</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -726,8 +715,8 @@ x - 6 = 0 ~~~~&amp;\Rightarrow~~~~ x = 6
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="precalc_solvingequations.html" title="previous page">Solving Equations</a>
-    <a class='right-next' id="next-link" href="precalc_inequalities.html" title="next page">Solving Inequalities</a>
+    <a class='left-prev' id="prev-link" href="precalc_domain.html" title="previous page">The Domain of a Function</a>
+    <a class='right-next' id="next-link" href="../ch_Functions/functions_.html" title="next page">Functions</a>
 
         </div>
         
