@@ -43,11 +43,12 @@ A **rational function** is a function that can be written as the ratio of two po
 By definition, every polynomial is also considered to be a rational function.
 
 
-## Domain Considerations
+```{admonition} Domain Considerations
+:class: info
 
 - The domain of a polynomial function is all real numbers.
 - The domain of a rational function, $f(x)/g(x)$, is all real numbers excluding values of $x$ such that $g(x) = 0$.
-
+```
 
 
 ## Example 1
@@ -101,7 +102,7 @@ The degree of $f$ is $5$ since $f$ is a polynomial and the largest power of $x$ 
 ```{admonition} Observation
 :class: warning
 
-In the previous example, the degree of the polynomial could have been determined by adding the degrees of the individual factors.  More specifically, $f$ is the product of a polynomial of degree 2 (i.e., $x^2 + 7$) and a polynomial of degree 3 (i.e., $x^3-1$).  Therefore, the degree of $f$ is the sum of $2$ and $3$, which is $5$.\\
+In the previous example, the degree of the polynomial could have been determined by adding the degrees of the individual factors.  More specifically, $f$ is the product of a polynomial of degree 2 (i.e., $x^2 + 7$) and a polynomial of degree 3 (i.e., $x^3-1$).  Therefore, the degree of $f$ is the sum of $2$ and $3$, which is $5$.
 
 In general, a product of polynomials is also a polynomial and its degree is the sum of the degrees of the polynomial factors.  
 ```
