@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Functions &#8212; Math 110 Companion Site</title>
+    <title>Demand and Supply &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,11 +49,13 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Functions, Domain, and Range" href="functions_functionsdomainrange.html" />
-    <link rel="prev" title="The Domain of a Function" href="../ch_Precalc/precalc_domain.html" />
+    <link rel="next" title="Limits and Continuity" href="../ch_Limits/limits_.html" />
+    <link rel="prev" title="Power, Polynomial &amp; Rational Functions" href="functions_powerpolyrational.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -139,7 +141,7 @@
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="functions_.html">
    Functions
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -147,7 +149,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="functions_functionsdomainrange.html">
      Functions, Domain, and Range
@@ -168,8 +170,8 @@
      Power, Polynomial &amp; Rational Functions
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="functions_demandsupply.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Demand and Supply
     </a>
    </li>
@@ -383,9 +385,12 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Functions/functions_demandsupply.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Functions/functions_.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Functions/functions_demandsupply.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -405,11 +410,54 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Functions/functions_demandsupply.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#market-equilibrium">
+   Market Equilibrium
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -418,17 +466,135 @@
         
               <div>
                 
-  <div class="section" id="functions">
-<h1>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h1>
-<p>In this chapter, we cover the basic ideas and concepts of mathematical functions, the objects to which caclulus applies. We also introduce some special functions (cost, revenue, and profit; demand and supply) on which our applications will focus later.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="functions_functionsdomainrange.html">Functions, Domain, and Range</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functions_composition.html">Composition of Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functions_demandsupply.html">Demand and Supply</a></li>
+  <div class="section" id="demand-and-supply">
+<h1>Demand and Supply<a class="headerlink" href="#demand-and-supply" title="Permalink to this headline">¶</a></h1>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p><strong>Demand</strong> refers to the quantity of goods or services that consumers are willing to purchase at a given price.</p>
+</div>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">The Law of Demand assumes</p>
+<ul class="simple">
+<li><p class="card-text">all factors affecting purchasing except price are held constant,</p></li>
+<li><p class="card-text">if price goes up, then consumers buy less, and</p></li>
+<li><p class="card-text">if price goes down, then consumers (are incentivized) to buy more.</p></li>
 </ul>
+<p class="card-text">The demand curve, <span class="math notranslate nohighlight">\(p = d(x)\)</span>, shows the quantity demanded, <span class="math notranslate nohighlight">\(x\)</span>, at each price, <span class="math notranslate nohighlight">\(p\)</span>, and the Law of Demand dictates it is a decreasing function.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_functions_demand.png"><img alt="Demand function" class="align-center" src="../_images/pic_functions_demand.png" style="width: 300px;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p><strong>Supply</strong> refers to the amount of goods that producers want to sell at a given price.</p>
+</div>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text">The Law of Supply assumes</p>
+<ul class="simple">
+<li><p class="card-text">all factors affecting supply except price are held constant,</p></li>
+<li><p class="card-text">if price goes up, then suppliers (are incentivized) to produce more, and</p></li>
+<li><p class="card-text">if price goes down, then suppliers produce less.</p></li>
+</ul>
+<p class="card-text">The supply curve, <span class="math notranslate nohighlight">\(p = s(x)\)</span>, shows the quantity supplied, <span class="math notranslate nohighlight">\(x\)</span>, at each price, <span class="math notranslate nohighlight">\(p\)</span>, and the Law of Supply dictates it is an increasing function.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_functions_supply.png"><img alt="Supply function" class="align-center" src="../_images/pic_functions_supply.png" style="width: 300px;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Domain Considerations</p>
+<p>For any demand or supply function, the domain should be restricted so that both the quantity <span class="math notranslate nohighlight">\(x\)</span> and price <span class="math notranslate nohighlight">\(p\)</span> are nonnegative (i.e., <span class="math notranslate nohighlight">\(x\geq 0\)</span> and <span class="math notranslate nohighlight">\(p\geq 0\)</span>).</p>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>Determine the appropriate domain for the demand function, <span class="math notranslate nohighlight">\(d(x) = 600 - 15x\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Find the values of <span class="math notranslate nohighlight">\(x\geq 0\)</span> such that <span class="math notranslate nohighlight">\(p = d(x) \geq 0\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+600 - 15x \geq 0 
+~~&amp;\rightarrow~~ 600 \geq 15x \\ 
+~~&amp;\rightarrow~~ 40 \geq x
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="market-equilibrium">
+<h2>Market Equilibrium<a class="headerlink" href="#market-equilibrium" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>A <strong>market equilibrium</strong> exists when the quantity produced is equal to the quantity demanded.</p>
+</div>
+<p>The market equilibrium quantity and price can be determined by finding the point of intersection of the demand and supply curves.</p>
+<div class="figure align-default" id="illustration-equilibrium">
+<a class="reference internal image-reference" href="../_images/pic_functions_equilibrium.png"><img alt="The equilibrium is given where demand and supply curves intersect" src="../_images/pic_functions_equilibrium.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">The market equilibrium is given where demand and supply curves intersect</span><a class="headerlink" href="#illustration-equilibrium" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>The demand and supply functions for Penn State Berkey Creamery Gift Boxes are:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+p = d(x) &amp;= -x^2 - x + 72\\
+p = s(x) &amp;= 2x + 32
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of thousands of boxes and <span class="math notranslate nohighlight">\(p\)</span> is in dollars.  Determine the market equilibrium values.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Determine the equilibrium quantity.</p>
+<p>Since both demand and supply are written as functions of <span class="math notranslate nohighlight">\(x\)</span>, we’ll first solve for the equilibrium quantity by setting the two functions equal to each other.</p>
+<div class="math notranslate nohighlight">
+\[-x^2 - x + 72 = 2x + 32\]</div>
+<p>Adding <span class="math notranslate nohighlight">\(x^2+x-72\)</span> to both sides and factoring yields</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+0 
+&amp;= x^2 + 3x -40 \\
+&amp;= (x+8)(x-5)
+\end{align*}\]</div>
+<p>which is equal to zero when <span class="math notranslate nohighlight">\(x=-8\)</span> or when <span class="math notranslate nohighlight">\(x=5\)</span>.  But since <span class="math notranslate nohighlight">\(x\)</span> must be nonnegative, the equilibrium quantity corresponds to <span class="math notranslate nohighlight">\(x=5\)</span>, which is 5000 boxes.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Determine the equilibrium price.</p>
+<p>Evaluate demand and supply functions at <span class="math notranslate nohighlight">\(x=5\)</span> to compute the equilibrium price.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+d(5) 
+&amp;= -5^2 - 5 + 72 \\
+&amp;= -25 - 5 + 72 \\
+&amp;= 42
+\end{align*}\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+s(5) 
+&amp;= 2(5) + 32 \\
+&amp;= 10 + 32 \\
+&amp;= 42
+\end{align*}\]</div>
+<p>Therefore, the equilibrium price is 42 dollars.</p>
+</div>
 </div>
 </div>
 
@@ -457,8 +623,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../ch_Precalc/precalc_domain.html" title="previous page">The Domain of a Function</a>
-    <a class='right-next' id="next-link" href="functions_functionsdomainrange.html" title="next page">Functions, Domain, and Range</a>
+    <a class='left-prev' id="prev-link" href="functions_powerpolyrational.html" title="previous page">Power, Polynomial &amp; Rational Functions</a>
+    <a class='right-next' id="next-link" href="../ch_Limits/limits_.html" title="next page">Limits and Continuity</a>
 
         </div>
         
