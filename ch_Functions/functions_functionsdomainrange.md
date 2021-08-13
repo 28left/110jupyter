@@ -131,9 +131,11 @@ Another way to determine the domain and range of $f$ is to consider the graph of
 
 \end{tikzpicture}
 \end{document}
-
-\noindent The domain of $f$ consists of all the different $x$-coordinates of points on the graph of $f$, which is $(-\infty,\infty)$.  The range of $f$ consists of all the different $y$-coordinates of points on the graph of $f$, which is $[-1,\infty)$. 
 ```
+
+- The domain of $f$ consists of all the different $x$-coordinates of points on the graph of $f$, which is $(-\infty,\infty)$.  
+- The range of $f$ consists of all the different $y$-coordinates of points on the graph of $f$, which is $[-1,\infty)$. 
+
 
 ### Example 2
 
