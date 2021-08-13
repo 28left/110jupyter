@@ -1,0 +1,652 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Related Rates &#8212; Math 110 Companion Site</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Curve Sketching" href="../ch_Curvesketching/curvesketching_.html" />
+    <link rel="prev" title="Implicit Differentiation" href="implicit_differentiation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/PSU_SCI_RGB_2C.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Math 110 Companion Site</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to Math 110
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Packets e-book
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Precalc/precalc_.html">
+   Precalculus Review
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_simplification.html">
+     Algebraic Simplification Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_factoring.html">
+     Factoring Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_solvingequations.html">
+     Solving Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_graphing.html">
+     Graphing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_inequalities.html">
+     Solving Inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_domain.html">
+     The Domain of a Function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Limits/limits_.html">
+   Limits and Continuity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_def.html">
+     Limit of a Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_proplim.html">
+     Properties of Finite Limits
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_graphs.html">
+     Examples: Computing Limits from Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_algebra.html">
+     Examples: Computing Limits Algebraically
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_indeterminate.html">
+     Indeterminate Forms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_infinity.html">
+     Limits at Infinity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_continuity.html">
+     Continuity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Derivatives/derivatives_.html">
+   Derivatives
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_def.html">
+     The Concept of the Derivative
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">
+     Basic Rules of Differentiation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="implicit_.html">
+   Implicit Differentiation
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="implicit_differentiation.html">
+     Implicit Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Related Rates
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">
+   Curve Sketching
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_increasedecrease.html">
+     Intervals of Increase &amp; Decrease
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Try it yourself notebooks
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
+   Limits and Continuity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nb_Limits/limits_nb_TIY2.html">
+     Computational Examples: Limits
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Implicit/implicit_relatedrates.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/ch_Implicit/implicit_relatedrates.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Implicit/implicit_relatedrates.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-6">
+   Example 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-7">
+   Example 7
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-8">
+   Example 8
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-9">
+   Example 9
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="related-rates">
+<h1>Related Rates<a class="headerlink" href="#related-rates" title="Permalink to this headline">¶</a></h1>
+<div class="info admonition">
+<p class="admonition-title">How to Solve a Related Rates Problem</p>
+<p>Here are a few guidelines to follow when solving a related rates problem.</p>
+<ol class="simple">
+<li><p><strong>Assign a variable</strong> to each quantity that changes and state the known and unknown rates of change with respect to time <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+<li><p><strong>Find an equation</strong> relating the variables. Don’t forget about business models.</p></li>
+<li><p><strong>Differentiate both sides</strong> of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>. Treat all variables as functions of <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+<li><p><strong>Replace the variables</strong> and their derivatives by the numerical data given. Watch out for words like “increasing” or “decreasing”, “rising” or “falling”, “away” or “towards”, etc. to determine if a derivative is positive or negative.</p></li>
+<li><p><strong>Solve the equation</strong> for the unknown rate of change.</p></li>
+</ol>
+</div>
+<div class="section" id="example-6">
+<h2>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h2>
+<p>Given <span class="math notranslate nohighlight">\(p^2x + 6x = 5\)</span> and <span class="math notranslate nohighlight">\(\dfrac{dp}{dt} = 3\)</span>. Compute <span class="math notranslate nohighlight">\(\dfrac{dx}{dt}\)</span> when <span class="math notranslate nohighlight">\(p = 2\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\text{Variables (as functions of $t$): } &amp; x(t) \text{ and } p(t) \\ 
+\text{Known rate of change: } &amp; \dfrac{dp}{dt} = 3 \\ 
+\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when} p=2
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
+<div class="math notranslate nohighlight">
+\[p^2x + 6x = 5\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dt}(p^2x + 6x)
+&amp;= 2pp'x + p^2x' + 6x' &amp;&amp; \hbox{Implicit differentiation &amp; Product Rule}\\
+&amp;= 0 &amp;&amp; \hbox{since $\dfrac{d}{dt} 5 = 0$}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(x\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(p=2\)</span> into the given equation <span class="math notranslate nohighlight">\(p^2x + 6x = 5\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[(2)^2x + 6x = 5 ~~~~~\Rightarrow~~~~~ 10x = 5 ~~~~~\Rightarrow~~~~~ x = 1/2\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(p=2\)</span>, <span class="math notranslate nohighlight">\(x=1/2\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = 3\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[2(2)(3)\frac{1}{2} + (2)^2x' + 6x' = 0  ~~~~~\Rightarrow~~~~~ 6 + 10x' = 0 ~~~~~\Rightarrow~~~~~ x' = -3/5\]</div>
+<p>Therefore <span class="math notranslate nohighlight">\(\dfrac{dx}{dt} = -3/5\)</span> when <span class="math notranslate nohighlight">\(p=2\)</span> and <span class="math notranslate nohighlight">\(\dfrac{dp}{dt} = 3\)</span>.</p>
+</div>
+</div>
+<div class="section" id="example-7">
+<h2>Example 7<a class="headerlink" href="#example-7" title="Permalink to this headline">¶</a></h2>
+<p>A company is decreasing the production of energy drinks at a rate of 100 cases per day. All cases produced can be sold. The daily demand function is given by</p>
+<div class="math notranslate nohighlight">
+\[p(x) = 50 - \frac{x}{200}\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of cases produced and sold, and <span class="math notranslate nohighlight">\(p(x)\)</span> is the unit price in dollars. Find the rate of change of the revenue with respect to the time in days when daily production is 300 cases.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+
+\text{Variables (as functions of $t$): } &amp; x(t) = \text{ the quantity produced and sold per day} \\
+&amp; R(t) = \text{ the daily revenue} \\
+\text{Known rate of change: } &amp; \dfrac{dx}{dt} = -100 \text{ since production is decreasing} \\ \\
+\text{Unknown rate of change: } &amp; \dfrac{dR}{dt} \text{ when } x=300
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
+&amp;= x \left(50 - \frac{x}{200}\right) &amp;&amp; \text{since $p(x) = 50 - \frac{x}{200}$}\\
+&amp;= 50x - \frac{1}{200}x^2 &amp;&amp; \hbox{Simplify}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Find an equation which relates the variables.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
+&amp;= x \left(50 - \frac{x}{200}\right) &amp;&amp; \text{since $p(x) = 50 - \frac{x}{200}$}\\
+&amp;= 50x - \frac{1}{200}x^2 &amp;&amp; \hbox{Simplify}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{dR}{dt}
+&amp;= \frac{d}{dt}\left(50x - \frac{1}{200}x^2 \right)\\ 
+&amp;= 50 \,\frac{dx}{dt} - \frac{1}{200}\,2x\,\frac{dx}{dt} &amp;&amp; \text{Implicit differentiation &amp; Power Rule}\\
+&amp;= 50 \, \frac{dx}{dt} - \frac{x}{100}\,\frac{dx}{dt} &amp;&amp; \text{Simplify}
+\end{align*}\]</div>
+<p>Therefore revenue is decreasing at $4700 per day when the level of production is 300 cases per day and decreasing at 100 cases per day.</p>
+</div>
+</div>
+<div class="section" id="example-8">
+<h2>Example 8<a class="headerlink" href="#example-8" title="Permalink to this headline">¶</a></h2>
+<p>The weekly demand function is given by</p>
+<div class="math notranslate nohighlight">
+\[2p + x + 4xp = 22\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of thousands of units demanded weekly and <span class="math notranslate nohighlight">\(p\)</span> is in dollars. If the price is increasing at a rate of 25 cents per week when the weekly demand is 4000 units, at what rate is the demand decreasing?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+
+\text{Variables (as functions of $t$): } &amp; x(t) = \text{ demand in units of a thousand} \\
+&amp;  p(t) = \text{ unit price in dollars}\\ 
+\text{Known rate of change: } &amp; \dfrac{dp}{dt} = \dfrac{25}{100} \text{ since price (in dollars) is increasing } \\
+\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when } x = 4
+
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
+<div class="math notranslate nohighlight">
+\[2p + x + 4xp = 22\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dt}(2p + x + 4xp)
+&amp;= 2\frac{dp}{dt} + \frac{dx}{dt} + 4\frac{dx}{dt}p + 4x\frac{dp}{dt} &amp;&amp; \hbox{Implicit differentiation &amp; Product Rule} \\
+&amp;= 0 &amp;&amp; \hbox{since $\dfrac{d}{dt}22 = 0$}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(p\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(x=4\)</span> into the given demand equation <span class="math notranslate nohighlight">\(2p+x+4xp = 22\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[2p + 4 + 4(4)p = 22 ~~~~~\Rightarrow~~~~~ 18p + 4 = 22 ~~~~~\Rightarrow~~~~~ p = 1\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(x=4\)</span>, <span class="math notranslate nohighlight">\(p=1\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = 25/100\)</span>)</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+0 &amp;= 2\left(\frac{25}{100}\right) + \frac{dx}{dt} + 4\frac{dx}{dt}(1) + 4(4)\left(\frac{25}{100}\right) \\
+&amp;= \frac{1}{2} + 5\frac{dx}{dt}  + 4 &amp;&amp; \hbox{Simplify} \\
+&amp;= \frac{9}{2} + 5\frac{dx}{dt} 
+\end{align*}\]</div>
+<p>Therefore</p>
+<div class="math notranslate nohighlight">
+\[\frac{9}{2} + 5\frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ 5\frac{dx}{dt} = -\frac{9}{2} ~~~~~\Rightarrow~~~~~ \frac{dx}{dt} = -\frac{9}{10}\]</div>
+<p>and since <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of units, this means that demand is decreasing by <span class="math notranslate nohighlight">\(900\)</span> units per week (i.e., <span class="math notranslate nohighlight">\(9/10\)</span> of one thousand) when the weekly demand is 4000 units and the price is increasing at 25 cents per week.</p>
+</div>
+</div>
+<div class="section" id="example-9">
+<h2>Example 9<a class="headerlink" href="#example-9" title="Permalink to this headline">¶</a></h2>
+<p>The wholesale price <span class="math notranslate nohighlight">\(p\)</span> of an e-tablet writing stylus in dollars is related to the supply <span class="math notranslate nohighlight">\(x\)</span> in thousands by:</p>
+<div class="math notranslate nohighlight">
+\[125p^2 - x^2 = 100\]</div>
+<p>If 20,000 styluses are available at the beginning of a week, and the price is falling at 4 cents per week, at what rate is the supply falling?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+
+\text{Variables (as functions of $t$): } &amp; x(t) = \text{ supply in units of a thousand} \\
+&amp;  p(t) = \text{ unit price in dollars}\\ 
+\text{Known rate of change: } &amp; \dfrac{dp}{dt} = -\dfrac{4}{100} \text{ since price (in dollars) is falling} \\
+\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when } x = 20
+
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
+<div class="math notranslate nohighlight">
+\[125p^2 - x^2 = 100\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+250p\frac{dp}{dt} - 2x\frac{dx}{dt} = 0 &amp;&amp; \text{Power Rule}
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(p\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(x=20\)</span> into the given supply equation <span class="math notranslate nohighlight">\(125p^2 - x^2 = 100\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[125p^2 - 20^2 = 100 ~~~~~\Rightarrow~~~~~ 125p^2 = 500 ~~~~~\Rightarrow~~~~~ p^2 = 4~~~~~\Rightarrow~~~~~ p = 2\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(x=20\)</span>, <span class="math notranslate nohighlight">\(p=2\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = -4/100\)</span>)</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+0 &amp;= 250(2)\left(-\frac{4}{100}\right) - 2(20)\frac{dx}{dt} \\
+&amp;= -500\left(\frac{4}{100}\right) - 40 \frac{dx}{dt} &amp;&amp; \hbox{Simplify} \\
+&amp;= -20 - 40 \frac{dx}{dt} 
+\end{align*}\]</div>
+<p>Therefore</p>
+<div class="math notranslate nohighlight">
+\[-20 - 40 \frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ -40 \frac{dx}{dt} = 20 ~~~~~\Rightarrow~~~~~ \frac{dx}{dt} = -\frac{1}{2}\]</div>
+<p>and since <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of units, this means that supply is falling by <span class="math notranslate nohighlight">\(500\)</span> units per week (i.e., <span class="math notranslate nohighlight">\(1/2\)</span> of one thousand) when the weekly demand is 20,000 styluses and the price is falling at 4 cents per week.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "28left/110jupyter",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./ch_Implicit"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="implicit_differentiation.html" title="previous page">Implicit Differentiation</a>
+    <a class='right-next' id="next-link" href="../ch_Curvesketching/curvesketching_.html" title="next page">Curve Sketching</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Department of Mathematics, Penn State University Park<br/>
+        
+            &copy; Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

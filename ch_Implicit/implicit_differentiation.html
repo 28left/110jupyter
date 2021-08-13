@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implicit Differentiation &#8212; Math 110 Companion Site</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Related Rates" href="implicit_relatedrates.html" />
+    <link rel="prev" title="Implicit Differentiation" href="implicit_.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/PSU_SCI_RGB_2C.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Math 110 Companion Site</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to Math 110
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Packets e-book
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Precalc/precalc_.html">
+   Precalculus Review
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_simplification.html">
+     Algebraic Simplification Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_factoring.html">
+     Factoring Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_solvingequations.html">
+     Solving Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_graphing.html">
+     Graphing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_inequalities.html">
+     Solving Inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_domain.html">
+     The Domain of a Function
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Limits/limits_.html">
+   Limits and Continuity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_def.html">
+     Limit of a Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_proplim.html">
+     Properties of Finite Limits
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_graphs.html">
+     Examples: Computing Limits from Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_algebra.html">
+     Examples: Computing Limits Algebraically
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_indeterminate.html">
+     Indeterminate Forms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_infinity.html">
+     Limits at Infinity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_continuity.html">
+     Continuity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Derivatives/derivatives_.html">
+   Derivatives
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_def.html">
+     The Concept of the Derivative
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">
+     Basic Rules of Differentiation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="implicit_.html">
+   Implicit Differentiation
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Implicit Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="implicit_relatedrates.html">
+     Related Rates
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">
+   Curve Sketching
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_increasedecrease.html">
+     Intervals of Increase &amp; Decrease
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Try it yourself notebooks
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
+   Limits and Continuity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nb_Limits/limits_nb_TIY2.html">
+     Computational Examples: Limits
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Implicit/implicit_differentiation.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/ch_Implicit/implicit_differentiation.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Implicit/implicit_differentiation.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-rules">
+   The Rules
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1">
+     Example 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2">
+     Example 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-3">
+     Example 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-4">
+     Example 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-5">
+     Example 5
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="implicit-differentiation">
+<h1>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-rules">
+<h2>The Rules<a class="headerlink" href="#the-rules" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Explicit versus Implicit Functions</p>
+<p>Suppose we have an equation relating two variables: <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.  If <span class="math notranslate nohighlight">\(y\)</span> is isolated on one side of the equation, we say that <span class="math notranslate nohighlight">\(y\)</span> is <strong>explicitly defined</strong> as a function of <span class="math notranslate nohighlight">\(x\)</span>, or simply, <span class="math notranslate nohighlight">\(y\)</span> is a function of <span class="math notranslate nohighlight">\(x\)</span>. If <span class="math notranslate nohighlight">\(y\)</span> is not isolated on one side of the equation, we say that <span class="math notranslate nohighlight">\(y\)</span> is <strong>defined implicitly</strong> in terms of <span class="math notranslate nohighlight">\(x\)</span>, or <span class="math notranslate nohighlight">\(y\)</span> is an implicit function of <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p><strong>Explicit Functions</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(y = x^2 - 3\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y = \sqrt{x + 7}\)</span></p></li>
+</ul>
+<p><strong>Implicit Functions</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x^2 + xy - y = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x^3 + y^3 + yx - 4 = 0\)</span></p></li>
+</ul>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Computing Derivatives Implicitly</p>
+<p>When computing the derivative of a function involving <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> (where we treat <span class="math notranslate nohighlight">\(y\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span>), it may be helpful to replace <span class="math notranslate nohighlight">\(y\)</span> with <span class="math notranslate nohighlight">\(f(x)\)</span> and recall the general power rule:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dx} [f(x)]^n = n[f(x)]^{n-1} f'(x)\]</div>
+</div>
+<div class="section" id="example-1">
+<span id="example1"></span><h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(x^2 y^3\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> by treating <span class="math notranslate nohighlight">\(y\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Replace <span class="math notranslate nohighlight">\(y\)</span> with <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Since we are treating <span class="math notranslate nohighlight">\(y\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span>, we can rewrite <span class="math notranslate nohighlight">\(x^2 y^3\)</span> as</p>
+<div class="math notranslate nohighlight">
+\[x^2 [f(x)]^3.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Differentiate with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p>Since <span class="math notranslate nohighlight">\(x^2[f(x)]^3\)</span> is a product of two functions of <span class="math notranslate nohighlight">\(x\)</span>, namely <span class="math notranslate nohighlight">\(x^2\)</span> and <span class="math notranslate nohighlight">\([f(x)]^3\)</span>, we begin by using the product rule.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} x^2 [f(x)]^3  
+&amp;= \left[\frac{d}{dx}x^2\right][f(x)]^3 + x^2 \left[\frac{d}{dx}[f(x)]^3\right] &amp;&amp; \hbox{Product Rule}\\ \\
+%&amp;= 2x[f(x)]^3 + x^2 \left[\frac{d}{dx}[f(x)]^3\right] &amp;&amp; \hbox{Power \&amp; General Power rules}\\
+&amp;= 2x[f(x)]^3 + x^2 3[f(x)]^2f'(x) &amp;&amp; \hbox{Power &amp; General Power Rules}\\
+%&amp;= 2x[f(x)]^3 + x^2 3[f(x)]^2f'(x) &amp;&amp; \hbox{General Power Rule}\\
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: And finally, replace <span class="math notranslate nohighlight">\(f(x)\)</span> with <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(f'(x)\)</span> with <span class="math notranslate nohighlight">\(y'\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dx} x^2y^3 = 2xy^3 + 3x^2y^2y'\]</div>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Derivative of a Constant Multiple of a Function</p>
+<p>Suppose we are given an equation relating the variables <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.  We can compute the derivative of <span class="math notranslate nohighlight">\(y\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> using the following technique.</p>
+<ol class="simple">
+<li><p>Differentiate both sides of the equation with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p>If given, plug in specific values of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> into the resulting equation.</p></li>
+<li><p>Solve for <span class="math notranslate nohighlight">\(y'\)</span> in terms of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<ol class="simple">
+<li><p>Put all terms with a factor of <span class="math notranslate nohighlight">\(y'\)</span> on the left side of the equation and everything else on the side of the equation.</p></li>
+<li><p>Factor out <span class="math notranslate nohighlight">\(y'\)</span> from each term on the left side of the equation.</p></li>
+<li><p>Divide both sides by the appropriate factor to solve for <span class="math notranslate nohighlight">\(y'\)</span>.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
+<p>Find <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span> where <span class="math notranslate nohighlight">\(y\)</span> is defined implicitly by
+<span class="math notranslate nohighlight">\({x^2}y - x^4 + y^3 = 1\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Replace <span class="math notranslate nohighlight">\(y\)</span> with <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[x^2f(x) - x^4 + [f(x)]^3 = 1.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Differentiate both sides with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[[2xf(x) + x^2f'(x)] - 4x^3 + 3[f(x)]^2f'(x) = 0 \]</div>
+<p>Notice the use of the product rule to compute the derivative of <span class="math notranslate nohighlight">\(x^2f(x)\)</span> and the general power rule to compute the derivative of <span class="math notranslate nohighlight">\([f(x)]^3\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Rearrange terms so that only terms involving <span class="math notranslate nohighlight">\(f'(x)\)</span> are on the left side.</p>
+<div class="math notranslate nohighlight">
+\[x^2f'(x) + 3[f(x)]^2f'(x) = 4x^3 - 2xf(x).\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Factor out $f’(x) on the left side of the equation.</p>
+<div class="math notranslate nohighlight">
+\[(x^2 + 3[f(x)]^2)f'(x) = 4x^3 - 2xf(x).\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Solve for <span class="math notranslate nohighlight">\(f'(x)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[f'(x) = \frac{4x^3 - 2xf(x)}{x^2 + 3[f(x)]^2}.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 6: And finally, replace <span class="math notranslate nohighlight">\(f(x)\)</span> with <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(f'(x)\)</span> with <span class="math notranslate nohighlight">\(y'\)</span> (or <span class="math notranslate nohighlight">\(\frac{dy}{dx}\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[\frac{dy}{dx} = \frac{4x^3 - 2xy}{x^2 + 3y^2}.\]</div>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Observation</p>
+<p>Once we get used to the idea of thinking of <span class="math notranslate nohighlight">\(y\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span>, it’s not necessary to replace <span class="math notranslate nohighlight">\(y\)</span> with <span class="math notranslate nohighlight">\(f(x)\)</span>.  Instead, we can use the general power rule written in the following form:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} y^n 
+&amp;= n y^{n-1} y'\\
+&amp;= n y^{n-1} \frac{dy}{dx}.
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h3>
+<p>Find the equation of the line tangent to the curve defined implicitly by</p>
+<div class="math notranslate nohighlight">
+\[ x^2 y^3 - y^2 + xy = 5 \]</div>
+<p>at the point  <span class="math notranslate nohighlight">\((2,1)\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1:</p>
+<p>Differentiate both sides with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\left[ 2xy^3 + x^2 3y^2\frac{dy}{dx}\right] - 2y\frac{dy}{dx} + \left[y + x\frac{dy}{dx}\right] = 0\]</div>
+<p>See <a class="reference internal" href="#example1"><span class="std std-ref">Implicit Differentiation, Example 1</span></a> above for how to differentiate <span class="math notranslate nohighlight">\(x^2y^3\)</span> implicitly.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Plug in specific values of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<p>Since we want to find the slope of the line tangent to the curve at the point <span class="math notranslate nohighlight">\((2,1)\)</span>, plug in <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(y=1\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[4 + 12\frac{dy}{dx} - 2\frac{dy}{dx} + 1 + 2\frac{dy}{dx} = 0.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Simplify and rearrange terms.</p>
+<div class="math notranslate nohighlight">
+\[12\frac{dy}{dx} = -5.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Solve for <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{dy}{dx} = -\frac{5}{12}.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Use the point-slope equation of a line: <span class="math notranslate nohighlight">\(y - b = m(x-a)\)</span>.</p>
+<p>The equation of the line tangent of the curve at the point <span class="math notranslate nohighlight">\((2,1)\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[y - 1 = -\frac{5}{12}(x-2).\]</div>
+</div>
+</div>
+<div class="section" id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h3>
+<p>Find <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span> at <span class="math notranslate nohighlight">\((2,0)\)</span> where <span class="math notranslate nohighlight">\(y\)</span> is defined implicitly by</p>
+<div class="math notranslate nohighlight">
+\[xy + x = \sqrt{2x + 7y}.\]</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Differentiate both sides with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p>Left Hand Side:
+$<span class="math notranslate nohighlight">\(\displaystyle \frac{d}{dx}(xy + x) = y + x\frac{dy}{dx} + 1\)</span>.$</p>
+<p>Right Hand Side:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\displaystyle\frac{d}{dx}\sqrt{2x + 7y} &amp;= \frac{d}{dx}(2x + 7y)^{1/2}\\
+&amp;= \frac{1}{2}(2x + 7y)^{-1/2}\frac{d}{dx}(2x + 7y)\\
+&amp;= \frac{1}{2\sqrt{2x + 7y}}\left(2 + 7\frac{dy}{dx}\right).
+\end{align*}\]</div>
+<p>Therefore,</p>
+<div class="math notranslate nohighlight">
+\[y + x\frac{dy}{dx} + 1 = \frac{1}{2\sqrt{2x + 7y}}\left(2 + 7\frac{dy}{dx}\right).\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Plug in the values <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(y=0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[2\frac{dy}{dx} + 1 = \frac{1}{4}\left(2 + 7\frac{dy}{dx}\right).\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Expand both sides of the equation so that each side is written as a sum.</p>
+<div class="math notranslate nohighlight">
+\[2\frac{dy}{dx} + 1 = \frac{1}{2} + \frac{7}{4}\frac{dy}{dx}.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Rearrange terms (i.e., subtract <span class="math notranslate nohighlight">\(1\)</span> from both sides and subtract <span class="math notranslate nohighlight">\(\dfrac{7}{4}\dfrac{dy}{dx}\)</span> from both sides).</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{4}\frac{dy}{dx} = -\frac{1}{2}.\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 5: Solve for <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span> (i.e., multiply both sides by <span class="math notranslate nohighlight">\(4\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[\frac{dy}{dx} = -2.\]</div>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Observation</p>
+<p>Alternatively, we could multiply both sides of the equation in Step 2 by <span class="math notranslate nohighlight">\(4\)</span> to get</p>
+<div class="math notranslate nohighlight">
+\[8\frac{dy}{dx} + 4 = 2 + 7\frac{dy}{dx}.\]</div>
+<p>Now rearranging terms is a little easier since we don’t have to deal with any fractions.</p>
+</div>
+</div>
+<div class="section" id="example-5">
+<h3>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h3>
+<p>The demand equation for Dr. Hager’s <em>Make Math Great Again</em> video series is given by</p>
+<div class="math notranslate nohighlight">
+\[p = -4x^2 - 2x + 30\]</div>
+<p>where <span class="math notranslate nohighlight">\(p\)</span> is the wholesale unit price in dollars and <span class="math notranslate nohighlight">\(x\)</span> is the quantity demanded in units of a thousand.  Compute the elasticity of demand when <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<div class="warning admonition">
+<p class="admonition-title">Observation</p>
+<p>Ordinarily when we compute elasticity of demand, the first thing we do is  find <span class="math notranslate nohighlight">\(x = f(p)\)</span> by solving for <span class="math notranslate nohighlight">\(x\)</span> in terms of <span class="math notranslate nohighlight">\(p\)</span> in the given demand equation.  However in this case, solving for <span class="math notranslate nohighlight">\(x\)</span> is easier said than done.  So instead, we will use implicit differentiation to compute <span class="math notranslate nohighlight">\(f'(p)\)</span> when the time comes.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Compute the unit price <span class="math notranslate nohighlight">\(p\)</span> when <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+p 
+&amp;= -4(2^2) - 2(2) + 30 &amp; \hbox{since $p = -4x^2 - 2x + 30$} \\
+&amp;= -16 - 4 + 30 \\
+&amp;= 10
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Compute <span class="math notranslate nohighlight">\(f(10)\)</span>.</p>
+<p>Recall that <span class="math notranslate nohighlight">\(x=f(p)\)</span> is the quantity demanded (in thousands) when the unit price is <span class="math notranslate nohighlight">\(p\)</span> dollars.  We were given <span class="math notranslate nohighlight">\(x=2\)</span> (and used that to determine <span class="math notranslate nohighlight">\(p=10\)</span> in Step 1), which is equivalent to saying <span class="math notranslate nohighlight">\(f(10) = 2\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Compute <span class="math notranslate nohighlight">\(f'(10)\)</span></p>
+<p>Compute the derivative of both sides of the demand equation (<span class="math notranslate nohighlight">\(p = -4x^2 - 2x + 30\)</span>) with respect to <span class="math notranslate nohighlight">\(p\)</span>.  Here is where we use implicit differentiation by thinking of <span class="math notranslate nohighlight">\(x\)</span> as a function of <span class="math notranslate nohighlight">\(p\)</span> (i.e., <span class="math notranslate nohighlight">\(x=f(p)\)</span>).</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+1 
+&amp;= \frac{d}{dp}(-4x^2 - 2x + 30) &amp;&amp; \hbox{since $\dfrac{d}{dp}p = 1$}\\
+&amp;= -8xx' - 2x'
+\end{align*}\]</div>
+<p>Now plug in <span class="math notranslate nohighlight">\(x=2\)</span> to get</p>
+<div class="math notranslate nohighlight">
+\[1 = -16x' - 2x' = -18x'\]</div>
+<p>and therefore <span class="math notranslate nohighlight">\(x' = f'(10) = -1/18\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Compute elasticity of demand using the values <span class="math notranslate nohighlight">\(p=10\)</span>, <span class="math notranslate nohighlight">\(f(10) = 2\)</span>, and <span class="math notranslate nohighlight">\(f'(10) = -1/18\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+E(10)
+&amp;= -\frac{10\cdot (-1/18)}{2} &amp;&amp; \hbox{since $E(p) = -\dfrac{p\cdot f'(p)}{f(p)}$} \\
+&amp;= \frac{10}{2}\cdot \frac{1}{18} \\
+&amp;= \frac{5}{18}
+\end{align*}\]</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "28left/110jupyter",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./ch_Implicit"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="implicit_.html" title="previous page">Implicit Differentiation</a>
+    <a class='right-next' id="next-link" href="implicit_relatedrates.html" title="next page">Related Rates</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Department of Mathematics, Penn State University Park<br/>
+        
+            &copy; Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

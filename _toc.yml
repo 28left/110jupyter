@@ -24,6 +24,12 @@ parts:
     sections:
     - file: ch_Derivatives/derivatives_def.md
     - file: ch_Derivatives/derivatives_rules.md
+  - file: ch_Marginal/marginal_
+    sections:
+    - file: ch_Marginal/marginal_cost_revenue_profit.md
+    - file: ch_Marginal/marginal_analysis.md
+    - file: ch_Marginal/marginal_elasticity_demand.md
+    - file: ch_Marginal/marginal_elasticity_revenue.md
   - file: ch_Implicit/implicit_
     sections:
     - file: ch_Implicit/implicit_differentiation.md
@@ -31,10 +37,49 @@ parts:
   - file: ch_Curvesketching/curvesketching_
     sections:
     - file: ch_Curvesketching/curvesketching_increasedecrease.md
+  - file: ch_Optimization/optimization_
+    sections:
+    - file: ch_Optimization/optimization_relative_extrema.md
+    - file: ch_Optimization/optimization_critical_points.md
+    - file: ch_Optimization/optimization_first_derivative_test.md
+    - file: ch_Optimization/optimization_second_derivative_test.md
+    - file: ch_Optimization/optimization_absolute_extrema.md
+    - file: ch_Optimization/optimization_applications.md
+  - file: ch_Exponential/exponential_
+    sections:
+    - file: ch_Exponential/exponential_functions.md
+    - file: ch_Exponential/exponential_laws.md
+    - file: ch_Exponential/exponential_logarithmic_diff.md
+  - file: ch_Compoundinterest/compoundinterest_
+    sections:
+    - file: ch_Compoundinterest/compoundinterest_notation.md
+    - file: ch_Compoundinterest/compoundinterest_accumulated_amount.md
+    - file: ch_Compoundinterest/compoundinterest_present_value.md
+  - file: ch_Indefinite/indefinite_
+    sections:
+    - file: ch_Indefinite/indefinite_integrals.md
+    - file: ch_Indefinite/indefinite_rules.md
+    - file: ch_Indefinite/indefinite_init_value.md
+    - file: ch_Indefinite/indefinite_substitution.md
+  - file: ch_Definite/definite_
+    sections:
+    - file: ch_Definite/definite_riemann.md
+    - file: ch_Definite/definite_ftc.md
+    - file: ch_Definite/definite_substitution.md
+    - file: ch_Definite/definite_average_value.md
+  - file: ch_Applicationintegrals/applicationintegrals_
+    sections:
+    - file: ch_Applicationintegrals/applicationintegrals_area_between_curves.md
+    - file: ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.md
+    - file: ch_Applicationintegrals/applicationintegrals_income_streams_annuities.md
+  - file: ch_Byparts/byparts_
+    sections:
+    - file: ch_Byparts/byparts_integration.md
+    - file: ch_Byparts/byparts_application.md
+    - file: ch_Byparts/byparts_improper.md
+    - file: ch_Byparts/byparts_application_improper.md
 - caption: Try it yourself notebooks
   chapters:
   - file: nb_Limits/limits_nb_
     sections:
     - file: nb_Limits/limits_nb_TIY2.ipynb
-
-
