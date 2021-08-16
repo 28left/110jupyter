@@ -54,5 +54,6 @@ parts:
   - file: nb_Limits/limits_nb_
     sections:
     - file: nb_Limits/limits_nb_estimateTIY.ipynb
+    - file: nb_Limits/limits_nb_defTIY.ipynb
 
 

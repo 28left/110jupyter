@@ -27,7 +27,7 @@ def add_answer_cell(problem):
     my_ipython.set_next_input(input_frame, replace=False)
 
 
-            
+
 """
 ProblemStack: class to keep a dictionary of problems used in the current notebook
 """
@@ -349,12 +349,12 @@ class ParameterProblem(ExpressionProblem):
 
     def generate(self):
         [self.statement, self.expression, self.supplemental, self.statement_after, self.correct_answer] = self.generator(self.parameters)
-        
+
 
 # # Multiple choice widget
-# 
+#
 #  Basic class to implement a multiple choice test element.
-# 
+#
 #  - class name: `MultipleChoice`
 #  - initialization: pass two arguments
 #      - `question`: type `str`, Question text
@@ -462,7 +462,7 @@ class MultipleChoice(BaseProblem):
         else:
             # use standard cell output
             display(Markdown(result_string))
-       
+
 
 class TrueFalse(BaseProblem):
     
@@ -559,4 +559,4 @@ class TrueFalse(BaseProblem):
         else:
             # use standard cell output
             display(Markdown(result_string))
-                
+
