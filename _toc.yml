@@ -11,6 +11,16 @@ parts:
     - file: ch_Precalc/precalc_graphing.md
     - file: ch_Precalc/precalc_inequalities.md
     - file: ch_Precalc/precalc_domain.md
+    - file: ch_Precalc/precalc_TIY.md
+  - file: ch_Functions/functions_
+    sections:
+    - file: ch_Functions/functions_functionsdomainrange.md
+    - file: ch_Functions/functions_composition.md
+    - file: ch_Functions/functions_costrevprofit.md
+    - file: ch_Functions/functions_powerpolyrational.md
+    - file: ch_Functions/functions_demandsupply
+    - file: ch_Functions/functions_application
+    - file: ch_Functions/functions_TIY
   - file: ch_Limits/limits_
     sections:
     - file: ch_Limits/limits_def.md
@@ -20,16 +30,17 @@ parts:
     - file: ch_Limits/limits_indeterminate.md
     - file: ch_Limits/limits_infinity.md
     - file: ch_Limits/limits_continuity.md
+    - file: ch_Limits/limits_TIY.md
   - file: ch_Derivatives/derivatives_
     sections:
     - file: ch_Derivatives/derivatives_def.md
     - file: ch_Derivatives/derivatives_rules.md
   - file: ch_Marginal/marginal_
     sections:
-    - file: ch_Marginal/marginal_cost_revenue_profit.md
-    - file: ch_Marginal/marginal_analysis.md
-    - file: ch_Marginal/marginal_elasticity_demand.md
-    - file: ch_Marginal/marginal_elasticity_revenue.md
+    - file: ch_Marginal/marginal_costrevprofit.md
+    - file: ch_Marginal/marginal_marginalanalysis.md
+    - file: ch_Marginal/marginal_elasticitydemand.md
+    - file: ch_Marginal/marginal_elasticityrevenue.md
   - file: ch_Implicit/implicit_
     sections:
     - file: ch_Implicit/implicit_differentiation.md
@@ -78,8 +89,10 @@ parts:
     - file: ch_Byparts/byparts_application.md
     - file: ch_Byparts/byparts_improper.md
     - file: ch_Byparts/byparts_application_improper.md
-- caption: Try it yourself notebooks
+
+- caption: Computational Examples
   chapters:
   - file: nb_Limits/limits_nb_
     sections:
-    - file: nb_Limits/limits_nb_TIY2.ipynb
+    - file: nb_Limits/limits_nb_estimateTIY.ipynb
+    - file: nb_Limits/limits_nb_defTIY.ipynb

@@ -1,0 +1,21 @@
+\documentclass[tikz]{standalone}
+\begin{document}
+\def\bbWidth{6}
+\def\bbHeight{4.5}
+\def\bbSideMargin{1.0}
+\def\bbTopMargin{1.1}
+\def\bbBottomMargin{0.9}
+\begin{tikzpicture}[scale=0.8]
+\draw [thick,fill=white] (0,0) rectangle (\bbWidth,\bbHeight);
+\draw [thick,fill=yellow,opacity=0.5] (\bbSideMargin,\bbBottomMargin) rectangle (\bbWidth - \bbSideMargin, \bbHeight - \bbTopMargin);
+%\draw [<->] (0,\bbHeight + 0.25) -- +(\bbWidth,0) node [midway,fill=white] {$x$};
+\draw [<-] (0,\bbHeight/2) -- +(-0.5,0); 
+\draw [<-] (\bbSideMargin,\bbHeight/2) -- +(0.5,0);
+\node at (\bbSideMargin/2,\bbHeight/2) {\small 1 in.};
+\draw [<->] (\bbWidth/2,\bbHeight) -- +(0,-\bbTopMargin) node [midway,fill=white] {\small 2.5 in.};
+\draw [<->] (\bbWidth/2,0) -- +(0,\bbBottomMargin) node [midway,fill=white] {\small 1.5 in.};
+
+%label
+\draw [|-|] (0,-0.4) -- (\bbWidth,-0.4) node [midway,fill=white] {$x$};
+\end{tikzpicture}
+\end{document}

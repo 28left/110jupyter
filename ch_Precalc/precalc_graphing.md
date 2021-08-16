@@ -335,7 +335,8 @@ Compare the graphs of $y=x^2-4$ and $y=4-x^2$
 
 Notice how the graph of $y=x^2-4$ looks like the graph of $y=x^2$ with each point shifted down $4$ units.  Also, the graph of $y=4-x^2$ looks like the graph of $y=-x^2$ with each point shifted up $4$ units.
 
-## Example 25
+(precalc:graphing:example6)=
+### Example 6
 
 Sketch the graph of $f(x) = x^2 - 4x -12$.
 
