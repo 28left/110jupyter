@@ -35,7 +35,7 @@ $$\lim_{x\to -\infty} f(x) = M $$
 if $f(x)$ can be made as close to $M$ by taking $x$  to be negative and sufficiently large in absolute value.
 ```
 
-## Example 1
+## Example 9
 
 The following graph illustrates a function $f(x)$ that approaches a value of 400 as $x$ increases without bound.  In other words, 
 
@@ -88,7 +88,7 @@ All previous properties for limits apply when $a$ is replaced with $\infty$ or $
 - $\lim\limits_{x \to -\infty} \dfrac{1}{x^n}=0$, provided that $x^n$ is defined for $x<0$.
 
 
-## Example 2
+## Example 10
 
 Notice how the graph of $y=1/x$ approaches the $x$-axis as $x$ approaches positive and negative infinity.  In other words,
 
@@ -129,9 +129,7 @@ $$\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} 
 \end{document} 
 ```
 
-
-
-## Example 3
+## Example 11
 
 Notice how the graph of $y=1/\sqrt{x}$ approaches the $x$-axis as $x$ approaches positive infinity.  In other words,
 
@@ -183,7 +181,7 @@ For infinite limits of Rational Functions, if the
 - highest power in the numerator, then the limit will equal $\pm\infty$ (DNE)
 - highest power is the same in both the numerator and denominator, then the limit will equal the ratio of the leading coefficients, i.e. the ratio of the coefficients in front of the highest powers in the numerator and the denominator.
 
-## Example 4
+## Example 12
 
 Applying the guidelines:
 1. $\displaystyle\lim_{x\to\infty}\frac{x+3}{6x^2+3x+1}$ = 0 (highest power is in denominator)   <br>  &nbsp;

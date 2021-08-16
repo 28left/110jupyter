@@ -109,7 +109,7 @@ This is a special case of the Chain Rule with $g(x) = x^n$.
 ## Applying the Rules
 
 
-### Example 1 (Sum and Constant Multiple Rule)
+### Example 3 (Sum and Constant Multiple Rule)
 
 Find the derivative of the function 
 
@@ -178,7 +178,7 @@ $$f'(x) = 10x - 4 - \frac{12}{x^5}$$
 
 
 
-### Example 2 (Product Rule)
+### Example 4 (Product Rule)
 
 Find the derivative of the function 
 
@@ -232,7 +232,7 @@ h'(x) &= f'(x)g(x)+f(x)g'(x) && \hbox{Product Rule}\\ \\
 ```
 
 
-### Example 3 (Quotient Rule)
+### Example 5 (Quotient Rule)
 
 Find the derivative of the function 
 
@@ -292,7 +292,7 @@ Keep in mind that if the only goal is to compute $h'(2)$, then Step 3 can be ski
 ```
 
 
-### Example 4 (General Power Rule)
+### Example 6 (General Power Rule)
 
 Find the derivative of the function 
 
@@ -326,7 +326,7 @@ h'(x) &= \frac{d}{dx} (3x^2 - 4x + 2)^{1/2}\\ \\
 ```
 
 
-### Example 5 (Product and General Power Rule)
+### Example 7 (Product and General Power Rule)
 
 Find the derivative of the function 
 
@@ -378,7 +378,7 @@ h'(x) &= 4(4x+1)^2(2x-5)^3\left[6x-15 + 8x+2\right]\\ \\
 
 
 
-### Example 6 (Quotient and General Power Rule)
+### Example 8 (Quotient and General Power Rule)
 
 Find the derivative of the function 
 
@@ -430,7 +430,7 @@ h'(x) &= \frac{x^4\cancel{(4x-7)^2}[20x-35 - 12x]}{(4x-7)^{\cancel{6}4}} \\ \\
 
 ## An Applied Example
 
-### Example 7 
+### Example 9 
 
 Penn State Learning has a weekly demand funciton for their calculators which is given by
 
@@ -472,7 +472,7 @@ Therefore, the instantaneous rate of change of the unit price is $-20$ dollars p
 
 ## Using the derivative to compute limits
 
-### Example 8
+### Example 10
 
 Use the limit definition of the derivative to evaluate 
 
@@ -522,7 +522,7 @@ Evaluate the given limit by computing the derivative of $f(x) = x^2-5x$ using th
 ```
 
 
-### Example 9
+### Example 11
 
 Use the limit definition of the derivative to evaluate 
 
