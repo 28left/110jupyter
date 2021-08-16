@@ -29,7 +29,7 @@ In order to find all values of $x$ such that $f(x)>0$ or $f(x)<0$, use the follo
 ```
 
 (01_05_example1)=
-## Example 28
+### Example 1
 
 Find all values of $x$ such that $x^2 + 2x - 3 > 0$.
 
@@ -137,7 +137,7 @@ Finding values of $x$ such that $x^2+2x-3 > 0$ is equivalent to identifying the 
 
 
 
-## Example 29
+### Example 2
 Find all values of $x$ such that $\dfrac{x^2(x^2+3)}{(4-x^2)^3} < 0$.
 
 

@@ -26,10 +26,12 @@ To find all values of $x$ that satisfy an equation (e.g., $f(x) = g(x)$), comple
 
 Find all values of $x$ such that $x^2 - 4x - 12 = 0$.
 
-## Example 17
+
+(01_03_example1)=
+### Example 1
 Factor $x^2 - 4x - 12$.
 
-*Recall from [Factoring, Example 15](precalc_factoring_example_15) that* 
+*Recall from [Factoring, Example 8](01_02_example8) that* 
 
 $$x^2 - 4x - 12 = (x+2)(x-6)$$
 
@@ -38,8 +40,8 @@ $$x^2 - 4x - 12 = (x+2)(x-6)$$
 :class: tip, dropdown
 
 \begin{align*}
-  x + 2 &= 0  ~~~~\Rightarrow~~~~  x = -2\\
-  x - 6 &= 0  ~~~~\Rightarrow~~~~  x = 6
+x + 2 &= 0  ~~~~\Rightarrow~~~~  x = -2\\
+x - 6 &= 0  ~~~~\Rightarrow~~~~  x = 6
 \end{align*}
 
 Therefore, $x=6$ and $x=-2$ satisfy $x^2 - 4x - 12 = 0$.
@@ -49,13 +51,13 @@ Therefore, $x=6$ and $x=-2$ satisfy $x^2 - 4x - 12 = 0$.
 :class: warning, dropdown
 
 \begin{align*}
-  (-2)^2 - 4(-2) - 12 &= 4 + 8 - 12 = 0 \\
-  6^2 - 4(6) - 12 &= 36 - 24 - 12 = 0
+(-2)^2 - 4(-2) - 12 &= 4 + 8 - 12 = 0 \\
+6^2 - 4(6) - 12 &= 36 - 24 - 12 = 0
 \end{align*}
 ```
 
 
-## Example 18
+### Example 2
 Find all values of $p$ such that $\dfrac{3p}{180-6p} = 1$.
 
 ```{admonition} Step 1: Multiply both sides of $\frac{3p}{180-6p} = 1$ by the denominator, $180-6p$.
@@ -68,9 +70,9 @@ $$3p = 180 - 6p$$
 :class: tip, dropdown
 
 \begin{align*}
-  3p - (180-6p) &= 0 \\
-  3p - 180 +6p &= 0 && \hbox{Distribute the minus sign}\\
-  9p - 180 &= 0 && \hbox{Combine like terms}
+3p - (180-6p) &= 0 \\
+3p - 180 +6p &= 0 && \hbox{Distribute the minus sign}\\
+9p - 180 &= 0 && \hbox{Combine like terms}
 \end{align*}
 ```
 
@@ -78,8 +80,8 @@ $$3p = 180 - 6p$$
 :class: tip, dropdown
 
 \begin{align*}
-  9p &= 180 && \text{Add $180$ to both sides} \\
-  p &= 20 && \text{Divide both sides by 9}
+    9p &= 180 && \text{Add $180$ to both sides} \\
+    p &= 20 && \text{Divide both sides by 9}
 \end{align*}
 
 Therefore, $p=20$ is the only value that satisfies $\frac{3p}{180-6p} = 1$.
@@ -91,7 +93,7 @@ Therefore, $p=20$ is the only value that satisfies $\frac{3p}{180-6p} = 1$.
 $$\dfrac{3(20)}{180-6(20)} = \frac{60}{180-120} = \frac{60}{60} = 1$$
 ```
 
-## Example 19
+### Example 3
 Find all points of intersection of $f(x) = 6x^2 - 4x$ and $g(x) = 2 - 5x$.
 
 
@@ -106,9 +108,9 @@ $$6x^2 - 4x =  2 - 5x$$
 :class: tip, dropdown
 
 \begin{align*}
-  6x^2 - 4x - (2 - 5x) &=  0 && \hbox{Note the parentheses around $2-5x$}\\
-  6x^2 - 4x - 2 + 5x &=  0 && \hbox{Distribute the minus sign}\\
-  6x^2 + x - 2 &=  0 && \hbox{Combine like terms}
+6x^2 - 4x - (2 - 5x) &=  0 && \hbox{Note the parentheses around $2-5x$}\\
+6x^2 - 4x - 2 + 5x &=  0 && \hbox{Distribute the minus sign}\\
+6x^2 + x - 2 &=  0 && \hbox{Combine like terms}
 \end{align*}
 ```
 
@@ -124,12 +126,11 @@ Find two integers that multiply to $6(-2) = -12$ and sum to $1$.
 | $-3 \times 4$        | **YES** |
 
 Therefore,
-
 \begin{align*}
-  6x^2 + x - 2
-  &= 6x^2 - 3x + 4x - 2 \\
-  &= 3x(2x-1) + 2(2x-1) \\
-  &= (3x+2)(2x-1) 
+6x^2 + x - 2
+&= 6x^2 - 3x + 4x - 2 \\
+&= 3x(2x-1) + 2(2x-1) \\
+&= (3x+2)(2x-1) 
 \end{align*}
 ```
 
@@ -138,8 +139,8 @@ Therefore,
 :class: tip, dropdown
 
 \begin{align*}
-  3x + 2 &= 0  ~~~~\Rightarrow~~~~  3x = -2 ~~~~\Rightarrow~~~~ x = -2/3\\
-  2x - 1 &= 0  ~~~~\Rightarrow~~~~  2x = 1 \hspace{25pt}\Rightarrow~~~~ x = 1/2
+3x + 2 &= 0  ~~~~\Rightarrow~~~~  3x = -2 ~~~~\Rightarrow~~~~ x = -2/3\\
+2x - 1 &= 0  ~~~~\Rightarrow~~~~  2x = 1 \hspace{25pt}\Rightarrow~~~~ x = 1/2
 \end{align*}
 
 Therefore, the only points of intersection of $f(x) = 6x^2 - 4x$ and $g(x) = 2 - 5x$ occur when $x=-2/3$ and $x=1/2$.

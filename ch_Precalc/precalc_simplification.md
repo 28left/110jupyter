@@ -55,7 +55,7 @@ e.g., $\dfrac{2}{3} \div \dfrac{5}{7} = \dfrac{2}{3} \times \dfrac{7}{5} = \dfra
 
 
 
-## Example 1
+### Example 1
 
 Rewrite $\dfrac{x+1}{x+4} - \dfrac{3x-2}{x+4}$ as a single ratio.
 
@@ -73,14 +73,14 @@ Since the ratios already have the same denominator, we need only apply the formu
 
 Apply the formula from **Step 1** with $A = x+1$, $B=x+4$, and $C = 3x-2$.
 \begin{align*}
-  \dfrac{x+1}{x+4} - \dfrac{3x-2}{x+4}
-  &= \frac{x+1 - (3x-2)}{x+4} && \hbox{Subtract numerators}\\
-  &= \frac{x+1 - 3x+2}{x+4}  && \hbox{Distribute the minus sign}\\
-  &= \frac{3-2x}{x+4} && \hbox{Combine like terms}
+\dfrac{x+1}{x+4} - \dfrac{3x-2}{x+4}
+&= \frac{x+1 - (3x-2)}{x+4} && \hbox{Subtract numerators}\\
+&= \frac{x+1 - 3x+2}{x+4}  && \hbox{Distribute the minus sign}\\
+&= \frac{3-2x}{x+4} && \hbox{Combine like terms}
 \end{align*}
 ```
 
-## Example 2
+### Example 2
 
 Rewrite $\dfrac{3}{x} + \dfrac{4}{x-5}$ as a single ratio.
 
@@ -98,16 +98,16 @@ Since the ratios do not have the same denominator, we will apply the formula for
 
 Apply the formula from {\bf Step 1} with $A = 3$, $B=x$, $C = 4$, and $D = x-5$.
 \begin{align*}
-  \dfrac{3}{x} + \dfrac{4}{x-5}
-  &= \frac{3(x-5)}{x(x-5)} + \frac{4x}{x(x-5)} && \hbox{Get a common denominator}\\
-  &= \frac{3(x-5)+4x}{x(x-5)} && \hbox{Add numerators}\\
-  &= \frac{3x - 15 + 4x}{x(x-5)} && \hbox{Distribute the 3}\\
-  &= \frac{7x-15}{x(x-5)} && \hbox{Combine like terms}
+\dfrac{3}{x} + \dfrac{4}{x-5}
+&= \frac{3(x-5)}{x(x-5)} + \frac{4x}{x(x-5)} && \hbox{Get a common denominator}\\
+&= \frac{3(x-5)+4x}{x(x-5)} && \hbox{Add numerators}\\
+&= \frac{3x - 15 + 4x}{x(x-5)} && \hbox{Distribute the 3}\\
+&= \frac{7x-15}{x(x-5)} && \hbox{Combine like terms}
 \end{align*}
 ```
 
 
-## Example 3
+### Example 3
 
 Simplify 
 
@@ -128,11 +128,11 @@ $$
 :class: tip, dropdown
 
 \begin{align*}
-  \cfrac{\left(\cfrac{3p}{\sqrt{180-6p}}\right)}{ \sqrt{180-6p}}
-  &= \frac{3p}{\sqrt{180-6p}} \div \sqrt{180-6p} \\ \\
-  &= \frac{3p}{\sqrt{180-6p}} \times \frac{1}{\sqrt{180-6p}} && \hbox{Division is multiplication by reciprocal}\\  \\
-  &= \frac{3p}{\sqrt{180-6p}\times \sqrt{180-6p}} && \hbox{Multiply numerators and denominators}\\ \\
-  &= \frac{3p}{180 - 6p} && \hbox{Simplify}
+\cfrac{\left(\cfrac{3p}{\sqrt{180-6p}}\right)}{ \sqrt{180-6p}}
+&= \frac{3p}{\sqrt{180-6p}} \div \sqrt{180-6p} \\ \\
+&= \frac{3p}{\sqrt{180-6p}} \times \frac{1}{\sqrt{180-6p}} && \hbox{Division is multiplication by reciprocal}\\  \\
+&= \frac{3p}{\sqrt{180-6p}\times \sqrt{180-6p}} && \hbox{Multiply numerators and denominators}\\ \\
+&= \frac{3p}{180 - 6p} && \hbox{Simplify}
 \end{align*}
 ```
 
@@ -150,7 +150,7 @@ $$
 e.g., $7(3+2) = 7\cdot 3 + 7\cdot 2$
 ```
 
-## Example 4
+### Example 4
 Expand $x^2(5x^3 + 7)$.
 
 
@@ -158,9 +158,9 @@ Expand $x^2(5x^3 + 7)$.
 :class: tip, dropdown
 
 \begin{align*}
-  x^2(5x^3 + 7)
-  &= 5x^2x^3 + 7x^2 && \hbox{Distribute $x^2$}\\
-  &= 5x^5 + 7x^2 && \hbox{Simplify}
+x^2(5x^3 + 7)
+&= 5x^2x^3 + 7x^2 && \hbox{Distribute $x^2$}\\
+&= 5x^5 + 7x^2 && \hbox{Simplify}
 \end{align*}
 ```
 
@@ -183,7 +183,7 @@ $$
 $$
 ```
 
-## Example 5
+### Example 5
 
 Expand $(x+2)(3x-5)$ using the FOIL method.
 
@@ -192,7 +192,7 @@ Expand $(x+2)(3x-5)$ using the FOIL method.
 :class: tip, dropdown
 
 \begin{align*}
-  (a + b)(c + d) &= ac + ad + bc + bd
+    (a + b)(c + d) &= ac + ad + bc + bd
 \end{align*}
 ```
 
@@ -223,7 +223,7 @@ $$
 ```
 
 
-## Example 6
+### Example 6
 
 Expand $(3x-5)^2$ by squaring the binomial.
 
@@ -232,14 +232,14 @@ Expand $(3x-5)^2$ by squaring the binomial.
 
 Apply $(a - b)^2 = a^2 - 2ab + b^2$ with $a=3x$ and $b=5$.
 \begin{align*}
-  (3x-5)^2
-  &= (3x)^2 - 2(3x)(5) + 5^2 && \hbox{Square the binomial} \\ \\ 
-  &= 3^2x^2 - 30x + 25 && \hbox{Simplify}\\ \\
-  &= 9x^2 - 30x + 25
+(3x-5)^2
+&= (3x)^2 - 2(3x)(5) + 5^2 && \hbox{Square the binomial} \\ \\ 
+&= 3^2x^2 - 30x + 25 && \hbox{Simplify}\\ \\
+&= 9x^2 - 30x + 25
 \end{align*}
 ```
 
-## Example 7
+### Example 7
 Expand $3x^5(4+x)^2$.
 
 ```{admonition} Step 1: Apply binomial formula.
@@ -247,9 +247,9 @@ Expand $3x^5(4+x)^2$.
 
 Apply $(a + b)^2 = a^2 + 2ab + b^2$ with $a=4$ and $b=x$.
 \begin{align*}
-  3x^5(4+x)^2
-  &= 3x^5(4^2 + 2(4)(x) + x^2) && \hbox{Square the binomial}\\ \\
-  &= 3x^5(16 + 8x + x^2) && \hbox{Simplify}
+3x^5(4+x)^2
+&= 3x^5(4^2 + 2(4)(x) + x^2) && \hbox{Square the binomial}\\ \\
+&= 3x^5(16 + 8x + x^2) && \hbox{Simplify}
 \end{align*}
 ```
 
@@ -257,8 +257,8 @@ Apply $(a + b)^2 = a^2 + 2ab + b^2$ with $a=4$ and $b=x$.
 :class: tip, dropdown
 
 \begin{align*}
-  3x^5(16 + 8x + x^2) 
-  &= 3x^5(16) + 3x^5(8x) + 3x^5(x^2) && \hbox{Distribute $3x^5$} \\ \\
-  &= 48x^5 + 24x^6 + 3x^7 && \hbox{Simplify}
+3x^5(16 + 8x + x^2) 
+&= 3x^5(16) + 3x^5(8x) + 3x^5(x^2) && \hbox{Distribute $3x^5$} \\ \\
+&= 48x^5 + 24x^6 + 3x^7 && \hbox{Simplify}
 \end{align*}
 ```

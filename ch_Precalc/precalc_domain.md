@@ -43,7 +43,7 @@ represents the values that are less than $5$ (i.e., $x<5$) or greater than or eq
 
 
 
-## Example 30
+### Example 1 
 
 Use interval notation to describe the domain of $1/x$.
 
@@ -65,7 +65,7 @@ $$(-\infty,0) \cup (0,\infty).$$
 
 
 
-## Example 31
+### Example 2
 
 Use interval notation to describe the domain of $\sqrt{x}$.
 
@@ -85,7 +85,7 @@ $$[0,\infty).$$
 ```
 
 
-## Example 32
+### Example 3
 
 Determine the domain of the function $f(x) = \sqrt{x^2 + 2x - 3}$.
 
@@ -118,7 +118,7 @@ $$
 ```
 
 
-## Example 33
+### Example 4
 
 Determine the domain of the function $f(x) = \dfrac{x}{x^2 + 2x - 3}$.
 

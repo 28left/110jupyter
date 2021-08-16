@@ -50,7 +50,7 @@ Polynomial and rational functions are continuous on their domains.
 
 ## Examples
 
-### Example 13: Continuity at a point
+### Example: Continuity at a point
 
 Is the function $f(x)$ continuous at $x=1$?
 
@@ -68,9 +68,9 @@ $$
 When $x=1$, $f(x)$ is defined by $f(x) = -x^3+x^2-1$.  Therefore,
 
 \begin{align*}
-  f(1) 
-  &= -(1)^3+(1)^2-1 & \hbox{Plug in $x=1$}\\
-  &= -1 
+f(1) 
+&= -(1)^3+(1)^2-1 & \hbox{Plug in $x=1$}\\
+&= -1 
 \end{align*}
 
 Since $f(x)$ is defined at $x=1$, we now check to see if the limit exists.
@@ -84,18 +84,18 @@ Since $f(x)$ is defined at $x=1$, we now check to see if the limit exists.
 For the left-hand limit, $x\to1^-$ means $x< 1$, and therefore $f(x) = -x^3+x^2-1$.
 
 \begin{align*}
-  \lim_{x\to 1^-} f(x) 
-  &= \lim_{x\to 1^-} -x^3+x^2-1\\
-  &= -1^3+1^2-1 & \hbox{Plug in $x=1$}\\
-  &= -1 
+\lim_{x\to 1^-} f(x) 
+&= \lim_{x\to 1^-} -x^3+x^2-1\\
+&= -1^3+1^2-1 & \hbox{Plug in $x=1$}\\
+&= -1 
 \end{align*}
 
 For the right-hand limit, $x\to1^+$ means $x> 1$, and therefore $f(x) = 3x^2-x-3$.
 \begin{align*}
-  \lim_{x\to 1^+} f(x) 
-  &= \lim_{x\to 1^+} 3x^2-x-3 \\
-  &= 3(1)^2-1-3 & \hbox{Plug in $x=1$} \\
-  &= -1 
+\lim_{x\to 1^+} f(x) 
+&= \lim_{x\to 1^+} 3x^2-x-3 \\
+&= 3(1)^2-1-3 & \hbox{Plug in $x=1$} \\
+&= -1 
 \end{align*}
 
 Since both one-sided limits exist and are equal to $-1$, we conclude that
@@ -123,7 +123,7 @@ we conclude that $f(x)$ is continuous at $x=1$.
 ```
 
 
-### Example 14: Discontinuities
+### Example: Discontinuities
 
 Find the discontinuities of $f(x)$ where
 
@@ -133,9 +133,9 @@ $$f(x) = \frac{2x^4-2x^3-12x^2}{x^4-9x^2}.$$
 :class: tip, dropdown
 
 \begin{align*}
-  x^4-9x^2
-  &= x^2(x^2-9) && \hbox{Pull out common factor of $x^2$}\\
-  &= x^2(x-3)(x+3) && \hbox{Since $A^2 - B^2 = (A-B)(A+B)$}
+x^4-9x^2
+&= x^2(x^2-9) && \hbox{Pull out common factor of $x^2$}\\
+&= x^2(x-3)(x+3) && \hbox{Since $A^2 - B^2 = (A-B)(A+B)$}
 \end{align*}
 ```
 
@@ -144,11 +144,10 @@ $$f(x) = \frac{2x^4-2x^3-12x^2}{x^4-9x^2}.$$
 :class: tip, dropdown
 
 \begin{align*}
-  x^2 &= 0 ~~~~\hbox{ when $x=0$}\\
-  x-3 &= 0 ~~~~\hbox{ when $x = 3$}\\
-  x+3 &= 0 ~~~~\hbox{ when $x = -3$}
+x^2 &= 0 ~~~~\hbox{ when $x=0$}\\
+x-3 &= 0 ~~~~\hbox{ when $x = 3$}\\
+x+3 &= 0 ~~~~\hbox{ when $x = -3$}
 \end{align*}
-
 Therefore, $f(x)$ has discontinuities at $x=0$, $x=3$, and $x=-3$.
 ```
 
@@ -158,35 +157,35 @@ Remember, rational functions have discontinuities whenever the *denominator* is 
 
 
 
-### Example 15: Choosing a parameter to make a function continuous
+### Example: Choosing a parameter to make a function continuous
 
 Find the value of $k$ that makes $f(x)$ continuous at $x=2$.
 
 $$
-  f(x) = 
-  \begin{cases}
-  x+k & \hbox{ if $x < 2$}\\
-  x^2 + kx - 7 & \hbox{ if $x \geq 2$}
-  \end{cases}
+f(x) = 
+\begin{cases}
+x+k & \hbox{ if $x < 2$}\\
+x^2 + kx - 7 & \hbox{ if $x \geq 2$}
+\end{cases}
 $$
 
 
 ```{admonition} Step 1: Evaluate $\displaystyle{\lim_{x \to 2}}  f(x)$ from left and right.
 :class: tip, dropdown
 
-*Left*
+**Left**
 \begin{align*}
-  \lim_{x \to 2^-} f(x) 
-  &= \lim_{x \to 2^-} x+k \\
-  &=2+k 
+\lim_{x \to 2^-} f(x) 
+&= \lim_{x \to 2^-} x+k \\
+&=2+k 
 \end{align*}
 
-*Right*
+**Right**
 \begin{align*}
-  \lim_{x \to 2^+} f(x) 
-  &= \lim_{x \to 2^+} x^2 + kx -7 \\
-  &=2^2+k(2)-7 \\
-  &=2k-3 
+\lim_{x \to 2^+} f(x) 
+&= \lim_{x \to 2^+} x^2 + kx -7 \\
+&=2^2+k(2)-7 \\
+&=2k-3 
 \end{align*}
 ```
 

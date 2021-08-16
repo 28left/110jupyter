@@ -1,0 +1,37 @@
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\def\boxWidth{3}
+\def\boxHeight{4}
+\def\boxDepth{2}
+
+\begin{tikzpicture}[scale=0.8]
+
+  % labels
+  \draw [|-|] (0,-0.4) -- (\boxWidth,-0.4) node [midway,fill=white] {$x$};
+  \draw [|-|] (\boxWidth + \boxDepth/1.414 + 0.4,\boxDepth/1.414) -- +(0,\boxHeight)
+  node [midway,fill=white] {$y$};
+  \draw [|-|] (\boxWidth + 0.2828, -0.2828) -- +(\boxDepth/1.414,\boxDepth/1.414) node [midway,fill=white] {$x$};
+
+
+  % silohette
+  \fill [white,opacity=1.0] (0,0) -- ++(0,\boxHeight) -- ++(\boxDepth/1.414,\boxDepth/1.414) -- ++(\boxWidth,0) -- ++(0,-\boxHeight) -- ++(-\boxDepth/1.414,-\boxDepth/1.414) -- cycle;
+
+  % back face with a top
+  \draw [thick] (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) -| ++(\boxWidth,-\boxHeight);
+  \draw [dashed,thick] (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) |- ++(\boxWidth,-\boxHeight);
+
+  %% back face without a top
+  %\draw [thick] (\boxDepth/1.414,\boxHeight) -- (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) -| ++(\boxWidth,-\boxHeight);
+  %\draw [dashed,thick] (\boxDepth/1.414,\boxHeight) |- ++(\boxWidth,-\boxHeight + \boxDepth/1.414);
+
+  % diagonals
+  \draw [thick] (0,\boxHeight) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [dashed,thick] (0,0) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [thick] (\boxWidth,0) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [thick] (\boxWidth,\boxHeight) -- +(\boxDepth/1.414,\boxDepth/1.414);
+
+  % \front face
+  \draw [thick] (0,0) rectangle (\boxWidth,\boxHeight);
+\end{tikzpicture}
+\end{document} 

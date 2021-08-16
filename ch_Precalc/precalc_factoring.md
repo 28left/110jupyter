@@ -25,7 +25,7 @@ $$AB + AC = A(B+C)$$
 e.g., $21 + 14 = 7\cdot 3 + 7\cdot 2 = 7(3+2)$
 ```
 
-## Example 8
+### Example 1
 Factor $10x^5 + 15x^4$ by pulling out common factors.
 
 
@@ -49,7 +49,7 @@ Therefore, the factor common to both terms is $5x^4$.
 ```
 
 
-## Example 9
+### Example 2
 Factor 
 
 $$4x^3(2x^3+1)^5 + 30x^6(2x^3+1)^4$$ 
@@ -79,7 +79,7 @@ Therefore, the factor common to both terms is $2x^3(2x^3+1)^4$.
 ```
 
 
-## Example 10
+### Example 3
 Factor 
 
 $$4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2}$$ 
@@ -132,7 +132,7 @@ $$
 ```
 
 
-## Example 11
+### Example 4
 Factor $x^2-25$.
 
 ```{admonition} Step 1: Rewrite the expression as a difference of squares.
@@ -153,7 +153,7 @@ x^2 - 25
 
 
 
-## Example 12
+### Example 5
 Factor $9x^3-4x^5$.
 
 ```{admonition} Step 1: Determine the factors common to both terms.
@@ -205,7 +205,7 @@ The process is broken down into the following five steps.
 5. Pull out common factor.
 ```
 
-## Example 13
+### Example 6
 Factor $6x^2 + 7x - 5$ using the AC grouping method.
 
 
@@ -264,7 +264,7 @@ After factoring a polynomial, it's always a good idea to check your work by expa
 ```
 
 
-## Example 14
+### Example 7
 Factor $x^2 - 13x + 36$ using the AC grouping method.
 
 ```{admonition} Step 1: Find two integers that multiply to $1\times 36 = 36$ and sum to $-13$.
@@ -330,8 +330,8 @@ $$x^2 + bx + c = (x+r)(x+s)$$
 where $r+s = b$ and $rs = c$.
 ```
 
-(precalc_factoring_example_15)=
-## Example 15
+(01_02_example8)=
+### Example 8
 Factor $x^2 - 4x - 12$.
 
 
@@ -365,7 +365,7 @@ $$x^2 - 4x - 12 = (x+2)(x-6).$$
 ```
 
 
-## Example 16
+### Example 9
 Factor $7x^4 + 35x^3 + 42x^2$.
 
 
@@ -410,10 +410,13 @@ Therefore,
 :class: warning, dropdown
 
 \begin{align*}
-  7x^2(x+2)(x+3)
-  &= 7x^2(x^2 + 3x + 2x + 6) && \hbox{FOIL}\\
-  &= 7x^2(x^2 + 5x + 6) && \hbox{Combine like terms}\\ 
-  &= 7x^2(x^2) + 7x^2(5x) + 7x^2(6) && \hbox{Distribute $7x^2$}\\
-  &= 7x^4 + 35x^3 + 42x^2 && \hbox{Simplify}
+7x^2(x+2)(x+3)
+&= 7x^2(x^2 + 3x + 2x + 6) && \hbox{FOIL}\\
+&= 7x^2(x^2 + 5x + 6) && \hbox{Combine like terms}\\ 
+&= 7x^2(x^2) + 7x^2(5x) + 7x^2(6) && \hbox{Distribute $7x^2$}\\
+&= 7x^4 + 35x^3 + 42x^2 && \hbox{Simplify}
 \end{align*}
 ```
+
+
+
