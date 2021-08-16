@@ -14,7 +14,7 @@ kernelspec:
 
 # Examples: Computing Limits from Graphs
 
-## Example (First Graph) 
+## Example 1 (First Graph) 
 
 ```{code-cell}
 :tags: [remove-cell]
@@ -101,7 +101,7 @@ Therefore, $\lim\limits_{x\to 2} f(x)$ does not exist.
 ```
 +++
 
-## Example (Second Graph)
+## Example 2 (Second Graph)
 
 Let $f(x)$ be defined by the following graph.  
 

@@ -26,7 +26,7 @@ is called an **indeterminate form of type $0/0$**.
 To evaluate an indeterminate form, simplify the ratio $f(x)/g(x)$ by factoring or rationalizing the expression and then canceling out common factors.
 
 
-## Example 1
+## Example 7
 
 Evaluate $\lim\limits_{x\to 5} \dfrac{x-5}{x^2-25}.$
 
@@ -64,7 +64,7 @@ When computing the limit as $x$ approaches $5$, we are initially assuming that $
 ```
 
 
-## Example 2
+## Example 8
 
 Evaluate $\lim\limits_{x\to 10} \dfrac{\sqrt{x-6}-2}{x-10}$.
 

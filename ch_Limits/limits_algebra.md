@@ -14,7 +14,7 @@ kernelspec:
 
 # Examples: Computing Limits Algebraically
 
-## Example: Constant Function
+## Example 3: Constant Function
 
 If $f(x) = 2$, find $\lim\limits_{x\to 1^{-}}f(x)$.
 
@@ -24,7 +24,7 @@ If $f(x) = 2$, find $\lim\limits_{x\to 1^{-}}f(x)$.
 $f$ is a constant function, hence a polynomial. Therefore, by Property 7 of {ref}`lim:prop_lim`, $\lim\limits_{x\to 1} f(x) = f(1) = 2$. Since the limit exists, the one-sided limits exist, too and coincide with the limit. Thus, $\lim\limits_{x\to 1^{-}}f(x) = 2$.
 ```
 
-## Example: Rational Function (1)
+## Example 4: Rational Function (1)
 
 Evaluate 
 
@@ -43,7 +43,7 @@ Again by Property 7 of {ref}`lim:prop_lim`, $\lim\limits_{x\to -1} g(x)$ exists 
 $$g(-1) = \frac{(-1)^3 + 4(-1)^2 - (-1) -3}{2(-1)^2+1} = \frac{1}{3}.$$
 ```
 
-## Example: Rational Function (2)
+## Example 5: Rational Function (2)
 
 Evaluate 
 
@@ -59,7 +59,7 @@ Moreover, if we approach $2$ from the left, the values of $(x^2 +4x-1)/(x-2)$ wi
 Therefore, neither the left-hand limit nor the right-limit exists, and hence $\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}$ does not exist either. 
 ```
 
-## Example: Piecewise Polynomial Function
+## Example 6: Piecewise Polynomial Function
 
 Evaluate $\displaystyle\lim_{x\to 6} h(x)$, where
 
@@ -109,7 +109,3 @@ $$\lim_{x\to 6} h(x) = 0.$$
 ```{warning} 
 Keep in mind that just because $\displaystyle\lim_{x\to 6} h(x) \neq h(6) = 8$, this does not mean that the limit does not exist.
 ```
-
-
-
-

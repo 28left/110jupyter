@@ -71,7 +71,7 @@ $$
 Recall that a positive slope means that the line goes up from left-to-right and a negative slope means that the line goes down from left-to-right.
 
 
-### Example 1
+## Example 20
 Sketch the graph of the line defined by  $y = 2x + 3$.
 
 ```{admonition} Step 1: Determine slope and $y$-intercept
@@ -114,7 +114,7 @@ Note that the red dashed lined is not part of the graph and is used only as a gu
 
 
 
-### Example 2
+## Example 21
 
 Sketch the graph of the line defined by  $y - 3 = -2(x - 4)$.
 
@@ -161,7 +161,7 @@ In order for a line to have slope equal to $-2$, if the $x$-coordinate of any po
 
 
 
-### Example 3
+## Example 22
 
 Sketch the graph of the line defined by $y - 1 = \dfrac{2}{5}(x + 2)$.
 
@@ -216,7 +216,7 @@ $$y = ax^2 + bx + c$$
 where $a$, $b$, and $c$ are real numbers and $a\neq 0$.  The graph of a quadratic polynomial has the shape of a parabola.  If $a>0$, then the parabola opens upward (i.e., looks like the letter ``U'') and if $a<0$, then the parabola opens downward.
 
 
-### Example 4
+## Example 23
 
 Compare the graphs of $y = x^2$ and $y=-x^2$.
 
@@ -277,7 +277,7 @@ Compare the graphs of $y = x^2$ and $y=-x^2$.
 Notice how the graph of $y=x^2$ is a parabola that goes through the point $(0,0)$ and opens upward while the graph of $y=-x^2$ is a parabola that also goes through the point $(0,0)$ but opens downward.
 
 
-### Example 5
+## Example 24
 
 Compare the graphs of $y=x^2-4$ and $y=4-x^2$
 
@@ -334,7 +334,6 @@ Compare the graphs of $y=x^2-4$ and $y=4-x^2$
 ```
 
 Notice how the graph of $y=x^2-4$ looks like the graph of $y=x^2$ with each point shifted down $4$ units.  Also, the graph of $y=4-x^2$ looks like the graph of $y=-x^2$ with each point shifted up $4$ units.
-
 
 (precalc:graphing:example6)=
 ### Example 6
@@ -420,10 +419,9 @@ $$y = x^r$$
 where $r$ is any real number is called a power function.  Thus $x^2$, $x^3$, $x^4$, etc. are examples of power functions.  Root functions, like the square root (i.e., $\sqrt{x}$ or $x^{1/2}$) and cube root (i.e., $\sqrt[3]{x}$ or $x^{1/3}$) are also examples of power functions
 
 
-### Example 7
+## Example 26
 
 Sketch the graph of $y = x^3$.
-
 
 ```{code-cell}
 :tags: [remove-input]
@@ -454,7 +452,7 @@ Sketch the graph of $y = x^3$.
 Notice how the graph of $y=x^3$ always increases from left-to-right and looks like a horizontal line as it goes through the origin.
 
 
-### Example 8
+## Example 27
 
 Sketch the graph of the square root function, $y = \sqrt{x}$.
 
