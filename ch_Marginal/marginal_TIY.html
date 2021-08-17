@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Limits and Continuity &#8212; Math 110 Companion Site</title>
+    <title>Try It Yourself &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,11 +49,13 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Limit of a Function" href="limits_def.html" />
-    <link rel="prev" title="Try It Yourself" href="../ch_Functions/functions_TIY.html" />
+    <link rel="next" title="Implicit Differentiation" href="../ch_Implicit/implicit_.html" />
+    <link rel="prev" title="Elasticity &amp; Total Revenue" href="marginal_elasticityrevenue.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -190,53 +192,53 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Limits/limits_.html">
    Limits and Continuity
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_def.html">
+    <a class="reference internal" href="../ch_Limits/limits_def.html">
      Limit of a Function
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_proplim.html">
+    <a class="reference internal" href="../ch_Limits/limits_proplim.html">
      Properties of Finite Limits
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_graphs.html">
+    <a class="reference internal" href="../ch_Limits/limits_graphs.html">
      Examples: Computing Limits from Graphs
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_algebra.html">
+    <a class="reference internal" href="../ch_Limits/limits_algebra.html">
      Examples: Computing Limits Algebraically
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_indeterminate.html">
+    <a class="reference internal" href="../ch_Limits/limits_indeterminate.html">
      Indeterminate Forms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_infinity.html">
+    <a class="reference internal" href="../ch_Limits/limits_infinity.html">
      Limits at Infinity
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_continuity.html">
+    <a class="reference internal" href="../ch_Limits/limits_continuity.html">
      Continuity
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="limits_TIY.html">
+    <a class="reference internal" href="../ch_Limits/limits_TIY.html">
      Try It Yourself
     </a>
    </li>
@@ -269,34 +271,39 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../ch_Marginal/marginal_.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="marginal_.html">
    Marginal Analysis
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../ch_Marginal/marginal_costrevprofit.html">
+    <a class="reference internal" href="marginal_costrevprofit.html">
      Cost, Revenue, &amp; Profit
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ch_Marginal/marginal_marginalanalysis.html">
+    <a class="reference internal" href="marginal_marginalanalysis.html">
      Marginal Analysis
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ch_Marginal/marginal_elasticitydemand.html">
+    <a class="reference internal" href="marginal_elasticitydemand.html">
      Elasticity of Demand
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ch_Marginal/marginal_elasticityrevenue.html">
+    <a class="reference internal" href="marginal_elasticityrevenue.html">
      Elasticity &amp; Total Revenue
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Try It Yourself
     </a>
    </li>
   </ul>
@@ -404,9 +411,12 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Marginal/marginal_TIY.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Limits/limits_.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Marginal/marginal_TIY.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -431,6 +441,49 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-1">
+   Exercise 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-2">
+   Exercise 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-3">
+   Exercise 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-4">
+   Exercise 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-5">
+   Exercise 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-6">
+   Exercise 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercise-7">
+   Exercise 7
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -439,21 +492,122 @@
         
               <div>
                 
-  <div class="section" id="limits-and-continuity">
-<h1>Limits and Continuity<a class="headerlink" href="#limits-and-continuity" title="Permalink to this headline">¶</a></h1>
-<p>Limits are the most important concept in calculus. After reviewing the basic concepts, we will go over examples from various perspectives: graphical, algebraic, limits at infinity. Finally, we discuss the concept of <em>continuity</em>, which is based on limits.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="limits_def.html">Limit of a Function</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_indeterminate.html">Indeterminate Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_infinity.html">Limits at Infinity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_continuity.html">Continuity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="limits_TIY.html">Try It Yourself</a></li>
-</ul>
+  <div class="section" id="try-it-yourself">
+<h1>Try It Yourself<a class="headerlink" href="#try-it-yourself" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="exercise-1">
+<h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h2>
+<p>The weekly demand for Math-Hero video games is given by</p>
+<div class="math notranslate nohighlight">
+\[p=x^3−150x+1000\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of video games produced and sold, and <span class="math notranslate nohighlight">\(p\)</span> is in dollars. Using the
+marginal revenue function, <span class="math notranslate nohighlight">\(R'(x)\)</span>, approximate the marginal revenue when 10 Math-Hero video games have been produced and sold and interpret the result.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(\$2000\)</span>, revenue increases by about <span class="math notranslate nohighlight">\(\$2000\)</span> when weekly sales increase from 10 to 11</p>
 </div>
+</details></div>
+<div class="section" id="exercise-2">
+<h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h2>
+<p>The weekly demand for Math Wars - Return of the Calculus video games is given by</p>
+<div class="math notranslate nohighlight">
+\[p= \frac{250}{x-5} + 3500\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number thousands of video games produced and sold, and <span class="math notranslate nohighlight">\(p\)</span> is in dollars.</p>
+<p>Using the marginal revenue function, <span class="math notranslate nohighlight">\(R'(x)\)</span>, approximate the marginal revenue when 10,000
+video games have been produced and sold and interpret the result.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(\$3450\)</span>, revenue increases by about <span class="math notranslate nohighlight">\(\$3450\)</span> when weekly sales increase from 10,000 to 11,000</p>
+</div>
+</details></div>
+<div class="section" id="exercise-3">
+<h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Permalink to this headline">¶</a></h2>
+<p>The daily cost (in dollars) of producing LCD ultra-high definition televisions is given by</p>
+<div class="math notranslate nohighlight">
+\[C(x)= 5x^3 - 50x^2 + 50x + 2500\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> denotes the number of thousands of televisions produced in a day.</p>
+<p>Using the
+marginal average cost function, <span class="math notranslate nohighlight">\(\overline{C}'(x)\)</span>, approximate the marginal average cost when
+5000 televisions have been produced and interpret the result.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(-\$100\)</span>, average cost decreases by about <span class="math notranslate nohighlight">\(\$100\)</span> when production increases from 5000 to 6000</p>
+</div>
+</details></div>
+<div class="section" id="exercise-4">
+<h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Permalink to this headline">¶</a></h2>
+<p>Given the demand equation</p>
+<div class="math notranslate nohighlight">
+\[p + \dfrac{x}{5} = 40,\]</div>
+<p>where <span class="math notranslate nohighlight">\(p\)</span> represents the price in dollars and <span class="math notranslate nohighlight">\(x\)</span> the number of units, determine the elasticity of demand when the price <span class="math notranslate nohighlight">\(p\)</span> is equal to $20 and interpret the result.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(E(20) = 1\)</span>, unitary demand and total revenue is maximized</p>
+</div>
+</details></div>
+<div class="section" id="exercise-5">
+<h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Permalink to this headline">¶</a></h2>
+<p>The demand for a product is given by</p>
+<p><span class="math notranslate nohighlight">\(f(p) = 6 + \dfrac{7}{p}.\)</span>$</p>
+<p>Determine the elasticity when <span class="math notranslate nohighlight">\(p = 3\)</span> and interpret the result.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(E(3) = \frac{7}{25}\)</span>, inelastic demand</p>
+</div>
+</details></div>
+<div class="section" id="exercise-6">
+<h2>Exercise 6<a class="headerlink" href="#exercise-6" title="Permalink to this headline">¶</a></h2>
+<p>Given the demand equation <span class="math notranslate nohighlight">\(p = 12 - \dfrac{x^2}{25}\)</span>, determine the price <span class="math notranslate nohighlight">\(p\)</span> at which demand is unitary.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(p = 8\)</span></p>
+</div>
+</details></div>
+<div class="section" id="exercise-7">
+<h2>Exercise 7<a class="headerlink" href="#exercise-7" title="Permalink to this headline">¶</a></h2>
+<p>Given the demand equation</p>
+<div class="math notranslate nohighlight">
+\[p + 5x = 20,\]</div>
+<p>determine the price <span class="math notranslate nohighlight">\(p\)</span> at which total revenue is maximized.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Show answer<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Answer: <span class="math notranslate nohighlight">\(p = 10\)</span></p>
+</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -469,7 +623,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ch_Limits"
+            path: "./ch_Marginal"
         },
         predefinedOutput: true
     }
@@ -481,8 +635,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../ch_Functions/functions_TIY.html" title="previous page">Try It Yourself</a>
-    <a class='right-next' id="next-link" href="limits_def.html" title="next page">Limit of a Function</a>
+    <a class='left-prev' id="prev-link" href="marginal_elasticityrevenue.html" title="previous page">Elasticity &amp; Total Revenue</a>
+    <a class='right-next' id="next-link" href="../ch_Implicit/implicit_.html" title="next page">Implicit Differentiation</a>
 
         </div>
         
