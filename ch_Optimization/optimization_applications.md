@@ -30,7 +30,7 @@ kernelspec:
 4. **Identify the critical points** of the function, and determine the corresponding optimization values of the function over its domain using any of the optimization strategies discussed in class (e.g. First Derivative Test, Second Derivative Test, Graphing).
 ```
 
-## Example 14
+## Example 1
 
 An apartment complex has 100 two-bedroom units. The monthly profit in dollars realized from renting out the apartments is given by: 
 
@@ -85,7 +85,7 @@ Instead, observe that $P(x)$ is a parabola that opens downward (i.e., $P''(x) = 
 Therefore, profit is maximized when 43 units are rented out.
 ```
 
-## Example 15
+## Example 2
 
 A rectangular field is to be enclosed by a fence. One side of the fenced-in area is a building, so fencing is not required on that side. If we have 200 feet of fencing material, determine the dimensions of the largest field that can be enclosed by the fencing material.
 
@@ -160,7 +160,7 @@ Solve for $y$ to find the other dimension of the field:
 We conclude that the field with maximum area enclosed by 200 feet of fencing material is 50 feet deep and 100 feet wide. 
 ```
 
-## Example 16
+## Example 3
 
 A rectangular box with a **square** base and a volume of $24$ ft$^3$ has costs to construct of $\$10 / \text{ft}^2$ for the sides, $\$20 / \text{ft}^2$ for the top, and $\$40 / \text{ft}^2$ for the base. Determine the dimensions of the box which minimize the total cost to construct the box.
 
@@ -272,7 +272,7 @@ $$ y = \frac{24}{2^2}= 6$$
 Therefore, the dimensions of the box that minimize the cost of construction are $2 \times 2 \times 6$.
 ```
 
-## Example 17
+## Example 4
 
 A computer manufacturer determines that in order to sell $x$ units of a new computer, the price per unit in dollars must be:
 

@@ -25,9 +25,9 @@ Suppose $c$ is a critical point of $f$ where $f'(c) = 0$ and $f''(x)$ is continu
 3. If $f''(c) = 0$, then the test is **inconclusive**.
 ```
 
-## Example 8
+## Example 1
 
-In [Example 4](optimization_critical_points_example_4), we found that the critical points of 
+In [Example 1](optimization_critical_points_example_1), we found that the critical points of 
 
 $$f(x)=2x^3-15x^2+36x+20$$ 
 
@@ -51,9 +51,9 @@ Since $f'(2) = 0$ and $f''(2) = -6 < 0$, $f(x)$ has a relative maximum at $x=2$.
 Since $f'(3) = 0$ and  $f''(3) = 6 > 0$, $f(x)$ has a relative minimum at $x=3$.
 ```
 
-## Example 9
+## Example 2
 
-In [Example 5](optimization_critical_points_example_5), we found that the only critical point of 
+In [Example 2](optimization_critical_points_example_2), we found that the only critical point of 
 
 $$f(x)=\frac{1}{x^2-1}$$ 
 

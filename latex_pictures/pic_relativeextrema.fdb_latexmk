@@ -1,8 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1628816269 "/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_box.tex" "pic_box.pdf" "pic_box" 1628816270
-  "/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_box.tex" 1628816269 1552 ac3620ce6bb64183726f572ab86395a0 ""
-  "/dev/null" 1628816269 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1629163326 "/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_relativeextrema.tex" "pic_relativeextrema.pdf" "pic_relativeextrema" 1629163326
+  "/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_relativeextrema.tex" 1629163325 2130 cacee4708fe6fe8eb1e82e9a819a7c3f ""
+  "/dev/null" 1629163326 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty" 1572645307 492 1994775aa15b0d1289725a0b1bbc2d4c ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty" 1583617216 6501 4011d89d9621e0b0901138815ba5ff29 ""
@@ -97,9 +101,9 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1623723176 5184918 edc7760058d1085fc27d2bf72f6d6bd9 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1623723213 2813066 146270937d009b944930795940a4a28b ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "pic_box.aux" 1628816270 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "pic_box.tex" 1628816269 1552 ac3620ce6bb64183726f572ab86395a0 ""
+  "pic_relativeextrema.aux" 1629163326 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "pic_relativeextrema.tex" 1629163325 2130 cacee4708fe6fe8eb1e82e9a819a7c3f ""
   (generated)
-  "pic_box.aux"
-  "pic_box.log"
-  "pic_box.pdf"
+  "pic_relativeextrema.pdf"
+  "pic_relativeextrema.log"
+  "pic_relativeextrema.aux"

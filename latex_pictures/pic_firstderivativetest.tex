@@ -1,0 +1,30 @@
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\begin{tikzpicture}[baseline=-0.5ex,scale=1.5]
+  \draw[thick,->] (0,0) -- (5,0);
+
+  \node at (1,0.2) {\Large $+$};
+  \node at (2.5,0.2) {\Large $-$};
+  \node at (4,0.2) {\Large $+$};
+
+  % tick marks
+  \foreach \x in {2,3} 
+    \draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {\x};
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[baseline=-0.5ex,scale=1.5]
+  \draw[thick,->] (-2.5,0) -- (2.5,0);
+
+  \node at (-1.75,0.2) {\Large $+$};
+  \node at (-0.5,0.2) {\Large $+$};
+  \node at (0.5,0.2) {\Large $-$};
+  \node at (1.75,0.2) {\Large $-$};
+
+  % tick marks
+  \foreach \x in {-1,0,1} 
+    \draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {\x};
+\end{tikzpicture}
+
+\end{document} 

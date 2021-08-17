@@ -32,7 +32,7 @@ The absolute extrema of a function $f$:
 
 If a function $f$ is continuous on a closed interval $[a,b]$, then $f$ has both an absolute maximum value and an absolute minimum value on $[a,b]$.
 
-## Example 10
+## Example 1
 
 Observe that for a continuous function defined on a closed interval, absolute extrema can either appear at the endpoints of the interval or at the same place as a relative extrema.
 
@@ -43,7 +43,7 @@ Observe that for a continuous function defined on a closed interval, absolute ex
 \documentclass[tikz]{standalone}
 \begin{document}
 
-\begin{tikzpicture}[scale = 1.5]
+\begin{tikzpicture}[scale = 1.8]
 
   \draw [white,fill=white] (-1,-1) rectangle (8.5,5);
   \draw [->] (-.5,0) -- (8,0) node [below] {$x$};
@@ -87,7 +87,7 @@ To find the absolute extrema of a function $f$ on a closed interval $[a,b]$
 3. The absolute maximum value and absolute minimum value of $f$ will correspond to the largest and smallest numbers, respectively, found in Step 2.
 ```
 
-## Example 11
+## Example 2
 
 Find the absolute extrema of the function 
 
@@ -128,7 +128,7 @@ Therefore, $f'(x)=0$ when $x=-2/3$ and $x=2$. But since $x=-2/3$ is not on the i
 It follows that $f(2)=-4$ is the absolute minimum value and $f(0)=4$ is the absolute maximum value.
 ```
 
-## Example 12
+## Example 3
 
 Find the absolute extrema of the function 
 
@@ -170,7 +170,7 @@ Therefore, $f'(x) = 0$ when $x=0$ and $x=-1$, both of which are on $(-2,1)$.
 It follows that $f(-2)=-48$ is the absolute minimum value and $f(1)=9$ is the absolute maximum value.
 ```
 
-## Example 13
+## Example 4
 
 Find the absolute extrema of the function 
 

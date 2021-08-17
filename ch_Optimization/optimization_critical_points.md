@@ -23,8 +23,8 @@ $$f'(c)=0 \quad \text{or} \quad \text{$f'(c)$ does not exist.}$$
 
 Critical points of $f$ correspond to *possible* locations of relative extrema.
 
-(optimization_critical_points_example_4)=
-## Example 4
+(optimization_critical_points_example_1)=
+## Example 1
 
 Find all critical points of $f(x)=2x^3-15x^2+36x+20$.
 
@@ -58,8 +58,8 @@ Since $f'(x)$ is polynomial, it exists for all real numbers.
 The domain of $f(x)$ is all real numbers. Therefore, since both values are in the domain of $f$, $x=2$ and $x=3$ are critical points of $f$.
 ```
 
-(optimization_critical_points_example_5)=
-## Example 5
+(optimization_critical_points_example_2)=
+## Example 2
 
 Find all critical points of $f(x)=\dfrac{1}{x^2-1}$.
 
