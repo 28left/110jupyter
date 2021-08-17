@@ -44,9 +44,9 @@
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -321,8 +321,8 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">
-   Curve Sketching
+  <a class="reference internal" href="../ch_Optimization/optimization_.html">
+   Optimization
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
@@ -331,32 +331,33 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../ch_Curvesketching/curvesketching_increasedecrease.html">
-     Intervals of Increase &amp; Decrease
+    <a class="reference internal" href="../ch_Optimization/optimization_relative_extrema.html">
+     Relative Extrema
     </a>
    </li>
-  </ul>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Computational Examples
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
-   Limits and Continuity
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../nb_Limits/limits_nb_estimateTIY.html">
-     Computational Examples: Limits
+    <a class="reference internal" href="../ch_Optimization/optimization_critical_points.html">
+     Critical Points
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_first_derivative_test.html">
+     The First Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_second_derivative_test.html">
+     The Second Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_absolute_extrema.html">
+     Absolute Extrema
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_applications.html">
+     Applications
     </a>
    </li>
   </ul>
@@ -425,26 +426,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Limits/limits_def.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -468,11 +449,6 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#limit-vs-one-sided-limits">
    Limit vs. One-Sided Limits
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-it-yourself">
-   Try It Yourself!
   </a>
  </li>
 </ul>
@@ -511,22 +487,22 @@
 <p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(1\)</span> (but <strong>not equal to</strong> <span class="math notranslate nohighlight">\(1\)</span>). What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim_{x\to 1} f(x)\)</span> would be?</p>
 <div class="cell_output docutils container">
 <div class="output text_html"><style  type="text/css" >
-</style><table id="T_95f3e_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
+</style><table id="T_1abe0_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_95f3e_row0_col0" class="data row0 col0" >1.100000</td>
-                        <td id="T_95f3e_row0_col1" class="data row0 col1" >4.63000000000000</td>
+                                <td id="T_1abe0_row0_col0" class="data row0 col0" >1.100000</td>
+                        <td id="T_1abe0_row0_col1" class="data row0 col1" >4.63000000000000</td>
             </tr>
             <tr>
-                                <td id="T_95f3e_row1_col0" class="data row1 col0" >1.010000</td>
-                        <td id="T_95f3e_row1_col1" class="data row1 col1" >4.06030000000000</td>
+                                <td id="T_1abe0_row1_col0" class="data row1 col0" >1.010000</td>
+                        <td id="T_1abe0_row1_col1" class="data row1 col1" >4.06030000000000</td>
             </tr>
             <tr>
-                                <td id="T_95f3e_row2_col0" class="data row2 col0" >1.001000</td>
-                        <td id="T_95f3e_row2_col1" class="data row2 col1" >4.00600300000000</td>
+                                <td id="T_1abe0_row2_col0" class="data row2 col0" >1.001000</td>
+                        <td id="T_1abe0_row2_col1" class="data row2 col1" >4.00600300000000</td>
             </tr>
             <tr>
-                                <td id="T_95f3e_row3_col0" class="data row3 col0" >1.000100</td>
-                        <td id="T_95f3e_row3_col1" class="data row3 col1" >4.00060003000000</td>
+                                <td id="T_1abe0_row3_col0" class="data row3 col0" >1.000100</td>
+                        <td id="T_1abe0_row3_col1" class="data row3 col1" >4.00060003000000</td>
             </tr>
     </tbody></table></div></div>
 </div>
@@ -558,38 +534,38 @@ This suggests that <span class="math notranslate nohighlight">\(\lim_{x \to 1} f
 <p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(1\)</span> (but <strong>not equal to</strong> <span class="math notranslate nohighlight">\(1\)</span>). The first four values are for inputs <span class="math notranslate nohighlight">\(x &lt; 1\)</span>, the next four are for inputs <span class="math notranslate nohighlight">\(x&gt; 1\)</span>.</p>
 <div class="cell_output docutils container">
 <div class="output text_html"><style  type="text/css" >
-</style><table id="T_28d01_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
+</style><table id="T_d6b1f_" ><thead>    <tr>        <th class="col_heading level0 col0" >x</th>        <th class="col_heading level0 col1" >f(x)</th>    </tr></thead><tbody>
                 <tr>
-                                <td id="T_28d01_row0_col0" class="data row0 col0" >0.900000</td>
-                        <td id="T_28d01_row0_col1" class="data row0 col1" >1.810000</td>
+                                <td id="T_d6b1f_row0_col0" class="data row0 col0" >0.900000</td>
+                        <td id="T_d6b1f_row0_col1" class="data row0 col1" >1.810000</td>
             </tr>
             <tr>
-                                <td id="T_28d01_row1_col0" class="data row1 col0" >0.990000</td>
-                        <td id="T_28d01_row1_col1" class="data row1 col1" >1.980100</td>
+                                <td id="T_d6b1f_row1_col0" class="data row1 col0" >0.990000</td>
+                        <td id="T_d6b1f_row1_col1" class="data row1 col1" >1.980100</td>
             </tr>
             <tr>
-                                <td id="T_28d01_row2_col0" class="data row2 col0" >0.999000</td>
-                        <td id="T_28d01_row2_col1" class="data row2 col1" >1.998001</td>
+                                <td id="T_d6b1f_row2_col0" class="data row2 col0" >0.999000</td>
+                        <td id="T_d6b1f_row2_col1" class="data row2 col1" >1.998001</td>
             </tr>
             <tr>
-                                <td id="T_28d01_row3_col0" class="data row3 col0" >0.999900</td>
-                        <td id="T_28d01_row3_col1" class="data row3 col1" >1.999800</td>
+                                <td id="T_d6b1f_row3_col0" class="data row3 col0" >0.999900</td>
+                        <td id="T_d6b1f_row3_col1" class="data row3 col1" >1.999800</td>
             </tr>
             <tr>
-                                <td id="T_28d01_row4_col0" class="data row4 col0" >1.000100</td>
-                        <td id="T_28d01_row4_col1" class="data row4 col1" >1.000600</td>
+                                <td id="T_d6b1f_row4_col0" class="data row4 col0" >1.000100</td>
+                        <td id="T_d6b1f_row4_col1" class="data row4 col1" >1.000600</td>
             </tr>
             <tr>
-                                <td id="T_28d01_row5_col0" class="data row5 col0" >1.001000</td>
-                        <td id="T_28d01_row5_col1" class="data row5 col1" >1.006003</td>
+                                <td id="T_d6b1f_row5_col0" class="data row5 col0" >1.001000</td>
+                        <td id="T_d6b1f_row5_col1" class="data row5 col1" >1.006003</td>
             </tr>
             <tr>
-                                <td id="T_28d01_row6_col0" class="data row6 col0" >1.010000</td>
-                        <td id="T_28d01_row6_col1" class="data row6 col1" >1.060300</td>
+                                <td id="T_d6b1f_row6_col0" class="data row6 col0" >1.010000</td>
+                        <td id="T_d6b1f_row6_col1" class="data row6 col1" >1.060300</td>
             </tr>
             <tr>
-                                <td id="T_28d01_row7_col0" class="data row7 col0" >1.100000</td>
-                        <td id="T_28d01_row7_col1" class="data row7 col1" >1.630000</td>
+                                <td id="T_d6b1f_row7_col0" class="data row7 col0" >1.100000</td>
+                        <td id="T_d6b1f_row7_col1" class="data row7 col1" >1.630000</td>
             </tr>
     </tbody></table></div></div>
 <p>What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim_{x\to 1^+} f(x)\)</span> and <span class="math notranslate nohighlight">\(\lim_{x\to 1^-} f(x)\)</span>  would be?</p>
@@ -611,18 +587,20 @@ This suggests that <span class="math notranslate nohighlight">\(\lim_{x \to 1} f
 <div class="math notranslate nohighlight">
 \[\lim_{x\to a^-} f(x) = L ~~~~ \hbox{and} ~~~~ \lim_{x\to a^+} f(x)= L.\]</div>
 </div>
-</div>
-<div class="section" id="try-it-yourself">
-<h2>Try It Yourself!<a class="headerlink" href="#try-it-yourself" title="Permalink to this headline">¶</a></h2>
-<p><a class="sphinx-bs btn text-wrap btn-outline-warning btn-block reference external" href="https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?filepath=ch_Limits/limits_def_TIY.ipynb"><span>Click to launch activity</span></a></p>
-</div>
+<!-- ## Try It Yourself!
+
+```{link-button} https://binder.jupytr.cloud.psu.edu/v2/gh/28left/110jupyter/master?filepath=ch_Limits/limits_def_TIY.ipynb
+    :type: url
+    :text: Click to launch activity
+    :classes: btn-outline-warning btn-block
+``` --></div>
 </div>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "28left/110jupyter",
+            repo: "binder-examples/jupyter-stacks-datascience",
             ref: "master",
         },
         codeMirrorConfig: {

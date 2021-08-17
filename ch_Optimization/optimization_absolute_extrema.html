@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curve Sketching &#8212; Math 110 Companion Site</title>
+    <title>Absolute Extrema &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -44,16 +44,18 @@
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Intervals of Increase &amp; Decrease" href="curvesketching_increasedecrease.html" />
-    <link rel="prev" title="Related Rates" href="../ch_Implicit/implicit_relatedrates.html" />
+    <link rel="next" title="Applications" href="optimization_applications.html" />
+    <link rel="prev" title="The Second Derivative Test" href="optimization_second_derivative_test.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -319,42 +321,43 @@
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
-   Curve Sketching
+  <a class="reference internal" href="optimization_.html">
+   Optimization
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="curvesketching_increasedecrease.html">
-     Intervals of Increase &amp; Decrease
+    <a class="reference internal" href="optimization_relative_extrema.html">
+     Relative Extrema
     </a>
    </li>
-  </ul>
- </li>
-</ul>
-<p class="caption">
- <span class="caption-text">
-  Computational Examples
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../nb_Limits/limits_nb_.html">
-   Limits and Continuity
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../nb_Limits/limits_nb_estimateTIY.html">
-     Computational Examples: Limits
+    <a class="reference internal" href="optimization_critical_points.html">
+     Critical Points
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="optimization_first_derivative_test.html">
+     The First Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="optimization_second_derivative_test.html">
+     The Second Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Absolute Extrema
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="optimization_applications.html">
+     Applications
     </a>
    </li>
   </ul>
@@ -398,9 +401,12 @@
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Optimization/optimization_absolute_extrema.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Curvesketching/curvesketching_.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/ch_Optimization/optimization_absolute_extrema.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -425,6 +431,44 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#absolute-extrema-in-a-closed-interval">
+   Absolute Extrema in a Closed Interval
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval">
+   How to Find the Absolute Extrema of a Function on a Closed Interval
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-3">
+   Example 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-4">
+   Example 4
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -433,13 +477,141 @@
         
               <div>
                 
-  <div class="section" id="curve-sketching">
-<h1>Curve Sketching<a class="headerlink" href="#curve-sketching" title="Permalink to this headline">¶</a></h1>
-<p>In this chapter we apply derivatives to sketch graphs of functions.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="curvesketching_increasedecrease.html">Intervals of Increase &amp; Decrease</a></li>
+  <div class="section" id="absolute-extrema">
+<h1>Absolute Extrema<a class="headerlink" href="#absolute-extrema" title="Permalink to this headline">¶</a></h1>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The absolute extrema of a function <span class="math notranslate nohighlight">\(f\)</span>:</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(f(c) \geq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>, then <span class="math notranslate nohighlight">\(f(c)\)</span> is called the <strong>absolute maximum value</strong> of <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(f(c) \leq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>, then <span class="math notranslate nohighlight">\(f(c)\)</span> is called the <strong>absolute minimum value</strong> of <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
 </ul>
+</div>
+<div class="section" id="absolute-extrema-in-a-closed-interval">
+<h2>Absolute Extrema in a Closed Interval<a class="headerlink" href="#absolute-extrema-in-a-closed-interval" title="Permalink to this headline">¶</a></h2>
+<p>If a function <span class="math notranslate nohighlight">\(f\)</span> is continuous on a closed interval <span class="math notranslate nohighlight">\([a,b]\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> has both an absolute maximum value and an absolute minimum value on <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>Observe that for a continuous function defined on a closed interval, absolute extrema can either appear at the endpoints of the interval or at the same place as a relative extrema.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../_images/optimization_absolute_extrema_3_0.svg" src="../_images/optimization_absolute_extrema_3_0.svg" /></div>
+</div>
+</div>
+<div class="section" id="how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval">
+<h2>How to Find the Absolute Extrema of a Function on a Closed Interval<a class="headerlink" href="#how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval" title="Permalink to this headline">¶</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Finding Absolute Extrema on a Closed Interval</p>
+<p>To find the absolute extrema of a function <span class="math notranslate nohighlight">\(f\)</span> on a closed interval <span class="math notranslate nohighlight">\([a,b]\)</span></p>
+<ol class="simple">
+<li><p>Find the critical points of <span class="math notranslate nohighlight">\(f\)</span> that lie on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
+<li><p>Compute the value of <span class="math notranslate nohighlight">\(f\)</span> at each critical point found in Step 1 and compute <span class="math notranslate nohighlight">\(f(a)\)</span> and <span class="math notranslate nohighlight">\(f(b)\)</span>.</p></li>
+<li><p>The absolute maximum value and absolute minimum value of <span class="math notranslate nohighlight">\(f\)</span> will correspond to the largest and smallest numbers, respectively, found in Step 2.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>Find the absolute extrema of the function</p>
+<div class="math notranslate nohighlight">
+\[f(x)=x^3-2x^2-4x+4\]</div>
+<p>on the interval <span class="math notranslate nohighlight">\([0,3]\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Decide whether <span class="math notranslate nohighlight">\(f\)</span> is continuous on the interval.</p>
+<p>Observe that <span class="math notranslate nohighlight">\(f\)</span> is continuous on the closed interval <span class="math notranslate nohighlight">\([0,3]\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find the critical points of <span class="math notranslate nohighlight">\(f\)</span> on <span class="math notranslate nohighlight">\((0,3)\)</span>, if any.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  f'(x) &amp;= 3x^2-4x-4\\
+  &amp;=(3x+2)(x-2)
+\end{align*}\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(f'(x)=0\)</span> when <span class="math notranslate nohighlight">\(x=-2/3\)</span> and <span class="math notranslate nohighlight">\(x=2\)</span>. But since <span class="math notranslate nohighlight">\(x=-2/3\)</span> is not on the interval <span class="math notranslate nohighlight">\((0,3)\)</span>, <span class="math notranslate nohighlight">\(x=2\)</span> is the only critical point on <span class="math notranslate nohighlight">\((0,3)\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Evaluate <span class="math notranslate nohighlight">\(f(x)\)</span> at critical points on <span class="math notranslate nohighlight">\((0,3)\)</span> and the endpoints of <span class="math notranslate nohighlight">\([0,3]\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  f(0) &amp;= 4 \\
+  f(2) &amp;= -4 \\
+  f(3) &amp;= 1 
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Find absolute extrema by comparing values from Step 3.</p>
+<p>It follows that <span class="math notranslate nohighlight">\(f(2)=-4\)</span> is the absolute minimum value and <span class="math notranslate nohighlight">\(f(0)=4\)</span> is the absolute maximum value.</p>
+</div>
+</div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<p>Find the absolute extrema of the function</p>
+<div class="math notranslate nohighlight">
+\[f(x)=4x^5+5x^4\]</div>
+<p>on the interval <span class="math notranslate nohighlight">\([-2,1]\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Decide whether <span class="math notranslate nohighlight">\(f\)</span> is continuous on the interval.</p>
+<p>Observe that <span class="math notranslate nohighlight">\(f\)</span> is continuous on the closed interval <span class="math notranslate nohighlight">\([-2,1]\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find the critical points of <span class="math notranslate nohighlight">\(f\)</span> on <span class="math notranslate nohighlight">\((-2,1)\)</span>, if any.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  f'(x) &amp;= 20x^4+20x^3\\
+  &amp;=20x^3(x+1)
+\end{align*}\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(f'(x) = 0\)</span> when <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=-1\)</span>, both of which are on <span class="math notranslate nohighlight">\((-2,1)\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Evaluate <span class="math notranslate nohighlight">\(f(x)\)</span> at critical points on <span class="math notranslate nohighlight">\((-2,1)\)</span> and the endpoints of <span class="math notranslate nohighlight">\([-2,1]\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  f(-2) &amp;= -48 \\
+  f(-1) &amp;= 1 \\
+  f(0) &amp;= 0 \\
+  f(1) &amp;= 9 
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Find absolute extrema by comparing values from Step 3.</p>
+<p>It follows that <span class="math notranslate nohighlight">\(f(-2)=-48\)</span> is the absolute minimum value and <span class="math notranslate nohighlight">\(f(1)=9\)</span> is the absolute maximum value.</p>
+</div>
+</div>
+<div class="section" id="example-4">
+<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
+<p>Find the absolute extrema of the function</p>
+<div class="math notranslate nohighlight">
+\[f(x)=\frac{1}{x-1}\]</div>
+<p>on the interval <span class="math notranslate nohighlight">\([2,4]\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 1: Decide whether <span class="math notranslate nohighlight">\(f\)</span> is continuous on the interval.</p>
+<p>Observe that <span class="math notranslate nohighlight">\(f\)</span> has a discontinuity at <span class="math notranslate nohighlight">\(x=1\)</span>, however this is not on the interval <span class="math notranslate nohighlight">\([2,4]\)</span>. Therefore <span class="math notranslate nohighlight">\(f\)</span> is continuous on the closed interval <span class="math notranslate nohighlight">\([2,4]\)</span>.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 2: Find the critical points of <span class="math notranslate nohighlight">\(f\)</span> on <span class="math notranslate nohighlight">\((2,4)\)</span>, if any.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  f'(x) 
+  &amp;= \frac{d}{dx} (x-1)^{-1} \\
+  &amp;= -(x-1)^{-2}\\
+  &amp;= -\frac{1}{(x-1)^2}
+\end{align*}\]</div>
+<p>which is never equal to zero, but does always exist on the interval <span class="math notranslate nohighlight">\((2,4)\)</span>. Notice that <span class="math notranslate nohighlight">\(x=1\)</span> is not a critical point of <span class="math notranslate nohighlight">\(f\)</span> since <span class="math notranslate nohighlight">\(f(1)\)</span> is not defined. In other words, <span class="math notranslate nohighlight">\(f\)</span> does not have any critical points.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 3: Evaluate <span class="math notranslate nohighlight">\(f(x)\)</span> at critical points on <span class="math notranslate nohighlight">\((2,4)\)</span> and the endpoints of <span class="math notranslate nohighlight">\([2,4]\)</span>.</p>
+<p>Since there are no critical points, we need only evaluate <span class="math notranslate nohighlight">\(f\)</span> at <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(x=4\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  f(2) &amp;= 1 \\
+  f(4) &amp;= 1/3
+\end{align*}\]</div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Step 4: Find absolute extrema by comparing values from Step 3.</p>
+<p>It follows that <span class="math notranslate nohighlight">\(f(4)=1/3\)</span> is the absolute minimum value and <span class="math notranslate nohighlight">\(f(2)=1\)</span> is the absolute maximum value.</p>
+</div>
 </div>
 </div>
 
@@ -447,7 +619,7 @@
     {
         requestKernel: true,
         binderOptions: {
-            repo: "28left/110jupyter",
+            repo: "binder-examples/jupyter-stacks-datascience",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -456,7 +628,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ch_Curvesketching"
+            path: "./ch_Optimization"
         },
         predefinedOutput: true
     }
@@ -468,8 +640,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../ch_Implicit/implicit_relatedrates.html" title="previous page">Related Rates</a>
-    <a class='right-next' id="next-link" href="curvesketching_increasedecrease.html" title="next page">Intervals of Increase &amp; Decrease</a>
+    <a class='left-prev' id="prev-link" href="optimization_second_derivative_test.html" title="previous page">The Second Derivative Test</a>
+    <a class='right-next' id="next-link" href="optimization_applications.html" title="next page">Applications</a>
 
         </div>
         
