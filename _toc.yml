@@ -47,6 +47,7 @@ parts:
     sections:
     - file: ch_Implicit/implicit_differentiation.md
     - file: ch_Implicit/implicit_relatedrates.md
+    - file: ch_Implicit/implicit_TIY.md
   - file: ch_Curvesketching/curvesketching_
     sections:
     - file: ch_Curvesketching/curvesketching_increasedecrease
@@ -58,6 +59,7 @@ parts:
     - file: ch_Curvesketching/curvesketching_inflection.md
     - file: ch_Curvesketching/curvesketching_asymptotes.md
     - file: ch_Curvesketching/curvesketching_sketching.md
+    - file: ch_Curvesketching/curvesketching_TIY.md
   - file: ch_Optimization/optimization_
     sections:
     - file: ch_Optimization/optimization_relative_extrema.md

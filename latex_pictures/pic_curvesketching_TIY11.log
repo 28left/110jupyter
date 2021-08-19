@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.14)  18 AUG 2021 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.14)  19 AUG 2021 08:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_curvesketching_inflection.tex
-(/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_curvesketching_inflection.tex
+**/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_curvesketching_TIY11.tex
+(/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_curvesketching_TIY11.tex
 LaTeX2e <2021-06-01>
 L3 programming layer <2021-06-01> (/usr/local/texlive/2021/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files standalone
@@ -269,8 +269,8 @@ File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count280
 \l__pdf_internal_box=\box62
-) (./pic_curvesketching_inflection.aux)
-\openout1 = `pic_curvesketching_inflection.aux'.
+) (./pic_curvesketching_TIY11.aux)
+\openout1 = `pic_curvesketching_TIY11.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -306,27 +306,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 13.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
+(Font)              <7> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 19.
  [1
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./pic_curvesketching_inflection.aux) ) 
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./pic_curvesketching_TIY11.aux) ) 
 Here is how much of TeX's memory you used:
- 12979 strings out of 478536
- 274751 string characters out of 5850219
- 540089 words of memory out of 5000000
- 30719 multiletter control sequences out of 15000+600000
- 404651 words of font info for 31 fonts, out of 8000000 for 9000
+ 13818 strings out of 478536
+ 292245 string characters out of 5850219
+ 583965 words of memory out of 5000000
+ 31561 multiletter control sequences out of 15000+600000
+ 403430 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,7n,122p,467b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on pic_curvesketching_inflection.pdf (4 pages, 50184 bytes).
+ 117i,7n,122p,462b,645s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on pic_curvesketching_TIY11.pdf (1 page, 36096 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 26 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

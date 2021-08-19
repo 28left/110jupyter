@@ -1,7 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1629265471 "/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_curvesketching_concavity.tex" "pic_curvesketching_concavity.pdf" "pic_curvesketching_concavity" 1629265472
-  "/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_curvesketching_concavity.tex" 1629265471 792 c52b9419e5b6a6c936226a8fc346a378 ""
-  "/dev/null" 1629265472 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1629386484 "/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_curvesketching_TIY11.tex" "pic_curvesketching_TIY11.pdf" "pic_curvesketching_TIY11" 1629386516
+  "/Users/janreimann/Sync/GIT/110jupyter/latex_pictures/pic_curvesketching_TIY11.tex" 1629386490 1099 eb498732087630b2fa5060481b18b465 ""
+  "/dev/null" 1629386516 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -25,8 +26,11 @@
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex" 1601326656 35249 abd4adf948f960299a4b3d27c5dddf46 ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex" 1601326656 21989 fdc867d05d228316de137a9fc5ec3bbe ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex" 1601326656 8893 e851de2175338fdf7c17f3e091d94618 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex" 1601326656 319 225dfe354ba678ff3c194968db39d447 ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex" 1608933718 11518 738408f795261b70ce8dd47459171309 ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex" 1621110968 186007 6e7dfe0bd57520fd5f91641aa72dcac8 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex" 1601326656 31874 89148c383c49d4c72114a76fd0062299 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex" 1601326656 58801 1e750fb0692eb99aaac45698bbec96b1 ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex" 1601326656 32995 ac577023e12c0e4bd8aa420b2e852d1a ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfint.code.tex" 1557692582 3063 8c415c68a0f3394e45cfeca0b65f6ee6 ""
   "/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex" 1601326656 521 8e224a7af69b7fee4451d1bf76b46654 ""
@@ -95,9 +99,9 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1623723176 5184918 edc7760058d1085fc27d2bf72f6d6bd9 ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1623723213 2813066 146270937d009b944930795940a4a28b ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "pic_curvesketching_concavity.aux" 1629265472 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "pic_curvesketching_concavity.tex" 1629265471 792 c52b9419e5b6a6c936226a8fc346a378 ""
+  "pic_curvesketching_TIY11.aux" 1629386485 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "pic_curvesketching_TIY11.tex" 1629386490 1099 eb498732087630b2fa5060481b18b465 ""
   (generated)
-  "pic_curvesketching_concavity.log"
-  "pic_curvesketching_concavity.aux"
-  "pic_curvesketching_concavity.pdf"
+  "pic_curvesketching_TIY11.aux"
+  "pic_curvesketching_TIY11.pdf"
+  "pic_curvesketching_TIY11.log"
