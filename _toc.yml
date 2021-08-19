@@ -47,11 +47,17 @@ parts:
     sections:
     - file: ch_Implicit/implicit_differentiation.md
     - file: ch_Implicit/implicit_relatedrates.md
-  # - file: ch_Curvesketching/curvesketching_
-  #   sections:
-  #   - file: ch_Curvesketching/curvesketching_increasedecrease.md
-  #   - file: ch_Curvesketching/curvesketching_relative_extrema.md
-  #   - file: ch_Curvesketching/curvesketching_critical_points.md
+  - file: ch_Curvesketching/curvesketching_
+    sections:
+    - file: ch_Curvesketching/curvesketching_increasedecrease
+    - file: ch_Curvesketching/curvesketching_relative_extrema.md
+    - file: ch_Curvesketching/curvesketching_critical_points.md
+    - file: ch_Curvesketching/curvesketching_first_derivative_test.md
+    - file: ch_Curvesketching/curvesketching_second_derivative_test.md
+    - file: ch_Curvesketching/curvesketching_concavity.md
+    - file: ch_Curvesketching/curvesketching_inflection.md
+    - file: ch_Curvesketching/curvesketching_asymptotes.md
+    - file: ch_Curvesketching/curvesketching_sketching.md
   - file: ch_Optimization/optimization_
     sections:
     - file: ch_Optimization/optimization_relative_extrema.md

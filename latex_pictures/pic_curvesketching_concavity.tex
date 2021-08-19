@@ -1,0 +1,26 @@
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\begin{tikzpicture}[scale=1.25]
+    % create a white background, with a black frame
+    % \draw [fill=white] (-3,-1) rectangle (9,1); 
+    % draw axes
+    \draw [->,thick] (-2.5,0) -- (8.5,0); 
+    % tick marks
+    \foreach \x in {0,4,6} {
+        \draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+        %\node at (\x,0.5) {$0$};
+        }
+    % tick marks for + intervals
+    \foreach \x in {1,7} {
+        %\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+        \node at (\x,0.3) {$+$};
+        }
+    % tick marks for - intervals
+    \foreach \x in {-1,5} {
+        %\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+        \node at (\x,0.3) {$-$};
+        }
+    \end{tikzpicture}
+
+\end{document} 

@@ -28,7 +28,7 @@ Critical points of $f$ correspond to *possible* locations of relative extrema.
 
 Find the critical points of 
 
-$f(x) = \sqrt[3]{x^2-1}.$$
+$$f(x) = \sqrt[3]{x^2-1}.$$
 
 ```{admonition} Step 1: Compute $f'(x)$. 
 :class: tip, dropdown
@@ -64,7 +64,9 @@ The domain of $f$ is all real numbers.  Therefore, $x=-1$, $x=0$, and $x=1$ are 
 (curvesketching_critical_points_example_2)=
 ## Example 2
 
-Find the critical points of $f(x) = x^3 +3x^2 - 24x + 1$.
+Find the critical points of 
+
+$$f(x) = x^3 +3x^2 - 24x + 1.$$
 
 ```{admonition} Step 1: Compute $f'(x)$.
 :class: tip, dropdown

@@ -208,7 +208,7 @@ Notice that $f'(x)$ is defined for all real numbers.
 
 Since we found $x=-3$ and $x=1$ to be the only values where $f'(x)$ could change sign, we break up the domain of $f$ (which is $(-\infty,\infty)$) into the following subintervals:
 
-$$(-\infty,-3), ~(-3,1), ~\hbox{ and }~  (1,\infty)$$\\
+$$(-\infty,-3), ~(-3,1), ~\hbox{ and }~  (1,\infty)$$
 ```
 
 ```{admonition} Step 5: Plug one number from each subinterval into $f'(x)$  to determine the sign of $f'(x)$.
