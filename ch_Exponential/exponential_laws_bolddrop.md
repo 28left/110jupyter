@@ -15,103 +15,73 @@ kernelspec:
 
 Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and $n$ be positive numbers.
 
-````{panels}
-:body: bg-light
+```{admonition} (1) Addition Laws
+:class: info
 
-- **Addition of Exponents Law**
+| **Exponential** | **Logarithmic** |
+| :---: | :---: |
+| **Addition of Exponents Law**  | **Logarithmic Addition Law** |
+| $b^x b^y = b^{x + y}$ | $\log_{b}(mn) = \log_b(m) + \log_b(n)$ |
 
-  $$b^x b^y = b^{x + y}$$
+```
 
-- **Difference of Exponents Law**
+```{admonition} (2) Subtraction Laws
+:class: info
 
-  $$\frac{b^x}{b^y} = b^{x - y}$$
+| **Exponential** | **Logarithmic** |
+| :---: | :---: |
+| **Difference of Exponents Law**  | **Logarithmic Subtraction Law** |
+| $\frac{b^x}{b^y} = b^{x - y}$ | $\log_{b}\left( \frac{m}{n} \right) = \log_b(m) - \log_b(n)$ |
 
-- **Exponentiation Law**
+```
 
-  $$\left( b^x \right)^y = b^{xy}$$
+```{admonition} (3) Power Laws
+:class: info
 
-- **Product Distribution Law**
+| **Exponential** | **Logarithmic** |
+| :---: | :---: |
+| **Exponential Law**  | **Logarithm of a Power** |
+| $\left( b^x \right)^y = b^{xy}$ | $\log_b(m^n) = n \log_b(m)$ |
 
-  $$(ab)^x = a^xb^x$$
+```
 
-- **Fractional Distribution Law**
+```{admonition} (4) Other Laws and Identities
+:class: info
 
-  $$\left(\frac{a}{b}\right)^x = \frac{a^x}{b^x}$$
+| **Exponential** | **Logarithmic** |
+| :---: | :---: |
+| **Product Distribution Law**  | **Logarithm of 1** |
+| $(ab)^x = a^xb^x$ | $\log_b(1) = 0 ~~\&~~ \ln(1) = 0$ |
+| **Fractional Distribution Law**  | **Logarithm of the Base** |
+| $\left(\frac{a}{b}\right)^x = \frac{a^x}{b^x}$ | $\log_b(b) = 1 ~~\&~~ \ln(e) = 1$ |
 
----
+```
 
-- **Logarithmic Addition Law** 
-  
-  $$\log_{b}(mn) = \log_b(m) + \log_b(n)$$
+```{admonition} (5) Cancellation Laws
+:class: info
 
-- **Logarithmic Subtraction Law**
+| **Exponential** | **Logarithmic** |
+| :---: | :---: |
+| For all $x > 0$ | For all $x$ |
+| $e^{\ln(x)} = x$ | $\ln(e^x) = x$ |
 
-  $$\log_{b}\left( \frac{m}{n} \right) = \log_b(m) - \log_b(n)$$
+```
 
-- **Logarithm of a Power**
+```{admonition} (6) Derivatives
+:class: info
 
-  $$\log_b(m^n) = n \log_b(m)$$
-
-- **Logarithm of 1**
-
-  $$\log_b(1) = 0 ~~\&~~ \ln(1) = 0$$
-
-- **Logarithm of the Base**
-
-  $$\log_b(b) = 1 ~~\&~~ \ln(e) = 1$$
-
-````
-
-
-## Cancellation properties
-
-````{panels}
-:body: bg-light
-
-- For all $x>0$  
-  
-  $$e^{\ln(x)} = x$$
-
----
-
-- For all $x$ 
-
-  $$\ln(e^x) = x$$
-````
-
-## Derivatives
-
-````{panels}
-:body: bg-light
-
-- **Derivative of $e^x$**
-
-  $$\frac{d}{dx}e^x = e^x$$
-
-- **Derivative of $e^{f(x)}$**
-
-  $$\frac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$$
-
----
-
-- **Derivative of $\ln(x)$**
-
-  $$\frac{d}{dx}\ln(x) = \frac{1}{x}$$
-
-- **Derivative of $\ln(f(x))$**
-
-  $$\frac{d}{dx}\ln(f(x)) = \frac{1}{f(x)} f'(x)$$
-
-````
-
-
-
+| **Exponential** | **Logarithmic** |
+| :---: | :---: |
+| **Derivative of $e^x$**  | **Derivative of $e^{f(x)}$** |
+| $\frac{d}{dx}e^x = e^x$ | $\frac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$ |
+```
 
 ## Example 1
 
 Find all values of $x$ such that $\displaystyle 4^{x-x^2} = \frac{1}{16^x}$.
 
-```{dropdown} **Step 1:** Write both sides of the equation as a power of $4$.
+```{admonition} Step 1: Write both sides of the equation as a power of $4$.
+:class: tip, dropdown
 
 Since the left-hand side is already written as a power of $4$, focus on the right-hand side.
 
@@ -127,7 +97,8 @@ Therefore, the original equation can be rewritten in the following manner:
 $$4^{x-x^2} = 4^{-2x}.$$
 ```
 
-```{dropdown} **Step 2:** Set the exponents equal to each other, and solve for $x$.
+```{admonition} Step 2: Set the exponents equal to each other, and solve for $x$.
+:class: tip, dropdown
 
 \begin{align*}
   x-x^2 &= -2x && \\
@@ -143,24 +114,28 @@ Find all values of $x$ such that:
 
 $$2^{2x}-40\cdot 2^x +256 = 0.$$
 
-```{dropdown} **Step 1:** Rewrite the equation in terms of $\displaystyle 2^x$.
+```{admonition} Step 1: Rewrite the equation in terms of $\displaystyle 2^x$.
+:class: tip, dropdown
 
 $$(2^x)^2 -40\cdot 2^x+256 = 0.$$
 ```
 
-```{dropdown} **Step 2:** Let $\displaystyle u = 2^x$.
+```{admonition} Step 2: Let $\displaystyle u = 2^x$.
+:class: tip, dropdown
 
 $$u^2-40u+256 =0.$$
 ```
 
-```{dropdown} **Step 3:** Factor and solve for $u$.
+```{admonition} Step 3: Factor and solve for $u$.
+:class: tip, dropdown
 
 $$(u-8)(u-32) = 0.$$
 
 $$u=8 ~~~~ \hbox{ or } ~~~~ u=32.$$
 ```
 
-```{dropdown} **Step 4:** Substitute $2^x$ back in for $u$ and solve for $x$.
+```{admonition} Step 4: Substitute $2^x$ back in for $u$ and solve for $x$.
+:class: tip, dropdown
 
 \begin{align*}
   2^x &= 8 & 2^x &= 32\\
@@ -172,7 +147,8 @@ $$u=8 ~~~~ \hbox{ or } ~~~~ u=32.$$
 
 Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 
-```{dropdown} **Step 1:** Isolate $e^{-2t}$ using the following steps.
+```{admonition} Step 1: Isolate $e^{-2t}$ using the following steps.
+:class: tip, dropdown
 
 \begin{align*}
   360 &= 90(1+9e^{-2t}) && \text{Multiply both sides by the denominator} \\ \\
@@ -182,7 +158,8 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 \end{align*}
 ```
 
-```{dropdown} **Step 2:** Take the natural logarithm of both sides.
+```{admonition} Step 2: Take the natural logarithm of both sides.
+:class: tip, dropdown
 
 \begin{align*}
   \ln \left(\frac{1}{3} \right) 
@@ -191,7 +168,8 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Solve for $t$.
+```{admonition} Step 3: Solve for $t$.
+:class: tip, dropdown
 
 \begin{align*}
   t 
@@ -206,7 +184,8 @@ Expand the following expression:
 
 $$\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).$$
 
-```{dropdown} **Step 1:** Use the laws of logarithms to expand the given expression.
+```{admonition} Step 1: Use the laws of logarithms to expand the given expression.
+:class: tip, dropdown
 
 \begin{align*}
   \ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right) 
@@ -222,7 +201,8 @@ $$\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).$$
 
 Find the tangent line to $y=\dfrac{e^{27x}}{x^9}$ at the point $(1,e^{27})$.
 
-```{dropdown} **Step 1:** Recall the point-slope equation of a line.
+```{admonition} Step 1: Recall the point-slope equation of a line.
+:class: tip, dropdown
 
 Point-Slope: 
 
@@ -231,7 +211,8 @@ $$y-b = m(x-a),$$
 where $m$ is the slope of the line and $(a,b)$ is a point on the line.
 ```
 
-```{dropdown} **Step 2:** Compute the slope of the line by using the derivative. 
+```{admonition} Step 2: Compute the slope of the line by using the derivative. 
+:class: tip, dropdown
 
 Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 
@@ -247,7 +228,8 @@ Since the given point is $(1,e^{27})$, plug in $x=1$ into the derivative to find
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Write down the equation of the tangent line.
+```{admonition} Step 3: Write down the equation of the tangent line.
+:class: tip, dropdown
 
 Since we were given the point $(1,e^{27})$ (i.e., $a=1$ and $b=e^{27}$) and we found the slope ($m=18e^{27}$), we can now write down the equation of the tangent line using the point-slope equation of a line. 
 
@@ -264,12 +246,14 @@ $$p(x) = x^3e^{5x}+12.$$
 
 Find the marginal revenue function $R'(x)$.
 
-```{dropdown} **Step 1:** Find the revenue function, $R(x)$, using the formula $R(x) = x\cdot p(x)$.
+```{admonition} Step 1: Find the revenue function, $R(x)$, using the formula $R(x) = x\cdot p(x)$.
+:class: tip, dropdown
 
 $$R(x) = x^4e^{5x} +12x.$$
 ```
 
-```{dropdown} **Step 2:** Compute the derivative of $R(x)$. 
+```{admonition} Step 2: Compute the derivative of $R(x)$. 
+:class: tip, dropdown
 
 Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 
@@ -284,7 +268,8 @@ Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 
 Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 
-```{dropdown} **Step 1:** Expand $f(x)$ using laws of logarithms.
+```{admonition} Step 1: Expand $f(x)$ using laws of logarithms.
+:class: tip, dropdown
 
 \begin{align*}
   \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)
@@ -294,7 +279,8 @@ Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 \end{align*}
 ```
 
-```{dropdown} **Step 2:** Compute the derivative.  Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
+```{admonition} Step 2: Compute the derivative.  Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
+:class: tip, dropdown
 
 \begin{align*}
   \frac{d}{dx}\left(\frac{1}{2}\ln(6x+1) - \ln(5) - \ln(x)\right)
@@ -308,12 +294,14 @@ Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 
 Let $\ln(xy)+y^7 = x^3 + 2x$. Find $\dfrac{dy}{dx}$.
 
-```{dropdown} **Step 1:** Differentiate both sides using implicit differentiation.
+```{admonition} Step 1: Differentiate both sides using implicit differentiation.
+:class: tip, dropdown
 
 $$\frac{1}{xy} (y +xy') + 7y^6y' = 3x^2+2.$$
 ```
 
-```{dropdown} **Step 2:** Multiply both sides by $xy$.
+```{admonition} Step 2: Multiply both sides by $xy$.
+:class: tip, dropdown
 
 \begin{align*}
   xy\left[ \frac{1}{xy} (y +xy') + 7y^6y' \right]
@@ -329,17 +317,20 @@ Therefore,
 $$y+xy' + 7xy^7y' = 3x^3y + 2xy.$$
 ```
 
-```{dropdown} **Step 3:** Rearrange terms so that any term with a factor of $y'$ is on the left-hand side of the equation and all other terms are on the right-hand side.
+```{admonition} Step 3: Rearrange terms so that any term with a factor of $y'$ is on the left-hand side of the equation and all other terms are on the right-hand side.
+:class: tip, dropdown
 
 $$xy' + 7xy^7y' = 3x^3y + 2xy - y.$$
 ```
 
-```{dropdown} **Step 4:** Factor out $y'$ on the left-hand side.
+```{admonition} Step 4: Factor out $y'$ on the left-hand side.
+:class: tip, dropdown
 
 $$y'(x + 7xy^7) = 3x^3y + 2xy - y.$$
 ```
 
-```{dropdown} **Step 5:** Solve for $y'$.
+```{admonition} Step 5: Solve for $y'$.
+:class: tip, dropdown
 
 $$y' = \frac{3x^3y + 2xy - y}{x + 7xy^7}.$$
 ```
