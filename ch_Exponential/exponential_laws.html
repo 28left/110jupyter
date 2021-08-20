@@ -1,0 +1,1135 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laws of Exponential and Logarithmic Functions &#8212; Math 110 Companion Site</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Logarithmic Differentiation" href="exponential_logarithmic_diff.html" />
+    <link rel="prev" title="Exponential and Logarithmic Functions" href="exponential_functions.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/PSU_SCI_RGB_2C.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Math 110 Companion Site</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to Math 110
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Packets e-book
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Precalc/precalc_.html">
+   Precalculus Review
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_simplification.html">
+     Algebraic Simplification Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_factoring.html">
+     Factoring Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_solvingequations.html">
+     Solving Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_graphing.html">
+     Graphing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_inequalities.html">
+     Solving Inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_domain.html">
+     The Domain of a Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Functions/functions_.html">
+   Functions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_functionsdomainrange.html">
+     Functions, Domain, and Range
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_composition.html">
+     Composition of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">
+     Cost, Revenue, and Profit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">
+     Power, Polynomial &amp; Rational Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_demandsupply.html">
+     Demand and Supply
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_application.html">
+     An Application
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Limits/limits_.html">
+   Limits and Continuity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_def.html">
+     Limit of a Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_proplim.html">
+     Properties of Finite Limits
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_graphs.html">
+     Examples: Computing Limits from Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_algebra.html">
+     Examples: Computing Limits Algebraically
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_indeterminate.html">
+     Indeterminate Forms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_infinity.html">
+     Limits at Infinity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_continuity.html">
+     Continuity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Derivatives/derivatives_.html">
+   Derivatives
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_def.html">
+     The Concept of the Derivative
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">
+     Basic Rules of Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Marginal/marginal_.html">
+   Marginal Analysis
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_costrevprofit.html">
+     Cost, Revenue, &amp; Profit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_marginalanalysis.html">
+     Marginal Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_elasticitydemand.html">
+     Elasticity of Demand
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_elasticityrevenue.html">
+     Elasticity &amp; Total Revenue
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Implicit/implicit_.html">
+   Implicit Differentiation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_differentiation.html">
+     Implicit Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_relatedrates.html">
+     Related Rates
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">
+   Curve Sketching
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_increasedecrease.html">
+     Intervals of Increase &amp; Decrease
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_relative_extrema.html">
+     Relative Extrema
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_critical_points.html">
+     Critical Points
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_first_derivative_test.html">
+     The First Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_second_derivative_test.html">
+     The Second Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_concavity.html">
+     Intervals of Concavity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_inflection.html">
+     Inflection Points
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_asymptotes.html">
+     Asymptotes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_sketching.html">
+     Curve Sketching
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Optimization/optimization_.html">
+   Optimization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_relative_extrema.html">
+     Relative Extrema
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_critical_points.html">
+     Critical Points
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_first_derivative_test.html">
+     The First Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_second_derivative_test.html">
+     The Second Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_absolute_extrema.html">
+     Absolute Extrema
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_applications.html">
+     Applications
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="exponential_.html">
+   Exponential &amp; Logarithmic Functions
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="exponential_functions.html">
+     Exponential and Logarithmic Functions
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Laws of Exponential and Logarithmic Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exponential_logarithmic_diff.html">
+     Logarithmic Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="exponential_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Exponential/exponential_laws.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/ch_Exponential/exponential_laws.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cancellation-properties">
+   Cancellation properties
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#derivatives">
+   Derivatives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-3">
+   Example 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-4">
+   Example 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-5">
+   Example 5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-6">
+   Example 6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-7">
+   Example 7
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-8">
+   Example 8
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="laws-of-exponential-and-logarithmic-functions">
+<h1>Laws of Exponential and Logarithmic Functions<a class="headerlink" href="#laws-of-exponential-and-logarithmic-functions" title="Permalink to this headline">¶</a></h1>
+<p>Let <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> be positive numbers and <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> be real numbers. Let <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> be positive numbers.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body bg-light docutils">
+<ul>
+<li><p class="card-text"><strong>Addition of Exponents Law</strong></p>
+<div class="math notranslate nohighlight">
+\[b^x b^y = b^{x + y}\]</div>
+</li>
+<li><p class="card-text"><strong>Difference of Exponents Law</strong></p>
+<div class="math notranslate nohighlight">
+\[\frac{b^x}{b^y} = b^{x - y}\]</div>
+</li>
+<li><p class="card-text"><strong>Exponentiation Law</strong></p>
+<div class="math notranslate nohighlight">
+\[\left( b^x \right)^y = b^{xy}\]</div>
+</li>
+<li><p class="card-text"><strong>Product Distribution Law</strong></p>
+<div class="math notranslate nohighlight">
+\[(ab)^x = a^xb^x\]</div>
+</li>
+<li><p class="card-text"><strong>Fractional Distribution Law</strong></p>
+<div class="math notranslate nohighlight">
+\[\left(\frac{a}{b}\right)^x = \frac{a^x}{b^x}\]</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body bg-light docutils">
+<ul>
+<li><p class="card-text"><strong>Logarithmic Addition Law</strong></p>
+<div class="math notranslate nohighlight">
+\[\log_{b}(mn) = \log_b(m) + \log_b(n)\]</div>
+</li>
+<li><p class="card-text"><strong>Logarithmic Subtraction Law</strong></p>
+<div class="math notranslate nohighlight">
+\[\log_{b}\left( \frac{m}{n} \right) = \log_b(m) - \log_b(n)\]</div>
+</li>
+<li><p class="card-text"><strong>Logarithm of a Power</strong></p>
+<div class="math notranslate nohighlight">
+\[\log_b(m^n) = n \log_b(m)\]</div>
+</li>
+<li><p class="card-text"><strong>Logarithm of 1</strong></p>
+<div class="math notranslate nohighlight">
+\[\log_b(1) = 0 ~~\&amp;~~ \ln(1) = 0\]</div>
+</li>
+<li><p class="card-text"><strong>Logarithm of the Base</strong></p>
+<div class="math notranslate nohighlight">
+\[\log_b(b) = 1 ~~\&amp;~~ \ln(e) = 1\]</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="cancellation-properties">
+<h2>Cancellation properties<a class="headerlink" href="#cancellation-properties" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body bg-light docutils">
+<ul>
+<li><p class="card-text">For all <span class="math notranslate nohighlight">\(x&gt;0\)</span></p>
+<div class="math notranslate nohighlight">
+\[e^{\ln(x)} = x\]</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body bg-light docutils">
+<ul>
+<li><p class="card-text">For all <span class="math notranslate nohighlight">\(x\)</span></p>
+<div class="math notranslate nohighlight">
+\[\ln(e^x) = x\]</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="derivatives">
+<h2>Derivatives<a class="headerlink" href="#derivatives" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body bg-light docutils">
+<ul>
+<li><p class="card-text"><strong>Derivative of <span class="math notranslate nohighlight">\(e^x\)</span></strong></p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dx}e^x = e^x\]</div>
+</li>
+<li><p class="card-text"><strong>Derivative of <span class="math notranslate nohighlight">\(e^{f(x)}\)</span></strong></p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)\]</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body bg-light docutils">
+<ul>
+<li><p class="card-text"><strong>Derivative of <span class="math notranslate nohighlight">\(\ln(x)\)</span></strong></p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dx}\ln(x) = \frac{1}{x}\]</div>
+</li>
+<li><p class="card-text"><strong>Derivative of <span class="math notranslate nohighlight">\(\ln(f(x))\)</span></strong></p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dx}\ln(f(x)) = \frac{1}{f(x)} f'(x)\]</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(\displaystyle 4^{x-x^2} = \frac{1}{16^x}\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Write both sides of the equation as a power of <span class="math notranslate nohighlight">\(4\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Since the left-hand side is already written as a power of <span class="math notranslate nohighlight">\(4\)</span>, focus on the right-hand side.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  \frac{1}{16^x} 
+  &amp;= 16^{-x} \\
+  &amp;= (4^2)^{-x}  &amp;&amp; \hbox{since $16 = 4^2$}\\
+  &amp;= 4^{-2x} &amp;&amp; \hbox{since $(b^x)^y = b^{xy}$}
+\end{align*}\]</div>
+<p class="card-text">Therefore, the original equation can be rewritten in the following manner:</p>
+<div class="math notranslate nohighlight">
+\[4^{x-x^2} = 4^{-2x}.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Set the exponents equal to each other, and solve for <span class="math notranslate nohighlight">\(x\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  x-x^2 &amp;= -2x &amp;&amp; \\
+  3x-x^2 &amp;= 0 &amp;&amp; \text{Move all variables to one side}\\
+  x(3-x) &amp;= 0 &amp;&amp; \text{Factor}\\
+  x = 0&amp;, x = 3 &amp;&amp; \text{Solve for } x \text{ by setting each factor equal to } 0
+\end{align*}\]</div>
+</div>
+</details></div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that:</p>
+<div class="math notranslate nohighlight">
+\[2^{2x}-40\cdot 2^x +256 = 0.\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Rewrite the equation in terms of <span class="math notranslate nohighlight">\(\displaystyle 2^x\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[(2^x)^2 -40\cdot 2^x+256 = 0.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Let <span class="math notranslate nohighlight">\(\displaystyle u = 2^x\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[u^2-40u+256 =0.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Factor and solve for <span class="math notranslate nohighlight">\(u\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[(u-8)(u-32) = 0.\]</div>
+<div class="math notranslate nohighlight">
+\[u=8 ~~~~ \hbox{ or } ~~~~ u=32.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 4:</strong> Substitute <span class="math notranslate nohighlight">\(2^x\)</span> back in for <span class="math notranslate nohighlight">\(u\)</span> and solve for <span class="math notranslate nohighlight">\(x\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  2^x &amp;= 8 &amp; 2^x &amp;= 32\\
+  x&amp;=3 &amp; x&amp;=5
+\end{align*}\]</div>
+</div>
+</details></div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<p>Find all values of <span class="math notranslate nohighlight">\(t\)</span> such that <span class="math notranslate nohighlight">\(\dfrac{360}{1+9e^{-2t}} = 90\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Isolate <span class="math notranslate nohighlight">\(e^{-2t}\)</span> using the following steps.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  360 &amp;= 90(1+9e^{-2t}) &amp;&amp; \text{Multiply both sides by the denominator} \\ \\
+  4 &amp;= 1+9e^{-2t} &amp;&amp; \text{Divide both sides by 90} &amp;&amp;\\ \\
+  3 &amp;= 9e^{-2t} &amp;&amp; \text{Subtract 1 from both sides}&amp;&amp;\\ \\
+  1/3 &amp;= e^{-2t} &amp;&amp; \text{Divide both sides by 9}&amp;&amp;
+\end{align*}\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Take the natural logarithm of both sides.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  \ln \left(\frac{1}{3} \right) 
+  &amp;= \ln(e^{-2t}) \\ 
+  &amp;= -2t &amp;&amp; \hbox{Cancellation property $\ln(e^x) = x$}
+\end{align*}\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Solve for <span class="math notranslate nohighlight">\(t\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  t 
+  &amp;= -\frac{1}{2}  \ln \left( \frac{1}{3}\right)\\
+  &amp;= \frac{1}{2}\ln(3)  &amp;&amp; \hbox{since $\ln(1/3) = \ln(3^{-1}) = -\ln(3)$}
+\end{align*}\]</div>
+</div>
+</details></div>
+<div class="section" id="example-4">
+<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
+<p>Expand the following expression:</p>
+<div class="math notranslate nohighlight">
+\[\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Use the laws of logarithms to expand the given expression.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  \ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right) 
+  &amp;= \ln(\sqrt[3]{(x+1)^2}\cdot e^{5x}) - \ln(x) &amp;&amp; \hbox{using $\ln(m/n) = \ln(m) - \ln(n)$} \\ \\
+  &amp;= \ln(\sqrt[3]{(x+1)^2}) + \ln(e^{5x}) - \ln(x) &amp;&amp; \hbox{using $\ln(mn) = \ln(m) + \ln(n)$}\\ \\
+  %&amp;= \ln((x+1)^{2/3}) + \ln(e^{5x}) - \ln(x)\\ \\
+  &amp;= \frac{2}{3} \ln(x+1) + 5x \ln(e) - \ln(x) &amp;&amp; \hbox{using $\ln(m^n) = n\ln(m)$}\\ \\
+  &amp;= \frac{2}{3} \ln(x+1) + 5x - \ln(x) &amp;&amp; \hbox{using $\ln(e) = 1$.}
+\end{align*}\]</div>
+</div>
+</details></div>
+<div class="section" id="example-5">
+<h2>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h2>
+<p>Find the tangent line to <span class="math notranslate nohighlight">\(y=\dfrac{e^{27x}}{x^9}\)</span> at the point <span class="math notranslate nohighlight">\((1,e^{27})\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Recall the point-slope equation of a line.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Point-Slope:</p>
+<div class="math notranslate nohighlight">
+\[y-b = m(x-a),\]</div>
+<p class="card-text">where <span class="math notranslate nohighlight">\(m\)</span> is the slope of the line and <span class="math notranslate nohighlight">\((a,b)\)</span> is a point on the line.</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Compute the slope of the line by using the derivative.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Recall <span class="math notranslate nohighlight">\(\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[y' = \frac{e^{27x}\cdot 27 \cdot x^9 - e^{27x}\cdot 9x^8}{x^{18}}.\]</div>
+<p class="card-text">Since the given point is <span class="math notranslate nohighlight">\((1,e^{27})\)</span>, plug in <span class="math notranslate nohighlight">\(x=1\)</span> into the derivative to find the slope of the tangent line.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  m
+  &amp;= y'(1) \\
+  &amp;= \frac{e^{27}\cdot 27 - e^{27}\cdot 9}{1}\\
+  &amp;= 18e^{27}.
+\end{align*}\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Write down the equation of the tangent line.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Since we were given the point <span class="math notranslate nohighlight">\((1,e^{27})\)</span> (i.e., <span class="math notranslate nohighlight">\(a=1\)</span> and <span class="math notranslate nohighlight">\(b=e^{27}\)</span>) and we found the slope (<span class="math notranslate nohighlight">\(m=18e^{27}\)</span>), we can now write down the equation of the tangent line using the point-slope equation of a line.</p>
+<div class="math notranslate nohighlight">
+\[y-e^{27} = 18e^{27}(x-1).\]</div>
+</div>
+</details></div>
+<div class="section" id="example-6">
+<h2>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h2>
+<p>Suppose the unit selling price <span class="math notranslate nohighlight">\(p(x)\)</span> and the quantity supplied <span class="math notranslate nohighlight">\(x\)</span> of a certain product is given by</p>
+<div class="math notranslate nohighlight">
+\[p(x) = x^3e^{5x}+12.\]</div>
+<p>Find the marginal revenue function <span class="math notranslate nohighlight">\(R'(x)\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Find the revenue function, <span class="math notranslate nohighlight">\(R(x)\)</span>, using the formula <span class="math notranslate nohighlight">\(R(x) = x\cdot p(x)\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[R(x) = x^4e^{5x} +12x.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Compute the derivative of <span class="math notranslate nohighlight">\(R(x)\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Recall <span class="math notranslate nohighlight">\(\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  R'(x) 
+  &amp;= 4x^3(e^{5x})+x^4(e^{5x}\cdot 5) + 12 &amp;&amp; \text{using Product Rule}\\
+  &amp;= x^3 e^{5x}(4+5x) + 12.
+\end{align*}\]</div>
+</div>
+</details></div>
+<div class="section" id="example-7">
+<h2>Example 7<a class="headerlink" href="#example-7" title="Permalink to this headline">¶</a></h2>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Expand <span class="math notranslate nohighlight">\(f(x)\)</span> using laws of logarithms.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)
+  &amp;= \ln(\sqrt{6x+1}) - \ln(5x) &amp;&amp; \hbox{since $\ln(m/n) = \ln(m) - \ln(n)$} \\ \\
+  &amp;= \ln((6x+1)^{1/2}) - [\ln(5) + \ln(x)] &amp;&amp; \hbox{since $\ln(mn) = \ln(m) + \ln(n)$} \\ \\
+  &amp;= \frac{1}{2}\ln(6x+1) - \ln(5) - \ln(x) &amp;&amp; \hbox{since $\ln(m^n) = n\ln(m).$}
+\end{align*}\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Compute the derivative.  Recall <span class="math notranslate nohighlight">\(\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  \frac{d}{dx}\left(\frac{1}{2}\ln(6x+1) - \ln(5) - \ln(x)\right)
+  &amp;= \frac{1}{2}\cdot \frac{1}{6x+1}\cdot 6 - 0 - \frac{1}{x} \\
+  &amp;= \frac{3}{6x+1} - \frac{1}{x}.
+\end{align*}\]</div>
+</div>
+</details></div>
+<div class="section" id="example-8">
+<h2>Example 8<a class="headerlink" href="#example-8" title="Permalink to this headline">¶</a></h2>
+<p>Let <span class="math notranslate nohighlight">\(\ln(xy)+y^7 = x^3 + 2x\)</span>. Find <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Differentiate both sides using implicit differentiation.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[\frac{1}{xy} (y +xy') + 7y^6y' = 3x^2+2.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Multiply both sides by <span class="math notranslate nohighlight">\(xy\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  xy\left[ \frac{1}{xy} (y +xy') + 7y^6y' \right]
+  &amp;= xy\frac{1}{xy} (y +xy') + xy\cdot 7y^6y' \\
+  &amp;= (y+xy') + 7xy^7y'\\
+  \\
+  xy\left[ 3x^2 + 2 \right]
+  &amp;= 3x^3y + 2xy.
+\end{align*}\]</div>
+<p class="card-text">Therefore,</p>
+<div class="math notranslate nohighlight">
+\[y+xy' + 7xy^7y' = 3x^3y + 2xy.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Rearrange terms so that any term with a factor of <span class="math notranslate nohighlight">\(y'\)</span> is on the left-hand side of the equation and all other terms are on the right-hand side.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[xy' + 7xy^7y' = 3x^3y + 2xy - y.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 4:</strong> Factor out <span class="math notranslate nohighlight">\(y'\)</span> on the left-hand side.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[y'(x + 7xy^7) = 3x^3y + 2xy - y.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 5:</strong> Solve for <span class="math notranslate nohighlight">\(y'\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[y' = \frac{3x^3y + 2xy - y}{x + 7xy^7}.\]</div>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./ch_Exponential"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="exponential_functions.html" title="previous page">Exponential and Logarithmic Functions</a>
+    <a class='right-next' id="next-link" href="exponential_logarithmic_diff.html" title="next page">Logarithmic Differentiation</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Department of Mathematics, Penn State University Park<br/>
+        
+            &copy; Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
