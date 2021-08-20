@@ -68,6 +68,7 @@ parts:
     - file: ch_Optimization/optimization_second_derivative_test.md
     - file: ch_Optimization/optimization_absolute_extrema.md
     - file: ch_Optimization/optimization_applications.md
+    - file: ch_Optimization/optimization_TIY.md
   - file: ch_Exponential/exponential_
     sections:
     - file: ch_Exponential/exponential_functions.md
