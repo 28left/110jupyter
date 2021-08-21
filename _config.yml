@@ -57,6 +57,13 @@ parse:
     - amsmath
     - linkify
     - colon_fence
+    - substitution
+  myst_substitutions:
+    my_drop: ':::{dropdown}'
+    my_drop_key: |
+      :title: bg-secondary text-white
+      :body: bg-light
+      :animate: fade-in
 
 
 
