@@ -31,7 +31,7 @@ Use the following strategy to solve an initial value problem.
 - Use the initial condition, $f(a) = b$, to solve for $C$.
 ```
 
-## Example 1
+## Example 11
 
 Solve the following initial value problem:
 
@@ -40,11 +40,8 @@ Solve the following initial value problem:
   f(1) &= 6
 \end{align*}
 
-```{dropdown} **Step 1:** Find the general solution to the differential equation.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Find the general solution to the differential equation.
+:class: tip, dropdown
 
 \begin{align*}
   f(x) 
@@ -54,11 +51,8 @@ Solve the following initial value problem:
 \end{align*}
 ```
 
-```{dropdown} **Step 2:** Use the initial condition to solve for $C$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 2: Use the initial condition to solve for $C$.
+:class: tip, dropdown
 
 \begin{align*}
   6 
@@ -72,24 +66,18 @@ Therefore
 $$C = 6 - \frac{1}{2} - 9 = - \frac{7}{2}.$$
 ```
 
-```{dropdown} **Step 3:** Combine the results from Steps 1 and 2 to get the solution to the initial value problem.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 3: Combine the results from Steps 1 and 2 to get the solution to the initial value problem.
+:class: tip, dropdown
 
 $$f(x) = x^4 - x^3 + \frac{x^2}{2} + 9x - \frac{7}{2}$$
 ```
 
-## Example 2
+## Example 12
 
 The estimated marginal profit associated with producing/selling jasmine rice is $P'(x) = -0.08x + 24$ dollars per pound per month where $x$ is the production level in pounds per month. The fixed cost of producing/selling rice is \$1,500 a month. What is the maximum monthly profit?
 
-```{dropdown} **Step 1:** Find the value of $x$ that maximizes profit.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Find the value of $x$ that maximizes profit.
+:class: tip, dropdown
 
 $P'(x)$ equals zero when
 
@@ -104,11 +92,8 @@ Notice that $P''(x) = -8/100$ is always negative. Therefore, $P(x)$ is always co
 Ultimately, we will evaluate $P(300)$ to find the maximum monthly profit, but we don't currently have a formula for $P(x)$. Therefore, our next goal is to find $P(x)$.
 ```
 
-```{dropdown} **Step 2:** Identify the initial value problem.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 2: Identify the initial value problem.
+:class: tip, dropdown
 
 \begin{align*}
   P'(x) &= -\frac{8}{100}x +24 && \text{Stated in the problem}\\
@@ -118,11 +103,8 @@ Ultimately, we will evaluate $P(300)$ to find the maximum monthly profit, but we
 Note that the initial profit is negative since fixed costs count against profit.
 ```
 
-```{dropdown} **Step 3:** Solve the initial value problem:
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 3: Solve the initial value problem:
+:class: tip, dropdown
 
 \begin{align*}
   P(x) &= \int P'(x) ~dx \\
@@ -140,11 +122,8 @@ P(0) &= -1500 \\
 Therefore, $P(x) = -\dfrac{4}{100}x^2 + 24x -1500$.
 ```
 
-```{dropdown} **Step 4:** From Step 1, we know that profit is maximized when $x=300$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 4: From Step 1, we know that profit is maximized when $x=300$.
+:class: tip, dropdown
 
 \begin{align*}
   P(300) 

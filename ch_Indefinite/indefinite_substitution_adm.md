@@ -31,16 +31,12 @@ kernelspec:
 4. Replace $u$ with $g(x)$.
 ```
 
+## Example 13
 
-## Example 1
+Compute $ \displaystyle \int 20x^3 \sqrt{5x^4+7} ~dx$.
 
-Compute $\displaystyle \int 20x^3 \sqrt{5x^4+7} ~dx$.
-
-```{dropdown} **Step 1:** Identify a suitable substitution.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Identify a suitable substitution.
+:class: tip, dropdown
 
 Based on rewriting the integral in the following form
 
@@ -49,20 +45,14 @@ $$\int (5x^4+7)^{1/2} ~20x^3  ~dx$$
 let $u=5x^4 + 7$ and $du = 20x^3 ~dx$.
 ```
 
-```{dropdown} **Step 2:** Rewrite the integral in terms of $u$ and $du$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 2: Rewrite the integral in terms of $u$ and $du$.
+:class: tip, dropdown
 
 $$\int (5x^4+7)^{1/2} ~20x^3  ~dx = \int u^{1/2} ~du$$
 ```
 
-```{dropdown} **Step 3:** Evaluate the integral in terms of $u$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 3: Evaluate the integral in terms of $u$.
+:class: tip, dropdown
 
 \begin{align*}
   \int u^{1/2} ~du
@@ -72,24 +62,18 @@ $$\int (5x^4+7)^{1/2} ~20x^3  ~dx = \int u^{1/2} ~du$$
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Replace $u$ with $5x^4 + 7$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 4: Replace $u$ with $5x^4 + 7$.
+:class: tip, dropdown
 
 $$ \int 20x^3 \sqrt{5x^4+7} ~dx ~=~ \frac{2}{3}(5x^4 + 7)^{3/2} + C $$
 ```
 
-## Example 2
+## Example 14
 
 Compute $\displaystyle \int 7x^2e^{4x^3+5} ~dx$.
 
-```{dropdown} **Step 1:** Identify a suitable substitution.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Identify a suitable substitution.
+:class: tip, dropdown
 
 Based on rewriting the integral in the following form
 
@@ -98,11 +82,8 @@ $$7\int e^{4x^3+5} ~x^2 ~dx$$
 let $u=4x^3 + 5$ and $du = 12x^2 ~dx$, or equivalently $\dfrac{1}{12}du = x^2 ~dx$.
 ```
 
-```{dropdown} **Step 2:** Rewrite the integral in terms of $u$ and $du$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 2: Rewrite the integral in terms of $u$ and $du$.
+:class: tip, dropdown
 
 \begin{align*}
   7\int e^{4x^3+5} ~x^2 ~dx
@@ -111,11 +92,8 @@ let $u=4x^3 + 5$ and $du = 12x^2 ~dx$, or equivalently $\dfrac{1}{12}du = x^2 ~d
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Evaluate the integral in terms of $u$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 3: Evaluate the integral in terms of $u$.
+:class: tip, dropdown
 
 \begin{align*}
   \frac{7}{12}\int e^{u}  ~du
@@ -123,24 +101,18 @@ let $u=4x^3 + 5$ and $du = 12x^2 ~dx$, or equivalently $\dfrac{1}{12}du = x^2 ~d
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Replace $u$ with $4x^3 + 5$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 4: Replace $u$ with $4x^3 + 5$.
+:class: tip, dropdown
 
 $$ \int 7x^2e^{4x^3+5} ~dx ~=~ \frac{7}{12}e^{4x^3 + 5} + C $$
 ```
 
-## Example 3
+## Example 15
 
 Compute $\displaystyle \int \frac{(\ln x)^2}{x}~dx$.
 
-```{dropdown} **Step 1:** Identify a suitable substitution.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Identify a suitable substitution.
+:class: tip, dropdown
 
 Based on rewriting the integral in the following form
 
@@ -149,10 +121,8 @@ $$\int (\ln x)^2\frac{1}{x} ~dx$$
 let $u=\ln x$ and $du = \dfrac{1}{x} ~dx$.
 ```
 
-```{dropdown} **Step 2:** Rewrite the integral in terms of $u$ and $du$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
+```{admonition} Step 2: Rewrite the integral in terms of $u$ and $du$.
+:class: tip, dropdown
 
 \begin{align*}
   \int (\ln x)^2\frac{1}{x} ~dx
@@ -160,10 +130,8 @@ let $u=\ln x$ and $du = \dfrac{1}{x} ~dx$.
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Evaluate the integral in terms of $u$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
+```{admonition} Step 3: Evaluate the integral in terms of $u$.
+:class: tip, dropdown
 
 \begin{align*}
   \int u^2  ~du
@@ -171,22 +139,18 @@ let $u=\ln x$ and $du = \dfrac{1}{x} ~dx$.
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Replace $u$ with $\ln x$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
+```{admonition} Step 4: Replace $u$ with $\ln x$.
+:class: tip, dropdown
 
 $$ \int \frac{(\ln x)^2}{x}~dx ~=~ \frac{1}{3}(\ln x)^3 + C $$
 ```
 
-## Example 4
+## Example 16
 
 Compute $\displaystyle \int \frac{x}{x+4} ~dx$.
 
-```{dropdown} **Step 1:** Identify a suitable substitution.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
+```{admonition} Step 1: Identify a suitable substitution.
+:class: tip, dropdown
 
 Based on rewriting the integral in the following form
 
@@ -195,10 +159,8 @@ $$\int (x+4)^{-1} x ~dx$$
 let $u=x+4$ and $du = dx$.
 ```
 
-```{dropdown} **Step 2:** Rewrite the integral in terms of $u$ and $du$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
+```{admonition} Step 2: Rewrite the integral in terms of $u$ and $du$.
+:class: tip, dropdown
 
 In this case, it is necessary to solve for $x$ in terms of $u$ in the equation $u = x+4$ (i.e., $x = u-4$) to complete the substitution.
 
@@ -209,10 +171,8 @@ In this case, it is necessary to solve for $x$ in terms of $u$ in the equation $
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Evaluate the integral in terms of $u$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
+```{admonition} Step 3: Evaluate the integral in terms of $u$.
+:class: tip, dropdown
 
 \begin{align*}
   \int \frac{u-4}{u} ~du 
@@ -223,10 +183,8 @@ In this case, it is necessary to solve for $x$ in terms of $u$ in the equation $
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Replace $u$ with $x+4$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
+```{admonition} Step 4: Replace $u$ with $x+4$.
+:class: tip, dropdown
 
 \begin{align*}
   \int \frac{x}{x+4} ~dx 
