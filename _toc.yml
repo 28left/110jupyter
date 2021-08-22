@@ -80,12 +80,14 @@ parts:
     - file: ch_Compoundinterest/compoundinterest_notation.md
     - file: ch_Compoundinterest/compoundinterest_accumulated_amount.md
     - file: ch_Compoundinterest/compoundinterest_present_value.md
+    - file: ch_Compoundinterest/compoundinterest_TIY.md
   - file: ch_Indefinite/indefinite_
     sections:
     - file: ch_Indefinite/indefinite_integrals.md
     - file: ch_Indefinite/indefinite_rules.md
     - file: ch_Indefinite/indefinite_init_value.md
     - file: ch_Indefinite/indefinite_substitution.md
+    - file: ch_Indefinite/indefinite_TIY.md
   # - file: ch_Definite/definite_
   #   sections:
   #   - file: ch_Definite/definite_riemann.md
