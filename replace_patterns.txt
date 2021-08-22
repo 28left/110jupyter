@@ -1,0 +1,5 @@
+```\{admonition\} (.*\n):class: tip, dropdown
+
+```{dropdown} $1:title: bg-secondary text-white
+:body: bg-light
+:animate: fade-in\n

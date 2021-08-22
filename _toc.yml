@@ -75,11 +75,11 @@ parts:
     - file: ch_Exponential/exponential_laws.md
     - file: ch_Exponential/exponential_logarithmic_diff.md
     - file: ch_Exponential/exponential_TIY.md
-  # - file: ch_Compoundinterest/compoundinterest_
-  #   sections:
-  #   - file: ch_Compoundinterest/compoundinterest_notation.md
-  #   - file: ch_Compoundinterest/compoundinterest_accumulated_amount.md
-  #   - file: ch_Compoundinterest/compoundinterest_present_value.md
+  - file: ch_Compoundinterest/compoundinterest_
+    sections:
+    - file: ch_Compoundinterest/compoundinterest_notation.md
+    - file: ch_Compoundinterest/compoundinterest_accumulated_amount.md
+    - file: ch_Compoundinterest/compoundinterest_present_value.md
   # - file: ch_Indefinite/indefinite_
   #   sections:
   #   - file: ch_Indefinite/indefinite_integrals.md

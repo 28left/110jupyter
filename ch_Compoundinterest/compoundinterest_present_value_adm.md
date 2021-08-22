@@ -13,25 +13,20 @@ kernelspec:
 ---
 # Present Value Examples
 
-## Example 1
+## Example 9
+
 How much money should be deposited in a bank paying a yearly interest rate of $6\%$ compounded monthly so that after 3 years, the accumulated amount will be \$20,000?
 
-```{dropdown} **Step 1:** Notice that this is a present value problem since we're given the accumulated amount and we're asked to find the principal.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Notice that this is a present value problem since we're given the accumulated amount and we're asked to find the principal.
+:class: tip, dropdown
 
 And since interest is compounded monthly, we'll use the present value formula for discrete compounding of interest.
 
 $$P = A\left(1 + \frac{r}{m}\right)^{-mt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $A = 20000$, $r = 0.06$, $m=12$, and $t=3$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 2: Plug in the given values: $A = 20000$, $r = 0.06$, $m=12$, and $t=3$.
+:class: tip, dropdown
 
 \begin{align*}
   P
@@ -42,24 +37,18 @@ $$P = A\left(1 + \frac{r}{m}\right)^{-mt}$$
 Therefore, \$16,712.90 invested at 6\% interest compounded monthly will be worth \$20,000 in 3 years.
 ```
 
-## Example 2
+## Example 10
 
 Use the accumulated amount for discrete compound interest to solve the previous example.
 
-```{dropdown} **Step 1:** Start with the formula for accumulated amount for discrete compounding of interest.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Start with the formula for accumulated amount for discrete compounding of interest.
+:class: tip, dropdown
 
 $$A = P\left( 1 + \frac{r}{m}\right)^{mt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $A = 20000$, $r = 0.06$, $m=12$, and $t=3$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 2: Plug in the given values: $A = 20000$, $r = 0.06$, $m=12$, and $t=3$.
+:class: tip, dropdown
 
 \begin{align*}
   20000 
@@ -68,37 +57,28 @@ $$A = P\left( 1 + \frac{r}{m}\right)^{mt}$$
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Solve for $P$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 3: Solve for $P$.
+:class: tip, dropdown
 
 \begin{align*}
   P  = \frac{20000}{1.005^{36}} \approx \$16,712.90
 \end{align*}
 ```
 
-## Example 3
+## Example 11
 
 Parents wish to establish a trust fund for their child's education. If they need \$170,000 in 7 years, how much should they set aside now if the money is invested at $20\%$ compounded continuously?
 
-```{dropdown} **Step 1:** Notice that this is a present value problem since we're given the accumulated amount and we're asked to find the principal.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Notice that this is a present value problem since we're given the accumulated amount and we're asked to find the principal.
+:class: tip, dropdown
 
 And since interest is compounded continuously, we'll use the present value formula for continuous compounding of interest.
 
 $$P = Ae^{-rt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $A = 170000$, $r = 0.2$, and $t=7$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 2: Plug in the given values: $A = 170000$, $r = 0.2$, and $t=7$.
+:class: tip, dropdown
 
 \begin{align*}
   P 
@@ -109,24 +89,18 @@ $$P = Ae^{-rt}$$
 Therefore, \$41,921.48 invested at 20\% interest compounded continuously will be worth \$170,000 in 7 years.
 ```
 
-## Example 4
+## Example 12
 
 Use the accumulated amount for continuous compound interest to solve the previous example.
 
-```{dropdown} **Step 1:** Start with the formula for accumulated amount for continuous compounding of interest.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 1: Start with the formula for accumulated amount for continuous compounding of interest.
+:class: tip, dropdown
 
 $$A = Pe^{rt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $A = 170000$, $r = 0.2$, and $t=7$.
-:title: bg-secondary text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 2: Plug in the given values: $A = 170000$, $r = 0.2$, and $t=7$.
+:class: tip, dropdown
 
 \begin{align*}
   170000 
@@ -135,11 +109,8 @@ $$A = Pe^{rt}$$
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Solve for $P$.
-:title: bg-success text-white
-:body: bg-light
-:animate: fade-in
-
+```{admonition} Step 3: Solve for $P$.
+:class: tip, dropdown
 
 \begin{align*}
   P 
