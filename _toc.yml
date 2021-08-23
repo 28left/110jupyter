@@ -88,9 +88,9 @@ parts:
     - file: ch_Indefinite/indefinite_init_value.md
     - file: ch_Indefinite/indefinite_substitution.md
     - file: ch_Indefinite/indefinite_TIY.md
-  # - file: ch_Definite/definite_
-  #   sections:
-  #   - file: ch_Definite/definite_riemann.md
+  - file: ch_Definite/definite_
+    sections:
+    - file: ch_Definite/definite_riemann.md
   #   - file: ch_Definite/definite_ftc.md
   #   - file: ch_Definite/definite_substitution.md
   #   - file: ch_Definite/definite_average_value.md
