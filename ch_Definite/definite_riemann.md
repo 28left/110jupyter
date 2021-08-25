@@ -109,11 +109,13 @@ If $f$ and $g$ are continuous on $[a,b]$ and $c$ is a constant, then
 
 ## Example 1
 
+```{admonition} Computing Riemann sums
+:class: tip
+
 Use a right Riemann sum, left Riemann sum, and midpoint rule to approximate the area under the graph of $y=x^2$ on $[1,3]$ using 4 subintervals.
+```
 
 ````{dropdown} **Step 1:** Find the length of each interval, $\Delta x$, and break up $[1,3]$ into 4 subintervals of length $\Delta x$.
-:title: bg-secondary text-white
-:body: bg-light
 :animate: fade-in
 
 
@@ -132,8 +134,6 @@ width: 500px
 ````
 
 ````{dropdown} **Step 2:** Use a right Riemann sum to approximate the area. 
-:title: bg-secondary text-white
-:body: bg-light
 :animate: fade-in
 
 
@@ -160,8 +160,6 @@ Therefore, the area under the graph of $y=x^2$ on $[1,3]$ is approximately $43/4
 
 
 ````{dropdown} **Step 3:** Use a left Riemann sum to approximate the area.
-:title: bg-secondary text-white
-:body: bg-light
 :animate: fade-in
 
 
@@ -187,8 +185,6 @@ Therefore, the area under the graph of $y=x^2$ on $[1,3]$ is approximately $27/4
 
 
 ````{dropdown} **Step 4:** Use the midpoint rule to approximate the area.
-:title: bg-success text-white
-:body: bg-light
 :animate: fade-in
 
 

@@ -5,6 +5,23 @@
 :animate: fade-in\n
 
 
+```{dropdown} $1:title: bg-light
+:body: bg-light
+:animate: fade-in\n
+
+
+```{dropdown} $1:animate: fade-in\n
+
+
+-----
+
+```\{admonition\} Step ([1-9]): (.*\n):class: tip, dropdown
+
+```{dropdown} **Step $1:** $2 :animate: fade-in\n
+
+
+-----
+
 Step ([1-9]):
 
 **Step $1:**

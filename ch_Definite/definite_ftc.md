@@ -31,18 +31,22 @@ where $F$ is any antiderivative of $f$.
 $$F(x) \Big|_a^b = F(b) - F(a)$$
 ```
 
-## Example 2
+## Example 1
+
+```{admonition} Area under a graph
+:class: tip
 
 Write the area under the graph of $y=x^2$ on $[1,3]$ as a definite integral and then use the Fundamental Theorem of Calculus to evaluate it. Compare the result with the approximations found in Example 1.
+```
 
-```{admonition} Step 1: Write the area under the graph of $y=x^2$ on $[1,3]$ as a definite integral.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Write the area under the graph of $y=x^2$ on $[1,3]$ as a definite integral.
+:title: bg-light
 
 $$\int_1^3 x^2 ~dx$$
 ```
 
-```{admonition} Step 2: Find an antiderivative of $x^2$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find an antiderivative of $x^2$.
+:animate: fade-in
 
 \begin{align*}
   \int x^2~dx &= \frac{1}{3}x^3 + C && \text{Power rule}
@@ -51,37 +55,46 @@ $$\int_1^3 x^2 ~dx$$
 Therefore, $x^3/3$ is an antiderivative of $x^2$, and can be used to evaluate the definite integral from Step 1.
 ```
 
-```{admonition} Step 3: Apply the Fundamental Theorem of Calculus.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Apply the Fundamental Theorem of Calculus.
+:title: bg-light
+:animate: fade-in
 
 \begin{align*}
-  \int_1^3 x^2dx &= \frac{1}{3}x^3 \Biggr|_1^3 && \hbox{Since $\frac{1}{3}x^3$ is an antiderivative of $x^2$}\\
-  &= \frac{1}{3}3^3 - \frac{1}{3}1^3 && \hbox{Plug in the limits of integration}\\
-  &= \frac{27}{3} - \frac{1}{3} && \hbox{Simplify}\\
+  \int_1^3 x^2dx &= \frac{1}{3}x^3 \Biggr|_1^3 & \hbox{Since $\frac{1}{3}x^3$ is an antiderivative of $x^2$} \\
+  &= \frac{1}{3}3^3 - \frac{1}{3}1^3 & \hbox{Plug in the limits of integration} \\
+  &= \frac{27}{3} - \frac{1}{3} & \hbox{Simplify} \\
   &= 26/3
 \end{align*}
 
 Therefore, the area under the graph of $y=x^2$ on $[1,3]$ is $26/3 = 8.\overline{6}$.
 ```
 
-```{admonition} Step 4: Compare the result from Step 3 to the approximations found in Example 1.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Compare the result from Step 3 to the approximations found in Example 1.
+:title: bg-light 
+:animate: fade-in
+
 
 The above calculations show that the area of the region is exactly $8.\overline{6}$. The approximations we calculated in Example 1 were $10.75$ (using right Riemann sum), $6.75$ (using left Riemann sum), and $8.625$ (using the Midpoint Rule).
 ```
 
-## Example 3
+## Example 2
+
+```{admonition} Evaluating a definite integral
+:class: tip
 
 Evaluate $\displaystyle \int_1^2 \frac{x^2 + 4x^4}{x^3} ~dx$.
+```
 
-```{admonition} Step 1: Simplify the integrand by writing it as a sum.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Simplify the integrand by writing it as a sum.
+:animate: fade-in
+
 
 $$\frac{x^2 + 4x^4}{x^3} = \frac{x^2}{x^3} + \frac{4x^4}{x^3} =  \frac{1}{x} + 4x$$
 ```
 
-```{admonition} Step 2: Find an antiderivative of $\dfrac{1}{x} + 4x$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find an antiderivative of $\dfrac{1}{x} + 4x$.
+:animate: fade-in
+
 
 \begin{align*}
   \int \frac{1}{x} + 4x ~dx
@@ -92,8 +105,9 @@ $$\frac{x^2 + 4x^4}{x^3} = \frac{x^2}{x^3} + \frac{4x^4}{x^3} =  \frac{1}{x} + 4
 Therefore, $\ln|x| + 2x^2 $ is an antiderivative of $\dfrac{1}{x} + 4x$, and can be used to evaluate the given definite integral.
 ```
 
-```{admonition} Step 3: Apply the Fundamental Theorem of Calculus.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Apply the Fundamental Theorem of Calculus.
+:animate: fade-in
+
 
 \begin{align*}
 \int_1^2 \frac{x^2 + 4x^4}{x^3} ~dx
@@ -105,12 +119,17 @@ Therefore, $\ln|x| + 2x^2 $ is an antiderivative of $\dfrac{1}{x} + 4x$, and can
 \end{align*}
 ```
 
-## Example 4
+## Example 3
+
+```{admonition} Evaluating a definite integral
+:class: tip
 
 Evaluate $\displaystyle \int_{0}^{4} e^x ~dx$. 
+```
 
-```{admonition} Step 1: Apply the Fundamental Theorem of Calculus.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Apply the Fundamental Theorem of Calculus.
+:animate: fade-in
+
 
 \begin{align*}
   \int_{0}^{4} e^x ~dx
@@ -120,15 +139,20 @@ Evaluate $\displaystyle \int_{0}^{4} e^x ~dx$.
 \end{align*}
 ```
 
-## Example 5
+## Example 4
+
+```{admonition} Computing total revenue from marginal revenue
+:class: tip
 
 The daily marginal revenue function associated with selling $m$ gadgets is given by $R'(m)=0.2m + 50$, where $R'(m)$ is given in dollars per unit.
 
 - Find the daily total revenue realized from the sale of the first 20 gadgets.
 - Find the additional revenue realized when sales increase from 20 to 50 gadgets.
+```
 
-```{admonition} Step 1: Apply the Fundamental Theorem of Calculus for the first case.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Apply the Fundamental Theorem of Calculus for the first case.
+:animate: fade-in
+
 
 By the Fundamental Theorem of Calculus, the total revenue from the sale of the first 20 gadgets is given by
 
@@ -152,8 +176,9 @@ We evaluate the integral to get
 Therefore, the total revenue from the sale of the first 20 gadgets is $\$1,040$.
 ```
 
-```{admonition} Step 2: Apply the Fundamental Theorem of Calculus for the second case.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the Fundamental Theorem of Calculus for the second case.
+:animate: fade-in
+
 
 By the Fundamental Theorem of Calculus, the additional revenue realized when sales increase from 20 to 50 gadgets is given by
 

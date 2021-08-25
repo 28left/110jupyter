@@ -23,12 +23,17 @@ If $f$ is integrable on $[a, b]$, then the average value of $f$ over $[a, b]$ is
 $$\frac{1}{b-a}\int_a^b f(x)dx.$$
 ```
 
-## Example 10
+## Example 1
+
+```{admonition} Computing the average value
+:class: tip
 
 Find the average value of $f(x) = 3x^2 + 4x^3$ over the interval $[-1, 1]$.
+```
 
-```{admonition} Step 1: The average value is given by
-:class: tip, dropdown
+```{dropdown} **Step 1:** The average value is given by
+ :animate: fade-in
+
 
 \begin{align*}
     \frac{1}{1-(-1)} \int_{-1}^1 3x^2 + 4x^3 ~dx 
@@ -40,12 +45,17 @@ Find the average value of $f(x) = 3x^2 + 4x^3$ over the interval $[-1, 1]$.
 \end{align*}
 ```
 
-## Example 11
+## Example 2
+
+```{admonition} Computing the average value
+:class: tip
 
 Find the average value of $f(x) = \dfrac{12}{x}$ over the interval $[-9, -3]$.
+```
 
-```{admonition} Step 1: The average value is given by
-:class: tip, dropdown
+```{dropdown} **Step 1:** The average value is given by
+ :animate: fade-in
+
 
 \begin{align*}
   \frac{1}{-3-(-9)} \int_{-9}^{-3} \frac{12}{x} ~dx 
@@ -59,24 +69,30 @@ Find the average value of $f(x) = \dfrac{12}{x}$ over the interval $[-9, -3]$.
 \end{align*}
 ```
 
-## Example 12
+## Example 3
+
+```{admonition} Computing average sales
+:class: tip
 
 Sales of the Penn State Learning Calculus tutorial software packages are approximated by
 
 $$f(t) = \frac{t^2}{(t^3+5)^2},$$
 
 where $t$ is in years and $f(t)$ is in millions of software packages. What are the average sales over the time interval $0 \leq t \leq 3$ years?
+```
 
-```{admonition} Step 1: Use the definition of average value.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Use the definition of average value.
+ :animate: fade-in
+
 
 The average value is given by
 
 $$\frac{1}{3-0}\int_0^3 \frac{t^2}{(t^3+5)^2}~dt = \frac{1}{3}\int_0^3 \frac{t^2}{(t^3+5)^2}~dt.$$
 ```
 
-```{admonition} Step 2: Identify a suitable substitution.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Identify a suitable substitution.
+ :animate: fade-in
+
 
 Based on rewriting the integral in the following form
 
@@ -85,8 +101,9 @@ $$\frac{1}{3}\int_{t=0}^{t=3} (t^3+5)^{-2}~t^2 ~dt$$
 let $u = t^3 + 5$ and $du = 3t^2 ~dt$, or equivalently $\dfrac{1}{3} du = t^2 ~dt$.
 ```
 
-```{admonition} Step 3: Determine the new limits of integration using the substitution $u = t^3 + 5$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Determine the new limits of integration using the substitution $u = t^3 + 5$.
+ :animate: fade-in
+
 
 \begin{align*}
 \text{When } t=3 ~~&\Longrightarrow~~ u = 3^3 + 5 = 32\\
@@ -94,8 +111,9 @@ let $u = t^3 + 5$ and $du = 3t^2 ~dt$, or equivalently $\dfrac{1}{3} du = t^2 ~d
 \end{align*}
 ```
 
-```{admonition} Step 4: Rewrite the integral in terms of $u$ and $du$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Rewrite the integral in terms of $u$ and $du$.
+ :animate: fade-in
+
 
 \begin{align*}
   \frac{1}{3}\int_{t=0}^{t=3} (t^3+5)^{-2}~t^2 ~dt
@@ -104,8 +122,9 @@ let $u = t^3 + 5$ and $du = 3t^2 ~dt$, or equivalently $\dfrac{1}{3} du = t^2 ~d
 \end{align*}
 ```
 
-```{admonition} Step 5: Evaluate the integral.
-:class: tip, dropdown
+```{dropdown} **Step 5:** Evaluate the integral.
+ :animate: fade-in
+
 
 \begin{align*}
   \frac{1}{9} \int_{u=5}^{u=32} u^{-2} ~du 

@@ -25,12 +25,17 @@ $$\int_{x=a}^{x=b} f(g(x))g'(x)~dx = \int_{u=g(a)}^{u=g(b)} f(u) ~du$$
 where $u=g(x)$ and $du = g'(x) ~dx$.
 ```
 
-## Example 6
+## Example 1
+
+```{admonition} Using substitution to integrate rational functions
+:class: tip
 
 Evaluate $\displaystyle \int_{1}^{2} \frac{6x^2}{2x^3 + 1}~dx$. 
+```
 
-```{admonition} Step 1: Identify a suitable substitution.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Identify a suitable substitution.
+:animate: fade-in
+
 
 Based on rewriting the integral in the following form
 
@@ -39,8 +44,9 @@ $$\int_{x=1}^{x=2} (2x^3+1)^{-1} 6x^2 ~dx$$
 let $u = 2x^3+1$ and $du = 6x^2 ~du$.
 ```
 
-```{admonition} Step 2: Determine the new limits of integration using the substitution $u = 2x^3+1$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Determine the new limits of integration using the substitution $u = 2x^3+1$.
+:animate: fade-in
+
 
 \begin{align*}
   \text{When } x=2 ~~&\Longrightarrow~~ u = 2(2)^3 + 1 = 17 \\
@@ -48,14 +54,16 @@ let $u = 2x^3+1$ and $du = 6x^2 ~du$.
 \end{align*}
 ```
 
-```{admonition} Step 3: Rewrite the integral in terms of $u$ and $du$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Rewrite the integral in terms of $u$ and $du$.
+:animate: fade-in
+
 
 $$\int_{x=1}^{x=2} (2x^3+1)^{-1} 6x^2 ~dx = \int_{u=3}^{u=17} u^{-1} ~du$$
 ```
 
-```{admonition} Step 4: Evaluate the integral.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Evaluate the integral.
+:animate: fade-in
+
 
 \begin{align*}
   \int_{u=3}^{u=17} \frac{1}{u}~du 
@@ -69,26 +77,33 @@ Therefore,
 $$\int_{1}^{2} \frac{6x^2}{2x^3 + 1}~dx = \ln(17/3).$$
 ```
 
-## Example 7
+## Example 2
+
+```{admonition} Finding the area under a graph
+:class: tip
 
 Find the area of the region under the graph of $f(x) = e^{-3x/2}$ between $x = -2$ and $x = 6$.
+```
 
-```{admonition} Step 1: Find the definite integral that corresponds to the area of the given region.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find the definite integral that corresponds to the area of the given region.
+:animate: fade-in
+
 
 Since $e^{-3x/2} \geq 0$ for all $x$, the area under the graph of $f$ on $[-2,6]$ is given by
 
 $$ \int_{x=-2}^{x=6} e^{-3x/2} ~dx.$$
 ```
 
-```{admonition} Step 2: Identify a suitable substitution.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Identify a suitable substitution.
+:animate: fade-in
+
 
 Let $u = -3x/2$  and $du = -\dfrac{3}{2}~dx$, or equivalently $-\dfrac{2}{3} ~du = dx$.
 ```
 
-```{admonition} Step 3: Determine the new limits of integration using the substitution $u = -3x/2$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Determine the new limits of integration using the substitution $u = -3x/2$.
+:animate: fade-in
+
 
 \begin{align*}
   \text{When } x=6 ~~&\Longrightarrow~~ u = -3(6)/2 = -9 \\
@@ -96,8 +111,9 @@ Let $u = -3x/2$  and $du = -\dfrac{3}{2}~dx$, or equivalently $-\dfrac{2}{3} ~du
 \end{align*}
 ```
 
-```{admonition} Step 4: Rewrite the integral in terms of $u$ and $du$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Rewrite the integral in terms of $u$ and $du$.
+:animate: fade-in
+
 
 \begin{align*}
   \int_{x=-2}^{x=6} e^{-3x/2} ~dx 
@@ -110,8 +126,9 @@ Notice that the new lower limit of integration ($u=3$) is larger than the new up
 $$ -\frac{2}{3}\int_{u=3}^{u=-9} e^{u} ~du = \frac{2}{3}\int_{u=-9}^{u=3} e^{u} ~du.$$ 
 ```
 
-```{admonition} Step 5: Evaluate the integral.
-:class: tip, dropdown
+```{dropdown} **Step 5:** Evaluate the integral.
+:animate: fade-in
+
 
 \begin{align*}
   -\frac{2}{3}\int_{u=3}^{u=-9} e^{u} ~du
@@ -131,12 +148,17 @@ The integral in Step 1 can be evaluated without using substitution. Try using th
 $$ \int e^{ax} ~dx = \frac{1}{a}e^{ax} + C ~~~~~ \hbox{for } a\neq 0.$$
 ```
 
-## Example 8
+## Example 3
+
+```{admonition} Using substitution
+:class: tip
 
 Evaluate $\displaystyle \int_{1}^{3} x\sqrt{3x^2-2}~dx$.
+```
 
-```{admonition} Step 1: Identify a suitable substitution.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Identify a suitable substitution.
+:animate: fade-in
+
 
 Based on rewriting the integral in the following form
 
@@ -145,8 +167,9 @@ $$\int_{x=1}^{x=3} (3x^2-2)^{1/2} ~x ~dx$$
 let $u = 3x^2-2$ and $du = 6x ~dx$, or equivalently $\dfrac{1}{6} du = x ~dx$.
 ```
 
-```{admonition} Step 2: Determine the new limits of integration using the substitution $u = 3x^2-2$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Determine the new limits of integration using the substitution $u = 3x^2-2$.
+:animate: fade-in
+
 
 \begin{align*}
   \text{When } x=3 ~~&\Longrightarrow~~ u = 3(3)^2 - 2 = 25 \\
@@ -154,8 +177,9 @@ let $u = 3x^2-2$ and $du = 6x ~dx$, or equivalently $\dfrac{1}{6} du = x ~dx$.
 \end{align*}
 ```
 
-```{admonition} Step 3: Rewrite the integral in terms of $u$ and $du$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Rewrite the integral in terms of $u$ and $du$.
+:animate: fade-in
+
 
 \begin{align*}
   \int_{x=1}^{x=3} (3x^2-2)^{1/2} ~x ~dx 
@@ -164,8 +188,9 @@ let $u = 3x^2-2$ and $du = 6x ~dx$, or equivalently $\dfrac{1}{6} du = x ~dx$.
 \end{align*}
 ```
 
-```{admonition} Step 4: Evaluate the integral.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Evaluate the integral.
+:animate: fade-in
+
 
 \begin{align*}
   \frac{1}{6}\int_{u=1}^{u=25} u^{1/2} ~du 
@@ -181,12 +206,18 @@ Therefore,
 $$\int_{1}^{3} x\sqrt{3x^2-2}~dx = 124/9.$$
 ```
 
-## Example 9
+## Example 4
+
+```{admonition} Using substitution
+:class: tip
 
 Evaluate $\displaystyle \int_{0}^{2} \frac{e^x}{1+e^x} ~dx$.
+```
 
-```{admonition} Step 1: Identify a suitable substitution.
-:class: tip, dropdown
+
+```{dropdown} **Step 1:** Identify a suitable substitution.
+:animate: fade-in
+
 
 Based on rewriting the integral in the following form
 
@@ -195,8 +226,9 @@ $$\int_{x=0}^{x=2} (1+e^x)^{-1} ~e^x ~dx$$
 let $u = 1+e^x$ and $du = e^x ~dx$.
 ```
 
-```{admonition} Step 2: Determine the new limits of integration using the substitution $u = 1+e^x$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Determine the new limits of integration using the substitution $u = 1+e^x$.
+:animate: fade-in
+
 
 \begin{align*}
   \text{When } x=2 ~~&\Longrightarrow~~ u = 1+e^2 \\
@@ -204,8 +236,9 @@ let $u = 1+e^x$ and $du = e^x ~dx$.
 \end{align*}
 ```
 
-```{admonition} Step 3: Rewrite the integral in terms of $u$ and $du$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Rewrite the integral in terms of $u$ and $du$.
+:animate: fade-in
+
 
 \begin{align*}
   \int_{x=0}^{x=2} (1+e^x)^{-1} ~e^x ~dx
@@ -214,8 +247,9 @@ let $u = 1+e^x$ and $du = e^x ~dx$.
 \end{align*}
 ```
 
-```{admonition} Step 4: Evaluate the integral.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Evaluate the integral.
+:animate: fade-in
+
 
 \begin{align*}
   \int_{u=2}^{u=1+e^2} \frac{1}{u} ~du 

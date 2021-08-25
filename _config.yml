@@ -58,12 +58,15 @@ parse:
     - linkify
     - colon_fence
     - substitution
-  myst_substitutions:
-    my_drop: ':::{dropdown}'
-    my_drop_key: |
-      :title: bg-secondary text-white
-      :body: bg-light
-      :animate: fade-in
+
+# parse:
+#   myst_substitutions:
+#     my_step: "dropdown"
+#     my_drop_title: ":title: bg-secondary text-light"
+#     my_step_set: |
+#       :title: bg-secondary text-light
+#       :body: bg-light
+#       :animate: fade-in
 
 
 
