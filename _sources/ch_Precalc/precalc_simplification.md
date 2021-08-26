@@ -68,17 +68,18 @@ Since the ratios already have the same denominator, we need only apply the formu
 \end{align*}
 ```
 
-```{admonition} Step 2: Apply the formula from Step 1.
+````{admonition} Step 2: Apply the formula from Step 1.
 :class: tip, dropdown
 
 Apply the formula from **Step 1** with $A = x+1$, $B=x+4$, and $C = 3x-2$.
+
 \begin{align*}
 \dfrac{x+1}{x+4} - \dfrac{3x-2}{x+4}
 &= \frac{x+1 - (3x-2)}{x+4} && \text{Subtract numerators}\\
 &= \frac{x+1 - 3x+2}{x+4}  && \text{Distribute the minus sign}\\
 &= \frac{3-2x}{x+4} && \hbox{Combine like terms}
 \end{align*}
-```
+````
 
 ### Example 2
 
