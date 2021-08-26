@@ -123,7 +123,6 @@ let $u = t^3 + 5$ and $du = 3t^2 ~dt$, or equivalently $\dfrac{1}{3} du = t^2 ~d
 ```
 
 ```{dropdown} **Step 5:** Evaluate the integral.
- :animate: fade-in
 
 
 \begin{align*}
