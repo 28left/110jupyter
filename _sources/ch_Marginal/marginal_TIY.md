@@ -72,7 +72,7 @@ Answer: $E(20) = 1$, unitary demand and total revenue is maximized
 ## Exercise 5
 The demand for a product is given by 
 
-$f(p) = 6 + \dfrac{7}{p}.$$ 
+$$f(p) = 6 + \dfrac{7}{p}.$$ 
 
 Determine the elasticity when $p = 3$ and interpret the result.
 
