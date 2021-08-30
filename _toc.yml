@@ -113,3 +113,11 @@ parts:
 #     sections:
 #     - file: nb_Limits/limits_nb_estimateTIY.ipynb
 #     - file: nb_Limits/limits_nb_defTIY.ipynb
+
+# - caption: Computational Examples
+#   chapters:
+#   - file: nb_Limits/limits_nb_
+
+- caption: Other
+  chapters:
+  - file: Other/privacy
