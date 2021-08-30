@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Related Rates &#8212; Math 110 Companion Site</title>
+    <title>Privacy &#8212; Math 110 Companion Site</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -49,12 +49,9 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Try It Yourself" href="implicit_TIY.html" />
-    <link rel="prev" title="Implicit Differentiation" href="implicit_differentiation.html" />
+    <link rel="prev" title="Try It Yourself" href="../ch_Definite/definite_TIY.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -96,7 +93,7 @@
   Course Packets e-book
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../ch_Precalc/precalc_.html">
    Precalculus Review
@@ -307,28 +304,28 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="implicit_.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Implicit/implicit_.html">
    Implicit Differentiation
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="implicit_differentiation.html">
+    <a class="reference internal" href="../ch_Implicit/implicit_differentiation.html">
      Implicit Differentiation
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_relatedrates.html">
      Related Rates
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="implicit_TIY.html">
+    <a class="reference internal" href="../ch_Implicit/implicit_TIY.html">
      Try It Yourself
     </a>
    </li>
@@ -587,9 +584,9 @@
   Other
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../Other/privacy.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Privacy
   </a>
  </li>
@@ -633,11 +630,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/ch_Implicit/implicit_relatedrates.ipynb"><button type="button"
+            href="../_sources/Other/privacy.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Implicit/implicit_relatedrates.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/Other/privacy.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -668,24 +665,16 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-1">
-   Example 1
+  <a class="reference internal nav-link" href="#google-analytics">
+   Google Analytics
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-2">
-   Example 2
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-3">
-   Example 3
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#example-4">
-   Example 4
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opt-out">
+     Opt-Out
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -698,202 +687,15 @@
         
               <div>
                 
-  <div class="section" id="related-rates">
-<h1>Related Rates<a class="headerlink" href="#related-rates" title="Permalink to this headline">¶</a></h1>
-<div class="info admonition">
-<p class="admonition-title">How to Solve a Related Rates Problem</p>
-<p>Here are a few guidelines to follow when solving a related rates problem.</p>
-<ol class="simple">
-<li><p><strong>Assign a variable</strong> to each quantity that changes and state the known and unknown rates of change with respect to time <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
-<li><p><strong>Find an equation</strong> relating the variables. Don’t forget about business models.</p></li>
-<li><p><strong>Differentiate both sides</strong> of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>. Treat all variables as functions of <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
-<li><p><strong>Replace the variables</strong> and their derivatives by the numerical data given. Watch out for words like “increasing” or “decreasing”, “rising” or “falling”, “away” or “towards”, etc. to determine if a derivative is positive or negative.</p></li>
-<li><p><strong>Solve the equation</strong> for the unknown rate of change.</p></li>
-</ol>
-</div>
-<div class="section" id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
-<p>Given <span class="math notranslate nohighlight">\(p^2x + 6x = 5\)</span> and <span class="math notranslate nohighlight">\(\dfrac{dp}{dt} = 3\)</span>. Compute <span class="math notranslate nohighlight">\(\dfrac{dx}{dt}\)</span> when <span class="math notranslate nohighlight">\(p = 2\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\text{Variables (as functions of $t$): } &amp; x(t) \text{ and } p(t) \\ 
-\text{Known rate of change: } &amp; \dfrac{dp}{dt} = 3 \\ 
-\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when} p=2
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
-<div class="math notranslate nohighlight">
-\[p^2x + 6x = 5\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\frac{d}{dt}(p^2x + 6x)
-&amp;= 2pp'x + p^2x' + 6x' &amp;&amp; \hbox{Implicit differentiation &amp; Product Rule}\\
-&amp;= 0 &amp;&amp; \hbox{since $\dfrac{d}{dt} 5 = 0$}
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(x\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(p=2\)</span> into the given equation <span class="math notranslate nohighlight">\(p^2x + 6x = 5\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[(2)^2x + 6x = 5 ~~~~~\Rightarrow~~~~~ 10x = 5 ~~~~~\Rightarrow~~~~~ x = 1/2\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(p=2\)</span>, <span class="math notranslate nohighlight">\(x=1/2\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = 3\)</span>)</p>
-<div class="math notranslate nohighlight">
-\[2(2)(3)\frac{1}{2} + (2)^2x' + 6x' = 0  ~~~~~\Rightarrow~~~~~ 6 + 10x' = 0 ~~~~~\Rightarrow~~~~~ x' = -3/5\]</div>
-<p>Therefore <span class="math notranslate nohighlight">\(\dfrac{dx}{dt} = -3/5\)</span> when <span class="math notranslate nohighlight">\(p=2\)</span> and <span class="math notranslate nohighlight">\(\dfrac{dp}{dt} = 3\)</span>.</p>
-</div>
-</div>
-<div class="section" id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
-<p>A company is decreasing the production of energy drinks at a rate of 100 cases per day. All cases produced can be sold. The daily demand function is given by</p>
-<div class="math notranslate nohighlight">
-\[p(x) = 50 - \frac{x}{200}\]</div>
-<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of cases produced and sold, and <span class="math notranslate nohighlight">\(p(x)\)</span> is the unit price in dollars. Find the rate of change of the revenue with respect to the time in days when daily production is 300 cases.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-
-\text{Variables (as functions of $t$): } &amp; x(t) = \text{ the quantity produced and sold per day} \\
-&amp; R(t) = \text{ the daily revenue} \\
-\text{Known rate of change: } &amp; \dfrac{dx}{dt} = -100 \text{ since production is decreasing} \\ \\
-\text{Unknown rate of change: } &amp; \dfrac{dR}{dt} \text{ when } x=300
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
-&amp;= x \left(50 - \frac{x}{200}\right) &amp;&amp; \text{since $p(x) = 50 - \frac{x}{200}$}\\
-&amp;= 50x - \frac{1}{200}x^2 &amp;&amp; \hbox{Simplify}
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Find an equation which relates the variables.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
-&amp;= x \left(50 - \frac{x}{200}\right) &amp;&amp; \text{since $p(x) = 50 - \frac{x}{200}$}\\
-&amp;= 50x - \frac{1}{200}x^2 &amp;&amp; \hbox{Simplify}
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\frac{dR}{dt}
-&amp;= \frac{d}{dt}\left(50x - \frac{1}{200}x^2 \right)\\ 
-&amp;= 50 \,\frac{dx}{dt} - \frac{1}{200}\,2x\,\frac{dx}{dt} &amp;&amp; \text{Implicit differentiation &amp; Power Rule}\\
-&amp;= 50 \, \frac{dx}{dt} - \frac{x}{100}\,\frac{dx}{dt} &amp;&amp; \text{Simplify}
-\end{align*}\]</div>
-<p>Therefore revenue is decreasing at $4700 per day when the level of production is 300 cases per day and decreasing at 100 cases per day.</p>
-</div>
-</div>
-<div class="section" id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
-<p>The weekly demand function is given by</p>
-<div class="math notranslate nohighlight">
-\[2p + x + 4xp = 22\]</div>
-<p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of thousands of units demanded weekly and <span class="math notranslate nohighlight">\(p\)</span> is in dollars. If the price is increasing at a rate of 25 cents per week when the weekly demand is 4000 units, at what rate is the demand decreasing?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-
-\text{Variables (as functions of $t$): } &amp; x(t) = \text{ demand in units of a thousand} \\
-&amp;  p(t) = \text{ unit price in dollars}\\ 
-\text{Known rate of change: } &amp; \dfrac{dp}{dt} = \dfrac{25}{100} \text{ since price (in dollars) is increasing } \\
-\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when } x = 4
-
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
-<div class="math notranslate nohighlight">
-\[2p + x + 4xp = 22\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-\frac{d}{dt}(2p + x + 4xp)
-&amp;= 2\frac{dp}{dt} + \frac{dx}{dt} + 4\frac{dx}{dt}p + 4x\frac{dp}{dt} &amp;&amp; \hbox{Implicit differentiation &amp; Product Rule} \\
-&amp;= 0 &amp;&amp; \hbox{since $\dfrac{d}{dt}22 = 0$}
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(p\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(x=4\)</span> into the given demand equation <span class="math notranslate nohighlight">\(2p+x+4xp = 22\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[2p + 4 + 4(4)p = 22 ~~~~~\Rightarrow~~~~~ 18p + 4 = 22 ~~~~~\Rightarrow~~~~~ p = 1\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(x=4\)</span>, <span class="math notranslate nohighlight">\(p=1\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = 25/100\)</span>)</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-0 &amp;= 2\left(\frac{25}{100}\right) + \frac{dx}{dt} + 4\frac{dx}{dt}(1) + 4(4)\left(\frac{25}{100}\right) \\
-&amp;= \frac{1}{2} + 5\frac{dx}{dt}  + 4 &amp;&amp; \hbox{Simplify} \\
-&amp;= \frac{9}{2} + 5\frac{dx}{dt} 
-\end{align*}\]</div>
-<p>Therefore</p>
-<div class="math notranslate nohighlight">
-\[\frac{9}{2} + 5\frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ 5\frac{dx}{dt} = -\frac{9}{2} ~~~~~\Rightarrow~~~~~ \frac{dx}{dt} = -\frac{9}{10}\]</div>
-<p>and since <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of units, this means that demand is decreasing by <span class="math notranslate nohighlight">\(900\)</span> units per week (i.e., <span class="math notranslate nohighlight">\(9/10\)</span> of one thousand) when the weekly demand is 4000 units and the price is increasing at 25 cents per week.</p>
-</div>
-</div>
-<div class="section" id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
-<p>The wholesale price <span class="math notranslate nohighlight">\(p\)</span> of an e-tablet writing stylus in dollars is related to the supply <span class="math notranslate nohighlight">\(x\)</span> in thousands by:</p>
-<div class="math notranslate nohighlight">
-\[125p^2 - x^2 = 100\]</div>
-<p>If 20,000 styluses are available at the beginning of a week, and the price is falling at 4 cents per week, at what rate is the supply falling?</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Assign variables and state the known and unknown rates of change.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-
-\text{Variables (as functions of $t$): } &amp; x(t) = \text{ supply in units of a thousand} \\
-&amp;  p(t) = \text{ unit price in dollars}\\ 
-\text{Known rate of change: } &amp; \dfrac{dp}{dt} = -\dfrac{4}{100} \text{ since price (in dollars) is falling} \\
-\text{Unknown rate of change: } &amp; \dfrac{dx}{dt} \text{ when } x = 20
-
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Find an equation which relates the variables.</p>
-<div class="math notranslate nohighlight">
-\[125p^2 - x^2 = 100\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Differentiate both sides of the equation implicitly with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-250p\frac{dp}{dt} - 2x\frac{dx}{dt} = 0 &amp;&amp; \text{Power Rule}
-\end{align*}\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Since <span class="math notranslate nohighlight">\(p\)</span> appears in the equation after differentiation, we need to find its value by plugging in <span class="math notranslate nohighlight">\(x=20\)</span> into the given supply equation <span class="math notranslate nohighlight">\(125p^2 - x^2 = 100\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[125p^2 - 20^2 = 100 ~~~~~\Rightarrow~~~~~ 125p^2 = 500 ~~~~~\Rightarrow~~~~~ p^2 = 4~~~~~\Rightarrow~~~~~ p = 2\]</div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. (<span class="math notranslate nohighlight">\(x=20\)</span>, <span class="math notranslate nohighlight">\(p=2\)</span>, <span class="math notranslate nohighlight">\(\frac{dp}{dt} = -4/100\)</span>)</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-0 &amp;= 250(2)\left(-\frac{4}{100}\right) - 2(20)\frac{dx}{dt} \\
-&amp;= -500\left(\frac{4}{100}\right) - 40 \frac{dx}{dt} &amp;&amp; \hbox{Simplify} \\
-&amp;= -20 - 40 \frac{dx}{dt} 
-\end{align*}\]</div>
-<p>Therefore</p>
-<div class="math notranslate nohighlight">
-\[-20 - 40 \frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ -40 \frac{dx}{dt} = 20 ~~~~~\Rightarrow~~~~~ \frac{dx}{dt} = -\frac{1}{2}\]</div>
-<p>and since <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of units, this means that supply is falling by <span class="math notranslate nohighlight">\(500\)</span> units per week (i.e., <span class="math notranslate nohighlight">\(1/2\)</span> of one thousand) when the weekly demand is 20,000 styluses and the price is falling at 4 cents per week.</p>
+  <div class="section" id="privacy">
+<h1>Privacy<a class="headerlink" href="#privacy" title="Permalink to this headline">¶</a></h1>
+<p>When using this web site, we do not collect your Personally Identifiable Information (PII) (as defined by  <a class="reference external" href="https://policy.psu.edu/policies/ad53">Penn State Policy AD53</a>), but we may automatically collect and store general information about your visit to our webpages, but that information does not identify you personally. The information that we collect is used to track how users interact with our website, so that we can improve the user’s experience and make other improvements to these pages, in particular, to improve the content.</p>
+<div class="section" id="google-analytics">
+<h2>Google Analytics<a class="headerlink" href="#google-analytics" title="Permalink to this headline">¶</a></h2>
+<p>We use Google Analytics to help analyze how users interact with our site and, potentially, to provide our users with more personalized content. Google Analytics aggregates and tracks non-identifiable visitor information that we use to measure page views, scrolls, clicks, and file downloads.</p>
+<div class="section" id="opt-out">
+<h3>Opt-Out<a class="headerlink" href="#opt-out" title="Permalink to this headline">¶</a></h3>
+<p>If you would like to opt-out of Google Analytics tracking, Google has provided a plugin for most browsers that enables this functionality.  <a class="reference external" href="https://tools.google.com/dlpage/gaoptout/">Learn more about how the plugin works and how to install it</a> . Google Analytics also provides you with the ability to modify and delete the information that Google tracks for remarketing purposes by visiting  <a class="reference external" href="https://adssettings.google.com/authenticated">Google’s ad settings page</a> . You can also disable collection of any demographic data on that page. Additionally, you are able to modify and delete the information that Google tracks for remarketing purposes by visiting Google’s ad settings page. You also have the option of disabling collection of any demographic data on that page.</p>
 </div>
 </div>
 </div>
@@ -911,7 +713,7 @@ R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./ch_Implicit"
+            path: "./Other"
         },
         predefinedOutput: true
     }
@@ -923,8 +725,7 @@ R &amp;= x\cdot p(x) &amp;&amp; \text{Revenue Function}\\
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="implicit_differentiation.html" title="previous page">Implicit Differentiation</a>
-    <a class='right-next' id="next-link" href="implicit_TIY.html" title="next page">Try It Yourself</a>
+    <a class='left-prev' id="prev-link" href="../ch_Definite/definite_TIY.html" title="previous page">Try It Yourself</a>
 
         </div>
         
