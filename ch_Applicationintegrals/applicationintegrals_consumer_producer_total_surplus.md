@@ -19,7 +19,7 @@ kernelspec:
 %load_ext itikz
 ```
 
-## Consumer Supplies
+## Consumer Surplus
 
 Consumer surplus is the difference between what customers are willing to pay for a product and what they actually pay. 
 
@@ -33,31 +33,13 @@ $$CS  = \int^{\bar{x}}_0 D(x)-\bar{p} ~dx = \int_0^{\bar{x}} D(x)~dx - \bar{p}\b
 
 Consumer surplus can also be interpreted as the area of the region between the demand curve and the horizontal line $p=\bar{p}$ on the interval $[0,\bar{x}]$.
 
-```{code-cell}
-:tags: [remove-input]
-
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
-
-\begin{tikzpicture}[xscale=2.5,yscale=0.85]
-
-  % shade region
-  \draw[fill=yellow!90] plot[smooth, samples=10, domain=0:1.5] (\x,3.5/2^\x) |- (0,1.237) -- cycle;
-    
-  % draw axes 
-  \draw[thick,->] (0,0) -- (3.5,0) node[above] {$x$};
-  \draw[thick,->] (0,0) -- (0,4.2) node[right] {$p$};
-    
-  % draw curve
-  \draw[ultra thick,domain=0:2.5,samples = 100, smooth,variable=\x,black] plot ({\x},{3.5/2^\x})node[right] {$p=D(x)$};
-
-  \draw (1.5,1.237) -- (1.5,0) node[below] {$\bar{x}$};
-  \draw (1.5,1.237) -- (0,1.237) node[left] {$\bar{p}$};
-  \draw[<-] (0.4,2) -- (1.5,3) node[right] {Consumer Surplus};
-\end{tikzpicture}
-\end{document} 
+```{figure} ../images/pic_applicationintegrals_consumer_producer_total_1.png
+---
+width: 600px
+---
+Consumer surplus
 ```
+
 
 ## Producer Surplus
 
@@ -74,38 +56,22 @@ $$PS = \int^{\bar{x}}_0 \bar{p}-S(x) ~dx  =  \bar{p}\bar{x} - \int_0^{\bar{x}} S
 
 Producer surplus can also be interpreted as the area of the region between the supply curve and the horizontal line $p=\bar{p}$ on the interval $[0,\bar{x}]$.
 
-```{code-cell}
-:tags: [remove-input]
-
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
-
-\begin{tikzpicture}[xscale=2.5,yscale=0.85]
-  % shade region
-  \draw[fill=yellow!90] plot[smooth, samples=100, domain=0:2] (\x,0.5+0.4*\x*\x) -| (0,0.5) ;
-
-  % draw axes 
-  \draw[thick,->] (0,0) -- (3.5,0) node[above] {$x$};
-  \draw[thick,->] (0,0) -- (0,4.2) node[right] {$p$};
-
-  % draw curves
-  \draw[ultra thick,domain=0:2.5,smooth,variable=\x,black] plot ({\x},{0.5+0.4*\x*\x}) node[right] {$p=S(x)$};
-
-  \draw (2,2.1) -- (2,0) node[below] {$\bar{x}$};
-  \draw (2,2.1) -- (0,2.1) node[left] {$\bar{p}$};
-  \draw[<-] (0.7,1.5)--(1.2,3.5) node[right] {Producer Surplus};
-
-\end{tikzpicture}
-\end{document} 
+```{figure} ../images/pic_applicationintegrals_consumer_producer_total_2.png
+---
+width: 600px
+---
+Producer surplus
 ```
 
-## Example 6
+## Example 1
+
+```{admonition} Determining surplus at market equilibrium using geometry
+:class: tip
 
 The demand function for PSL's {\it Calculus on Demand} video series is $p = D(x) = -3x+44$ and the corresponding supply function is $p=S(x) = 4x+2$. Determine the consumer and producer surplus at the market equilibrium values by finding the area of the corresponding region between two curves.
+```
 
-```{admonition} Step 1: Find the market equilibrium values.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find the market equilibrium values.
 
 \begin{align*}
   4x+2 &= -3x+44 && \hbox{Set $S(x) = D(x)$} \\
@@ -119,95 +85,39 @@ Therefore, the equilibrium quantity is $\bar{x} = 6$ and the equilibrium price i
 $$\bar{p} = D(6) = S(6) = 26.$$
 ```
 
-```{admonition} Step 2: Calculate the consumer surplus.
-:class: tip, dropdown
+````{dropdown} **Step 2:** Calculate the consumer surplus.
 
 Consumer surplus at the market equilibrium is the area of the region between the demand curve, $p=-3x+44$, and the horizontal line $p = 26$ on the interval $[0,6]$.
 
 Since the above region is a triangle, its area (i.e., the consumer surplus) can be calculuated using the formula for the area of a triangle (i.e., $\frac{1}{2}\cdot\hbox{base} \cdot \hbox{height}$).
 
 $$CS = \frac{1}{2}\cdot 6\cdot (44-26) = 3\cdot 18 = 54$$
+
+```{image} ../images/pic_applicationintegrals_consumer_producer_total_3.png
+---
+alt: Consumer surplus as area
+width: 500px
+align: center
+---
 ```
+````
 
-```{code-cell}
-:tags: [remove-input]
-
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
-
-\begin{tikzpicture}[scale=0.5,yscale=0.12]
-
-  \draw[fill=white] (-2,-10) rectangle ++(19,70);
-
-  % shade region
-  \draw[fill=yellow!90] plot[smooth, samples=10, domain=0:6] (\x,44 - 3*\x) -| (0,44);
-    
-  % draw axes 
-  \draw[thick,->] (0,0) -- (15,0) node[above] {$x$};
-  \draw[thick,->] (0,0) -- (0,50) node[right] {$p$};
-    
-  % draw curve
-  \draw[ultra thick,domain=0:10,samples = 100, smooth,variable=\x,black] plot ({\x},{44 - 3*\x}) node[right] {$p=-3x+44$};
-  \draw[ultra thick,domain=0:10,samples = 100, smooth,variable=\x,black] plot ({\x},{2 + 4*\x}) node[right] {$p=4x+2$};
-
-  % tick marks
-  \foreach \x in {6} 
-    \draw [thick] (\x cm,20pt) -- (\x cm,-20pt) node[below] {\x};
-  \foreach \y in {2,26,44} 
-    \draw [thick] (5pt,\y cm) -- (-5pt,\y cm) node[left] {\y};
-
-  \draw (6,26) -- (6,0);
-  %      \draw (6,26) -- (0,26) node[left] {$\bar{p}$};
-  %      %\draw[<-] (0.4,2) -- (1.5,3) node[right] {Consumer Surplus};
-\end{tikzpicture}
-\end{document} 
-```
-
-```{admonition} Step 3: Calculate the producer surplus.
-:class: tip, dropdown
+````{dropdown} **Step 3:** Calculate the producer surplus.
 
 Producer surplus at the market equilibrium is the area of the region between the supply curve, $p=4x+2$, and the horizontal line $p = 26$ on the interval $[0,6]$.
 
 Since the above region is a triangle, its area (i.e., the producer surplus) can be calculuated using the formula for the area of a triangle (i.e., $\frac{1}{2}\cdot\hbox{base} \cdot \hbox{height}$).
 
 $$PS = \frac{1}{2}\cdot  6\cdot (26-2) = 3\cdot 24 = 72$$
+
+```{image} ../images/pic_applicationintegrals_consumer_producer_total_4.png
+---
+alt: Producer surplus as area
+width: 500px
+align: center
+---
 ```
-
-```{code-cell}
-:tags: [remove-input]
-
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
-
-\begin{tikzpicture}[scale = 0.5,yscale=0.12]
-
-  \draw[fill=white] (-2,-10) rectangle ++(19,70);
-
-  % shade region
-  \draw[fill=yellow!90] plot[smooth, samples=10, domain=0:6] (\x,2 + 4*\x) -| (0,2);
-    
-  % draw axes 
-  \draw[thick,->] (0,0) -- (15,0) node[above] {$x$};
-  \draw[thick,->] (0,0) -- (0,50) node[right] {$p$};
-    
-  % draw curve
-  \draw[ultra thick,domain=0:10,samples = 100, smooth,variable=\x,black] plot ({\x},{44 - 3*\x}) node[right] {$p=-3x+44$};
-  \draw[ultra thick,domain=0:10,samples = 100, smooth,variable=\x,black] plot ({\x},{2 + 4*\x}) node[right] {$p=4x+2$};
-
-  % tick marks
-  \foreach \x in {6} 
-    \draw [thick] (\x cm,20pt) -- (\x cm,-20pt) node[below] {\x};
-  \foreach \y in {2,26,44} 
-    \draw [thick] (5pt,\y cm) -- (-5pt,\y cm) node[left] {\y};
-
-  \draw (6,26) -- (6,0);
-  %      \draw (6,26) -- (0,26) node[left] {$\bar{p}$};
-  %      %\draw[<-] (0.4,2) -- (1.5,3) node[right] {Consumer Surplus};
-\end{tikzpicture}
-\end{document} 
-```
+````
 
 ## Total Surplus
 
@@ -225,40 +135,23 @@ Total surplus can also be interpreted as the area of the region between the dema
 
 Total surplus is maximized at the equilibrium quantity.
 
-```{code-cell}
-:tags: [remove-input]
-
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
-
-\begin{tikzpicture}[xscale=2.5,yscale=0.94]
-
-  % shade region
-  \draw[fill=yellow!90] plot[smooth, samples=10, domain=0:1] (\x,3.5/2^\x) -- 
-  plot[smooth, samples=100, domain=1:0] (\x,0.5+0.4*\x*\x);
-
-  % draw axes 
-  \draw[thick,->] (0,0) -- (3.5,0) node[above] {$x$};
-  \draw[thick,->] (0,0) -- (0,4.2) node[right] {$p$};
-    
-  % draw curves
-  \draw[ultra thick,domain=0:2.5,samples = 100, smooth,variable=\x,black] plot ({\x},{3.5/2^\x})node[right] {$p=D(x)$};
-  \draw[ultra thick,domain=0:2.5,smooth,variable=\x,black] plot ({\x},{0.5+0.4*\x*\x}) node[right] {$p=S(x)$};
-
-  % draw labels
-  \draw (1,0.9) -- (1,0) node[below] {$\bar{x}$};
-  \draw[<-] (0.4,1.5) -- (1,3) node[right] {Total Surplus};
-\end{tikzpicture}
-\end{document} 
+```{figure} ../images/pic_applicationintegrals_consumer_producer_total_5.png
+---
+width: 600px
+---
+Total surplus
 ```
 
-## Example 7
+
+## Example 2
+
+```{admonition} Determining total surplus
+:class: tip
 
 Continuing with Example 1, determine the total surplus at the equilibrium quantity by finding the area of the corresponding region between two curves.
+```
 
-```{admonition} Step 1: Calculate the total surplus.
-:class: tip, dropdown
+````{dropdown} **Step 1:** Calculate the total surplus.
 
 Total surplus at the market equilibrium is the area of the region between the demand curve, $p=-3x+44$, and the supply curve, $p=4x+2$, on the interval $[0,6]$.
 
@@ -269,46 +162,21 @@ $$TS = \frac{1}{2}\cdot 6 \cdot (44-2) = 3\cdot 42 = 126$$
 The total surplus can also be calculated as the sum of the consumer and producer surpluses that were calculated in Example 1.
 
 $$TS = CS + PS = 54 + 72 = 126$$
+
+```{image} ../images/pic_applicationintegrals_consumer_producer_total_6.png
+---
+alt: Total surplus as area
+width: 500px
+align: center
+---
 ```
+````
 
-```{code-cell}
-:tags: [remove-input]
 
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
+## Example 3
 
-\begin{tikzpicture}[scale = 0.5,yscale=0.12]
-
-  \draw[fill=white] (-2,-10) rectangle ++(19,70);
-
-  % shade region
-  \draw[fill=yellow!90] 
-  plot[smooth, samples=10, domain=0:6] (\x,44 - 3*\x) --
-  plot[smooth, samples=10, domain=6:0] (\x,2 + 4*\x) -- cycle;
-    
-  % draw axes 
-  \draw[thick,->] (0,0) -- (15,0) node[above] {$x$};
-  \draw[thick,->] (0,0) -- (0,50) node[right] {$p$};
-    
-  % draw curve
-  \draw[ultra thick,domain=0:10,samples = 100, smooth,variable=\x,black] plot ({\x},{44 - 3*\x}) node[right] {$p=-3x+44$};
-  \draw[ultra thick,domain=0:10,samples = 100, smooth,variable=\x,black] plot ({\x},{2 + 4*\x}) node[right] {$p=4x+2$};
-
-  % tick marks
-  \foreach \x in {6} 
-    \draw [thick] (\x cm,20pt) -- (\x cm,-20pt) node[below] {\x};
-  \foreach \y in {2,26,44} 
-    \draw [thick] (5pt,\y cm) -- (-5pt,\y cm) node[left] {\y};
-
-  \draw (6,26) -- (6,0);
-  %      \draw (6,26) -- (0,26) node[left] {$\bar{p}$};
-  %      %\draw[<-] (0.4,2) -- (1.5,3) node[right] {Consumer Surplus};
-\end{tikzpicture}
-\end{document} 
-```
-
-## Example 8
+```{admonition} Determining surplus using integration
+:class: tip
 
 The quantity demanded for computer chips is given by 
 
@@ -319,9 +187,9 @@ where $x$ is the quantity demanded (in hundreds of chips per week), and $p$ is t
 $$p = 100+\frac{x^2}{4}$$
 
 Determine the consumer and producer surplus at the market equilibrium values.
+```
 
-```{admonition} Step 1: Find the market equilibrium values.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find the market equilibrium values.
 
 \begin{align*}
   100+\frac{x^2}{4} &= 225 -x^2  && \text{Set $S(x) = D(x)$}\\
@@ -335,8 +203,7 @@ Therefore, the equilibrium quantity is $\bar{x} = 10$ and the equilibrium price 
 $$\bar{p} = D(10) = S(10) = 125.$$
 ```
 
-```{admonition} Step 2: Calculate the consumer surplus.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Calculate the consumer surplus.
 
 Recall the formula for consumer surplus:
 
@@ -356,8 +223,7 @@ Since the units of $x$ are *hundreds* of chips and $p$ is the price of a single 
 $$100\cdot \frac{2000}{3} \approx \$66,666.67.$$
 ```
 
-```{admonition} Step 3: Calculate the producer surplus.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Calculate the producer surplus.
 
 Recall the formula for producer surplus.
 
@@ -377,12 +243,15 @@ Since the units of $x$ are *hundreds* of chips and $p$ is the price of a single 
 $$100\cdot \frac{500}{3} \approx \$16,666.67.$$
 ```
 
-## Example 9
+## Example 4
+
+```{admonition} Determining surplus using integration
+:class: tip
 
 The supplier of a custom pen will make $x$ units of pens available to the market when the wholesale unit price is $p = \sqrt{9+2x}$ where $p$ is in dollars. Determine the producer surplus when the market unit price is set to \$5 a unit.
+```
 
-```{admonition} Step 1: Determine the quantity supplied when the market price is \$$5$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the quantity supplied when the market price is \$$5$.
 
 \begin{align*}
   \sqrt{9+2x} &= 5  && \text{Find the units supplied at \$5 a unit}\\
@@ -392,8 +261,7 @@ The supplier of a custom pen will make $x$ units of pens available to the market
 \end{align*}
 ```
 
-```{admonition} Step 2: Setup the producer surplus as a definite integral.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Setup the producer surplus as a definite integral.
 
 \begin{align*}
   PS &= \bar{p}\bar{x}- \int^{\bar{x}}_0 S(x) ~dx\\
@@ -402,8 +270,7 @@ The supplier of a custom pen will make $x$ units of pens available to the market
 \end{align*}
 ```
 
-```{admonition} Step 3: Evaluate $\displaystyle \int_0^{8} (9+2x)^{1/2} ~dx$ using substitution.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Evaluate $\displaystyle \int_0^{8} (9+2x)^{1/2} ~dx$ using substitution.
 
 Use $u-$substitution
 
@@ -433,8 +300,7 @@ Evaluate the integral.
 \end{align*}
 ```
 
-```{admonition} Step 4: Complete the computations for the producer surplus.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Complete the computations for the producer surplus.
 
 \begin{align*}
   PS 

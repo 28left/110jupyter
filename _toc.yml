@@ -95,11 +95,11 @@ parts:
     - file: ch_Definite/definite_substitution.md
     - file: ch_Definite/definite_average_value.md
     - file: ch_Definite/definite_TIY.md
-  # - file: ch_Applicationintegrals/applicationintegrals_
-  #   sections:
-  #   - file: ch_Applicationintegrals/applicationintegrals_area_between_curves.md
-  #   - file: ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.md
-  #   - file: ch_Applicationintegrals/applicationintegrals_income_streams_annuities.md
+  - file: ch_Applicationintegrals/applicationintegrals_
+    sections:
+    - file: ch_Applicationintegrals/applicationintegrals_area_between_curves.md
+    - file: ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.md
+    - file: ch_Applicationintegrals/applicationintegrals_income_streams_annuities.md
   # - file: ch_Byparts/byparts_
   #   sections:
   #   - file: ch_Byparts/byparts_integration.md

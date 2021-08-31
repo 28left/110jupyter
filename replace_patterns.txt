@@ -22,6 +22,10 @@
 
 -----
 
+```\{admonition\} Step ([1-9]): (.*\n):class: tip, dropdown\n
+
+```{dropdown} **Step $1:** $2
+
 Step ([1-9]):
 
 **Step $1:**
