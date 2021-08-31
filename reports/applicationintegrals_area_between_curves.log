@@ -1,0 +1,56 @@
+Traceback (most recent call last):
+  File "/Users/janreimann/miniforge3/envs/jup/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/Users/janreimann/miniforge3/envs/jup/lib/python3.9/site-packages/nbclient/client.py", line 1112, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/janreimann/miniforge3/envs/jup/lib/python3.9/site-packages/nbclient/util.py", line 74, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/Users/janreimann/miniforge3/envs/jup/lib/python3.9/site-packages/nbclient/util.py", line 53, in just_run
+    return loop.run_until_complete(coro)
+  File "/Users/janreimann/miniforge3/envs/jup/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/janreimann/miniforge3/envs/jup/lib/python3.9/site-packages/nbclient/client.py", line 553, in async_execute
+    await self.async_execute_cell(
+  File "/Users/janreimann/miniforge3/envs/jup/lib/python3.9/site-packages/nbclient/client.py", line 857, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/Users/janreimann/miniforge3/envs/jup/lib/python3.9/site-packages/nbclient/client.py", line 760, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\begin{tikzpicture}
+
+  % shade region
+  \draw[smooth,fill=yellow!90] 
+  plot[domain=1:7] ({\x},{-5/2 + (61*\x)/10 - (43*\x^2)/24 + \x^3/5 - \x^4/120}) --
+  plot[domain=7:1] ({\x},{4 + (77*\x)/30 - (113*\x^2)/60 + \x^3/3 - \x^4/60}) -- cycle;
+
+  % draw axes
+  \draw[thick,->] (-1,0) -- (8.5,0) node[above] {$x$};
+  \draw[thick,->] (0,-0.75) -- (0,5.5) node[right] {$y$};
+
+  % draw curves
+  \draw[ultra thick,domain=1:7,smooth,variable=\x,black] 
+  plot ({\x},{-5/2 + (61*\x)/10 - (43*\x^2)/24 + \x^3/5 - \x^4/120}) node[right] {$y=g(x)$};
+  \draw[ultra thick,domain=1:7,smooth,variable=\x,black] 
+  plot ({\x},{4 + (77*\x)/30 - (113*\x^2)/60 + \x^3/3 - \x^4/60}) node[right] {$y=f(x)$};
+
+  % tick marks
+  \foreach \x in {1,2,6,7} 
+    \draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+    
+  \draw[dashed] (1,0) -- (1,2);
+  \draw[dashed] (2,0) -- (2,4);
+  \draw[dashed] (6,0) -- (6,2.1);
+  \draw[dashed] (7,0) -- (7,1);
+
+\end{tikzpicture}
+\end{document} 
+------------------
+
+
+UsageError: Cell magic `%%itikz` not found.
+

@@ -1,0 +1,1091 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumer, Producer, &amp; Total Surplus &#8212; Math 110 Companion Site</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Income Streams &amp; Annuities" href="applicationintegrals_income_streams_annuities.html" />
+    <link rel="prev" title="Area Between Two Curves" href="applicationintegrals_area_between_curves.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/PSU_SCI_RGB_2C.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Math 110 Companion Site</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to Math 110
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Course Packets e-book
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Precalc/precalc_.html">
+   Precalculus Review
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_simplification.html">
+     Algebraic Simplification Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_factoring.html">
+     Factoring Techniques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_solvingequations.html">
+     Solving Equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_graphing.html">
+     Graphing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_inequalities.html">
+     Solving Inequalities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_domain.html">
+     The Domain of a Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Precalc/precalc_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Functions/functions_.html">
+   Functions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_functionsdomainrange.html">
+     Functions, Domain, and Range
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_composition.html">
+     Composition of Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">
+     Cost, Revenue, and Profit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">
+     Power, Polynomial &amp; Rational Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_demandsupply.html">
+     Demand and Supply
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_application.html">
+     An Application
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Functions/functions_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Limits/limits_.html">
+   Limits and Continuity
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_def.html">
+     Limit of a Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_proplim.html">
+     Properties of Finite Limits
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_graphs.html">
+     Examples: Computing Limits from Graphs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_algebra.html">
+     Examples: Computing Limits Algebraically
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_indeterminate.html">
+     Indeterminate Forms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_infinity.html">
+     Limits at Infinity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_continuity.html">
+     Continuity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Limits/limits_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Derivatives/derivatives_.html">
+   Derivatives
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_def.html">
+     The Concept of the Derivative
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">
+     Basic Rules of Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Marginal/marginal_.html">
+   Marginal Analysis
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_costrevprofit.html">
+     Cost, Revenue, &amp; Profit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_marginalanalysis.html">
+     Marginal Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_elasticitydemand.html">
+     Elasticity of Demand
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_elasticityrevenue.html">
+     Elasticity &amp; Total Revenue
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Marginal/marginal_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Implicit/implicit_.html">
+   Implicit Differentiation
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_differentiation.html">
+     Implicit Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_relatedrates.html">
+     Related Rates
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Implicit/implicit_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">
+   Curve Sketching
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_increasedecrease.html">
+     Intervals of Increase &amp; Decrease
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_relative_extrema.html">
+     Relative Extrema
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_critical_points.html">
+     Critical Points
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_first_derivative_test.html">
+     The First Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_second_derivative_test.html">
+     The Second Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_concavity.html">
+     Intervals of Concavity
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_inflection.html">
+     Inflection Points
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_asymptotes.html">
+     Asymptotes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_sketching.html">
+     Curve Sketching
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Curvesketching/curvesketching_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Optimization/optimization_.html">
+   Optimization
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_relative_extrema.html">
+     Relative Extrema
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_critical_points.html">
+     Critical Points
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_first_derivative_test.html">
+     The First Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_second_derivative_test.html">
+     The Second Derivative Test
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_absolute_extrema.html">
+     Absolute Extrema
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_applications.html">
+     Applications
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Optimization/optimization_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Exponential/exponential_.html">
+   Exponential &amp; Logarithmic Functions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Exponential/exponential_functions.html">
+     Exponential and Logarithmic Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Exponential/exponential_laws.html">
+     Laws of Exponential and Logarithmic Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Exponential/exponential_logarithmic_diff.html">
+     Logarithmic Differentiation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Exponential/exponential_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Compoundinterest/compoundinterest_.html">
+   Compound Interest
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Compoundinterest/compoundinterest_notation.html">
+     Notation and Terminology
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Compoundinterest/compoundinterest_accumulated_amount.html">
+     Accumulated Amount Examples
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Compoundinterest/compoundinterest_present_value.html">
+     Present Value Examples
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Compoundinterest/compoundinterest_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Indefinite/indefinite_.html">
+   Indefinite Integrals
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">
+     Indefinite Integrals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">
+     Basic Rules of Integration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">
+     Initial Value Problem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">
+     Integration by Substitution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../ch_Definite/definite_.html">
+   Definite Integrals
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Definite/definite_riemann.html">
+     Riemann Sums and the Definite Integral
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Definite/definite_ftc.html">
+     The Fundamental Theorem of Calculus
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Definite/definite_substitution.html">
+     Substitution for Definite Integrals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Definite/definite_average_value.html">
+     Average Value of a Function
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ch_Definite/definite_TIY.html">
+     Try It Yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="applicationintegrals_.html">
+   Applications of Definite Integrals
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="applicationintegrals_area_between_curves.html">
+     Area Between Two Curves
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Consumer, Producer, &amp; Total Surplus
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="applicationintegrals_income_streams_annuities.html">
+     Income Streams &amp; Annuities
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Other
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Other/privacy.html">
+   Privacy
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#consumer-surplus">
+   Consumer Surplus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#producer-surplus">
+   Producer Surplus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#total-surplus">
+   Total Surplus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-3">
+   Example 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-4">
+   Example 4
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="consumer-producer-total-surplus">
+<h1>Consumer, Producer, &amp; Total Surplus<a class="headerlink" href="#consumer-producer-total-surplus" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="consumer-surplus">
+<h2>Consumer Surplus<a class="headerlink" href="#consumer-surplus" title="Permalink to this headline">¶</a></h2>
+<p>Consumer surplus is the difference between what customers are willing to pay for a product and what they actually pay.</p>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>For a given demand function, <span class="math notranslate nohighlight">\(D(x)\)</span>, if <span class="math notranslate nohighlight">\(\bar{x}\)</span> is the quantity demanded and <span class="math notranslate nohighlight">\(\bar{p}\)</span> is unit market price, then <strong>consumer surplus</strong>, <span class="math notranslate nohighlight">\(CS\)</span>, is given by:</p>
+<div class="math notranslate nohighlight">
+\[CS  = \int^{\bar{x}}_0 D(x)-\bar{p} ~dx = \int_0^{\bar{x}} D(x)~dx - \bar{p}\bar{x}.\]</div>
+</div>
+<p>Consumer surplus can also be interpreted as the area of the region between the demand curve and the horizontal line <span class="math notranslate nohighlight">\(p=\bar{p}\)</span> on the interval <span class="math notranslate nohighlight">\([0,\bar{x}]\)</span>.</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_consumer_producer_total_1.png"><img alt="../_images/pic_applicationintegrals_consumer_producer_total_1.png" src="../_images/pic_applicationintegrals_consumer_producer_total_1.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Consumer surplus</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="producer-surplus">
+<h2>Producer Surplus<a class="headerlink" href="#producer-surplus" title="Permalink to this headline">¶</a></h2>
+<p>Producer surplus is the difference between what sellers receive for their product and what they are willing to receive.</p>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>For a given supply function, <span class="math notranslate nohighlight">\(S(x)\)</span>, if <span class="math notranslate nohighlight">\(\bar{x}\)</span> is the quantity demanded and <span class="math notranslate nohighlight">\(\bar{p}\)</span> is unit market price, then <strong>producer surplus</strong>, <span class="math notranslate nohighlight">\(PS\)</span>, is given by:</p>
+<div class="math notranslate nohighlight">
+\[PS = \int^{\bar{x}}_0 \bar{p}-S(x) ~dx  =  \bar{p}\bar{x} - \int_0^{\bar{x}} S(x) ~dx.\]</div>
+</div>
+<p>Producer surplus can also be interpreted as the area of the region between the supply curve and the horizontal line <span class="math notranslate nohighlight">\(p=\bar{p}\)</span> on the interval <span class="math notranslate nohighlight">\([0,\bar{x}]\)</span>.</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_consumer_producer_total_2.png"><img alt="../_images/pic_applicationintegrals_consumer_producer_total_2.png" src="../_images/pic_applicationintegrals_consumer_producer_total_2.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Producer surplus</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Determining surplus at market equilibrium using geometry</p>
+<p>The demand function for PSL’s {\it Calculus on Demand} video series is <span class="math notranslate nohighlight">\(p = D(x) = -3x+44\)</span> and the corresponding supply function is <span class="math notranslate nohighlight">\(p=S(x) = 4x+2\)</span>. Determine the consumer and producer surplus at the market equilibrium values by finding the area of the corresponding region between two curves.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Find the market equilibrium values.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  4x+2 &amp;= -3x+44 &amp;&amp; \hbox{Set $S(x) = D(x)$} \\
+  4x &amp;= -3x+42 &amp;&amp; \hbox{Subtract $2$ from both sides} \\
+  7x &amp;= 42 &amp;&amp; \hbox{Add $3x$ to both sides} \\
+  x &amp;= 6 &amp;&amp; \hbox{Divide both sides by $7$} 
+\end{align*}\]</div>
+<p class="card-text">Therefore, the equilibrium quantity is <span class="math notranslate nohighlight">\(\bar{x} = 6\)</span> and the equilibrium price is</p>
+<div class="math notranslate nohighlight">
+\[\bar{p} = D(6) = S(6) = 26.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Calculate the consumer surplus.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Consumer surplus at the market equilibrium is the area of the region between the demand curve, <span class="math notranslate nohighlight">\(p=-3x+44\)</span>, and the horizontal line <span class="math notranslate nohighlight">\(p = 26\)</span> on the interval <span class="math notranslate nohighlight">\([0,6]\)</span>.</p>
+<p class="card-text">Since the above region is a triangle, its area (i.e., the consumer surplus) can be calculuated using the formula for the area of a triangle (i.e., <span class="math notranslate nohighlight">\(\frac{1}{2}\cdot\hbox{base} \cdot \hbox{height}\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[CS = \frac{1}{2}\cdot 6\cdot (44-26) = 3\cdot 18 = 54\]</div>
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_consumer_producer_total_3.png"><img alt="Consumer surplus as area" class="align-center" src="../_images/pic_applicationintegrals_consumer_producer_total_3.png" style="width: 500px;" /></a>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Calculate the producer surplus.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Producer surplus at the market equilibrium is the area of the region between the supply curve, <span class="math notranslate nohighlight">\(p=4x+2\)</span>, and the horizontal line <span class="math notranslate nohighlight">\(p = 26\)</span> on the interval <span class="math notranslate nohighlight">\([0,6]\)</span>.</p>
+<p class="card-text">Since the above region is a triangle, its area (i.e., the producer surplus) can be calculuated using the formula for the area of a triangle (i.e., <span class="math notranslate nohighlight">\(\frac{1}{2}\cdot\hbox{base} \cdot \hbox{height}\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[PS = \frac{1}{2}\cdot  6\cdot (26-2) = 3\cdot 24 = 72\]</div>
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_consumer_producer_total_4.png"><img alt="Producer surplus as area" class="align-center" src="../_images/pic_applicationintegrals_consumer_producer_total_4.png" style="width: 500px;" /></a>
+</div>
+</details></div>
+<div class="section" id="total-surplus">
+<h2>Total Surplus<a class="headerlink" href="#total-surplus" title="Permalink to this headline">¶</a></h2>
+<p>Total surplus is the sum of the consumer and the producer surpluses.</p>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>For given demand and supply functions, <span class="math notranslate nohighlight">\(D(x)\)</span> and <span class="math notranslate nohighlight">\(S(x)\)</span>, if <span class="math notranslate nohighlight">\(\bar{x}\)</span> is the quantity demanded, then <strong>total surplus</strong>, <span class="math notranslate nohighlight">\(TS\)</span>, is given by:</p>
+<div class="math notranslate nohighlight">
+\[TS = CS + PS = \int_0^{\bar{x}} D(x) - S(x) ~dx\]</div>
+</div>
+<p>Total surplus can also be interpreted as the area of the region between the demand curve and the supply curve on the interval <span class="math notranslate nohighlight">\([0,\bar{x}]\)</span>.</p>
+<p>Total surplus is maximized at the equilibrium quantity.</p>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_consumer_producer_total_5.png"><img alt="../_images/pic_applicationintegrals_consumer_producer_total_5.png" src="../_images/pic_applicationintegrals_consumer_producer_total_5.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Total surplus</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Determining total surplus</p>
+<p>Continuing with Example 1, determine the total surplus at the equilibrium quantity by finding the area of the corresponding region between two curves.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Calculate the total surplus.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Total surplus at the market equilibrium is the area of the region between the demand curve, <span class="math notranslate nohighlight">\(p=-3x+44\)</span>, and the supply curve, <span class="math notranslate nohighlight">\(p=4x+2\)</span>, on the interval <span class="math notranslate nohighlight">\([0,6]\)</span>.</p>
+<p class="card-text">Since the above region is a triangle, its area (i.e., the total surplus) can be calculuated using the formula for the area of a triangle (i.e., <span class="math notranslate nohighlight">\(\frac{1}{2}\cdot\hbox{base} \cdot \hbox{height}\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[TS = \frac{1}{2}\cdot 6 \cdot (44-2) = 3\cdot 42 = 126\]</div>
+<p class="card-text">The total surplus can also be calculated as the sum of the consumer and producer surpluses that were calculated in Example 1.</p>
+<div class="math notranslate nohighlight">
+\[TS = CS + PS = 54 + 72 = 126\]</div>
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_consumer_producer_total_6.png"><img alt="Total surplus as area" class="align-center" src="../_images/pic_applicationintegrals_consumer_producer_total_6.png" style="width: 500px;" /></a>
+</div>
+</details></div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Determining surplus using integration</p>
+<p>The quantity demanded for computer chips is given by</p>
+<div class="math notranslate nohighlight">
+\[p = 225-x^2\]</div>
+<p>where <span class="math notranslate nohighlight">\(x\)</span> is the quantity demanded (in hundreds of chips per week), and <span class="math notranslate nohighlight">\(p\)</span> is the price of a single chip (in dollars).  The manufacturer will make <span class="math notranslate nohighlight">\(x\)</span> units available to the market each week if</p>
+<div class="math notranslate nohighlight">
+\[p = 100+\frac{x^2}{4}\]</div>
+<p>Determine the consumer and producer surplus at the market equilibrium values.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Find the market equilibrium values.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  100+\frac{x^2}{4} &amp;= 225 -x^2  &amp;&amp; \text{Set $S(x) = D(x)$}\\
+    \frac{5}{4}x^2 &amp;= 125  &amp;&amp; \hbox{Add $x^2$ and subtract $100$ from both sides}\\
+  x^2&amp;= 100 &amp;&amp; \hbox{Mulitply both sides by $4/5$}\\ 
+  x&amp;= 10 &amp;&amp; \text{Take the square root of both sides,  $x\geq 0$} 
+\end{align*}\]</div>
+<p class="card-text">Therefore, the equilibrium quantity is <span class="math notranslate nohighlight">\(\bar{x} = 10\)</span> and the equilibrium price is</p>
+<div class="math notranslate nohighlight">
+\[\bar{p} = D(10) = S(10) = 125.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Calculate the consumer surplus.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Recall the formula for consumer surplus:</p>
+<div class="math notranslate nohighlight">
+\[CS  = \int^{\bar{x}}_0 D(x)-\bar{p} ~dx = \int_0^{\bar{x}} D(x)~dx - \bar{p}\bar{x}\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  CS &amp;= \int_0^{\bar{x}} D(x) ~dx-\bar{p}\bar{x} &amp;&amp; \text{Use the formula for consumer surplus}\\
+  &amp;= \int^{10}_0 225-x^2 ~dx - 10\cdot 125\\
+  &amp;= \left(225x-\frac{x^3}{3}\right)\Biggr|^{10}_0-1250\\
+  &amp;= \left(2250 - \frac{1000}{3}\right) - (0-0) - 1250\\
+  &amp;= 2000/3
+\end{align*}\]</div>
+<p class="card-text">Since the units of <span class="math notranslate nohighlight">\(x\)</span> are <em>hundreds</em> of chips and <span class="math notranslate nohighlight">\(p\)</span> is the price of a single chip we need to multiply this result by <span class="math notranslate nohighlight">\(100\)</span> to correctly interpret the consumer surplus in dollars. Therefore, the consumer surplus is</p>
+<div class="math notranslate nohighlight">
+\[100\cdot \frac{2000}{3} \approx \$66,666.67.\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Calculate the producer surplus.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Recall the formula for producer surplus.</p>
+<div class="math notranslate nohighlight">
+\[PS = \int^{\bar{x}}_0 \bar{p}-S(x) ~dx  =  \bar{p}\bar{x} - \int_0^{\bar{x}} S(x) ~dx\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  PS 
+  &amp;=\bar{p}\bar{x}- \int^{\bar{x}}_0S(x)~dx &amp;&amp; \text{Use the formula for producer surplus}\\
+  &amp;= 10\cdot 125 - \int^{10}_0 100+\frac{x^2}{4} ~dx \\
+  &amp;= 1250 - \left(100x+\frac{x^3}{12}\right)\Biggr|^{10}_0\\
+  &amp;= 1250 - \left[\left(1000 + \frac{1000}{12}\right) - (0+0)\right] \\
+  &amp;= 500/3
+\end{align*}\]</div>
+<p class="card-text">Since the units of <span class="math notranslate nohighlight">\(x\)</span> are <em>hundreds</em> of chips and <span class="math notranslate nohighlight">\(p\)</span> is the price of a single chip we need to multiply this result by <span class="math notranslate nohighlight">\(100\)</span> to correctly interpret the producer surplus in dollars. Therefore, the producer surplus is</p>
+<div class="math notranslate nohighlight">
+\[100\cdot \frac{500}{3} \approx \$16,666.67.\]</div>
+</div>
+</details></div>
+<div class="section" id="example-4">
+<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Determining surplus using integration</p>
+<p>The supplier of a custom pen will make <span class="math notranslate nohighlight">\(x\)</span> units of pens available to the market when the wholesale unit price is <span class="math notranslate nohighlight">\(p = \sqrt{9+2x}\)</span> where <span class="math notranslate nohighlight">\(p\)</span> is in dollars. Determine the producer surplus when the market unit price is set to $5 a unit.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Determine the quantity supplied when the market price is $<span class="math notranslate nohighlight">\(5\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  \sqrt{9+2x} &amp;= 5  &amp;&amp; \text{Find the units supplied at \$5 a unit}\\
+  9+2x &amp;= 25 &amp;&amp; \hbox{Square both sides}\\
+  2x&amp;= 16 &amp;&amp; \hbox{Subtract 9 from both sides}\\
+  x&amp;= 8 &amp;&amp; \hbox{Divide both sides by 2}
+\end{align*}\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Setup the producer surplus as a definite integral.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  PS &amp;= \bar{p}\bar{x}- \int^{\bar{x}}_0 S(x) ~dx\\
+  &amp;= 5 \cdot 8 - \int_0^{8} \sqrt{9+2x} ~dx\\
+  &amp;= 40 - \int_0^{8} (9+2x)^{1/2} ~dx\\
+\end{align*}\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_0^{8} (9+2x)^{1/2} ~dx\)</span> using substitution.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Use <span class="math notranslate nohighlight">\(u-\)</span>substitution</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  u &amp;= 9+2x \\
+  du &amp;= 2~dx &amp;&amp;  \left(\hbox{or equivalently, } \frac{1}{2} du = dx\right)
+\end{align*}\]</div>
+<p class="card-text">Compute the new limits of integration using the equation <span class="math notranslate nohighlight">\(u = 9+2x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  x=8 ~~&amp;\Longrightarrow~~ u = 9 + 2(8) = 25\\
+  x=0 ~~&amp;\Longrightarrow~~ u = 9 + 2(0) = 9
+\end{align*}\]</div>
+<p class="card-text">Evaluate the integral.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  \int_0^{8} (9+2x)^{1/2} ~dx
+  &amp;= \int_{9}^{25} u^{1/2}\frac{1}{2} ~du &amp;&amp; \hbox{Apply the substitution}\\
+  &amp;= \frac{1}{2}\int_{9}^{25} u^{1/2} ~du &amp;&amp; \hbox{Constant multiple rule}\\
+  &amp;= \frac{1}{2} \cdot \frac{2}{3} u^{3/2}\Biggr|_{9}^{25} &amp;&amp; \hbox{Power rule}\\
+  &amp;= \frac{1}{3} u^{3/2}\Biggr|_{9}^{25} &amp;&amp; \hbox{Simplify}\\
+  &amp;= \frac{1}{3} \left(25^{3/2} - 9^{3/2}\right) &amp;&amp; \hbox{Plug in limits of integration}\\
+  &amp;= \frac{1}{3} \left(5^{3} - 3^{3}\right) &amp;&amp; \hbox{Simplify}\\
+  &amp;= \frac{1}{3} \left(125 - 27\right)\\
+  &amp;= 98/3
+\end{align*}\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 4:</strong> Complete the computations for the producer surplus.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  PS 
+  &amp;= 40 - \int_0^{8} (9+2x)^{1/2} ~dx\\
+  &amp;= 40 - \frac{98}{3} &amp;&amp; \hbox{Using result from Step 3}\\
+  &amp;= 22/3  \\
+  &amp;\approx \$7.33
+\end{align*}\]</div>
+<p class="card-text">Therefore, the producer surplus is approximately $7.33 when the unit price is $5.</p>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./ch_Applicationintegrals"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="applicationintegrals_area_between_curves.html" title="previous page">Area Between Two Curves</a>
+    <a class='right-next' id="next-link" href="applicationintegrals_income_streams_annuities.html" title="next page">Income Streams &amp; Annuities</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Department of Mathematics, Penn State University Park<br/>
+        
+            &copy; Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-206078372-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>
