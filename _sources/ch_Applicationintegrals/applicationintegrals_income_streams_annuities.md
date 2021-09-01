@@ -17,9 +17,14 @@ kernelspec:
 
 An **income stream** refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.
 
+```{panels}
+
 The **future value** of an income stream is the total of all of the money transferred plus all of the interest earned.
 
+---
+
 The **present value** of an income stream is the principal investment, $P$, that yields the same future/accumulated value as the income stream when $P$ is invested for a period of $T$ years at the same rate of interest.
+```
 
 - $R(t)$ = rate at which income is generated (in dollars per year)
 - $T$ = length of time (in years) of the income stream    
@@ -55,7 +60,7 @@ An **annuity** is a sequence of payments made at regular intervals.
 |$m=1$|$m=2$|$m=4$|
 
 |Monthly|Weekly|Daily|
- :---: | :---: | :---: |
+| :---: | :---: | :---: |
 |$m=12$|$m=52$|$m=365$|
 
 ````

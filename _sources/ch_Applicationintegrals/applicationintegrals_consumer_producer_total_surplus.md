@@ -13,11 +13,6 @@ kernelspec:
 ---
 # Consumer, Producer, & Total Surplus
 
-```{code-cell}
-:tags: [remove-cell]
-
-%load_ext itikz
-```
 
 ## Consumer Surplus
 
