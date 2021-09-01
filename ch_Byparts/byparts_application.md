@@ -15,13 +15,17 @@ kernelspec:
 
 ## Income Streams
 
-## Income Streams
-
 An **income stream** refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.
+
+````{panels}
 
 The **future value** of an income stream is the total of all of the money transferred plus all of the interest earned.
 
+---
+
 The **present value** of an income stream is the principal investment, $P$, that yields the same future/accumulated value as the income stream when $P$ is invested for a period of $T$ years at the same rate of interest.
+````
+
 
 - $R(t)$ = rate at which income is generated (in dollars per year)
 - $T$ = length of time (in years) of the income stream    
@@ -39,22 +43,24 @@ $$A = e^{rT}\int_0^T R(t) e^{-rt} ~dt$$
 $$PV = \int_0^T R(t) e^{-rt} ~dt$$
 ```
 
-## Example 7
+## Example 1
+
+```{admonition} Compute future and present value of an investment
+:class: tip
 
 Suppose an investment is expected to generate income at the rate of 
 
 $$R(t) = 5 + 3t$$
 
 thousands of dollars per year for the next 10 years. Find the present and future values from this investment if the prevailing interest rate is 2\% per year compounded continuously.
+```
 
-```{admonition} Step 1: Write the present and future values of the income stream as definite integrals.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Write the present and future values of the income stream as definite integrals.
 
 $$PV = \int^{10}_0 \left( 5 + 3t \right)e^{-0.02t} ~dt ~~~~~~~ A = e^{0.2}\int^{10}_0 \left( 5 + 3t \right)e^{-0.02t} ~dt$$
 ```
 
-```{admonition} Step 2: Compute $\displaystyle \int \left( 5 + 3t \right)e^{-0.02t}~dt$ using integration by parts.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $\displaystyle \int \left( 5 + 3t \right)e^{-0.02t}~dt$ using integration by parts.
 
 Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{a}e^{ax}+C$.) 
 
@@ -73,8 +79,7 @@ Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute the present value using the answer to Step 2.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute the present value using the answer to Step 2.
 
 \begin{align*}
   PV 
@@ -88,8 +93,7 @@ Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{
 Therefore, the present value of this income stream is approximately \$176,740.53.
 ```
 
-```{admonition} Step 4: Compute the future value using the answer to Step 3.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Compute the future value using the answer to Step 3.
 
 \begin{align*}
   A 

@@ -100,12 +100,12 @@ parts:
     - file: ch_Applicationintegrals/applicationintegrals_area_between_curves.md
     - file: ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.md
     - file: ch_Applicationintegrals/applicationintegrals_income_streams_annuities.md
-  # - file: ch_Byparts/byparts_
-  #   sections:
-  #   - file: ch_Byparts/byparts_integration.md
-  #   - file: ch_Byparts/byparts_application.md
-  #   - file: ch_Byparts/byparts_improper.md
-  #   - file: ch_Byparts/byparts_application_improper.md
+  - file: ch_Byparts/byparts_
+    sections:
+    - file: ch_Byparts/byparts_integration.md
+    - file: ch_Byparts/byparts_application.md
+    - file: ch_Byparts/byparts_improper.md
+    - file: ch_Byparts/byparts_application_improper.md
 
 # - caption: Computational Examples
 #   chapters:

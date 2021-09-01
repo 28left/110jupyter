@@ -52,16 +52,18 @@ $$du = f'(x) ~dx ~~~~~~~~ v = \int g(x)~dx  ~~~ \hbox{(no $+ C$ required)}$$
 
 ## Example 1
 
-Compute $\displaystyle \int 2x e^x ~dx.$
+```{admonition} Product with an exponential function
+:class: tip
 
-```{admonition} Step 1: Based on the integrand and the preferred LAE order, pick $u$ and $dv$.
-:class: tip, dropdown
+Compute $\displaystyle \int 2x e^x ~dx.$
+```
+
+```{dropdown} **Step 1:** Based on the integrand and the preferred LAE order, pick $u$ and $dv$.
 
 Since the integrand is $2xe^x$, the preferred choice for $u$ is $u=2x$ and therefore $dv = e^x ~dx$.
 ```
 
-```{admonition} Step 2: Compute $du$ and $v$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $du$ and $v$.
 
 \begin{align*}
   u &= 2x & dv &= e^x~dx \\
@@ -69,8 +71,7 @@ Since the integrand is $2xe^x$, the preferred choice for $u$ is $u=2x$ and there
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute the integral using integration by parts.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute the integral using integration by parts.
 
 \begin{align*}
   \int 2xe^x ~dx
@@ -84,16 +85,18 @@ Since the integrand is $2xe^x$, the preferred choice for $u$ is $u=2x$ and there
 
 ## Example 2
 
-Compute $\displaystyle \int x^2 \ln(x) ~dx.$
+```{admonition} Product with a logarithmic function
+:class: tip
 
-```{admonition} Step 1: Based on the integrand and the preferred LAE order, pick $u$ and $dv$.
-:class: tip, dropdown
+Compute $\displaystyle \int x^2 \ln(x) ~dx.$
+```
+
+```{dropdown} **Step 1:** Based on the integrand and the preferred LAE order, pick $u$ and $dv$.
 
 Since the integrand is $x^2 \ln(x)$, the preferred choice for $u$ is $u=\ln(x)$ and therefore $dv = x^2 ~dx$.
 ```
 
-```{admonition} Step 2: Compute $du$ and $v$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $du$ and $v$.
 
 \begin{align*}
   u &= \ln(x) & dv &= x^2~dx \\
@@ -101,8 +104,7 @@ Since the integrand is $x^2 \ln(x)$, the preferred choice for $u$ is $u=\ln(x)$ 
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute the integral using integration by parts.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute the integral using integration by parts.
 
 \begin{align*}
   \int x^2\ln(x) ~dx 
@@ -116,16 +118,18 @@ Since the integrand is $x^2 \ln(x)$, the preferred choice for $u$ is $u=\ln(x)$ 
 
 ## Example 3
 
-Compute $\displaystyle \int \ln(x) ~dx.$
+```{admonition} Integrating the logarithm
+:class: tip
 
-```{admonition} Step 1: Based on the integrand and the preferred LAE order, pick $u$ and $dv$.
-:class: tip, dropdown
+Compute $\displaystyle \int \ln(x) ~dx.$
+```
+
+```{dropdown} **Step 1:** Based on the integrand and the preferred LAE order, pick $u$ and $dv$.
 
 Since the integrand is $\ln(x)$, the preferred choice for $u$ is $u=\ln(x)$ and therefore $dv = dx$.
 ```
 
-```{admonition} Step 2: Compute $du$ and $v$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $du$ and $v$.
 
 \begin{align*}
   u &= \ln(x) & dv &= 1~dx \\
@@ -133,8 +137,7 @@ Since the integrand is $\ln(x)$, the preferred choice for $u$ is $u=\ln(x)$ and 
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute the integral using integration by parts.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute the integral using integration by parts.
 
 \begin{align*}
   \int \ln(x) ~dx 
@@ -147,16 +150,18 @@ Since the integrand is $\ln(x)$, the preferred choice for $u$ is $u=\ln(x)$ and 
 
 ## Example 4
 
-Compute the area of the region under the graph of $\displaystyle f(x) = 3xe^{-2x} $ from $x=0$ to $x=4$.
+```{admonition} Area under a graph
+:class: tip
 
-```{admonition} Step 1: Write the area of the region as a definite integral.
-:class: tip, dropdown
+Compute the area of the region under the graph of $\displaystyle f(x) = 3xe^{-2x} $ from $x=0$ to $x=4$.
+```
+
+```{dropdown} **Step 1:** Write the area of the region as a definite integral.
 
 $$\hbox{Area} = \int_0^4 3xe^{-2x}~dx$$
 ```
 
-```{admonition} Step 2: Compute $\displaystyle \int 3xe^{-2x} ~dx $ using integration by parts.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $\displaystyle \int 3xe^{-2x} ~dx $ using integration by parts.
 
 Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{a}e^{ax}+C$.) 
 
@@ -175,8 +180,7 @@ Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{
 \end{align*}
 ```
 
-```{admonition} Step 3: Evaluate $\displaystyle \int_0^4 3xe^{-2x} ~dx $ using the answer to Step 2.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Evaluate $\displaystyle \int_0^4 3xe^{-2x} ~dx $ using the answer to Step 2.
 
 \begin{align*}
   \hbox{Area} 
@@ -190,10 +194,13 @@ Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{
 
 ## Example 5
 
-Evaluate $\displaystyle \int_1^e (4x+1)\ln(x) ~dx$.
+```{admonition} Evaluating a definite integral by parts
+:class: tip
 
-```{admonition} Step 1: Compute $\displaystyle \int (4x+1)\ln(x) ~dx $ using integration by parts.
-:class: tip, dropdown
+Evaluate $\displaystyle \int_1^e (4x+1)\ln(x) ~dx$.
+```
+
+```{dropdown} **Step 1:** Compute $\displaystyle \int (4x+1)\ln(x) ~dx $ using integration by parts.
 
 Pick $u$ and $dv$ and compute $du$ and $v$. 
 
@@ -212,8 +219,7 @@ Pick $u$ and $dv$ and compute $du$ and $v$.
 \end{align*}
 ```
 
-```{admonition} Step 2: Evaluate $\displaystyle \int_1^e (4x+1)\ln(x) ~dx$ using the answer to Step 1.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Evaluate $\displaystyle \int_1^e (4x+1)\ln(x) ~dx$ using the answer to Step 1.
 
 \begin{align*}
   \int_1^e (4x+1)\ln(x) ~dx 
@@ -226,10 +232,13 @@ Pick $u$ and $dv$ and compute $du$ and $v$.
 
 ## Example 6
 
-Compute $\displaystyle \int 5x^2e^x ~dx$.
+```{admonition} Evaluating a definite integral by parts
+:class: tip
 
-```{admonition} Step 1: Use integration by parts to compute $\displaystyle \int 5x^2e^x ~dx$.
-:class: tip, dropdown
+Compute $\displaystyle \int 5x^2e^x ~dx$.
+```
+
+```{dropdown} **Step 1:** Use integration by parts to compute $\displaystyle \int 5x^2e^x ~dx$.
 
 Pick $u$ and $dv$ and compute $du$ and $v$.
 
@@ -247,8 +256,7 @@ Pick $u$ and $dv$ and compute $du$ and $v$.
 In order to compute the indefinite integral of $10xe^x$, we need to use integration by parts again.
 ```
 
-```{admonition} Step 2: Pick $u$ and $dv$ and compute $du$ and $v$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Pick $u$ and $dv$ and compute $du$ and $v$.
 
 \begin{align*}
   u &= 10x & dv &= e^x~dx \\
@@ -262,8 +270,7 @@ In order to compute the indefinite integral of $10xe^x$, we need to use integrat
 \end{align*}
 ```
 
-```{admonition} Step 3: Use the answer to Step 2 to complete the computations in Step 1.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Use the answer to Step 2 to complete the computations in Step 1.
 
 \begin{align*}
   \int 5x^2e^x ~dx

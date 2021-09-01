@@ -13,11 +13,6 @@ kernelspec:
 ---
 # Improper Integrals
 
-```{code-cell}
-:tags: [remove-cell]
-
-%load_ext itikz
-```
 
 ## Improper Integrals over $[a, \infty)$ and $(-\infty, b]$
 
@@ -38,43 +33,24 @@ if the limit exists.
 
 If an improper integral exists, it corresponds to the area of a region that is unbounded on the left or on the right.
 
-```{code-cell}
-:tags: [remove-input]
 
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
-
-\begin{tikzpicture}[yscale=2]
-
-  %shade region
-  \fill[fill=yellow!90] plot[smooth, samples=100, domain=1:10.2 ] (\x,{2.71 ^ -(\x/7)})-- (10.2, 0) --(1, 0)-- cycle;
-    
-  %draw curve
-  \draw[domain=1:10.2,smooth,variable=\x,black,ultra thick] plot ({\x},{2.71 ^ (-\x/7)}) 
-        node[above]{$y=f(x)$};
-    
-  % tick marks
-  \foreach \x in {1,3,...,9} 
-    \draw [thick] (\x cm,1pt) -- (\x cm,-1pt) node[below] {$\x$};
-  \foreach \y in {} 
-    \draw [thick] (1pt,\y cm) -- (-1pt,\y cm) node[left] {$\y$};
-
-  %draw axes
-  \draw[->] (-0.2,0) -- (10.2,0) node[below] {$x$};
-  \draw[->] (0,-0.2) -- (0,1) node[right] {$y$};
-
-  \draw (1,0) -- (1,0.881);
-\end{tikzpicture}
-\end{document} 
+```{figure} ../images/pic_byparts_improper_1.png
+---
+width: 600px
+alt: Improper integral unbounded on the right
+---
+Improper integral unbounded on the right
 ```
 
-## Example 8
+## Example 1
+
+```{admonition} Evaluating an improper integral unbounded on the right
+:class: tip
 
 Evaluate $\displaystyle \int_2^\infty \frac{1}{x} ~dx$, if it exists.
+```
 
-```{admonition} Step 1: Evaluate $\displaystyle \int_2^t \frac{1}{x} ~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Evaluate $\displaystyle \int_2^t \frac{1}{x} ~dx$.
 
 \begin{align*}
   \int_2^t \frac{1}{x} ~dx
@@ -83,8 +59,7 @@ Evaluate $\displaystyle \int_2^\infty \frac{1}{x} ~dx$, if it exists.
 \end{align*}
 ```
 
-```{admonition} Step 2: Use Step 1 to evaluate $\displaystyle \int_2^\infty \frac{1}{x} ~dx$ as the limit of a definite integral.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Use Step 1 to evaluate $\displaystyle \int_2^\infty \frac{1}{x} ~dx$ as the limit of a definite integral.
 
 \begin{align*}
   \int_2^\infty \frac{1}{x} ~dx 
@@ -96,12 +71,15 @@ Evaluate $\displaystyle \int_2^\infty \frac{1}{x} ~dx$, if it exists.
 Therefore, the improper integral does not exist.
 ```
 
-## Example 9
+## Example 2
+
+```{admonition} Evaluating an improper integral unbounded on the left
+:class: tip
 
 Evaluate $\displaystyle \int_{-\infty}^{-1} \frac{1}{x^4}~dx$, if it exists.
+```
 
-```{admonition} Step 1: Evaluate $\displaystyle \int_s^{-1} \frac{1}{x^4} ~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Evaluate $\displaystyle \int_s^{-1} \frac{1}{x^4} ~dx$.
 
 \begin{align*}
   \int_s^{-1} \frac{1}{x^4} ~dx
@@ -112,8 +90,7 @@ Evaluate $\displaystyle \int_{-\infty}^{-1} \frac{1}{x^4}~dx$, if it exists.
 \end{align*}
 ```
 
-```{admonition} Step 2: Use Step 1 to evaluate $\displaystyle \int_{-\infty}^{-1} \frac{1}{x^4}~dx$ as the limit of a definite integral.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Use Step 1 to evaluate $\displaystyle \int_{-\infty}^{-1} \frac{1}{x^4}~dx$ as the limit of a definite integral.
 
 \begin{align*}
   \int_{-\infty}^{-1} \frac{1}{x^4}~dx
@@ -123,18 +100,20 @@ Evaluate $\displaystyle \int_{-\infty}^{-1} \frac{1}{x^4}~dx$, if it exists.
 \end{align*}
 ```
 
-## Example 10
+## Example 3
+
+```{admonition} Finding the area under a graph unbounded on the right
+:class: tip
 
 Find the area of the region under the graph of $f(x) = e^{-x/2}$ for $x \geq 2$.
-
-```{admonition} Step 1: Write the area of the region as an improper integral.
-:class: tip, dropdown
-
-$$\hbox{Area} =  \int_{2}^{\infty} e^{-x/2}~dx$$
 ```
 
-```{admonition} Step 2: Evaluate $\displaystyle \int_{2}^{t} e^{-x/2}~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Write the area of the region as an improper integral.
+
+$$\text{Area} =  \int_{2}^{\infty} e^{-x/2}~dx$$
+```
+
+```{dropdown} **Step 2:** Evaluate $\displaystyle \int_{2}^{t} e^{-x/2}~dx$.
 
 \begin{align*}
   \int_{2}^{t} e^{-x/2}~dx
@@ -145,8 +124,7 @@ $$\hbox{Area} =  \int_{2}^{\infty} e^{-x/2}~dx$$
 \end{align*}
 ```
 
-```{admonition} Step 3: Use Step 2 to evaluate $\displaystyle \int_{2}^{\infty} e^{-x/2}~dx$ as the limit of a definite integral.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Use Step 2 to evaluate $\displaystyle \int_{2}^{\infty} e^{-x/2}~dx$ as the limit of a definite integral.
 
 \begin{align*}
   \int_{2}^{\infty} e^{-x/2}~dx
@@ -180,48 +158,29 @@ The value of the integral is the same regardless of the value we choose for $c$ 
 
 If an improper integral exists, it corresponds to the area of a region that is unbounded on the left and on the right.
 
-```{code-cell}
-:tags: [remove-input]
 
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
-
-\begin{tikzpicture}[yscale=2]
-
-  %shade region
-  \fill[fill=yellow!90] plot[smooth, samples=100, domain=-4:8 ] (\x,{2.71 ^ (-(\x-2)*(\x-2)/20)})-- (8, 0) --(-4, 0)-- cycle;
-    
-  %draw curve
-  \draw[domain=-4:8,smooth,variable=\x,black,ultra thick] plot ({\x},{2.71 ^ (-(\x-2)*(\x-2)/20)}) 
-        node[above,outer sep=6pt]{$y=f(x)$};
-    
-  % tick marks
-  \foreach \x in {-3,-1,...,7} 
-    \draw [thick] (\x cm,1pt) -- (\x cm,-1pt) node[below] {$\x$};
-  \foreach \y in {} 
-    \draw [thick] (1pt,\y cm) -- (-1pt,\y cm) node[left] {$\y$};
-
-  %draw axes
-  \draw[->] (-4,0) -- (8,0) node[below] {$x$};
-  \draw[->] (0,-0.2) -- (0,1) node[right] {$y$};
-
-\end{tikzpicture}
-\end{document} 
+```{figure} ../images/pic_byparts_improper_2.png
+---
+width: 600px
+alt: Improper integral unbounded on the left and the right
+---
+Improper integral unbounded on the left and the right
 ```
 
-## Example 11
+## Example 4
+
+```{admonition} Evaluating an improper integral unbounded on both sides
+:class: tip
 
 Evaluate $\displaystyle \int_{-\infty}^\infty \frac{e^x}{(1 + e^x)^3}~dx$, if it exists.
+```
 
-```{admonition} Step 1: Rewrite the integral as a sum of two improper integrals.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Rewrite the integral as a sum of two improper integrals.
 
 $$ \int_{-\infty}^\infty \frac{e^x}{(1 + e^x)^3}~dx = \int_{-\infty}^0 \frac{e^x}{(1 + e^x)^3}~dx + \int_{0}^\infty \frac{e^x}{(1 + e^x)^3}~dx.$$
 ```
 
-```{admonition} Step 2: Compute $\displaystyle \int \frac{e^x}{(1+e^{x})^3} ~dx$ using the following substitution.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $\displaystyle \int \frac{e^x}{(1+e^{x})^3} ~dx$ using the following substitution.
 
 $$u = 1+e^x \qquad du = e^x~dx$$
 
@@ -234,8 +193,7 @@ $$u = 1+e^x \qquad du = e^x~dx$$
 \end{align*}
 ```
 
-```{admonition} Step 3: Evaluate $\displaystyle \int_{-\infty}^0 \frac{e^x}{(1 + e^x)^3}~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Evaluate $\displaystyle \int_{-\infty}^0 \frac{e^x}{(1 + e^x)^3}~dx$.
 
 \begin{align*}
   \int_{-\infty}^0 \frac{e^x}{(1 + e^x)^3}~dx 
@@ -248,8 +206,7 @@ $$u = 1+e^x \qquad du = e^x~dx$$
 \end{align*}
 ```
 
-```{admonition} Step 4: Evaluate $\displaystyle \int_0^{\infty} \frac{e^x}{(1 + e^x)^3}~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Evaluate $\displaystyle \int_0^{\infty} \frac{e^x}{(1 + e^x)^3}~dx$.
 
 \begin{align*}
   \int_0^\infty \frac{e^x}{(1 + e^x)^3}~dx 
@@ -262,8 +219,7 @@ $$u = 1+e^x \qquad du = e^x~dx$$
 \end{align*}
 ```
 
-```{admonition} Step 5: Evaluate $\displaystyle \int_{-\infty}^{\infty} \frac{e^x}{(1 + e^x)^3}~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 5:** Evaluate $\displaystyle \int_{-\infty}^{\infty} \frac{e^x}{(1 + e^x)^3}~dx$.
 
 \begin{align*}
   \int^\infty_{-\infty} \frac{e^x}{(1+e^x)^3}~dx 
@@ -273,12 +229,15 @@ $$u = 1+e^x \qquad du = e^x~dx$$
 \end{align*}
 ```
 
-## Example 12
+## Example 5
+
+```{admonition} Evaluate an improper integral unbounded on both sides
+:class: tip
 
 Evaluate $\displaystyle \int_{-\infty}^\infty xe^{-x^2}~dx$, if it exists.
+```
 
-```{admonition} Step 1: Compute $\displaystyle \int xe^{-x^2}dx$ using the following substitution.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Compute $\displaystyle \int xe^{-x^2}dx$ using the following substitution.
 
 $$u = -x^2 \qquad du = -2x ~dx ~~~~ \hbox{(or $-\frac{1}{2}~du = x ~dx$)}$$
 
@@ -290,8 +249,7 @@ $$u = -x^2 \qquad du = -2x ~dx ~~~~ \hbox{(or $-\frac{1}{2}~du = x ~dx$)}$$
 \end{align*}
 ```
 
-```{admonition} Step 2: Evaluate $\displaystyle \int_{-\infty}^0 xe^{-x^2}~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Evaluate $\displaystyle \int_{-\infty}^0 xe^{-x^2}~dx$.
 
 \begin{align*}
   \int_{-\infty}^0 xe^{-x^2} ~dx 
@@ -303,8 +261,7 @@ $$u = -x^2 \qquad du = -2x ~dx ~~~~ \hbox{(or $-\frac{1}{2}~du = x ~dx$)}$$
 \end{align*}
 ```
 
-```{admonition} Step 3: Evaluate $\displaystyle \int_0^{\infty} xe^{-x^2}~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Evaluate $\displaystyle \int_0^{\infty} xe^{-x^2}~dx$.
 
 \begin{align*}
   \int_0^{\infty} xe^{-x^2} ~dx 
@@ -316,8 +273,7 @@ $$u = -x^2 \qquad du = -2x ~dx ~~~~ \hbox{(or $-\frac{1}{2}~du = x ~dx$)}$$
 \end{align*}
 ```
 
-```{admonition} Step 4: Evaluate $\displaystyle \int_{-\infty}^{\infty} xe^{-x^2}~dx$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Evaluate $\displaystyle \int_{-\infty}^{\infty} xe^{-x^2}~dx$.
 
 \begin{align*}
   \int^\infty_{-\infty} xe^{-x^2} ~dx 
