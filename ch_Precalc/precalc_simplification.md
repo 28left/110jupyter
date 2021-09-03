@@ -57,7 +57,11 @@ e.g., $\dfrac{2}{3} \div \dfrac{5}{7} = \dfrac{2}{3} \times \dfrac{7}{5} = \dfra
 
 ### Example 1
 
+```{admonition} Subtracting fractions with the same denominator
+:class: tip
+
 Rewrite $\dfrac{x+1}{x+4} - \dfrac{3x-2}{x+4}$ as a single ratio.
+```
 
 ```{admonition} Step 1: Subtract fractions with common denominator.
 :class: tip, dropdown
@@ -83,7 +87,11 @@ Apply the formula from **Step 1** with $A = x+1$, $B=x+4$, and $C = 3x-2$.
 
 ### Example 2
 
+```{admonition} Adding fractions with different denominators
+:class: tip
+
 Rewrite $\dfrac{3}{x} + \dfrac{4}{x-5}$ as a single ratio.
+```
 
 ```{admonition} Step 1: Apply  formula for adding fractions with different denominators.
 :class: tip, dropdown
@@ -110,12 +118,15 @@ Apply the formula from **Step 1** with $A = 3$, $B=x$, $C = 4$, and $D = x-5$.
 
 ### Example 3
 
+```{admonition} Simplifying quotients of fractions
+:class: tip
+
 Simplify 
 
 $$
 \cfrac{\left(\cfrac{3p}{\sqrt{180-6p}}\right)}{ \sqrt{180-6p}}.
 $$
-
+```
 
 ```{admonition} Step 1: Recall formula for the quotient of fractions.
 :class: tip, dropdown
@@ -152,8 +163,12 @@ e.g., $7(3+2) = 7\cdot 3 + 7\cdot 2$
 ```
 
 ### Example 4
-Expand $x^2(5x^3 + 7)$.
 
+```{admonition} Expanding a product of polynomials
+:class: tip
+
+Expand $x^2(5x^3 + 7)$.
+```
 
 ```{admonition} Step 1: Use distributivity to expand given product.
 :class: tip, dropdown
@@ -186,8 +201,11 @@ $$
 
 ### Example 5
 
-Expand $(x+2)(3x-5)$ using the FOIL method.
+```{admonition} Applying the FOIL method
+:class: tip
 
+Expand $(x+2)(3x-5)$ using the FOIL method.
+```
 
 ```{admonition} Step 1: Recall the formula for the FOIL method.
 :class: tip, dropdown
@@ -226,7 +244,11 @@ $$
 
 ### Example 6
 
+```{admonition} Expanding a binomial
+:class: tip
+
 Expand $(3x-5)^2$ by squaring the binomial.
+```
 
 ```{admonition} Step 1: Apply binomial formula.
 :class: tip, dropdown
@@ -241,7 +263,11 @@ Apply $(a - b)^2 = a^2 - 2ab + b^2$ with $a=3x$ and $b=5$.
 ```
 
 ### Example 7
+```{admonition} Expanding a product of a monomial and a binomial
+:class: tip
+
 Expand $3x^5(4+x)^2$.
+```
 
 ```{admonition} Step 1: Apply binomial formula.
 :class: tip, dropdown

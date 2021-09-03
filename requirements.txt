@@ -6,3 +6,8 @@ pandas
 ipysheet
 ipywidgets
 jupyter_contrib_nbextensions
+bqplot
+ipympl
+ipyvolume
+scipy
+voila
