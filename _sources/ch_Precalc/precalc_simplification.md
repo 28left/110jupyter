@@ -63,8 +63,7 @@ e.g., $\dfrac{2}{3} \div \dfrac{5}{7} = \dfrac{2}{3} \times \dfrac{7}{5} = \dfra
 Rewrite $\dfrac{x+1}{x+4} - \dfrac{3x-2}{x+4}$ as a single ratio.
 ```
 
-```{admonition} Step 1: Subtract fractions with common denominator.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Subtract fractions with common denominator.
 
 Since the ratios already have the same denominator, we need only apply the formula for subtracting  fractions with a common denominator.
 \begin{align*}
@@ -72,8 +71,7 @@ Since the ratios already have the same denominator, we need only apply the formu
 \end{align*}
 ```
 
-````{admonition} Step 2: Apply the formula from Step 1.
-:class: tip, dropdown
+````{dropdown} **Step 2:** Apply the formula from Step 1.
 
 Apply the formula from **Step 1** with $A = x+1$, $B=x+4$, and $C = 3x-2$.
 
@@ -93,8 +91,7 @@ Apply the formula from **Step 1** with $A = x+1$, $B=x+4$, and $C = 3x-2$.
 Rewrite $\dfrac{3}{x} + \dfrac{4}{x-5}$ as a single ratio.
 ```
 
-```{admonition} Step 1: Apply  formula for adding fractions with different denominators.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Apply  formula for adding fractions with different denominators.
 
 Since the ratios do not have the same denominator, we will apply the formula for adding fractions with different denominators.
 \begin{align*}
@@ -102,8 +99,7 @@ Since the ratios do not have the same denominator, we will apply the formula for
 \end{align*}
 ```
 
-```{admonition} Step 2: Apply the formula from Step 1.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the formula from Step 1.
 
 Apply the formula from **Step 1** with $A = 3$, $B=x$, $C = 4$, and $D = x-5$.
 \begin{align*}
@@ -128,16 +124,14 @@ $$
 $$
 ```
 
-```{admonition} Step 1: Recall formula for the quotient of fractions.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Recall formula for the quotient of fractions.
 
 $$
 \frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \times \frac{D}{C} = \frac{AD}{BC}
 $$
 ```
 
-```{admonition} Step 2: Use formula from Step 1 to rewrite equation.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Use formula from Step 1 to rewrite equation.
 
 \begin{align*}
 \cfrac{\left(\cfrac{3p}{\sqrt{180-6p}}\right)}{ \sqrt{180-6p}}
@@ -170,8 +164,7 @@ e.g., $7(3+2) = 7\cdot 3 + 7\cdot 2$
 Expand $x^2(5x^3 + 7)$.
 ```
 
-```{admonition} Step 1: Use distributivity to expand given product.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Use distributivity to expand given product.
 
 \begin{align*}
 x^2(5x^3 + 7)
@@ -207,16 +200,14 @@ $$
 Expand $(x+2)(3x-5)$ using the FOIL method.
 ```
 
-```{admonition} Step 1: Recall the formula for the FOIL method.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Recall the formula for the FOIL method.
 
 \begin{align*}
     (a + b)(c + d) &= ac + ad + bc + bd
 \end{align*}
 ```
 
-```{admonition} Step 2: Use the FOIL method to expand the expression.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Use the FOIL method to expand the expression.
 
 \begin{align*}
   (x+2)(3x-5) 
@@ -250,8 +241,7 @@ $$
 Expand $(3x-5)^2$ by squaring the binomial.
 ```
 
-```{admonition} Step 1: Apply binomial formula.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Apply binomial formula.
 
 Apply $(a - b)^2 = a^2 - 2ab + b^2$ with $a=3x$ and $b=5$.
 \begin{align*}
@@ -269,8 +259,7 @@ Apply $(a - b)^2 = a^2 - 2ab + b^2$ with $a=3x$ and $b=5$.
 Expand $3x^5(4+x)^2$.
 ```
 
-```{admonition} Step 1: Apply binomial formula.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Apply binomial formula.
 
 Apply $(a + b)^2 = a^2 + 2ab + b^2$ with $a=4$ and $b=x$.
 \begin{align*}
@@ -280,8 +269,7 @@ Apply $(a + b)^2 = a^2 + 2ab + b^2$ with $a=4$ and $b=x$.
 \end{align*}
 ```
 
-```{admonition} Step 2: Use the distributive property of multiplication.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Use the distributive property of multiplication.
 
 \begin{align*}
 3x^5(16 + 8x + x^2) 
