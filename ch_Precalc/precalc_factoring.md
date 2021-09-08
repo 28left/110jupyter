@@ -26,11 +26,14 @@ e.g., $21 + 14 = 7\cdot 3 + 7\cdot 2 = 7(3+2)$
 ```
 
 ### Example 1
+
+```{admonition} Factoring
+:class: tip
+
 Factor $10x^5 + 15x^4$ by pulling out common factors.
+```
 
-
-```{admonition} Step 1: Determine the factors common to both terms.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the factors common to both terms.
 
 - Constant factors: $10$ and $15$ are both multiples of $5$.
 - Powers of $x$: the smallest power of $x$ is $4$.
@@ -38,8 +41,7 @@ Factor $10x^5 + 15x^4$ by pulling out common factors.
 Therefore, the factor common to both terms is $5x^4$.
 ```
 
-```{admonition} Step 2: Pull out the common factor of $5x^4$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Pull out the common factor of $5x^4$.
 
 \begin{align*}
 10x^5 + 15x^4 
@@ -50,14 +52,17 @@ Therefore, the factor common to both terms is $5x^4$.
 
 
 ### Example 2
+
+```{admonition} Factoring
+:class: tip
 Factor 
 
 $$4x^3(2x^3+1)^5 + 30x^6(2x^3+1)^4$$ 
 
 by first pulling out common factors.
+```
 
-```{admonition} Step 1: Determine the factors common to both terms.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the factors common to both terms.
 
 - Constant factors: $4$ and $30$ are both multiples of $2$.
 - Powers of $x$: the smallest power of $x$ is $3$.
@@ -66,8 +71,7 @@ by first pulling out common factors.
 Therefore, the factor common to both terms is $2x^3(2x^3+1)^4$.
 ```
 
-```{admonition} Step 2: Pull out the common factor of $2x^3(2x^3+1)^4$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Pull out the common factor of $2x^3(2x^3+1)^4$.
 
 \begin{align*}
 & 4x^3(2x^3+1)^5 + 30x^6(2x^3+1)^4 \\
@@ -80,14 +84,16 @@ Therefore, the factor common to both terms is $2x^3(2x^3+1)^4$.
 
 
 ### Example 3
+
+```{admonition} Factoring
 Factor 
 
 $$4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2}$$ 
 
 by first pulling out common factors.
+```
 
-```{admonition} Step 1: Determine the factors common to both terms.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the factors common to both terms.
 
 - Constant factors: $4$ and $3$ do not have any factors in common.
 - Powers of $x$: the smallest power of $x$ is $3$.
@@ -96,8 +102,7 @@ by first pulling out common factors.
 Therefore, the factor common to both terms is $x^3(2x^3+1)^{-1/2}$.
 ```
 
-```{admonition} Step 2: Pull out the common factor of $x^3(2x^3+1)^{-1/2}$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Pull out the common factor of $x^3(2x^3+1)^{-1/2}$.
 
 \begin{align*}
 & 4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2} \\ \\ 
@@ -133,16 +138,19 @@ $$
 
 
 ### Example 4
-Factor $x^2-25$.
 
-```{admonition} Step 1: Rewrite the expression as a difference of squares.
-:class: tip, dropdown
+```{admonition} Applying difference of squares
+:class: tip
+
+Factor $x^2-25$.
+```
+
+```{dropdown} **Step 1:** Rewrite the expression as a difference of squares.
 
 $$x^2 - 25 = x^2 - 5^2$$
 ```
 
-```{admonition} Step 2: Apply the difference of squares formula with $A=x$ and $B=5$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the difference of squares formula with $A=x$ and $B=5$.
 
 \begin{align*}
 x^2 - 25
@@ -154,10 +162,14 @@ x^2 - 25
 
 
 ### Example 5
-Factor $9x^3-4x^5$.
 
-```{admonition} Step 1: Determine the factors common to both terms.
-:class: tip, dropdown
+```{admonition} Applying difference of squares
+:class: tip
+
+Factor $9x^3-4x^5$.
+```
+
+```{dropdown} **Step 1:** Determine the factors common to both terms.
 
 - Constant factors: $9$ and $-4$ do not have any factors in common.
 - Powers of $x$: the smallest power of $x$ is $3$.
@@ -165,8 +177,7 @@ Factor $9x^3-4x^5$.
 Therefore, the factor common to both terms is $x^3$.
 ```
 
-```{admonition} Step 2: Pull out the common factor of $x^3$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Pull out the common factor of $x^3$.
 
 \begin{align*}
 9x^3-4x^5 
@@ -175,8 +186,7 @@ Therefore, the factor common to both terms is $x^3$.
 \end{align*}
 ```
 
-```{admonition} Step 3: Apply difference of squares with $A=3$ and $B=2x$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Apply difference of squares with $A=3$ and $B=2x$.
 
 \begin{align*}
 9x^3-4x^5
@@ -206,12 +216,14 @@ The process is broken down into the following five steps.
 ```
 
 ### Example 6
+
+```{admonition} Applying AC grouping
+:class: tip
+
 Factor $6x^2 + 7x - 5$ using the AC grouping method.
+```
 
-
-
-```{admonition} Step 1: Find two integers that multiply to $6(-5) = -30$ and sum to $7$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find two integers that multiply to $6(-5) = -30$ and sum to $7$.
 
 Since the product is negative, the two numbers must have opposite signs.  And since the sum is positive, the larger number in absolute value, must be positive.
 
@@ -222,26 +234,22 @@ Since the product is negative, the two numbers must have opposite signs.  And si
 | $-3 \times 10 =-30$  | $-3 + 10 = 7$ &nbsp;&nbsp;&nbsp; **YES** |
 ```
 
-```{admonition} Step 2: Since $7 = -3+10$, replace the linear term, $7x$, with  $-3x+10x$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Since $7 = -3+10$, replace the linear term, $7x$, with  $-3x+10x$.
 
 $$6x^2 - 3x + 10x - 5$$
 ```
 
-```{admonition} Step 3: Group terms with common factors.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Group terms with common factors.
 
 $$(6x^2 - 3x) + (10x - 5)$$
 ```
 
-```{admonition} Step 4: Pull out common factors from each group.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Pull out common factors from each group.
 
 $$3x(2x-1) +  5(2x-1)$$
 ```
 
-```{admonition} Step 5: Pull out common factor of $2x-1$.
-:class: tip, dropdown
+```{dropdown} **Step 5:** Pull out common factor of $2x-1$.
 
 $$(2x-1)(3x+5)$$
 
@@ -250,8 +258,8 @@ Therefore,
 $$6x^2 + 7x - 5 = (2x-1)(3x+5)$$
 ```
 
-```{admonition} Check Your Work.
-:class: warning, dropdown
+```{dropdown} Check Your Work.
+:title: bg-warning font-weight-bold
 
 After factoring a polynomial, it's always a good idea to check your work by expanding the product using the distributive property of multiplication and/or the FOIL method:
 
@@ -265,10 +273,14 @@ After factoring a polynomial, it's always a good idea to check your work by expa
 
 
 ### Example 7
-Factor $x^2 - 13x + 36$ using the AC grouping method.
 
-```{admonition} Step 1: Find two integers that multiply to $1\times 36 = 36$ and sum to $-13$.
-:class: tip, dropdown
+```{admonition} Applying AC grouping
+:class: tip
+
+Factor $x^2 - 13x + 36$ using the AC grouping method.
+```
+
+```{dropdown} **Step 1:** Find two integers that multiply to $1\times 36 = 36$ and sum to $-13$.
 
 Since the product is positive, the two numbers must have the same sign.  And since the sum is negative, both numbers must be negative.
 | Product equals $36$ | Sum equals $-13$? |
@@ -279,26 +291,22 @@ Since the product is positive, the two numbers must have the same sign.  And sin
 | $-4 \times -9$      | **YES** | 
 ```
 
-```{admonition} Step 2: Since $-13 = -4-9$, replace the linear term, $-13x$, with  $-4x-9x$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Since $-13 = -4-9$, replace the linear term, $-13x$, with  $-4x-9x$.
 
 $$x^2 - 4x - 9x + 36$$
 ```
 
-```{admonition} Step 3: Group terms with common factors.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Group terms with common factors.
 
 $$(x^2 - 4x) + (-9x + 36)$$
 ```
 
-```{admonition} Step 4: Pull out common factors from each group.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Pull out common factors from each group.
 
 $$x(x-4) +  (-9)(x-4)$$
 ```
 
-```{admonition} Step 5: Pull out common factor of $x-4$.
-:class: tip, dropdown
+```{dropdown} **Step 5:** Pull out common factor of $x-4$.
 
 $$(x-4)(x-9)$$
 
@@ -307,8 +315,8 @@ Therefore,
 $$x^2 - 13x + 36 = (x-4)(x-9)$$
 ```
 
-```{admonition} Check Your Work.
-:class: warning, dropdown
+```{dropdown} Check Your Work.
+:title: bg-warning font-weight-bold
 
 \begin{align*}
 (x-4)(x-9)
@@ -322,7 +330,7 @@ $$x^2 - 13x + 36 = (x-4)(x-9)$$
 ## A Special Case of the AC Grouping Method
 
 ```{admonition} Important Observation
-:class: error
+:class: danger
 If the coefficient of $x^2$ is one (i.e., $a=1$ in $ax^2 + bx + c$), then Step 1 of the $AC$ grouping method is to find two numbers that multiply to $c$ and sum to $b$. Once these numbers have been found, then the factorization can be written as
 
 $$x^2 + bx + c = (x+r)(x+s)$$
@@ -330,13 +338,18 @@ $$x^2 + bx + c = (x+r)(x+s)$$
 where $r+s = b$ and $rs = c$.
 ```
 
+
 (01_02_example8)=
 ### Example 8
+
+```{admonition} AC grouping
+:class: tip
+
 Factor $x^2 - 4x - 12$.
+```
 
 
-```{admonition} Step 1: Find two integers that multiply to $-12$ and sum to $-4$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find two integers that multiply to $-12$ and sum to $-4$.
 
 Since the product is negative, the two numbers must have opposite signs.  And since the sum is negative, the larger number in absolute value, must be negative.
 | Product equals $-12$ | Sum equals $-4$? |
@@ -346,16 +359,15 @@ Since the product is negative, the two numbers must have opposite signs.  And si
 ```
 
 
-```{admonition} Step 2: Apply special case of AC Grouping.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply special case of AC Grouping.
 
 Since the coefficient of $x^2$ is one, then the factorization is given by
 
 $$x^2 - 4x - 12 = (x+2)(x-6).$$
 ```
 
-```{admonition} Check Your Work.
-:class: warning, dropdown
+```{dropdown} Check Your Work.
+:title: bg-warning font-weight-bold
 
 \begin{align*}
 (x+2)(x-6)
@@ -366,12 +378,15 @@ $$x^2 - 4x - 12 = (x+2)(x-6).$$
 
 
 ### Example 9
+
+```{admonition} AC grouping and pulling out common factors
+:class: tip
+
 Factor $7x^4 + 35x^3 + 42x^2$.
+```
 
 
-
-```{admonition} Step 1: Determine the factors common to both terms.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the factors common to both terms.
 
 - Constant factors: $7$, $35$, and $42$ are all multiples of $7$.
 - Powers of $x$: the smallest power of $x$ is $2$.
@@ -379,8 +394,7 @@ Factor $7x^4 + 35x^3 + 42x^2$.
 Therefore, the factor common to all three terms is $7x^2$.
 ```
 
-```{admonition} Step 2: Pull out the common factor of $7x^2$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Pull out the common factor of $7x^2$.
 
 \begin{align*}
 7x^4 + 35x^3 + 42x^2
@@ -389,8 +403,7 @@ Therefore, the factor common to all three terms is $7x^2$.
 \end{align*}
 ```
 
-```{admonition} Step 3: Factor $x^2 + 5x + 6$ by finding two integers that multiply to $6$ and sum to $5$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Factor $x^2 + 5x + 6$ by finding two integers that multiply to $6$ and sum to $5$.
 
 | Product equals $6$ | Sum equals $5$? |
 | ------------------ | --------------- |
@@ -406,8 +419,8 @@ Therefore,
 ```
 
 
-```{admonition} Check Your Work.
-:class: warning, dropdown
+```{dropdown} Check Your Work.
+:title: bg-warning font-weight-bold
 
 \begin{align*}
 7x^2(x+2)(x+3)
