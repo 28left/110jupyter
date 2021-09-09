@@ -104,8 +104,7 @@ A manufacturer of wireless security cameras has fixed monthly costs of \$10,000 
 
 
 
-```{admonition} Step 1: Compute the total cost function, $C(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Compute the total cost function, $C(x)$.
  
 Here $x$ denotes the number of cameras produced.
 
@@ -115,8 +114,7 @@ C(x) &= F(x) + V(x) && \text{total cost equals fixed costs plus variable costs}\
 \end{align*}
 ```
 
-```{admonition} Step 2: Compute the total revenue function, $R(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute the total revenue function, $R(x)$.
 
 \begin{align*}
     R(x) &= x \cdot p(x) && \text{revenue equals number of units times price per unit}\\
@@ -124,8 +122,7 @@ C(x) &= F(x) + V(x) && \text{total cost equals fixed costs plus variable costs}\
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute the total profit function, $P(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute the total profit function, $P(x)$.
 
 \begin{align*}
     P(x) &= R(x) - C(x) && \text{profit equals revenue minus cost}\\
@@ -135,8 +132,7 @@ C(x) &= F(x) + V(x) && \text{total cost equals fixed costs plus variable costs}\
 \end{align*}
 ```
 
-```{admonition} Step 4: Compute the break-even point.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Compute the break-even point.
 
 \begin{align*}
 P(x) = 0 

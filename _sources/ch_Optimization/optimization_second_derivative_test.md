@@ -33,8 +33,7 @@ $$f(x)=2x^3-15x^2+36x+20$$
 
 were $x=2$ and $x=3$. Classify each critical point using the Second Derivative Test. 
 
-```{admonition} Step 1: Compute $f''(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Compute $f''(x)$.
 
 \begin{align*}
   f''(x) 
@@ -43,8 +42,7 @@ were $x=2$ and $x=3$. Classify each critical point using the Second Derivative T
 \end{align*}
 ```
 
-```{admonition} Step 2: Classify each critical point.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Classify each critical point.
 
 Since $f'(2) = 0$ and $f''(2) = -6 < 0$, $f(x)$ has a relative maximum at $x=2$.
 
@@ -59,8 +57,7 @@ $$f(x)=\frac{1}{x^2-1}$$
 
 was $x=0$. Classify the critical point using the Second Derivative Test. 
 
-```{admonition} Step 1: Compute $f''(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Compute $f''(x)$.
 
 \begin{align*}
   f''(x) 
@@ -71,8 +68,7 @@ was $x=0$. Classify the critical point using the Second Derivative Test.
 \end{align*}
 ```
 
-```{admonition} Step 2: Classify each critical point.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Classify each critical point.
 
 Since $f'(0) = 0$ and $f''(0) = -2 < 0$, $f(x)$ has a relative maximum at $x=0$.
 ```

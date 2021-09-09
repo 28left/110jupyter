@@ -38,22 +38,19 @@ $$P(x)=-20x^2+1720x-20,000$$
 
 How many units must be rented to maximize profits? 
 
-```{admonition} Step 1: Draw a figure, if necessary.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Draw a figure, if necessary.
 
 A figure is not required to determine the numbers of units to rent to maximize the profit. 
 ```
 
-```{admonition} Step 2: Translate the problem description into an expression that includes the quantity to be optimized.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Translate the problem description into an expression that includes the quantity to be optimized.
 
 The expression to be optimized is given: 
 
 $$P(x)=-20x^2+1720x-20,000$$ 
 ```
 
-```{admonition} Step 3: Use the given conditions/any physical constraints to write the quantity to be optimized as a function of one variable.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Use the given conditions/any physical constraints to write the quantity to be optimized as a function of one variable.
 
 The expression to be optimized is given: 
 
@@ -62,8 +59,7 @@ $$P(x)=-20x^2+1720x-20,000$$
 and is already a function of a single variable $x$. Observe that $P(x)$ is continuous over the closed interval domain $[0,100]$.
 ```
 
-```{admonition} Step 4: Find the critical points of $P(x)$ on $(0,100)$, if any.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Find the critical points of $P(x)$ on $(0,100)$, if any.
 
 The expression to be optimized is: 
 
@@ -89,8 +85,7 @@ Therefore, profit is maximized when 43 units are rented out.
 
 A rectangular field is to be enclosed by a fence. One side of the fenced-in area is a building, so fencing is not required on that side. If we have 200 feet of fencing material, determine the dimensions of the largest field that can be enclosed by the fencing material.
 
-```{admonition} Step 1: Draw a figure, if necessary.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Draw a figure, if necessary.
 
 See below.
 ```
@@ -113,14 +108,12 @@ See below.
 \end{document} 
 ```
 
-```{admonition} Step 2: Translate the problem description into an expression that includes the quantity to be optimized.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Translate the problem description into an expression that includes the quantity to be optimized.
 
 $$\text{Maximize: Area} = x \cdot y$$
 ```
 
-```{admonition} Step 3: Use the given conditions/any physical constraints to write the quantity to be optimized as a function of one variable.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Use the given conditions/any physical constraints to write the quantity to be optimized as a function of one variable.
 
 Since we have 200 feet of fencing material, the variables $x$ and $y$ must satisfy the following equation.
 
@@ -139,8 +132,7 @@ Note the following domain restriction: $0 < x < 100$ since
 $$x > 0 ~~~~ \hbox{ and } ~~~~ y = 200-2x > 0.$$
 ```
 
-```{admonition} Step 4: Identify the critical points of the function, and determine the corresponding optimization values of the function over its domain.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Identify the critical points of the function, and determine the corresponding optimization values of the function over its domain.
 
 Start by computing $A'(x)$,
 
@@ -164,8 +156,7 @@ We conclude that the field with maximum area enclosed by 200 feet of fencing mat
 
 A rectangular box with a **square** base and a volume of $24$ ft$^3$ has costs to construct of $\$10 / \text{ft}^2$ for the sides, $\$20 / \text{ft}^2$ for the top, and $\$40 / \text{ft}^2$ for the base. Determine the dimensions of the box which minimize the total cost to construct the box.
 
-```{admonition} Step 1: Draw a figure, if necessary.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Draw a figure, if necessary.
 
 See below.
 ```
@@ -213,8 +204,7 @@ See below.
 \end{document} 
 ```
 
-```{admonition} Step 2: Translate the problem description into an expression that includes the quantity to be optimized.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Translate the problem description into an expression that includes the quantity to be optimized.
 
 \begin{align*}
   \text{Minimize: Cost} &= 40\cdot\text{(area of base)} + 10\cdot\text{(area of sides)} + 20\cdot\text{(area of top)} \\
@@ -223,8 +213,7 @@ See below.
 \end{align*}
 ```
 
-```{admonition} Step 3: Use the given conditions/any physical constraints to write the quantity to be optimized as a function of one variable.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Use the given conditions/any physical constraints to write the quantity to be optimized as a function of one variable.
 
 Since the volume of the box is given to be $24$ ft$^3$, the variables $x$ and $y$ must satisfy the following equation.
 
@@ -241,8 +230,7 @@ Solving for $y$ yields $y = 24/x^2$. Substituting this into our formula for cost
 Note the following domain restriction: $x > 0$ since each dimension of the box must be positive.
 ```
 
-```{admonition} Step 4: Identify the critical points of the function, and determine the corresponding optimization values of the function over its domain.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Identify the critical points of the function, and determine the corresponding optimization values of the function over its domain.
 
 Start by computing $C'(x)$,
 
@@ -284,14 +272,12 @@ $$C(x) = 3400 + 60x$$
 
 Assuming all units produced can be sold, how many units must the company produce to maximize profit $P(x)$?
 
-```{admonition} Step 1: Draw a figure, if necessary.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Draw a figure, if necessary.
 
 A figure is not required to determine the numbers of units required to maximize the profit.
 ```
 
-```{admonition} Step 2: Translate the problem description into an expression that includes the quantity to be optimized.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Translate the problem description into an expression that includes the quantity to be optimized.
 
 The total profit function $P(x)$ is given by:
 
@@ -304,8 +290,7 @@ The total profit function $P(x)$ is given by:
 \end{align*}
 ```
 
-```{admonition} Step 3: Use the given conditions/any physical constraints to write the quantity to be optimized as a function of one variable.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Use the given conditions/any physical constraints to write the quantity to be optimized as a function of one variable.
 
 The total profit function $P(x)$ is given by:
 
@@ -316,8 +301,7 @@ Note the following domain restriction: $0 < x < 1250$ since
 $$x > 0 ~~~~ \hbox{ and } ~~~~ p(x)=2500-2x > 0.$$
 ```
 
-```{admonition} Step 4: Identify the critical points of the function, and determine the corresponding optimization values of the function over its domain.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Identify the critical points of the function, and determine the corresponding optimization values of the function over its domain.
 
 Start by computing $P'(x)$:
 

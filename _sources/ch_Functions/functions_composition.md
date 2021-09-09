@@ -49,15 +49,13 @@ Determine if $x=1$ and $x=2$ are in the domain of  $f\circ g$ and if so, evaluat
 
 
 
-```{admonition} Step 1: Determine the domain of $f$ and $g$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the domain of $f$ and $g$.
 
 The domain of $f$ consists of all values of $x$ such that $7-x\geq 0$, or equivalently, $x\leq 7$.  The domain of $g$ consists of all real numbers.
 ```
 
 
-```{admonition} Step 2: Determine if $x=1$ is in the domain of $f \circ g$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Determine if $x=1$ is in the domain of $f \circ g$.
 
 Note that $x=1$ is in the domain of $g$ and $g(1) = 5$, which is in the domain of $f$.  Therefore $x=1$ is in the domain of $f\circ g$ and 
 
@@ -70,8 +68,7 @@ Note that $x=1$ is in the domain of $g$ and $g(1) = 5$, which is in the domain o
 ```
 
 
-```{admonition} Step 3: Determine if $x=2$ is in the domain of $f \circ g$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Determine if $x=2$ is in the domain of $f \circ g$.
 
 Note that $x=2$ is in the domain of $g$, but $g(2) = 8$ is not in the domain of $f$.  Therefore $x=2$ is not in the domain of $f \circ g$.
 ```
@@ -86,8 +83,7 @@ $$f(x) = \sqrt{7-x} \quad \text{ and } \quad g(x) = 3x + 2.$$
 Determine the rule for the composite functions $f \circ g$ and $g \circ f$. 
 
 
-```{admonition} Step 1: Determine the rule for the composite function $f \circ g$. 
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the rule for the composite function $f \circ g$. 
 
 \begin{align*}
 (f \circ g)(x)
@@ -105,8 +101,7 @@ $$x \leq 5/3$$
 and therefore, the domain of $f\circ g$ is $(-\infty,5/3]$.
 ```
 
-```{admonition} Step 1: Determine the rule for the composite function  $g \circ f$.  
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the rule for the composite function  $g \circ f$.  
 
 \begin{align*}
 (g \circ f)(x)

@@ -72,8 +72,7 @@ x^2-5x-6 & \hbox{if } x>6 \\
 \end{cases}
 \end{equation*}
 
-```{admonition} Step 1: Find the limit from the left.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find the limit from the left.
 
 In this case, since we are approaching 6 from the left, we can assume that $x<6$, and therefore $h(x) = x^2-4x-12$.
 \begin{align*}
@@ -85,8 +84,7 @@ In this case, since we are approaching 6 from the left, we can assume that $x<6$
 \end{align*}
 ```
 
-```{admonition} Step 2: Find the limit from the right. 
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find the limit from the right. 
 
 In this case, since we are approaching 6 from the right, we can assume that $x>6$, and therefore $h(x) = x^2-5x-6$.
 \begin{align*}
@@ -98,8 +96,7 @@ In this case, since we are approaching 6 from the right, we can assume that $x>6
 \end{align*}
 ```
 
-```{admonition} Step 3: Check to see if the two limits are equal.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Check to see if the two limits are equal.
 
 Since $\displaystyle \lim_{x\to 6^-} h(x) = \lim_{x\to 6^+} h(x) = 0$, we conclude that the limit exists and
 

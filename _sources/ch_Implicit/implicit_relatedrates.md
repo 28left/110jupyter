@@ -33,8 +33,7 @@ Here are a few guidelines to follow when solving a related rates problem.
 
 Given $p^2x + 6x = 5$ and $\dfrac{dp}{dt} = 3$. Compute $\dfrac{dx}{dt}$ when $p = 2$.
 
-```{admonition} Step 1: Assign variables and state the known and unknown rates of change.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Assign variables and state the known and unknown rates of change.
 
 \begin{align*}
 \text{Variables (as functions of $t$): } & x(t) \text{ and } p(t) \\ 
@@ -43,14 +42,12 @@ Given $p^2x + 6x = 5$ and $\dfrac{dp}{dt} = 3$. Compute $\dfrac{dx}{dt}$ when $p
 \end{align*} 
 ```
 
-```{admonition} Step 2: Find an equation which relates the variables.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find an equation which relates the variables.
 
 $$p^2x + 6x = 5$$
 ```
 
-```{admonition} Step 3: Differentiate both sides of the equation implicitly with respect to $t$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Differentiate both sides of the equation implicitly with respect to $t$.
 
 \begin{align*}
 \frac{d}{dt}(p^2x + 6x)
@@ -59,14 +56,12 @@ $$p^2x + 6x = 5$$
 \end{align*}
 ```
 
-```{admonition} Step 4: Since $x$ appears in the equation after differentiation, we need to find its value by plugging in $p=2$ into the given equation $p^2x + 6x = 5$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Since $x$ appears in the equation after differentiation, we need to find its value by plugging in $p=2$ into the given equation $p^2x + 6x = 5$.
 
 $$(2)^2x + 6x = 5 ~~~~~\Rightarrow~~~~~ 10x = 5 ~~~~~\Rightarrow~~~~~ x = 1/2$$
 ```
 
-```{admonition} Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($p=2$, $x=1/2$, $\frac{dp}{dt} = 3$)
-:class: tip, dropdown
+```{dropdown} **Step 5:** Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($p=2$, $x=1/2$, $\frac{dp}{dt} = 3$)
 
 $$2(2)(3)\frac{1}{2} + (2)^2x' + 6x' = 0  ~~~~~\Rightarrow~~~~~ 6 + 10x' = 0 ~~~~~\Rightarrow~~~~~ x' = -3/5$$
 
@@ -81,8 +76,7 @@ $$p(x) = 50 - \frac{x}{200}$$
 
 where $x$ is the number of cases produced and sold, and $p(x)$ is the unit price in dollars. Find the rate of change of the revenue with respect to the time in days when daily production is 300 cases.
 
-```{admonition} Step 1: Assign variables and state the known and unknown rates of change.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Assign variables and state the known and unknown rates of change.
 
 \begin{align*}
 
@@ -93,8 +87,7 @@ where $x$ is the number of cases produced and sold, and $p(x)$ is the unit price
 \end{align*}
 ```
 
-```{admonition} Step 2: Find an equation which relates the variables.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find an equation which relates the variables.
 
 \begin{align*}
 R &= x\cdot p(x) && \text{Revenue Function}\\
@@ -103,8 +96,7 @@ R &= x\cdot p(x) && \text{Revenue Function}\\
 \end{align*}
 ```
 
-```{admonition} Step 3: Find an equation which relates the variables. 
-:class: tip, dropdown
+```{dropdown} **Step 3:** Find an equation which relates the variables. 
 
 \begin{align*}
 R &= x\cdot p(x) && \text{Revenue Function}\\
@@ -113,8 +105,7 @@ R &= x\cdot p(x) && \text{Revenue Function}\\
 \end{align*}
 ```
 
-```{admonition} Step 4: Differentiate both sides of the equation implicitly with respect to $t$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Differentiate both sides of the equation implicitly with respect to $t$.
 
 \begin{align*}
 \frac{dR}{dt}
@@ -134,8 +125,7 @@ $$2p + x + 4xp = 22$$
 
 where $x$ is the number of thousands of units demanded weekly and $p$ is in dollars. If the price is increasing at a rate of 25 cents per week when the weekly demand is 4000 units, at what rate is the demand decreasing?
 
-```{admonition} Step 1: Assign variables and state the known and unknown rates of change.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Assign variables and state the known and unknown rates of change.
 
 \begin{align*}
 
@@ -147,14 +137,12 @@ where $x$ is the number of thousands of units demanded weekly and $p$ is in doll
 \end{align*}
 ```
 
-```{admonition} Step 2: Find an equation which relates the variables.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find an equation which relates the variables.
 
 $$2p + x + 4xp = 22$$
 ```
 
-```{admonition} Step 3: Differentiate both sides of the equation implicitly with respect to $t$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Differentiate both sides of the equation implicitly with respect to $t$.
 
 \begin{align*}
 \frac{d}{dt}(2p + x + 4xp)
@@ -163,14 +151,12 @@ $$2p + x + 4xp = 22$$
 \end{align*}
 ```
 
-```{admonition} Step 4: Since $p$ appears in the equation after differentiation, we need to find its value by plugging in $x=4$ into the given demand equation $2p+x+4xp = 22$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Since $p$ appears in the equation after differentiation, we need to find its value by plugging in $x=4$ into the given demand equation $2p+x+4xp = 22$.
 
 $$2p + 4 + 4(4)p = 22 ~~~~~\Rightarrow~~~~~ 18p + 4 = 22 ~~~~~\Rightarrow~~~~~ p = 1$$
 ```
 
-```{admonition} Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($x=4$, $p=1$, $\frac{dp}{dt} = 25/100$)
-:class: tip, dropdown
+```{dropdown} **Step 5:** Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($x=4$, $p=1$, $\frac{dp}{dt} = 25/100$)
 
 \begin{align*}
 0 &= 2\left(\frac{25}{100}\right) + \frac{dx}{dt} + 4\frac{dx}{dt}(1) + 4(4)\left(\frac{25}{100}\right) \\
@@ -193,8 +179,7 @@ $$125p^2 - x^2 = 100$$
 
 If 20,000 styluses are available at the beginning of a week, and the price is falling at 4 cents per week, at what rate is the supply falling?
 
-```{admonition} Step 1: Assign variables and state the known and unknown rates of change.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Assign variables and state the known and unknown rates of change.
 
 \begin{align*}
 
@@ -206,28 +191,24 @@ If 20,000 styluses are available at the beginning of a week, and the price is fa
 \end{align*}
 ```
 
-```{admonition} Step 2: Find an equation which relates the variables.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find an equation which relates the variables.
 
 $$125p^2 - x^2 = 100$$
 ```
 
-```{admonition} Step 3: Differentiate both sides of the equation implicitly with respect to $t$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Differentiate both sides of the equation implicitly with respect to $t$.
 
 \begin{align*}
 250p\frac{dp}{dt} - 2x\frac{dx}{dt} = 0 && \text{Power Rule}
 \end{align*}
 ```
 
-```{admonition} Step 4: Since $p$ appears in the equation after differentiation, we need to find its value by plugging in $x=20$ into the given supply equation $125p^2 - x^2 = 100$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Since $p$ appears in the equation after differentiation, we need to find its value by plugging in $x=20$ into the given supply equation $125p^2 - x^2 = 100$.
 
 $$125p^2 - 20^2 = 100 ~~~~~\Rightarrow~~~~~ 125p^2 = 500 ~~~~~\Rightarrow~~~~~ p^2 = 4~~~~~\Rightarrow~~~~~ p = 2$$
 ```
 
-```{admonition} Step 5: Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($x=20$, $p=2$, $\frac{dp}{dt} = -4/100$)
-:class: tip, dropdown
+```{dropdown} **Step 5:** Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($x=20$, $p=2$, $\frac{dp}{dt} = -4/100$)
 
 \begin{align*}
 0 &= 250(2)\left(-\frac{4}{100}\right) - 2(20)\frac{dx}{dt} \\

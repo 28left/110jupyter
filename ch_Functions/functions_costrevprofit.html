@@ -827,25 +827,40 @@
 <div class="section" id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
 <p>A manufacturer of wireless security cameras has fixed monthly costs of $10,000 and a processing cost of $49 for each camera produced. Assuming each camera sells for $99, compute the break-even point.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Compute the total cost function, <span class="math notranslate nohighlight">\(C(x)\)</span>.</p>
-<p>Here <span class="math notranslate nohighlight">\(x\)</span> denotes the number of cameras produced.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Compute the total cost function, <span class="math notranslate nohighlight">\(C(x)\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Here <span class="math notranslate nohighlight">\(x\)</span> denotes the number of cameras produced.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 C(x) &amp;= F(x) + V(x) &amp;&amp; \text{total cost equals fixed costs plus variable costs}\\
 &amp;= 10000  + 49x &amp;&amp; \hbox{\$10,000 of fixed costs and \$49 for each camera}
 \end{align*}\]</div>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Compute the total revenue function, <span class="math notranslate nohighlight">\(R(x)\)</span>.</p>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Compute the total revenue function, <span class="math notranslate nohighlight">\(R(x)\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
     R(x) &amp;= x \cdot p(x) &amp;&amp; \text{revenue equals number of units times price per unit}\\
     &amp;= 99x &amp;&amp; \hbox{since each camera sells for \$99}
 \end{align*}\]</div>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Compute the total profit function, <span class="math notranslate nohighlight">\(P(x)\)</span>.</p>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Compute the total profit function, <span class="math notranslate nohighlight">\(P(x)\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
     P(x) &amp;= R(x) - C(x) &amp;&amp; \text{profit equals revenue minus cost}\\
@@ -854,8 +869,13 @@ C(x) &amp;= F(x) + V(x) &amp;&amp; \text{total cost equals fixed costs plus vari
     &amp;= 50x - 10000 &amp;&amp; 
 \end{align*}\]</div>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 4: Compute the break-even point.</p>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 4:</strong> Compute the break-even point.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 P(x) = 0 
@@ -863,9 +883,9 @@ P(x) = 0
 &amp;~~\rightarrow~~ 50x = 10000 \\
 &amp;~~\rightarrow~~ x = \frac{10000}{50} = 200
 \end{align*}\]</div>
-<p>Therefore, the break-even point is 200 cameras.</p>
+<p class="card-text">Therefore, the break-even point is 200 cameras.</p>
 </div>
-</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">

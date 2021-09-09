@@ -773,23 +773,28 @@
 <div class="section" id="example-1">
 <span id="example1"></span><h3>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h3>
 <p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 + 2x - 3 &gt; 0\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 + 2x - 3 = 0\)</span>.</p>
-<p>Use the AC method to factor <span class="math notranslate nohighlight">\(x^2 + 2x - 3\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 + 2x - 3 = 0\)</span>.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Use the AC method to factor <span class="math notranslate nohighlight">\(x^2 + 2x - 3\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[ x^2 + 2x - 3 = (x+3)(x-1)  \]</div>
-<p>since <span class="math notranslate nohighlight">\(3\)</span> and <span class="math notranslate nohighlight">\(-1\)</span> are two numbers that multiply to <span class="math notranslate nohighlight">\(-3\)</span> and sum to <span class="math notranslate nohighlight">\(2\)</span>.  Now set each factor equal to zero and solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p class="card-text">since <span class="math notranslate nohighlight">\(3\)</span> and <span class="math notranslate nohighlight">\(-1\)</span> are two numbers that multiply to <span class="math notranslate nohighlight">\(-3\)</span> and sum to <span class="math notranslate nohighlight">\(2\)</span>.  Now set each factor equal to zero and solve for <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 x + 3 = 0 ~~~~&amp;\Rightarrow~~~~ x = -3 \\
 x - 1 = 0 ~~~~&amp;\Rightarrow~~~~ x = 1 
 \end{align*}\]</div>
 </div>
-<p>Use one of the following two methods to solve the inequality.</p>
+</details><p>Use one of the following two methods to solve the inequality.</p>
 <div class="tip admonition">
 <p class="admonition-title">Method 1</p>
 <ul class="simple">
-<li><p>Use the values of <span class="math notranslate nohighlight">\(x\)</span> found in <strong>Step 1</strong> to break up the number line and plug in one value from each interval into <span class="math notranslate nohighlight">\(f(x) = (x+3)(x-1)\)</span>. \</p></li>
+<li><p>Use the values of <span class="math notranslate nohighlight">\(x\)</span> found in <strong>Step 1</strong> to break up the number line and plug in one value from each interval into <span class="math notranslate nohighlight">\(f(x) = (x+3)(x-1)\)</span>.</p></li>
 <li><p>Since <span class="math notranslate nohighlight">\(f(-3) = 0\)</span> and <span class="math notranslate nohighlight">\(f(1) = 0\)</span>, pick one value less <span class="math notranslate nohighlight">\(-3\)</span>, one value between <span class="math notranslate nohighlight">\(-3\)</span> and <span class="math notranslate nohighlight">\(1\)</span>, and one value greater than <span class="math notranslate nohighlight">\(1\)</span>.  For example, since <span class="math notranslate nohighlight">\(f(-4) = 5 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f(x) &gt;0 \)</span> for all <span class="math notranslate nohighlight">\(x &lt; -3\)</span>.  And since <span class="math notranslate nohighlight">\(f(2) = 5 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> for all <span class="math notranslate nohighlight">\(x &gt; 1\)</span>.  However, <span class="math notranslate nohighlight">\(f(0) = -3 &lt; 0\)</span>, and therefore <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>.</p></li>
 </ul>
 </div>
@@ -812,12 +817,17 @@ x - 1 = 0 ~~~~&amp;\Rightarrow~~~~ x = 1
 <div class="section" id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
 <p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(\dfrac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Find all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} = 0\)</span> or is not defined.</p>
-<p><span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} = 0\)</span> whenever the numerator is equal to zero, which only happens when <span class="math notranslate nohighlight">\(x=0\)</span> (since <span class="math notranslate nohighlight">\(x^2+3\)</span> is never equal to zero).</p>
-<p><span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> is not defined whenever the denominator is equal to zero, which only happens when <span class="math notranslate nohighlight">\(x=-2\)</span> or <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Find all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} = 0\)</span> or is not defined.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} = 0\)</span> whenever the numerator is equal to zero, which only happens when <span class="math notranslate nohighlight">\(x=0\)</span> (since <span class="math notranslate nohighlight">\(x^2+3\)</span> is never equal to zero).</p>
+<p class="card-text"><span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> is not defined whenever the denominator is equal to zero, which only happens when <span class="math notranslate nohighlight">\(x=-2\)</span> or <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
 </div>
-<p>Use one of the following two methods to solve the inequality.</p>
+</details><p>Use one of the following two methods to solve the inequality.</p>
 <div class="tip admonition">
 <p class="admonition-title">Method 1</p>
 <p>Break up the number line at <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> and plug in one value from each interval to determine the sign of <span class="math notranslate nohighlight">\(f(x) = \frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> on that interval.</p>

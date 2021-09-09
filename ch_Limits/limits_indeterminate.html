@@ -760,25 +760,40 @@
 <div class="section" id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
 <p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to 5} \dfrac{x-5}{x^2-25}.\)</span></p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Evaluate the limit of numerator and denominator.</p>
-<p>We evaluate these limits by plugging in <span class="math notranslate nohighlight">\(x=5\)</span>:</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Evaluate the limit of numerator and denominator.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">We evaluate these limits by plugging in <span class="math notranslate nohighlight">\(x=5\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to 5} x-5 = 5 - 5 = 0 ~~~~ \hbox{and} ~~~~~ \lim_{x\to 5} x^2 - 25 = 5^2-25 = 0\]</div>
-<p>This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to do more work to evaluate it.</p>
+<p class="card-text">This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to do more work to evaluate it.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Factor numerator and/or denominator and simplify.</p>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Factor numerator and/or denominator and simplify.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{x-5}{x^2-25}
 &amp;= \frac{x-5}{(x-5)(x+5)} &amp;&amp; \hbox{Since $A^2 - B^2 = (A-B)(A+B)$}\\ \\
 &amp;= \frac{1}{x+5} &amp;&amp; \hbox{Assuming $x \neq 5$}
 \end{align*}\]</div>
-<p>When computing the limit as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(5\)</span>, we are initially assuming that <span class="math notranslate nohighlight">\(x\)</span> is not equal to <span class="math notranslate nohighlight">\(5\)</span>.  This means that we can replace <span class="math notranslate nohighlight">\(\dfrac{x-5}{x^2-25}\)</span> with <span class="math notranslate nohighlight">\(\dfrac{1}{x+5}\)</span> when computing the limit, as shown in the next step.</p>
+<p class="card-text">When computing the limit as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(5\)</span>, we are initially assuming that <span class="math notranslate nohighlight">\(x\)</span> is not equal to <span class="math notranslate nohighlight">\(5\)</span>.  This means that we can replace <span class="math notranslate nohighlight">\(\dfrac{x-5}{x^2-25}\)</span> with <span class="math notranslate nohighlight">\(\dfrac{1}{x+5}\)</span> when computing the limit, as shown in the next step.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Evaluate the limit using the simplified function.</p>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Evaluate the limit using the simplified function.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \lim_{x\to 5}\frac{x-5}{x^2-25}
@@ -787,20 +802,30 @@
 &amp;= \frac{1}{10} &amp;&amp; \hbox{Simplify}
 \end{align*}\]</div>
 </div>
-</div>
+</details></div>
 <div class="section" id="example-2">
 <h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
 <p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to 10} \dfrac{\sqrt{x-6}-2}{x-10}\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 1: Evaluate the limit of numerator and denominator.</p>
-<p>Plug in <span class="math notranslate nohighlight">\(x=10\)</span>:</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 1:</strong> Evaluate the limit of numerator and denominator.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Plug in <span class="math notranslate nohighlight">\(x=10\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to 10} \sqrt{x-6}-2 = \sqrt{10-6} - 2 = 0 ~~~~ \hbox{and} ~~~~~ \lim_{x\to 10} x-10 = 10-10 = 0\]</div>
-<p>This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to do more work to evaluate it.</p>
+<p class="card-text">This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to do more work to evaluate it.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 2: Simplify the function.</p>
-<p>We simplify the function by multiplying and dividing by <span class="math notranslate nohighlight">\(\sqrt{x-6} + 2\)</span>, which is the conjugate of <span class="math notranslate nohighlight">\(\sqrt{x-6} - 2\)</span>.</p>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 2:</strong> Simplify the function.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">We simplify the function by multiplying and dividing by <span class="math notranslate nohighlight">\(\sqrt{x-6} + 2\)</span>, which is the conjugate of <span class="math notranslate nohighlight">\(\sqrt{x-6} - 2\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \frac{\sqrt{x-6}-2}{x-10} \cdot \frac{\sqrt{x-6} + 2}{\sqrt{x-6} + 2}
@@ -812,8 +837,13 @@
 &amp;= \frac{1}{\sqrt{x-6}+2} &amp;&amp; \hbox{If $x\neq 10$}
 \end{align*}\]</div>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Step 3: Evaluate the limit using the simplified function.</p>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>Step 3:</strong> Evaluate the limit using the simplified function.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \lim_{x\to 10} \frac{\sqrt{x-6}-2}{x-10} 
@@ -823,7 +853,7 @@
 &amp;= \frac{1}{4}
 \end{align*}\]</div>
 </div>
-</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">

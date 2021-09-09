@@ -29,15 +29,21 @@ Find all values of $x$ such that $x^2 - 4x - 12 = 0$.
 
 (01_03_example1)=
 ### Example 1
-Factor $x^2 - 4x - 12$.
+
+```{admonition} Solving a quadratic equation
+:class: tip
+
+Find all values of $x$ such that $x^2 - 4x - 12 = 0$.
+```
+
+```{dropdown} **Step 1:** Factor $x^2 - 4x - 12$.
 
 *Recall from [Factoring, Example 8](01_02_example8) that* 
 
 $$x^2 - 4x - 12 = (x+2)(x-6)$$
+```
 
-
-```{admonition} Step 1: Set each factor equal to zero and solve for $x$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Set each factor equal to zero and solve for $x$.
 
 \begin{align*}
 x + 2 &= 0  ~~~~\Rightarrow~~~~  x = -2\\
@@ -47,8 +53,8 @@ x - 6 &= 0  ~~~~\Rightarrow~~~~  x = 6
 Therefore, $x=6$ and $x=-2$ satisfy $x^2 - 4x - 12 = 0$.
 ```
 
-```{admonition} Check Your Work.
-:class: warning, dropdown
+```{dropdown} Check Your Work.
+:title: bg-warning font-weight-bold
 
 \begin{align*}
 (-2)^2 - 4(-2) - 12 &= 4 + 8 - 12 = 0 \\
@@ -58,16 +64,19 @@ Therefore, $x=6$ and $x=-2$ satisfy $x^2 - 4x - 12 = 0$.
 
 
 ### Example 2
-Find all values of $p$ such that $\dfrac{3p}{180-6p} = 1$.
 
-```{admonition} Step 1: Multiply both sides of $\frac{3p}{180-6p} = 1$ by the denominator, $180-6p$.
-:class: tip, dropdown
+```{admonition} Solving a rational equation
+:class: tip
+
+Find all values of $p$ such that $\dfrac{3p}{180-6p} = 1$.
+```
+
+```{dropdown} **Step 1:** Multiply both sides of $\frac{3p}{180-6p} = 1$ by the denominator, $180-6p$.
 
 $$3p = 180 - 6p$$
 ```
 
-```{admonition} Step 2: Subtract $180 - 6p$ from both sides.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Subtract $180 - 6p$ from both sides.
 
 \begin{align*}
 3p - (180-6p) &= 0 \\
@@ -76,8 +85,7 @@ $$3p = 180 - 6p$$
 \end{align*}
 ```
 
-```{admonition} Step 3: Solve for $p$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Solve for $p$.
 
 \begin{align*}
     9p &= 180 && \text{Add $180$ to both sides} \\
@@ -87,25 +95,27 @@ $$3p = 180 - 6p$$
 Therefore, $p=20$ is the only value that satisfies $\frac{3p}{180-6p} = 1$.
 ```
 
-```{admonition} Check Your Work.
-:class: warning, dropdown
+```{dropdown} Check Your Work.
+:title: bg-warning font-weight-bold
 
 $$\dfrac{3(20)}{180-6(20)} = \frac{60}{180-120} = \frac{60}{60} = 1$$
 ```
 
 ### Example 3
+
+```{admonition} Points of intersection
+:class: tip
+
 Find all points of intersection of $f(x) = 6x^2 - 4x$ and $g(x) = 2 - 5x$.
+```
 
-
-```{admonition} Step 1: Set $f(x) = g(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Set $f(x) = g(x)$.
 Points of intersection can be found by setting the two curves equal to each other and solving for $x$.
 
 $$6x^2 - 4x =  2 - 5x$$
 ```
 
-```{admonition} Step 2: Subtract $2-5x$ from both sides of the equation in Step 1.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Subtract $2-5x$ from both sides of the equation in Step 1.
 
 \begin{align*}
 6x^2 - 4x - (2 - 5x) &=  0 && \hbox{Note the parentheses around $2-5x$}\\
@@ -114,8 +124,7 @@ $$6x^2 - 4x =  2 - 5x$$
 \end{align*}
 ```
 
-```{admonition} Step 3: Use the AC grouping method to factor $6x^2 + x - 2$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Use the AC grouping method to factor $6x^2 + x - 2$.
 
 Find two integers that multiply to $6(-2) = -12$ and sum to $1$.
 
@@ -135,8 +144,7 @@ Therefore,
 ```
 
 
-```{admonition} Step 4: Set each factor equal to zero and solve for $x$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Set each factor equal to zero and solve for $x$.
 
 \begin{align*}
 3x + 2 &= 0  ~~~~\Rightarrow~~~~  3x = -2 ~~~~\Rightarrow~~~~ x = -2/3\\
@@ -146,8 +154,8 @@ Therefore,
 Therefore, the only points of intersection of $f(x) = 6x^2 - 4x$ and $g(x) = 2 - 5x$ occur when $x=-2/3$ and $x=1/2$.
 ```
 
-```{admonition} Check Your Work.
-:class: warning, dropdown
+```{dropdown} Check Your Work.
+:title: bg-warning font-weight-bold
 
 | $x$  | $f(x) = 6x^2 - 4x$ | $g(x) = 2 - 5x$ |
 | ---  | ----               | ----            |
