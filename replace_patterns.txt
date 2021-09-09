@@ -35,4 +35,4 @@ Step ([1-9]):
 
 ```\{admonition\} Check Your Work.\n :class: warning, dropdown
 
-```{dropdown} Check Your Work.\n :title: bg-warning font-weight-bold
+```{dropdown} Check Your Work.\n:title: bg-warning font-weight-bold
