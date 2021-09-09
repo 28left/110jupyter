@@ -34,14 +34,12 @@ the process of logarithmic differentiation is carried out in the following manne
 
 Compute the derivative of $f(x) = \dfrac{(5x+1)^7}{x^4\sqrt{x^3+4}}$.
 
-```{admonition} Step 1: Observe that $f(x)$ involves products, quotients, and powers.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Observe that $f(x)$ involves products, quotients, and powers.
 
 While $f'(x)$ could be computed using the product, quotient, and general power rules of differentiation, it is a good candidate for logarithmic differentiation.
 ```
 
-```{admonition} Step 2: Take the natural logarithm of both sides of $y=f(x)$ and expand $\ln(f(x))$ using laws of logarithms.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Take the natural logarithm of both sides of $y=f(x)$ and expand $\ln(f(x))$ using laws of logarithms.
 
 \begin{align*}
     \ln(y) 
@@ -53,8 +51,7 @@ While $f'(x)$ could be computed using the product, quotient, and general power r
 \end{align*}
 ```
 
-```{admonition} Step 3: Differentiate both sides. Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Differentiate both sides. Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
 
 \begin{align*}
     \frac{y'}{y} 
@@ -64,8 +61,7 @@ While $f'(x)$ could be computed using the product, quotient, and general power r
 \end{align*}
 ```
 
-```{admonition} Step 4: Solve for $y'$ (by multiplying both sides by $y$) and replace $y$ with $f(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Solve for $y'$ (by multiplying both sides by $y$) and replace $y$ with $f(x)$.
 
 \begin{align*}
     y'
@@ -78,14 +74,12 @@ While $f'(x)$ could be computed using the product, quotient, and general power r
 
 Compute the derivative of $f(x) = \left(3x+5\right)^{x^2}$.
 
-```{admonition} Step 1: Recognize the form of $f(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Recognize the form of $f(x)$.
 
 Observe that $f(x)$ is a function of $x$ (i.e., $3x+5$) raised to another function of $x$ (i.e., $x^2$). Logarithmic differentiation is the only technique of differentiation that can be applied to functions of the form $h(x)^{g(x)}$, as is the case here.
 ```
 
-```{admonition} Step 2: Take the natural logarithm of both sides of $y=f(x)$ and expand $\ln(f(x))$ using laws of logarithms.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Take the natural logarithm of both sides of $y=f(x)$ and expand $\ln(f(x))$ using laws of logarithms.
 
 \begin{align*}
     \ln(y) 
@@ -94,8 +88,7 @@ Observe that $f(x)$ is a function of $x$ (i.e., $3x+5$) raised to another functi
 \end{align*}
 ```
 
-```{admonition} Step 3: Differentiate both sides. 
-:class: tip, dropdown
+```{dropdown} **Step 3:** Differentiate both sides. 
 
 Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
 
@@ -106,8 +99,7 @@ Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
 \end{align*}
 ```
 
-```{admonition} Step 4: Solve for $y'$ (by multiplying both sides by $y$) and replace $y$ with $f(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Solve for $y'$ (by multiplying both sides by $y$) and replace $y$ with $f(x)$.
 
 \begin{align*}
     y'

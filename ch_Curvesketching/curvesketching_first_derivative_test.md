@@ -41,8 +41,7 @@ $$f(x) = \sqrt[3]{x^2-1}$$
 were $x=-1$, $x=0$, and $x=1$.
 Classify each critical point using the First Derivative Test. 
 
-````{admonition} Step 1: Break up the domain of $f'(x)$ at each critical point.
-:class: tip, dropdown
+````{dropdown} **Step 1:** Break up the domain of $f'(x)$ at each critical point.
 
 Plug in one number from each subinterval into $f'(x)$ to determine the sign of $f'(x)$ on each interval.
 
@@ -58,8 +57,7 @@ Interval analysis of $f'(x) = \dfrac{2x}{3(x^2 - 1)^{2/3}}$
 ````
 
 
-```{admonition} Step 2: Classify each critical point.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Classify each critical point.
 
 Since $f'(x)$ changes from negative to positive at $x=0$, $f(x)$ has a relative minimum at $x=0$.  
 
@@ -75,8 +73,7 @@ $$f(x) = x^3 +3x^2 - 24x + 1$$
 
 were $x=-4$ and $x=2$. Classify the critical point using the First Derivative Test. 
 
-````{admonition} Step 1: Break up the domain of $f'(x)$ at each critical point.
-:class: tip, dropdown
+````{dropdown} **Step 1:** Break up the domain of $f'(x)$ at each critical point.
 
 Plug in one number from each subinterval into $f'(x)$ to determine the sign of $f'(x)$ on each interval.
 
@@ -92,8 +89,7 @@ Interval analysis of $f'(x) = 3(x+4)(x-2)$.
 ````
 
 
-```{admonition} Step 2: Classify each critical point.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Classify each critical point.
 
 Since $f'(x)$ changes from positive to negative at $x=-4$, $f(x)$ has a relative maximum at $x=-4$.  Since $f'(x)$ changes from negative to positive at $x=2$, $f(x)$ has a relative minimum at $x=2$.
 ```

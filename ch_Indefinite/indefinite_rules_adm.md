@@ -73,20 +73,17 @@ $$\int f(g(x))g'(x) ~dx = \int f(u) ~du$$
 
 Compute $\displaystyle \int 13 ~dz$.
 
-```{admonition} Step 1: Notice the differential $dz$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Notice the differential $dz$.
 
 This indicates that we are looking for a function of $z$, $f(z)$, such that $f'(z) = 13$.
 ```
 
-```{admonition} Step 2: Recall the formula for the integral of a constant.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Recall the formula for the integral of a constant.
 
 $$\int k ~dx = kx + C$$
 ```
 
-```{admonition} Step 3: Apply the rule with $k = 13$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Apply the rule with $k = 13$.
 
 Therefore,
 
@@ -97,16 +94,14 @@ $$\int 13 ~dz = 13z + C$$
 
 Compute $\displaystyle \int  x^7 ~dx$.
 
-```{admonition} Step 1: Recall the power rule.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Recall the power rule.
 
 For any real number $n\neq -1$,
 
 $$\int x^n ~dx = \frac{x^{n+1}}{n+1} + C$$
 ```
 
-```{admonition} Step 2: Apply the power rule with $n = 7$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the power rule with $n = 7$.
 
 \begin{align*}
   \int x^7  dx 
@@ -119,14 +114,12 @@ $$\int x^n ~dx = \frac{x^{n+1}}{n+1} + C$$
 
 Compute $\displaystyle \int \frac{1}{\sqrt{y}} ~dy$.
 
-```{admonition} Step 1: Rewrite the integrand in the appropriate form to apply the power rule.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Rewrite the integrand in the appropriate form to apply the power rule.
 
 $$\int  \frac{1}{\sqrt{y}} ~dy = \int  y^{-1/2} ~dy$$
 ```
 
-```{admonition} Step 2: Apply the power rule with $n = -1/2$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the power rule with $n = -1/2$.
 
 \begin{align*}
   \int  y^{-1/2} ~dy 
@@ -140,16 +133,14 @@ $$\int  \frac{1}{\sqrt{y}} ~dy = \int  y^{-1/2} ~dy$$
 
 Compute $\displaystyle \int  4x^{7/3} ~dx$.
 
-```{admonition} Step 1: Recall the constant multiple rule.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Recall the constant multiple rule.
 
 For any real number $k$,
 
 $$\int kf(x) ~dx = k\int f(x) ~dx$$
 ```
 
-```{admonition} Step 2: Apply the constant multiple rule with $k=4$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the constant multiple rule with $k=4$.
 
 \begin{align*}
   \int 4x^{7/3}  ~dx 
@@ -165,14 +156,12 @@ $$\int kf(x) ~dx = k\int f(x) ~dx$$
 
 Compute $\displaystyle \int 5t^3-\frac{10}{t^{6}}+4\sqrt{t} ~dt$.
 
-```{admonition} Step 1: Recall the sum rule.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Recall the sum rule.
 
 $$\int f(x)\pm g(x) ~dx = \int f(x) ~dx \pm \int g(x) ~dx$$
 ```
 
-```{admonition} Step 2: Apply the sum and constant multiple rules and then integrate each term.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the sum and constant multiple rules and then integrate each term.
 
 \begin{align*}
   \int 5t^3-\frac{10}{t^{6}}+4\sqrt{t}  ~dt
@@ -188,8 +177,7 @@ $$\int f(x)\pm g(x) ~dx = \int f(x) ~dx \pm \int g(x) ~dx$$
 
 Compute $\displaystyle \int \frac{4x^9 - 15x^4 + 7x^3}{x^4} ~dx$.
 
-```{admonition} Step 1: Rewrite the integrand as a sum.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Rewrite the integrand as a sum.
 
 \begin{align*}
   \frac{4x^9-15x^4 + 7x^3}{x^4}
@@ -198,8 +186,7 @@ Compute $\displaystyle \int \frac{4x^9 - 15x^4 + 7x^3}{x^4} ~dx$.
 \end{align*}
 ```
 
-```{admonition} Step 2: Apply the sum and constant multiple rules and then integrate each term.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the sum and constant multiple rules and then integrate each term.
 
 \begin{align*}
   \int \frac{4x^9 - 15x^4 + 7x^3}{x^4} ~dx 
@@ -215,14 +202,12 @@ Compute $\displaystyle \int \frac{4x^9 - 15x^4 + 7x^3}{x^4} ~dx$.
 
 Compute $\displaystyle \int e^{2x/5}dx$.
 
-```{admonition} Step 1: Recall the formula for the integral of $e^{ax}$ for $a\neq 0$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Recall the formula for the integral of $e^{ax}$ for $a\neq 0$.
 
 $$\int e^{ax} ~dx = \frac{e^{ax}}{a} + C$$
 ```
 
-```{admonition} Step 2: Apply the formula for the integral of $e^{ax}$ with $a=2/5$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the formula for the integral of $e^{ax}$ with $a=2/5$.
 
 \begin{align*}
   \int e^{2x/5} ~dx 
@@ -235,8 +220,7 @@ $$\int e^{ax} ~dx = \frac{e^{ax}}{a} + C$$
 
 Compute $\displaystyle \int 3e^{2x}+\frac{8}{x}+\frac{4}{x^3} ~dx$.
 
-```{admonition} Step 1: Apply the sum and constant multiple rules and then integrate each term.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Apply the sum and constant multiple rules and then integrate each term.
 
 \begin{align*}
   \int 3e^{2x}+\frac{8}{x}+\frac{4}{x^3} ~dx 
@@ -253,8 +237,7 @@ Compute $\displaystyle \int 3e^{2x}+\frac{8}{x}+\frac{4}{x^3} ~dx$.
 
 Compute $\displaystyle \int (e^{3x} + 1)(e^{-3x} - 1) ~dx$.
 
-```{admonition} Step 1: Rewrite the integrand as a sum.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Rewrite the integrand as a sum.
 
 \begin{align*}
   (e^{3x} + 1)(e^{-3x} - 1)
@@ -266,8 +249,7 @@ Compute $\displaystyle \int (e^{3x} + 1)(e^{-3x} - 1) ~dx$.
 \end{align*}
 ```
 
-```{admonition} Step 2: Apply the sum rule and then integrate each term.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Apply the sum rule and then integrate each term.
 
 \begin{align*}
   \int (e^{3x} + 1)(e^{-3x} - 1) ~dx

@@ -341,8 +341,7 @@ Notice how the graph of $y=x^2-4$ looks like the graph of $y=x^2$ with each poin
 
 Sketch the graph of $f(x) = x^2 - 4x -12$.
 
-```{admonition} Step 1: Determine the $y$-intercept by evaluating $f(0)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine the $y$-intercept by evaluating $f(0)$.
 
 \begin{align*}
   f(0)
@@ -353,8 +352,7 @@ Sketch the graph of $f(x) = x^2 - 4x -12$.
 Therefore the graph of $y=f(x)$ goes through the point $(0,-12)$.
 ```
 
-```{admonition} Step 2: Determine the $x$-intercepts by setting $f(x)=0$ and solving for $x$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Determine the $x$-intercepts by setting $f(x)=0$ and solving for $x$.
 
 Recall from [Factoring, Example 8](01_02_example8)  and [Solving Equations, Example 1](01_03_example1) that
 

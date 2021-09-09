@@ -185,7 +185,6 @@ The FOIL method is a way to remember how to apply the distributive property of m
 - **O**uter (i.e., multiply the first term from the first factor and the second term from the second factor)
 - **I**nner (i.e., multiply the second term from the first factor and the first term from the second factor)
 - **L**ast (i.e., multiply the second terms of each binomial)
-\end{itemize}
 
 $$
 (a + b)(c + d) = \underbrace{ac}_{\text{(F)irst}} + \underbrace{ad}_{\text{(O)uter}} + \underbrace{bc}_{\text{(I)nner}} + \underbrace{bd}_{\text{(L)ast}}

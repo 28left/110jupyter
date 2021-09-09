@@ -82,16 +82,14 @@ $$f(x) = (x^2 + 7)(x^3 - 1)$$
 is a polynomial (and therefore also a rational function) and determine its degree.
 
 
-```{admonition} Step 1: Expand the product using the FOIL technique.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Expand the product using the FOIL technique.
  
 $$(x^2 + 7)(x^3 - 1) = x^5 + 7x^3 - x^2 - 7$$
 
 Since $f$ can be written as a sum of power functions where every power of $x$ is a nonnegative integer, $f$ is a polynomial.
 ```
 
-```{admonition} Step 2: Determine the degree of $f$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Determine the degree of $f$.
 
 The degree of $f$ is $5$ since $f$ is a polynomial and the largest power of $x$ is $5$.
 ```
@@ -113,15 +111,13 @@ In general, a product of polynomials is also a polynomial and its degree is the 
 
 Show that $g(x) = \dfrac{4}{x-1} + \dfrac{5}{x}$ is a rational function (but not a polynomial) and determine its domain.
 
-```{admonition} Step 1: Get a common denominator.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Get a common denominator.
 
 $$\dfrac{4}{x-1} + \dfrac{5}{x} = \frac{4x}{x(x-1)} + \frac{5(x-1)}{x(x-1)}$$
 ```
 
 
-```{admonition} Step 2: Add numerators and simplify.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Add numerators and simplify.
 
 $$\frac{4x + 5(x-1)}{x(x-1)} = \frac{9x-5}{x(x-1)}$$
 
@@ -129,8 +125,7 @@ Since $g(x)$ can be written as a ratio of polynomials, it too is a rational func
 ```
 
 
-```{admonition} Step 3: Determine the domain of $g$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Determine the domain of $g$.
 
 Since $g$ is the sum of two functions, we begin by considering the domain of each of the two functions.  Specifically, the domain of $4/(x-1)$ consists of all real numbers except $x=1$ and the domain of $5/x$ consists of all real numbers except $x=0$.
 

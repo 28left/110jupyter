@@ -36,15 +36,13 @@ $$y = \dfrac{2x + 3}{x + 4}.$$
 
 
 
-```{admonition} Step 1:  Determine the domain.
-:class: tip, dropdown
+```{dropdown} **Step 1:**  Determine the domain.
 
 In this case, $f(x)$ is undefined when the denominator equals zero, which is when $x= -4$. Therefore, the domain of $f$ is $(-\infty, -4) \cup (-4, \infty)$.
 ```
 
 
-```{admonition} Step 2: Find the $x$ and $y$ intercepts, if any.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find the $x$ and $y$ intercepts, if any.
 
 - $x$-intercept: Set $y=0$ and solve for $x$.
 
@@ -69,8 +67,7 @@ Therefore, $f$ has an $x$-intercept at the point $(-3/2,0)$ and a $y$-intercept 
 ```
 
 
-```{admonition} Step 3: Find the vertical and horizontal asymptotes, if any.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Find the vertical and horizontal asymptotes, if any.
 
 - Vertical Asymptotes: Since the numerator and denominator are already factored, the vertical asymptotes correspond to the values of $x$ that make the denominator equal to zero.  This happens only when $x = -4$, so $x = -4$ is the only vertical asymptote.
 
@@ -83,8 +80,7 @@ Therefore, $f$ has an $x$-intercept at the point $(-3/2,0)$ and a $y$-intercept 
 ```
 
 
-````{admonition} Step 4: Determine the intervals of increase and decrease.
-:class: tip, dropdown
+````{dropdown} **Step 4:** Determine the intervals of increase and decrease.
 
 - Compute $f'(x)$.
 
@@ -108,15 +104,13 @@ Therefore, $f$ has an $x$-intercept at the point $(-3/2,0)$ and a $y$-intercept 
   Therefore, $f$ is increasing on $(-\infty, -4)$ and $(-4, \infty)$.
 ````
 
-```{admonition} Step 5: Find the relative extrema, if any.
-:class: tip, dropdown
+```{dropdown} **Step 5:** Find the relative extrema, if any.
 
 Since $f$ does not have any critical points, $f$ does not have any relative extrema.
 ```
 
 
-````{admonition} Step 6: Determine the intervals of concavity.
-:class: tip, dropdown
+````{dropdown} **Step 6:** Determine the intervals of concavity.
 
 - Compute $f''(x)$.
 
@@ -140,15 +134,13 @@ f''(x)
   Therefore, $f$ is concave up on $(-\infty, -4)$ and concave down on $(-4, \infty)$.  
 ````
 
-```{admonition} Step 7: Find the inflection points, if any.
-:class: tip, dropdown
+```{dropdown} **Step 7:** Find the inflection points, if any.
 
 The only change in sign of $f''(x)$ occurs at $x=-4$.  But since $x=-4$ is not in the domain of $f$, $f$ does not have any inflection points.
 ```
 
 
-```{admonition} Step 8: Use the information gathered to sketch the function.
-:class: tip, dropdown
+```{dropdown} **Step 8:** Use the information gathered to sketch the function.
 
 ```{image} ../images/pic_curvesketching_sketching_3.png
 :alt: Graph of $f(x)$

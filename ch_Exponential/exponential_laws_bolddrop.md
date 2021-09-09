@@ -80,8 +80,7 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 
 Find all values of $x$ such that $\displaystyle 4^{x-x^2} = \frac{1}{16^x}$.
 
-```{admonition} Step 1: Write both sides of the equation as a power of $4$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Write both sides of the equation as a power of $4$.
 
 Since the left-hand side is already written as a power of $4$, focus on the right-hand side.
 
@@ -97,8 +96,7 @@ Therefore, the original equation can be rewritten in the following manner:
 $$4^{x-x^2} = 4^{-2x}.$$
 ```
 
-```{admonition} Step 2: Set the exponents equal to each other, and solve for $x$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Set the exponents equal to each other, and solve for $x$.
 
 \begin{align*}
   x-x^2 &= -2x && \\
@@ -114,28 +112,24 @@ Find all values of $x$ such that:
 
 $$2^{2x}-40\cdot 2^x +256 = 0.$$
 
-```{admonition} Step 1: Rewrite the equation in terms of $\displaystyle 2^x$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Rewrite the equation in terms of $\displaystyle 2^x$.
 
 $$(2^x)^2 -40\cdot 2^x+256 = 0.$$
 ```
 
-```{admonition} Step 2: Let $\displaystyle u = 2^x$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Let $\displaystyle u = 2^x$.
 
 $$u^2-40u+256 =0.$$
 ```
 
-```{admonition} Step 3: Factor and solve for $u$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Factor and solve for $u$.
 
 $$(u-8)(u-32) = 0.$$
 
 $$u=8 ~~~~ \hbox{ or } ~~~~ u=32.$$
 ```
 
-```{admonition} Step 4: Substitute $2^x$ back in for $u$ and solve for $x$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Substitute $2^x$ back in for $u$ and solve for $x$.
 
 \begin{align*}
   2^x &= 8 & 2^x &= 32\\
@@ -147,8 +141,7 @@ $$u=8 ~~~~ \hbox{ or } ~~~~ u=32.$$
 
 Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 
-```{admonition} Step 1: Isolate $e^{-2t}$ using the following steps.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Isolate $e^{-2t}$ using the following steps.
 
 \begin{align*}
   360 &= 90(1+9e^{-2t}) && \text{Multiply both sides by the denominator} \\ \\
@@ -158,8 +151,7 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 \end{align*}
 ```
 
-```{admonition} Step 2: Take the natural logarithm of both sides.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Take the natural logarithm of both sides.
 
 \begin{align*}
   \ln \left(\frac{1}{3} \right) 
@@ -168,8 +160,7 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 \end{align*}
 ```
 
-```{admonition} Step 3: Solve for $t$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Solve for $t$.
 
 \begin{align*}
   t 
@@ -184,8 +175,7 @@ Expand the following expression:
 
 $$\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).$$
 
-```{admonition} Step 1: Use the laws of logarithms to expand the given expression.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Use the laws of logarithms to expand the given expression.
 
 \begin{align*}
   \ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right) 
@@ -201,8 +191,7 @@ $$\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).$$
 
 Find the tangent line to $y=\dfrac{e^{27x}}{x^9}$ at the point $(1,e^{27})$.
 
-```{admonition} Step 1: Recall the point-slope equation of a line.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Recall the point-slope equation of a line.
 
 Point-Slope: 
 
@@ -211,8 +200,7 @@ $$y-b = m(x-a),$$
 where $m$ is the slope of the line and $(a,b)$ is a point on the line.
 ```
 
-```{admonition} Step 2: Compute the slope of the line by using the derivative. 
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute the slope of the line by using the derivative. 
 
 Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 
@@ -228,8 +216,7 @@ Since the given point is $(1,e^{27})$, plug in $x=1$ into the derivative to find
 \end{align*}
 ```
 
-```{admonition} Step 3: Write down the equation of the tangent line.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Write down the equation of the tangent line.
 
 Since we were given the point $(1,e^{27})$ (i.e., $a=1$ and $b=e^{27}$) and we found the slope ($m=18e^{27}$), we can now write down the equation of the tangent line using the point-slope equation of a line. 
 
@@ -246,14 +233,12 @@ $$p(x) = x^3e^{5x}+12.$$
 
 Find the marginal revenue function $R'(x)$.
 
-```{admonition} Step 1: Find the revenue function, $R(x)$, using the formula $R(x) = x\cdot p(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find the revenue function, $R(x)$, using the formula $R(x) = x\cdot p(x)$.
 
 $$R(x) = x^4e^{5x} +12x.$$
 ```
 
-```{admonition} Step 2: Compute the derivative of $R(x)$. 
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute the derivative of $R(x)$. 
 
 Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 
@@ -268,8 +253,7 @@ Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 
 Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 
-```{admonition} Step 1: Expand $f(x)$ using laws of logarithms.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Expand $f(x)$ using laws of logarithms.
 
 \begin{align*}
   \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)
@@ -279,8 +263,7 @@ Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 \end{align*}
 ```
 
-```{admonition} Step 2: Compute the derivative.  Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute the derivative.  Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
 
 \begin{align*}
   \frac{d}{dx}\left(\frac{1}{2}\ln(6x+1) - \ln(5) - \ln(x)\right)
@@ -294,14 +277,12 @@ Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 
 Let $\ln(xy)+y^7 = x^3 + 2x$. Find $\dfrac{dy}{dx}$.
 
-```{admonition} Step 1: Differentiate both sides using implicit differentiation.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Differentiate both sides using implicit differentiation.
 
 $$\frac{1}{xy} (y +xy') + 7y^6y' = 3x^2+2.$$
 ```
 
-```{admonition} Step 2: Multiply both sides by $xy$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Multiply both sides by $xy$.
 
 \begin{align*}
   xy\left[ \frac{1}{xy} (y +xy') + 7y^6y' \right]
@@ -317,20 +298,17 @@ Therefore,
 $$y+xy' + 7xy^7y' = 3x^3y + 2xy.$$
 ```
 
-```{admonition} Step 3: Rearrange terms so that any term with a factor of $y'$ is on the left-hand side of the equation and all other terms are on the right-hand side.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Rearrange terms so that any term with a factor of $y'$ is on the left-hand side of the equation and all other terms are on the right-hand side.
 
 $$xy' + 7xy^7y' = 3x^3y + 2xy - y.$$
 ```
 
-```{admonition} Step 4: Factor out $y'$ on the left-hand side.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Factor out $y'$ on the left-hand side.
 
 $$y'(x + 7xy^7) = 3x^3y + 2xy - y.$$
 ```
 
-```{admonition} Step 5: Solve for $y'$.
-:class: tip, dropdown
+```{dropdown} **Step 5:** Solve for $y'$.
 
 $$y' = \frac{3x^3y + 2xy - y}{x + 7xy^7}.$$
 ```

@@ -95,14 +95,12 @@ $$f(x)=x^3-2x^2-4x+4$$
 
 on the interval $[0,3]$.
 
-```{admonition} Step 1: Decide whether $f$ is continuous on the interval.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Decide whether $f$ is continuous on the interval.
 
 Observe that $f$ is continuous on the closed interval $[0,3]$.
 ```
 
-```{admonition} Step 2: Find the critical points of $f$ on $(0,3)$, if any.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find the critical points of $f$ on $(0,3)$, if any.
 
 \begin{align*}
   f'(x) &= 3x^2-4x-4\\
@@ -112,8 +110,7 @@ Observe that $f$ is continuous on the closed interval $[0,3]$.
 Therefore, $f'(x)=0$ when $x=-2/3$ and $x=2$. But since $x=-2/3$ is not on the interval $(0,3)$, $x=2$ is the only critical point on $(0,3)$.
 ```
 
-```{admonition} Step 3: Evaluate $f(x)$ at critical points on $(0,3)$ and the endpoints of $[0,3]$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Evaluate $f(x)$ at critical points on $(0,3)$ and the endpoints of $[0,3]$.
 
 \begin{align*}
   f(0) &= 4 \\
@@ -122,8 +119,7 @@ Therefore, $f'(x)=0$ when $x=-2/3$ and $x=2$. But since $x=-2/3$ is not on the i
 \end{align*}
 ```
 
-```{admonition} Step 4: Find absolute extrema by comparing values from Step 3.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Find absolute extrema by comparing values from Step 3.
 
 It follows that $f(2)=-4$ is the absolute minimum value and $f(0)=4$ is the absolute maximum value.
 ```
@@ -136,14 +132,12 @@ $$f(x)=4x^5+5x^4$$
 
 on the interval $[-2,1]$.
 
-```{admonition} Step 1: Decide whether $f$ is continuous on the interval.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Decide whether $f$ is continuous on the interval.
 
 Observe that $f$ is continuous on the closed interval $[-2,1]$.
 ```
 
-```{admonition} Step 2: Find the critical points of $f$ on $(-2,1)$, if any.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find the critical points of $f$ on $(-2,1)$, if any.
 
 \begin{align*}
   f'(x) &= 20x^4+20x^3\\
@@ -153,8 +147,7 @@ Observe that $f$ is continuous on the closed interval $[-2,1]$.
 Therefore, $f'(x) = 0$ when $x=0$ and $x=-1$, both of which are on $(-2,1)$.
 ```
 
-```{admonition} Step 3: Evaluate $f(x)$ at critical points on $(-2,1)$ and the endpoints of $[-2,1]$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Evaluate $f(x)$ at critical points on $(-2,1)$ and the endpoints of $[-2,1]$.
 
 \begin{align*}
   f(-2) &= -48 \\
@@ -164,8 +157,7 @@ Therefore, $f'(x) = 0$ when $x=0$ and $x=-1$, both of which are on $(-2,1)$.
 \end{align*}
 ```
 
-```{admonition} Step 4: Find absolute extrema by comparing values from Step 3.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Find absolute extrema by comparing values from Step 3.
 
 It follows that $f(-2)=-48$ is the absolute minimum value and $f(1)=9$ is the absolute maximum value.
 ```
@@ -178,14 +170,12 @@ $$f(x)=\frac{1}{x-1}$$
 
 on the interval $[2,4]$.
 
-```{admonition} Step 1: Decide whether $f$ is continuous on the interval.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Decide whether $f$ is continuous on the interval.
 
 Observe that $f$ has a discontinuity at $x=1$, however this is not on the interval $[2,4]$. Therefore $f$ is continuous on the closed interval $[2,4]$.  
 ```
 
-```{admonition} Step 2: Find the critical points of $f$ on $(2,4)$, if any.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Find the critical points of $f$ on $(2,4)$, if any.
 
 \begin{align*}
   f'(x) 
@@ -197,8 +187,7 @@ Observe that $f$ has a discontinuity at $x=1$, however this is not on the interv
 which is never equal to zero, but does always exist on the interval $(2,4)$. Notice that $x=1$ is not a critical point of $f$ since $f(1)$ is not defined. In other words, $f$ does not have any critical points. 
 ```
 
-```{admonition} Step 3: Evaluate $f(x)$ at critical points on $(2,4)$ and the endpoints of $[2,4]$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Evaluate $f(x)$ at critical points on $(2,4)$ and the endpoints of $[2,4]$.
 
 Since there are no critical points, we need only evaluate $f$ at $x=2$ and $x=4$.
 
@@ -208,8 +197,7 @@ Since there are no critical points, we need only evaluate $f$ at $x=2$ and $x=4$
 \end{align*}
 ```
 
-```{admonition} Step 4: Find absolute extrema by comparing values from Step 3.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Find absolute extrema by comparing values from Step 3.
 
 It follows that $f(4)=1/3$ is the absolute minimum value and $f(2)=1$ is the absolute maximum value.
 ```

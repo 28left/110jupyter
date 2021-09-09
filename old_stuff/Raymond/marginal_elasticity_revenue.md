@@ -108,8 +108,7 @@ $$p = 2 - \frac{x}{10}.$$
 
 Compute $E(0.5)$ and $E(1.5)$ and interpret the results.
 
-```{admonition} Step 1: Determine $x = f(p)$. 
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine $x = f(p)$. 
 
 In other words, solve for demand $x$, in terms of price $p$, using the demand equation, if possible.
 
@@ -123,16 +122,14 @@ In other words, solve for demand $x$, in terms of price $p$, using the demand eq
 Therefore, $f(p) = 20-10p$.
 ```
 
-```{admonition} Step 2: Compute $f'(p)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $f'(p)$.
 
 \begin{align*}
     f'(p) &= \frac{d}{dp}(20-10p) = -10
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute $E(p)$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute $E(p)$.
 
 \begin{align*}
   E(p) = -\frac{pf'(p)}{f(p)} 
@@ -141,8 +138,7 @@ Therefore, $f(p) = 20-10p$.
 \end{align*}
 ```
 
-```{admonition} Step 4: Calculate $E(0.5)$:
-:class: tip, dropdown
+```{dropdown} **Step 4:** Calculate $E(0.5)$:
 
 \begin{align*}
     E(0.5) 
@@ -154,8 +150,7 @@ Therefore, $f(p) = 20-10p$.
 Since $E(0.5) < 1$, demand is inelastic when the price is \$0.50 and total revenue would increase if the price increases.
 ```
 
-```{admonition} Step 5: Calculate $E(1.5)$:
-:class: tip, dropdown
+```{dropdown} **Step 5:** Calculate $E(1.5)$:
 
 \begin{align*}
     E(1.5) 
@@ -175,8 +170,7 @@ $$x + \frac{p}{6} -50 = 0$$
 
 where $p$ represents the price in dollars and $x$ the number of units, determine the value of $p$ where demand is unitary and interpret the result.
 
-```{admonition} Step 1: Determine $x = f(p)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine $x = f(p)$.
 
 In other words, solve for demand $x$, in terms of price $p$, using the demand equation, if possible.
 
@@ -189,8 +183,7 @@ In other words, solve for demand $x$, in terms of price $p$, using the demand eq
 Therefore, $f(p) = 50 - \dfrac{p}{6}$.
 ```
 
-```{admonition} Step 2: Compute $f'(p)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $f'(p)$.
 
 \begin{align*}
   f'(p) 
@@ -200,8 +193,7 @@ Therefore, $f(p) = 50 - \dfrac{p}{6}$.
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute $E(p)$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute $E(p)$.
 
 \begin{align*}
     E(p) = -\frac{pf'(p)}{f(p)}
@@ -213,8 +205,7 @@ Therefore, $f(p) = 50 - \dfrac{p}{6}$.
 \end{align*}
 ```
 
-```{admonition} Step 4: Recall that demand is unitary when $E(p) = 1$. Therefore, set $E(p) = 1$ and solve for $p$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Recall that demand is unitary when $E(p) = 1$. Therefore, set $E(p) = 1$ and solve for $p$.
 
 \begin{align*}
     \frac{p}{300 - p} &= 1 && \hbox{set $E(p) = 1$}\\
@@ -234,8 +225,7 @@ $$x^2 + 6p = 180$$
 
 where $p$ represents the price in dollars and $x$ the number of units, determine the value of $p$ where demand is unitary and interpret the result.
 
-```{admonition} Step 1: Determine $x = f(p)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Determine $x = f(p)$.
 
 In other words, solve for demand $x$, in terms of price $p$, using the demand equation, if possible.
 
@@ -248,8 +238,7 @@ In other words, solve for demand $x$, in terms of price $p$, using the demand eq
 Therefore, $f(p) = \sqrt{180-6p}$.
 ```
 
-```{admonition} Step 2: Compute $f'(p)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $f'(p)$.
 
 \begin{align*}
     f'(p) &= \frac{d}{dp}\sqrt{180-6p}\\
@@ -259,8 +248,7 @@ Therefore, $f(p) = \sqrt{180-6p}$.
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute $E(p)$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute $E(p)$.
 
 \begin{align*}
     E(p) = -\frac{p f'(p)}{f(p)}
@@ -271,8 +259,7 @@ Therefore, $f(p) = \sqrt{180-6p}$.
 \end{align*}
 ```
 
-```{admonition} Step 4: Recall that demand is unitary when $E(p) = 1$. Therefore, set $E(p) = 1$ and solve for $p$.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Recall that demand is unitary when $E(p) = 1$. Therefore, set $E(p) = 1$ and solve for $p$.
 
 \begin{align*}
     \frac{3p}{180-6p} &= 1 && \hbox{set $E(p) = 1$}\\

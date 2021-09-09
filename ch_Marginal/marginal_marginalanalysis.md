@@ -72,8 +72,7 @@ $$p(x) = \frac{125}{x+2} - \frac{1}{2}x$$
 where $x$ is the number of video games sold each day and $p$ is in dollars. Using the marginal revenue function, $R'(x)$, approximate the marginal revenue when 3 video games are sold each day and interpret the result.
 
 
-```{admonition} Step 1: Compute the total revenue function, $R(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Compute the total revenue function, $R(x)$.
 
 \begin{align*}
     R(x) &= x\cdot p(x) \\
@@ -82,8 +81,7 @@ where $x$ is the number of video games sold each day and $p$ is in dollars. Usin
 \end{align*}
 ```
 
-```{admonition} Step 2: Compute the marginal revenue function, $R'(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute the marginal revenue function, $R'(x)$.
 
 \begin{align*}
     R'(x) &= \frac{d}{dx}R(x)\\
@@ -94,8 +92,7 @@ where $x$ is the number of video games sold each day and $p$ is in dollars. Usin
 \end{align*}
 ```
 
-```{admonition} Step 3: Plug in $x=3$ into the marginal revenue function.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Plug in $x=3$ into the marginal revenue function.
 
 \begin{align*}
     R'(3) &= \frac{250}{(3+2)^2} - 3 \\
@@ -123,8 +120,7 @@ $$C(x) = 3x + 21$$
 Evaluate the marginal profit function at $x=20$ and interpret the result.
 
 
-```{admonition} Step 1: Compute the total revenue function, $R(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Compute the total revenue function, $R(x)$.
 
 \begin{align*}
     R(x) &=  x\cdot p(x)\\
@@ -133,8 +129,7 @@ Evaluate the marginal profit function at $x=20$ and interpret the result.
 \end{align*}
 ```
 
-```{admonition} Step 2: Compute the total profit function, $P(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute the total profit function, $P(x)$.
 
 \begin{align*}
     P(x) &= R(x) - C(x)\\
@@ -144,8 +139,7 @@ Evaluate the marginal profit function at $x=20$ and interpret the result.
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute the marginal profit function, $P'(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute the marginal profit function, $P'(x)$.
 
 \begin{align*}
     P'(x) &= \frac{d}{dx}P(x) \\
@@ -155,8 +149,7 @@ Evaluate the marginal profit function at $x=20$ and interpret the result.
 \end{align*}
 ```
 
-```{admonition} Step 4: Plug in $x=20$ into the marginal profit function.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Plug in $x=20$ into the marginal profit function.
 
 \begin{align*}
     P'(20) 
@@ -177,8 +170,7 @@ $$C(x)=9x^3-30x^2+90x+900$$
 
 where $x$ denotes the number of thousands of screens produced each day. Calculate the marginal average cost function when 3000 screens are produced each day and interpret the result.
 
-```{admonition} Step 1: Compute and simplify the average cost function, $\overline{C}(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Compute and simplify the average cost function, $\overline{C}(x)$.
 
 \begin{align*}
     \overline{C}(x) 
@@ -191,8 +183,7 @@ where $x$ denotes the number of thousands of screens produced each day. Calculat
 ```
 
 
-```{admonition} Step 2: Compute the marginal average cost function, $\overline{C}'(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute the marginal average cost function, $\overline{C}'(x)$.
 
 \begin{align*}
     \overline{C}'(x) 
@@ -203,8 +194,7 @@ where $x$ denotes the number of thousands of screens produced each day. Calculat
 \end{align*}
 ```
 
-```{admonition} Step 3: Plug in $x=3$,
-:class: tip, dropdown
+```{dropdown} **Step 3:** Plug in $x=3$,
 
 We plug in $x=3$, since $x$ denotes the *number of thousands* of screens produced each day.  
 

@@ -34,8 +34,7 @@ In order to find all values of $x$ such that $f(x)>0$ or $f(x)<0$, use the follo
 Find all values of $x$ such that $x^2 + 2x - 3 > 0$.
 
 
-```{admonition} Step 1: Find all values of $x$ such that $x^2 + 2x - 3 = 0$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find all values of $x$ such that $x^2 + 2x - 3 = 0$.
 
 Use the AC method to factor $x^2 + 2x - 3$.
 
@@ -60,7 +59,7 @@ Use one of the following two methods to solve the inequality.
 ```{admonition} Method 1
 :class: tip
 
-- Use the values of $x$ found in **Step 1** to break up the number line and plug in one value from each interval into $f(x) = (x+3)(x-1)$. \\
+- Use the values of $x$ found in **Step 1** to break up the number line and plug in one value from each interval into $f(x) = (x+3)(x-1)$. 
 
 - Since $f(-3) = 0$ and $f(1) = 0$, pick one value less $-3$, one value between $-3$ and $1$, and one value greater than $1$.  For example, since $f(-4) = 5 > 0$, $f(x) >0 $ for all $x < -3$.  And since $f(2) = 5 > 0$, $f(x)>0$ for all $x > 1$.  However, $f(0) = -3 < 0$, and therefore $f(x) < 0$ for all $-3<x<1$. 
 ```
@@ -142,8 +141,7 @@ Find all values of $x$ such that $\dfrac{x^2(x^2+3)}{(4-x^2)^3} < 0$.
 
 
 
-```{admonition} Step 1: Find all $x$ such that $\frac{x^2(x^2+3)}{(4-x^2)^3} = 0$ or is not defined. 
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find all $x$ such that $\frac{x^2(x^2+3)}{(4-x^2)^3} = 0$ or is not defined. 
 
 $\frac{x^2(x^2+3)}{(4-x^2)^3} = 0$ whenever the numerator is equal to zero, which only happens when $x=0$ (since $x^2+3$ is never equal to zero).
 

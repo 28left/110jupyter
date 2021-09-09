@@ -77,8 +77,7 @@ $$\overline{P}(x) = \frac{P(x)}{x}.$$
 
 A manufacturer of Robot Tutors has a fixed monthly cost of \$500 and a processing cost of \$9 for each robot tutor produced. Assuming each robot sells for \$19, compute the total profit and the average profit per robot when 250 robots are produced and sold.
 
-```{admonition} Step 1: Compute the total cost function, $C(x)$, where $x$ denotes the number of robots produced.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Compute the total cost function, $C(x)$, where $x$ denotes the number of robots produced.
 
 \begin{align*}
   C(x) &= F(x) + V(x) && \text{total cost equals fixed costs plus variable costs}\\
@@ -86,8 +85,7 @@ A manufacturer of Robot Tutors has a fixed monthly cost of \$500 and a processin
 \end{align*}
 ```
 
-```{admonition} Step 2: Compute the total revenue function, $R(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute the total revenue function, $R(x)$.
 
 \begin{align*}
   R(x) &= x \cdot p(x) && \text{revenue equals number of units times price per unit}\\
@@ -95,8 +93,7 @@ A manufacturer of Robot Tutors has a fixed monthly cost of \$500 and a processin
 \end{align*}
 ```
 
-```{admonition} Step 3: Compute the total profit function, $P(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 3:** Compute the total profit function, $P(x)$.
 
 \begin{align*}
   P(x) &= R(x) - C(x) && \text{profit equals revenue minus cost}\\
@@ -106,8 +103,7 @@ A manufacturer of Robot Tutors has a fixed monthly cost of \$500 and a processin
 \end{align*}
 ```
 
-```{admonition} Step 4: Plug in $x=250$ into the profit function to find the profit associated with the production and sale of 250 robots.
-:class: tip, dropdown
+```{dropdown} **Step 4:** Plug in $x=250$ into the profit function to find the profit associated with the production and sale of 250 robots.
 
 \begin{align*}
     P(250) &= 10(250) - 500 \\
@@ -116,8 +112,7 @@ A manufacturer of Robot Tutors has a fixed monthly cost of \$500 and a processin
 \end{align*}
 ```
 
-```{admonition} Step 5: Plug in $x=250$ into the average profit function to find the average profit associated with each robot when 250 robots are produced and sold.
-:class: tip, dropdown
+```{dropdown} **Step 5:** Plug in $x=250$ into the average profit function to find the average profit associated with each robot when 250 robots are produced and sold.
 
 \begin{align*}
     \overline{P}(250) 

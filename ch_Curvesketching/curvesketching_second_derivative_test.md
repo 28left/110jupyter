@@ -31,8 +31,7 @@ Find the relative extrema of
 
 $$f(x) = 12 x^5 - 45 x^4 - 200 x^3 +12.$$
 
-```{admonition} Step 1: Find the critical points of $f$.
-:class: tip, dropdown
+```{dropdown} **Step 1:** Find the critical points of $f$.
 
 \begin{align*}
 f'(x) &= 60 x^4 - 180 x^3 - 600 x^2 \\
@@ -43,8 +42,7 @@ f'(x) &= 60 x^4 - 180 x^3 - 600 x^2 \\
 which equals zero when $x=-2$, $x=0$, and $x=5$.  Also note that $f'(x)$ exists for all $x$ in the domain of $f$.  Since the domain of $f$ is $(-\infty,\infty)$, all of these values of $x$ are critical points.
 ```
 
-```{admonition} Step 2: Compute $f''(x)$.
-:class: tip, dropdown
+```{dropdown} **Step 2:** Compute $f''(x)$.
 
 \begin{align*}
 f''(x) 
@@ -54,8 +52,7 @@ f''(x)
 \end{align*}
 ```
 
-````{admonition} Step 3: Evaluate $f''(x)$ at each critical point.
-:class: tip, dropdown
+````{dropdown} **Step 3:** Evaluate $f''(x)$ at each critical point.
 
 Evaluate $f''(x)$ at each critical point where $f'(x)=0$ and use the Second Derivative Test to classify each critical point, if possible.
 
