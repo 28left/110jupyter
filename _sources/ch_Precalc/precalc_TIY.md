@@ -21,7 +21,7 @@ $$\dfrac{3}{x-1} - \dfrac{5}{2x+1}$$
 as a single ratio. 
 
 ```{dropdown} Show answer
-Answer:  $\frac{x+8}{(x-1)(2x+1)}$
+Answer:  $\dfrac{x+8}{(x-1)(2x+1)}$
 ```
 
 
