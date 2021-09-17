@@ -86,6 +86,7 @@ Therefore, the factor common to both terms is $2x^3(2x^3+1)^4$.
 ### Example 3
 
 ```{admonition} Factoring
+:class: tip
 Factor 
 
 $$4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2}$$ 
