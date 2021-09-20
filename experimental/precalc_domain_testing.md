@@ -52,6 +52,7 @@ Use interval notation to describe the domain of $1/x$.
 ```
 
 ```{dropdown} **Step 1:** Describe the domain of $1/x$ using an inequality.
+:open:
 
 The domain of $1/x$ includes all real numbers except $x=0$ (i.e., $x<0$ or $x>0$) since division by zero is not defined. 
 ```
@@ -156,4 +157,54 @@ Since the only values of $x$ that lead to division by zero are $x=-3$ and $x=1$,
 $$
 (-\infty, -3) \cup (-3, 1) \cup (1, \infty).
 $$
+```
+
+
+```{code-cell} ipython3
+---
+tags: ["remove-input"]
+---
+from IPython.display import Markdown, Latex, Math
+
+b = 3
+d = 2
+s0 = r"Find an equation $$t$$ for the tangent line to the curve"
+s1 = r'$$y = x\sqrt{' + str(b)+'x^2 + '+ str(d) + ' }$$'
+s2 = r'at the point $(0,1)$'
+
+display(Markdown(s0))
+display(Latex(s1))
+display(Markdown(s2))
+```
+
+```{code-cell} ipython3
+---
+tags: ["remove-input"]
+---
+import ipyvuetify as v
+import ipywidgets as w
+
+ow = w.Output()
+
+sol = w.HTMLMath(
+    value=r"The solution is <i>this</i>: \(x^2\) and $$\frac{x+1}{x-1}$$")
+
+with ow:
+    display(sol)
+    
+    
+solution = v.ExpansionPanel(children=[
+    v.ExpansionPanelHeader(children=['Show Solution']),
+    v.ExpansionPanelContent(children=[sol])])
+
+vep = v.ExpansionPanels(children=[solution])
+vl = v.Layout(class_='pa-4', children=[vep])
+vl
+```
+
+```{code-cell} ipython3
+---
+tags: ["remove-input"]
+---
+sol
 ```
