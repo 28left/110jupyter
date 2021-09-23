@@ -208,3 +208,40 @@ tags: ["remove-input"]
 ---
 sol
 ```
+
+```{code-cell} ipython3
+---
+tags: ["remove-input"]
+---
+import sys, os
+sys.path.append(os.path.abspath('..'))
+
+from chaldene.quiz import *
+from cyllene import *
+import random as rd
+import sympy as sp
+
+A = rd.randint(3,5)
+B = rd.randrange(5,21,5)
+D = rd.randint(3,10)
+ANS = 2*A*D - B
+err2 = [0]
+err2.extend(rd.sample([-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,5,6,7,8,9,10,11,12,13,14,15], 4))
+
+expr = "\\frac{f(" + str(D) + "+ h) - f(" + str(D) + ")}{h}"
+
+statement_2 = "If $$f(x) = {}x^2 - {}x,$$ simplify $${}$$".format(A,B,expr)
+
+sign_str = []
+
+for i in range(5):
+    if sp.sign(A+err2[i]) < 0:
+        sign_str.append('-')
+    else: 
+        sign_str.append('+')
+
+choices_2 = ["${} {} {}h$".format(sp.latex(2*A*D-B), sign_str[i], abs(A+err2[i])) for i in range(5)]
+
+P2 = MultChoice(statement_2, choices_2)
+P2.show_problem()
+```
