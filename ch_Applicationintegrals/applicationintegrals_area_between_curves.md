@@ -22,7 +22,10 @@ width: 600px
 ---
 Area between two curves
 ```
+```{dropdown} **Long Text Description**
 
+-There is a horizontal x axis with the points a and b labeled, and a vertical y axis with no points labeled. The graphs of two functions are plotted. One, labeled f(x), is above the other, labeled g(x). The curve representing f(x) goes up and down with its concavity downward and then upward moving from left to right. The curve representing g(x) goes down and then up, with its concavity always up. The region between the curves, starting at x value a and ending at x value b, is shaded yellow and labeled R.
+```
 ```{admonition} Computing the Area between Two Curves
 :class: info
 
