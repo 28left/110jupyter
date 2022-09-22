@@ -43,7 +43,9 @@ $$
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with no points marked. There is a vertical y-axis with the point b marked. The graph of the linear function y=mx+b is plotted on these axes. It crosses the y-axis at the point y=b.
+```
 
 ### Point-Slope Form
 The equation of the line with slope $m$ that goes through the point $(a,b)$ is
@@ -67,7 +69,9 @@ $$
     \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with no points marked. There is a vertical y-axis with no points marked. The the line defined by y-b = m(x-a) is plotted on these axes. The point (x,y) = (a,b) on the line is marked.
+```
 Recall that a positive slope means that the line goes up from left-to-right and a negative slope means that the line goes down from left-to-right.
 
 
@@ -109,7 +113,9 @@ Once we know slope and $y$-intercept, we can draw the graph.
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -3 and 3 marked. There is a vertical y-axis with the points -3, 3, and 6 marked. There is a grid with one unit by one unit cells in the background. The graph of the linear function y = 2x + 3 is plotted. There is a red dotted staircase pattern which meets the linear function at the point (-3,3) and moves to the right by one unit, and then up by two units in a repeating pattern which ends at the point (2,7).
+```
 Note that the red dashed lined is not part of the graph and is used only as a guide for drawing a line with slope 2.  In particular, in order for a line to have slope equal to $2$, if the $x$-coordinate of any point on the line is increased by 1 unit, then the $y$-coordinate must be increased by 2 units.
 
 
@@ -156,7 +162,9 @@ Now draw a graph with slope $-2$ that goes through the point $(4,3)$.
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points 2 and 4 marked. There is a vertical y-axis with the points 3, 6, 9, and 12 marked. There is a grid with one unit by one unit cells in the background. The line defined by y-3 = -2(x-4) is plotted. There is a red dotted staircase pattern which meets the line at the point (-1,13) and moves to the right by one unit, and then down by two units in a repeating pattern which ends at the point (6,-1).
+```
 In order for a line to have slope equal to $-2$, if the $x$-coordinate of any point on the line is increased by 1 unit, then the $y$-coordinate must be decreased by 2 units.
 
 
@@ -202,7 +210,9 @@ Draw the line with slope equal to $2/5$ that goes through the point $(-2,1)$
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -6, -4, -2, 2, 4, 6, and 8 marked. There is a vertical y-axis with the points -2, 2, and 4 marked. There is a grid with one unit by one unit cells in the background. The line defined by y-1 = (2/5)(x+2) is plotted. There is a red dotted staircase pattern which meets the linear function at the point (-7,-1) and moves to the right by five units, and then up by two units in a repeating pattern which ends at the point (8,5).
+```
 In order for a line to have slope equal to $2/5$, if the $x$-coordinate of any point on the line is increased by 5 units, then the $y$-coordinate must be increased by 2 units.
 
 
@@ -246,7 +256,9 @@ Compare the graphs of $y = x^2$ and $y=-x^2$.
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y axis with the points 2 and 4 marked. There is a grid of one unit by one unit cells in the background. The concave up quadratic function y = x squared is graphed on these axes, resembling a horshoe shape. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,0), and increases as it goes off to the right.
+```
 ```{code-cell}
 :tags: [remove-input]
 
@@ -273,7 +285,9 @@ Compare the graphs of $y = x^2$ and $y=-x^2$.
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = x squared is graphed on these axes, resembling a horshoe shape. The function is increasing as it comes from the left to x=0, meets the y-axis at (0,0), and decreases as it goes off to the right.
+```
 Notice how the graph of $y=x^2$ is a parabola that goes through the point $(0,0)$ and opens upward while the graph of $y=-x^2$ is a parabola that also goes through the point $(0,0)$ but opens downward.
 
 
@@ -306,7 +320,9 @@ Compare the graphs of $y=x^2-4$ and $y=4-x^2$
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a vertical y axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave up quadratic function y = x squared - 4 is graphed on these axes. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,-4), and increases as it goes off to the right.
+```
 ```{code-cell}
 :tags: [remove-input]
 
@@ -332,7 +348,9 @@ Compare the graphs of $y=x^2-4$ and $y=4-x^2$
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a vertical y axis with the points 2 and 4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = -x squared + 4 is graphed on these axes. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,4), and increases as it goes off to the right.
+```
 Notice how the graph of $y=x^2-4$ looks like the graph of $y=x^2$ with each point shifted down $4$ units.  Also, the graph of $y=4-x^2$ looks like the graph of $y=-x^2$ with each point shifted up $4$ units.
 
 
@@ -406,7 +424,9 @@ Draw the graph of a parabola that opens upward (since the coefficient of $x^2$ i
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -3, 3, 6 and 9 marked. There is a vertical y axis with the points -12 marked. There is a grid of one unit by two unit cells in the background. The concave up quadratic function y = x squared - 4x - 12 is graphed on these axes. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,-12), and increases as it goes off to the right. The function meets the x-axis at the points (-3,0) and (6,0).
+```
 
 
 ## Graphing Power and Root Functions
@@ -448,6 +468,9 @@ Sketch the graph of $y = x^3$.
     \end{tikzpicture}
 \end{document}
 ```
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -2, -1, 1 and 2 marked. There is a vertical y axis with the points -3, -2, -1, 1, 2, and 3 marked. There is a grid of one unit by one unit cells in the background. The cubic function y = x cubed is graphed on these axes. The function is increasing and concave down as it comes from the left to x=0, meets the y-axis at (0,0), and is increasing and concave up as it goes off to the right.
+```
 
 Notice how the graph of $y=x^3$ always increases from left-to-right and looks like a horizontal line as it goes through the origin.
 
@@ -482,5 +505,7 @@ Sketch the graph of the square root function, $y = \sqrt{x}$.
     \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y axis with the points 1, 2, and 3 marked. There is a grid of one unit by one unit cells in the background. The increasing concave down function y = square root x is graphed on these axes. The graph begins at (0,0).
+```
 Notice how the graph of $y=\sqrt{x}$ looks like the upper half of a parabola that opens to the right.

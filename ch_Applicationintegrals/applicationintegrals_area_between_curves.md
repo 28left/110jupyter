@@ -24,7 +24,7 @@ Area between two curves
 ```
 ```{dropdown} **Long Text Description**
 
--There is a horizontal x axis with the points a and b labeled, and a vertical y axis with no points labeled. The graphs of two functions are plotted. One, labeled f(x), is above the other, labeled g(x). The curve representing f(x) goes up and down with its concavity downward and then upward moving from left to right. The curve representing g(x) goes down and then up, with its concavity always up. The region between the curves, starting at x value a and ending at x value b, is shaded yellow and labeled R.
+There is a horizontal x axis with the points a and b labeled, and a vertical y axis with no points labeled. The graphs of two functions are plotted. One, labeled f(x), is above the other, labeled g(x). The curve representing f(x) goes up and down with its concavity downward and then upward moving from left to right. The curve representing g(x) goes down and then up, with its concavity always up. The region between the curves, starting at x value a and ending at x value b, is shaded yellow and labeled R.
 ```
 ```{admonition} Computing the Area between Two Curves
 :class: info
@@ -65,7 +65,9 @@ align: center
 ---
 ```
 ````
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with points labeled one, two, six, and seven, and a y axis with no points labeled. Parts of the graphs of two functions are plotted. One, labeled f(x), begins at x=1 above the other, labeled g(x), the two meet at x = 2, g(x) is above f(x) until the two meet again at x=6, after which f(x) is once again above g(x). The region between both curves, starting at x=1 and ending at x=7 is shaded yellow.
+```
 ```{dropdown} **Step 1:** Find the points of intersection.
 
 Notice that the functions intersect each other at $x=2$ and $x=6$. Therefore, we need to break up the original interval, $[1,7]$, into the following subintervals
@@ -121,6 +123,9 @@ align: center
 ---
 ```
 ````
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with points labeled one, two, and three, and a vertical y axis with no points labeled. The graphs of two functions are plotted. The first is the constant function y = 2, which begins above the second which is y=x^2-x. The second, quadratic, function begins below the first function, dips below the x axis, and meets the second function at x = 2, and is above it to the right of x=2. The region where x^2-x < 2, beginning at x=0 and ending at x=2, is shaded yellow and labeled R_1, and the region where x^2-x > 2, beginning at x=2 and ending at x=3, is shaded yellow and labeled R_2.
+```
 
 ```{dropdown} **Step 2:** Calculate the area of each subregion.
 
@@ -182,6 +187,11 @@ align: center
 ---
 ```
 ````
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points 1 and 2 labeled, and a vertical y-axis with no points labeled. The graphs of two decreasing, concave up functions are plotted. The first function, y=2/x^3, begins above the second, 2/sqrt(2). The two meet at x=1 and to the right of x=1 y=2/sqrt(x) is above y=2/x^3. The region between the two functions from x=1 and x=2 is shaded yellow and is not labeled.
+
+```
+
 
 ```{dropdown} **Step 2:** Calculate the area of the region.
 
@@ -229,8 +239,9 @@ align: center
 ---
 ```
 ````
-
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the point 1 labeled and a vertical y axis with no points labeled. The graphs of two functions are plotted. The first function, the increasing linear function y=x is above the other function, the increasing quadratic function y=x^2, from the y axis to x=1. The region between the two functions from the y axis to x=1 in shaded yellow and is not labeled.
+```
 ```{dropdown} **Step 2:** Calculate the area of the region.
 
 Note that $x \geq x^2$ on $[0,1]$ and therefore the area of the region is given by $\int_0^1 x-x^2 ~dx$.
@@ -275,8 +286,9 @@ align: center
 ---
 ```
 ````
-
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points -2 and 2 labeled and a vertical y axis with no points labeled. The graphs of two functions are plotted. The increasing linear function 4x is below the increasing cubic function y=x^3 from x=-2 to the y-axis, and it is above the cubic function from the y-axis to x=2. The area between the curves from x=-2 to the y axis is labeled R_1 and is shaded yellow. The area between the curves from the y axis to x=2 is labeled R_2 and is shaded yellow.
+```
 ```{dropdown} **Step 2:** Calculate the area of each subregion.
 
 
