@@ -103,6 +103,9 @@ Therefore, $f$ has an $x$-intercept at the point $(-3/2,0)$ and a $y$-intercept 
 
   Therefore, $f$ is increasing on $(-\infty, -4)$ and $(-4, \infty)$.
 ````
+```{dropdown} **Long Text Description**
+A number line with positive and negative signs assigned to intervals, with positive to the left of negative four, and with positive to the right of negative four.
+```
 
 ```{dropdown} **Step 5:** Find the relative extrema, if any.
 
@@ -133,6 +136,9 @@ f''(x)
 
   Therefore, $f$ is concave up on $(-\infty, -4)$ and concave down on $(-4, \infty)$.  
 ````
+```{dropdown} **Long Text Description**
+A number line with positive and negative signs assigned to intervals, with positive to the left of negative four, and negative to the right of negative four.
+```
 
 ```{dropdown} **Step 7:** Find the inflection points, if any.
 
@@ -146,4 +152,6 @@ The only change in sign of $f''(x)$ occurs at $x=-4$.  But since $x=-4$ is not i
 :alt: Graph of $f(x)$
 :align: center
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points -16, -12, -8, -4, 4, and 8 labeled. There is a vertical y axis with the points -6, -2, 2, and 6 labeled. A curve is plotted. The curve has a horizontal asymptote represented by a blue dotted line at y=2, and a vertical asymptote represented by a red line at x= -4. The curve comes in increasing and concave up from its horizontal asymptote on the left, then heads towards infinity as x increases to -4. On the other side of x=-4, the curve comes increasing and concave down from negative infinity and increases towards its horizontal asymptote at y=2 as it heads off to the right.
+```

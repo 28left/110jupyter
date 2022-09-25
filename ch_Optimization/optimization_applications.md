@@ -107,7 +107,9 @@ See below.
 \end{tikzpicture}
 \end{document} 
 ```
-
+```{dropdown} **Long Text Description**
+There is a thick black horizontal line representing the edge of the building. Above that there is a grey rectangle representing the fenced area. The side lengths of the rectangle are height = x and width = y.
+```
 ```{dropdown} **Step 2:** Translate the problem description into an expression that includes the quantity to be optimized.
 
 $$\text{Maximize: Area} = x \cdot y$$
@@ -203,7 +205,10 @@ See below.
 \end{tikzpicture}
 \end{document} 
 ```
+```{dropdown} **Long Text Description**
+A two dimensional projective diagram of a three dimensional square prism, with the square face horizontal and of side length x, and height y.
 
+```
 ```{dropdown} **Step 2:** Translate the problem description into an expression that includes the quantity to be optimized.
 
 \begin{align*}
