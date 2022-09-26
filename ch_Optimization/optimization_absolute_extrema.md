@@ -74,6 +74,11 @@ Observe that for a continuous function defined on a closed interval, absolute ex
 \end{tikzpicture}
 \end{document} 
 ```
+```{dropdown} **Long Text Descriptions**
+
+There is a horizontal x axis with the points a and b marked. There is a vertical y axis. The graph of a function is plotted on these axes. The function begins on the left with a red marked point labelled "not a relative extremum," is decreasing and concave up until it hits a rounded corner at a red marked point labelled "relative minimum," is increasing and concave up until it hits a hard corner marked red and labelled "relative maximum," decreases while concave up to a rounded corner at a red marked point labelled "absolute and relative maximum," and increases and is concave up until it ends at a point labelled "absolute maximum." There is a vertical dashed line between the point labelled "not a relative extremum" and the point (a,0). There is a vertical dashed line between the point labelled "absolute maximum" and the point (b,0).
+
+```
 
 ## How to Find the Absolute Extrema of a Function on a Closed Interval
 

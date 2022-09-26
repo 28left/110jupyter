@@ -39,7 +39,7 @@ The total area of the $n$ rectangles is given by
 
 $$[f(x_1) + f(x_2) + \cdots + f(x_n)] \Delta x$$
 
-which is called a {\it Riemann Sum}. It approximates the area of the region between the graph of $y=f(x)$ and the $x$-axis on the interval $[a,b]$.
+which is called a *Riemann Sum*. It approximates the area of the region between the graph of $y=f(x)$ and the $x$-axis on the interval $[a,b]$.
 
 Here are several different ways to select the values $x_1,\ldots,x_n$.
 

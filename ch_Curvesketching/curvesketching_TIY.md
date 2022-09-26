@@ -185,4 +185,7 @@ g) No inflection points
 :alt: Graph of $f(x) = \dfrac{x^2-4}{x^2-9}$.
 ```
 ````
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points -6, -3, 3, and 6 labeled. There is a vertical y axis with the points -4, -2, 2, and 4 labeled. There is a curve plotted on these axes with vertical asymptotes at x = -3 and x = 3, and a horizontal asymptote at y = 1. The curve is in three components, the leftmost is increasing and concave up, increasing from its horizontal asymptote from the left and heading upwards to infinity and the vertical asymptote x=-3. The central component is concave down, increases from negative infinity at x=-3, achieves a maximum at x=0, and decreases back to negative infinity as x goes to 3. The rightmost component is concave up and decreases from infinity at x=3 towards its horizontal asymptote as it goes off to the right.
 
+```
