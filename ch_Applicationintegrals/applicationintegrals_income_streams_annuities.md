@@ -17,14 +17,15 @@ kernelspec:
 
 An **income stream** refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.
 
-```{panels}
-
+::::{grid} 2
+:::{grid-item-card}  Future Value
 The **future value** of an income stream is the total of all of the money transferred plus all of the interest earned.
+:::
 
----
-
-The **present value** of an income stream is the principal investment, $P$, that yields the same future/accumulated value as the income stream when $P$ is invested for a period of $T$ years at the same rate of interest.
-```
+:::{grid-item-card}  Present Value
+The **present value** of an income stream is the principal investment, $P$, that yields the same accumulated value as the income stream when $P$ is invested for a period of $T$ years at the same rate of interest.
+:::
+::::
 
 - $R(t)$ = rate at which income is generated (in dollars per year)
 - $T$ = length of time (in years) of the income stream    
@@ -44,26 +45,20 @@ $$PV = \int_0^T R(t) e^{-rt} ~dt$$
 
 ## Annuities
 
-````{panels}
-
+:::{card} Annuity
 An **annuity** is a sequence of payments made at regular intervals. 
 
 - $P=$ the size of each payment
 - $T=$ length of time (in years) that payments are made
 - $r$ = annual interest rate (compounded continuously)
 - $m=$ the number of payments per year
+:::
 
----
-
-|Annually|Semiannually|Quarterly|
-| :---: | :---: | :---: |
-|$m=1$|$m=2$|$m=4$|
-
-|Monthly|Weekly|Daily|
-| :---: | :---: | :---: |
-|$m=12$|$m=52$|$m=365$|
-
-````
+:::{card} Compounding intervals
+|Annually|Semiannually|Quarterly|Monthly|Weekly|Daily|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|$m=1$|$m=2$|$m=4$|$m=12$|$m=52$|$m=365$|
+:::
 
 
 The following formulas for the amount and present value of an annuity are based on treating an annuity as an income stream where $R(t) = mP$.
