@@ -18,16 +18,14 @@ kernelspec:
 Suppose $\$1000$ is deposited into an account with an interest rate of $16 \%$ compounded annually. How much money is in the account after $3$ years?
 
 ```{dropdown} **Step 1:** Since interest is compounded annually, use the accumulated amount for discrete compound interest.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $P = 1000$, $r = 0.16$, $m=1$, and $t = 3$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -44,8 +42,7 @@ Therefore, after 3 years of accumulating interest, the original investment of \$
 Suppose $\$1000$ is deposited into an account with an interest rate of $16 \%$ compounded quarterly. How much money is in the account after $3$ years?
 
 ```{dropdown} **Step 1:** Since interest is compounded quarterly, use the accumulated amount for discrete compound interest.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -53,8 +50,7 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $P = 1000$, $r = 0.16$, $m=4$, and $t = 3$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -79,8 +75,7 @@ Compare the accumulated amounts in the above two examples. Both examples have th
 Find the interest rate required for an investment of $ \$3000$ to double in value after 5 years if interest is compounded quarterly.
 
 ```{dropdown} **Step 1:** Since interest is compounded quarterly, use the accumulated amount for discrete compound interest.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -88,8 +83,7 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $P=3000$, $A=6000$ (since the investment is to double in value), $m=4$, and $t=5$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -101,8 +95,7 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
 ```{dropdown} **Step 3:** Solve for the interest rate, $r$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -173,8 +166,7 @@ Therefore, an interest rate of approximately 14.11\% compounded quarterly is req
 Find the interest rate required for an investment of $ \$3000$ to double in value after 5 years if interest is compounded continuously.
 
 ```{dropdown} **Step 1:** Since interest is compounded continuously, use the accumulated amount for continuous compound interest.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -182,8 +174,7 @@ $$A=Pe^{rt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $P=3000$, $A=6000$ (since the investment is to double in value), and $t=5$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -193,8 +184,7 @@ $$A=Pe^{rt}$$
 ```
 
 ```{dropdown} **Step 3:** Solve for the interest rate, $r$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -228,8 +218,7 @@ Compare the last two examples. Since continuous compounding of interest earns in
 How long will it take for $\$5000 $ to grow to $\$8000 $ if the investment earns interest at 6\% per year compounded monthly?
 
 ```{dropdown} **Step 1:** Since interest is compounded monthly, use the accumulated amount for discrete compound interest.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -237,8 +226,7 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $P=5000$, $A=8000$, $m=12$, and $r=0.06$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -250,8 +238,7 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
 ```{dropdown} **Step 3:** Solve for the unknown term $t$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -281,8 +268,7 @@ Therefore, it will take approximately 7.85 years for \$5000 to grow to \$8000 if
 How long will it take for $\$5000 $ to grow to $\$8000 $ if the investment earns interest at 6\% per year compounded continuously?
 
 ```{dropdown} **Step 1:** Since interest is compounded continuously, use the accumulated amount for continuous compound interest.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -290,8 +276,7 @@ $$A=Pe^{rt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $P=5000$, $A=8000$, and $r=0.06$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -302,8 +287,7 @@ $$A=Pe^{rt}$$
 ```
 
 ```{dropdown} **Step 3:** Solve for the unknown term $t$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -340,8 +324,7 @@ Compare the last two examples. Both examples have the same principal, accumulate
 Find the effective interest rate corresponding to a nominal interest rate of $10\%$ compounded semiannually.
 
 ```{dropdown} **Step 1:** Recall the formula for effective interest rate, $r_{\text{eff}}$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -349,8 +332,7 @@ $$r_{\text{eff}}=\left(1+\frac{r}{m}\right)^m-1$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $r = 0.1$ and $m=2$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -369,8 +351,7 @@ Therefore, an investment earning interest compounded semiannually at 10\% earns 
 Suppose you have $\$12,000$ in the bank earning interest at a rate of $12\%$ compounded quarterly. Your cousin calls you and needs $\$12,000$ to buy a new car. You are willing him to loan him the money, but you'd hate to lose out on the interest you would gather by simply leaving your money alone. If you charge your cousin an interest rate compounded continuously, what rate should you charge in order to earn the same amount of interest you otherwise would have?
 
 ```{dropdown} **Step 1:** Assume your cousin is prepared to pay you back after $t$ years.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -378,8 +359,7 @@ We'll use $t$ as the term in each of the following calculations. Eventually, we'
 ```
 
 ```{dropdown} **Step 2:** Compute the accumulated amount of the $\$12,000$ after $t$ years assuming you leave your money in the bank.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -392,8 +372,7 @@ We'll use $t$ as the term in each of the following calculations. Eventually, we'
 ```
 
 ```{dropdown} **Step 3:** Compute the accumulated amount of the $\$12,000$ after $t$ years assuming you let your cousin borrow the money.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -407,8 +386,7 @@ This would be the amount that your cousin repays you after $t$ years.
 ```
 
 ```{dropdown} **Step 4:** Equate the two accumulated amounts and solve for $r$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
