@@ -34,8 +34,7 @@ In other words, the phrase "*$F$ is an antiderivative of $f$*" means the same th
 Show that $F(x) = 3x^5 + 4x^3 + 7x$ is an antiderivative of $f(x) = 15x^4+12x^2+7$.
 
 ```{dropdown} **Step 1:** Verify that $F'(x) = f(x)$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
