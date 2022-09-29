@@ -19,23 +19,24 @@ kernelspec:
 ```
 
 
-````{panels}
+:::::{grid} 2
+::::{grid-item-card}
 The Law of Demand assumes
 - all factors affecting purchasing except price are held constant,
 - if price goes up, then consumers buy less, and
 - if price goes down, then consumers (are incentivized) to buy more.
 
 The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $p$, and the Law of Demand dictates it is a decreasing function.
+::::
 
----
-
+::::{grid-item-card}
 ```{image} ../images/pic_functions_demand.png
 :alt: Demand function
 :width: 300px
 :align: center
 ```
-
-````
+::::
+:::::
 
 
 
@@ -46,23 +47,24 @@ The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $
 ```
 
 
-````{panels}
+:::::{grid} 2
+::::{grid-item-card}
 The Law of Supply assumes
 - all factors affecting supply except price are held constant, 
 - if price goes up, then suppliers (are incentivized) to produce more, and  
 - if price goes down, then suppliers produce less. 
 
 The supply curve, $p = s(x)$, shows the quantity supplied, $x$, at each price, $p$, and the Law of Supply dictates it is an increasing function.
+::::
 
----
-
+::::{grid-item-card}
 ```{image} ../images/pic_functions_supply.png
 :alt: Supply function
 :width: 300px
 :align: center
 ```
-
-````
+::::
+:::::
 
 
 ```{admonition} Domain Considerations

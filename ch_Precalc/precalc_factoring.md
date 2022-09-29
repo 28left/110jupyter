@@ -260,7 +260,8 @@ $$6x^2 + 7x - 5 = (2x-1)(3x+5)$$
 ```
 
 ```{dropdown} Check Your Work.
-:title: bg-warning font-weight-bold
+:color: light
+:animate: fade-in
 
 After factoring a polynomial, it's always a good idea to check your work by expanding the product using the distributive property of multiplication and/or the FOIL method:
 
@@ -317,7 +318,8 @@ $$x^2 - 13x + 36 = (x-4)(x-9)$$
 ```
 
 ```{dropdown} Check Your Work.
-:title: bg-warning font-weight-bold
+:color: light
+:animate: fade-in
 
 \begin{align*}
 (x-4)(x-9)
@@ -368,7 +370,8 @@ $$x^2 - 4x - 12 = (x+2)(x-6).$$
 ```
 
 ```{dropdown} Check Your Work.
-:title: bg-warning font-weight-bold
+:color: light
+:animate: fade-in
 
 \begin{align*}
 (x+2)(x-6)
@@ -421,7 +424,8 @@ Therefore,
 
 
 ```{dropdown} Check Your Work.
-:title: bg-warning font-weight-bold
+:color: light
+:animate: fade-in
 
 \begin{align*}
 7x^2(x+2)(x+3)
