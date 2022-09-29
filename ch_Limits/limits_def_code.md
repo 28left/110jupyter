@@ -33,28 +33,40 @@ Keep in mind that the value of a limit does not depend on the value of the funct
 - $f(a)$ does not exist, or
 - $f(a)$ exists, but is not equal to $L$.
 
+```{code-cell} ipython3
+:tags: [remove-cell, thebe-init]
+
+import sys, os
+sys.path.append(os.path.abspath('..'))
+
+from cyllene import *
+f = function('3x^2+1')
+
+from myst_nb import glue
+limit = f(1)
+glue("limit_val", limit, display=False)
+```
+
+```{code-cell} ipython3
+:tags: [remove-input]
+
+tab = function_to_table(f, [1.1, 1.01, 1.001, 1.0001])
+table = output_table(tab)
+glue("limit_table", table, display=False)
+```
 
 ````{admonition} Exercise
 :class: warning
 
 Below, you see a table in which we evaluate a function $f(x)$ for values of $x$ that are closer and closer to $1$ (but **not equal to** $1$). What do the values $f(x)$ suggest $\lim_{x\to 1} f(x)$ would be?
-
-:::{card}
-:width: 50%
-
-| $x$ | $f(x)$ |
-|-----|-------:|
-| 1.100000 | 4.63000000 |
-| 1.010000 | 4.06030000 |
-| 1.001000 | 4.00600300 |
-| 1.000100 | 4.00060003 |
-:::
+```{glue:} limit_table
+```
 ````
 
 ```{admonition} Click the button to show solution.
 :class: tip, dropdown
-The values $f(x)$ get closer to $4$ as $x$ gets closer to $1$.
-This suggests that $\lim_{x \to 1} f(x) = 4$.
+The values $f(x)$ get closer to {glue:}`limit_val` as $x$ gets closer to $1$.
+This suggests that $\lim_{x \to 1} f(x) =$  {glue:}`limit_val`.
 ```
 
 +++
@@ -79,6 +91,21 @@ $$\lim_{x\to a^-} f(x) = M$$
 if the values of $f(x)$ can be made as close to $M$ as we please by taking $x$ sufficiently close to (but not equal to) $a$ and to the left of $a$ (i.e., $x<a$).
 ```
 
++++
+
+```{code-cell} ipython3
+:tags: [remove-input]
+
+def one_sided(x):
+    if x >= 1:
+        return 3*x**2-2
+    else:
+        return x**2+1
+    
+tab2 = function_to_table(one_sided, [0.9, 0.99, 0.999, 0.9999, 1.0001, 1.001, 1.01, 1.1])
+table2 = output_table(tab2)
+glue("limit_table2", table2, display=False)
+```
 
 +++
 
@@ -87,19 +114,8 @@ if the values of $f(x)$ can be made as close to $M$ as we please by taking $x$ s
 
 Below, you see a table in which we evaluate a function $f(x)$ for values of $x$ that are closer and closer to $1$ (but **not equal to** $1$). The first four values are for inputs $x < 1$, the next four are for inputs $x> 1$. 
 
-:::{card}
-:width: 50%
-| $x$ | $f(x)$ |
-|-----|-------:|
-| 0.900000 | 1.810000 |
-| 0.990000 | 1.980100 |
-| 0.999000 | 1.998001 |
-| 0.999900 | 1.999800 |
-| 1.000100 | 1.000600 |
-| 1.001000 | 1.006003 |
-| 1.010000 | 1.060300 |
-| 1.100000 | 1.630000 |
-:::
+```{glue:} limit_table2
+```
 
 What do the values $f(x)$ suggest $\lim_{x\to 1^+} f(x)$ and $\lim_{x\to 1^-} f(x)$  would be?
 ````
