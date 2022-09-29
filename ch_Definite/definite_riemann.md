@@ -17,20 +17,21 @@ kernelspec:
 
 Consider trying to compute the area of a region (below left) between the graph of $y=f(x)$ and the $x$-axis on the interval $[a,b]$.
 
-````{panels}
-
-```{image} ../images/pic_definite_riemann_1.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_definite_riemann_1.png
 :alt: Area under $f(x)$ between a nd b
 :align: center
-```
----
+:::
+::::
 
-```{image} ../images/pic_definite_riemann_2.png
+::::{grid-item-card}
+:::{image} ../images/pic_definite_riemann_2.png
 :alt: Area under $f(x)$ between a nd b
 :align: center
-```
-
-````
+:::
+::::
+:::::
 
 
 A *Riemann sum* uses rectangles (above right) to approximate the desired area in the following manner.  Start by selecting a value for $n$, which is the number of rectangles. Then break up the interval $[a,b]$ into $n$ subintervals, each having width $\Delta x = (b-a)/n$.  Each subinterval corresponds to the base of a rectangle where $\Delta x$ is the width of the rectangle. Next, pick one value, $x_i$, from each subinterval, and evaluate $f(x_i)$ to determine the height of the corresponding rectangle.

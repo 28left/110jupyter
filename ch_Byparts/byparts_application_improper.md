@@ -15,25 +15,19 @@ kernelspec:
 
 ## Perpetuity
 
-```{panels}
-
+:::{card} Perpetuity
 A **perpetuity** is an annuity (i.e., a sequence of payments made at regular intervals) in which the periodic payments begin at a fixed date and continue indefinitely.
 
 - $P=$ the size of each payment
 - $r$ = annual interest rate (compounded continuously)
 - $m=$ the number of payments per year
+:::
 
----
-
-|Annually|Semiannually|Quarterly|
-| :---: | :---: | :---: |
-|$m=1$|$m=2$|$m=4$|
-
-|Monthly|Weekly|Daily|
-| :---: | :---: | :---: |
-|$m=12$|$m=52$|$m=365$|
-
-```
+:::{card} Compounding intervals
+|Annually|Semiannually|Quarterly|Monthly|Weekly|Daily|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|$m=1$|$m=2$|$m=4$|$m=12$|$m=52$|$m=365$|
+:::
 
 By taking the present value formula for an income stream (see page 7) with $R(t) = mP$ and letting the term $T$ go to infinity (i.e., evaluating the improper integral $\int_0^\infty mPe^{-rt} ~dt$), we arrive at the following formula for the present value of a perpetuity.
 

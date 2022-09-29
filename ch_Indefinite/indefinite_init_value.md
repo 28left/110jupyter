@@ -41,8 +41,7 @@ Solve the following initial value problem:
 \end{align*}
 
 ```{dropdown} **Step 1:** Find the general solution to the differential equation.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -55,8 +54,7 @@ Solve the following initial value problem:
 ```
 
 ```{dropdown} **Step 2:** Use the initial condition to solve for $C$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -73,8 +71,7 @@ $$C = 6 - \frac{1}{2} - 9 = - \frac{7}{2}.$$
 ```
 
 ```{dropdown} **Step 3:** Combine the results from Steps 1 and 2 to get the solution to the initial value problem.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -86,8 +83,7 @@ $$f(x) = x^4 - x^3 + \frac{x^2}{2} + 9x - \frac{7}{2}$$
 The estimated marginal profit associated with producing/selling jasmine rice is $P'(x) = -0.08x + 24$ dollars per pound per month where $x$ is the production level in pounds per month. The fixed cost of producing/selling rice is \$1,500 a month. What is the maximum monthly profit?
 
 ```{dropdown} **Step 1:** Find the value of $x$ that maximizes profit.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -105,8 +101,7 @@ Ultimately, we will evaluate $P(300)$ to find the maximum monthly profit, but we
 ```
 
 ```{dropdown} **Step 2:** Identify the initial value problem.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -119,8 +114,7 @@ Note that the initial profit is negative since fixed costs count against profit.
 ```
 
 ```{dropdown} **Step 3:** Solve the initial value problem:
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -141,8 +135,7 @@ Therefore, $P(x) = -\dfrac{4}{100}x^2 + 24x -1500$.
 ```
 
 ```{dropdown} **Step 4:** From Step 1, we know that profit is maximized when $x=300$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 

@@ -93,27 +93,34 @@ The graph of each of the following functions is displayed below.  Label each gra
 $$\dfrac{4}{x^2-4}  \hspace{50pt} \dfrac{x}{x^2-4}  \hspace{50pt} \dfrac{x}{x-2} \hspace{50pt} \dfrac{x^2}{x^2-4}$$
 
 
-````{panels}
-
-```{image} ../images/pic_curvesketching_TIY_1.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_1.png
 :alt: Graph a)
-```
----
-```{image} ../images/pic_curvesketching_TIY_2.png
+:::
+::::
+
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_2.png
 :alt: Graph b)
-```
-````
+:::
+::::
+:::::
 
-````{panels}
 
-```{image} ../images/pic_curvesketching_TIY_3.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_3.png
 :alt: Graph c)
-```
----
-```{image} ../images/pic_curvesketching_TIY_4.png
+:::
+::::
+
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_4.png
 :alt: Graph d)
-```
-````
+:::
+::::
+:::::
 
 
 ```{dropdown} Show answer
@@ -127,27 +134,34 @@ The graph of each of the following functions is displayed below.  Label each gra
 
 $$\dfrac{4x-3}{2x+4} \hspace{50pt} \dfrac{4x+11}{2x+4}  \hspace{50pt} \dfrac{4x+3}{2x+4} \hspace{50pt} \dfrac{4x}{2x+4}$$
 
-````{panels}
-
-```{image} ../images/pic_curvesketching_TIY_5.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_5.png
 :alt: Graph a)
-```
----
-```{image} ../images/pic_curvesketching_TIY_6.png
+:::
+::::
+
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_6.png
 :alt: Graph b)
-```
-````
+:::
+::::
+:::::
 
-````{panels}
 
-```{image} ../images/pic_curvesketching_TIY_7.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_7.png
 :alt: Graph c)
-```
----
-```{image} ../images/pic_curvesketching_TIY_8.png
+:::
+::::
+
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_8.png
 :alt: Graph d)
-```
-````
+:::
+::::
+:::::
 
 
 ```{dropdown} Show answer
