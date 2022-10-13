@@ -32,7 +32,9 @@ Consider trying to compute the area of a region (below left) between the graph o
 :::
 ::::
 :::::
-
+```{dropdown} **{Long Text Description}**
+There are two images, one to the left and one to the right. In both, there is a horizontal x-axis. On the left, the x-axis has the points a and b marked. On the right, the points a, x one, x two, x three, x four, and b are marked. The graph of the function f(x) is plotted above the axis in each picture. On the left, the area below the graph of f(x), above the x-axis, and between x=a and x=b is shaded yellow. On the right, there are four yellow rectangles of equal width, the bottoms of which break up [a,b] into four subintervals. The first rectangle has lower left hand corner a, contains the point x one, and has height f of x one. The second rectangle contains the point x two and has heigh f of x two. The third rectangle contains the point x three and has height f of x three. The fourth rectangle contains the point x four, has height f of x four, and has lower right hand corner b.
+```
 
 A *Riemann sum* uses rectangles (above right) to approximate the desired area in the following manner.  Start by selecting a value for $n$, which is the number of rectangles. Then break up the interval $[a,b]$ into $n$ subintervals, each having width $\Delta x = (b-a)/n$.  Each subinterval corresponds to the base of a rectangle where $\Delta x$ is the width of the rectangle. Next, pick one value, $x_i$, from each subinterval, and evaluate $f(x_i)$ to determine the height of the corresponding rectangle.
 
@@ -75,7 +77,9 @@ align: center
 width: 600px
 ---
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points a and b labeled. There is a curve, y = f(x), which increases and decreases and changes concavity, but always remains positive, plotted above this axis. The region bounded by x=a on the left, x=b on the left, the x axis on the bottom, and y = f(x) on top is shaded yellow and labeled “Area = integral of f(x) with respect to x from a to b”.
+```
 In general, $\int_a^b f(x) ~dx$ can be interpreted as the area of the regions that are below the graph of $f$ and above the $x$-axis minus the area of the regions that are below the $x$-axis and above the graph of $f$.
 
 ```{image} ../images/pic_definite_riemann_4.png
@@ -85,7 +89,9 @@ align: center
 width: 600px
 ---
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points a and b labeled. There is a curve y = f(x) plotted on this axis. This curve increases and decreases, has two zeroes, is negative between them, and positive outside of them. It’s concavity is up when it is negative, and down when it is positive. The Region to the right of x=a, above the x-axis, and below the curve is labeled R One. The region below the x axis and above the curve is labeled R Two. The region above the x axis, below the curve, and to the left of x=b is labeled R three.
+```
 $$\int_a^b f(x) ~dx = \hbox{Area of $R_1$} - \hbox{Area of $R_2$} + \hbox{Area of $R_3$}$$
 
 
@@ -133,7 +139,9 @@ width: 500px
 ---
 ```
 ````
-
+```{dropdown} **Long Text Description**
+A number line beginning at one on the left, with large notches marking intervals of one half unit in length, and smaller notches marking an interval of one quarter unit length halfway between the larger notches, ending with three on the right.
+```
 ````{dropdown} **Step 2:** Use a right Riemann sum to approximate the area. 
 :animate: fade-in
 
@@ -158,7 +166,9 @@ width: 300px
 Therefore, the area under the graph of $y=x^2$ on $[1,3]$ is approximately $43/4 = 10.75$.
 ````
 
-
+```{dropdown} **Long Text Description**
+There is an x axis with the points three over two, two, five over two, and three labeled. There is an increasing, concave up curve plotted above the x axis. There is a yellow rectangle with its right hand bottom corner at each labeled point, and its right hand top corner meeting the point on the curve directly above the labeled point. The rectangles each have base length 1/2.
+```
 
 ````{dropdown} **Step 3:** Use a left Riemann sum to approximate the area.
 :animate: fade-in
@@ -183,7 +193,9 @@ width: 300px
 
 Therefore, the area under the graph of $y=x^2$ on $[1,3]$ is approximately $27/4 = 6.75$.
 ````
-
+```{dropdown} **Long Text Description**
+There is an x axis with the points one, three over two, two, and  five over two labeled. There is an increasing, concave up curve plotted above the x axis. There is a yellow rectangle with its left hand bottom corner at each labeled point, and its left hand top corner meeting the point on the curve directly above the labeled point. The rectangles each have base length 1/2.
+```
 
 ````{dropdown} **Step 4:** Use the midpoint rule to approximate the area.
 :animate: fade-in
@@ -209,3 +221,7 @@ width: 300px
 Therefore, the area under the graph of $y=x^2$ on $[1,3]$ is approximately $69/8 = 8.625$.
 ````
 
+```{dropdown} **Long Text Description**
+There is an x axis with the points five over four, seven over four, nine over four, and eleven over four labeled. There is an increasing, concave up curve plotted above the x axis. There is a yellow rectangle with its bottom center at each labeled point, and its top center meeting the point on the curve directly above the labeled point, with bases of length 1/2 each along the x-axis.
+
+```
