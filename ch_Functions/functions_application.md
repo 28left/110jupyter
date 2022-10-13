@@ -28,7 +28,9 @@ A rectangular box with a **square** base and a volume of $24$ ft$^3$ has costs t
 Note that we are temporarily using the variable $y$ to denote the height of the box.
 ````
 
-
+```{dropdown} **Long Text Description**
+A two dimensional projective diagram of a three dimensional square prism, with the square face horizontal and of side length x, and height y.
+```
 
 
 ```{dropdown} **Step 2:** Translate the problem description into a function.

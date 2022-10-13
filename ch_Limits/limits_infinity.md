@@ -74,7 +74,9 @@ $$\lim\limits_{x\to \infty} f(x) = 400.$$
 \end{document} 
 ```
 
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points 50, 100, 150, 200, 250, and 300 marked. There is a vertical y-axis with the points 100, 200, 300, and 400. There is a horizontal red dotted line at y = 400. The graph of a function is plotted on these axes. The function is increasing and switches from being concave up to concave down, rising at a slower pace the closer it gets to the red line.
+```
 
 
 
@@ -129,7 +131,9 @@ $$\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} 
 \end{document} 
 ```
 
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points -1 and 1 marked. The graph of the function y = 1/x is plotted on these axes. This function comes in just below zero from the left, decreases to negative infinity as x goes to zero, comes down from positive infinity and decreases towards zero as it goes off to the right.
+```
 
 ## Example 3
 
@@ -172,7 +176,9 @@ Furthermore, there is no discussion of the limit as $x$ approaches negative infi
 \end{tikzpicture}
 \end{document} 
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points 1 and 2 marked. The graph of the function one over square root x is plotted on these axes. The graph does not appear above negative x values, comes down from negative infinity at x=0, and decreases towards zero as it heads rightwards.
+```
 
 ## Limits at Infinity of Rational Functions
 

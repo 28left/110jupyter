@@ -38,7 +38,9 @@ The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $
 ::::
 :::::
 
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis representing the quantity of a good that is demanded, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a blue, decreasing, concave up curve representing how much consumers of the good will pay for a given quantity of the good, it is labeled p = d(x). 
+```
 
 ```{admonition} Definition
 :class: info
@@ -66,7 +68,9 @@ The supply curve, $p = s(x)$, shows the quantity supplied, $x$, at each price, $
 ::::
 :::::
 
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis representing the quantity of a good that will be supplied, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red, increasing, concave up curve representing the price at which suppliers will sell certain amounts of the good, it is labeled p=s(x). 
+```
 ```{admonition} Domain Considerations
 :class: info
 
@@ -108,7 +112,9 @@ width: 600px
 The market equilibrium is given where demand and supply curves intersect
 ```
 
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis representing the quantity of a good, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red, increasing, concave up curve representing the price at which suppliers will sell certain amounts of the good, it is labeled p=s(x). There is a blue, decreasing, concave up curve representing how much consumers of the good will pay for a given quantity of the good, it is labeled p = d(x). There is a point where the two curves meet, which is labeled “equilibrium price" along the p axis and “equilibrium quantity” along the x-axis.
+```
 
 ## Example 2
 
