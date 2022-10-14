@@ -46,7 +46,9 @@ alt: Illustration of domain and range of a function
 ---
 Illustration of the domain and the range of a function
 ```
-
+```{dropdown} **Long Text Description**
+A diagram with two ovals, one on the left marked with A, labeled domain, and one on the right marked B and labeled range. There is an arrowed line representing the function f beginning at a point labeled x in the left oval, and ending in a point labeled f(x) in the right oval.
+```
 
 ```{admonition} Definition
 :class: info
@@ -130,7 +132,9 @@ Another way to determine the domain and range of $f$ is to consider the graph of
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Descriptions**
+There is a horizontal x-axis with the points -2, -1, 1, and 2 marked. There is a vertical y-axis with the points -1, 1, 2, and 3 marked. The graph of the concave up quadratic function y = x^2 - 1 is plotted. It has x-intercepts at the points (-1,0) and (1,0), and a rounded vertex at (0,-1).
+```
 - The domain of $f$ consists of all the different $x$-coordinates of points on the graph of $f$, which is $(-\infty,\infty)$.  
 - The range of $f$ consists of all the different $y$-coordinates of points on the graph of $f$, which is $[-1,\infty)$. 
 

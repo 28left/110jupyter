@@ -30,7 +30,9 @@ alt: Domain and range of a composition of functions
 ---
 Domain and range of a composition of functions
 ```
-
+```{dropdown} **Long Text Description**
+A diagram with three ovals arranged from left to right. The leftmost oval is marked domain of g, the oval in the center is marked domain of f, and the right most oval is marked f composed with g. There is an arrowed line representing the function g beginning in the leftmost oval at a point labeled x and ending in the center oval at a point labeled g(x). There is a second arrowed line representing the function f beginning in the center oval at the point labeled g(x) and ending in the rightmost oval at a point labeled f(g(x)). There is a third arrowed line representing the function f composed with g beginning in the leftmost oval at the point labeled x and ends in the rightmost oval at the point labeled f(g(x)).
+```
 
 ```{admonition} Important
 :class: warning
