@@ -46,6 +46,8 @@ Compute the derivative of $x^2 y^3$ with respect to $x$ by treating $y$ as a fun
 
 
 ```{dropdown} **Step 1:** Replace $y$ with $f(x)$.
+:color: light
+:animate: fade-in
 
 Since we are treating $y$ as a function of $x$, we can rewrite $x^2 y^3$ as 
 
@@ -53,6 +55,8 @@ $$x^2 [f(x)]^3.$$
 ```
 
 ```{dropdown} **Step 2:** Differentiate with respect to $x$.
+:color: light
+:animate: fade-in
 
 Since $x^2[f(x)]^3$ is a product of two functions of $x$, namely $x^2$ and $[f(x)]^3$, we begin by using the product rule.
 
@@ -66,11 +70,13 @@ Since $x^2[f(x)]^3$ is a product of two functions of $x$, namely $x^2$ and $[f(x
 ```
 
 ```{dropdown} **Step 3:** And finally, replace $f(x)$ with $y$ and $f'(x)$ with $y'$.
+:color: light
+:animate: fade-in
 
 $$\frac{d}{dx} x^2y^3 = 2xy^3 + 3x^2y^2y'$$
 ```
 
-```{admonition} Derivative of a Constant Multiple of a Function
+```{admonition} The Method of Implicit Differentiation
 :class: info
 
 Suppose we are given an equation relating the variables $x$ and $y$.  We can compute the derivative of $y$ with respect to $x$ using the following technique.
@@ -89,32 +95,44 @@ Find $\dfrac{dy}{dx}$ where $y$ is defined implicitly by
 ${x^2}y - x^4 + y^3 = 1$.
 
 ```{dropdown} **Step 1:** Replace $y$ with $f(x)$.
+:color: light
+:animate: fade-in
 
 $$x^2f(x) - x^4 + [f(x)]^3 = 1.$$
 ```
 
 ```{dropdown} **Step 2:** Differentiate both sides with respect to $x$.
+:color: light
+:animate: fade-in
 
 $$[2xf(x) + x^2f'(x)] - 4x^3 + 3[f(x)]^2f'(x) = 0 $$
 Notice the use of the product rule to compute the derivative of $x^2f(x)$ and the general power rule to compute the derivative of $[f(x)]^3$.
 ```
 
 ```{dropdown} **Step 3:** Rearrange terms so that only terms involving $f'(x)$ are on the left side.
+:color: light
+:animate: fade-in
 
 $$x^2f'(x) + 3[f(x)]^2f'(x) = 4x^3 - 2xf(x).$$
 ```
 
-```{dropdown} **Step 4:** Factor out $f'(x) on the left side of the equation.
+```{dropdown} **Step 4:** Factor out $f'(x)$ on the left side of the equation.
+:color: light
+:animate: fade-in
 
 $$(x^2 + 3[f(x)]^2)f'(x) = 4x^3 - 2xf(x).$$
 ```
 
 ```{dropdown} **Step 5:** Solve for $f'(x)$.
+:color: light
+:animate: fade-in
 
 $$f'(x) = \frac{4x^3 - 2xf(x)}{x^2 + 3[f(x)]^2}.$$
 ```
 
 ```{dropdown} **Step 6:** And finally, replace $f(x)$ with $y$ and $f'(x)$ with $y'$ (or $\frac{dy}{dx}$).
+:color: light
+:animate: fade-in
 
 $$\frac{dy}{dx} = \frac{4x^3 - 2xy}{x^2 + 3y^2}.$$
 ```
@@ -140,6 +158,8 @@ $$ x^2 y^3 - y^2 + xy = 5 $$
 at the point  $(2,1)$.
 
 ```{dropdown} **Step 1:** 
+:color: light
+:animate: fade-in
 
 Differentiate both sides with respect to $x$.
 
@@ -148,7 +168,10 @@ $$\left[ 2xy^3 + x^2 3y^2\frac{dy}{dx}\right] - 2y\frac{dy}{dx} + \left[y + x\fr
 See [Implicit Differentiation, Example 1](05_01_example1) above for how to differentiate $x^2y^3$ implicitly.
 
 ```
+
 ```{dropdown} **Step 2:** Plug in specific values of $x$ and $y$.
+:color: light
+:animate: fade-in
 
 Since we want to find the slope of the line tangent to the curve at the point $(2,1)$, plug in $x=2$ and $y=1$.
 
@@ -156,16 +179,22 @@ $$4 + 12\frac{dy}{dx} - 2\frac{dy}{dx} + 1 + 2\frac{dy}{dx} = 0.$$
 ```
 
 ```{dropdown} **Step 3:** Simplify and rearrange terms.
+:color: light
+:animate: fade-in
 
 $$12\frac{dy}{dx} = -5.$$
 ```
 
 ```{dropdown} **Step 4:** Solve for $\dfrac{dy}{dx}$.
+:color: light
+:animate: fade-in
 
 $$\frac{dy}{dx} = -\frac{5}{12}.$$
 ```
 
 ```{dropdown} **Step 5:** Use the point-slope equation of a line: $y - b = m(x-a)$.
+:color: light
+:animate: fade-in
 
 The equation of the line tangent of the curve at the point $(2,1)$ is
 
@@ -179,6 +208,8 @@ Find $\dfrac{dy}{dx}$ at $(2,0)$ where $y$ is defined implicitly by
 $$xy + x = \sqrt{2x + 7y}.$$
 
 ```{dropdown} **Step 1:** Differentiate both sides with respect to $x$.
+:color: light
+:animate: fade-in
 
 Left Hand Side:
 $$\displaystyle \frac{d}{dx}(xy + x) = y + x\frac{dy}{dx} + 1$.$
@@ -197,21 +228,29 @@ $$y + x\frac{dy}{dx} + 1 = \frac{1}{2\sqrt{2x + 7y}}\left(2 + 7\frac{dy}{dx}\rig
 ```
 
 ```{dropdown} **Step 2:** Plug in the values $x=2$ and $y=0$.
+:color: light
+:animate: fade-in
 
 $$2\frac{dy}{dx} + 1 = \frac{1}{4}\left(2 + 7\frac{dy}{dx}\right).$$
 ```
 
 ```{dropdown} **Step 3:** Expand both sides of the equation so that each side is written as a sum.
+:color: light
+:animate: fade-in
 
 $$2\frac{dy}{dx} + 1 = \frac{1}{2} + \frac{7}{4}\frac{dy}{dx}.$$
 ```
 
 ```{dropdown} **Step 4:** Rearrange terms (i.e., subtract $1$ from both sides and subtract $\dfrac{7}{4}\dfrac{dy}{dx}$ from both sides).
+:color: light
+:animate: fade-in
 
 $$\frac{1}{4}\frac{dy}{dx} = -\frac{1}{2}.$$
 ```
 
 ```{dropdown} **Step 5:** Solve for $\dfrac{dy}{dx}$ (i.e., multiply both sides by $4$).
+:color: light
+:animate: fade-in
 
 $$\frac{dy}{dx} = -2.$$
 ```
@@ -241,6 +280,8 @@ Ordinarily when we compute elasticity of demand, the first thing we do is  find 
 ```
 
 ```{dropdown} **Step 1:** Compute the unit price $p$ when $x=2$.
+:color: light
+:animate: fade-in
 
 \begin{align*}
 p 
@@ -251,11 +292,15 @@ p
 ```
 
 ```{dropdown} **Step 2:** Compute $f(10)$.
+:color: light
+:animate: fade-in
 
 Recall that $x=f(p)$ is the quantity demanded (in thousands) when the unit price is $p$ dollars.  We were given $x=2$ (and used that to determine $p=10$ in Step 1), which is equivalent to saying $f(10) = 2$.
 ```
 
 ```{dropdown} **Step 3:** Compute $f'(10)$
+:color: light
+:animate: fade-in
 
 Compute the derivative of both sides of the demand equation ($p = -4x^2 - 2x + 30$) with respect to $p$.  Here is where we use implicit differentiation by thinking of $x$ as a function of $p$ (i.e., $x=f(p)$).
 
@@ -273,6 +318,8 @@ and therefore $x' = f'(10) = -1/18$.
 ```
 
 ```{dropdown} **Step 4:** Compute elasticity of demand using the values $p=10$, $f(10) = 2$, and $f'(10) = -1/18$.
+:color: light
+:animate: fade-in
 
 \begin{align*}
 E(10)
