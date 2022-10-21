@@ -15,9 +15,8 @@ kernelspec:
 
 Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and $n$ be positive numbers.
 
-````{panels}
-:body: bg-light
-
+::::{grid} 2
+:::{grid-item-card} Exponential
 - **Addition of Exponents Law**
 
   $$b^x b^y = b^{x + y}$$
@@ -37,9 +36,9 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 - **Fractional Distribution Law**
 
   $$\left(\frac{a}{b}\right)^x = \frac{a^x}{b^x}$$
+:::
 
----
-
+:::{grid-item-card} Logarithmic
 - **Logarithmic Addition Law** 
   
   $$\log_{b}(mn) = \log_b(m) + \log_b(n)$$
@@ -59,31 +58,32 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 - **Logarithm of the Base**
 
   $$\log_b(b) = 1 ~~\&~~ \ln(e) = 1$$
-
-````
+:::
+::::
 
 
 ## Cancellation properties
 
-````{panels}
-:body: bg-light
+::::{grid} 2
+:::{grid-item-card} 
 
 - For all $x>0$  
   
   $$e^{\ln(x)} = x$$
+:::
 
----
-
+:::{grid-item-card} 
 - For all $x$ 
 
   $$\ln(e^x) = x$$
-````
+:::
+::::
 
 
 ## Derivatives
 
-````{panels}
-:body: bg-light
+::::{grid} 2
+:::{grid-item-card}
 
 - **Derivative of $e^x$**
 
@@ -92,9 +92,9 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 - **Derivative of $e^{f(x)}$**
 
   $$\frac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$$
+:::
 
----
-
+:::{grid-item-card}
 - **Derivative of $\ln(x)$**
 
   $$\frac{d}{dx}\ln(x) = \frac{1}{x}$$
@@ -103,8 +103,8 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 
   $$\frac{d}{dx}\ln(f(x)) = \frac{1}{f(x)} f'(x)$$
 
-````
-
+:::
+::::
 
 
 
@@ -113,8 +113,7 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 Find all values of $x$ such that $\displaystyle 4^{x-x^2} = \frac{1}{16^x}$.
 
 ```{dropdown} **Step 1:** Write both sides of the equation as a power of $4$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 Since the left-hand side is already written as a power of $4$, focus on the right-hand side.
@@ -133,8 +132,7 @@ $$4^{x-x^2} = 4^{-2x}.$$
 
 
 ```{dropdown} **Step 2:** Set the exponents equal to each other, and solve for $x$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -152,24 +150,21 @@ Find all values of $x$ such that:
 $$2^{2x}-40\cdot 2^x +256 = 0.$$
 
 ```{dropdown} **Step 1:** Rewrite the equation in terms of $\displaystyle 2^x$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$(2^x)^2 -40\cdot 2^x+256 = 0.$$
 ```
 
 ```{dropdown} **Step 2:** Let $\displaystyle u = 2^x$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$u^2-40u+256 =0.$$
 ```
 
 ```{dropdown} **Step 3:** Factor and solve for $u$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$(u-8)(u-32) = 0.$$
@@ -178,8 +173,7 @@ $$u=8 ~~~~ \hbox{ or } ~~~~ u=32.$$
 ```
 
 ```{dropdown} **Step 4:** Substitute $2^x$ back in for $u$ and solve for $x$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -193,8 +187,7 @@ $$u=8 ~~~~ \hbox{ or } ~~~~ u=32.$$
 Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 
 ```{dropdown} **Step 1:** Isolate $e^{-2t}$ using the following steps.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -206,8 +199,7 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 ```
 
 ```{dropdown} **Step 2:** Take the natural logarithm of both sides.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -218,8 +210,7 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 ```
 
 ```{dropdown} **Step 3:** Solve for $t$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -236,8 +227,7 @@ Expand the following expression:
 $$\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).$$
 
 ```{dropdown} **Step 1:** Use the laws of logarithms to expand the given expression.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -255,8 +245,7 @@ $$\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).$$
 Find the tangent line to $y=\dfrac{e^{27x}}{x^9}$ at the point $(1,e^{27})$.
 
 ```{dropdown} **Step 1:** Recall the point-slope equation of a line.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 Point-Slope: 
@@ -267,8 +256,7 @@ where $m$ is the slope of the line and $(a,b)$ is a point on the line.
 ```
 
 ```{dropdown} **Step 2:** Compute the slope of the line by using the derivative. 
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
@@ -286,8 +274,7 @@ Since the given point is $(1,e^{27})$, plug in $x=1$ into the derivative to find
 ```
 
 ```{dropdown} **Step 3:** Write down the equation of the tangent line.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 Since we were given the point $(1,e^{27})$ (i.e., $a=1$ and $b=e^{27}$) and we found the slope ($m=18e^{27}$), we can now write down the equation of the tangent line using the point-slope equation of a line. 
@@ -306,16 +293,14 @@ $$p(x) = x^3e^{5x}+12.$$
 Find the marginal revenue function $R'(x)$.
 
 ```{dropdown} **Step 1:** Find the revenue function, $R(x)$, using the formula $R(x) = x\cdot p(x)$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$R(x) = x^4e^{5x} +12x.$$
 ```
 
 ```{dropdown} **Step 2:** Compute the derivative of $R(x)$. 
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
@@ -332,8 +317,7 @@ Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 
 ```{dropdown} **Step 1:** Expand $f(x)$ using laws of logarithms.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -345,8 +329,7 @@ Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 ```
 
 ```{dropdown} **Step 2:** Compute the derivative.  Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -362,16 +345,14 @@ Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 Let $\ln(xy)+y^7 = x^3 + 2x$. Find $\dfrac{dy}{dx}$.
 
 ```{dropdown} **Step 1:** Differentiate both sides using implicit differentiation.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$\frac{1}{xy} (y +xy') + 7y^6y' = 3x^2+2.$$
 ```
 
 ```{dropdown} **Step 2:** Multiply both sides by $xy$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -389,24 +370,21 @@ $$y+xy' + 7xy^7y' = 3x^3y + 2xy.$$
 ```
 
 ```{dropdown} **Step 3:** Rearrange terms so that any term with a factor of $y'$ is on the left-hand side of the equation and all other terms are on the right-hand side.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$xy' + 7xy^7y' = 3x^3y + 2xy - y.$$
 ```
 
 ```{dropdown} **Step 4:** Factor out $y'$ on the left-hand side.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$y'(x + 7xy^7) = 3x^3y + 2xy - y.$$
 ```
 
 ```{dropdown} **Step 5:** Solve for $y'$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 $$y' = \frac{3x^3y + 2xy - y}{x + 7xy^7}.$$

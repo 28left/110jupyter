@@ -34,6 +34,18 @@ The domain of a function is typically written as a union of intervals.  In this 
 
 ![Table of interval types](../images/pic_precalc_intervaltypes.png)
 
+```{dropdown} **Long Text Description**
+A table of three columns, expressing the relationship between inequalities of real numbers, written in the leftmost column, in the center diagrams on the number line, and on the right expressions in interval notation on the right hand side. The rows read as follows:
+Row 1: a is less than or equal to x which is less than or equal to b. A solid line segment connecting points a and b in the number line, with filled circles at both ends. [a,b]
+Row 2: a is less than or equal to x which is less than b. A line segment in the number line connecting a filled circle at a with an unfilled circle at b. [a,b)
+Row 3: a is less than x which is less than or equal to b. A line segment in the number line connecting an unfilled circle at a with a filled circle at b. (a,b]
+Row 4: a is less than x which is less than b. A line segment in the number line connecting an unfilled circle at a with an unfilled circle at b. (a,b)
+Row 5. a is less than or equal to x. A ray going from a filled circle at a to positive infinity on the right. [a, infinity)
+Row 6. a is less than x. A ray going from an unfilled circle at a to positive infinity on the right. (a, infinity)
+Row 7. x is less than or equal to b. A ray going from a filled circle at b to negative infinity on the left. (negative infinity, b]
+Row 8. x is less than b. A ray going from an unfilled circle at b to negative infinity on the left. (negative infinity, b)
+
+```
 Given two intervals, $A$ and $B$, then the union of $A$ and $B$, denoted $A\cup B$, represents the collection of values that are in $A$ or in $B$.  For example,
 
 $$(-\infty,5) \cup [7,10)$$
@@ -45,8 +57,11 @@ represents the values that are less than $5$ (i.e., $x<5$) or greater than or eq
 
 ### Example 1 
 
-Use interval notation to describe the domain of $1/x$.
+```{admonition} $ $
+:class: tip
 
+Use interval notation to describe the domain of $1/x$.
+```
 
 ```{dropdown} **Step 1:** Describe the domain of $1/x$ using an inequality.
 
@@ -65,8 +80,12 @@ $$(-\infty,0) \cup (0,\infty).$$
 
 ### Example 2
 
-Use interval notation to describe the domain of $\sqrt{x}$.
+```{admonition} $ $
+:class: tip
 
+
+Use interval notation to describe the domain of $\sqrt{x}$.
+```
 
 ```{dropdown} **Step 1:** Describe the domain of $\sqrt{x}$ using an inequality.
 
@@ -83,7 +102,11 @@ $$[0,\infty).$$
 
 ### Example 3
 
+```{admonition} $ $
+:class: tip
+
 Determine the domain of the function $f(x) = \sqrt{x^2 + 2x - 3}$.
+```
 
 ```{dropdown} **Step 1:** Describe the domain using an inequality.
 
@@ -114,7 +137,11 @@ $$
 
 ### Example 4
 
+```{admonition} $ $
+:class: tip
+
 Determine the domain of the function $f(x) = \dfrac{x}{x^2 + 2x - 3}$.
+```
 
 ```{dropdown} **Step 1:** Describe the domain by excluding all $x$ that make $f(x)$ undefined.
 

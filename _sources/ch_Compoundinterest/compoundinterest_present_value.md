@@ -17,8 +17,7 @@ kernelspec:
 How much money should be deposited in a bank paying a yearly interest rate of $6\%$ compounded monthly so that after 3 years, the accumulated amount will be \$20,000?
 
 ```{dropdown} **Step 1:** Notice that this is a present value problem since we're given the accumulated amount and we're asked to find the principal.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -28,8 +27,7 @@ $$P = A\left(1 + \frac{r}{m}\right)^{-mt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $A = 20000$, $r = 0.06$, $m=12$, and $t=3$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -47,8 +45,7 @@ Therefore, \$16,712.90 invested at 6\% interest compounded monthly will be worth
 Use the accumulated amount for discrete compound interest to solve the previous example.
 
 ```{dropdown} **Step 1:** Start with the formula for accumulated amount for discrete compounding of interest.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -56,8 +53,7 @@ $$A = P\left( 1 + \frac{r}{m}\right)^{mt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $A = 20000$, $r = 0.06$, $m=12$, and $t=3$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -69,8 +65,7 @@ $$A = P\left( 1 + \frac{r}{m}\right)^{mt}$$
 ```
 
 ```{dropdown} **Step 3:** Solve for $P$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -84,8 +79,7 @@ $$A = P\left( 1 + \frac{r}{m}\right)^{mt}$$
 Parents wish to establish a trust fund for their child's education. If they need \$170,000 in 7 years, how much should they set aside now if the money is invested at $20\%$ compounded continuously?
 
 ```{dropdown} **Step 1:** Notice that this is a present value problem since we're given the accumulated amount and we're asked to find the principal.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -95,8 +89,7 @@ $$P = Ae^{-rt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $A = 170000$, $r = 0.2$, and $t=7$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -114,8 +107,7 @@ Therefore, \$41,921.48 invested at 20\% interest compounded continuously will be
 Use the accumulated amount for continuous compound interest to solve the previous example.
 
 ```{dropdown} **Step 1:** Start with the formula for accumulated amount for continuous compounding of interest.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -123,8 +115,7 @@ $$A = Pe^{rt}$$
 ```
 
 ```{dropdown} **Step 2:** Plug in the given values: $A = 170000$, $r = 0.2$, and $t=7$.
-:title: bg-secondary text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 
@@ -136,8 +127,7 @@ $$A = Pe^{rt}$$
 ```
 
 ```{dropdown} **Step 3:** Solve for $P$.
-:title: bg-success text-white
-:body: bg-light
+:color: light
 :animate: fade-in
 
 

@@ -19,25 +19,28 @@ kernelspec:
 ```
 
 
-````{panels}
+:::::{grid} 2
+::::{grid-item-card}
 The Law of Demand assumes
 - all factors affecting purchasing except price are held constant,
 - if price goes up, then consumers buy less, and
 - if price goes down, then consumers (are incentivized) to buy more.
 
 The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $p$, and the Law of Demand dictates it is a decreasing function.
+::::
 
----
-
+::::{grid-item-card}
 ```{image} ../images/pic_functions_demand.png
 :alt: Demand function
 :width: 300px
 :align: center
 ```
+::::
+:::::
 
-````
-
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis representing the quantity of a good that is demanded, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a blue, decreasing, concave up curve representing how much consumers of the good will pay for a given quantity of the good, it is labeled p = d(x). 
+```
 
 ```{admonition} Definition
 :class: info
@@ -46,25 +49,28 @@ The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $
 ```
 
 
-````{panels}
+:::::{grid} 2
+::::{grid-item-card}
 The Law of Supply assumes
 - all factors affecting supply except price are held constant, 
 - if price goes up, then suppliers (are incentivized) to produce more, and  
 - if price goes down, then suppliers produce less. 
 
 The supply curve, $p = s(x)$, shows the quantity supplied, $x$, at each price, $p$, and the Law of Supply dictates it is an increasing function.
+::::
 
----
-
+::::{grid-item-card}
 ```{image} ../images/pic_functions_supply.png
 :alt: Supply function
 :width: 300px
 :align: center
 ```
+::::
+:::::
 
-````
-
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis representing the quantity of a good that will be supplied, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red, increasing, concave up curve representing the price at which suppliers will sell certain amounts of the good, it is labeled p=s(x). 
+```
 ```{admonition} Domain Considerations
 :class: info
 
@@ -106,7 +112,9 @@ width: 600px
 The market equilibrium is given where demand and supply curves intersect
 ```
 
-
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis representing the quantity of a good, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red, increasing, concave up curve representing the price at which suppliers will sell certain amounts of the good, it is labeled p=s(x). There is a blue, decreasing, concave up curve representing how much consumers of the good will pay for a given quantity of the good, it is labeled p = d(x). There is a point where the two curves meet, which is labeled “equilibrium price" along the p axis and “equilibrium quantity” along the x-axis.
+```
 
 ## Example 2
 

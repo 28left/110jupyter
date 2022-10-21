@@ -40,12 +40,14 @@ Write the area under the graph of $y=x^2$ on $[1,3]$ as a definite integral and 
 ```
 
 ```{dropdown} **Step 1:** Write the area under the graph of $y=x^2$ on $[1,3]$ as a definite integral.
-:title: bg-light
+:color: light
+:animate: fade-in
 
 $$\int_1^3 x^2 ~dx$$
 ```
 
 ```{dropdown} **Step 2:** Find an antiderivative of $x^2$.
+:color: light
 :animate: fade-in
 
 \begin{align*}
@@ -56,8 +58,9 @@ Therefore, $x^3/3$ is an antiderivative of $x^2$, and can be used to evaluate th
 ```
 
 ```{dropdown} **Step 3:** Apply the Fundamental Theorem of Calculus.
-:title: bg-light
+:color: light
 :animate: fade-in
+
 
 \begin{align*}
   \int_1^3 x^2dx &= \frac{1}{3}x^3 \Biggr|_1^3 & \hbox{Since $\frac{1}{3}x^3$ is an antiderivative of $x^2$} \\
@@ -70,7 +73,7 @@ Therefore, the area under the graph of $y=x^2$ on $[1,3]$ is $26/3 = 8.\overline
 ```
 
 ```{dropdown} **Step 4:** Compare the result from Step 3 to the approximations found in Example 1.
-:title: bg-light 
+:color: light
 :animate: fade-in
 
 
@@ -86,6 +89,7 @@ Evaluate $\displaystyle \int_1^2 \frac{x^2 + 4x^4}{x^3} ~dx$.
 ```
 
 ```{dropdown} **Step 1:** Simplify the integrand by writing it as a sum.
+:color: light
 :animate: fade-in
 
 
@@ -93,8 +97,8 @@ $$\frac{x^2 + 4x^4}{x^3} = \frac{x^2}{x^3} + \frac{4x^4}{x^3} =  \frac{1}{x} + 4
 ```
 
 ```{dropdown} **Step 2:** Find an antiderivative of $\dfrac{1}{x} + 4x$.
+:color: light
 :animate: fade-in
-
 
 \begin{align*}
   \int \frac{1}{x} + 4x ~dx
@@ -106,8 +110,8 @@ Therefore, $\ln|x| + 2x^2 $ is an antiderivative of $\dfrac{1}{x} + 4x$, and can
 ```
 
 ```{dropdown} **Step 3:** Apply the Fundamental Theorem of Calculus.
+:color: light
 :animate: fade-in
-
 
 \begin{align*}
 \int_1^2 \frac{x^2 + 4x^4}{x^3} ~dx
@@ -128,8 +132,8 @@ Evaluate $\displaystyle \int_{0}^{4} e^x ~dx$.
 ```
 
 ```{dropdown} **Step 1:** Apply the Fundamental Theorem of Calculus.
+:color: light
 :animate: fade-in
-
 
 \begin{align*}
   \int_{0}^{4} e^x ~dx
@@ -151,8 +155,8 @@ The daily marginal revenue function associated with selling $m$ gadgets is given
 ```
 
 ```{dropdown} **Step 1:** Apply the Fundamental Theorem of Calculus for the first case.
+:color: light
 :animate: fade-in
-
 
 By the Fundamental Theorem of Calculus, the total revenue from the sale of the first 20 gadgets is given by
 
@@ -177,8 +181,8 @@ Therefore, the total revenue from the sale of the first 20 gadgets is $\$1,040$.
 ```
 
 ```{dropdown} **Step 2:** Apply the Fundamental Theorem of Calculus for the second case.
+:color: light
 :animate: fade-in
-
 
 By the Fundamental Theorem of Calculus, the additional revenue realized when sales increase from 20 to 50 gadgets is given by
 

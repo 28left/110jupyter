@@ -4,11 +4,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Area Between Two Curves &#8212; Math 110 Companion Site</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,48 +20,73 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}})</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Consumer, Producer, &amp; Total Surplus" href="applicationintegrals_consumer_producer_total_surplus.html" />
     <link rel="prev" title="Applications of Definite Integrals" href="applicationintegrals_.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="en">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2H7BN83HGG"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-2H7BN83HGG');
+                </script>
+
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -68,10 +95,15 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
       
       <img src="../_static/PSU_SCI_RGB_2C.png" class="logo" alt="logo">
       
@@ -82,16 +114,17 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro.html">
-   Welcome to Math 110
-  </a>
- </li>
-</ul>
-<p class="caption">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Math 110
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Course Packets e-book
  </span>
@@ -641,7 +674,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Other
  </span>
@@ -655,12 +688,17 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -668,64 +706,163 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+    <div class="header-article row sticky-top noprint">
+        
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/ch_Applicationintegrals/applicationintegrals_area_between_curves.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/ch_Applicationintegrals/applicationintegrals_area_between_curves.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/28left/110jupyter/master?urlpath=tree/ch_Applicationintegrals/applicationintegrals_area_between_curves.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/ch_Applicationintegrals/applicationintegrals_area_between_curves.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/ch_Applicationintegrals/applicationintegrals_area_between_curves.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#computing-the-area-of-a-region-bounded-by-two-curves">
    Computing the Area of a Region Bounded by Two Curves
@@ -763,33 +900,97 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Area Between Two Curves</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computing-the-area-of-a-region-bounded-by-two-curves">
+   Computing the Area of a Region Bounded by Two Curves
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#when-finding-the-area-between-two-curves">
+   When Finding the Area Between Two Curves
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-1">
+   Example 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-2">
+   Example 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-3">
+   Example 3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-4">
+   Example 4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-5">
+   Example 5
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="area-between-two-curves">
-<h1>Area Between Two Curves<a class="headerlink" href="#area-between-two-curves" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="computing-the-area-of-a-region-bounded-by-two-curves">
-<h2>Computing the Area of a Region Bounded by Two Curves<a class="headerlink" href="#computing-the-area-of-a-region-bounded-by-two-curves" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-default" id="id1">
+  <section id="area-between-two-curves">
+<h1>Area Between Two Curves<a class="headerlink" href="#area-between-two-curves" title="Permalink to this headline">#</a></h1>
+<section id="computing-the-area-of-a-region-bounded-by-two-curves">
+<h2>Computing the Area of a Region Bounded by Two Curves<a class="headerlink" href="#computing-the-area-of-a-region-bounded-by-two-curves" title="Permalink to this headline">#</a></h2>
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_1.png"><img alt="../_images/pic_applicationintegrals_area_between_curves_1.png" src="../_images/pic_applicationintegrals_area_between_curves_1.png" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Area between two curves</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Area between two curves</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Long Text Description</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x axis with the points a and b labeled, and a vertical y axis with no points labeled. The graphs of two functions are plotted. One, labeled f(x), is above the other, labeled g(x). The curve representing f(x) goes up and down with its concavity downward and then upward moving from left to right. The curve representing g(x) goes down and then up, with its concavity always up. The region between the curves, starting at x value a and ending at x value b, is shaded yellow and labeled R.</p>
 </div>
-<div class="info admonition">
+</details><div class="info admonition">
 <p class="admonition-title">Computing the Area between Two Curves</p>
 <p>Suppose <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> are continuous functions with <span class="math notranslate nohighlight">\(f(x) \geq g(x)\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
 <p>Then the area of the region, <span class="math notranslate nohighlight">\(R\)</span>, bounded above by <span class="math notranslate nohighlight">\(y=f(x)\)</span> and below by <span class="math notranslate nohighlight">\(y=g(x)\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span> is given by</p>
 <div class="math notranslate nohighlight">
 \[\int_a^b f(x)-g(x) ~dx.\]</div>
 </div>
-</div>
-<div class="section" id="when-finding-the-area-between-two-curves">
-<h2>When Finding the Area Between Two Curves<a class="headerlink" href="#when-finding-the-area-between-two-curves" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="when-finding-the-area-between-two-curves">
+<h2>When Finding the Area Between Two Curves<a class="headerlink" href="#when-finding-the-area-between-two-curves" title="Permalink to this headline">#</a></h2>
 <p>It’s extremely important to draw the region in question to make sure the above formula is applied correctly. While it’s not necessary to draw each curve using all of the techniques built up in the Curve Sketching packet, the curves should be drawn with enough detail to clearly identify the top and bottom functions and the corresponding boundaries.</p>
 <p>The following guidelines should be applied to make sure the area of the region is computed correctly.</p>
 <ul class="simple">
@@ -800,87 +1001,105 @@
 <li><p>Calculate the area of each subregion using the formula above.</p></li>
 <li><p>Combine the areas of the different subregions.</p></li>
 </ul>
-</div>
-<div class="section" id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">#</a></h2>
 <div class="tip admonition">
 <p class="admonition-title">Area between two curves on given interval</p>
 <p>Find a sum of integrals that represents the area of the region bounded by <span class="math notranslate nohighlight">\(y=f(x)\)</span> and <span class="math notranslate nohighlight">\(y=g(x)\)</span> on <span class="math notranslate nohighlight">\([1,7]\)</span> as shown below.</p>
 <a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_2.png"><img alt="Area between $f(x)$ and $g(x)$ on interval $[1,7]$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_2.png" style="width: 500px;" /></a>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 1:</strong> Find the points of intersection.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Notice that the functions intersect each other at <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(x=6\)</span>. Therefore, we need to break up the original interval, <span class="math notranslate nohighlight">\([1,7]\)</span>, into the following subintervals</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Long Text Description</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x-axis with points labeled one, two, six, and seven, and a y axis with no points labeled. Parts of the graphs of two functions are plotted. One, labeled f(x), begins at x=1 above the other, labeled g(x), the two meet at x = 2, g(x) is above f(x) until the two meet again at x=6, after which f(x) is once again above g(x). The region between both curves, starting at x=1 and ending at x=7 is shaded yellow.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 1:</strong> Find the points of intersection.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Notice that the functions intersect each other at <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(x=6\)</span>. Therefore, we need to break up the original interval, <span class="math notranslate nohighlight">\([1,7]\)</span>, into the following subintervals</p>
 <div class="math notranslate nohighlight">
 \[[1,2], ~[2,6], ~\hbox{and} ~[6,7].\]</div>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 2:</strong> Determine which function is larger on each subinterval and calculate the area of each subregion.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 2:</strong> Determine which function is larger on each subinterval and calculate the area of each subregion.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ul>
-<li><p class="card-text"><span class="math notranslate nohighlight">\([1,2]\)</span>: On this interval, <span class="math notranslate nohighlight">\(f(x) \geq g(x)\)</span>.  Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> on <span class="math notranslate nohighlight">\([1,2]\)</span> is</p>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\([1,2]\)</span>: On this interval, <span class="math notranslate nohighlight">\(f(x) \geq g(x)\)</span>.  Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> on <span class="math notranslate nohighlight">\([1,2]\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[\int_1^2 f(x) - g(x) ~dx.\]</div>
 </li>
-<li><p class="card-text"><span class="math notranslate nohighlight">\([2,6]\)</span>: On this interval, <span class="math notranslate nohighlight">\(g(x) \geq f(x)\)</span>.  Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> on <span class="math notranslate nohighlight">\([2,6]\)</span> is</p>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\([2,6]\)</span>: On this interval, <span class="math notranslate nohighlight">\(g(x) \geq f(x)\)</span>.  Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> on <span class="math notranslate nohighlight">\([2,6]\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[\int_2^6 g(x) - f(x) ~dx.\]</div>
 </li>
-<li><p class="card-text"><span class="math notranslate nohighlight">\([6,7]\)</span>: On this interval, <span class="math notranslate nohighlight">\(f(x) \geq g(x)\)</span>. Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> on <span class="math notranslate nohighlight">\([6,7]\)</span> is</p>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\([6,7]\)</span>: On this interval, <span class="math notranslate nohighlight">\(f(x) \geq g(x)\)</span>. Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> on <span class="math notranslate nohighlight">\([6,7]\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[\int_6^7 f(x) - g(x) ~dx.\]</div>
 </li>
 </ul>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 3:</strong> Combine the areas of the different subregions.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">The area of the region described above is given by</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 3:</strong> Combine the areas of the different subregions.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The area of the region described above is given by</p>
 <div class="math notranslate nohighlight">
 \[\int_1^2 f(x) - g(x)~dx + \int_2^6 g(x) - f(x) ~dx + \int_6^7 f(x)-g(x)~dx.\]</div>
 </div>
-</details></div>
-<div class="section" id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+</details></section>
+<section id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">#</a></h2>
 <div class="tip admonition">
 <p class="admonition-title">Area between <span class="math notranslate nohighlight">\(y = x^2-x\)</span> and <span class="math notranslate nohighlight">\(y = 2\)</span> on given interval</p>
 <p>Find the area of the region bounded by <span class="math notranslate nohighlight">\(y = x^2-x\)</span> and <span class="math notranslate nohighlight">\(y = 2\)</span> on the interval <span class="math notranslate nohighlight">\([0, 3]\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">The two curves intersect each other when <span class="math notranslate nohighlight">\(x^2-x = 2\)</span>, or equivalently when</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The two curves intersect each other when <span class="math notranslate nohighlight">\(x^2-x = 2\)</span>, or equivalently when</p>
 <div class="math notranslate nohighlight">
 \[x^2 - x - 2 = (x-2)(x+1)\]</div>
-<p class="card-text">equals zero, which happens when <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(x=-1\)</span>. Notice that <span class="math notranslate nohighlight">\(x=-1\)</span> is not relevant since it is not on the interval <span class="math notranslate nohighlight">\([0,3]\)</span>.</p>
+<p class="sd-card-text">equals zero, which happens when <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(x=-1\)</span>. Notice that <span class="math notranslate nohighlight">\(x=-1\)</span> is not relevant since it is not on the interval <span class="math notranslate nohighlight">\([0,3]\)</span>.</p>
 <a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_3.png"><img alt="Point of intersection of the two curves" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_3.png" style="width: 500px;" /></a>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 2:</strong> Calculate the area of each subregion.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Long Text Description</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x axis with points labeled one, two, and three, and a vertical y axis with no points labeled. The graphs of two functions are plotted. The first is the constant function y = 2, which begins above the second which is y=x^2-x. The second, quadratic, function begins below the first function, dips below the x axis, and meets the second function at x = 2, and is above it to the right of x=2. The region where x^2-x &lt; 2, beginning at x=0 and ending at x=2, is shaded yellow and labeled R_1, and the region where x^2-x &gt; 2, beginning at x=2 and ending at x=3, is shaded yellow and labeled R_2.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 2:</strong> Calculate the area of each subregion.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p class="card-text">Area of region <span class="math notranslate nohighlight">\(R_1\)</span>. Note that <span class="math notranslate nohighlight">\(2\geq x^2 - x\)</span> on <span class="math notranslate nohighlight">\([0,2]\)</span>.</p></li>
+<li><p class="sd-card-text">Area of region <span class="math notranslate nohighlight">\(R_1\)</span>. Note that <span class="math notranslate nohighlight">\(2\geq x^2 - x\)</span> on <span class="math notranslate nohighlight">\([0,2]\)</span>.</p></li>
 </ul>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -890,7 +1109,7 @@
   &amp;= \left( 4 - \frac{8}{3} + \frac{4}{2} \right) - \left( 0 - 0 + 0 \right) = 10/3
 \end{align*}\]</div>
 <ul class="simple">
-<li><p class="card-text">Area of region <span class="math notranslate nohighlight">\(R_2\)</span>. Note that <span class="math notranslate nohighlight">\(x^2 - x\geq 2\)</span> on <span class="math notranslate nohighlight">\([2,3]\)</span>.</p></li>
+<li><p class="sd-card-text">Area of region <span class="math notranslate nohighlight">\(R_2\)</span>. Note that <span class="math notranslate nohighlight">\(x^2 - x\geq 2\)</span> on <span class="math notranslate nohighlight">\([2,3]\)</span>.</p></li>
 </ul>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -900,33 +1119,33 @@
   &amp;= \left( \frac{27}{3} - \frac{9}{2} - 6\right) - \left(\frac{8}{3} - \frac{4}{2} - 4\right) = 11/6
 \end{align*}\]</div>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 3:</strong> Combine the areas of the different subregions.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">The area of the region bounded by <span class="math notranslate nohighlight">\(y = x^2-x\)</span> and <span class="math notranslate nohighlight">\(y = 2\)</span> on <span class="math notranslate nohighlight">\([0, 3]\)</span> is <span class="math notranslate nohighlight">\(\frac{10}{3} + \frac{11}{6} = 31/6.\)</span></p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 3:</strong> Combine the areas of the different subregions.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The area of the region bounded by <span class="math notranslate nohighlight">\(y = x^2-x\)</span> and <span class="math notranslate nohighlight">\(y = 2\)</span> on <span class="math notranslate nohighlight">\([0, 3]\)</span> is <span class="math notranslate nohighlight">\(\frac{10}{3} + \frac{11}{6} = 31/6.\)</span></p>
 </div>
 </details><div class="warning admonition">
 <p class="admonition-title">Observation</p>
 <p>Observe that the area of the region is not equal to <span class="math notranslate nohighlight">\(\int_0^3 2 - (x^2-x) ~dx  = 3/2\)</span>. This underscores the importance of drawing the region <strong>before</strong> setting up the integral.</p>
 </div>
-</div>
-<div class="section" id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">#</a></h2>
 <div class="tip admonition">
 <p class="admonition-title">Area enclosed by three curves</p>
 <p>Find the area of the bounded region enclosed by <span class="math notranslate nohighlight">\(y=\dfrac{2}{\sqrt{x}}\)</span>, <span class="math notranslate nohighlight">\(y= \dfrac{2}{x^3}\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \frac{2}{\sqrt{x}} &amp;= \frac{2}{x^3} &amp;&amp; \text{Set the equations equal to each other}\\
@@ -935,17 +1154,26 @@
   x^\frac{5}{2} &amp;= 1 &amp;&amp; \text{Divide both sides by }\sqrt{x}\\
   x&amp;=1 &amp;&amp; \hbox{Raise both sides to the power of $2/5$}
 \end{align*}\]</div>
-<p class="card-text">Therefore, the curves intersect only when <span class="math notranslate nohighlight">\(x=1\)</span>.  And since only one vertical line, <span class="math notranslate nohighlight">\(x=2\)</span>, was given that bounds the region, we must use the point of intersection at <span class="math notranslate nohighlight">\(x=1\)</span> as the other vertical line that bounds the region.</p>
+<p class="sd-card-text">Therefore, the curves intersect only when <span class="math notranslate nohighlight">\(x=1\)</span>.  And since only one vertical line, <span class="math notranslate nohighlight">\(x=2\)</span>, was given that bounds the region, we must use the point of intersection at <span class="math notranslate nohighlight">\(x=1\)</span> as the other vertical line that bounds the region.</p>
 <a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_4.png"><img alt="Point of intersection at $x=1$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_4.png" style="width: 500px;" /></a>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 2:</strong> Calculate the area of the region.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Note that <span class="math notranslate nohighlight">\(\dfrac{2}{\sqrt{x}} \geq \dfrac{2}{x^3}\)</span> on <span class="math notranslate nohighlight">\([1,2]\)</span> and therefore the area of the region is given by <span class="math notranslate nohighlight">\(\int_1^2 \frac{2}{\sqrt{x}} - \frac{2}{x^3} ~dx\)</span>.</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Long Text Description</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x-axis with the points 1 and 2 labeled, and a vertical y-axis with no points labeled. The graphs of two decreasing, concave up functions are plotted. The first function, y=2/x^3, begins above the second, 2/sqrt(2). The two meet at x=1 and to the right of x=1 y=2/sqrt(x) is above y=2/x^3. The region between the two functions from x=1 and x=2 is shaded yellow and is not labeled.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 2:</strong> Calculate the area of the region.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(\dfrac{2}{\sqrt{x}} \geq \dfrac{2}{x^3}\)</span> on <span class="math notranslate nohighlight">\([1,2]\)</span> and therefore the area of the region is given by <span class="math notranslate nohighlight">\(\int_1^2 \frac{2}{\sqrt{x}} - \frac{2}{x^3} ~dx\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_1^2 \frac{2}{\sqrt{x}} - \frac{2}{x^3} ~dx
@@ -955,40 +1183,49 @@
   &amp;= \left(4 \sqrt{2} + \frac{1}{4}\right) - (4 + 1) \\
   &amp;= 4 \sqrt{2} - \frac{19}{4}
 \end{align*}\]</div>
-<p class="card-text">Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(y=12\sqrt{x}\)</span>, <span class="math notranslate nohighlight">\(y=2/x^3\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> is <span class="math notranslate nohighlight">\(4 \sqrt{2} - 19/4\)</span>.</p>
+<p class="sd-card-text">Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(y=12\sqrt{x}\)</span>, <span class="math notranslate nohighlight">\(y=2/x^3\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> is <span class="math notranslate nohighlight">\(4 \sqrt{2} - 19/4\)</span>.</p>
 </div>
-</details></div>
-<div class="section" id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
+</details></section>
+<section id="example-4">
+<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">#</a></h2>
 <div class="tip admonition">
 <p class="admonition-title">Area enclosed by two curves with two points of intersection</p>
 <p>Find the area of the bounded region enclosed by <span class="math notranslate nohighlight">\(y=x\)</span> and <span class="math notranslate nohighlight">\(y=x^2\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   x&amp;=x^2 &amp;&amp; \text{Set the two functions equal to each other}\\
   0&amp;=x^2-x &amp;&amp; \text{Move everything to one side}\\
   0&amp;=x(x-1) &amp;&amp; \text{Factor}
 \end{align*}\]</div>
-<p class="card-text">Therefore, the curves intersect when <span class="math notranslate nohighlight">\(x=0\)</span> and when <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
-<p class="card-text">Notice that the points of intersection are used as the left and right boundaries of our region.</p>
+<p class="sd-card-text">Therefore, the curves intersect when <span class="math notranslate nohighlight">\(x=0\)</span> and when <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+<p class="sd-card-text">Notice that the points of intersection are used as the left and right boundaries of our region.</p>
 <a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_5.png"><img alt="Points of intersection at $x=0$ and $x=1$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_5.png" style="width: 500px;" /></a>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 2:</strong> Calculate the area of the region.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Note that <span class="math notranslate nohighlight">\(x \geq x^2\)</span> on <span class="math notranslate nohighlight">\([0,1]\)</span> and therefore the area of the region is given by <span class="math notranslate nohighlight">\(\int_0^1 x-x^2 ~dx\)</span>.</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Long Text Description</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x axis with the point 1 labeled and a vertical y axis with no points labeled. The graphs of two functions are plotted. The first function, the increasing linear function y=x is above the other function, the increasing quadratic function y=x^2, from the y axis to x=1. The region between the two functions from the y axis to x=1 in shaded yellow and is not labeled.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 2:</strong> Calculate the area of the region.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(x \geq x^2\)</span> on <span class="math notranslate nohighlight">\([0,1]\)</span> and therefore the area of the region is given by <span class="math notranslate nohighlight">\(\int_0^1 x-x^2 ~dx\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int^1_0 x-x^2 ~dx
@@ -997,22 +1234,22 @@
   &amp;= \frac{1}{2} - \frac{1}{3} \\
   &amp;= 1/6
 \end{align*}\]</div>
-<p class="card-text">Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(y=x\)</span> and <span class="math notranslate nohighlight">\(y=x^2\)</span> is <span class="math notranslate nohighlight">\(1/6\)</span>.</p>
+<p class="sd-card-text">Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(y=x\)</span> and <span class="math notranslate nohighlight">\(y=x^2\)</span> is <span class="math notranslate nohighlight">\(1/6\)</span>.</p>
 </div>
-</details></div>
-<div class="section" id="example-5">
-<h2>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h2>
+</details></section>
+<section id="example-5">
+<h2>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">#</a></h2>
 <div class="tip admonition">
 <p class="admonition-title">Area enclosed by two curves with three points of intersection</p>
 <p>Find the area of the bounded region enclosed by <span class="math notranslate nohighlight">\(y = x^3\)</span> and <span class="math notranslate nohighlight">\(y = 4x\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   x^3 &amp;= 4x &amp;&amp; \text{Set the functions equal to each other}\\
@@ -1020,18 +1257,27 @@
   x(x^2-4) &amp;= 0 &amp;&amp; \text{Factor out an }x\\
   x(x-2)(x+2) &amp;= 0 &amp;&amp; \text{Factor } x^2 - 4
 \end{align*}\]</div>
-<p class="card-text">Therefore, the curves intersect when <span class="math notranslate nohighlight">\(x=-2\)</span>, when <span class="math notranslate nohighlight">\(x=0\)</span>, and when <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<p class="sd-card-text">Therefore, the curves intersect when <span class="math notranslate nohighlight">\(x=-2\)</span>, when <span class="math notranslate nohighlight">\(x=0\)</span>, and when <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
 <a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_6.png"><img alt="Points of intersection at $x=-2$, $x=0$, and $x=2$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_6.png" style="width: 500px;" /></a>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 2:</strong> Calculate the area of each subregion.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Long Text Description</strong><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x axis with the points -2 and 2 labeled and a vertical y axis with no points labeled. The graphs of two functions are plotted. The increasing linear function 4x is below the increasing cubic function y=x^3 from x=-2 to the y-axis, and it is above the cubic function from the y-axis to x=2. The area between the curves from x=-2 to the y axis is labeled R_1 and is shaded yellow. The area between the curves from the y axis to x=2 is labeled R_2 and is shaded yellow.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 2:</strong> Calculate the area of each subregion.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p class="card-text">Area of region <span class="math notranslate nohighlight">\(R_1\)</span>. Note that <span class="math notranslate nohighlight">\(x^3\geq 4x\)</span> on <span class="math notranslate nohighlight">\([-2,0]\)</span>.</p></li>
+<li><p class="sd-card-text">Area of region <span class="math notranslate nohighlight">\(R_1\)</span>. Note that <span class="math notranslate nohighlight">\(x^3\geq 4x\)</span> on <span class="math notranslate nohighlight">\([-2,0]\)</span>.</p></li>
 </ul>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1041,7 +1287,7 @@
   &amp;= 0 - (4-8) = 4 
 \end{align*}\]</div>
 <ul class="simple">
-<li><p class="card-text">Area of region <span class="math notranslate nohighlight">\(R_2\)</span>. Note that <span class="math notranslate nohighlight">\(4x\geq x^3\)</span> on <span class="math notranslate nohighlight">\([0,2]\)</span>.</p></li>
+<li><p class="sd-card-text">Area of region <span class="math notranslate nohighlight">\(R_2\)</span>. Note that <span class="math notranslate nohighlight">\(4x\geq x^3\)</span> on <span class="math notranslate nohighlight">\([0,2]\)</span>.</p></li>
 </ul>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1051,19 +1297,19 @@
   &amp;= (8-4) - 0 = 4 
 \end{align*}\]</div>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>Step 3:</strong> Combine the areas of the different subregions.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">The area of the region bounded by the curves <span class="math notranslate nohighlight">\(y = x^3\)</span> and <span class="math notranslate nohighlight">\(y = 4x\)</span> on the interval <span class="math notranslate nohighlight">\([-1, 3]\)</span> is</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<strong>Step 3:</strong> Combine the areas of the different subregions.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The area of the region bounded by the curves <span class="math notranslate nohighlight">\(y = x^3\)</span> and <span class="math notranslate nohighlight">\(y = 4x\)</span> on the interval <span class="math notranslate nohighlight">\([-1, 3]\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[4 + 4 = 8.\]</div>
 </div>
-</details></div>
-</div>
+</details></section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1087,44 +1333,48 @@
 
               </div>
               
-        
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="applicationintegrals_.html" title="previous page">Applications of Definite Integrals</a>
-    <a class='right-next' id="next-link" href="applicationintegrals_consumer_producer_total_surplus.html" title="next page">Consumer, Producer, &amp; Total Surplus</a>
-
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="applicationintegrals_.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Applications of Definite Integrals</p>
         </div>
-        
+    </a>
+    <a class='right-next' id="next-link" href="applicationintegrals_consumer_producer_total_surplus.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Consumer, Producer, &amp; Total Surplus</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
-    <div class="container">
-      <p>
-        
-          By Department of Mathematics, Penn State University Park<br/>
-        
-            &copy; Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Department of Mathematics, Penn State University Park<br/>
+  
+      &copy; Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-206078372-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
 
   </body>
 </html>

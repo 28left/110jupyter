@@ -90,7 +90,9 @@ The calculations of method 1 are summarized in the following diagram.
 \end{tikzpicture} 
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a number line with the numbers -4, -3, 0, 1, and 2 marked. The line is labeled "sign of f(x)". Some of the points are marked with signs. -4 is marked positive. Zero is marked negative. 2 is marked positive. The rest of the numbers are not marked with a sign.
+```
 Therefore, $x^2+2x-3 >0$ whenever $x<-3$ or $x>1$.
 
 
@@ -129,6 +131,9 @@ Sketch the graph of $y=x^2+2x-3$ by drawing a parabola that opens upward and goe
 \end{tikzpicture}
 \end{document}
 ```
+```{dropdown} **Long Text Description**
+There is a horizontal x-axis with the points -4, -2, and 2 marked. There is a vertical y-axis with no points marked. The graph of the concave up parabola $y = x^2 + 2x -3. Its x-intercepts are marked with large black dots.
+```{dropdown}
 
 Finding values of $x$ such that $x^2+2x-3 > 0$ is equivalent to identifying the portions of the graph of $x^2+2x-3$ that are above the $x$-axis.  Based on the graph shown above, $x^2+2x-3 >0$ whenever $x<-3$ or $x>1$.
 
@@ -185,7 +190,9 @@ Break up the number line at $x=-2$, $x=0$, and $x=2$ and plug in one value from 
 \end{tikzpicture} 
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a number line with the numbers -3, -2, -1, 0, 1, 2, and 3 marked. The sign of f(x) is denoted at several points along the line, and is negative at the point -3, positive at the point -1, positive at the point 1, and negative at the point 3.
+```
 Therefore, $\frac{x^2(x^2+3)}{(4-x^2)^3} < 0$ when $x<-2$ or $x>2$.
 
 
@@ -227,5 +234,7 @@ Notice that $x^2$ and $x^2+3$ are both positive for $x\neq 0$, therefore $\frac{
 \end{tikzpicture}
 \end{document}
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points -3, -1, 1, and 3 marked. There is a vertical y axis with no points marked. The graph of the concave down quadratic function four minus x squared is plotted on these axes, with it's x intercepts at (-2,0) and (2,0) marked with large black dots.
+```
 The graph of $y = 4-x^2$ as shown above is below the $x$-axis (i.e., $4-x^2 < 0$) if $x<-2$ or $x>2$.  Therefore, $\frac{x^2(x^2+3)}{(4-x^2)^3} < 0$ when $x<-2$ or $x>2$.

@@ -93,27 +93,34 @@ The graph of each of the following functions is displayed below.  Label each gra
 $$\dfrac{4}{x^2-4}  \hspace{50pt} \dfrac{x}{x^2-4}  \hspace{50pt} \dfrac{x}{x-2} \hspace{50pt} \dfrac{x^2}{x^2-4}$$
 
 
-````{panels}
-
-```{image} ../images/pic_curvesketching_TIY_1.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_1.png
 :alt: Graph a)
-```
----
-```{image} ../images/pic_curvesketching_TIY_2.png
+:::
+::::
+
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_2.png
 :alt: Graph b)
-```
-````
+:::
+::::
+:::::
 
-````{panels}
 
-```{image} ../images/pic_curvesketching_TIY_3.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_3.png
 :alt: Graph c)
-```
----
-```{image} ../images/pic_curvesketching_TIY_4.png
+:::
+::::
+
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_4.png
 :alt: Graph d)
-```
-````
+:::
+::::
+:::::
 
 
 ```{dropdown} Show answer
@@ -127,27 +134,34 @@ The graph of each of the following functions is displayed below.  Label each gra
 
 $$\dfrac{4x-3}{2x+4} \hspace{50pt} \dfrac{4x+11}{2x+4}  \hspace{50pt} \dfrac{4x+3}{2x+4} \hspace{50pt} \dfrac{4x}{2x+4}$$
 
-````{panels}
-
-```{image} ../images/pic_curvesketching_TIY_5.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_5.png
 :alt: Graph a)
-```
----
-```{image} ../images/pic_curvesketching_TIY_6.png
+:::
+::::
+
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_6.png
 :alt: Graph b)
-```
-````
+:::
+::::
+:::::
 
-````{panels}
 
-```{image} ../images/pic_curvesketching_TIY_7.png
+:::::{grid}
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_7.png
 :alt: Graph c)
-```
----
-```{image} ../images/pic_curvesketching_TIY_8.png
+:::
+::::
+
+::::{grid-item-card}
+:::{image} ../images/pic_curvesketching_TIY_8.png
 :alt: Graph d)
-```
-````
+:::
+::::
+:::::
 
 
 ```{dropdown} Show answer
@@ -185,4 +199,7 @@ g) No inflection points
 :alt: Graph of $f(x) = \dfrac{x^2-4}{x^2-9}$.
 ```
 ````
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points -6, -3, 3, and 6 labeled. There is a vertical y axis with the points -4, -2, 2, and 4 labeled. There is a curve plotted on these axes with vertical asymptotes at x = -3 and x = 3, and a horizontal asymptote at y = 1. The curve is in three components, the leftmost is increasing and concave up, increasing from its horizontal asymptote from the left and heading upwards to infinity and the vertical asymptote x=-3. The central component is concave down, increases from negative infinity at x=-3, achieves a maximum at x=0, and decreases back to negative infinity as x goes to 3. The rightmost component is concave up and decreases from infinity at x=3 towards its horizontal asymptote as it goes off to the right.
 
+```

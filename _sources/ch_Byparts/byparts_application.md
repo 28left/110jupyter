@@ -17,14 +17,17 @@ kernelspec:
 
 An **income stream** refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.
 
-````{panels}
+::::{grid} 2
+:::{grid-item-card} Future Value
 
 The **future value** of an income stream is the total of all of the money transferred plus all of the interest earned.
+:::
 
----
+:::{grid-item-card} Present Value
 
-The **present value** of an income stream is the principal investment, $P$, that yields the same future/accumulated value as the income stream when $P$ is invested for a period of $T$ years at the same rate of interest.
-````
+The **present value** of an income stream is the principal investment $P$ that yields the same accumulated value as the income stream when $P$ is invested for a period of $T$ years at the same rate of interest.
+:::
+::::
 
 
 - $R(t)$ = rate at which income is generated (in dollars per year)

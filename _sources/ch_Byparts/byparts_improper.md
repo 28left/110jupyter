@@ -41,7 +41,9 @@ alt: Improper integral unbounded on the right
 ---
 Improper integral unbounded on the right
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points 1, 3, 5, 6, and 9 labeled. There is a vertical y axis. The decreasing, concave up curve y = f(x) is plotted on these axes. The region between the curve and the x axis, beginning at x = 1 on the left, is shaded yellow.
+```
 ## Example 1
 
 ```{admonition} Evaluating an improper integral unbounded on the right
@@ -166,7 +168,9 @@ alt: Improper integral unbounded on the left and the right
 ---
 Improper integral unbounded on the left and the right
 ```
-
+```{dropdown} **Long Text Description**
+There is a horizontal x axis with the points -3, -1, 1, 3, 5, and 7 labeled. There is a vertical y axis. The curve y=f(x), which is increasing and concave up as it comes in from the left, becomes increasing and concave down, becomes decreasing and concave down, and then becomes decreasing and concave up as it goes off to the right, is plotted. The entire region between the curve y= f(x) and the x axis is shaded yellow.
+```
 ## Example 4
 
 ```{admonition} Evaluating an improper integral unbounded on both sides

@@ -54,7 +54,8 @@ Therefore, $x=6$ and $x=-2$ satisfy $x^2 - 4x - 12 = 0$.
 ```
 
 ```{dropdown} Check Your Work.
-:title: bg-warning font-weight-bold
+:color: light
+:animate: fade-in
 
 \begin{align*}
 (-2)^2 - 4(-2) - 12 &= 4 + 8 - 12 = 0 \\
@@ -96,7 +97,8 @@ Therefore, $p=20$ is the only value that satisfies $\frac{3p}{180-6p} = 1$.
 ```
 
 ```{dropdown} Check Your Work.
-:title: bg-warning font-weight-bold
+:color: light
+:animate: fade-in
 
 $$\dfrac{3(20)}{180-6(20)} = \frac{60}{180-120} = \frac{60}{60} = 1$$
 ```
@@ -155,7 +157,8 @@ Therefore, the only points of intersection of $f(x) = 6x^2 - 4x$ and $g(x) = 2 -
 ```
 
 ```{dropdown} Check Your Work.
-:title: bg-warning font-weight-bold
+:color: light
+:animate: fade-in
 
 | $x$  | $f(x) = 6x^2 - 4x$ | $g(x) = 2 - 5x$ |
 | ---  | ----               | ----            |
