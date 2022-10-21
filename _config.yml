@@ -33,7 +33,7 @@ repository:
 html:
   use_issues_button: false
   use_repository_button: false
-  google_analytics_id: UA-206078372-1
+  google_analytics_id: G-2H7BN83HGG
 
 
 
@@ -73,10 +73,10 @@ parse:
 
 
 # Set launch button for notebook  
-launch_buttons:
+# launch_buttons:
 #   notebook_interface: classic # "jupyterlab" or "classic"
   # binderhub_url: https://binder.jupytr.cloud.psu.edu  # The URL for your BinderHub (e.g., https://mybinder.org)
-  binderhub_url: ""
+  # binderhub_url: ""
 #   jupyterhub_url: ""
 #   thebe: true
 
