@@ -121,7 +121,17 @@ $$\dfrac{4}{x^2-4}  \hspace{50pt} \dfrac{x}{x^2-4}  \hspace{50pt} \dfrac{x}{x-2}
 :::
 ::::
 :::::
+```{dropdown} **Long Text Description**
+There are four sets of axes labeled with letters. In each there is a horizontal x axis with the points -2 and 2 marked. In each there is a vertical y axis with no points marked. Each has a grid of 1/2 by 1/2 unit cells in the background. 
 
+In image (a), there are vertical red dashed lines indicating vertical asymptotes at x = 2 and x = -2; there is a horizontal blue dashed line indicating a horizontal asymptote at y = 1. The graph of a function is plotted on these axes. To the left of x = -2 the function is above the blue line, increasing, and concave up and heads to infinity as it approaches the asymptote; between the asymptotes, the function comes up from negative infinity, stays below the blue dashed line and is concave down, heading to negative infinity as it approaches the asymptote. To the right of it's asymptotes, the function comes down from positive infinity, is decreasing, concave up, and above the blue line.
+
+In image (b), there are vertical red dashed lines indicating vertical asymptotes at x = 2 and x = -2; there is a horizontal blue dashed line indicating a horizontal asymptote at y = 0. The graph of a function is plotted on these axes. To the left of x = -2 the function is below the blue line, decreasing, and concave down and heads to negative infinity as it approaches the asymptote; between the asymptotes, the function comes down from infinity, decreases, crosses the blue line, and heads to negative infinity as it approaches the asymptote. To the right of it's asymptotes, the function comes down from positive infinity, is decreasing, concave up, and above the blue line.
+
+In image (c), is a vertical red dashed line indicating a vertical asymptote at x = 2; there is a horizontal blue dashed line indicating a horizontal asymptote at y = 1. The graph of a function is plotted on these axes. To the left of x = 2 the function is below the blue line, decreasing, and concave down, and heads to negative infinity as it approaches the asymptote. To the right of it's asymptote, the function comes down from positive infinity, is decreasing, concave up, and above the blue line.
+
+In image (d), there are vertical red dashed lines indicating vertical asymptotes at x = 2 and x = -2; there is a horizontal blue dashed line indicating a horizontal asymptote at y = 0. The graph of a function is plotted on these axes. To the left of x = -2 the function is above the blue line, increasing, and concave up and heads to infinity as it approaches the asymptote; between the asymptotes, the function comes up from negative infinity, stays below the blue dashed line and is concave down, heading to negative infinity as it approaches the asymptote. To the right of it's asymptotes, the function comes down from positive infinity, is decreasing, concave up, and above the blue line.
+```
 
 ```{dropdown} Show answer
 Answer: a) $\frac{x^2}{x^2-4} \quad$  b) $\frac{x}{x^2-4} \quad$  c) $\frac{x}{x-2} \quad$  d) $\frac{4}{x^2-4}$
@@ -162,7 +172,21 @@ $$\dfrac{4x-3}{2x+4} \hspace{50pt} \dfrac{4x+11}{2x+4}  \hspace{50pt} \dfrac{4x+
 :::
 ::::
 :::::
+```{dropdown} **Long Text Description**
+There are four sets of axes labeled with letters. In each there is a horizontal x axis with the points -2 and 2 marked. In each there is a vertical y axis with no points marked. Each has a grid of 1 by 1 unit cells in the background. The graphs of four functions are plotted, one on each acis.
 
+In all four images, there is a vertical red dashed line indicating a vertical asymptote at x = -2, there is a horizontal blue dashed line indicating a horizontal asymptote at y = 2.
+
+In image (a), the function comes in from the left increasing from the blue line and concave up, and heads towards positive infinity as x approaches -2 from the left, then comes up from negative infinity to the right of x = -2, increases, passes through the origin, and is concave down, heading up towards the blue line from below.
+
+In image (b), the function comes in from the left increasing from the blue line and concave up, and heads towards positive infinity as x approaches -2 from the left, then comes up from negative infinity to the right of x = -2, increases, passes through the y axis just below the origin, and is concave down, heading up towards the blue line from below.
+
+In image (c), the function comes in from the left increasing from the blue line and concave up, and heads towards positive infinity as x approaches -2 from the left, then comes up from negative infinity to the right of x = -2, increases, passes through the y axis just above the origin, and is concave down, heading up towards the blue line from below.
+
+In image (d), the function comes in from the left decreasing from the blue line and concave down, and heads towards negative infinity as x approaches -2 from the left, then comes down from positive infinity to the right of x = -2, decreases and is concave up, heading down towards the blue line from above.
+
+
+```
 
 ```{dropdown} Show answer
 Answer: a) $\frac{4x}{2x+4} \quad$  b) $\frac{4x-3}{2x+4} \quad$  c) $\frac{4x+3}{2x+4} \quad$  d) $\frac{4x+11}{2x+4}$

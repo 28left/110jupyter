@@ -32,7 +32,7 @@ Consider trying to compute the area of a region (below left) between the graph o
 :::
 ::::
 :::::
-```{dropdown} **{Long Text Description}**
+```{dropdown} **Long Text Description**
 There are two images, one to the left and one to the right. In both, there is a horizontal x-axis. On the left, the x-axis has the points a and b marked. On the right, the points a, x one, x two, x three, x four, and b are marked. The graph of the function f(x) is plotted above the axis in each picture. On the left, the area below the graph of f(x), above the x-axis, and between x=a and x=b is shaded yellow. On the right, there are four yellow rectangles of equal width, the bottoms of which break up [a,b] into four subintervals. The first rectangle has lower left hand corner a, contains the point x one, and has height f of x one. The second rectangle contains the point x two and has heigh f of x two. The third rectangle contains the point x three and has height f of x three. The fourth rectangle contains the point x four, has height f of x four, and has lower right hand corner b.
 ```
 
