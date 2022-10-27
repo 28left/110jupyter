@@ -60,7 +60,7 @@ width: 600px
 ---
 Producer surplus
 ```
-```{dropdown} **Long Text Description***
+```{dropdown} **Long Text Description**
 There is a horizontal x axis with the point x bar marked. There is a vertical p axis with the point p bar marked. There is an increasing, concave up curve plotted above the x-axis, labeled p = S(x). There is a vertical line from the point x bar that meets a horizontal line from the point p bar along this curve. The region between the curve, the horizontal line from p bar, and the p axis is shaded yellow and labeled “Producer Surplus”
 ```
 ## Example 1
