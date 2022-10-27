@@ -98,6 +98,13 @@ Compare the graphs of $f(x) = x^2 - 1$ and $f'(x) = 2x$.
 ::::
 :::::
 
+```{dropdown} **Long Text Description**
+There are two sets of axes, in each a horizontal x axis and an unlabeled vertical axis.
+
+On the left, the graph of the function x squared minus one is plotted. The function is concave up along its domain, is decreasing as it comes in from the left to a red dot at its rounded vertex at (0,-1), and increasing to the right of that.
+
+On the right, the graph of it's derivative two x is plotted. It is linear increasing and passes through a red dot at the origin.
+```
 Observe that $f(x)$ has a relative minimum at $x=0$, $f'(0) = 0$, and $f'(x)$ changes sign (from negative to positive) at $x=0$.
 
 ## Example 3
@@ -120,5 +127,11 @@ Compare the graphs of $f(x) = x^3 + 1$ and $f'(x) = 3x^2$.
 ```
 ::::
 :::::
+```{dropdown} **Long Text Description**
+There are two sets of axes, in each a horizontal x axis and an unlabeled vertical axis.
 
+On the left, the graph of the function x cubed plus one is plotted. The function is increasing along its domain, is concave down as it comes in from the left to a red dot at a point of flatness at (0,1), and concave up to the right of that.
+
+On the right, the graph of it's derivative three x squared is plotted. It is a concave up parabola which decreases on the left down to a red dot at its vertex (0,0), and then is increasing after that.
+```
 Observe that $f(x)$ does not have any relative extrema despite the fact that $f'(0) = 0$.  Notice that $f'(x)$ does not change sign at $x=0$. In other words, in order for a function to have a relative extrema, there must be a change in sign of its derivative.
