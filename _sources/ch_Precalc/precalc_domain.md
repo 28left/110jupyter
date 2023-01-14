@@ -111,7 +111,7 @@ Determine the domain of the function $f(x) = \sqrt{x^2 + 2x - 3}$.
 ```{dropdown} **Step 1:** Describe the domain using an inequality.
 
 Since $f$ is a square root function, the domain of $f$ consists of all values of $x$ such that
-$$x^2 + 2x - 3 \geq 0$$
+$x^2 + 2x - 3 \geq 0$
 since the square root of a negative number is not defined.
 ```
 
