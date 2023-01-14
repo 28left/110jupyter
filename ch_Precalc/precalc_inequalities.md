@@ -132,8 +132,8 @@ Sketch the graph of $y=x^2+2x-3$ by drawing a parabola that opens upward and goe
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -4, -2, and 2 marked. There is a vertical y-axis with no points marked. The graph of the concave up parabola $y = x^2 + 2x -3. Its x-intercepts are marked with large black dots.
-```{dropdown}
+There is a horizontal x-axis with the points -4, -2, and 2 marked. There is a vertical y-axis with no points marked. The graph of the concave up parabola y = x squared + 2x - 3. Its x-intercepts are marked with large black dots.
+```
 
 Finding values of $x$ such that $x^2+2x-3 > 0$ is equivalent to identifying the portions of the graph of $x^2+2x-3$ that are above the $x$-axis.  Based on the graph shown above, $x^2+2x-3 >0$ whenever $x<-3$ or $x>1$.
 
