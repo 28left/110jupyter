@@ -286,7 +286,7 @@ There is a horizontal x-axis with the points -2 and 2 marked. There is a vertica
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = x squared is graphed on these axes, resembling a horshoe shape. The function is increasing as it comes from the left to x=0, meets the y-axis at (0,0), and decreases as it goes off to the right.
+There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = -x squared is graphed on these axes, resembling a horseshoe shape. The function is increasing as it comes from the left to x=0, meets the y-axis at (0,0), and decreases as it goes off to the right.
 ```
 Notice how the graph of $y=x^2$ is a parabola that goes through the point $(0,0)$ and opens upward while the graph of $y=-x^2$ is a parabola that also goes through the point $(0,0)$ but opens downward.
 
