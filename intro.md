@@ -1,7 +1,7 @@
 Welcome to Math 110
 ===================
 
-This is the online companion to our course packet.
+This Rs the online companion to our course packet.
 
 ```{tableofcontents}
 ```
