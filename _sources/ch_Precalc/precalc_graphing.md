@@ -70,7 +70,7 @@ $$
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x axis with no points marked. There is a vertical y-axis with no points marked. The the line defined by y-b = m(x-a) is plotted on these axes. The point (x,y) = (a,b) on the line is marked.
+There is a horizontal x-axis with no points marked. There is a vertical y-axis with no points marked. The line defined by y-b = m(x-a) is plotted on these axes. The point (x,y) = (a,b) on the line is marked.
 ```
 Recall that a positive slope means that the line goes up from left-to-right and a negative slope means that the line goes down from left-to-right.
 
@@ -257,7 +257,7 @@ Compare the graphs of $y = x^2$ and $y=-x^2$.
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y axis with the points 2 and 4 marked. There is a grid of one unit by one unit cells in the background. The concave up quadratic function y = x squared is graphed on these axes, resembling a horshoe shape. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,0), and increases as it goes off to the right.
+There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y-axis with the points 2 and 4 marked. There is a grid of one unit by one unit cells in the background. The concave up quadratic function y = x squared is graphed on these axes, resembling a horseshoe shape. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,0), and increases as it goes off to the right.
 ```
 ```{code-cell}
 :tags: [remove-input]
@@ -286,7 +286,7 @@ There is a horizontal x-axis with the points -2 and 2 marked. There is a vertica
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = -x squared is graphed on these axes, resembling a horseshoe shape. The function is increasing as it comes from the left to x=0, meets the y-axis at (0,0), and decreases as it goes off to the right.
+There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y-axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = -x squared is graphed on these axes, resembling a horseshoe shape. The function is increasing as it comes from the left to x=0, meets the y-axis at (0,0), and decreases as it goes off to the right.
 ```
 Notice how the graph of $y=x^2$ is a parabola that goes through the point $(0,0)$ and opens upward while the graph of $y=-x^2$ is a parabola that also goes through the point $(0,0)$ but opens downward.
 
@@ -321,7 +321,7 @@ Compare the graphs of $y=x^2-4$ and $y=4-x^2$
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a vertical y axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave up quadratic function y = x squared - 4 is graphed on these axes. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,-4), and increases as it goes off to the right.
+There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a vertical y-axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave up quadratic function y = x squared - 4 is graphed on these axes. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,-4), and increases as it goes off to the right.
 ```
 ```{code-cell}
 :tags: [remove-input]
@@ -349,7 +349,7 @@ There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a 
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a vertical y axis with the points 2 and 4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = -x squared + 4 is graphed on these axes. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,4), and increases as it goes off to the right.
+There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a vertical y-axis with the points 2 and 4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = -x squared + 4 is graphed on these axes. The function is increasing as it comes from the left to x=0, meets the y-axis at (0,4), and decreases as it goes off to the right.
 ```
 Notice how the graph of $y=x^2-4$ looks like the graph of $y=x^2$ with each point shifted down $4$ units.  Also, the graph of $y=4-x^2$ looks like the graph of $y=-x^2$ with each point shifted up $4$ units.
 
@@ -425,7 +425,7 @@ Draw the graph of a parabola that opens upward (since the coefficient of $x^2$ i
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -3, 3, 6 and 9 marked. There is a vertical y axis with the points -12 marked. There is a grid of one unit by two unit cells in the background. The concave up quadratic function y = x squared - 4x - 12 is graphed on these axes. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,-12), and increases as it goes off to the right. The function meets the x-axis at the points (-3,0) and (6,0).
+There is a horizontal x-axis with the points -3, 3, 6 and 9 marked. There is a vertical y-axis with the points -12 marked. There is a grid of one unit by two unit cells in the background. The concave up quadratic function y = x squared - 4x - 12 is graphed on these axes. The function is decreasing as it comes from the left to x=2 and increases as it goes off to the right.  The function meets the y-axis at the point (0,-12) and meets the x-axis at the points (-3,0) and (6,0).
 ```
 
 
@@ -469,7 +469,7 @@ Sketch the graph of $y = x^3$.
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -2, -1, 1 and 2 marked. There is a vertical y axis with the points -3, -2, -1, 1, 2, and 3 marked. There is a grid of one unit by one unit cells in the background. The cubic function y = x cubed is graphed on these axes. The function is increasing and concave down as it comes from the left to x=0, meets the y-axis at (0,0), and is increasing and concave up as it goes off to the right.
+There is a horizontal x-axis with the points -2, -1, 1 and 2 marked. There is a vertical y-axis with the points -3, -2, -1, 1, 2, and 3 marked. There is a grid of one unit by one unit cells in the background. The cubic function y = x cubed is graphed on these axes. The function is increasing and concave down as it comes from the left to x=0, meets the y-axis at (0,0), and is increasing and concave up as it goes off to the right.
 ```
 
 Notice how the graph of $y=x^3$ always increases from left-to-right and looks like a horizontal line as it goes through the origin.
@@ -506,6 +506,6 @@ Sketch the graph of the square root function, $y = \sqrt{x}$.
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y axis with the points 1, 2, and 3 marked. There is a grid of one unit by one unit cells in the background. The increasing concave down function y = square root x is graphed on these axes. The graph begins at (0,0).
+There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y-axis with the points 1, 2, and 3 marked. There is a grid of one unit by one unit cells in the background. The increasing concave down function y = square root x is graphed on these axes. The graph begins at (0,0).
 ```
 Notice how the graph of $y=\sqrt{x}$ looks like the upper half of a parabola that opens to the right.
