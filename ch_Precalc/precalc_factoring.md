@@ -187,7 +187,12 @@ Therefore, the factor common to both terms is $x^3$.
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Apply difference of squares with $A=3$ and $B=2x$.
+```{dropdown} **Step 3:** Rewrite $9-4x^2$ as a difference of squares.
+
+$$x^3(9 - 4x^2) = x^3[3^2 - (2x)^2]$$
+```
+
+```{dropdown} **Step 4:** Apply difference of squares with $A=3$ and $B=2x$.
 
 \begin{align*}
 9x^3-4x^5

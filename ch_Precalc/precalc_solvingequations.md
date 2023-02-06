@@ -24,8 +24,6 @@ To find all values of $x$ that satisfy an equation (e.g., $f(x) = g(x)$), comple
 3. Set each factor equal to zero and solve for $x$.
 ```
 
-Find all values of $x$ such that $x^2 - 4x - 12 = 0$.
-
 
 (01_03_example1)=
 ### Example 1
