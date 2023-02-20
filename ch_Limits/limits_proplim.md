@@ -14,7 +14,7 @@ kernelspec:
 (lim:prop_lim)=
 # Properties of Finite Limits
 
-Suppose $\displaystyle \lim_{x\to a} f(x) = L$ and $\displaystyle \lim_{x\to a} g(x) = M$
+Suppose $\displaystyle \lim_{x\to a} f(x) = L$ and $\displaystyle \lim_{x\to a} g(x) = M$, where both $L$ and $M$ are finite values.
 
 ```{admonition} (1) Limit of a Constant
 :class: info
@@ -53,8 +53,11 @@ $$\lim_{x\to a} \dfrac{f(x)}{g(x)} = \dfrac{\lim\limits_{x\to a} f(x)}{\lim\limi
 
 ```{admonition} (6) The Power Property
 :class: info
+For any real number $r$, 
 
 $$\lim_{x\to a} [f(x)]^r = \left[\lim_{x\to a} f(x)\right]^r = L^r$$
+
+if $L^r$ is defined.
 ```
 
 ```{admonition} (7) Polynomial and Rational Functions

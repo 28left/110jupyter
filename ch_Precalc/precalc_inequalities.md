@@ -199,8 +199,6 @@ Therefore, $\frac{x^2(x^2+3)}{(4-x^2)^3} < 0$ when $x<-2$ or $x>2$.
 ```{admonition} Method 2
 :class: tip
 
-Break up the number line at $x=-2$, $x=0$, and $x=2$ and plug in one value from each interval to determine the sign of $f(x) = \frac{x^2(x^2+3)}{(4-x^2)^3}$ on that interval.
-
 Notice that $x^2$ and $x^2+3$ are both positive for $x\neq 0$, therefore $\frac{x^2(x^2+3)}{(4-x^2)^3}<0$ whenever $4-x^2 < 0$.
 ```
 
@@ -235,6 +233,6 @@ Notice that $x^2$ and $x^2+3$ are both positive for $x\neq 0$, therefore $\frac{
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -3, -1, 1, and 3 marked. There is a vertical y axis with no points marked. The graph of the concave down quadratic function four minus x squared is plotted on these axes, with it's x-intercepts at (-2,0) and (2,0) marked with large black dots.
+There is a horizontal x-axis with the points -3, -1, 1, and 3 marked. There is a vertical y-axis with no points marked. The graph of the concave down quadratic function four minus x squared is plotted on these axes, with it's x-intercepts at (-2,0) and (2,0) marked with large black dots.
 ```
 The graph of $y = 4-x^2$ as shown above is below the $x$-axis (i.e., $4-x^2 < 0$) if $x<-2$ or $x>2$.  Therefore, $\frac{x^2(x^2+3)}{(4-x^2)^3} < 0$ when $x<-2$ or $x>2$.

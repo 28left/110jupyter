@@ -87,8 +87,8 @@ $$3p = 180 - 6p$$
 ```{dropdown} **Step 3:** Solve for $p$.
 
 \begin{align*}
-    9p &= 180 && \text{Add $180$ to both sides} \\
-    p &= 20 && \text{Divide both sides by 9}
+    9p &= 180 && \text{add $180$ to both sides} \\
+    p &= 20 && \text{divide both sides by 9}
 \end{align*}
 
 Therefore, $p=20$ is the only value that satisfies $\frac{3p}{180-6p} = 1$.

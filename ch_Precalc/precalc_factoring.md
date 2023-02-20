@@ -45,8 +45,8 @@ Therefore, the factor common to both terms is $5x^4$.
 
 \begin{align*}
 10x^5 + 15x^4 
-&= 5x^4\cdot 2x  + 5x^4\cdot3  && \hbox{Write each term as a multiple of $5x^4$} \\
-&= 5x^4(2x + 3) && \hbox{Pull out common factor}
+&= 5x^4\cdot 2x  + 5x^4\cdot3  && \text{write each term as a multiple of $5x^4$} \\
+&= 5x^4(2x + 3) && \text{pull out common factor}
 \end{align*}
 ```
 
@@ -75,9 +75,9 @@ Therefore, the factor common to both terms is $2x^3(2x^3+1)^4$.
 
 \begin{align*}
 & 4x^3(2x^3+1)^5 + 30x^6(2x^3+1)^4 \\
-&= 2x^3(2x^3+1)^4\cdot 2(2x^3+1) + 2x^3(2x^3+1)^4 \cdot 15x^3 \\%&& \hbox{Write each term as a multiple of $2x^3(2x^3+1)^4$}\\
-&= 2x^3(2x^3+1)^4[2(2x^3+1) + 15x^3] && \hbox{Pull out common factor}\\
-&= 2x^3(2x^3+1)^4(4x^3+2 + 15x^3) && \hbox{Simplify expression inside $[ ~ ]$}\\
+&= 2x^3(2x^3+1)^4\cdot 2(2x^3+1) + 2x^3(2x^3+1)^4 \cdot 15x^3 \\%&& \text{write each term as a multiple of $2x^3(2x^3+1)^4$}\\
+&= 2x^3(2x^3+1)^4[2(2x^3+1) + 15x^3] && \text{pull out common factor}\\
+&= 2x^3(2x^3+1)^4(4x^3+2 + 15x^3) && \text{simplify expression inside $[ ~ ]$}\\
 &= 2x^3(2x^3+1)^4(19x^3+2)
 \end{align*}
 ```
@@ -108,9 +108,9 @@ Therefore, the factor common to both terms is $x^3(2x^3+1)^{-1/2}$.
 \begin{align*}
 & 4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2} \\ \\ 
 &= x^3(2x^3+1)^{-1/2}\cdot 4(2x^3+1) + x^3(2x^3+1)^{-1/2} \cdot 3x^3 \\ \\
-&= x^3(2x^3+1)^{-1/2}[4(2x^3+1) + 3x^3] && \hbox{Pull out common factor}\\ \\
-&= x^3(2x^3+1)^{-1/2}(8x^3+4 + 3x^3) && \hbox{Simplify expression inside $[ ~ ]$}\\ \\
-&= x^3(2x^3+1)^{-1/2}(11x^3+4) && \hbox{Combine like terms}\\ \\
+&= x^3(2x^3+1)^{-1/2}[4(2x^3+1) + 3x^3] && \text{pull out common factor}\\ \\
+&= x^3(2x^3+1)^{-1/2}(8x^3+4 + 3x^3) && \text{simplify expression inside $[ ~ ]$}\\ \\
+&= x^3(2x^3+1)^{-1/2}(11x^3+4) && \text{combine like terms}\\ \\
 &= \frac{x^3(11x^3+4)}{\sqrt{2x^3+1}}
 \end{align*}
 ```
@@ -155,8 +155,8 @@ $$x^2 - 25 = x^2 - 5^2$$
 
 \begin{align*}
 x^2 - 25
-&= x^2 - 5^2 && \hbox{Step 1} \\
-&= (x+5)(x-5) && \hbox{Difference of squares}
+&= x^2 - 5^2 && \text{Step 1} \\
+&= (x+5)(x-5) && \text{difference of squares}
 \end{align*}
 ```
 
@@ -183,7 +183,7 @@ Therefore, the factor common to both terms is $x^3$.
 \begin{align*}
 9x^3-4x^5 
 &= x^3(9) - x^3(4x^2)\\
-&= x^3(9-4x^2) && \hbox{Pull out common factor}
+&= x^3(9-4x^2) && \text{pull out common factor}
 \end{align*}
 ```
 
@@ -196,9 +196,9 @@ $$x^3(9 - 4x^2) = x^3[3^2 - (2x)^2]$$
 
 \begin{align*}
 9x^3-4x^5
-&= x^3(9-4x^2) && \hbox{Step 2}\\
-&=  x^3[3^2-(2x)^2] && \hbox{Step 3} \\
-&= x^3(3+2x)(3-2x) && \hbox{Difference of squares}
+&= x^3(9-4x^2) && \text{Step 2}\\
+&=  x^3[3^2-(2x)^2] && \text{Step 3} \\
+&= x^3(3+2x)(3-2x) && \text{difference of squares}
 \end{align*}
 ```
 
@@ -272,9 +272,9 @@ After factoring a polynomial, it's always a good idea to check your work by expa
 
 \begin{align*}
 (2x-1)(3x+5)
-&= (2x)(3x) + (2x)(5) + (-1)(3x) + (-1)(5) && \hbox{FOIL}\\
-&= 6x^2 + 10x - 3x - 5 && \hbox{Simplify}\\
-&= 6x^2 + 7x -5  && \hbox{Combine like terms}
+&= (2x)(3x) + (2x)(5) + (-1)(3x) + (-1)(5) && \text{FOIL}\\
+&= 6x^2 + 10x - 3x - 5 && \text{simplify}\\
+&= 6x^2 + 7x -5  && \text{combine like terms}
 \end{align*}
 ```
 
@@ -328,8 +328,8 @@ $$x^2 - 13x + 36 = (x-4)(x-9)$$
 
 \begin{align*}
 (x-4)(x-9)
-&= x^2 -9x -4x + 36 && \hbox{FOIL}\\
-&= x^2 - 13x + 36 && \hbox{Combine like terms}
+&= x^2 -9x -4x + 36 && \text{FOIL}\\
+&= x^2 - 13x + 36 && \text{combine like terms}
 \end{align*}
 ```
 
@@ -380,8 +380,8 @@ $$x^2 - 4x - 12 = (x+2)(x-6).$$
 
 \begin{align*}
 (x+2)(x-6)
-&= x^2 -6x +2x - 12 && \hbox{FOIL}\\
-&= x^2 - 4x - 12 && \hbox{Combine like terms}
+&= x^2 -6x +2x - 12 && \text{FOIL}\\
+&= x^2 - 4x - 12 && \text{combine like terms}
 \end{align*}
 ```
 
@@ -408,7 +408,7 @@ Therefore, the factor common to all three terms is $7x^2$.
 \begin{align*}
 7x^4 + 35x^3 + 42x^2
 &= 7x^2(x^2) + 7x^2(5x) + 7x^2(6) \\ 
-&= 7x^2(x^2 + 5x + 6) && \hbox{Pull out common factor}
+&= 7x^2(x^2 + 5x + 6) && \text{pull out common factor}
 \end{align*}
 ```
 
@@ -422,8 +422,8 @@ Therefore, the factor common to all three terms is $7x^2$.
 Therefore,
 \begin{align*}
 7x^4 + 35x^3 + 42x^2
-&= 7x^2(x^2 + 5x + 6) && \hbox{Step 2} \\
-&= 7x^2(x+2)(x+3) && \hbox{AC grouping}
+&= 7x^2(x^2 + 5x + 6) && \text{Step 2} \\
+&= 7x^2(x+2)(x+3) && \text{AC grouping}
 \end{align*}
 ```
 
@@ -434,10 +434,10 @@ Therefore,
 
 \begin{align*}
 7x^2(x+2)(x+3)
-&= 7x^2(x^2 + 3x + 2x + 6) && \hbox{FOIL}\\
-&= 7x^2(x^2 + 5x + 6) && \hbox{Combine like terms}\\ 
-&= 7x^2(x^2) + 7x^2(5x) + 7x^2(6) && \hbox{Distribute $7x^2$}\\
-&= 7x^4 + 35x^3 + 42x^2 && \hbox{Simplify}
+&= 7x^2(x^2 + 3x + 2x + 6) && \text{FOIL}\\
+&= 7x^2(x^2 + 5x + 6) && \text{combine like terms}\\ 
+&= 7x^2(x^2) + 7x^2(5x) + 7x^2(6) && \text{distribute $7x^2$}\\
+&= 7x^4 + 35x^3 + 42x^2 && \text{simplify}
 \end{align*}
 ```
 
