@@ -34,7 +34,7 @@ Evaluate $\lim\limits_{x\to 5} \dfrac{x-5}{x^2-25}.$
 
 We evaluate these limits by plugging in $x=5$:
 
-$$\lim_{x\to 5} x-5 = 5 - 5 = 0 ~~~~ \hbox{and} ~~~~~ \lim_{x\to 5} x^2 - 25 = 5^2-25 = 0$$
+$$\lim_{x\to 5} x-5 = 5 - 5 = 0 ~~~~ \text{and} ~~~~~ \lim_{x\to 5} x^2 - 25 = 5^2-25 = 0$$
 
 This means that the given limit is an indeterminate form of type $0/0$, so we need to do more work to evaluate it.
 ```
@@ -43,8 +43,8 @@ This means that the given limit is an indeterminate form of type $0/0$, so we ne
 
 \begin{align*}
 \frac{x-5}{x^2-25}
-&= \frac{x-5}{(x-5)(x+5)} && \hbox{Since $A^2 - B^2 = (A-B)(A+B)$}\\ \\
-&= \frac{1}{x+5} && \hbox{Assuming $x \neq 5$}
+&= \frac{x-5}{(x-5)(x+5)} && \text{since $A^2 - B^2 = (A-B)(A+B)$}\\ \\
+&= \frac{1}{x+5} && \text{assuming $x \neq 5$}
 \end{align*}
 
 When computing the limit as $x$ approaches $5$, we are initially assuming that $x$ is not equal to $5$.  This means that we can replace $\dfrac{x-5}{x^2-25}$ with $\dfrac{1}{x+5}$ when computing the limit, as shown in the next step.
@@ -55,8 +55,8 @@ When computing the limit as $x$ approaches $5$, we are initially assuming that $
 \begin{align*}
 \lim_{x\to 5}\frac{x-5}{x^2-25}
 &= \lim_{x\to 5} \frac{1}{x+5} \\ \\
-&= \frac{1}{5+5}  && \hbox{Plug in $x=5$ (Property 7)}\\ \\
-&= \frac{1}{10} && \hbox{Simplify}
+&= \frac{1}{5+5}  && \text{plug in $x=5$ (Property 7)}\\ \\
+&= \frac{1}{10} && \text{simplify}
 \end{align*}
 ```
 
@@ -81,11 +81,11 @@ We simplify the function by multiplying and dividing by $\sqrt{x-6} + 2$, which 
 \begin{align*}
 \frac{\sqrt{x-6}-2}{x-10} \cdot \frac{\sqrt{x-6} + 2}{\sqrt{x-6} + 2}
 &= \frac{(\sqrt{x-6}-2)(\sqrt{x-6}+2)}{(x-10)(\sqrt{x-6}+2)}\\ \\
-&= \frac{\sqrt{x-6}\sqrt{x-6} + 2\sqrt{x-6} - 2\sqrt{x-6} - 4}{(x-10)(\sqrt{x-6}+2)} && \hbox{FOIL}\\ \\
-&= \frac{x-6 + \cancel{2\sqrt{x-6}} - \cancel{2\sqrt{x-6}} - 4}{(x-10)(\sqrt{x-6}+2)}&& \hbox{Simplify}\\ \\
+&= \frac{\sqrt{x-6}\sqrt{x-6} + 2\sqrt{x-6} - 2\sqrt{x-6} - 4}{(x-10)(\sqrt{x-6}+2)} && \text{FOIL}\\ \\
+&= \frac{x-6 + \cancel{2\sqrt{x-6}} - \cancel{2\sqrt{x-6}} - 4}{(x-10)(\sqrt{x-6}+2)}&& \text{simplify}\\ \\
 &= \frac{x- 6 - 4}{(x-10)(\sqrt{x-6}+2)}\\ \\
 &= \frac{x- 10}{(x-10)(\sqrt{x-6}+2)}\\ \\
-&= \frac{1}{\sqrt{x-6}+2} && \hbox{If $x\neq 10$}
+&= \frac{1}{\sqrt{x-6}+2} && \text{if $x\neq 10$}
 \end{align*}
 ```
 
@@ -94,8 +94,8 @@ We simplify the function by multiplying and dividing by $\sqrt{x-6} + 2$, which 
 \begin{align*}
 \lim_{x\to 10} \frac{\sqrt{x-6}-2}{x-10} 
 &= \lim_{x\to 10} \frac{1}{\sqrt{x-6}+2}\\ \\
-&= \frac{1}{\sqrt{10-6}+2} && \hbox{Plug in $x=10$}\\ \\
-&= \frac{1}{\sqrt{4}+2} && \hbox{Simplify}\\ \\
+&= \frac{1}{\sqrt{10-6}+2} && \text{plug in $x=10$}\\ \\
+&= \frac{1}{\sqrt{4}+2} && \text{simplify}\\ \\
 &= \frac{1}{4}
 \end{align*}
 ```

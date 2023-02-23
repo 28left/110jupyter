@@ -39,7 +39,7 @@ The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $
 :::::
 
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis representing the quantity of a good that is demanded, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a blue, decreasing, concave up curve representing how much consumers of the good will pay for a given quantity of the good, it is labeled p = d(x). 
+There is a horizontal x-axis representing the quantity of a good that is demanded, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The curve is labeled p = d(x). 
 ```
 
 ```{admonition} Definition
@@ -69,7 +69,7 @@ The supply curve, $p = s(x)$, shows the quantity supplied, $x$, at each price, $
 :::::
 
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis representing the quantity of a good that will be supplied, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red, increasing, concave up curve representing the price at which suppliers will sell certain amounts of the good, it is labeled p=s(x). 
+There is a horizontal x-axis representing the quantity of a good that will be supplied, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red curve increasing from left to right representing the price at which suppliers will sell certain amounts of the good. The curve is labeled p = s(x). 
 ```
 ```{admonition} Domain Considerations
 :class: info
@@ -89,6 +89,8 @@ Determine the appropriate domain for the demand function, $d(x) = 600 - 15x$.
 ~~&\rightarrow~~ 600 \geq 15x \\ 
 ~~&\rightarrow~~ 40 \geq x
 \end{align*}
+
+Therefore, the domain of the demand function $d(x) = 600-15x$ is $[0,40]$.
 ```
 
 
@@ -113,7 +115,7 @@ The market equilibrium is given where demand and supply curves intersect
 ```
 
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis representing the quantity of a good, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red, increasing, concave up curve representing the price at which suppliers will sell certain amounts of the good, it is labeled p=s(x). There is a blue, decreasing, concave up curve representing how much consumers of the good will pay for a given quantity of the good, it is labeled p = d(x). There is a point where the two curves meet, which is labeled “equilibrium price" along the p axis and “equilibrium quantity” along the x-axis.
+There is a horizontal x-axis representing the quantity of a good, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red curve increasing from left to right representing the price at which suppliers will sell certain amounts of the good.  The red curve is labeled p = s(x). There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The blue curve is labeled p = d(x). There is a point where the two curves meet, which is labeled “equilibrium price" along the p-axis and “equilibrium quantity” along the x-axis.
 ```
 
 ## Example 2

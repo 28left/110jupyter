@@ -22,17 +22,17 @@ kernelspec:
 ```{admonition} Definition
 :class: info
 
-The function $f(x)$ has the limit $L$ as $x$ increases without bound (as $x$ approaches infinity), 
+The limit of $f(x)$ as $x$ approaches (positive) infinity is equal to the finite number $L$, denoted by
 
 $$\lim_{x\to \infty} f(x) = L $$ 
 
-if $f(x)$ can be made as close to $L$ by taking $x$ large enough.
+if $f(x)$ can be made as close to $L$ as we want by taking $x$ large enough.
 
-Similarly, the function $f(x)$ has the limit $M$ as $x$ decreases without bound (as $x$ approaches negative infinity), 
+Similarly, the limit of $f(x)$ as $x$ approaches negative infinity is equal to the finite number $M$, denoted by 
 
 $$\lim_{x\to -\infty} f(x) = M $$ 
 
-if $f(x)$ can be made as close to $M$ by taking $x$  to be negative and sufficiently large in absolute value.
+if $f(x)$ can be made as close to $M$ as we want by taking $x$ to be negative and sufficiently large in absolute value.
 ```
 
 ## Example 1
@@ -75,7 +75,7 @@ $$\lim\limits_{x\to \infty} f(x) = 400.$$
 ```
 
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points 50, 100, 150, 200, 250, and 300 marked. There is a vertical y-axis with the points 100, 200, 300, and 400. There is a horizontal red dotted line at y = 400. The graph of a function is plotted on these axes. The function is increasing and switches from being concave up to concave down, rising at a slower pace the closer it gets to the red line.
+There is a horizontal x-axis with the points 50, 100, 150, 200, 250, and 300 marked. There is a vertical y-axis with the points 100, 200, 300, and 400. There is a horizontal red dotted line at y = 400. The graph of a function is plotted on these axes. The function is increasing and approaches the horizontal dotted line from below, but never reaches it.  The closer the graph of the function gets to the horizontal dotted line, the slower the graph of the function increases.
 ```
 
 
@@ -132,7 +132,7 @@ $$\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} 
 ```
 
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points -1 and 1 marked. The graph of the function y = 1/x is plotted on these axes. This function comes in just below zero from the left, decreases to negative infinity as x goes to zero, comes down from positive infinity and decreases towards zero as it goes off to the right.
+There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points -1 and 1 marked. The graph of the function y = 1/x is plotted on these axes. This function comes in just below the x-axis from the left, decreases to negative infinity as x approaches zero from the left.  The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
 ```
 
 ## Example 3
@@ -177,7 +177,7 @@ Furthermore, there is no discussion of the limit as $x$ approaches negative infi
 \end{document} 
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points 1 and 2 marked. The graph of the function one over square root x is plotted on these axes. The graph does not appear above negative x values, comes down from negative infinity at x=0, and decreases towards zero as it heads rightwards.
+There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points 1 and 2 marked. The graph of the function one over square root x is plotted on these axes. The graph does not appear above negative x values. The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
 ```
 
 ## Limits at Infinity of Rational Functions
@@ -186,7 +186,7 @@ For Rational Functions, a limit at infinity, whether it be $\displaystyle\lim_{x
 
 For infinite limits of Rational Functions, if the 
 - highest power is in the denominator, then the limit will equal $0$
-- highest power in the numerator, then the limit will equal $\pm\infty$ (DNE)
+- highest power is in the numerator, then the limit will equal $\pm\infty$ (DNE)
 - highest power is the same in both the numerator and denominator, then the limit will equal the ratio of the leading coefficients, i.e. the ratio of the coefficients in front of the highest powers in the numerator and the denominator.
 
 ## Example 4

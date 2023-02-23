@@ -62,7 +62,7 @@ Answer: $(-2x^3 + 13x + 4)/(x^3 + 5x^2 - 4x - 20)$, Domain: $(-\infty,-5) \cup (
 ```
 
 ## Exercise 6
-The demand and supply functions for {\em The Best of Math 110: A DVD Collection} are: 
+The demand and supply functions for *The Best of Math 110: A DVD Collection* are: 
 
 \begin{align*}
 p = d(x) &= -x^2 - 2x + 100\\

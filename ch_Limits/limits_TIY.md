@@ -106,12 +106,9 @@ Answer: DNE
 
 
 ## Exercise 10
-Penn State Learning produces a line of Math Genius robots. In order to
-produce them, PSL purchases a factory that costs \$35,000 up front. Each Math Genius
-robot costs \$70 to produce. If PSL produces an infinite amount of robots
-what is the average cost per robot?  What can we conclude from this answer?
+Penn State Learning produces a line of Math Genius robots. In order to produce them, PSL purchases a factory that costs \$35,000 up front. Each Math Genius robot costs \$70 to produce. If PSL produces an infinite number of robots, what is the average cost per robot?  What can we conclude from this answer?
 
-Hint: Average Cost = $\frac{\hbox{Total Cost}}{\hbox{Number of Units}}$
+Hint: Average Cost = $\frac{\textsf{Total Cost}}{\textsf{Number of Units}}$
 
 ```{dropdown} Show answer
 Answer: Average cost is \$70.  
