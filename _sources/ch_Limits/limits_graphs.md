@@ -72,7 +72,7 @@ There is a horizontal x-axis with the points -6, -5, -4, -4, -2, -1, 1, 2, 3, 4,
 Evaluate $\lim\limits_{x \to a^-} f(x)$, $\lim\limits_{x \to a^+} f(x)$, and $\lim\limits_{x \to a} f(x)$ for $a = -3, 0, 2$.
 
 
-```{admonition} $\mathbf{a=-3} \quad$ (Click to show solution)
+```{admonition} $\mathbf{a=-3}$
 :class: tip, dropdown
 
 The two one-sided limits both exist and are both equal to 2.
@@ -82,17 +82,17 @@ $$\lim_{x\to -3^-} f(x)=2  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to -3^+} f(x)=2$$
 Therefore, the limit exists and $\lim\limits_{x\to -3} f(x) = 2.$
 ```
 
-```{admonition} $\mathbf{a=0} \quad$ (Click to show solution)
+```{admonition} $\mathbf{a=0}$ 
 :class: tip, dropdown
 
 The limit from the left does not exist and the limit from the right exists and is equal to 0.
 
 $$\lim_{x\to 0^-} f(x) = -\infty ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 0^+} f(x)=0$$
 
-Therefore, $\lim\limits_{x\to 0} f(x)$ does not exist. Observation: If either of the one-sided limits does not exist (DNE) as $x$ approaches $a$, then the $\lim_{x\to a} f(x)$ does not exist.
+Therefore, $\lim\limits_{x\to 0} f(x)$ does not exist. Observation: If either of the one-sided limits does not exist (DNE) as $x$ approaches $a$, then the $\lim\limits_{x\to a} f(x)$ does not exist.
 ```
 
-```{admonition} $\mathbf{a=2} \quad$ (Click to show solution)
+```{admonition} $\mathbf{a=2}$
 :class: tip, dropdown
 
 The two one-sided limits both exist, but are not equal to each other.
@@ -156,12 +156,12 @@ Let $f(x)$ be defined by the following graph.
 \end{document}
 ```
 ```{dropdown} **Long Text Description**
-There is a horizontal x-axis with the points -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y-axis with the points -2, -2, 1, 2, 3, 4, 5,  and 6 marked. There is a dotted blue vertical line at x = 6. The graph of a discontinuous function is plotted on these axes. From left to right, the function decreases as it comes in from the left, increases from rounded corner at (-2,0) to a hollow point at (-1,1), increases from that point to another hollow point at (1,3), goes to a filled in point at (1,4), decreases from there to a filled in point at (4,1), increases from a hollow point at (4,4) up to infinity as x approaches the blue line, and comes up from negative infinity at the blue line as it goes off to the right.
+There is a horizontal x-axis with the points -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y-axis with the points -2, -2, 1, 2, 3, 4, 5,  and 6 marked. There is a blue dotted vertical line at x = 6. The graph of a discontinuous function is plotted on these axes. From left to right, the function decreases as it comes in from the left, increases from rounded corner at (-2,0) to a hollow point at (-1,1), increases from that point to another hollow point at (1,3), jumps to a filled in point at (1,4), jumps back to the hollow point at (1,3) and decreases from there to a filled in point at (4,1), jumps to a hollow point at (4,4) and increases up to infinity as x approaches the blue dotted line at x = 6 from the left, and comes up from negative infinity to the right of the blue dotted line and increases as it goes off to the right.
 ```
 Evaluate $\lim\limits_{x \to a^-} f(x)$, $\lim\limits_{x \to a^+} f(x)$, and $\lim\limits_{x \to a} f(x)$ for $a = -1, 1, 4, 6$.
 
 
-```{admonition} $\mathbf{a=-1} \quad$ (Click to show solution)
+```{admonition} $\mathbf{a=-1}$
 :class: tip, dropdown
 
 The two one-sided limits both exist and are both equal to 1.
@@ -171,7 +171,7 @@ $$\lim_{x\to -1^-} f(x)=1  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to -1^+} f(x)=1$$
 Therefore, the limit exists and $\lim\limits_{x\to -1} f(x) = 1$.  Observation: Although $f(-1)$ is not defined, the limit as $x$ approaches $-1$ still exists.
 ```
 
-```{admonition} $\mathbf{a=1} \quad$ (Click to show solution)
+```{admonition} $\mathbf{a=1}$
 :class: tip, dropdown
 
 The two one-sided limits both exist and are both equal to 3.
@@ -181,7 +181,7 @@ $$\lim_{x\to 1^-} f(x)=3  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 1^+} f(x)=3$$
 Therefore, the limit exists and $\lim\limits_{x\to 1} f(x) = 3$.  Observation: Although $f(1)$ is defined, it is not equal to the value of the limit as $x$ approaches $1$.
 ```
 
-```{admonition} $\mathbf{a=4} \quad$ (Click to show solution)
+```{admonition} $\mathbf{a=4}$
 :class: tip, dropdown
 
 The two one-sided limits both exist, but are not equal to each other.
@@ -192,7 +192,7 @@ Therefore, $\lim\limits_{x\to 4} f(x)$ does not exist.
 ```
 
 
-```{admonition} $\mathbf{a=6} \quad$ (Click to show solution)
+```{admonition} $\mathbf{a=6}$
 :class: tip, dropdown
 
 Neither one-sided limit exists.

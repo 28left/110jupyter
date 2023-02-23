@@ -20,11 +20,11 @@ kernelspec:
 
 ```{admonition} Definition
 :class: info
-The function $f(x)$ has a limit of L as $x$ approaches $a$,
+The limit of $f(x)$ as $x$ approaches $a$ is equal to the finite number $L$, denoted by
 
 $$ \lim_{x\to a} f(x) = L$$
 
-if the value of $f(x)$ can be made as close to the number $L$ as we please by taking x values *sufficiently close* to, but not equal to, $a$.
+if the value of $f(x)$ can be made as close to $L$ as we want by taking x values *sufficiently close* to, but not equal to, $a$.
 ```
 
 +++
@@ -37,7 +37,7 @@ Keep in mind that the value of a limit does not depend on the value of the funct
 ````{admonition} Exercise
 :class: warning
 
-Below, you see a table in which we evaluate a function $f(x)$ for values of $x$ that are closer and closer to $1$ (but **not equal to** $1$). What do the values $f(x)$ suggest $\lim_{x\to 1} f(x)$ would be?
+Below, you see a table in which we evaluate a function $f(x)$ for values of $x$ that are closer and closer to $1$ (but **not equal to** $1$). What do the values $f(x)$ suggest $\lim\limits_{x\to 1} f(x)$ would be?
 
 :::{card}
 :width: 50%
@@ -51,10 +51,10 @@ Below, you see a table in which we evaluate a function $f(x)$ for values of $x$ 
 :::
 ````
 
-```{admonition} Click the button to show solution.
+```{admonition} Show solution
 :class: tip, dropdown
 The values $f(x)$ get closer to $4$ as $x$ gets closer to $1$.
-This suggests that $\lim_{x \to 1} f(x) = 4$.
+This suggests that $\lim\limits_{x \to 1} f(x) = 4$.
 ```
 
 +++
@@ -66,17 +66,17 @@ This suggests that $\lim_{x \to 1} f(x) = 4$.
 ```{admonition} Definition
 :class: info
 
-The function $f(x)$ has the **right-hand limit** $L$ as $x$ approaches $a$ from the right, 
+The limit of $f(x)$ as $x$ approaches $a$ *from the right* is equal to the finite number $L$, denoted by
 
 $$\lim_{x\to a^+} f(x) = L $$ 
 
-if the values of $f(x)$ can be made as close to $L$ as we please by taking $x$  sufficiently close to (but not equal to) $a$ and to the right of $a$ (i.e., $x>a$).
+if the values of $f(x)$ can be made as close to $L$ as we want by taking $x$ *sufficiently close* to (but not equal to) $a$ and to the right of $a$ (i.e., $x>a$).
 
-Similarly, the function $f(x)$ has the **left-hand limit** $M$ as $x$ approaches $a$ from the left, 
+Similarly, the limit of $f(x)$ as $x$ approaches $a$ *from the left* is equal to the finite number $M$, denoted by
 
 $$\lim_{x\to a^-} f(x) = M$$ 
 
-if the values of $f(x)$ can be made as close to $M$ as we please by taking $x$ sufficiently close to (but not equal to) $a$ and to the left of $a$ (i.e., $x<a$).
+if the values of $f(x)$ can be made as close to $M$ as we want by taking $x$ *sufficiently close* to (but not equal to) $a$ and to the left of $a$ (i.e., $x<a$).
 ```
 
 
@@ -101,15 +101,15 @@ Below, you see a table in which we evaluate a function $f(x)$ for values of $x$ 
 | 1.100000 | 1.630000 |
 :::
 
-What do the values $f(x)$ suggest $\lim_{x\to 1^+} f(x)$ and $\lim_{x\to 1^-} f(x)$  would be?
+What do the values $f(x)$ suggest $\lim\limits_{x\to 1^+} f(x)$ and $\lim\limits_{x\to 1^-} f(x)$  would be?
 ````
 
 
-```{admonition} Click the button to show solution.
+```{admonition} Show solution
 :class: tip, dropdown
-If approaching from the left ($x< 1$), the values $f(x)$ get closer to $2$ as $x$ gets closer to $1$. This suggests that $\lim_{x \to 1^-} f(x) = 2$.
+If approaching from the left ($x< 1$), the values $f(x)$ get closer to $2$ as $x$ gets closer to $1$. This suggests that $\lim\limits_{x \to 1^-} f(x) = 2$.
 
-If approaching from the right ($x> 1$), the values $f(x)$ get closer to $1$ as $x$ gets closer to $1$. This suggests that $\lim_{x \to 1^+} f(x) = 1$.
+If approaching from the right ($x> 1$), the values $f(x)$ get closer to $1$ as $x$ gets closer to $1$. This suggests that $\lim\limits_{x \to 1^+} f(x) = 1$.
 ```
 
 

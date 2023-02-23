@@ -78,8 +78,8 @@ In this case, since we are approaching 6 from the left, we can assume that $x<6$
 \begin{align*}
 \lim_{x\to 6^{-}} h(x) 
 &= \lim_{x\to 6^-} x^2-4x-12\\ \\
-&= 6^2-4(6)-12 && \text{Plug in $x=6$ (Property 7)}\\ \\
-&= 36-24-12 && \text{Simplify}\\ \\
+&= 6^2-4(6)-12 && \text{plug in $x=6$ (Property 7)}\\ \\
+&= 36-24-12 && \text{simplify}\\ \\
 &= 0
 \end{align*}
 ```
@@ -90,15 +90,15 @@ In this case, since we are approaching 6 from the right, we can assume that $x>6
 \begin{align*}
 \lim_{x\to 6^{+}} h(x) 
 &= \lim_{x\to 6^+} x^2-5x-6\\ \\
-&= 6^2-5(6)-6  && \text{Plug in $x=6$ (Property 7)}\\ \\
-&= 36-30-6 && \text{Simplify}\\ \\
+&= 6^2-5(6)-6  && \text{plug in $x=6$ (Property 7)}\\ \\
+&= 36-30-6 && \text{simplify}\\ \\
 &= 0
 \end{align*}
 ```
 
 ```{dropdown} **Step 3:** Check to see if the two limits are equal.
 
-Since $\displaystyle \lim_{x\to 6^-} h(x) = \lim_{x\to 6^+} h(x) = 0$, we conclude that the limit exists and
+Since $\displaystyle \lim_{x\to 6^-} h(x) = 0$ and $\displaystyle \lim_{x\to 6^+} h(x) = 0$, we conclude that the limit exists and
 
 $$\lim_{x\to 6} h(x) = 0.$$
 ```
