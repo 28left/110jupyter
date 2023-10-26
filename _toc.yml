@@ -75,6 +75,7 @@ parts:
     - file: ch_Exponential/exponential_laws.md
     - file: ch_Exponential/exponential_logarithmic_diff.md
     - file: ch_Exponential/exponential_TIY.md
+    - file: ch_Exponential/exponential_logistic.md
   - file: ch_Compoundinterest/compoundinterest_
     sections:
     - file: ch_Compoundinterest/compoundinterest_notation.md
