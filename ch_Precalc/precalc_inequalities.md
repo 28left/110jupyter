@@ -34,7 +34,7 @@ In order to find all values of $x$ such that $f(x)>0$ or $f(x)<0$, use the follo
 Find all values of $x$ such that $x^2 + 2x - 3 > 0$.
 
 
-```{dropdown} **Step 1:** Find all values of $x$ such that $x^2 + 2x - 3 = 0$.
+```{dropdown} **Step 1:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $x^2 + 2x - 3 = 0$.
 
 Use the AC method to factor $x^2 + 2x - 3$.
 
@@ -146,7 +146,7 @@ Find all values of $x$ such that $\dfrac{x^2(x^2+3)}{(4-x^2)^3} < 0$.
 
 
 
-```{dropdown} **Step 1:** Find all $x$ such that $\frac{x^2(x^2+3)}{(4-x^2)^3} = 0$ or is not defined. 
+```{dropdown} **Step 1:** &nbsp; Find all &nbsp; $x$ &nbsp; such that &nbsp; $\frac{x^2(x^2+3)}{(4-x^2)^3} = 0$ &nbsp; or is not defined. 
 
 $\frac{x^2(x^2+3)}{(4-x^2)^3} = 0$ whenever the numerator is equal to zero, which only happens when $x=0$ (since $x^2+3$ is never equal to zero).
 
