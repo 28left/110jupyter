@@ -80,7 +80,7 @@ In many practical problems, the domain of a function is dictated by the nature o
 Determine the domain and range of $f(x) = x^2 - 1$.  
 
 
-```{dropdown} **Step 1:** Determine the domain of $f$.
+```{dropdown} **Step 1:** &nbsp; Determine the domain of &nbsp; $f$.
 
 Since $f$ does not include any division, square roots, or logarithms, its domain consists of all real numbers, $(-\infty,\infty)$.
 ```
@@ -88,7 +88,7 @@ Since $f$ does not include any division, square roots, or logarithms, its domain
 
 
 
-```{dropdown} **Step 2:** Determine the range of $f$. 
+```{dropdown} **Step 2:** &nbsp; Determine the range of &nbsp; $f$. 
 
 Since $x^2 \geq 0$ for all real $x$, by subtracting $1$ from both sides of the inequality, we obtain $f(x) = x^2 - 1 \geq -1$ for all real $x$.  Therefore, the range of $f$ is $[-1,\infty)$.
 ```
@@ -146,17 +146,17 @@ Determine the domain of
 $$g(x) = \dfrac{1}{\sqrt{x}}.$$
 
 
-```{dropdown} **Step 1:** Consider how the square root restricts the domain.
+```{dropdown} **Step 1:** &nbsp; Consider how the square root restricts the domain.
 
 Since $g$ includes the square root function, $\sqrt{x}$, we must assume that $x\geq 0$.
 ```
 
-```{dropdown} **Step 2:** Consider how division restricts the domain.
+```{dropdown} **Step 2:** &nbsp; Consider how division restricts the domain.
 
 Since $g$ includes division, we must exclude any value of $x$ that makes the denominator equal to zero.  In this example, the denominator equals zero only when $x=0$.
 ```
 
-```{dropdown} **Step 3:** Determine the domain of $g$.
+```{dropdown} **Step 3:** &nbsp; Determine the domain of &nbsp; $g$.
 
 Based on the previous two steps, the domain of $g$ consists of all real numbers greater than zero, which can be written in interval notation as $(0,\infty)$.
 ```
@@ -189,7 +189,7 @@ Let $f$ and $g$ be functions with domains $A$ and $B$, respectively.  The sum, d
 Let $f(x) = \sqrt{x + 2}$ and $g(x) = \sqrt{5-x}$.  Determine the domain of $f+g$, $f-g$, $fg$, and $f/g$.  Use interval notation to express each domain.
 
 
-```{dropdown} **Step 1:** Determine the domain of $f$ and $g$ separately.
+```{dropdown} **Step 1:** &nbsp; Determine the domain of &nbsp; $f$ &nbsp; and &nbsp; $g$ &nbsp; separately.
 
 - The domain of $f$ consists of all $x$ such that $x+2 \geq 0$, or equivalently, $x \geq -2$.  Therefore, the domain of $f$ is $[-2,\infty)$.
 
@@ -198,13 +198,13 @@ Let $f(x) = \sqrt{x + 2}$ and $g(x) = \sqrt{5-x}$.  Determine the domain of $f+g
 
 
 
-```{dropdown} **Step 2:** Determine the domain of $f+g$, $f-g$, and $fg$.
+```{dropdown} **Step 2:** &nbsp; Determine the domain of &nbsp; $f+g$, &nbsp; $f-g$, and &nbsp; $fg$.
 
 The domain of $f+g$, $f-g$, and $fg$ is the intersection of $[-2,\infty)$ (i.e., $-2 \leq x$) and $(-\infty,5]$ (i.e., $x \leq 5$).  In other words, the domain of all three functions consists of values of $x$ such that $-2 \leq x \leq 5$, or equivalently, $[-2,5]$.
 ```
 
 
-```{dropdown} **Step 3:** Determine the values of $x$ such that $g(x) = 0$.
+```{dropdown} **Step 3:** &nbsp; Determine the values of &nbsp; $x$ such that &nbsp; $g(x) = 0$.
 
 Set $g(x) = 0$.
 
@@ -218,7 +218,7 @@ And finally, adding $5$ to both sides yields $x=5$ (i.e., $g(x) = 0$ only when $
 ```
 
 
-```{dropdown} **Step 4:** Determine the domain of $f/g$.
+```{dropdown} **Step 4:** &nbsp; Determine the domain of &nbsp; $f/g$.
 
 The domain of $f/g$ consists of $[-2,5]$, excluding all values of $x$ such that $g(x) = 0$.  In the previous step, we determined that the only value of $x$ that satisfies $g(x) = 0$ is $x=5$.  Therefore, the domain of $f/g$ is $[-2,5)$.
 ```

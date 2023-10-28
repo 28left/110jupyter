@@ -82,7 +82,7 @@ For any demand or supply function, the domain should be restricted so that both 
 
 Determine the appropriate domain for the demand function, $d(x) = 600 - 15x$.
 
-```{dropdown} **Step 1:** Find the values of $x\geq 0$ such that $p = d(x) \geq 0$.
+```{dropdown} **Step 1:** &nbsp; Find the values of &nbsp; $x\geq 0$ &nbsp; such that &nbsp; $p = d(x) \geq 0$.
 
 \begin{align*}
 600 - 15x \geq 0 
@@ -129,7 +129,7 @@ p = s(x) &= 2x + 32
 
 where $x$ is the number of thousands of boxes and $p$ is in dollars.  Determine the market equilibrium values.
 
-```{dropdown} **Step 1:** Determine the equilibrium quantity.
+```{dropdown} **Step 1:** &nbsp; Determine the equilibrium quantity.
 
 Since both demand and supply are written as functions of $x$, we'll first solve for the equilibrium quantity by setting the two functions equal to each other. 
 
@@ -148,7 +148,7 @@ which is equal to zero when $x=-8$ or when $x=5$.  But since $x$ must be nonnega
 
 
 
-```{dropdown} **Step 2:** Determine the equilibrium price.
+```{dropdown} **Step 2:** &nbsp; Determine the equilibrium price.
 
 Evaluate demand and supply functions at $x=5$ to compute the equilibrium price.
 

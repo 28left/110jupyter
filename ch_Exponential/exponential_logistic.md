@@ -96,7 +96,7 @@ Approximate each of the following values using the above model.
 
 <br>
 
-```{dropdown} **Step 1:** Write the logistic growth model in the standard form.
+```{dropdown} **Step 1:** &nbsp; Write the logistic growth model in the standard form.
 
 Recall that the standard form of a logistic growth model is
 
@@ -114,7 +114,7 @@ Note that the constant term in the denominator must be equal to one.  Since the 
 Therefore, the given function corresponds to a logistic growth model with $A=27.2$, $B = 9.4$, and $k = 0.2$.
 ```
 
-```{dropdown} **Step 2:** Compute the number of tickets sold on opening day.
+```{dropdown} **Step 2:** &nbsp; Compute the number of tickets sold on opening day.
 
 This corresponds to the initial value of the logistic growth model.
 
@@ -132,7 +132,7 @@ since $e^0 = 1$.
 ```
 
 
-```{dropdown} **Step 3:** Compute the number of tickets sold during the entire theatrical run. 
+```{dropdown} **Step 3:** &nbsp; Compute the number of tickets sold during the entire theatrical run. 
 
 This corresponds to the carrying capacity of the logistic growth model.
 
@@ -148,7 +148,7 @@ Alternatively, the carrying capacity can be computed by evaluating $\lim\limits_
 \end{align*} 
 ```
 
-```{dropdown} **Step 4:** Determine the day on which tickets sales are increasing at the fastest rate.
+```{dropdown} **Step 4:** &nbsp; Determine the day on which tickets sales are increasing at the fastest rate.
 
 This corresponds to the location of the inflection point of the logistic growth model.
 
@@ -160,7 +160,7 @@ which means that ticket sales are increasing the fastest approximately 11.2 days
 ```
 
 
-```{dropdown} **Step 5:** Determine the day on which the number of tickets sold reached 20 million.
+```{dropdown} **Step 5:** &nbsp; Determine the day on which the number of tickets sold reached 20 million.
 
 To do so, set $s(t)$ equal to 20 and solve for $t$.
 

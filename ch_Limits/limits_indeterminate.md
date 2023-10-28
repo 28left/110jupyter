@@ -30,7 +30,7 @@ To evaluate an indeterminate form, simplify the ratio $f(x)/g(x)$ by factoring o
 
 Evaluate $\lim\limits_{x\to 5} \dfrac{x-5}{x^2-25}.$
 
-```{dropdown} **Step 1:** Evaluate the limit of numerator and denominator.
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of numerator and denominator.
 
 We evaluate these limits by plugging in $x=5$:
 
@@ -39,7 +39,7 @@ $$\lim_{x\to 5} x-5 = 5 - 5 = 0 ~~~~ \text{and} ~~~~~ \lim_{x\to 5} x^2 - 25 = 5
 This means that the given limit is an indeterminate form of type $0/0$, so we need to do more work to evaluate it.
 ```
 
-```{dropdown} **Step 2:** Factor numerator and/or denominator and simplify.
+```{dropdown} **Step 2:** &nbsp; Factor numerator and/or denominator and simplify.
 
 \begin{align*}
 \frac{x-5}{x^2-25}
@@ -50,7 +50,7 @@ This means that the given limit is an indeterminate form of type $0/0$, so we ne
 When computing the limit as $x$ approaches $5$, we are initially assuming that $x$ is not equal to $5$.  This means that we can replace $\dfrac{x-5}{x^2-25}$ with $\dfrac{1}{x+5}$ when computing the limit, as shown in the next step.
 ```
 
-```{dropdown} **Step 3:** Evaluate the limit using the simplified function.
+```{dropdown} **Step 3:** &nbsp; Evaluate the limit using the simplified function.
 
 \begin{align*}
 \lim_{x\to 5}\frac{x-5}{x^2-25}
@@ -65,7 +65,7 @@ When computing the limit as $x$ approaches $5$, we are initially assuming that $
 
 Evaluate $\lim\limits_{x\to 10} \dfrac{\sqrt{x-6}-2}{x-10}$.
 
-```{dropdown} **Step 1:** Evaluate the limit of numerator and denominator.
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of numerator and denominator.
 
 Plug in $x=10$:
 
@@ -74,7 +74,7 @@ $$\lim_{x\to 10} \sqrt{x-6}-2 = \sqrt{10-6} - 2 = 0 ~~~~ \hbox{and} ~~~~~ \lim_{
 This means that the given limit is an indeterminate form of type $0/0$, so we need to do more work to evaluate it.
 ```
 
-```{dropdown} **Step 2:** Simplify the function.
+```{dropdown} **Step 2:** &nbsp; Simplify the function.
 
 We simplify the function by multiplying and dividing by $\sqrt{x-6} + 2$, which is the conjugate of $\sqrt{x-6} - 2$.
 
@@ -89,7 +89,7 @@ We simplify the function by multiplying and dividing by $\sqrt{x-6} + 2$, which 
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Evaluate the limit using the simplified function.
+```{dropdown} **Step 3:** &nbsp; Evaluate the limit using the simplified function.
 
 \begin{align*}
 \lim_{x\to 10} \frac{\sqrt{x-6}-2}{x-10} 

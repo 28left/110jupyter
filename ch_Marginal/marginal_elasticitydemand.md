@@ -45,7 +45,7 @@ $$
 
 where $p$ is the price (in dollars) of a lamp.  Find the price elasticity of demand, $E(p)$.
 
-```{dropdown} **Step 1:** Compute $f'(p)$.
+```{dropdown} **Step 1:** &nbsp; Compute &nbsp; $f'(p)$.
 
 \begin{align*}
 f'(p) 
@@ -54,7 +54,7 @@ f'(p)
 \end{align*}
 ```
 
-```{dropdown} **Step 2:** Compute $E(p)$.
+```{dropdown} **Step 2:** &nbsp; Compute &nbsp; $E(p)$.
 
 \begin{align*}
 E(p) 
@@ -106,21 +106,21 @@ $$
 
 where $p$ is the price of a lamp.  Compute $E(10)$ and $E(20)$ and interpret the results.
 
-```{dropdown} **Step 1:** Recall the elasticity of demand.
+```{dropdown} **Step 1:** &nbsp; Recall the elasticity of demand.
 
 In {ref}`marginal:elasticitydemand:example1`, we computed the elasticity of demand for $f$ as
 
 $$E(p) = \frac{15p}{500 - 15p}$$
 ```
 
-```{dropdown} **Step 2:** Evaluate $E(10)$ and interpret.
+```{dropdown} **Step 2:** &nbsp; Evaluate &nbsp; $E(10)$ &nbsp; and interpret.
 
 $$E(10) = \frac{150}{500 - 150} = \frac{150}{350} = \frac{3}{7}$$
 
 Since $E(10) < 1$, demand is inelastic when the price of a lamp is \$10.
 ```
 
-```{dropdown} **Step 3:** Evaluate $E(20)$ and interpret.
+```{dropdown} **Step 3:** &nbsp; Evaluate &nbsp; $E(20)$ &nbsp; and interpret.
 
 $$E(20) = \frac{300}{500 - 300} = \frac{300}{200} = \frac{3}{2}$$
 

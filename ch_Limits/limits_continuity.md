@@ -62,7 +62,7 @@ f(x) =
 \end{cases}
 $$
 
-```{dropdown} **Step 1:** Determine if $f(x)$ is defined at $x=1$.
+```{dropdown} **Step 1:** &nbsp; Determine if &nbsp; $f(x)$ &nbsp; is defined at &nbsp; $x=1$.
 
 When $x=1$, $f(x)$ is defined by $f(x) = -x^3+x^2-1$.  Therefore,
 
@@ -77,7 +77,7 @@ Since $f(x)$ is defined at $x=1$, we now check to see if the limit exists.
 
 
 
-```{dropdown} **Step 2:** Determine if the limit at $x=1$ exists.
+```{dropdown} **Step 2:** &nbsp; Determine if the limit at &nbsp; $x=1$ &nbsp; exists.
 
 For the left-hand limit, $x\to1^-$ means $x< 1$, and therefore $f(x) = -x^3+x^2-1$.
 
@@ -104,7 +104,7 @@ Since the limit exists, we now check to see if the value of the function and the
 ```
 
 
-```{dropdown} **Step 3:** Compare $f(1)$ and $\lim\limits_{x \to 1} f(x)$.
+```{dropdown} **Step 3:** &nbsp; Compare &nbsp; $f(1)$ &nbsp; and &nbsp; $\lim\limits_{x \to 1} f(x)$.
 
 Both the function at $x=1$ and the limit of the function as $x$ approaches $1$ are equal to $-1$.
 
@@ -112,7 +112,7 @@ $$f(1) = -1 = \lim_{x\to 1}f(x)$$
 ```
 
 
-```{dropdown} **Step 4:** Conclusion
+```{dropdown} **Step 4:** &nbsp; Conclusion
 
 Since $f(1)$ is defined, $\lim\limits_{x \to 1} f(x)$ exists, and $\lim\limits_{x \to 1}f(x) = f(1)$,
 we conclude that $f(x)$ is continuous at $x=1$.
@@ -125,7 +125,7 @@ Find the discontinuities of $f(x)$ where
 
 $$f(x) = \frac{2x^4-2x^3-12x^2}{x^4-9x^2}.$$
 
-```{dropdown} **Step 1:** Factor the denominator.
+```{dropdown} **Step 1:** &nbsp; Factor the denominator.
 
 \begin{align*}
 x^4-9x^2
@@ -135,7 +135,7 @@ x^4-9x^2
 ```
 
 
-```{dropdown} **Step 2:** Set each factor of the denominator equal to zero.
+```{dropdown} **Step 2:** &nbsp; Set each factor of the denominator equal to zero.
 
 \begin{align*}
 x^2 &= 0 ~~~~\hbox{ when $x=0$}\\
@@ -164,7 +164,7 @@ x^2 + kx - 7 & \hbox{ if $x \geq 2$}
 $$
 
 
-```{dropdown} **Step 1:** Evaluate $\displaystyle{\lim_{x \to 2}}  f(x)$ from left and right.
+```{dropdown} **Step 1:** &nbsp; Evaluate &nbsp; $\displaystyle{\lim_{x \to 2}}  f(x)$ &nbsp; from left and right.
 
 **Left**
 \begin{align*}
@@ -182,7 +182,7 @@ $$
 \end{align*}
 ```
 
-```{dropdown} **Step 2:** Set the left and right limits equal to each other.
+```{dropdown} **Step 2:** &nbsp; Set the left and right limits equal to each other.
 
 $$2+k = 2k-3$$
 
