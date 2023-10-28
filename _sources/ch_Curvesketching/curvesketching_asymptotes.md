@@ -101,7 +101,7 @@ The following graph is an example of a function that has vertical asymptotes at 
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis with the points -1 and 3 marked. There is a vertical y axis. There is a grid in the background of 1/2 by 1/2 squares. There is a blue dashed horizontal line at y = 1. There is a red dashed vertical line at x = -1. There is a red dashed vertical line at x = 3. The graph of a function is plotted on these axes. From left to right, the function decreases from the blue dashed line and goes to negative infinity as it approaches the red dashed line at x = -1, comes down from positive infinity to the right of -1, goes down to negative infinity as it approaches the red dashed line at x = 3, and comes down from positive infinity at x = 3 towards the blue dashed line as it heads off to the right.
 ```
 ## Example 2

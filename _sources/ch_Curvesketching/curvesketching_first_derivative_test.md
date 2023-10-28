@@ -55,7 +55,7 @@ width: 400px
 Interval analysis of $f'(x) = \dfrac{2x}{3(x^2 - 1)^{2/3}}$
 ```
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, which are negative to the left of negative one, negative between one and zero, positive between zero and one, and positive to the right of one.
 
 ```
@@ -90,7 +90,7 @@ width: 400px
 Interval analysis of $f'(x) = 3(x+4)(x-2)$.
 ```
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with positive to the left of negative four, negative from negative four and two, and positive to the right of two.
 
 

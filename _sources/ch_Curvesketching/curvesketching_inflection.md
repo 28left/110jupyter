@@ -66,7 +66,7 @@ An inflection point occurs at a point on a graph where the concavity changes fro
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 The graphs of two functions are presented without axes. 
 
 The left hand function is increasing and concave down, begins decreasing and being concave down at a rounded corner, passes through a red marked point, is decreasing and concave up, and is increasing and concave up after a rounded corner.
@@ -140,7 +140,7 @@ Sign analysis of $f''(x) = \frac{6(x - 1)(x+1)(x^2+1)}{x^3}$.
 Notice that $f''(x)$ changes sign at $x=-1$, $x=0$, and $x=1$, however, $x=0$ is not in the domain of $f$ and cannot correspond to an inflection point.  Therefore, $(-1, -8)$ and $(1,8)$ are the only inflection points of $f$.
 ````
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with negative to the left of negative one, positive between negative one and zero, negative between zero and one, and positive to the right of one.
 
 ```
@@ -157,7 +157,7 @@ A **point of diminishing returns** is an inflection point appearing where a func
 :height: 300px
 ```
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis. There is a vertical y axis. There is an increasing curve plotted on these axes. There is a point, colored red and labeled “Point of Diminishing Returns” along the curve. To the left of this point, the curve is concave up. To the right, this curve is concave down.
 ```
 
@@ -172,7 +172,7 @@ A **point of increasing returns** is an inflection point appearing where a funct
 :height: 300px
 ```
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis. There is a vertical y axis. There is an increasing curve plotted on these axes. There is a point, colored red and labeled “Point of Increasing Returns” along the curve. To the left of this point, the curve is concave down. To the right, this curve is concave up.
 ```
 
@@ -215,7 +215,7 @@ Sign analysis of $f''(x) = 18(x-2)$.
 
 Notice that $f''(x) = 0$ only when $x=2$.  Furthermore, $f'(2)$ is positive, which means that $f(x)$ is increasing near $x=2$.  And lastly, since $f''(x)$ changes sign from negative to positive at $x=2$, $f(x)$ has a point of increasing returns at $x=2$.
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with negative to the left of two, and positive to the right of two.
 ```
 

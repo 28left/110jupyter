@@ -99,7 +99,7 @@ kernelspec:
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal p axis and a vertical y-axis. A concave down quadratic looking function R(p) is graphed on these axes. R(p) starts out at the origin increasing and concave down, comes to a corner at a point labeled "maximum revenue," and is decreasing and concave down and decreasing from there to a p intercept. There is a vertical dotted line between the a point on the p-axis labeled "E(p) = 1" and the "Maximum Revenue" point. The area to the left of this line and below the graph is labeled "Inelastic Demand". The area to the right of the line and below the graph is labeled "Elastic Demand". The length of line between the origin and "E(p) = 1" is labeled E(p) < 1 and the length of line between "E(p) = 1" and the p-intercept on the right is labeled "E(p) > 1."
 ```
 ## Example 1

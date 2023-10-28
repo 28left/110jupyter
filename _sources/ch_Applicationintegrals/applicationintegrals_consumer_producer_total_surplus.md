@@ -35,7 +35,7 @@ width: 600px
 Consumer surplus
 ```
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis with the point x bar marked. There is a vertical p axis with the point p bar marked. There is a decreasing, concave up curve plotted above the x-axis, labeled p = D(x). There is a vertical line from the point x bar that meets a horizontal line from the point p bar along this curve. The region between the curve, the horizontal line from p bar, and the p axis is shaded yellow and labeled “Consumer Surplus”
 ```
 
@@ -60,7 +60,7 @@ width: 600px
 ---
 Producer surplus
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis with the point x bar marked. There is a vertical p axis with the point p bar marked. There is an increasing, concave up curve plotted above the x-axis, labeled p = S(x). There is a vertical line from the point x bar that meets a horizontal line from the point p bar along this curve. The region between the curve, the horizontal line from p bar, and the p axis is shaded yellow and labeled “Producer Surplus”
 ```
 ## Example 1
@@ -101,7 +101,7 @@ align: center
 ---
 ```
 ````
-``` {dropdown} **Long Text Description**
+``` {dropdown} Long Text Description
 There is a horizontal x axis with the point x=6 marked. There is a vertical p axis with the points 2, 26, and 44 marked. The increasing line with p-intercept 2: p=4x+2 is plotted on these axes. The decreasing line with p-intercept 44: p = -3x+44 is plotted on these axes. There is a horizontal line p = 26 which meets both plotted lines and the vertical line x = 6 at the point (6,26). The region between the horizontal line p=26, the decreasing line p=-3x+44, and the p axis is shaded yellow.
 
 ```
@@ -121,7 +121,7 @@ align: center
 ---
 ```
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis with the point x=6 marked. There is a vertical p axis with the points 2, 26, and 44 marked. The increasing line with p-intercept 2: p=4x+2 is plotted on these axes. The decreasing line with p-intercept 44: p = -3x+44 is plotted on these axes. There is a horizontal line p = 26 which meets both plotted lines and the vertical line x = 6 at the point (6,26). The region between the horizontal line p=26, the increasing line p=4x+2, and the p axis is shaded yellow.
 ```
 ## Total Surplus
@@ -146,7 +146,7 @@ width: 600px
 ---
 Total surplus
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis with the point x bar marked. There is a vertical p axis. The increasing, concave up curve p = S(x) is plotted. The decreasing, concave up curve p = D(x) is plotted. There is a vertical beginning x bar and meeting both curves directly above it. The two curves meet slightly to the right of the vertical line at x bar. The region between the curve p = S(x), the vertical line at x bar, the curve p = D(x), and the p axis is shaded yellow and labeled “Total Surplus”.
 
 ```
@@ -178,7 +178,7 @@ align: center
 ---
 ```
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis with the point x=6 marked. There is a vertical p axis with the points 2, 26, and 44 marked. The increasing line with p-intercept 2: p=4x+2 is plotted on these axes. The decreasing line with p-intercept 44: p = -3x+44 is plotted on these axes. There is a vertical line x = 6 which meets both plotted lines at the point (6,26). The triangular region between the line p = 4x+2, p = -3x + 44, and the p axis is shaded yellow.
 
 ```

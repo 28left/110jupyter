@@ -46,7 +46,7 @@ alt: Illustration of domain and range of a function
 ---
 Illustration of the domain and the range of a function
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A diagram with two ovals, one on the left marked with A, labeled domain, and one on the right marked B and labeled range. There is an arrowed line representing the function f beginning at a point labeled x in the left oval, and ending in a point labeled f(x) in the right oval.
 ```
 

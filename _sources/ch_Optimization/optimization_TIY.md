@@ -114,7 +114,7 @@ A printer needs to make a poster that will have a total area of $200$ in$^2$ and
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There are two rectangles, one inside of the other. The smaller rectangle is colored in yellow, and the space inside the larger rectangle but outside the smaller is not colored. The length between the top of the yellow rectangle and the top of the larger one is labelled as 2.5 inches. The length between the left side of the yellow rectangle and the left side of the larger rectangle is labelled 1 inch. The length between the bottom of the yellow rectangle and the bottom of the larger rectangle is labelled as 1.5 inches.
 ```
 ```{dropdown} Show answer

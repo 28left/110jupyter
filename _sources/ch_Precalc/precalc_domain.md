@@ -34,7 +34,7 @@ The domain of a function is typically written as a union of intervals.  In this 
 
 ![Table of interval types](../images/pic_precalc_intervaltypes.png)
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A table of three columns, expressing the relationship between inequalities of real numbers, written in the leftmost column, diagrams on the number line in the center column, and interval notation in the rightmost column. The rows read as follows:
 Row 1: a is less than or equal to x which is less than or equal to b. A solid line segment connecting points a and b in the number line, with filled circles at both ends. [a,b]
 Row 2: a is less than or equal to x which is less than b. A line segment in the number line connecting a filled circle at a with an unfilled circle at b. [a,b)

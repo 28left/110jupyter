@@ -65,7 +65,7 @@ Let $f(x)$ be defined by the following graph.
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points -6, -5, -4, -4, -2, -1, 1, 2, 3, 4, 5, and 6 marked. There is a vertical y-axis with the points -4, -3, -2, -1, 1, 2, 3, and 4. The graph of a discontinuous function is plotted on these axes. From left to right, the function decreases from positive infinity and goes down to negative infinity as x moves right towards 0, the function increases linearly from a filled in point at (0,0) to a hollow point at (2,2), jumps to a filled in point at (2,-2), continues from a hollow point at (2,-4) upward to positive infinity on the right.
 ```
 
@@ -155,7 +155,7 @@ Let $f(x)$ be defined by the following graph.
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y-axis with the points -2, -2, 1, 2, 3, 4, 5,  and 6 marked. There is a blue dotted vertical line at x = 6. The graph of a discontinuous function is plotted on these axes. From left to right, the function decreases as it comes in from the left, increases from rounded corner at (-2,0) to a hollow point at (-1,1), increases from that point to another hollow point at (1,3), jumps to a filled in point at (1,4), jumps back to the hollow point at (1,3) and decreases from there to a filled in point at (4,1), jumps to a hollow point at (4,4) and increases up to infinity as x approaches the blue dotted line at x = 6 from the left, and comes up from negative infinity to the right of the blue dotted line and increases as it goes off to the right.
 ```
 Evaluate $\lim\limits_{x \to a^-} f(x)$, $\lim\limits_{x \to a^+} f(x)$, and $\lim\limits_{x \to a} f(x)$ for $a = -1, 1, 4, 6$.
