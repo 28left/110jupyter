@@ -109,7 +109,7 @@ Sketch the graph of the line defined by $y + 2 = \dfrac{1}{4}(x-5)$. Use the fac
     \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points -4, 4, 8, 12, and 16 marked. There is a vertical y-axis with the points -4, -2, and 2 marked. There is a grey grid of one unit by one unit cells in the background.
 ```
 ```{dropdown} Show answer
@@ -157,7 +157,7 @@ by finding the $x$ and $y$-intercepts (see Graphing, {ref}`precalc:graphing:exam
     \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points -1 and 1 marked. There is a vertical y-axis with the points -8, -6, -4, -2, 2, 4, and 6 marked. There is a grey grid of one quarter unit by one unit cells in the background.
 ```
 

@@ -54,7 +54,7 @@ width: 400px
 Interval analysis of $f'(x) = 6(x-2)(x-3)$
 ```
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with positive to the left of two, negative between two and three, and positive to the right of three.
 ```
 
@@ -88,7 +88,7 @@ width: 400px
 Interval analysis of $f'(x) = -\dfrac{2x}{(x^2-1)^2}$.
 ```
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with positive to the left of negative one, positive between negative one and zero, negative between zero and one, and positive to the right of one.
 ```
 

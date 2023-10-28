@@ -68,7 +68,7 @@ The relative extrema are highlighted on the following graph. Observe how the rel
 \end{tikzpicture}
 \end{document} 
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis. There is a vertical y axis. The graph of a function is plotted on these axes. Moving from left to right, the function goes up towards a rounded corner, which is marked in red and labeled a relative maximum, then goes downward towards a sharp corner, which is marked in green and labeled a relative minimum, then goes up again towards another sharp corner, which is marked in red and labeled a relative maximum, then goes down again towards a rounded corner, which is marked in green and labeled a relative minimum, and then goes upward.
 ```
 In other words, relative extrema appear at points on the graph of the function where the derivative changes sign.

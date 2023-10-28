@@ -68,7 +68,7 @@ width: 400px
 ---
 Interval analysis of $f''(x) = 60 x (4 x^2 - 9 x - 20)$.
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with negative between negative two and zero, and negative between zero and five.
 ```
 - $x=5$: Since $f'(5) = 0$ and $f''(5) = 60(5)(100-45-20) > 0$, $f$ has a relative minimum at $x=5$.

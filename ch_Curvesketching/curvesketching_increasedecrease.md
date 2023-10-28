@@ -71,7 +71,7 @@ A function $f$ is **increasing** on the interval $(a,b)$ if for any two numbers 
 If $f'(x) > 0$ for all $x$ in the interval $(a,b)$, then $f$ is increasing on $(a,b)$.
 ```
 
-```{dropdown} **Long Text Description** 
+```{dropdown} Long Text Description 
 There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(c) and f(d) marked. It is noted that f(c) is less than f(d). The graph of the function f is plotted on these axes. The value of the function goes up as it goes from left to right. The point (c,f(c)) and there are red dashed lines going from these points to (c,0) and (0,f(c)). The point (d,f(d)) and there are red dashed lines going from these points to (d,0) and (0,f(d)). 
 ```
 
@@ -121,7 +121,7 @@ A function $f$ is decreasing on the interval $(a,b)$ if for any two numbers $c$ 
 \end{document}
 ```
 
-```{dropdown} **Long Text Description** 
+```{dropdown} Long Text Description 
 There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(d) and f(c) marked. It is noted that f(c) is more than f(d). The graph of the function f is plotted on these axes. The value of the function goes down as it goes from left to right. The point (c,f(c)) and there are red dashed lines going from these points to (c,0) and (0,f(c)). The point (d,f(d)) and there are red dashed lines going from these points to (d,0) and (0,f(d)). 
 ```
 
@@ -164,7 +164,7 @@ The following is the graph of a continuous function that is increasing on the in
 \end{tikzpicture}
 \end{document}
 ```
-``` {dropdown} **Long Text Description**
+``` {dropdown} Long Text Description
 There is a horizontal x axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y axis with no points marked. The graph of some function is plotted here. The graph moves consistently upward as it goes from x = 1 to x = 2, moves consistently downward as it goes from x = 2 to x = 3, moves consistently downward as it goes from x = 3 to x = 4, moves consistently upward as it goes from x = 4 to x = 5, moves consistently upward as it goes from x = 5 to x = 6, moves consistently downward as it goes from x = 6 to x = 7. The graph has rounded corners at x = 2 and 4, and has a sharp corner at x = 6.
 ```
 
@@ -242,6 +242,6 @@ We will typically represent the above sign analysis by drawing a number line, ma
 :width: 600px
 :align: center
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with positive to the left of negative three, negative between negative three and one, and positive to the right of one.
 ```

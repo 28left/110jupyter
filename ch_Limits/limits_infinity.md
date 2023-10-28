@@ -131,7 +131,7 @@ $$\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} 
 \end{document} 
 ```
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points -1 and 1 marked. The graph of the function y = 1/x is plotted on these axes. This function comes in just below the x-axis from the left, decreases to negative infinity as x approaches zero from the left.  The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
 ```
 
@@ -176,7 +176,7 @@ Furthermore, there is no discussion of the limit as $x$ approaches negative infi
 \end{tikzpicture}
 \end{document} 
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points 1 and 2 marked. The graph of the function one over square root x is plotted on these axes. The graph does not appear above negative x values. The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
 ```
 
