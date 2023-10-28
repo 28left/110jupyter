@@ -74,7 +74,7 @@ $$\lim\limits_{x\to \infty} f(x) = 400.$$
 \end{document} 
 ```
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points 50, 100, 150, 200, 250, and 300 marked. There is a vertical y-axis with the points 100, 200, 300, and 400. There is a horizontal red dotted line at y = 400. The graph of a function is plotted on these axes. The function is increasing and approaches the horizontal dotted line from below, but never reaches it.  The closer the graph of the function gets to the horizontal dotted line, the slower the graph of the function increases.
 ```
 

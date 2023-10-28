@@ -34,14 +34,14 @@ To find all values of $x$ that satisfy an equation (e.g., $f(x) = g(x)$), comple
 Find all values of $x$ such that $x^2 - 4x - 12 = 0$.
 ```
 
-```{dropdown} **Step 1:** Factor $x^2 - 4x - 12$.
+```{dropdown} **Step 1:** &nbsp; Factor &nbsp; $x^2 - 4x - 12$.
 
 *Recall from [Factoring, Example 8](01_02_example8) that* 
 
 $$x^2 - 4x - 12 = (x+2)(x-6)$$
 ```
 
-```{dropdown} **Step 2:** Set each factor equal to zero and solve for $x$.
+```{dropdown} **Step 2:** &nbsp; Set each factor equal to zero and solve for &nbsp; $x$.
 
 \begin{align*}
 x + 2 &= 0  ~~~~\Rightarrow~~~~  x = -2\\
@@ -70,12 +70,12 @@ Therefore, $x=6$ and $x=-2$ satisfy $x^2 - 4x - 12 = 0$.
 Find all values of $p$ such that $\dfrac{3p}{180-6p} = 1$.
 ```
 
-```{dropdown} **Step 1:** Multiply both sides of $\frac{3p}{180-6p} = 1$ by the denominator, $180-6p$.
+```{dropdown} **Step 1:** &nbsp; Multiply both sides of &nbsp; $\frac{3p}{180-6p} = 1$ &nbsp; by the denominator, &nbsp; $180-6p$.
 
 $$3p = 180 - 6p$$
 ```
 
-```{dropdown} **Step 2:** Subtract $180 - 6p$ from both sides.
+```{dropdown} **Step 2:** &nbsp; Subtract &nbsp; $180 - 6p$ &nbsp; from both sides.
 
 \begin{align*}
 3p - (180-6p) &= 0 \\
@@ -84,7 +84,7 @@ $$3p = 180 - 6p$$
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Solve for $p$.
+```{dropdown} **Step 3:** &nbsp; Solve for &nbsp; $p$.
 
 \begin{align*}
     9p &= 180 && \text{add $180$ to both sides} \\
@@ -109,13 +109,13 @@ $$\dfrac{3(20)}{180-6(20)} = \frac{60}{180-120} = \frac{60}{60} = 1$$
 Find all points of intersection of $f(x) = 6x^2 - 4x$ and $g(x) = 2 - 5x$.
 ```
 
-```{dropdown} **Step 1:** Set $f(x) = g(x)$.
+```{dropdown} **Step 1:** &nbsp; Set &nbsp; $f(x) = g(x)$.
 Points of intersection can be found by setting the two curves equal to each other and solving for $x$.
 
 $$6x^2 - 4x =  2 - 5x$$
 ```
 
-```{dropdown} **Step 2:** Subtract $2-5x$ from both sides of the equation in Step 1.
+```{dropdown} **Step 2:** &nbsp; Subtract &nbsp; $2-5x$ &nbsp; from both sides of the equation in Step 1.
 
 \begin{align*}
 6x^2 - 4x - (2 - 5x) &=  0 && \hbox{Note the parentheses around $2-5x$}\\
@@ -124,7 +124,7 @@ $$6x^2 - 4x =  2 - 5x$$
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Use the AC grouping method to factor $6x^2 + x - 2$.
+```{dropdown} **Step 3:** &nbsp; Use the AC grouping method to factor &nbsp; $6x^2 + x - 2$.
 
 Find two integers that multiply to $6(-2) = -12$ and sum to $1$.
 
@@ -144,7 +144,7 @@ Therefore,
 ```
 
 
-```{dropdown} **Step 4:** Set each factor equal to zero and solve for $x$.
+```{dropdown} **Step 4:** &nbsp; Set each factor equal to zero and solve for &nbsp; $x$.
 
 \begin{align*}
 3x + 2 &= 0  ~~~~\Rightarrow~~~~  3x = -2 ~~~~\Rightarrow~~~~ x = -2/3\\

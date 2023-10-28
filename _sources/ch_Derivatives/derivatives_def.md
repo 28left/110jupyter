@@ -66,7 +66,7 @@ $$f(x)=3x^2+12$$
 
 at $x=5$ using the limit definition of the derivative.
 
-```{dropdown} **Step 1:** Write down the limit definition of a derivative.
+```{dropdown} **Step 1:** &nbsp; Write down the limit definition of a derivative.
 
 $$ 
 \boxed{f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}}
@@ -75,7 +75,7 @@ $$
 Remember: $f(x+h)$ means that we take $f(x)$ and replace $x$ with $(x+h)$.  For example, if $f(x) = x^2$, then $f(x+h)=(x+h)^2=x^2+2xh+h^2.$
 ```
 
-```{dropdown} **Step 2:** Plug $f(x+h)$ and $f(x)$ into definition.
+```{dropdown} **Step 2:** &nbsp; Plug &nbsp; $f(x+h)$ &nbsp; and &nbsp; $f(x)$ &nbsp; into definition.
 
 Plug $f(x+h)$ and $f(x)$ into the limit definition of the derivative.
 Using brackets will help avoid errors from forgetting to distribute the negative sign:
@@ -85,7 +85,7 @@ $$ f'(x)=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}$$
 
 
 
-```{dropdown} **Step 3:** FOIL and Simplify
+```{dropdown} **Step 3:** &nbsp; FOIL and Simplify
 
 \begin{align*}
 f'(x) &=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\\ \\
@@ -96,19 +96,19 @@ f'(x) &=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\\ \\
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Factor out $h$ and cancel.
+```{dropdown} **Step 4:** &nbsp; Factor out &nbsp; $h$ &nbsp; and cancel.
 
 Factor out an $h$ in the numerator and cancel it with the factor of $h$ in the denominator.
 
 $$f'(x)=\lim_{h \to 0} \frac{6xh+3h^2}{h}=\lim_{h \to 0} \frac{h(6x+3h)}{h}=\lim_{h \to 0} 6x+3h$$
 ```
 
-```{dropdown} **Step 5:** Evaluate the limit.
+```{dropdown} **Step 5:** &nbsp; Evaluate the limit.
 
 $$f'(x)=\lim_{h \to 0} 6x+3h=6x+3(0)=6x$$
 ```
 
-```{dropdown} **Step 6:** Plug $x=5$ into evaluated limit.
+```{dropdown} **Step 6:** &nbsp; Plug &nbsp; $x=5$ &nbsp; into evaluated limit.
 
 We have found that $f'(x) = 6x$ is the derivative of our function and the general form of the slope of the tangent line. All that's left for us to do is to plug in $x=5$. Therefore, the slope of the tangent line when $x=5$ is $30$.
 ```
@@ -122,7 +122,7 @@ $$f(x)=3\sqrt{x}$$
 
 using the limit definition of the derivative.
 
-```{dropdown} **Step 1:** Write down the limit definition of a derivative.
+```{dropdown} **Step 1:** &nbsp; Write down the limit definition of a derivative.
 
 $$
 \boxed{f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}}
@@ -130,7 +130,7 @@ $$
 ```
 
 
-```{dropdown} **Step 2:** Plug $f(x+h)$ and $f(x)$ into definition.
+```{dropdown} **Step 2:** &nbsp; Plug &nbsp; $f(x+h)$ &nbsp; and &nbsp; $f(x)$ &nbsp; into definition.
 
 Plug $f(x+h)$ and $f(x)$ into the limit definition of the derivative.  
 \begin{align*}
@@ -140,7 +140,7 @@ f'(x)
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Rationalize, FOIL, and Simplify.
+```{dropdown} **Step 3:** &nbsp; Rationalize, FOIL, and Simplify.
 
 \begin{align*}
 f'(x) 
@@ -155,12 +155,12 @@ f'(x)
 Notice how making use of the formula $(\sqrt{A} - \sqrt{B})(\sqrt{A} + \sqrt{B}) = A - B$ can help eliminate some of the above computations.
 ```
 
-```{dropdown} **Step 4:** Cancel the $h$ in the numerator with the $h$ in the denominator.
+```{dropdown} **Step 4:** &nbsp; Cancel the &nbsp; $h$ &nbsp; in the numerator with the &nbsp; $h$ &nbsp; in the denominator.
 
 $$f'(x) = \lim_{h \to 0} \frac{3 \cancel{h}}{\cancel{h}(\sqrt{x+h}+\sqrt{x})} = \lim_{h \to 0} \frac{3}{\sqrt{x+h}+\sqrt{x}} $$
 ```
 
-```{dropdown} **Step 5:** Evaluate the limit.
+```{dropdown} **Step 5:** &nbsp; Evaluate the limit.
 
 $$f'(x) = \lim_{h \to 0} \frac{3}{\sqrt{x+h}+\sqrt{x}} = \frac{3}{\sqrt{x + 0}+\sqrt{x}} = \frac{3}{\sqrt{x}+\sqrt{x}} = \frac{3}{2\sqrt{x}}$$
 ```

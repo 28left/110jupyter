@@ -16,7 +16,7 @@ kernelspec:
 A rectangular box with a **square** base and a volume of $24$ ft$^3$ has costs to construct of $\$10 / \text{ft}^2$ for the sides, $\$20 / \text{ft}^2$ for the top, and $\$40 / \text{ft}^2$ for the base. If $x$ denotes the length of one side of the base (in feet), determine the function in the variable $x$ giving the total cost of constructing the box in dollars and state the appropriate domain
 
 
-````{dropdown} **Step 1:** Draw and label a figure.
+````{dropdown} **Step 1:** &nbsp; Draw and label a figure.
 
 
 ```{image} ../images/pic_functions_box.png
@@ -33,7 +33,7 @@ A two dimensional projective diagram of a three dimensional square prism, with t
 ```
 
 
-```{dropdown} **Step 2:** Translate the problem description into a function.
+```{dropdown} **Step 2:** &nbsp; Translate the problem description into a function.
 
 Translate the problem description into a function of the variables $x$ and $y$.
 
@@ -45,7 +45,7 @@ Translate the problem description into a function of the variables $x$ and $y$.
 ```
 
 
-```{dropdown} **Step 3:** Write the total cost as a function of one variable.
+```{dropdown} **Step 3:** &nbsp; Write the total cost as a function of one variable.
 
 Use the conditions given in the problem to write the total cost as a function of one variable.
 
@@ -62,7 +62,7 @@ C(x) &=&  60x^2 + 40x\left(\frac{24}{x^2}\right) \\
 ```
 
 
-```{dropdown} **Step 4:** Note any restrictions to be placed on the domain.
+```{dropdown} **Step 4:** &nbsp; Note any restrictions to be placed on the domain.
 
 Note any restrictions to be placed on the domain of the function from physical considerations of the problem.
 
