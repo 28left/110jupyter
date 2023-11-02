@@ -92,7 +92,7 @@ Find the inflection points of
 $$f(x) = x^3 + 10x - \dfrac{3}{x}.$$
 
 
-```{dropdown} **Step 1:**  Compute $f''(x)$.
+```{dropdown} **Step 1:** &nbsp;  Compute &nbsp; $f''(x)$.
 
 \begin{align*}
 f'(x) 
@@ -113,19 +113,19 @@ The last equality follows from treating $x^4-1$ as a difference of squares (i.e.
 ```
 
 
-```{dropdown} **Step 2:** Find all values of $x$ such that $f''(x) = 0$.
+```{dropdown} **Step 2:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f''(x) = 0$.
 
 $f''(x) = 0$ when $x=1$ and $x=-1$.
 ```
 
 
-```{dropdown} **Step 3:** Find all values of $x$ such that $f''(x)$ does not exist.
+```{dropdown} **Step 3:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f''(x)$ &nbsp; does not exist.
 
 $f''(x)$ does not exist when $x^3 = 0$ (i.e., when $x=0$).
 ```
 
 
-````{dropdown} **Step 4:** Break up the domain of $f$.
+````{dropdown} **Step 4:** &nbsp; Break up the domain of &nbsp; $f$.
 
 Break up the domain of $f$ at each value found in Steps 2 and 3. Plug one number from each subinterval into $f''(x)$ to determine the sign of $f''(x)$ on that interval.
 
@@ -181,7 +181,7 @@ There is a horizontal x axis. There is a vertical y axis. There is an increasing
 Determine whether or not $f(x) = 3x^3-18x^2+81x+90$ has a point of diminishing or increasing return.
 
 
-```{dropdown} **Step 1:**  Compute $f'(x)$.
+```{dropdown} **Step 1:** &nbsp;  Compute &nbsp; $f'(x)$.
 
 \begin{align*}
 f'(x)
@@ -191,7 +191,7 @@ f'(x)
 ```
 
 
-```{dropdown} **Step 2:**  Compute $f''(x)$.
+```{dropdown} **Step 2:** &nbsp;  Compute &nbsp; $f''(x)$.
 
 \begin{align*}
 f''(x)
@@ -201,7 +201,7 @@ f''(x)
 ```
 
 
-````{dropdown} **Step 3:**  Find and analyze inflection points.
+````{dropdown} **Step 3:** &nbsp;  Find and analyze inflection points.
 
 Find inflection points, if any, and determine if each one corresponds to a point of diminishing return, increasing return, or neither.
 

@@ -111,7 +111,7 @@ Find the horizontal and vertical asymptotes of
 $$f(x)=\dfrac{7x^2+2x+1}{2x^2+3x-9}.$$
 
 
-```{dropdown} **Step 1:**  Horizontal Asymptotes.
+```{dropdown} **Step 1:** &nbsp;  Horizontal Asymptotes.
 
 Since the degree of the numerator and the denominator are the same, both limits at infinity are equal to the ratio of leading coefficients.
 
@@ -121,7 +121,7 @@ Therefore, $y=7/2$ is the only horizontal asymptote of $f$.
 ```
 
 
-```{dropdown} **Step 2:** Vertical Asymptotes.
+```{dropdown} **Step 2:** &nbsp; Vertical Asymptotes.
 
 Factor and simplify $f(x)$. 
 
@@ -148,7 +148,7 @@ Find the horizontal and vertical asymptotes of
 $$f(x)=\dfrac{x^4-x^2}{x^3 + x^2 - 2 x}.$$
 
 
-```{dropdown} **Step 1:**  Horizontal Asymptotes.
+```{dropdown} **Step 1:** &nbsp;  Horizontal Asymptotes.
 
 Since the degree of the numerator, $4$, is larger than the degree of the denominator, $3$, both limits at infinity do not exist.
 
@@ -158,7 +158,7 @@ Therefore, $f$ does not have any horizontal asymptotes.
 ```
 
 
-```{dropdown} **Step 2:** Vertical Asymptotes.
+```{dropdown} **Step 2:** &nbsp; Vertical Asymptotes.
 
 Factor and simplify $f(x)$.
 

@@ -41,7 +41,7 @@ $$f(x) = \sqrt[3]{x^2-1}$$
 were $x=-1$, $x=0$, and $x=1$.
 Classify each critical point using the First Derivative Test. 
 
-````{dropdown} **Step 1:** Break up the domain of $f'(x)$ at each critical point.
+````{dropdown} **Step 1:** &nbsp; Break up the domain of &nbsp; $f'(x)$ &nbsp; at each critical point.
 
 Plug in one number from each subinterval into $f'(x)$ to determine the sign of $f'(x)$ on each interval.
 
@@ -60,7 +60,7 @@ A number line with positive and negative signs assigned to intervals, which are 
 
 ```
 
-```{dropdown} **Step 2:** Classify each critical point.
+```{dropdown} **Step 2:** &nbsp; Classify each critical point.
 
 Since $f'(x)$ changes from negative to positive at $x=0$, $f(x)$ has a relative minimum at $x=0$.  
 
@@ -76,7 +76,7 @@ $$f(x) = x^3 +3x^2 - 24x + 1$$
 
 were $x=-4$ and $x=2$. Classify the critical point using the First Derivative Test. 
 
-````{dropdown} **Step 1:** Break up the domain of $f'(x)$ at each critical point.
+````{dropdown} **Step 1:** &nbsp; Break up the domain of &nbsp; $f'(x)$ &nbsp; at each critical point.
 
 Plug in one number from each subinterval into $f'(x)$ to determine the sign of $f'(x)$ on each interval.
 
@@ -96,7 +96,7 @@ A number line with positive and negative signs assigned to intervals, with posit
 
 ```
 
-```{dropdown} **Step 2:** Classify each critical point.
+```{dropdown} **Step 2:** &nbsp; Classify each critical point.
 
 Since $f'(x)$ changes from positive to negative at $x=-4$, $f(x)$ has a relative maximum at $x=-4$.  Since $f'(x)$ changes from negative to positive at $x=2$, $f(x)$ has a relative minimum at $x=2$.
 ```

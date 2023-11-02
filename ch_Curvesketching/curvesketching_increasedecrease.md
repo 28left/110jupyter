@@ -189,12 +189,12 @@ $$f(x) = x^3 + 3 x^2 - 9 x -8$$
 
 is increasing and where it is decreasing.
 
-```{dropdown} **Step 1:** Compute $f'(x)$.
+```{dropdown} **Step 1:** &nbsp;  Compute &nbsp; $f'(x)$.
 
 $$f'(x) = 3 x^2 + 6 x - 9$$ 
 ```
 
-```{dropdown} **Step 2:** Find all values of $x$ such that $f'(x) = 0$.
+```{dropdown} **Step 2:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f'(x) = 0$.
 
 \begin{align*}
 f'(x) 
@@ -204,19 +204,21 @@ f'(x)
 which is equal to zero when $x=-3$ and $x=1$.  
 ```
 
-```{dropdown} **Step 3:** Find all values of $x$ such that $f'(x)$ does not exist.
+```{dropdown} **Step 3:**  &nbsp;  Find all values of &nbsp; $x$ such that &nbsp; $f'(x)$ &nbsp; does not exist.
 
 Notice that $f'(x)$ is defined for all real numbers.
 ```
 
-```{dropdown} **Step 4:** Break up the domain of $f$ into subintervals based on the values found in Steps 2 and 3.
+```{dropdown} **Step 4:** &nbsp;  Break up the domain of &nbsp; $f$ &nbsp; into subintervals.
+
+Break up the domain of &nbsp; $f$ &nbsp; into subintervals based on the values found in Steps 2 and 3.
 
 Since we found $x=-3$ and $x=1$ to be the only values where $f'(x)$ could change sign, we break up the domain of $f$ (which is $(-\infty,\infty)$) into the following subintervals:
 
 $$(-\infty,-3), ~(-3,1), ~\hbox{ and }~  (1,\infty)$$
 ```
 
-```{dropdown} **Step 5:** Plug one number from each subinterval into $f'(x)$  to determine the sign of $f'(x)$.
+```{dropdown} **Step 5:** &nbsp;  Plug one number from each subinterval into &nbsp; $f'(x)$ &nbsp; to determine the sign of &nbsp; $f'(x)$.
 
 $\mathbf{(-\infty,-3)}$: Plug $x=-4$ into $f'(x)$.
 Since $f'(-4) = 3(-1)(-5) > 0$, 
