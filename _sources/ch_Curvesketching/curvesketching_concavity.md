@@ -89,7 +89,7 @@ $$\displaystyle f''(x) = \frac{x^2-4x}{x-6}$$
 find the intervals  of concavity of $f$.
 
 
-```{dropdown} **Step 1:** Find all values of $x$ such that $f''(x) = 0$.
+```{dropdown} **Step 1:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f''(x) = 0$.
 
 \begin{align*}
 f''(x) &= \frac{x(x-4)}{x-6}
@@ -99,13 +99,13 @@ which equals zero when $x=0$ and $x=4$.
 ```
 
 
-```{dropdown} **Step 2:** Find all values of $x$ such that $f''(x)$ does not exist.
+```{dropdown} **Step 2:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f''(x)$ &nbsp; does not exist.
 
 $f''(x)$ does not exist when $x=6$.
 ```
 
 
-````{dropdown} **Step 3:** Perform an interval sign analysis for $f''$.
+````{dropdown} **Step 3:** &nbsp; Perform an interval sign analysis for &nbsp; $f''$.
 
 Break up the domain of $f$ at each value found in Steps 1 and 2. Plug one number from each subinterval into $f''(x)$ to determine the sign of $f''(x)$ on each interval.
 
