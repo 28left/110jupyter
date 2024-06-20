@@ -67,7 +67,7 @@ The following is the graph of a continuous function that is concave down on the 
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y axis. The graph of a function is plotted on these axes. Reading from left to right, the function goes up at a slowing pace, reaches a rounded corner, decreases at an accelerating pace, decreases at a slowing pace, reaches another rounded corner, and goes upward at an accelerating pace.
 ```
 
@@ -89,7 +89,7 @@ $$\displaystyle f''(x) = \frac{x^2-4x}{x-6}$$
 find the intervals  of concavity of $f$.
 
 
-```{dropdown} **Step 1:** Find all values of $x$ such that $f''(x) = 0$.
+```{dropdown} **Step 1:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f''(x) = 0$.
 
 \begin{align*}
 f''(x) &= \frac{x(x-4)}{x-6}
@@ -99,13 +99,13 @@ which equals zero when $x=0$ and $x=4$.
 ```
 
 
-```{dropdown} **Step 2:** Find all values of $x$ such that $f''(x)$ does not exist.
+```{dropdown} **Step 2:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f''(x)$ &nbsp; does not exist.
 
 $f''(x)$ does not exist when $x=6$.
 ```
 
 
-````{dropdown} **Step 3:** Perform an interval sign analysis for $f''$.
+````{dropdown} **Step 3:** &nbsp; Perform an interval sign analysis for &nbsp; $f''$.
 
 Break up the domain of $f$ at each value found in Steps 1 and 2. Plug one number from each subinterval into $f''(x)$ to determine the sign of $f''(x)$ on each interval.
 
@@ -125,6 +125,6 @@ Interval analysis of $f''(x) = \frac{x(x-4)}{x-6}$.
 ```
 Therefore, $f$ is concave up on the intervals $(0,4)$ and $(6,\infty)$ and concave down on the intervals $(-\infty,0)$ and $(4,6)$.
 ````
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, which are negative to the left of zero, positive from zero to four, negative from four to six, and positive to the right of six.
 ```

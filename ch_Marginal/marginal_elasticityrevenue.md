@@ -99,7 +99,7 @@ kernelspec:
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal p axis and a vertical y-axis. A concave down quadratic looking function R(p) is graphed on these axes. R(p) starts out at the origin increasing and concave down, comes to a corner at a point labeled "maximum revenue," and is decreasing and concave down and decreasing from there to a p intercept. There is a vertical dotted line between the a point on the p-axis labeled "E(p) = 1" and the "Maximum Revenue" point. The area to the left of this line and below the graph is labeled "Inelastic Demand". The area to the right of the line and below the graph is labeled "Elastic Demand". The length of line between the origin and "E(p) = 1" is labeled E(p) < 1 and the length of line between "E(p) = 1" and the p-intercept on the right is labeled "E(p) > 1."
 ```
 ## Example 1
@@ -112,7 +112,7 @@ $$
 
 Compute $E(0.5)$ and $E(1.5)$ and interpret the results.
 
-```{dropdown} **Step 1:** Determine $x = f(p)$.
+```{dropdown} **Step 1:** &nbsp; Determine &nbsp; $x = f(p)$.
 
 In other words, solve for demand $x$, in terms of price $p$, using the demand equation, if possible.
 
@@ -126,7 +126,7 @@ x &= 20 - 10p  && \hbox{subtract $10p$ from both sides}
 Therefore, $f(p) = 20-10p$.
 ```
 
-```{dropdown} **Step 2:** Compute $f'(p)$.
+```{dropdown} **Step 2:** &nbsp; Compute &nbsp; $f'(p)$.
 
 \begin{align*}
     f'(p) &= \frac{d}{dp}(20-10p) = -10
@@ -134,7 +134,7 @@ Therefore, $f(p) = 20-10p$.
 ```
 
 
-```{dropdown} **Step 3:** Compute $E(p)$.
+```{dropdown} **Step 3:** &nbsp; Compute &nbsp; $E(p)$.
 
 \begin{align*}
 E(p) = -\frac{pf'(p)}{f(p)} 
@@ -144,7 +144,7 @@ E(p) = -\frac{pf'(p)}{f(p)}
 ```
 
 
-```{dropdown} **Step 4:** Calculate $E(0.5)$.
+```{dropdown} **Step 4:** &nbsp; Calculate &nbsp; $E(0.5)$.
 
 \begin{align*}
     E(0.5) 
@@ -157,7 +157,7 @@ Since $E(0.5) < 1$, demand is inelastic when the price is \$0.50 and total reven
 ```
 
 
-```{dropdown} **Step 5:** Calculate $E(1.5)$.
+```{dropdown} **Step 5:** &nbsp; Calculate &nbsp; $E(1.5)$.
 
 \begin{align*}
     E(1.5) 
@@ -180,7 +180,7 @@ where $p$ represents the price in dollars and $x$ the number of units, determine
 
 
 
-```{dropdown} **Step 1:** Determine $x = f(p)$. 
+```{dropdown} **Step 1:** &nbsp; Determine &nbsp; $x = f(p)$. 
 
 In other words, solve for demand $x$, in terms of price $p$, using the demand equation, if possible.
 
@@ -193,7 +193,7 @@ x &= 50 - \frac{p}{6} && \hbox{subtract $p/6$ from both sides}
 Therefore, $f(p) = 50 - \dfrac{p}{6}$.
 ```
 
-```{dropdown} **Step 2:** Compute $f'(p)$.
+```{dropdown} **Step 2:** &nbsp; Compute &nbsp; $f'(p)$.
 
 \begin{align*}
 f'(p) 
@@ -203,7 +203,7 @@ f'(p)
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Compute $E(p)$.
+```{dropdown} **Step 3:** &nbsp; Compute &nbsp; $E(p)$.
 
 \begin{align*}
     E(p) = -\frac{pf'(p)}{f(p)}
@@ -216,7 +216,7 @@ f'(p)
 ```
 
 
-```{dropdown} **Step 4:** Recall that demand is unitary when $E(p) = 1$.
+```{dropdown} **Step 4:** &nbsp; Recall that demand is unitary when &nbsp; $E(p) = 1$.
 
 Therefore, set $E(p) = 1$ and solve for $p$.
 
@@ -240,7 +240,7 @@ $$x^2 + 6p = 180$$
 where $p$ represents the price in dollars and $x$ the number of units, determine the value of $p$ where demand is unitary and interpret the result.
 
 
-```{dropdown} **Step 1:** Determine $x = f(p)$. 
+```{dropdown} **Step 1:** &nbsp; Determine &nbsp; $x = f(p)$. 
 
 In other words, solve for demand $x$, in terms of price $p$, using the demand equation, if possible.
 
@@ -253,7 +253,7 @@ In other words, solve for demand $x$, in terms of price $p$, using the demand eq
 Therefore, $f(p) = \sqrt{180-6p}$.
 ```
 
-```{dropdown} **Step 2:** Compute $f'(p)$.
+```{dropdown} **Step 2:** &nbsp; Compute &nbsp; $f'(p)$.
 
 \begin{align*}
     f'(p) &= \frac{d}{dp}\sqrt{180-6p}\\
@@ -263,7 +263,7 @@ Therefore, $f(p) = \sqrt{180-6p}$.
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Compute $E(p)$.
+```{dropdown} **Step 3:** &nbsp; Compute &nbsp; $E(p)$.
 
 \begin{align*}
     E(p) = -\frac{p f'(p)}{f(p)}
@@ -275,7 +275,7 @@ Therefore, $f(p) = \sqrt{180-6p}$.
 ```
 
 
-```{dropdown} **Step 4:** Recall that demand is unitary when $E(p) = 1$.
+```{dropdown} **Step 4:** &nbsp; Recall that demand is unitary when &nbsp; $E(p) = 1$.
 
 Therefore, set $E(p) = 1$ and solve for $p$.
 

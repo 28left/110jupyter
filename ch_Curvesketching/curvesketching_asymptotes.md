@@ -101,7 +101,7 @@ The following graph is an example of a function that has vertical asymptotes at 
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x axis with the points -1 and 3 marked. There is a vertical y axis. There is a grid in the background of 1/2 by 1/2 squares. There is a blue dashed horizontal line at y = 1. There is a red dashed vertical line at x = -1. There is a red dashed vertical line at x = 3. The graph of a function is plotted on these axes. From left to right, the function decreases from the blue dashed line and goes to negative infinity as it approaches the red dashed line at x = -1, comes down from positive infinity to the right of -1, goes down to negative infinity as it approaches the red dashed line at x = 3, and comes down from positive infinity at x = 3 towards the blue dashed line as it heads off to the right.
 ```
 ## Example 2
@@ -111,7 +111,7 @@ Find the horizontal and vertical asymptotes of
 $$f(x)=\dfrac{7x^2+2x+1}{2x^2+3x-9}.$$
 
 
-```{dropdown} **Step 1:**  Horizontal Asymptotes.
+```{dropdown} **Step 1:** &nbsp;  Horizontal Asymptotes.
 
 Since the degree of the numerator and the denominator are the same, both limits at infinity are equal to the ratio of leading coefficients.
 
@@ -121,7 +121,7 @@ Therefore, $y=7/2$ is the only horizontal asymptote of $f$.
 ```
 
 
-```{dropdown} **Step 2:** Vertical Asymptotes.
+```{dropdown} **Step 2:** &nbsp; Vertical Asymptotes.
 
 Factor and simplify $f(x)$. 
 
@@ -148,7 +148,7 @@ Find the horizontal and vertical asymptotes of
 $$f(x)=\dfrac{x^4-x^2}{x^3 + x^2 - 2 x}.$$
 
 
-```{dropdown} **Step 1:**  Horizontal Asymptotes.
+```{dropdown} **Step 1:** &nbsp;  Horizontal Asymptotes.
 
 Since the degree of the numerator, $4$, is larger than the degree of the denominator, $3$, both limits at infinity do not exist.
 
@@ -158,7 +158,7 @@ Therefore, $f$ does not have any horizontal asymptotes.
 ```
 
 
-```{dropdown} **Step 2:** Vertical Asymptotes.
+```{dropdown} **Step 2:** &nbsp; Vertical Asymptotes.
 
 Factor and simplify $f(x)$.
 

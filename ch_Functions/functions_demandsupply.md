@@ -38,7 +38,7 @@ The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $
 ::::
 :::::
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis representing the quantity of a good that is demanded, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The curve is labeled p = d(x). 
 ```
 
@@ -68,7 +68,7 @@ The supply curve, $p = s(x)$, shows the quantity supplied, $x$, at each price, $
 ::::
 :::::
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis representing the quantity of a good that will be supplied, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red curve increasing from left to right representing the price at which suppliers will sell certain amounts of the good. The curve is labeled p = s(x). 
 ```
 ```{admonition} Domain Considerations
@@ -82,7 +82,7 @@ For any demand or supply function, the domain should be restricted so that both 
 
 Determine the appropriate domain for the demand function, $d(x) = 600 - 15x$.
 
-```{dropdown} **Step 1:** Find the values of $x\geq 0$ such that $p = d(x) \geq 0$.
+```{dropdown} **Step 1:** &nbsp; Find the values of &nbsp; $x\geq 0$ &nbsp; such that &nbsp; $p = d(x) \geq 0$.
 
 \begin{align*}
 600 - 15x \geq 0 
@@ -114,7 +114,7 @@ width: 600px
 The market equilibrium is given where demand and supply curves intersect
 ```
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis representing the quantity of a good, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red curve increasing from left to right representing the price at which suppliers will sell certain amounts of the good.  The red curve is labeled p = s(x). There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The blue curve is labeled p = d(x). There is a point where the two curves meet, which is labeled “equilibrium price" along the p-axis and “equilibrium quantity” along the x-axis.
 ```
 
@@ -129,7 +129,7 @@ p = s(x) &= 2x + 32
 
 where $x$ is the number of thousands of boxes and $p$ is in dollars.  Determine the market equilibrium values.
 
-```{dropdown} **Step 1:** Determine the equilibrium quantity.
+```{dropdown} **Step 1:** &nbsp; Determine the equilibrium quantity.
 
 Since both demand and supply are written as functions of $x$, we'll first solve for the equilibrium quantity by setting the two functions equal to each other. 
 
@@ -148,7 +148,7 @@ which is equal to zero when $x=-8$ or when $x=5$.  But since $x$ must be nonnega
 
 
 
-```{dropdown} **Step 2:** Determine the equilibrium price.
+```{dropdown} **Step 2:** &nbsp; Determine the equilibrium price.
 
 Evaluate demand and supply functions at $x=5$ to compute the equilibrium price.
 

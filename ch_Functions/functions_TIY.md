@@ -101,7 +101,7 @@ A rectangular field is to be enclosed by 200 feet of fence. One side of the fiel
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a thick black line representing the side of a building. Above this is a yellow rectangle representing the area enclosed by a fence. The height of this rectangle is marked as x.
 ```
 If $x$ denotes the length of one side of the rectangle perpendicular to the building, determine the function in the variable $x$ giving the area (in square feet) of the fenced-in region and state the appropriate domain.
@@ -148,7 +148,7 @@ A printer needs to make a poster that has a total area of $200$ in$^2$, $1$ inch
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a large white rectangle, representing the total area of a poster. There is a yellow rectangle inside the larger one, representing the area that may be printed on to give the required margins. The distance between the tops of the rectangles is marked as 2.5 inches. The distance between the corresponding sides of the two rectangles is given as 1 inch. The distance between the bottoms of both rectangles is given as 1.5 inches. The width of the white rectangle is given as x.
 ```
 

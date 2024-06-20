@@ -74,7 +74,7 @@ $$\lim\limits_{x\to \infty} f(x) = 400.$$
 \end{document} 
 ```
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points 50, 100, 150, 200, 250, and 300 marked. There is a vertical y-axis with the points 100, 200, 300, and 400. There is a horizontal red dotted line at y = 400. The graph of a function is plotted on these axes. The function is increasing and approaches the horizontal dotted line from below, but never reaches it.  The closer the graph of the function gets to the horizontal dotted line, the slower the graph of the function increases.
 ```
 
@@ -131,7 +131,7 @@ $$\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} 
 \end{document} 
 ```
 
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points -1 and 1 marked. The graph of the function y = 1/x is plotted on these axes. This function comes in just below the x-axis from the left, decreases to negative infinity as x approaches zero from the left.  The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
 ```
 
@@ -176,7 +176,7 @@ Furthermore, there is no discussion of the limit as $x$ approaches negative infi
 \end{tikzpicture}
 \end{document} 
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points 1 and 2 marked. The graph of the function one over square root x is plotted on these axes. The graph does not appear above negative x values. The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
 ```
 

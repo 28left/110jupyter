@@ -71,7 +71,7 @@ A function $f$ is **increasing** on the interval $(a,b)$ if for any two numbers 
 If $f'(x) > 0$ for all $x$ in the interval $(a,b)$, then $f$ is increasing on $(a,b)$.
 ```
 
-```{dropdown} **Long Text Description** 
+```{dropdown} Long Text Description 
 There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(c) and f(d) marked. It is noted that f(c) is less than f(d). The graph of the function f is plotted on these axes. The value of the function goes up as it goes from left to right. The point (c,f(c)) and there are red dashed lines going from these points to (c,0) and (0,f(c)). The point (d,f(d)) and there are red dashed lines going from these points to (d,0) and (0,f(d)). 
 ```
 
@@ -121,7 +121,7 @@ A function $f$ is decreasing on the interval $(a,b)$ if for any two numbers $c$ 
 \end{document}
 ```
 
-```{dropdown} **Long Text Description** 
+```{dropdown} Long Text Description 
 There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(d) and f(c) marked. It is noted that f(c) is more than f(d). The graph of the function f is plotted on these axes. The value of the function goes down as it goes from left to right. The point (c,f(c)) and there are red dashed lines going from these points to (c,0) and (0,f(c)). The point (d,f(d)) and there are red dashed lines going from these points to (d,0) and (0,f(d)). 
 ```
 
@@ -164,7 +164,7 @@ The following is the graph of a continuous function that is increasing on the in
 \end{tikzpicture}
 \end{document}
 ```
-``` {dropdown} **Long Text Description**
+``` {dropdown} Long Text Description
 There is a horizontal x axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y axis with no points marked. The graph of some function is plotted here. The graph moves consistently upward as it goes from x = 1 to x = 2, moves consistently downward as it goes from x = 2 to x = 3, moves consistently downward as it goes from x = 3 to x = 4, moves consistently upward as it goes from x = 4 to x = 5, moves consistently upward as it goes from x = 5 to x = 6, moves consistently downward as it goes from x = 6 to x = 7. The graph has rounded corners at x = 2 and 4, and has a sharp corner at x = 6.
 ```
 
@@ -189,12 +189,12 @@ $$f(x) = x^3 + 3 x^2 - 9 x -8$$
 
 is increasing and where it is decreasing.
 
-```{dropdown} **Step 1:** Compute $f'(x)$.
+```{dropdown} **Step 1:** &nbsp;  Compute &nbsp; $f'(x)$.
 
 $$f'(x) = 3 x^2 + 6 x - 9$$ 
 ```
 
-```{dropdown} **Step 2:** Find all values of $x$ such that $f'(x) = 0$.
+```{dropdown} **Step 2:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f'(x) = 0$.
 
 \begin{align*}
 f'(x) 
@@ -204,19 +204,21 @@ f'(x)
 which is equal to zero when $x=-3$ and $x=1$.  
 ```
 
-```{dropdown} **Step 3:** Find all values of $x$ such that $f'(x)$ does not exist.
+```{dropdown} **Step 3:**  &nbsp;  Find all values of &nbsp; $x$ such that &nbsp; $f'(x)$ &nbsp; does not exist.
 
 Notice that $f'(x)$ is defined for all real numbers.
 ```
 
-```{dropdown} **Step 4:** Break up the domain of $f$ into subintervals based on the values found in Steps 2 and 3.
+```{dropdown} **Step 4:** &nbsp;  Break up the domain of &nbsp; $f$ &nbsp; into subintervals.
+
+Break up the domain of &nbsp; $f$ &nbsp; into subintervals based on the values found in Steps 2 and 3.
 
 Since we found $x=-3$ and $x=1$ to be the only values where $f'(x)$ could change sign, we break up the domain of $f$ (which is $(-\infty,\infty)$) into the following subintervals:
 
 $$(-\infty,-3), ~(-3,1), ~\hbox{ and }~  (1,\infty)$$
 ```
 
-```{dropdown} **Step 5:** Plug one number from each subinterval into $f'(x)$  to determine the sign of $f'(x)$.
+```{dropdown} **Step 5:** &nbsp;  Plug one number from each subinterval into &nbsp; $f'(x)$ &nbsp; to determine the sign of &nbsp; $f'(x)$.
 
 $\mathbf{(-\infty,-3)}$: Plug $x=-4$ into $f'(x)$.
 Since $f'(-4) = 3(-1)(-5) > 0$, 
@@ -242,6 +244,6 @@ We will typically represent the above sign analysis by drawing a number line, ma
 :width: 600px
 :align: center
 ```
-```{dropdown} **Long Text Description**
+```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with positive to the left of negative three, negative between negative three and one, and positive to the right of one.
 ```

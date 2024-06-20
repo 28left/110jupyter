@@ -30,7 +30,7 @@ Find the critical points of
 
 $$f(x) = \sqrt[3]{x^2-1}.$$
 
-```{dropdown} **Step 1:** Compute $f'(x)$. 
+```{dropdown} **Step 1:** &nbsp; Compute &nbsp; $f'(x)$. 
 
 \begin{align*}
 f'(x)
@@ -40,17 +40,17 @@ f'(x)
 \end{align*}
 ```
 
-```{dropdown} **Step 2:** Find all $x$ such that $f'(x) = 0$.
+```{dropdown} **Step 2:** &nbsp; Find all &nbsp; $x$ &nbsp; such that &nbsp; $f'(x) = 0$.
 
 $f'(x)=0$ when $2x=0$, which occurs when $x=0$.
 ```
 
-```{dropdown} **Step 3:** Find all $x$ such that $f'(x)$ does not exist.
+```{dropdown} **Step 3:** &nbsp; Find all &nbsp; $x$ &nbsp; such that &nbsp; $f'(x)$ &nbsp; does not exist.
 
 $f'(x)$ does not exist when $x^2-1 = 0$, which occurs when $x=1$ and when $x=-1$.
 ```
 
-```{dropdown} **Step 4:** Verify that the values found in Steps 2 and 3 are in the domain of $f$.
+```{dropdown} **Step 4:** &nbsp; Verify that the values found in Steps 2 and 3 are in the domain of &nbsp; $f$.
 
 The domain of $f$ is all real numbers.  Therefore, $x=-1$, $x=0$, and $x=1$ are all critical points of $f$.
 ```
@@ -64,7 +64,7 @@ Find the critical points of
 
 $$f(x) = x^3 +3x^2 - 24x + 1.$$
 
-```{dropdown} **Step 1:** Compute $f'(x)$.
+```{dropdown} **Step 1:** &nbsp; Compute &nbsp; $f'(x)$.
 
 \begin{align*}
 f'(x)
@@ -72,7 +72,7 @@ f'(x)
 \end{align*}
 ```
 
-```{dropdown} **Step 2:** Find all $x$ such that $f'(x) = 0$.
+```{dropdown} **Step 2:** &nbsp; Find all &nbsp; $x$ &nbsp; such that &nbsp; $f'(x) = 0$.
 
 \begin{align*}
 f'(x)
@@ -83,12 +83,12 @@ f'(x)
 which equals zero when $x=-4$ and $x=2$.
 ```
 
-```{dropdown} **Step 3:** Find all $x$ such that $f'(x)$ does not exist.
+```{dropdown} **Step 3:** &nbsp; Find all &nbsp; $x$ &nbsp; such that &nbsp; $f'(x)$ &nbsp; does not exist.
 
 Since $f'(x)$ is a polynomial, it exists for all real numbers.
 ```
 
-```{dropdown} **Step 4:** Verify that the values found in Steps 2 and 3 are in the domain of $f$.
+```{dropdown} **Step 4:** &nbsp; Verify that the values found in Steps 2 and 3 are in the domain of &nbsp; $f$.
 
 The domain of $f$ is all real numbers.  Therefore, $x=-4$ and $x=2$ are both critical points of $f$.
 ```

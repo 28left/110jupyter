@@ -102,7 +102,7 @@ $$f(x) = 5x^2 - 4x + 2 + \frac{3}{x^4}$$
 using the basic rules of differentiation.
 
 
-```{dropdown} **Step 1:** Remember the sum rule.
+```{dropdown} **Step 1:** &nbsp; Remember the sum rule.
 
 Since $f(x)$ is the sum of functions, remember the sum rule for derivatives.
 
@@ -111,7 +111,7 @@ $$
 $$
 ```
 
-```{dropdown} **Step 2:** Apply the sum rule.
+```{dropdown} **Step 2:** &nbsp; Apply the sum rule.
 
 \begin{align*}
 f'(x)
@@ -121,7 +121,7 @@ f'(x)
 ```
 
 
-```{dropdown} **Step 3:** Remember the constant multiple rule.
+```{dropdown} **Step 3:** &nbsp; Remember the constant multiple rule.
 
 Since several terms of $f(x)$ are a constant times a function, remember the constant multiple rule for derivatives.
 
@@ -130,7 +130,7 @@ $$
 $$
 ```
 
-```{dropdown} **Step 4:** Apply the constant multiple rule.
+```{dropdown} **Step 4:** &nbsp; Apply the constant multiple rule.
 
 \begin{align*}
 f'(x)
@@ -138,7 +138,7 @@ f'(x)
 \end{align*}
 ```
 
-```{dropdown} **Step 5:** Compute the derivative of each term.
+```{dropdown} **Step 5:** &nbsp; Compute the derivative of each term.
 
 Remember $x^0=1$.
 
@@ -166,7 +166,7 @@ $$h(x)=(3x^2+1)(x^2+x+1)$$
 using the basic rules of differentiation.
 
 
-```{dropdown} **Step 1:** Remember the product rule.
+```{dropdown} **Step 1:** &nbsp; Remember the product rule.
 
 Since $h(x)$ is the product of two functions, remember the product rule for derivatives.
 
@@ -175,12 +175,12 @@ $$
 $$
 ```
 
-```{dropdown} **Step 2:** Identify the two functions being multiplied.
+```{dropdown} **Step 2:** &nbsp; Identify the two functions being multiplied.
 
 $$ f(x)=3x^2+1 ~~~\text{  and  }~~~ g(x)=x^2+x+1$$
 ```
 
-```{dropdown} **Step 3:** Compute the derivative of each function.
+```{dropdown} **Step 3:** &nbsp; Compute the derivative of each function.
 
 \begin{align*}
 f'(x) 
@@ -196,7 +196,7 @@ g'(x)
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Compute $h'(x)$.
+```{dropdown} **Step 4:** &nbsp; Compute &nbsp; $h'(x)$.
 
 \begin{align*}
 h'(x) &= f'(x)g(x)+f(x)g'(x) && \hbox{product rule}\\ \\
@@ -215,7 +215,7 @@ $$h(x)=\dfrac{x^3-7x+10}{x^2+4}$$
 
 using the basic rules of differentiation and then evaluate $h'(2)$.
 
-```{dropdown} **Step 1:** Remember the quotient rule.
+```{dropdown} **Step 1:** &nbsp; Remember the quotient rule.
 
 Since $h(x)$ is the quotient of two functions, remember the quotient rule for derivatives.
 
@@ -224,7 +224,7 @@ $$
 $$
 ```
 
-```{dropdown} **Step 2:** Apply the quotient rule to the given function.
+```{dropdown} **Step 2:** &nbsp; Apply the quotient rule to the given function.
 
 \begin{align*}
 h'(x)
@@ -234,7 +234,7 @@ h'(x)
 ```
 
 
-```{dropdown} **Step 3:** Simplify.
+```{dropdown} **Step 3:** &nbsp; Simplify.
 
 \begin{align*}
 h'(x)
@@ -269,7 +269,7 @@ $$h(x) = \sqrt{3x^2 - 4x + 2}$$
 
 using the basic rules of differentiation.
 
-```{dropdown} **Step 1:** Remember the general power rule.
+```{dropdown} **Step 1:** &nbsp; Remember the general power rule.
 
 Since $h(x)$ can be rewritten as $(3x^2 - 4x + 2)^{1/2}$, remember the general power rule.
 
@@ -278,7 +278,7 @@ $$
 $$
 ```
 
-```{dropdown} **Step 2:** Apply the rule and simplify.
+```{dropdown} **Step 2:** &nbsp; Apply the rule and simplify.
 
 Apply the general power rule with $n=1/2$ and $f(x) = 3x^2 - 4x + 2$ and then simplify.
 
@@ -302,7 +302,7 @@ $$h(x) = (4x+1)^3(2x-5)^4$$
 using the basic rules of differentiation.
 
 
-```{dropdown} **Step 1:** Remember the product rule.
+```{dropdown} **Step 1:** &nbsp; Remember the product rule.
 
 Since $h(x)$ is the product of two functions, remember the product rule for derivatives.
 
@@ -311,7 +311,7 @@ $$
 $$
 ```
 
-```{dropdown} **Step 2:** Apply the product rule.
+```{dropdown} **Step 2:** &nbsp; Apply the product rule.
 
 Apply the product rule with $f(x) = (4x+1)^3$ and $g(x) = (2x-5)^4$.
 
@@ -324,14 +324,14 @@ h'(x)
 Notice how the general power rule was used to compute the derivative of both $(4x+1)^3$ and $(2x-5)^4$.
 ```
 
-```{dropdown} **Step 3:** Pull out common factors.
+```{dropdown} **Step 3:** &nbsp; Pull out common factors.
 
 \begin{align*}
 h'(x) &= 4(4x+1)^2(2x-5)^3\left[3(2x-5) + 2(4x+1)\right]
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Simplify.
+```{dropdown} **Step 4:** &nbsp; Simplify.
 
 \begin{align*}
 h'(x) &= 4(4x+1)^2(2x-5)^3\left[6x-15 + 8x+2\right]\\ \\
@@ -350,7 +350,7 @@ $$h(x) = \dfrac{x^5}{(4x-7)^3}$$
 using the basic rules of differentiation.
 
 
-```{dropdown} **Step 1:** Remember the quotient rule.
+```{dropdown} **Step 1:** &nbsp; Remember the quotient rule.
 
 Since $h(x)$ is the quotient of two functions, remember the quotient rule for derivatives.
 
@@ -359,7 +359,7 @@ $$
 $$
 ```
 
-```{dropdown} **Step 2:** Apply the quotient rule.
+```{dropdown} **Step 2:** &nbsp; Apply the quotient rule.
 
 Apply the quotient rule with $f(x) = x^5$ and $g(x) = (4x-7)^3$.
 
@@ -371,14 +371,14 @@ h'(x)
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Pull out common factors from the numerator.
+```{dropdown} **Step 3:** &nbsp; Pull out common factors from the numerator.
 
 \begin{align*}
 h'(x) &= \frac{x^4(4x-7)^2[5(4x-7) - 12x ]}{(4x-7)^6} 
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Simplify.
+```{dropdown} **Step 4:** &nbsp; Simplify.
 
 \begin{align*}
 h'(x) &= \frac{x^4\cancel{(4x-7)^2}[20x-35 - 12x]}{(4x-7)^{\cancel{6}4}} \\ \\
@@ -398,12 +398,12 @@ $$p = d(x) = 300 - 2x^2$$
 where $p$ is measured in dollars and $x$ is measured in thousands of calculators. What is the instantaneous rate of change of the unit price when the quantity demanded is $5000$ calculators?
 
 
-```{dropdown} **Step 1:** Determine $x$.
+```{dropdown} **Step 1:** &nbsp; Determine &nbsp; $x$.
 
 Notice that $x = 5$ because units are in thousands of calculators demanded.
 ```
 
-```{dropdown} **Step 2:** Compute the derivative.
+```{dropdown} **Step 2:** &nbsp; Compute the derivative.
 
 In order to compute the instantaneous rate of change, we need to compute the derivative, $d'(x)$. 
 
@@ -416,7 +416,7 @@ d'(x) &= \frac{d}{dx}(300 - 2x^2)\\ \\
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Plug in $x=5$.
+```{dropdown} **Step 3:** &nbsp; Plug in &nbsp; $x=5$.
 
 Lastly, substitute $x = 5$ into $d'(x)$.
 
@@ -434,7 +434,7 @@ Use the limit definition of the derivative to evaluate
 
 $$\lim_{h\to 0}\dfrac{(x+h)^2-5(x+h)-(x^2-5x)}{h}.$$
 
-```{dropdown} **Step 1:** Recall the limit definition of the derivative.
+```{dropdown} **Step 1:** &nbsp; Recall the limit definition of the derivative.
 
 Begin with the limit definition of the derivative. 
 
@@ -443,14 +443,14 @@ f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
 $$
 ```
 
-```{dropdown} **Step 2:** Identify $f(x)$.
+```{dropdown} **Step 2:** &nbsp; Identify &nbsp; $f(x)$.
 
 Identify the $f(x)$ in the limit definition of $f'(x)$ for our problem.  If we focus on the $f(x)$ that is being subtracted in the numerator of the limit definition of $f'(x)$, this appears to coincide with the $(x^2-5x)$ that is being subtracted in the numerator of our limit.  So we hypothesize that 
 
 $$f(x) = x^2 - 5x.$$
 ```
 
-```{dropdown} **Step 3:** Verify choice of $f(x)$.
+```{dropdown} **Step 3:** &nbsp; Verify choice of &nbsp; $f(x)$.
 
 Verify that the given limit is equal to the limit definition of the derivative of $f(x) = x^2-5x$. 
 
@@ -461,7 +461,7 @@ $$\lim_{h\to 0}\dfrac{(x+h)^2-5(x+h)-(x^2-5x)}{h} = \lim_{h\to 0} \frac{f(x+h) -
 Since the given limit is equal to the derivative of $x^2-5x$, we can evaluate the limit by computing the derivative of $x^2-5x$ instead of algebraically simplifying it.
 ```
 
-```{dropdown} **Step 4:** Evaluate the limit by computing the derivative.
+```{dropdown} **Step 4:** &nbsp; Evaluate the limit by computing the derivative.
 
 Evaluate the given limit by computing the derivative of $f(x) = x^2-5x$ using the basic rules of differentiation.
 
@@ -481,21 +481,21 @@ Use the limit definition of the derivative to evaluate
 $$\lim_{h\to 0}\dfrac{(2+h)^3-8}{h}.$$
 
 
-```{dropdown} **Step 1:** Recall the limit definition of the derivative.
+```{dropdown} **Step 1:** &nbsp; Recall the limit definition of the derivative.
 
 $$
 f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
 $$
 ```
 
-```{dropdown} **Step 2:** Identify $f(x)$.
+```{dropdown} **Step 2:** &nbsp; Identify &nbsp; $f(x)$.
 
 Identity the $f(x)$ in the limit definition of $f'(x)$ for our problem.  If we focus on the $f(x+h)$ in the numerator of the limit definition of $f'(x)$, this appears to coincide with the $(2+h)^3$ in the numerator of our limit.  So we hypothesize that 
 
 $$f(x) = x^3 ~~~~\hbox{ and } ~~~~ x = 2.$$
 ```
 
-```{dropdown} **Step 3:** Verify choice of $f(x)$.
+```{dropdown} **Step 3:** &nbsp; Verify choice of &nbsp; $f(x)$.
 
 Verify that the given limit is equal to the limit definition of the derivative of the function $f(x) = x^3$ at $x=2$. 
 
@@ -508,7 +508,7 @@ Since the given limit is equal to the derivative of $x^3$ at $x=2$, we can evalu
 
 
 
-```{dropdown} **Step 4:** Evaluate the limit by computing the derivative.
+```{dropdown} **Step 4:** &nbsp; Evaluate the limit by computing the derivative.
 
 Evaluate the given limit by computing the derivative of $f(x) = x^3$ and then plugging in $x=2$.
 
