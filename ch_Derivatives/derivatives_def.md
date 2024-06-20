@@ -53,7 +53,11 @@ and the domain of $f'(x)$ is the set of all $x$ where the limit exists.
 ```{admonition} Differentiability and Continuity
 :class: warning
 
-If a function is differentiable at $x=a$, then it is continuous at $x=a$. If a function is continuous at $x=a$, then it **is not necessarily** differentiable at $x=a$.
+The function $f(x)$ is **differentiable** at $x = a$ if the following limit exists.
+
+$$\lim_{h\to 0} \frac{f(a+h) - f(a)}{h}$$
+
+If a function is differentiable at $x=a$, then it is continuous at $x=a$. However, if a function is continuous at $x=a$, then it **is not necessarily** differentiable at $x=a$.
 ```
 
 ## Computing Derivatives Using the Limit Definition
@@ -90,8 +94,8 @@ $$ f'(x)=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}$$
 \begin{align*}
 f'(x) &=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\\ \\
 &=\lim_{h \to 0} \frac{[3(x^2+2xh+h^2)+12]-[3x^2+12]}{h} && \hbox{FOIL $(x+h)^2$}\\ \\
-&=\lim_{h \to 0} \frac{3x^2+6xh+3h^2+12-3x^2-12}{h} && \hbox{Distribute the '3' and the minus sign}\\ \\
-&=\lim_{h \to 0} \frac{\cancel{3x^2}+6xh+3h^2+\cancel{12}-\cancel{3x^2}-\cancel{12}}{h} && \hbox{Simplify}\\ \\
+&=\lim_{h \to 0} \frac{3x^2+6xh+3h^2+12-3x^2-12}{h} && \hbox{distribute the 3 and the minus sign}\\ \\
+&=\lim_{h \to 0} \frac{\cancel{3x^2}+6xh+3h^2+\cancel{12}-\cancel{3x^2}-\cancel{12}}{h} && \hbox{simplify}\\ \\
 &=\lim_{h \to 0} \frac{6xh+3h^2}{h}
 \end{align*}
 ```
@@ -110,7 +114,7 @@ $$f'(x)=\lim_{h \to 0} 6x+3h=6x+3(0)=6x$$
 
 ```{dropdown} **Step 6:** Plug $x=5$ into evaluated limit.
 
-We have found that $f'(x) = 6x$ is the derivative of our function and the general form of the slope of the tangent line. All that's left for us to do is to plug in $x=5$. Therefore, the slope of the tangent line when $x=5$ is $30$.
+We have found that $f'(x) = 6x$ is the derivative of our function and the general form of the slope of the tangent line. All that's left for us to do is to plug in $x=5$. Therefore, the slope of the tangent line when $x=5$ (i.e., $f'(5)$) is equal to $30$.
 ```
 
 
@@ -163,5 +167,7 @@ $$f'(x) = \lim_{h \to 0} \frac{3 \cancel{h}}{\cancel{h}(\sqrt{x+h}+\sqrt{x})} = 
 ```{dropdown} **Step 5:** Evaluate the limit.
 
 $$f'(x) = \lim_{h \to 0} \frac{3}{\sqrt{x+h}+\sqrt{x}} = \frac{3}{\sqrt{x + 0}+\sqrt{x}} = \frac{3}{\sqrt{x}+\sqrt{x}} = \frac{3}{2\sqrt{x}}$$
+
+Therefore, the derivative of $f(x)$ is equal to $\frac{3}{2\sqrt{x}}$.
 ```
 

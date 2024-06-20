@@ -34,7 +34,7 @@ Evaluate $f'(x)$ for
 
 $$f(x)= \dfrac{7}{x^7} + \dfrac{5}{x^5} + \dfrac{3}{x^3}.$$ 
 
-(Avoid using the quotient rule by rewriting each term so that it involves multplying by a negative power of $x$.) 
+Hint: Avoid using the quotient rule by rewriting each term so that it involves multplying by a negative power of $x$.
 
 ```{dropdown} Show answer
 Answer: $-49x^{-8} - 25x^{-6} - 9x^{-4}$
@@ -44,9 +44,9 @@ Answer: $-49x^{-8} - 25x^{-6} - 9x^{-4}$
 ## Exercise 4
 Find the equation of the tangent line of 
 
-$$f(x)=\dfrac{x^{\frac{3}{2}}+x^{\frac{1}{2}}+1}{x^2} \text{ at } x=4.$$  
+$$f(x)=\dfrac{x^{3/2}+x^{1/2}+1}{x^2} \text{ at } x=4.$$  
 
-(Avoid using the quotient rule by dividing each term of the numerator by $x^2$ and then simplifying.) 
+Hint: Avoid using the quotient rule by dividing each term of the numerator by $x^2$ and then simplifying.
 
 ```{dropdown} Show answer
 Answer: $y = -\frac{9}{64}(x-4) + \frac{11}{16}$
@@ -54,22 +54,22 @@ Answer: $y = -\frac{9}{64}(x-4) + \frac{11}{16}$
 
 
 ## Exercise 5
-Evaluate $f'(x)$ for 
+Compute $f'(x)$ for 
 
 $$f(x)= (x^3+6)(x-2)(x+2).$$  
 
-(Simplify $(x-2)(x+2)$ and then apply the product rule.)
+Hint: Simplify $(x-2)(x+2)$ and then apply the product rule.
 
 ```{dropdown} Show answer
 Answer: $5x^4 - 12x^2 + 12x$
 ```
 
 ## Exercise 6
-Evaluate $f'(x)$ for 
+Compute $f'(x)$ for 
 
 $$f(x)= \sqrt{\dfrac{x^2-1}{x+1}}.$$ 
 
-(Simplify the function before computing the derivative.)
+Hint: Simplify the function before computing the derivative.
 
 ```{dropdown} Show answer
 Answer: $\frac{1}{2\sqrt{x-1}}$
@@ -77,11 +77,11 @@ Answer: $\frac{1}{2\sqrt{x-1}}$
 
 
 ## Exercise 7
-Evaluate $f'(x)$ for 
+Compute $f'(x)$ for 
 
 $$f(x)=\dfrac{17}{(3x+4)^2}.$$ 
 
-(Rewrite the function before differentiating in order to avoid using the quotient rule.)
+Hint: Rewrite the function before differentiating in order to avoid using the quotient rule.
 
 
 ```{dropdown} Show answer
@@ -90,14 +90,14 @@ Answer: $-\frac{102}{(3x+4)^3}$
 
 
 ## Exercise 8
-Evaluate $f'(x)$ for $f(x)=5x^4(x^3+6)^{7}$ and simplify your answer.
+Compute $f'(x)$ for $f(x)=5x^4(x^3+6)^{7}$ and simplify your answer.
 
 ```{dropdown} Show answer
 Answer: $5x^3(x^3+6)^6(25x^3 + 24)$
 ```
 
 ## Exercise 9
-Evaluate $f'(x)$ for $f(x)=\dfrac{(x^2+4)^5}{(x^6+ 1)^3}$ and simplify your answer.
+Compute $f'(x)$ for $f(x)=\dfrac{(x^2+4)^5}{(x^6+ 1)^3}$ and simplify your answer.
 
 ```{dropdown} Show answer
 Answer: $\frac{2x(x^2+4)^4(-4x^6-36x^4+5)}{(x^6+1)^4}$
