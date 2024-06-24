@@ -92,6 +92,10 @@ kernelspec:
 \draw[<-] (3.5,0) -- (4,0.375) node[right] {\large $E(p) = 1$};
 
 
+\node[right] at (-1,-1.5) {Any price movement {\bf towards} the unitary price {\bf increases} total revenue.};
+
+\node[right] at (-1,-2.0) {Any price movement {\bf away} from the unitary price {\bf decreases} total revenue.};
+
 \end{tikzpicture}
 \end{document}
 ```
