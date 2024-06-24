@@ -243,7 +243,7 @@ h'(x)
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Evaluate $h'(2)$.
+```{dropdown} **Step 4:** &nbsp; Evaluate $h'(2)$.
 
 \begin{align*}
 h'(2) &= \frac{2^4+19\cdot2^2-20\cdot2-28}{(2^2+4)^2}\\ \\

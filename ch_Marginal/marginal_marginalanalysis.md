@@ -49,7 +49,7 @@ If $P(x)$ denotes the total profit function, then $P'(x)$ denotes the marginal p
 
 $$P'(x) \approx P(x+1) - P(x)$$
 
-and $\overline{P}'(x)$ denotes the marginal average profit function.
+and $\overline{P}'(x)$ denotes the **marginal average profit function**.
 ```
 
 

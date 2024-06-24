@@ -114,9 +114,9 @@ Once we know slope and $y$-intercept, we can draw the graph.
 \end{document}
 ```
 ```{dropdown} Long Text Description
-There is a horizontal x-axis with the points -3 and 3 marked. There is a vertical y-axis with the points -3, 3, and 6 marked. There is a grid with one unit by one unit cells in the background. The graph of the linear function y = 2x + 3 is plotted. There is a red dotted staircase pattern which meets the linear function at the point (-3,3) and moves to the right by one unit, and then up by two units in a repeating pattern which ends at the point (2,7).
+There is a horizontal x-axis with the points -3 and 3 marked. There is a vertical y-axis with the points -3, 3, and 6 marked. There is a grid with one unit by one unit cells in the background. The graph of the linear function y = 2x + 3 is plotted. There is a red dashed staircase pattern which meets the linear function at the point (-3,-3) and moves to the right by one unit, and then up by two units in a repeating pattern which ends at the point (2,7).
 ```
-Note that the red dashed lined is not part of the graph and is used only as a guide for drawing a line with slope 2.  In particular, in order for a line to have slope equal to $2$, if the $x$-coordinate of any point on the line is increased by 1 unit, then the $y$-coordinate must be increased by 2 units.
+Note that the red dashed line is not part of the graph and is used only as a guide for drawing a line with slope 2.  In particular, in order for a line to have slope equal to $2$, if the $x$-coordinate of any point on the line is increased by 1 unit, then the $y$-coordinate must be increased by 2 units.
 
 
 

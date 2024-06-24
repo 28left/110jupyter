@@ -92,16 +92,20 @@ kernelspec:
 \draw[<-] (3.5,0) -- (4,0.375) node[right] {\large $E(p) = 1$};
 
 
-\node[right] at (-1,-1.5) {Any price movement {\bf towards} the unitary price {\bf increases} total revenue.};
-
-\node[right] at (-1,-2.0) {Any price movement {\bf away} from the unitary price {\bf decreases} total revenue.};
-
 \end{tikzpicture}
 \end{document}
 ```
 ```{dropdown} Long Text Description
-There is a horizontal p axis and a vertical y-axis. A concave down quadratic looking function R(p) is graphed on these axes. R(p) starts out at the origin increasing and concave down, comes to a corner at a point labeled "maximum revenue," and is decreasing and concave down and decreasing from there to a p intercept. There is a vertical dotted line between the a point on the p-axis labeled "E(p) = 1" and the "Maximum Revenue" point. The area to the left of this line and below the graph is labeled "Inelastic Demand". The area to the right of the line and below the graph is labeled "Elastic Demand". The length of line between the origin and "E(p) = 1" is labeled E(p) < 1 and the length of line between "E(p) = 1" and the p-intercept on the right is labeled "E(p) > 1."
+There is a horizontal p-axis and a vertical y-axis. A concave down quadratic looking function R(p) is graphed on these axes. R(p) starts out at the origin increasing and concave down, comes to a maximum value at a point labeled "maximum revenue," and is decreasing and concave down from there to a p-intercept. There is a vertical dotted line between a point on the p-axis labeled "E(p) = 1" and the "Maximum Revenue" point. The area to the left of this line  is labeled "Inelastic Demand". The area to the right of the line is labeled "Elastic Demand". The line between the origin and "E(p) = 1" is labeled E(p) < 1 and the line between "E(p) = 1" and the p-intercept on the right is labeled "E(p) > 1."
 ```
+
+```{admonition} How a change in price affects Total Revenue
+:class: info
+
+1. Any price movement **towards** the unitary price **increases** total revenue.
+2. Any price movement **away** from the unitary price **decreases** total revenue.
+```
+
 ## Example 1
 
 The demand equation for widgets is given by
