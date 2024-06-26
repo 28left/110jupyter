@@ -54,7 +54,7 @@ A company is increasing production of math-brain protein bars at a rate of 50 ca
 
 $$p(x) = 80 - \frac{x}{100}$$
 
-Where $x$ is the number of cases produced and sold, and $p$ is in dollars. Find the rate of change of the revenue with respect to the time in days when daily production is 500 cases.
+where $x$ is the number of cases produced and sold, and $p$ is in dollars. Find the rate of change of the revenue with respect to the time in days when daily production is 500 cases.
 
 ```{dropdown} Show answer
 Answer: revenue increases by \$3,500 per day
@@ -64,9 +64,9 @@ Answer: revenue increases by \$3,500 per day
 ## Exercise 5
 If the quantity demanded daily of a product is related to its unit price in dollars by 
 
-$$p^2 = 106 - x^2$$
+$$p^2 = 106 - x^2,$$
 
-How fast is the quantity demanded changing when $x=5$ and the unit price is decreasing at a rate of \$3 per day.
+how fast is the quantity demanded changing when $x=5$ and the unit price is decreasing at a rate of \$3 per day?
 
 ```{dropdown} Show answer
 Answer: demand increases by $27/5$ units per day

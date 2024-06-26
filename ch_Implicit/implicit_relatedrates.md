@@ -36,9 +36,9 @@ Given $p^2x + 6x = 5$ and $\dfrac{dp}{dt} = 3$. Compute $\dfrac{dx}{dt}$ when $p
 ```{dropdown} **Step 1:** &nbsp; Assign variables and state the known and unknown rates of change.
 
 \begin{align*}
-\text{Variables (as functions of $t$): } & x(t) \text{ and } p(t) \\ 
-\text{Known rate of change: } & \dfrac{dp}{dt} = 3 \\ 
-\text{Unknown rate of change: } & \dfrac{dx}{dt} \text{ when} p=2
+\text{Variables (as functions of $t$): } & ~~ x(t) \text{ and } p(t) \\ 
+\text{Known rate of change: } & ~~ \dfrac{dp}{dt} = 3 \\ 
+\text{Unknown rate of change: } & ~~ \dfrac{dx}{dt} \text{ when } p=2
 \end{align*} 
 ```
 
@@ -51,7 +51,7 @@ $$p^2x + 6x = 5$$
 
 \begin{align*}
 \frac{d}{dt}(p^2x + 6x)
-&= 2pp'x + p^2x' + 6x' && \hbox{Implicit differentiation & Product Rule}\\
+&= 2pp'x + p^2x' + 6x' && \hbox{implicit differentiation & product rule}\\
 &= 0 && \hbox{since $\dfrac{d}{dt} 5 = 0$}
 \end{align*}
 ```
@@ -65,9 +65,9 @@ $$(2)^2x + 6x = 5 ~~~~~\Rightarrow~~~~~ 10x = 5 ~~~~~\Rightarrow~~~~~ x = 1/2$$
 
 ```{dropdown} **Step 5:** &nbsp; Plug values and derivatives into the equation found in Step 3.
 
-Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($p=2$, $x=1/2$, $\frac{dp}{dt} = 3$)
+Plug the known values of the variables and their derivatives ($p=2$, $x=1/2$, $\frac{dp}{dt} = 3$) into the equation found in Step 3. 
 
-$$2(2)(3)\frac{1}{2} + (2)^2x' + 6x' = 0  ~~~~~\Rightarrow~~~~~ 6 + 10x' = 0 ~~~~~\Rightarrow~~~~~ x' = -3/5$$
+$$2(2)(3)\frac{1}{2} + 2^2x' + 6x' = 0  ~~~~~\Rightarrow~~~~~ 6 + 10x' = 0 ~~~~~\Rightarrow~~~~~ x' = -3/5$$
 
 Therefore $\dfrac{dx}{dt} = -3/5$ when $p=2$ and $\dfrac{dp}{dt} = 3$.
 ```
@@ -84,29 +84,41 @@ where $x$ is the number of cases produced and sold, and $p(x)$ is the unit price
 
 \begin{align*}
 
-\text{Variables (as functions of $t$): } & x(t) = \text{ the quantity produced and sold per day} \\
-& R(t) = \text{ the daily revenue} \\
-\text{Known rate of change: } & \dfrac{dx}{dt} = -100 \text{ since production is decreasing} \\ \\
-\text{Unknown rate of change: } & \dfrac{dR}{dt} \text{ when } x=300
+\text{Variables (as functions of $t$): } & ~~ x(t) = \text{ the quantity produced and sold per day} \\
+& ~~ R(t) = \text{ the daily revenue} \\
+\text{Known rate of change: } & ~~ \dfrac{dx}{dt} = -100 \text{ since production is decreasing} \\ \\
+\text{Unknown rate of change: } & ~~ \dfrac{dR}{dt} \text{ when } x=300
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** &nbsp; Find an equation which relates the variables. 
+```{dropdown} **Step 2:** &nbsp; Find an equation which relates the variables. 
 
 \begin{align*}
-R &= x\cdot p(x) && \text{Revenue Function}\\
+R &= x\cdot p(x) && \text{revenue function}\\
 &= x \left(50 - \frac{x}{200}\right) && \text{since $p(x) = 50 - \frac{x}{200}$}\\
-&= 50x - \frac{1}{200}x^2 && \hbox{Simplify}
+&= 50x - \frac{1}{200}x^2 && \hbox{simplify}
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** &nbsp; Differentiate both sides of the equation implicitly with respect to &nbsp; $t$.
+```{dropdown} **Step 3:** &nbsp; Differentiate both sides of the equation implicitly with respect to &nbsp; $t$.
 
 \begin{align*}
 \frac{dR}{dt}
 &= \frac{d}{dt}\left(50x - \frac{1}{200}x^2 \right)\\ 
-&= 50 \,\frac{dx}{dt} - \frac{1}{200}\,2x\,\frac{dx}{dt} && \text{Implicit differentiation & Power Rule}\\
-&= 50 \, \frac{dx}{dt} - \frac{x}{100}\,\frac{dx}{dt} && \text{Simplify}
+&= 50 \,\frac{dx}{dt} - \frac{1}{200}\,2x\,\frac{dx}{dt} && \text{implicit differentiation & power rule}\\
+&= 50 \, \frac{dx}{dt} - \frac{x}{100}\,\frac{dx}{dt} && \text{simplify}
+\end{align*}
+```
+
+```{dropdown} **Step 4:** &nbsp; Plug values and derivatives into the equation found in Step 3.
+
+Plug the known values of the variables and their derivatives ($x=300$, $\frac{dx}{dt} = -100$) into the equation found in Step 3. 
+
+\begin{align*}
+\frac{dR}{dt}
+&= 50(-100) - \frac{300}{100}(-100)\\ 
+&= -5000 + 300 \\
+&= -4700
 \end{align*}
 
 Therefore revenue is decreasing at \$4700 per day when the level of production is 300 cases per day and decreasing at 100 cases per day.
@@ -124,10 +136,10 @@ where $x$ is the number of thousands of units demanded weekly and $p$ is in doll
 
 \begin{align*}
 
-\text{Variables (as functions of $t$): } & x(t) = \text{ demand in units of a thousand} \\
-&  p(t) = \text{ unit price in dollars}\\ 
-\text{Known rate of change: } & \dfrac{dp}{dt} = \dfrac{25}{100} \text{ since price (in dollars) is increasing } \\
-\text{Unknown rate of change: } & \dfrac{dx}{dt} \text{ when } x = 4
+\text{Variables (as functions of $t$): } & ~~ x(t) = \text{ demand in units of a thousand} \\
+&  ~~ p(t) = \text{ unit price in dollars}\\ 
+\text{Known rate of change: } & ~~ \dfrac{dp}{dt} = \dfrac{25}{100} \text{ since price (in dollars) is increasing } \\
+\text{Unknown rate of change: } & ~~ \dfrac{dx}{dt} \text{ when } x = 4
 
 \end{align*}
 ```
@@ -141,7 +153,7 @@ $$2p + x + 4xp = 22$$
 
 \begin{align*}
 \frac{d}{dt}(2p + x + 4xp)
-&= 2\frac{dp}{dt} + \frac{dx}{dt} + 4\frac{dx}{dt}p + 4x\frac{dp}{dt} && \hbox{Implicit differentiation & Product Rule} \\
+&= 2\frac{dp}{dt} + \frac{dx}{dt} + 4\frac{dx}{dt}p + 4x\frac{dp}{dt} && \hbox{implicit differentiation & product rule} \\
 &= 0 && \hbox{since $\dfrac{d}{dt}22 = 0$}
 \end{align*}
 ```
@@ -155,11 +167,11 @@ $$2p + 4 + 4(4)p = 22 ~~~~~\Rightarrow~~~~~ 18p + 4 = 22 ~~~~~\Rightarrow~~~~~ p
 
 ```{dropdown} **Step 5:** &nbsp; Plug values and derivatives into the equation found in Step 3.
 
-Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($x=4$, $p=1$, $\frac{dp}{dt} = 25/100$)
+Plug the known values of the variables and their derivatives ($x=4$, $p=1$, $\frac{dp}{dt} = 25/100$) into the equation found in Step 3. 
 
 \begin{align*}
 0 &= 2\left(\frac{25}{100}\right) + \frac{dx}{dt} + 4\frac{dx}{dt}(1) + 4(4)\left(\frac{25}{100}\right) \\
-&= \frac{1}{2} + 5\frac{dx}{dt}  + 4 && \hbox{Simplify} \\
+&= \frac{1}{2} + 5\frac{dx}{dt}  + 4 && \hbox{simplify} \\
 &= \frac{9}{2} + 5\frac{dx}{dt} 
 \end{align*}
 
@@ -182,10 +194,10 @@ If 20,000 styluses are available at the beginning of a week, and the price is fa
 
 \begin{align*}
 
-\text{Variables (as functions of $t$): } & x(t) = \text{ supply in units of a thousand} \\
-&  p(t) = \text{ unit price in dollars}\\ 
-\text{Known rate of change: } & \dfrac{dp}{dt} = -\dfrac{4}{100} \text{ since price (in dollars) is falling} \\
-\text{Unknown rate of change: } & \dfrac{dx}{dt} \text{ when } x = 20
+\text{Variables (as functions of $t$): } & ~~ x(t) = \text{ supply in units of a thousand} \\
+&  ~~ p(t) = \text{ unit price in dollars}\\ 
+\text{Known rate of change: } & ~~ \dfrac{dp}{dt} = -\dfrac{4}{100} \text{ since price (in dollars) is falling} \\
+\text{Unknown rate of change: } & ~~ \dfrac{dx}{dt} \text{ when } x = 20
 
 \end{align*}
 ```
@@ -198,7 +210,7 @@ $$125p^2 - x^2 = 100$$
 ```{dropdown} **Step 3:** &nbsp; Differentiate both sides of the equation implicitly with respect to &nbsp; $t$.
 
 \begin{align*}
-250p\frac{dp}{dt} - 2x\frac{dx}{dt} = 0 && \text{Power Rule}
+250p\frac{dp}{dt} - 2x\frac{dx}{dt} = 0 && \text{power rule}
 \end{align*}
 ```
 
@@ -211,11 +223,11 @@ $$125p^2 - 20^2 = 100 ~~~~~\Rightarrow~~~~~ 125p^2 = 500 ~~~~~\Rightarrow~~~~~ p
 
 ```{dropdown} **Step 5:** &nbsp; Plug values and derivatives into the equation found in Step 3.
 
-Plug in the known values of the variables and their derivatives into the equation found in Step 3. ($x=20$, $p=2$, $\frac{dp}{dt} = -4/100$)
+Plug the known values of the variables and their derivatives ($x=20$, $p=2$, $\frac{dp}{dt} = -4/100$) into the equation found in Step 3. 
 
 \begin{align*}
 0 &= 250(2)\left(-\frac{4}{100}\right) - 2(20)\frac{dx}{dt} \\
-&= -500\left(\frac{4}{100}\right) - 40 \frac{dx}{dt} && \hbox{Simplify} \\
+&= -500\left(\frac{4}{100}\right) - 40 \frac{dx}{dt} && \hbox{simplify} \\
 &= -20 - 40 \frac{dx}{dt} 
 \end{align*}
 
