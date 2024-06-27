@@ -78,19 +78,24 @@ There is a label reading "Inflection Points" with arrows from it pointing at bot
 ```
 ## Finding Inflection Points using the Second Derivative
 
-- Find all values of $x$ such that $f''(x) = 0$ or $f''(x)$ does not exist.
-- Break up domain of $f$ into open intervals between values found in Step 1.
-- Evaluate $f''(x)$ at one value, $c$, from each interval found in Step 2.  
+```{admonition} How to find inflection points of a function
+:class: warning
+1. Find all values of $x$ such that $f''(x) = 0$ or $f''(x)$ does not exist.
+2. Break up domain of $f$ into open intervals between values found in Step 1.
+3. Evaluate $f''(x)$ at one value, $c$, from each interval found in Step 2.  
 
-  If $f''(x)$ changes sign at $x=c$ and $x=c$ is in the domain of $f$, then the point $(c,f(c))$ is an inflection point of $f$. 
-
+    - If $f''(x)$ changes sign at $x=c$ and $x=c$ is in the domain of $f$, then the point $(c,f(c))$ is an inflection point of $f$. 
+```
 
 ## Example 2
+
+```{admonition} Find inflection points
+:class: tip
 
 Find the inflection points of 
 
 $$f(x) = x^3 + 10x - \dfrac{3}{x}.$$
-
+```
 
 ```{dropdown} **Step 1:** &nbsp;  Compute &nbsp; $f''(x)$.
 
@@ -103,10 +108,10 @@ f'(x)
 f''(x) 
 &= 6x - 6x^{-3} \\
 &= 6x - \frac{6}{x^3} \\
-&= \frac{6x^4}{x^3} - \frac{6}{x^3} && \hbox{Get a common denominator}\\
+&= \frac{6x^4}{x^3} - \frac{6}{x^3} && \hbox{get a common denominator}\\
 &= \frac{6x^4 - 6}{x^3}  \\
 &= \frac{6(x^4 - 1)}{x^3} \\
-&= \frac{6(x - 1)(x+1)(x^2+1)}{x^3} && \hbox{Factor numerator}
+&= \frac{6(x - 1)(x+1)(x^2+1)}{x^3} && \hbox{factor numerator}
 \end{align*}
 
 The last equality follows from treating $x^4-1$ as a difference of squares (i.e., $x^4 -1 = (x^2)^2 - 1^2 = (x^2-1)(x^2+1) = (x-1)(x+1)(x^2+1)$).
@@ -158,7 +163,7 @@ A **point of diminishing returns** is an inflection point appearing where a func
 ```
 ````
 ```{dropdown} Long Text Description
-There is a horizontal x axis. There is a vertical y axis. There is an increasing curve plotted on these axes. There is a point, colored red and labeled “Point of Diminishing Returns” along the curve. To the left of this point, the curve is concave up. To the right, this curve is concave down.
+There is a horizontal x-axis. There is a vertical y-axis. There is an increasing curve plotted on these axes. There is a point, colored red and labeled “Point of Diminishing Returns” along the curve. To the left of this point, the curve is concave up. To the right, this curve is concave down.
 ```
 
 ````{admonition} Point of Increasing Returns
@@ -173,13 +178,15 @@ A **point of increasing returns** is an inflection point appearing where a funct
 ```
 ````
 ```{dropdown} Long Text Description
-There is a horizontal x axis. There is a vertical y axis. There is an increasing curve plotted on these axes. There is a point, colored red and labeled “Point of Increasing Returns” along the curve. To the left of this point, the curve is concave down. To the right, this curve is concave up.
+There is a horizontal x-axis. There is a vertical y-axis. There is an increasing curve plotted on these axes. There is a point, colored red and labeled “Point of Increasing Returns” along the curve. To the left of this point, the curve is concave down. To the right, this curve is concave up.
 ```
 
 ## Example 3
 
+```{admonition} Find point of diminishing or increasing return
+:class: tip 
 Determine whether or not $f(x) = 3x^3-18x^2+81x+90$ has a point of diminishing or increasing return.
-
+```
 
 ```{dropdown} **Step 1:** &nbsp;  Compute &nbsp; $f'(x)$.
 

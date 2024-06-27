@@ -27,16 +27,20 @@ Suppose $c$ is a critical point of $f$ where $f'(c) = 0$ and $f''(x)$ is continu
 
 ## Example 1
 
+```{admonition} Classifying critical points using the second derivative test
+:class: tip
+
 Find the relative extrema of 
 
 $$f(x) = 12 x^5 - 45 x^4 - 200 x^3 +12.$$
+```
 
 ```{dropdown} **Step 1:** &nbsp; Find the critical points of &nbsp; $f$.
 
 \begin{align*}
 f'(x) &= 60 x^4 - 180 x^3 - 600 x^2 \\
-&= 60x^2(x^2-3x-10) && \text{Pull out common factor of $60x^2$}\\
-&= 60x^2(x-5)(x+2) && \text{Factor}\\
+&= 60x^2(x^2-3x-10) && \text{pull out common factor of $60x^2$}\\
+&= 60x^2(x-5)(x+2) && \text{factor}\\
 \end{align*}
 
 which equals zero when $x=-2$, $x=0$, and $x=5$.  Also note that $f'(x)$ exists for all $x$ in the domain of $f$.  Since the domain of $f$ is $(-\infty,\infty)$, all of these values of $x$ are critical points.
@@ -59,7 +63,7 @@ Evaluate $f''(x)$ at each critical point where $f'(x)=0$ and use the Second Deri
 - $x=-2$: Since $f'(-2) = 0$ and $f''(-2) = 60(-2)(16+18-20) < 0$, $f$ has a relative maximum at $x=-2$.
 
 
-- $x=0$: Since $f'(0) = 0$ and $f''(0) = 60(0)(-20) = 0$, the Second Derivative test is inconclusive.  Instead, using the First Derivative test, we see that there is no change in sign of $f'(x)$ at $x=0$, and therefore, $f$ does not have a relative extreme at $x=0$.
+- $x=0$: Since $f'(0) = 0$ and $f''(0) = 60(0)(-20) = 0$, the Second Derivative test is inconclusive.  Instead, using the First Derivative test, we see there is no change in sign of $f'(x)$ at $x=0$, and therefore, $f$ does not have a relative extreme at $x=0$.
 
 ```{figure} ../images/pic_curvesketching_secondderivativetest.png
 ---

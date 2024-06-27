@@ -102,14 +102,17 @@ The following graph is an example of a function that has vertical asymptotes at 
 \end{document}
 ```
 ```{dropdown} Long Text Description
-There is a horizontal x axis with the points -1 and 3 marked. There is a vertical y axis. There is a grid in the background of 1/2 by 1/2 squares. There is a blue dashed horizontal line at y = 1. There is a red dashed vertical line at x = -1. There is a red dashed vertical line at x = 3. The graph of a function is plotted on these axes. From left to right, the function decreases from the blue dashed line and goes to negative infinity as it approaches the red dashed line at x = -1, comes down from positive infinity to the right of -1, goes down to negative infinity as it approaches the red dashed line at x = 3, and comes down from positive infinity at x = 3 towards the blue dashed line as it heads off to the right.
+There is a horizontal x-axis with the points -1 and 3 marked. There is a vertical y-axis. There is a grid in the background of 1/2 by 1/2 squares. There is a blue dashed horizontal line at y = 1. There is a red dashed vertical line at x = -1. There is a red dashed vertical line at x = 3. The graph of a function is plotted on these axes. From left to right, the function decreases from the blue dashed line and goes to negative infinity as it approaches the red dashed line at x = -1, comes down from positive infinity to the right of -1, goes down to negative infinity as it approaches the red dashed line at x = 3, and comes down from positive infinity at x = 3 towards the blue dashed line as it heads off to the right.
 ```
 ## Example 2
+
+```{admonition} Find asymptotes
+:class: tip
 
 Find the horizontal and vertical asymptotes of 
 
 $$f(x)=\dfrac{7x^2+2x+1}{2x^2+3x-9}.$$
-
+```
 
 ```{dropdown} **Step 1:** &nbsp;  Horizontal Asymptotes.
 
@@ -128,7 +131,7 @@ Factor and simplify $f(x)$.
 \begin{align*}
 f(x)
 &= \frac{7x^2+2x+1}{2x^2+3x-9} \\ 
-&= \frac{7x^2+2x+1}{(2x-3)(x+3)} 
+&= \frac{7x^2+2x+1}{(2x-3)(x+3)} && \text{AC grouping}
 \end{align*}
 
 Therefore $x =-3$ and $x=3/2$ are possible vertical asymptotes.  
@@ -143,10 +146,13 @@ Since $g(-3) \neq 0 $ and $g(3/2) \neq 0$, $x=-3$ and $x=3/2$ are both vertical 
 
 ## Example 3
 
+```{admonition} Find asymptotes
+:class: tip
+
 Find the horizontal and vertical asymptotes of 
 
 $$f(x)=\dfrac{x^4-x^2}{x^3 + x^2 - 2 x}.$$
-
+```
 
 ```{dropdown} **Step 1:** &nbsp;  Horizontal Asymptotes.
 
@@ -164,9 +170,9 @@ Factor and simplify $f(x)$.
 
 \begin{align*}
 f(x) 
-&= \frac{x^2(x^2-1)}{x(x^2 + x - 2)} && \text{Pull out common factors}\\
-&= \frac{x^2(x-1)(x+1)}{x(x+2)(x-1)} && \text{Factor numerator and denominator}\\
-&=  \frac{x^{\cancel{2}}\cancel{(x-1)}(x+1)}{\cancel{x}(x+2)\cancel{(x-1)}} && \text{Cancel common factors}\\
+&= \frac{x^2(x^2-1)}{x(x^2 + x - 2)} && \text{pull out common factors}\\
+&= \frac{x^2(x-1)(x+1)}{x(x+2)(x-1)} && \text{factor numerator and denominator}\\
+&=  \frac{x^{\cancel{2}}\cancel{(x-1)}(x+1)}{\cancel{x}(x+2)\cancel{(x-1)}} && \text{cancel common factors}\\
 &= \frac{x(x+1)}{x+2} 
 \end{align*}
 

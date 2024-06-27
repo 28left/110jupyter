@@ -19,23 +19,35 @@ kernelspec:
 :class: info
 
 A function is **concave up** on an interval if its derivative is increasing on the interval.
-
-*If $f''(x) > 0$ for all $x$ on the interval $(a,b)$, then $f$ is concave up on $(a,b)$.*
 ```
+
+```{admonition} Theorem
+:class: warning
+
+If $f''(x) > 0$ for all $x$ on the interval $(a,b)$, then $f$ is concave up on $(a,b)$.
+```
+
 
 ```{admonition} Concave Down
 :class: info
 
 A function is **concave down** on an interval if its derivative is decreasing on the interval.
-
-*If $f''(x) < 0$ for all $x$ on the interval $(a,b)$, then $f$ is concave down on $(a,b)$.*
 ```
 
+```{admonition} Theorem
+:class: warning
+
+If $f''(x) < 0$ for all $x$ on the interval $(a,b)$, then $f$ is concave down on $(a,b)$.
+```
 
 
 ## Example 1
 
+```{admonition} Finding intervals of concavity from the graph of a function
+:class: tip
+
 The following is the graph of a continuous function that is concave down on the interval $(1,4)$ and concave up on the interval $(4,7)$.
+```
 
 ```{code-cell}
 :tags: [remove-cell]
@@ -68,26 +80,32 @@ The following is the graph of a continuous function that is concave down on the 
 \end{document}
 ```
 ```{dropdown} Long Text Description
-There is a horizontal x axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y axis. The graph of a function is plotted on these axes. Reading from left to right, the function goes up at a slowing pace, reaches a rounded corner, decreases at an accelerating pace, decreases at a slowing pace, reaches another rounded corner, and goes upward at an accelerating pace.
+There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y-axis. The graph of a function is plotted on these axes. Reading from left to right, the function goes up at a slowing pace, reaches a rounded corner, decreases at an accelerating pace, decreases at a slowing pace, reaches another rounded corner, and goes upward at an accelerating pace.
 ```
 
 ## Finding Intervals of Concavity using the Second Derivative
+
+```{admonition} How to find intervals of concavity of a function
+:class: warning
 
 - Find all values of $x$ such that $f''(x) = 0$ or $f''(x)$ does not exist.
 - Break up domain of $f$ into open intervals between values found in Step 1. 
 - Evaluate $f''(x)$ at one value, $c$, from each interval, $(a,b)$, found in Step 2.
     - If $f''(c) > 0$, then $f$ is concave up on $(a,b)$.
     - If $f''(c) < 0$, then $f$ is concave down on $(a,b)$.
-
+```
 
 ## Example 2
+
+```{admonition} Finding intervals of concavity
+:class: tip
 
 If the second derivative of $f(x)$ is 
 
 $$\displaystyle f''(x) = \frac{x^2-4x}{x-6}$$ 
 
 find the intervals  of concavity of $f$.
-
+```
 
 ```{dropdown} **Step 1:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f''(x) = 0$.
 
