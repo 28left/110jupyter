@@ -21,14 +21,22 @@ A **critical point** of the function $f$ is any number $c$ *in the domain of* $f
 $$f'(c)=0 \quad \text{or} \quad \text{$f'(c)$ does not exist.}$$
 ```
 
-Critical points of $f$ correspond to *possible* locations of relative extrema.
+```{admonition} Critical points versus relative extrema
+:class: warning
+Critical points of $f$ correspond to *possible* locations of relative extrema.  In other words, not all critical points correspond to a relative extrema.  However, every relative extrema must appear at a critical point.
+```
 
 (curvesketching_critical_points_example_1)=
 ## Example 1
 
+```{admonition} Finding critical points
+:class: tip
+
 Find the critical points of 
 
 $$f(x) = \sqrt[3]{x^2-1}.$$
+```
+
 
 ```{dropdown} **Step 1:** &nbsp; Compute &nbsp; $f'(x)$. 
 
@@ -60,9 +68,13 @@ The domain of $f$ is all real numbers.  Therefore, $x=-1$, $x=0$, and $x=1$ are 
 (curvesketching_critical_points_example_2)=
 ## Example 2
 
+```{admonition} Finding critical points
+:class: tip
+
 Find the critical points of 
 
 $$f(x) = x^3 +3x^2 - 24x + 1.$$
+```
 
 ```{dropdown} **Step 1:** &nbsp; Compute &nbsp; $f'(x)$.
 

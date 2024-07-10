@@ -30,10 +30,13 @@ kernelspec:
 
 ## Example 1
 
+```{admonition} Curve sketching
+:class: tip
+
 Sketch the graph of 
 
 $$y = \dfrac{2x + 3}{x + 4}.$$
-
+```
 
 
 ```{dropdown} **Step 1:** &nbsp;  Determine the domain.
@@ -47,10 +50,10 @@ In this case, $f(x)$ is undefined when the denominator equals zero, which is whe
 - $x$-intercept: Set $y=0$ and solve for $x$.
 
 \begin{align*}
-    \frac{2x + 3}{x + 4} &= 0 && \text{Set $f(x) = 0$} \\
-    \frac{2x + 3}{x + 4}(x + 4) &= 0(x + 4) && \text{Multiply both sides by $(x + 4)$} \\
-    2x + 3 &= 0  && \text{Simplify both sides} \\
-    x &= -\frac{3}{2}. &&  \text{Solve for $x$}
+    \frac{2x + 3}{x + 4} &= 0 && \text{set $f(x) = 0$} \\
+    \frac{2x + 3}{x + 4}(x + 4) &= 0(x + 4) && \text{multiply both sides by $(x + 4)$} \\
+    2x + 3 &= 0  && \text{simplify both sides} \\
+    x &= -\frac{3}{2}. &&  \text{solve for $x$}
 \end{align*}
 
 
@@ -58,7 +61,7 @@ In this case, $f(x)$ is undefined when the denominator equals zero, which is whe
 
 \begin{align*}
     y 
-    &= f(0) && \text{Plug in $x = 0$}\\
+    &= f(0) && \text{plug in $x = 0$}\\
     &= \frac{2(0) + 3}{0 + 4} \\
     &= \frac{3}{4}
 \end{align*}
@@ -86,9 +89,9 @@ Therefore, $f$ has an $x$-intercept at the point $(-3/2,0)$ and a $y$-intercept 
 
   \begin{align*}
   f'(x) 
-  &= \frac{2(x + 4) - (2x + 3)(1)}{(x + 4)^2} && \text{Using the   quotient rule}\\
-  &= \frac{2x + 8 - 2x - 3}{(x + 4)^2} && \text{Simplify}\\
-  &= \frac{5}{(x + 4)^2} && \text{Simplify} 
+  &= \frac{2(x + 4) - (2x + 3)(1)}{(x + 4)^2} && \text{using the quotient rule}\\
+  &= \frac{2x + 8 - 2x - 3}{(x + 4)^2} && \text{expand the numerator}\\
+  &= \frac{5}{(x + 4)^2} && \text{combine like terms in numerator} 
   \end{align*}
   
   Notice that $f'(x)$ is never equal to zero and is defined for all values of $x$ in the domain of $f$  (i.e., $f$ doesn't have any critical points).
@@ -119,7 +122,7 @@ Since $f$ does not have any critical points, $f$ does not have any relative extr
 
 \begin{align*}
 f''(x) 
-&= \frac{d}{dx} 5(x+4)^{-2} && \text{Rewrite $f'(x)$ } \\
+&= \frac{d}{dx} 5(x+4)^{-2} && \text{rewrite $f'(x)$ } \\
 &= -10(x+4)^{-3} \\
 &= -\frac{10}{(x+4)^3}
 \end{align*}
@@ -153,5 +156,5 @@ The only change in sign of $f''(x)$ occurs at $x=-4$.  But since $x=-4$ is not i
 :align: center
 ```
 ```{dropdown} Long Text Description
-There is a horizontal x axis with the points -16, -12, -8, -4, 4, and 8 labeled. There is a vertical y axis with the points -6, -2, 2, and 6 labeled. A curve is plotted. The curve has a horizontal asymptote represented by a blue dotted line at y=2, and a vertical asymptote represented by a red line at x= -4. The curve comes in increasing and concave up from its horizontal asymptote on the left, then heads towards infinity as x increases to -4. On the other side of x=-4, the curve comes increasing and concave down from negative infinity and increases towards its horizontal asymptote at y=2 as it heads off to the right.
+There is a horizontal x-axis with the points -16, -12, -8, -4, 4, and 8 labeled. There is a vertical y-axis with the points -6, -2, 2, and 6 labeled. A curve is plotted. The curve has a horizontal asymptote represented by a blue dotted line at y=2, and a vertical asymptote represented by a red line at x= -4. The curve comes in increasing and concave up from its horizontal asymptote on the left, then heads towards infinity as x increases to -4. On the other side of x=-4, the curve comes increasing and concave down from negative infinity and increases towards its horizontal asymptote at y=2 as it heads off to the right.
 ```

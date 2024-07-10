@@ -395,7 +395,7 @@ Factor $7x^4 + 35x^3 + 42x^2$.
 ```
 
 
-```{dropdown} **Step 1:** &nbsp; Determine the factors common to both terms.
+```{dropdown} **Step 1:** &nbsp; Determine the factors common to all three terms.
 
 - Constant factors: $7$, $35$, and $42$ are all multiples of $7$.
 - Powers of $x$: the smallest power of $x$ is $2$.
