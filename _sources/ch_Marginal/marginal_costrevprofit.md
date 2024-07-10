@@ -18,7 +18,7 @@ kernelspec:
 ```{admonition} Definition
 :class: info
 
-The **total cost function**, $C(x)$ measures the costs incurred from operating a business and is defined by
+The **total cost function**, $C(x)$, measures the costs incurred from operating a business and is defined by
 
 $$C(x) = F(x) + V(x)$$
 
@@ -66,7 +66,7 @@ $$\overline{R}(x) = \frac{R(x)}{x}.$$
 ```{admonition} Definition
 :class: info
 
-The **total profit function**, $P(x)$ measures the difference between the total revenue and total cost functions and is defined by
+The **total profit function**, $P(x)$, measures the difference between the total revenue and total cost functions and is defined by
 
 $$P(x) = R(x) - C(x)$$
 
@@ -110,8 +110,8 @@ C(x) &= F(x) + V(x) && \text{total cost equals fixed costs plus variable costs}\
 \begin{align*}
     P(x) &= R(x) - C(x) && \text{profit equals revenue minus cost}\\
     &= \left( 19x \right) - \left( 500 + 9x\right) && \text{using Steps 1 and 2}\\
-    &= 19x - 500 - 9x \\
-    &= 10x - 500 && 
+    &= 19x - 500 - 9x && \text{distribute minus sign}\\
+    &= 10x - 500 && \text{combine like terms}
 \end{align*}
 ```
 

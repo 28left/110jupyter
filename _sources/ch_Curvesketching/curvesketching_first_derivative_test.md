@@ -34,12 +34,16 @@ Suppose $c$ is a critical point of the continuous function $f$.
 
 ## Example 1
 
+```{admonition} Classifying critical points using the first derivative test
+:class: tip
+
 In [Example 1](curvesketching_critical_points_example_1), we found that the critical points of 
 
 $$f(x) = \sqrt[3]{x^2-1}$$ 
 
 were $x=-1$, $x=0$, and $x=1$.
 Classify each critical point using the First Derivative Test. 
+```
 
 ````{dropdown} **Step 1:** &nbsp; Break up the domain of &nbsp; $f'(x)$ &nbsp; at each critical point.
 
@@ -56,7 +60,7 @@ Interval analysis of $f'(x) = \dfrac{2x}{3(x^2 - 1)^{2/3}}$
 ```
 ````
 ```{dropdown} Long Text Description
-A number line with positive and negative signs assigned to intervals, which are negative to the left of negative one, negative between one and zero, positive between zero and one, and positive to the right of one.
+A number line with positive and negative signs assigned to intervals, which are negative to the left of negative one, negative between negative one and zero, positive between zero and one, and positive to the right of one.
 
 ```
 
@@ -70,11 +74,15 @@ Since $f'(x)$ does not change sign at $x=-1$ and $x=1$, $f(x)$ does not have rel
 
 ## Example 2
 
+```{admonition} Classifying critical points using the first derivative test
+:class: tip
+
 In [Example 2](curvesketching_critical_points_example_2), we found that the critical points of 
 
 $$f(x) = x^3 +3x^2 - 24x + 1$$ 
 
 were $x=-4$ and $x=2$. Classify the critical point using the First Derivative Test. 
+```
 
 ````{dropdown} **Step 1:** &nbsp; Break up the domain of &nbsp; $f'(x)$ &nbsp; at each critical point.
 
@@ -91,7 +99,7 @@ Interval analysis of $f'(x) = 3(x+4)(x-2)$.
 ```
 ````
 ```{dropdown} Long Text Description
-A number line with positive and negative signs assigned to intervals, with positive to the left of negative four, negative from negative four and two, and positive to the right of two.
+A number line with positive and negative signs assigned to intervals, with positive to the left of negative four, negative between negative four and two, and positive to the right of two.
 
 
 ```

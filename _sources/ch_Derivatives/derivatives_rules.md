@@ -34,7 +34,7 @@ $$
 $$
 ```
 
-```{admonition} Derivative of a Constant Multiple of a Function
+```{admonition} The Constant Multiple Rule
 :class: info
 
 For any real number $c$, 
@@ -52,23 +52,15 @@ $$
 $$
 ```
 
-````{admonition} The Product Rule
+```{admonition} The Product Rule
 :class: info
 
 $$
 \frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)
 $$
-
-```{admonition} Tutor Talk
-:class: tip
-
-If $y=(1^{st})(2^{nd})$, then 
-
-$$y'=(d1^{st})(2^{nd}) + (1^{st})(d2^{nd}).$$
 ```
-````
 
-````{admonition} The Quotient Rule
+```{admonition} The Quotient Rule
 :class: info
 
 If $g(x)\neq 0$, 
@@ -76,15 +68,7 @@ If $g(x)\neq 0$,
 $$
 \frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}
 $$
-
-```{admonition} Tutor Talk
-:class: tip
-
-If $y=\frac{Hi}{Lo}$, 
-
-$$y' = \frac{(Lo)(dHi) - (Hi)(dLo)}{LoLo}.$$
 ```
-````
 
 ```{admonition} The Chain Rule
 :class: info
@@ -161,8 +145,8 @@ Remember $x^0=1$.
 \begin{align*}
 f'(x) 
 &= 5\frac{d}{dx}\left(x^2\right)-4\frac{d}{dx}\left(x^1\right)+0+3\frac{d}{dx}\left(x^{-4}\right) && \hbox{$\dfrac{d}{dx}(c) = 0$ for any constant $c$}\\ \\ 
-&= 5 \cdot 2x^{2-1} -  4\cdot1x^{1-1} + 3\cdot (-4)x^{-4-1} && \hbox{Power Rule, $\dfrac{d}{dx}x^n = nx^{n-1}$}\\ \\
-&= 10x^1 - 4x^0 - 12x^{-5} && \hbox{Simplify}\\
+&= 5 \cdot 2x^{2-1} -  4\cdot1x^{1-1} + 3\cdot (-4)x^{-4-1} && \hbox{power rule, $\dfrac{d}{dx}x^n = nx^{n-1}$}\\ \\
+&= 10x^1 - 4x^0 - 12x^{-5} && \hbox{simplify}\\
 %&= 10x - 4 - \frac{12}{x^5}
 \end{align*}
 
@@ -201,13 +185,13 @@ $$ f(x)=3x^2+1 ~~~\text{  and  }~~~ g(x)=x^2+x+1$$
 \begin{align*}
 f'(x) 
 &= \frac{d}{dx}(3x^2 + 1) \\
-&= \frac{d}{dx}(3x^2) + \frac{d}{dx}(1) && \hbox{Sum Rule}\\
-&= 3\cdot 2x + 0 && \hbox{Power Rule & $\dfrac{d}{dx}(c) = 0$} \\
+&= \frac{d}{dx}(3x^2) + \frac{d}{dx}(1) && \hbox{sum rule}\\
+&= 3\cdot 2x + 0 && \hbox{power Rule & $\dfrac{d}{dx}(c) = 0$} \\
 &= 6x \\ \\
 g'(x) 
 &= \frac{d}{dx}(x^2+x+1)\\
-&= \frac{d}{dx}(x^2) + \frac{d}{dx}(x) + \frac{d}{dx}(1) && \hbox{Sum Rule}\\
-&= 2x + 1 + 0 && \hbox{Power Rule & $\dfrac{d}{dx}(c) = 0$} \\
+&= \frac{d}{dx}(x^2) + \frac{d}{dx}(x) + \frac{d}{dx}(1) && \hbox{sum rule}\\
+&= 2x + 1 + 0 && \hbox{power rule & $\dfrac{d}{dx}(c) = 0$} \\
 &= 2x + 1
 \end{align*}
 ```
@@ -215,10 +199,10 @@ g'(x)
 ```{dropdown} **Step 4:** &nbsp; Compute &nbsp; $h'(x)$.
 
 \begin{align*}
-h'(x) &= f'(x)g(x)+f(x)g'(x) && \hbox{Product Rule}\\ \\
-&= (6x)(x^2+x+1) + (3x^2+1)(2x+1) && \hbox{Using Steps 2 & 3}\\ \\
-&= 6x^3+6x^2+6x+6x^3+3x^2+2x+1 && \hbox{Expand}\\ \\
-&=12x^3+9x^2+8x+1 && \hbox{Combine like terms}
+h'(x) &= f'(x)g(x)+f(x)g'(x) && \hbox{product rule}\\ \\
+&= (6x)(x^2+x+1) + (3x^2+1)(2x+1) && \hbox{using Steps 2 & 3}\\ \\
+&= 6x^3+6x^2+6x+6x^3+3x^2+2x+1 && \hbox{expand}\\ \\
+&=12x^3+9x^2+8x+1 && \hbox{combine like terms}
 \end{align*}
 ```
 
@@ -254,14 +238,12 @@ h'(x)
 
 \begin{align*}
 h'(x)
-&=\frac{(3x^4+5x^2-28)-(2x^4-14x^2+20x)}{(x^2+4)^2} && \hbox{Expand numerator}\\ 
-&=\frac{x^4+19x^2-20x-28}{(x^2+4)^2} && \hbox{Combine like terms}
+&=\frac{(3x^4+5x^2-28)-(2x^4-14x^2+20x)}{(x^2+4)^2} && \hbox{expand numerator}\\ 
+&=\frac{x^4+19x^2-20x-28}{(x^2+4)^2} && \hbox{combine like terms}
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** &nbsp; Simplify.
-
-Evaluate $h'(2)$.
+```{dropdown} **Step 4:** &nbsp; Evaluate $h'(2)$.
 
 \begin{align*}
 h'(2) &= \frac{2^4+19\cdot2^2-20\cdot2-28}{(2^2+4)^2}\\ \\
@@ -302,10 +284,10 @@ Apply the general power rule with $n=1/2$ and $f(x) = 3x^2 - 4x + 2$ and then si
 
 \begin{align*}
 h'(x) &= \frac{d}{dx} (3x^2 - 4x + 2)^{1/2}\\ \\
-&= \frac{1}{2}(3x^2 - 4x + 2)^{1/2 - 1}  \frac{d}{dx}(3x^2 - 4x + 2) && \hbox{General Power Rule}\\ \\
+&= \frac{1}{2}(3x^2 - 4x + 2)^{1/2 - 1}  \frac{d}{dx}(3x^2 - 4x + 2) && \hbox{general power rule}\\ \\
 &= \frac{1}{2}(3x^2 - 4x + 2)^{-1/2}  (3\cdot 2x^{2-1} - 4x^{1-1} + 0)\\ \\
 &= \frac{1}{2}(3x^2 - 4x + 2)^{-1/2}  (6x - 4)\\ \\
-&= \frac{2(3x-2)}{2(3x^2-4+2)^{1/2}} &&\hbox{Simplify}\\ \\
+&= \frac{2(3x-2)}{2(3x^2-4+2)^{1/2}} &&\hbox{simplify}\\ \\
 &= \frac{3x-2}{\sqrt{3x^2-4+2}}
 \end{align*}
 ```
@@ -384,8 +366,8 @@ Apply the quotient rule with $f(x) = x^5$ and $g(x) = (4x-7)^3$.
 \begin{align*}
 h'(x) 
 &= \frac{\left[\frac{d}{dx}x^5\right](4x-7)^3 - x^5 \left[\frac{d}{dx}(4x-7)^3\right]}{[(4x-7)^3]^2} \\ \\
-&= \frac{\left[5x^4\right](4x-7)^3 - x^5 \left[3(4x-7)^2 4\right]}{[(4x-7)^3]^2} && \hbox{Power Rule \& General Power Rule}\\ \\
-&= \frac{5x^4(4x-7)^3 - 12x^5 (4x-7)^2}{(4x-7)^6}  && \hbox{Simplify}
+&= \frac{\left[5x^4\right](4x-7)^3 - x^5 \left[3(4x-7)^2 4\right]}{[(4x-7)^3]^2} && \hbox{power rule & general power rule}\\ \\
+&= \frac{5x^4(4x-7)^3 - 12x^5 (4x-7)^2}{(4x-7)^6}  && \hbox{simplify}
 \end{align*}
 ```
 
@@ -427,9 +409,9 @@ In order to compute the instantaneous rate of change, we need to compute the der
 
 \begin{align*}
 d'(x) &= \frac{d}{dx}(300 - 2x^2)\\ \\
-&= \frac{d}{dx}300 - \frac{d}{dx}2x^2 && \hbox{Difference Rule}\\ \\
-&= 0 - 2\frac{d}{dx}x^2 && \hbox{$\dfrac{d}{dx}c = 0$, $\dfrac{d}{dx}[cf(x)] = c\dfrac{d}{dx}[f(x)]$} \\ \\
-&= - 2\cdot 2x && \hbox{Power Rule}\\ \\
+&= \frac{d}{dx}300 - \frac{d}{dx}2x^2 && \hbox{difference rule}\\ \\
+&= 0 - 2\frac{d}{dx}x^2 && \hbox{$\dfrac{d}{dx}c = 0$ & constant multiple rule} \\ \\
+&= - 2\cdot 2x && \hbox{power rule}\\ \\
 &= -4x
 \end{align*}
 ```
@@ -486,7 +468,7 @@ Evaluate the given limit by computing the derivative of $f(x) = x^2-5x$ using th
 \begin{align*}
 \lim_{h\to 0}\dfrac{(x+h)^2-5(x+h)-(x^2-5x)}{h} 
 &= \frac{d}{dx}(x^2-5x)\\ \\
-&= \frac{d}{dx}x^2 - \frac{d}{dx}5x && \hbox{Difference Rule}\\ \\
+&= \frac{d}{dx}x^2 - \frac{d}{dx}5x && \hbox{difference rule}\\ \\
 &= 2x - 5
 \end{align*}
 ```

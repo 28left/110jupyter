@@ -15,19 +15,36 @@ kernelspec:
 
 ## Equations for a Line
 
-### Slope-Intercept Form
-The equation of the line with slope $m$ and $y$-intercept equal to $b$ is
+
+````{admonition} Slope-Intercept Form
+:class: info
+
+The equation of the line with slope $m$ and $y$-intercept equal to $b$ is given by
 
 $$
 \boxed{y = mx + b}
 $$
+
+```{image} ../images/pic_precalc_graphing_slope_intercept.png
+---
+alt: Graph of a line with y-intercept
+width: 402px
+align: center
+---
+```
+
+```{dropdown} Long Text Description
+There is a horizontal x-axis with no points marked. There is a vertical y-axis with the point b marked. The graph of the linear function y=mx+b is plotted on these axes. It crosses the y-axis at the point y=b.
+```
+````
+
 
 ```{code-cell}
 :tags: [remove-cell]
 
 %load_ext itikz
 ```
-
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -43,17 +60,32 @@ $$
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with no points marked. There is a vertical y-axis with the point b marked. The graph of the linear function y=mx+b is plotted on these axes. It crosses the y-axis at the point y=b.
+-->
+
+
+````{admonition} Point-Slope Form
+:class: info
+
+The equation of the line with slope $m$ that goes through the point $(a,b)$ is given by
+
+$$
+\boxed{y = m(x-a) + b}
+$$
+
+```{image} ../images/pic_precalc_graphing_point_slope.png
+---
+alt: Graph of a line with y-intercept
+width: 406px
+align: center
+---
 ```
 
-### Point-Slope Form
-The equation of the line with slope $m$ that goes through the point $(a,b)$ is
+```{dropdown} Long Text Description
+There is a horizontal x-axis with no points marked. There is a vertical y-axis with no points marked. The line defined by y = m(x-a) + b is plotted on these axes. The point (x,y) = (a,b) on the line is marked.
+```
+````
 
-$$
-\boxed{y - b = m(x-a)}
-$$
-
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -68,24 +100,49 @@ $$
       \fill (1,1.25) circle [radius = 2pt] node[below right] {$(a,b)$};
     \end{tikzpicture}
 \end{document}
+-->
+
+```{admonition} Positive versus negative slope
+:class: note
+
+Recall that the slope of a line is positive if the line goes up from left-to-right and the slope is negative if the line goes down from left-to-right.
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with no points marked. There is a vertical y-axis with no points marked. The line defined by y-b = m(x-a) is plotted on these axes. The point (x,y) = (a,b) on the line is marked.
-```
-Recall that a positive slope means that the line goes up from left-to-right and a negative slope means that the line goes down from left-to-right.
 
 
 ### Example 1
-Sketch the graph of the line defined by  $y = 2x + 3$.
-
-```{admonition} Step 1: Determine slope and $y$-intercept
+```{admonition} Sketch the graph of a line in slope-intercept form
 :class: tip
+
+Sketch the graph of the line defined by  $y = 2x + 3$.
+```
+
+
+```{dropdown} **Step 1:** &nbsp; Determine the slope and $y$-intercept.
 
 Since $y=2x+3$ is in slope-intercept form, the line has slope $2$ and a $y$-intercept of $3$. 
 ```
 
-Once we know slope and $y$-intercept, we can draw the graph.
+````{dropdown} **Step 2:** &nbsp; Sketch the graph.
 
+Draw the graph of the line that has a $y$-intercept of $3$ (i.e., goes through the point $(0,3)$) and a slope of $2$.
+
+```{image} ../images/pic_precalc_graphing_example_1.png
+---
+alt: Graph of line with slope 2 and y-intercept of 3
+width: 500px
+align: center
+---
+```
+
+
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points -3 and 3 marked. There is a vertical y-axis with the points -3, 3, and 6 marked. There is a grid with one unit by one unit cells in the background. The graph of the linear function y = 2x + 3 is plotted. There is a red dashed staircase pattern which meets the linear function at the point (-3,-3) and moves to the right by one unit, and then up by two units in a repeating pattern which ends at the point (2,7).
+```
+Note that the red dashed line is not part of the graph and is used only as a guide for drawing a line with slope 2.  In particular, in order for a line to have slope equal to $2$, if the $x$-coordinate of any point on the line is increased by 1 unit, then the $y$-coordinate must be increased by 2 units.
+
+````
+
+<!---
 ```{code-cell}
 :tags: [remove-input]
 
@@ -113,25 +170,47 @@ Once we know slope and $y$-intercept, we can draw the graph.
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points -3 and 3 marked. There is a vertical y-axis with the points -3, 3, and 6 marked. There is a grid with one unit by one unit cells in the background. The graph of the linear function y = 2x + 3 is plotted. There is a red dotted staircase pattern which meets the linear function at the point (-3,3) and moves to the right by one unit, and then up by two units in a repeating pattern which ends at the point (2,7).
-```
-Note that the red dashed lined is not part of the graph and is used only as a guide for drawing a line with slope 2.  In particular, in order for a line to have slope equal to $2$, if the $x$-coordinate of any point on the line is increased by 1 unit, then the $y$-coordinate must be increased by 2 units.
+-->
 
 
 
 ### Example 2
 
-Sketch the graph of the line defined by  $y - 3 = -2(x - 4)$.
-
-```{admonition} Step 1: Determine the slope and a point on the line.
+```{admonition} Sketch the graph of a line in point-slope form
 :class: tip
 
-Since $y - 3 = -2(x - 4)$ is in point-slope form, the line has slope $-2$ and goes through the point $(4,3)$. 
+Sketch the graph of the line defined by $y = -2(x - 4) + 3$.
 ```
 
-Now draw a graph with slope $-2$ that goes through the point $(4,3)$.
 
+```{dropdown} **Step 1:** &nbsp; Determine the slope and a point on the line.
+
+Since $y = -2(x - 4) + 3$ is in point-slope form, the line has slope $-2$ and goes through the point $(4,3)$. 
+```
+
+````{dropdown} **Step 2:** &nbsp; Sketch the graph.
+
+Draw the graph of the line that goes through the point $(4,3)$ and has a slope of $-2$.
+
+
+```{image} ../images/pic_precalc_graphing_example_2.png
+---
+alt: Graph of line with slope -2 and goes through the point $(4,3)$
+width: 419px
+align: center
+---
+```
+
+
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points 2 and 4 marked. There is a vertical y-axis with the points 3, 6, 9, and 12 marked. There is a grid with one unit by one unit cells in the background. The line defined by y-3 = -2(x-4) is plotted. There is a red dotted staircase pattern which meets the line at the point (-1,13) and moves to the right by one unit, and then down by two units in a repeating pattern which ends at the point (6,-1).
+```
+In order for a line to have slope equal to $-2$, if the $x$-coordinate of any point on the line is increased by 1 unit, then the $y$-coordinate must be decreased by 2 units.
+
+````
+
+
+<!---
 ```{code-cell}
 :tags: [remove-input]
 
@@ -162,26 +241,48 @@ Now draw a graph with slope $-2$ that goes through the point $(4,3)$.
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points 2 and 4 marked. There is a vertical y-axis with the points 3, 6, 9, and 12 marked. There is a grid with one unit by one unit cells in the background. The line defined by y-3 = -2(x-4) is plotted. There is a red dotted staircase pattern which meets the line at the point (-1,13) and moves to the right by one unit, and then down by two units in a repeating pattern which ends at the point (6,-1).
-```
-In order for a line to have slope equal to $-2$, if the $x$-coordinate of any point on the line is increased by 1 unit, then the $y$-coordinate must be decreased by 2 units.
+-->
 
 
 
 ### Example 3
 
-Sketch the graph of the line defined by $y - 1 = \dfrac{2}{5}(x + 2)$.
 
-
-```{admonition} Step 1: Determine the slope and a point on the line.
+```{admonition} Sketch the graph of a line in point-slope form
 :class: tip
 
-Since $y - 1 = \frac{2}{5}(x + 2)$ is in point-slope form, the line has slope $2/5$ and goes through the point $(-2,1)$. 
+Sketch the graph of the line defined by $y = \dfrac{2}{5}(x + 2) + 1$.
 ```
 
-Draw the line with slope equal to $2/5$ that goes through the point $(-2,1)$
 
+```{dropdown} **Step 1:** &nbsp; Determine the slope and a point on the line.
+
+Since $y = \dfrac{2}{5}(x + 2) + 1$ is in point-slope form, the line has slope $2/5$ and goes through the point $(-2,1)$. 
+```
+
+````{dropdown} **Step 2:** &nbsp; Sketch the graph.
+
+Draw the graph of the line that goes through the point $(-2,1)$ and has a slope of $2/5$.
+
+
+```{image} ../images/pic_precalc_graphing_example_3.png
+---
+alt: Graph of line with slope -2 and goes through the point $(4,3)$
+width: 500px
+align: center
+---
+```
+
+
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points -6, -4, -2, 2, 4, 6, and 8 marked. There is a vertical y-axis with the points -2, 2, and 4 marked. There is a grid with one unit by one unit cells in the background. The line defined by y-1 = (2/5)(x+2) is plotted. There is a red dotted staircase pattern which meets the linear function at the point (-7,-1) and moves to the right by five units, and then up by two units in a repeating pattern which ends at the point (8,5).
+```
+In order for a line to have slope equal to $2/5$, if the $x$-coordinate of any point on the line is increased by 5 units, then the $y$-coordinate must be increased by 2 units.
+
+````
+
+
+<!---
 ```{code-cell}
 :tags: [remove-input]
 
@@ -210,10 +311,9 @@ Draw the line with slope equal to $2/5$ that goes through the point $(-2,1)$
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points -6, -4, -2, 2, 4, 6, and 8 marked. There is a vertical y-axis with the points -2, 2, and 4 marked. There is a grid with one unit by one unit cells in the background. The line defined by y-1 = (2/5)(x+2) is plotted. There is a red dotted staircase pattern which meets the linear function at the point (-7,-1) and moves to the right by five units, and then up by two units in a repeating pattern which ends at the point (8,5).
-```
-In order for a line to have slope equal to $2/5$, if the $x$-coordinate of any point on the line is increased by 5 units, then the $y$-coordinate must be increased by 2 units.
+-->
+
+
 
 
 

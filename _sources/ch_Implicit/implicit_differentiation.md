@@ -62,10 +62,10 @@ Since $x^2[f(x)]^3$ is a product of two functions of $x$, namely $x^2$ and $[f(x
 
 \begin{align*}
 \frac{d}{dx} x^2 [f(x)]^3  
-&= \left[\frac{d}{dx}x^2\right][f(x)]^3 + x^2 \left[\frac{d}{dx}[f(x)]^3\right] && \hbox{Product Rule}\\ \\
-%&= 2x[f(x)]^3 + x^2 \left[\frac{d}{dx}[f(x)]^3\right] && \hbox{Power \& General Power rules}\\
-&= 2x[f(x)]^3 + x^2 3[f(x)]^2f'(x) && \hbox{Power & General Power Rules}\\
-%&= 2x[f(x)]^3 + x^2 3[f(x)]^2f'(x) && \hbox{General Power Rule}\\
+&= \left[\frac{d}{dx}x^2\right][f(x)]^3 + x^2 \left[\frac{d}{dx}[f(x)]^3\right] && \hbox{product rule}\\ \\
+%&= 2x[f(x)]^3 + x^2 \left[\frac{d}{dx}[f(x)]^3\right] && \hbox{power \& general power rules}\\
+&= 2x[f(x)]^3 + x^2 3[f(x)]^2f'(x) && \hbox{power & general power rules}\\
+%&= 2x[f(x)]^3 + x^2 3[f(x)]^2f'(x) && \hbox{general power rule}\\
 \end{align*}
 ```
 
@@ -83,10 +83,10 @@ Suppose we are given an equation relating the variables $x$ and $y$.  We can com
 
 1. Differentiate both sides of the equation with respect to $x$.
 2. If given, plug in specific values of $x$ and $y$ into the resulting equation.
-3. Solve for $y'$ in terms of $x$ and $y$.
-    1. Put all terms with a factor of $y'$ on the left side of the equation and everything else on the side of the equation.
-    2. Factor out $y'$ from each term on the left side of the equation.
-    3. Divide both sides by the appropriate factor to solve for $y'$.
+3. Solve for $y'$ in terms of $x$ and $y$.  
+    a. Put all terms with a factor of $y'$ on the left side of the equation and everything else on the side of the equation.  
+    b. Factor out $y'$ from each term on the left side of the equation.  
+    c. Divide both sides by the appropriate factor to solve for $y'$.
 ```
 
 ### Example 2
@@ -190,13 +190,13 @@ $$12\frac{dy}{dx} = -5.$$
 $$\frac{dy}{dx} = -\frac{5}{12}.$$
 ```
 
-```{dropdown} **Step 5:** &nbsp; Use the point-slope equation of a line: &nbsp; $y - b = m(x-a)$.
+```{dropdown} **Step 5:** &nbsp; Use the point-slope equation of a line: &nbsp; $y = m(x-a) + b$.
 :color: light
 :animate: fade-in
 
-The equation of the line tangent of the curve at the point $(2,1)$ is
+The equation of the line tangent to the curve at the point $(2,1)$ is
 
-$$y - 1 = -\frac{5}{12}(x-2).$$
+$$y = -\frac{5}{12}(x-2) + 1.$$
 ```
 
 ### Example 4
@@ -209,10 +209,11 @@ $$xy + x = \sqrt{2x + 7y}.$$
 :color: light
 :animate: fade-in
 
-Left Hand Side:
-$$\displaystyle \frac{d}{dx}(xy + x) = y + x\frac{dy}{dx} + 1$.$
+Left-Hand Side:
 
-Right Hand Side: 
+$$\frac{d}{dx}(xy + x) = y + x\frac{dy}{dx} + 1.$$
+
+Right-Hand Side:
 \begin{align*}
 \displaystyle\frac{d}{dx}\sqrt{2x + 7y} &= \frac{d}{dx}(2x + 7y)^{1/2}\\
 &= \frac{1}{2}(2x + 7y)^{-1/2}\frac{d}{dx}(2x + 7y)\\
