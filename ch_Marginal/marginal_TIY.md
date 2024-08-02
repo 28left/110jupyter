@@ -14,6 +14,9 @@ kernelspec:
 # Try It Yourself
 
 ## Exercise 1
+````{admonition} Marginal revenue
+:class: tip
+
 The weekly demand for Math-Hero video games is given by 
 
 $$p=x^3−150x+1000$$
@@ -24,9 +27,13 @@ marginal revenue function, $R'(x)$, approximate the marginal revenue when 10 Mat
 ```{dropdown} Show answer
 Answer: $\$2000$, revenue increases by about $\$2000$ when weekly sales increase from 10 to 11 
 ```
+````
 
 
 ## Exercise 2
+````{admonition} Marginal revenue
+:class: tip
+
 The weekly demand for Math Wars - Return of the Calculus video games is given by 
 
 $$p= \frac{250}{x-5} + 3500$$
@@ -39,9 +46,13 @@ video games have been produced and sold and interpret the result.
 ```{dropdown} Show answer
 Answer: $\$3450$, revenue increases by about $\$3450$ when weekly sales increase from 10,000 to 11,000
 ```
+````
 
 
 ## Exercise 3
+````{admonition} Marginal average cost
+:class: tip
+
 The daily cost (in dollars) of producing LCD ultra-high definition televisions is given by 
 
 $$C(x)= 5x^3 - 50x^2 + 50x + 2500$$
@@ -55,21 +66,25 @@ marginal average cost function, $\overline{C}'(x)$, approximate the marginal ave
 ```{dropdown} Show answer
 Answer: $-\$100$, average cost decreases by about $\$100$ when production increases from 5000 to 6000
 ```
+````
 
 
 ## Exercise 4
-Given the demand equation 
+````{admonition} Elasticity of demand
+:class: tip
 
-$$p + \dfrac{x}{5} = 40,$$
-
-where $p$ represents the price in dollars and $x$ the number of units, determine the elasticity of demand when the price $p$ is equal to \$20 and interpret the result.
+Given the demand equation $p + \dfrac{x}{5} = 40$, where $p$ represents the price in dollars and $x$ the number of units, determine the elasticity of demand when the price $p$ is equal to \$20 and interpret the result.
 
 ```{dropdown} Show answer
 Answer: $E(20) = 1$, unitary demand and total revenue is maximized 
 ```
+````
 
 
 ## Exercise 5
+````{admonition} Elasticity of demand
+:class: tip
+
 The demand for a product is given by 
 
 $$f(p) = 6 + \dfrac{7}{p}.$$ 
@@ -77,25 +92,30 @@ $$f(p) = 6 + \dfrac{7}{p}.$$
 Determine the elasticity when $p = 3$ and interpret the result.
 
 ```{dropdown} Show answer
-Answer: $E(3) = \frac{7}{25}$, inelastic demand
+Answer: $E(3) = 7/25$, inelastic demand
 ```
+````
+
 
 ## Exercise 6
+````{admonition} Unitary demand
+:class: tip
+
 Given the demand equation $p = 12 - \dfrac{x^2}{25}$, determine the price $p$ at which demand is unitary. 
 
 ```{dropdown} Show answer
 Answer: $p = 8$
 ```
+````
 
 
 ## Exercise 7
-Given the demand equation 
+````{admonition} Maximum revenue
+:class: tip
 
-$$p + 5x = 20,$$ 
-
-determine the price $p$ at which total revenue is maximized.
-
+Given the demand equation $p + 5x = 20$, determine the price $p$ at which total revenue is maximized.
 
 ```{dropdown} Show answer
 Answer: $p = 10$
 ```
+````

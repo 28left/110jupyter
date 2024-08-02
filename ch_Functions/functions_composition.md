@@ -12,13 +12,15 @@ kernelspec:
 ---
 # Composition of Functions
 
-```{admonition} Definition
+## Definitions
+
+````{admonition} Definition
 :class: info
 
-Let $f$ and $g$ be functions.  The **composition of $f$ and $g$** is the function $f\circ g$ (read "$f$ circle $g$" or "$f$ composed with $g$") defined by
+Let $f$ and $g$ be functions.  The _**composition of $f$ and $g$**_ is the function $f\circ g$ (read "$f$ circle $g$" or "$f$ composed with $g$") defined by
 
 $$(f\circ g)(x) = f(g(x))$$
-```
+
 
 The domain of $f\circ g$ is the set of all $x$ in the domain of $g$ such that $g(x)$ lies in the domain of $f$, as illustrated below.
 
@@ -33,6 +35,7 @@ Domain and range of a composition of functions
 ```{dropdown} Long Text Description
 A diagram with three ovals arranged from left to right. The leftmost oval is marked domain of g, the oval in the center is marked domain of f, and the right most oval is marked range of f composed with g. There is an arrowed line representing the function g beginning in the leftmost oval at a point labeled x and ending in the center oval at a point labeled g(x). There is a second arrowed line representing the function f beginning in the center oval at the point labeled g(x) and ending in the rightmost oval at a point labeled f(g(x)). There is a third arrowed line representing the function f composed with g beginning in the leftmost oval at the point labeled x and ends in the rightmost oval at the point labeled f(g(x)).
 ```
+````
 
 ```{admonition} Important
 :class: warning
@@ -41,14 +44,15 @@ The order of composition is significant.  In other words, $f\circ g$ and $g\circ
 ```
 
 
-## Example 1
+### Example 1
+````{admonition} The composition of functions
+:class: tip
 
 Let 
 
 $$f(x) = \sqrt{7-x} \quad \text{ and } \quad g(x) = 3x + 2.$$  
 
 Determine if $x=1$ and $x=2$ are in the domain of  $f\circ g$ and if so, evaluate the function at the given value of $x$.
-
 
 
 ```{dropdown} **Step 1:** &nbsp; Determine the domain of &nbsp; $f$ &nbsp; and &nbsp; $g$.
@@ -74,9 +78,12 @@ Note that $x=1$ is in the domain of $g$ and $g(1) = 5$, which is in the domain o
 
 Note that $x=2$ is in the domain of $g$, but $g(2) = 8$ is not in the domain of $f$.  Therefore $x=2$ is not in the domain of $f \circ g$.
 ```
+````
 
 
-## Example 2
+### Example 2
+````{admonition} The composition of functions
+:class: tip
 
 Let 
 
@@ -118,3 +125,4 @@ $$x \leq 7$$
 
 and therefore, the domain of $g\circ f$ is $(-\infty,7]$.
 ```
+````

@@ -12,17 +12,65 @@ kernelspec:
   name: python3
 ---
 
-# Examples: Computing Limits from Graphs
+# Computing Limits from Graphs
 
-## Example (First Graph) 
+## Example 1 
 
+````{admonition} Evaluate limits based on the graph of a function
+:class: tip
+
+Let $f(x)$ be defined by the following graph.  
+
+Evaluate $\lim\limits_{x \to a^-} f(x)$, $\lim\limits_{x \to a^+} f(x)$, and $\lim\limits_{x \to a} f(x)$ for $a = -3, 0, 2$.
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_limits_graphs_example_1.png
+:alt: Graph of a piecewise defined function
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points -6, -5, -4, -4, -2, -1, 1, 2, 3, 4, 5, and 6 marked. There is a vertical y-axis with the points -4, -3, -2, -1, 1, 2, 3, and 4. The graph of a discontinuous function is plotted on these axes. From left to right, the function decreases from positive infinity and goes down to negative infinity as x moves right towards 0, the function increases linearly from a filled in point at (0,0) to a hollow point at (2,2), jumps to a filled in point at (2,-2), continues from a hollow point at (2,-4) upward to positive infinity on the right.
+```
+
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit as $x$ approaches $-3$
+
+The two one-sided limits both exist and are both equal to 2.
+
+$$\lim_{x\to -3^-} f(x)=2  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to -3^+} f(x)=2$$
+
+Therefore, the limit exists and $\lim\limits_{x\to -3} f(x) = 2.$
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the limit as $x$ approaches $0$ 
+
+The limit from the left does not exist and the limit from the right exists and is equal to 0.
+
+$$\lim_{x\to 0^-} f(x) = -\infty ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 0^+} f(x)=0$$
+
+Therefore, $\lim\limits_{x\to 0} f(x)$ does not exist. Observation: If either of the one-sided limits does not exist (DNE) as $x$ approaches $a$, then the $\lim\limits_{x\to a} f(x)$ does not exist.
+```
+
+```{dropdown} **Step 3:** &nbsp; Evaluate the limit as $x$ approaches $2$
+
+The two one-sided limits both exist, but are not equal to each other.
+
+$$\lim_{x\to 2^-} f(x)= 2 ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 2^+} f(x)=-4$$
+
+Therefore, $\lim\limits_{x\to 2} f(x)$ does not exist.
+```
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-cell]
 
 %load_ext itikz
 ```
 
-Let $f(x)$ be defined by the following graph.  
 
 ```{code-cell}
 :tags: [remove-input]
@@ -65,48 +113,71 @@ Let $f(x)$ be defined by the following graph.
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points -6, -5, -4, -4, -2, -1, 1, 2, 3, 4, 5, and 6 marked. There is a vertical y-axis with the points -4, -3, -2, -1, 1, 2, 3, and 4. The graph of a discontinuous function is plotted on these axes. From left to right, the function decreases from positive infinity and goes down to negative infinity as x moves right towards 0, the function increases linearly from a filled in point at (0,0) to a hollow point at (2,2), jumps to a filled in point at (2,-2), continues from a hollow point at (2,-4) upward to positive infinity on the right.
-```
-
-Evaluate $\lim\limits_{x \to a^-} f(x)$, $\lim\limits_{x \to a^+} f(x)$, and $\lim\limits_{x \to a} f(x)$ for $a = -3, 0, 2$.
+-->
 
 
-```{admonition} $\mathbf{a=-3}$
-:class: tip, dropdown
-
-The two one-sided limits both exist and are both equal to 2.
-
-$$\lim_{x\to -3^-} f(x)=2  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to -3^+} f(x)=2$$
-
-Therefore, the limit exists and $\lim\limits_{x\to -3} f(x) = 2.$
-```
-
-```{admonition} $\mathbf{a=0}$ 
-:class: tip, dropdown
-
-The limit from the left does not exist and the limit from the right exists and is equal to 0.
-
-$$\lim_{x\to 0^-} f(x) = -\infty ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 0^+} f(x)=0$$
-
-Therefore, $\lim\limits_{x\to 0} f(x)$ does not exist. Observation: If either of the one-sided limits does not exist (DNE) as $x$ approaches $a$, then the $\lim\limits_{x\to a} f(x)$ does not exist.
-```
-
-```{admonition} $\mathbf{a=2}$
-:class: tip, dropdown
-
-The two one-sided limits both exist, but are not equal to each other.
-
-$$\lim_{x\to 2^-} f(x)= 2 ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 2^+} f(x)=-4$$
-
-Therefore, $\lim\limits_{x\to 2} f(x)$ does not exist.
-```
 +++
 
-## Example (Second Graph)
+## Example 2
+````{admonition} Evaluate limits based on the graph of a function
+:class: tip
 
 Let $f(x)$ be defined by the following graph.  
 
+Evaluate $\lim\limits_{x \to a^-} f(x)$, $\lim\limits_{x \to a^+} f(x)$, and $\lim\limits_{x \to a} f(x)$ for $a = -1, 1, 4, 6$.
+
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_limits_graphs_example_2.png
+:alt: Graph of a piecewise defined function
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y-axis with the points -2, -2, 1, 2, 3, 4, 5,  and 6 marked. There is a blue dotted vertical line at x = 6. The graph of a discontinuous function is plotted on these axes. From left to right, the function decreases as it comes in from the left, increases from rounded corner at (-2,0) to a hollow point at (-1,1), increases from that point to another hollow point at (1,3), jumps to a filled in point at (1,4), jumps back to the hollow point at (1,3) and decreases from there to a filled in point at (4,1), jumps to a hollow point at (4,4) and increases up to infinity as x approaches the blue dotted line at x = 6 from the left, and comes up from negative infinity to the right of the blue dotted line and increases as it goes off to the right.
+```
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit as $x$ approaches $-1$
+
+The two one-sided limits both exist and are both equal to 1.
+
+$$\lim_{x\to -1^-} f(x)=1  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to -1^+} f(x)=1$$
+
+Therefore, the limit exists and $\lim\limits_{x\to -1} f(x) = 1$.  Observation: Although $f(-1)$ is not defined, the limit as $x$ approaches $-1$ still exists.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the limit as $x$ approaches $1$
+
+The two one-sided limits both exist and are both equal to 3.
+
+$$\lim_{x\to 1^-} f(x)=3  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 1^+} f(x)=3$$
+
+Therefore, the limit exists and $\lim\limits_{x\to 1} f(x) = 3$.  Observation: Although $f(1)$ is defined, it is not equal to the value of the limit as $x$ approaches $1$.
+```
+
+```{dropdown} **Step 3:** &nbsp; Evaluate the limit as $x$ approaches $4$
+
+The two one-sided limits both exist, but are not equal to each other.
+
+$$\lim_{x\to 4^-} f(x)= 1 ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 4^+} f(x)=4$$
+
+Therefore, $\lim\limits_{x\to 4} f(x)$ does not exist.
+```
+
+
+```{dropdown} **Step 4:** &nbsp; Evaluate the limit as $x$ approaches $6$
+
+Neither one-sided limit exists.
+
+$$\lim_{x\to 6^-} f(x) = \infty ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 6^+} f(x)= -\infty$$
+
+Therefore, $\lim\limits_{x\to 6} f(x)$ does not exist.
+```
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -155,49 +226,4 @@ Let $f(x)$ be defined by the following graph.
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points -3, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y-axis with the points -2, -2, 1, 2, 3, 4, 5,  and 6 marked. There is a blue dotted vertical line at x = 6. The graph of a discontinuous function is plotted on these axes. From left to right, the function decreases as it comes in from the left, increases from rounded corner at (-2,0) to a hollow point at (-1,1), increases from that point to another hollow point at (1,3), jumps to a filled in point at (1,4), jumps back to the hollow point at (1,3) and decreases from there to a filled in point at (4,1), jumps to a hollow point at (4,4) and increases up to infinity as x approaches the blue dotted line at x = 6 from the left, and comes up from negative infinity to the right of the blue dotted line and increases as it goes off to the right.
-```
-Evaluate $\lim\limits_{x \to a^-} f(x)$, $\lim\limits_{x \to a^+} f(x)$, and $\lim\limits_{x \to a} f(x)$ for $a = -1, 1, 4, 6$.
-
-
-```{admonition} $\mathbf{a=-1}$
-:class: tip, dropdown
-
-The two one-sided limits both exist and are both equal to 1.
-
-$$\lim_{x\to -1^-} f(x)=1  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to -1^+} f(x)=1$$
-
-Therefore, the limit exists and $\lim\limits_{x\to -1} f(x) = 1$.  Observation: Although $f(-1)$ is not defined, the limit as $x$ approaches $-1$ still exists.
-```
-
-```{admonition} $\mathbf{a=1}$
-:class: tip, dropdown
-
-The two one-sided limits both exist and are both equal to 3.
-
-$$\lim_{x\to 1^-} f(x)=3  ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 1^+} f(x)=3$$
-
-Therefore, the limit exists and $\lim\limits_{x\to 1} f(x) = 3$.  Observation: Although $f(1)$ is defined, it is not equal to the value of the limit as $x$ approaches $1$.
-```
-
-```{admonition} $\mathbf{a=4}$
-:class: tip, dropdown
-
-The two one-sided limits both exist, but are not equal to each other.
-
-$$\lim_{x\to 4^-} f(x)= 1 ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 4^+} f(x)=4$$
-
-Therefore, $\lim\limits_{x\to 4} f(x)$ does not exist.
-```
-
-
-```{admonition} $\mathbf{a=6}$
-:class: tip, dropdown
-
-Neither one-sided limit exists.
-
-$$\lim_{x\to 6^-} f(x) = \infty ~~~~~ \hbox{and} ~~~~~ \lim_{x\to 6^+} f(x)= -\infty$$
-
-Therefore, $\lim\limits_{x\to 6} f(x)$ does not exist.
-```
+-->

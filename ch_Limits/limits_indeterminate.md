@@ -13,6 +13,8 @@ kernelspec:
 ---
 # Indeterminate Forms
 
+## Definition
+
 ```{admonition} Definition
 :class: info
 
@@ -20,15 +22,21 @@ If $\lim\limits_{x\to a} f(x) = 0$ and $\lim\limits_{x\to a}g(x) = 0$, then
 
 $$\lim_{x\to a}\frac{f(x)}{g(x)}$$
 
-is called an **indeterminate form of type $0/0$**.  
+is called an _**indeterminate form of type $0/0$**_.  
 ```
 
+```{admonition} How to Evaluate an Indeterminate Form of Type $0/0$
+:class: info
+
 To evaluate an indeterminate form, simplify the ratio $f(x)/g(x)$ by factoring or rationalizing the expression and then canceling out common factors.
+```
 
-
-## Example 1
+### Example 1
+````{admonition} An indeterminate form involving a rational function
+:class: tip
 
 Evaluate $\lim\limits_{x\to 5} \dfrac{x-5}{x^2-25}.$
+
 
 ```{dropdown} **Step 1:** &nbsp; Evaluate the limit of numerator and denominator.
 
@@ -36,7 +44,7 @@ We evaluate these limits by plugging in $x=5$:
 
 $$\lim_{x\to 5} x-5 = 5 - 5 = 0 ~~~~ \text{and} ~~~~~ \lim_{x\to 5} x^2 - 25 = 5^2-25 = 0$$
 
-This means that the given limit is an indeterminate form of type $0/0$, so we need to do more work to evaluate it.
+This means that the given limit is an indeterminate form of type $0/0$, so we need to simplify the function before we can evaluate the limit.
 ```
 
 ```{dropdown} **Step 2:** &nbsp; Factor numerator and/or denominator and simplify.
@@ -55,15 +63,19 @@ When computing the limit as $x$ approaches $5$, we are initially assuming that $
 \begin{align*}
 \lim_{x\to 5}\frac{x-5}{x^2-25}
 &= \lim_{x\to 5} \frac{1}{x+5} \\ \\
-&= \frac{1}{5+5}  && \text{plug in $x=5$ (Property 7)}\\ \\
+&= \frac{1}{5+5}  && \text{plug in $x=5$}\\ \\
 &= \frac{1}{10} && \text{simplify}
 \end{align*}
 ```
+````
 
 
-## Example 2
+### Example 2
+````{admonition} An indeterminate form involving a square root function
+:class: tip
 
 Evaluate $\lim\limits_{x\to 10} \dfrac{\sqrt{x-6}-2}{x-10}$.
+
 
 ```{dropdown} **Step 1:** &nbsp; Evaluate the limit of numerator and denominator.
 
@@ -71,7 +83,7 @@ Plug in $x=10$:
 
 $$\lim_{x\to 10} \sqrt{x-6}-2 = \sqrt{10-6} - 2 = 0 ~~~~ \hbox{and} ~~~~~ \lim_{x\to 10} x-10 = 10-10 = 0$$
 
-This means that the given limit is an indeterminate form of type $0/0$, so we need to do more work to evaluate it.
+This means that the given limit is an indeterminate form of type $0/0$, so we need to simplify the function before we can evaluate the limit.
 ```
 
 ```{dropdown} **Step 2:** &nbsp; Simplify the function.
@@ -99,4 +111,4 @@ We simplify the function by multiplying and dividing by $\sqrt{x-6} + 2$, which 
 &= \frac{1}{4}
 \end{align*}
 ```
-
+````

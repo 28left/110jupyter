@@ -18,7 +18,7 @@ kernelspec:
 ```{admonition} Definition
 :class: info
 
-The **total cost function**, $C(x)$, measures the costs incurred from operating a business and is defined by
+The _**total cost function**_, $C(x)$, measures the costs incurred from operating a business and is defined by
 
 $$C(x) = F(x) + V(x)$$
 
@@ -29,7 +29,7 @@ where $F(x)$ denotes the fixed costs  (i.e., costs that remain the same regardle
 ```{admonition} Definition
 :class: info
 
-The **average cost function**, $\overline{C}(x)$, measures the average cost per unit produced and is defined by
+The _**average cost function**_, $\overline{C}(x)$, measures the average cost per unit produced and is defined by
 
 $$\overline{C}(x) = \frac{C(x)}{x}.$$
 ```
@@ -43,7 +43,7 @@ $$\overline{C}(x) = \frac{C(x)}{x}.$$
 ```{admonition} Definition
 :class: info
 
-The **total revenue function**, $R(x)$, measures the amount of money received from the sale of $x$ units and is defined by
+The _**total revenue function**_, $R(x)$, measures the amount of money received from the sale of $x$ units and is defined by
 
 $$R(x) = x\cdot p(x)$$
 
@@ -54,7 +54,7 @@ where $x$ is the number of units demanded and $p(x)$ is the unit price.
 ```{admonition} Definition
 :class: info
 
-The **average revenue function**, $\overline{R}(x)$, measures the average amount of money received per unit sold and is defined by
+The _**average revenue function**_, $\overline{R}(x)$, measures the average amount of money received per unit sold and is defined by
 
 $$\overline{R}(x) = \frac{R(x)}{x}.$$
 ```
@@ -66,7 +66,7 @@ $$\overline{R}(x) = \frac{R(x)}{x}.$$
 ```{admonition} Definition
 :class: info
 
-The **total profit function**, $P(x)$, measures the difference between the total revenue and total cost functions and is defined by
+The _**total profit function**_, $P(x)$, measures the difference between the total revenue and total cost functions and is defined by
 
 $$P(x) = R(x) - C(x)$$
 
@@ -76,13 +76,15 @@ where $R(x)$ is the total revenue function and $C(x)$ is the total cost function
 ```{admonition} Definition
 :class: info
 
-The **average profit function**, $\overline{P}(x)$, measures the average profit earned per unit produced and sold and is defined by
+The _**average profit function**_, $\overline{P}(x)$, measures the average profit earned per unit produced and sold and is defined by
 
 $$\overline{P}(x) = \frac{P(x)}{x}.$$
 ```
 
 
 ## Example 1
+````{admonition} Cost, revenue, profit and average profit
+:class: tip
 
 A manufacturer of Robot Tutors has a fixed monthly cost of \$500 and a processing cost 
 of \$9 for each robot tutor produced. Assuming each robot sells for \$19, compute the total profit and the average profit per robot when 250 robots are produced and sold.
@@ -139,3 +141,4 @@ Plug in $x=250$ into the average profit function to find the average profit asso
 
 Therefore, each of the 250 robots produced and sold earns an average profit of \$8.
 ```
+````

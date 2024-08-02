@@ -90,16 +90,12 @@ This is a special case of the Chain Rule with $g(x) = x^n$.
 
 
 
-## Applying the Rules
+### Example 1
 
+````{admonition} Sum and Constant Multiple Rule
+:class: tip
 
-### Example 1 (Sum and Constant Multiple Rule)
-
-Find the derivative of the function 
-
-$$f(x) = 5x^2 - 4x + 2 + \frac{3}{x^4}$$ 
-
-using the basic rules of differentiation.
+Compute the derivative of $f(x) = 5x^2 - 4x + 2 + \dfrac{3}{x^4}$ using the basic rules of differentiation.
 
 
 ```{dropdown} **Step 1:** &nbsp; Remember the sum rule.
@@ -154,16 +150,14 @@ Therefore,
 
 $$f'(x) = 10x - 4 - \frac{12}{x^5}$$
 ```
+````
 
 
+### Example 2
+````{admonition} Product Rule
+:class: tip
 
-### Example 2 (Product Rule)
-
-Find the derivative of the function 
-
-$$h(x)=(3x^2+1)(x^2+x+1)$$ 
-
-using the basic rules of differentiation.
+Compute the derivative of $h(x)=(3x^2+1)(x^2+x+1)$ using the basic rules of differentiation.
 
 
 ```{dropdown} **Step 1:** &nbsp; Remember the product rule.
@@ -205,15 +199,14 @@ h'(x) &= f'(x)g(x)+f(x)g'(x) && \hbox{product rule}\\ \\
 &=12x^3+9x^2+8x+1 && \hbox{combine like terms}
 \end{align*}
 ```
+````
 
+### Example 3 
+````{admonition} Quotient Rule
+:class: tip
 
-### Example 3 (Quotient Rule)
+Compute the derivative of $h(x)=\dfrac{x^3-7x+10}{x^2+4}$ using the basic rules of differentiation and then evaluate $h'(2)$.
 
-Find the derivative of the function 
-
-$$h(x)=\dfrac{x^3-7x+10}{x^2+4}$$ 
-
-using the basic rules of differentiation and then evaluate $h'(2)$.
 
 ```{dropdown} **Step 1:** &nbsp; Remember the quotient rule.
 
@@ -259,15 +252,14 @@ h'(2) &= \frac{2^4+19\cdot2^2-20\cdot2-28}{(2^2+4)^2}\\ \\
 
 Keep in mind that if the only goal is to compute $h'(2)$, then Step 3 can be skipped and $x=2$ can be plugged in immediately after computing the derivative in Step 2.  This will reduce the number of computations and help avoid some possible algebraic mistakes while simplifying.
 ```
+````
 
+### Example 4 
+````{admonition} General Power Rule
+:class: tip
 
-### Example 4 (General Power Rule)
+Compute the derivative of $h(x) = \sqrt{3x^2 - 4x + 2}$ using the basic rules of differentiation.
 
-Find the derivative of the function 
-
-$$h(x) = \sqrt{3x^2 - 4x + 2}$$ 
-
-using the basic rules of differentiation.
 
 ```{dropdown} **Step 1:** &nbsp; Remember the general power rule.
 
@@ -291,15 +283,13 @@ h'(x) &= \frac{d}{dx} (3x^2 - 4x + 2)^{1/2}\\ \\
 &= \frac{3x-2}{\sqrt{3x^2-4+2}}
 \end{align*}
 ```
+````
 
+### Example 5 
+````{admonition} Product and General Power Rule
+:class: tip
 
-### Example 5 (Product and General Power Rule)
-
-Find the derivative of the function 
-
-$$h(x) = (4x+1)^3(2x-5)^4$$ 
-
-using the basic rules of differentiation.
+Compute the derivative of $h(x) = (4x+1)^3(2x-5)^4$ using the basic rules of differentiation.
 
 
 ```{dropdown} **Step 1:** &nbsp; Remember the product rule.
@@ -338,16 +328,14 @@ h'(x) &= 4(4x+1)^2(2x-5)^3\left[6x-15 + 8x+2\right]\\ \\
 &= 4(4x+1)^2(2x-5)^3(14x-13)
 \end{align*}
 ```
+````
 
 
+### Example 6 
+````{admonition} Quotient and General Power Rule
+:class: tip
 
-### Example 6 (Quotient and General Power Rule)
-
-Find the derivative of the function 
-
-$$h(x) = \dfrac{x^5}{(4x-7)^3}$$ 
-
-using the basic rules of differentiation.
+Compute the derivative of $h(x) = \dfrac{x^5}{(4x-7)^3}$ using the basic rules of differentiation.
 
 
 ```{dropdown} **Step 1:** &nbsp; Remember the quotient rule.
@@ -385,11 +373,13 @@ h'(x) &= \frac{x^4\cancel{(4x-7)^2}[20x-35 - 12x]}{(4x-7)^{\cancel{6}4}} \\ \\
 &= \frac{x^4(8x-35)}{(4x-7)^4} 
 \end{align*}
 ```
-
+````
 
 ## An Applied Example
 
 ### Example 7 
+````{admonition} Rate of Change of Unit Price
+:class: tip
 
 Penn State Learning has a weekly demand funciton for their calculators which is given by
 
@@ -424,15 +414,18 @@ $$d'(5) = -4\cdot5 = -20$$
 
 Therefore, the instantaneous rate of change of the unit price is $-20$ dollars per thousand calculators when the quantity demanded is 5000 calculators.  This means that the unit price would decrease by approximately 20 dollars if the demand increased from 5000 to 6000 calculators.
 ```
+````
 
-
-## Using the derivative to compute limits
+## Using the Derivative to Compute Limits
 
 ### Example 8
+````{admonition} Evaluate a Limit using a Derivative
+:class: tip
 
 Use the limit definition of the derivative to evaluate 
 
 $$\lim_{h\to 0}\dfrac{(x+h)^2-5(x+h)-(x^2-5x)}{h}.$$
+
 
 ```{dropdown} **Step 1:** &nbsp; Recall the limit definition of the derivative.
 
@@ -472,9 +465,11 @@ Evaluate the given limit by computing the derivative of $f(x) = x^2-5x$ using th
 &= 2x - 5
 \end{align*}
 ```
-
+````
 
 ### Example 9
+````{admonition} Evaluate a Limit using a Derivative
+:class: tip
 
 Use the limit definition of the derivative to evaluate 
 
@@ -519,3 +514,4 @@ Evaluate the given limit by computing the derivative of $f(x) = x^3$ and then pl
 &= 12
 \end{align*}
 ```
+````

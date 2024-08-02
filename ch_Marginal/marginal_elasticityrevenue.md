@@ -13,15 +13,27 @@ kernelspec:
 ---
 # Elasticity & Total Revenue
 
-
-```{admonition} Relationship between Elasticity and Total Revenue
+````{admonition} Relationship between Elasticity and Total Revenue
 :class: info
 
 1. Total Revenue is increasing for those values of $p$ where $E(p) < 1$, that is, when demand is inelastic.
 2. Total Revenue is decreasing for those values of $p$ where $E(p) > 1$, that is, when demand is elastic.
 3. Total Revenue is maximized for those values of $p$ where $E(p) = 1$, that is, when demand is unitary. 
-```
 
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_marginal_elasticityrevenue.png
+:alt: Graph illustrating relationship between elasticity of demand and total revenue
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal p-axis and a vertical y-axis. A concave down quadratic looking function R(p) is graphed on these axes. R(p) starts out at the origin increasing and concave down, comes to a maximum value at a point labeled "maximum revenue," and is decreasing and concave down from there to a p-intercept. There is a vertical dotted line between a point on the p-axis labeled "E(p) = 1" and the "Maximum Revenue" point. The area to the left of this line  is labeled "Inelastic Demand". The area to the right of the line is labeled "Elastic Demand". The line between the origin and "E(p) = 1" is labeled E(p) < 1 and the line between "E(p) = 1" and the p-intercept on the right is labeled "E(p) > 1."
+```
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-cell]
 
@@ -99,9 +111,7 @@ kernelspec:
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal p-axis and a vertical y-axis. A concave down quadratic looking function R(p) is graphed on these axes. R(p) starts out at the origin increasing and concave down, comes to a maximum value at a point labeled "maximum revenue," and is decreasing and concave down from there to a p-intercept. There is a vertical dotted line between a point on the p-axis labeled "E(p) = 1" and the "Maximum Revenue" point. The area to the left of this line  is labeled "Inelastic Demand". The area to the right of the line is labeled "Elastic Demand". The line between the origin and "E(p) = 1" is labeled E(p) < 1 and the line between "E(p) = 1" and the p-intercept on the right is labeled "E(p) > 1."
-```
+-->
 
 ```{admonition} How a change in price affects Total Revenue
 :class: info
@@ -111,6 +121,8 @@ There is a horizontal p-axis and a vertical y-axis. A concave down quadratic loo
 ```
 
 ## Example 1
+````{admonition} Elasticity of demand
+:class: tip
 
 The demand equation for widgets is given by
 
@@ -176,9 +188,11 @@ Since $E(0.5) < 1$, demand is inelastic when the price is \$0.50 and total reven
 
 Since $E(1.5) > 1$, demand is elastic when the price is \$1.50 and total revenue would increase if the price decreases. 
 ```
-
+````
 
 ## Example 2
+````{admonition} Unitary demand
+:class: tip
 
 Given the demand equation 
 
@@ -237,9 +251,11 @@ Therefore, set $E(p) = 1$ and solve for $p$.
 
 Therefore, when the price is \$150, demand is unitary and total revenue is maximized.  
 ```
-
+````
 
 ## Example 3
+````{admonition} Unitary demand
+:class: tip
 
 Given the demand equation 
 
@@ -296,4 +312,5 @@ Therefore, set $E(p) = 1$ and solve for $p$.
 
 Therefore, when the price is \$20, demand is unitary and total revenue is maximized. 
 ```
+````
 

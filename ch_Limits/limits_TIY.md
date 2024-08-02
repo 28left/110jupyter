@@ -14,43 +14,55 @@ kernelspec:
 # Try It Yourself
 
 ## Exercise 1
+````{admonition} Evaluate the limit
+:class: tip
+
 If $f(x) = -3$, find $\lim\limits_{x\to4^{+}}f(x)$.
 
 ```{dropdown} Show answer
 Answer: $-3$
 ```
+````
 
 
 ## Exercise 2
-Evaluate 
+````{admonition} Evaluate the limit
+:class: tip
 
-$$\lim\limits_{x\to 0} \dfrac{2x^3 -4x^2+3x-6}{2x-4}.$$
+Evaluate $\lim\limits_{x\to 0} \dfrac{2x^3 -4x^2+3x-6}{2x-4}$.
 
 ```{dropdown} Show answer
 Answer: $3/2$
 ```
+````
 
 
 ## Exercise 3
-Evaluate 
+````{admonition} Evaluate the limit
+:class: tip
 
-$$\displaystyle\lim_{x\to 1^-}\frac{x^2-4}{x-1}.$$
+Evaluate $\displaystyle\lim_{x\to 1^-}\frac{x^2-4}{x-1}$.
 
 ```{dropdown} Show answer
 Answer: DNE ($+\infty$)
 ```
-
+````
 
 ## Exercise 4
-Evaluate 
+````{admonition} Evaluate the limit
+:class: tip
 
-$$\displaystyle\lim_{x\to 3}\frac{x-2}{(x-3)^3}.$$
+Evaluate $\displaystyle\lim_{x\to 3}\frac{x-2}{(x-3)^3}$.
 
 ```{dropdown} Show answer
 Answer: DNE
 ```
+````
 
 ## Exercise 5
+````{admonition} Evaluate the limit
+:class: tip
+
 If $f(x) = \dfrac{x^4 - 1}{x-1}$, find $\lim\limits_{x\to1} f(x)$. 
 
 Hint: Factor $x^4-1$ by treating it as a difference of squares, $(x^2)^2 - 1^2$.
@@ -58,8 +70,13 @@ Hint: Factor $x^4-1$ by treating it as a difference of squares, $(x^2)^2 - 1^2$.
 ```{dropdown} Show answer
 Answer: $4$
 ```
+````
+
 
 ## Exercise 6
+````{admonition} Evaluate the limit
+:class: tip
+
 Find $\displaystyle\lim_{x\to 1} g(x)$ and $\displaystyle\lim_{x\to 2} g(x)$, where
 
 \begin{equation*}
@@ -74,38 +91,48 @@ Find $\displaystyle\lim_{x\to 1} g(x)$ and $\displaystyle\lim_{x\to 2} g(x)$, wh
 ```{dropdown} Show answer
 Answer: $6$, DNE
 ```
+````
 
 
 ## Exercise 7
-Evaluate 
+````{admonition} Evaluate the limit at infinity
+:class: tip
 
-$$\displaystyle\lim_{x\to \infty} \frac{x^2-x+3}{2x^2+1}.$$
+Evaluate $\displaystyle\lim_{x\to \infty} \frac{x^2-x+3}{2x^2+1}$.
 
 ```{dropdown} Show answer
 Answer: $1/2$
 ```
+````
 
 
 ## Exercise 8
-Evaluate 
+````{admonition} Evaluate the limit at infinity
+:class: tip
 
-$$\displaystyle\lim_{x\to \infty} \frac{7x^4+2x+8}{x^5+1}.$$
+Evaluate $\displaystyle\lim_{x\to \infty} \frac{7x^4+2x+8}{x^5+1}$.
 
 ```{dropdown} Show answer
 Answer: $0$
 ```
+````
 
 ## Exercise 9
-Evaluate 
+````{admonition} Evaluate the limit at infinity
+:class: tip
 
-$$\displaystyle\lim_{x\to \infty} \frac{x^9+1}{2x^3+2}.$$
+Evaluate $\displaystyle\lim_{x\to \infty} \frac{x^9+1}{2x^3+2}$.
 
 ```{dropdown} Show answer
 Answer: DNE
 ```
+````
 
 
 ## Exercise 10
+````{admonition} Average cost at infinity
+:class: tip
+
 Penn State Learning produces a line of Math Genius robots. In order to produce them, PSL purchases a factory that costs \$35,000 up front. Each Math Genius robot costs \$70 to produce. If PSL produces an infinite number of robots, what is the average cost per robot?  What can we conclude from this answer?
 
 Hint: Average Cost = $\frac{\textsf{Total Cost}}{\textsf{Number of Units}}$
@@ -113,16 +140,24 @@ Hint: Average Cost = $\frac{\textsf{Total Cost}}{\textsf{Number of Units}}$
 ```{dropdown} Show answer
 Answer: Average cost is \$70.  
 ```
+````
 
 ## Exercise 11
+````{admonition} Find the discontinuities
+:class: tip
+
 Find all values of $x$ where $f(x)= \dfrac{x+2}{x^3-4x}$ is discontinuous.
 
 ```{dropdown} Show answer
 Answer: $-2,0,2$
 ```
+````
 
 
 ## Exercise 12
+````{admonition} Continuous at a point
+:class: tip
+
 Determine whether or not $f(x)$ is continuous at $x=3$.
 
 $$
@@ -136,10 +171,13 @@ $$
 ```{dropdown} Show answer
 Answer: $f(x)$ is not continuous at $x=3$.
 ```
-
+````
 
 
 ## Exercise 13
+````{admonition} Continuity
+:class: tip
+
 Find values of $x$ where $f(x)$ is continuous
 
 $$
@@ -153,10 +191,13 @@ $$
 ```{dropdown} Show answer
 Answer: everywhere except $x = 3$
 ```
-
+````
 
 
 ## Exercise 14
+````{admonition} Continuity
+:class: tip
+
 Find the value for $k$ that makes $f(x)$ continuous at $x=2$.
 
 $$
@@ -170,10 +211,13 @@ $$
 ```{dropdown} Show answer
 Answer: $k = 2$
 ```
-
+````
 
 
 ## Exercise 15
+````{admonition} Continuity
+:class: tip
+
 Find the value for $k$ that makes $f(x)$ continuous at $x=3$.
 
 $$
@@ -187,3 +231,4 @@ $$
 ```{dropdown} Show answer
 Answer: $k = 8$
 ```
+````
