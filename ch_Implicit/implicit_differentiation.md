@@ -13,22 +13,31 @@ kernelspec:
 ---
 # Implicit Differentiation
 
-## The Rules
+## Explicit versus Implicit Functions
 
-```{admonition} Explicit versus Implicit Functions
+````{admonition} Definition
 :class: info
 
-Suppose we have an equation relating two variables: $x$ and $y$.  If $y$ is isolated on one side of the equation, we say that $y$ is **explicitly defined** as a function of $x$, or simply, $y$ is a function of $x$. If $y$ is not isolated on one side of the equation, we say that $y$ is **defined implicitly** in terms of $x$, or $y$ is an implicit function of $x$.
+Suppose we have an equation relating two variables: $x$ and $y$.  If $y$ is isolated on one side of the equation, we say that $y$ is _**explicitly defined**_ as a function of $x$, or simply, $y$ is a function of $x$. If $y$ is not isolated on one side of the equation, we say that $y$ is _**defined implicitly**_ in terms of $x$, or $y$ is an implicit function of $x$.
 
+
+::::{grid} 2
+:::{grid-item-card}
+:columns: 5
+:margin: 0 0 4 4
 **Explicit Functions**
 - $y = x^2 - 3$
 - $y = \sqrt{x + 7}$
+:::
 
+:::{grid-item-card}
+:columns: 5
 **Implicit Functions**
 - $x^2 + xy - y = 1$
 - $x^3 + y^3 + yx - 4 = 0$
-
-```
+:::
+::::
+````
 
 ```{admonition} Computing Derivatives Implicitly
 :class: info
@@ -41,6 +50,8 @@ $$\frac{d}{dx} [f(x)]^n = n[f(x)]^{n-1} f'(x)$$
 
 (05_01_example1)=
 ### Example 1
+````{admonition} Differentiate by treating $y$ as a function of $x$
+:class: tip
 
 Compute the derivative of $x^2 y^3$ with respect to $x$ by treating $y$ as a function of $x$.
 
@@ -75,11 +86,15 @@ Since $x^2[f(x)]^3$ is a product of two functions of $x$, namely $x^2$ and $[f(x
 
 $$\frac{d}{dx} x^2y^3 = 2xy^3 + 3x^2y^2y'$$
 ```
+````
+
+
+## How to Differentiate Implicitly
 
 ```{admonition} The Method of Implicit Differentiation
 :class: info
 
-Suppose we are given an equation relating the variables $x$ and $y$.  We can compute the derivative of $y$ with respect to $x$ using the following technique.
+Suppose we are given an equation relating the variables $x$ and $y$. In other words, $y$ is defined implicitly as a function of $x$ by the given equation.  We can compute the derivative of $y$ with respect to $x$ using the following technique.
 
 1. Differentiate both sides of the equation with respect to $x$.
 2. If given, plug in specific values of $x$ and $y$ into the resulting equation.
@@ -90,6 +105,8 @@ Suppose we are given an equation relating the variables $x$ and $y$.  We can com
 ```
 
 ### Example 2
+````{admonition} Implicit differentiation
+:class: tip
 
 Find $\dfrac{dy}{dx}$ where $y$ is defined implicitly by
 ${x^2}y - x^4 + y^3 = 1$.
@@ -136,6 +153,8 @@ $$f'(x) = \frac{4x^3 - 2xf(x)}{x^2 + 3[f(x)]^2}.$$
 
 $$\frac{dy}{dx} = \frac{4x^3 - 2xy}{x^2 + 3y^2}.$$
 ```
+````
+
 
 ```{admonition} Observation
 :class: warning
@@ -149,7 +168,11 @@ Once we get used to the idea of thinking of $y$ as a function of $x$, it's not n
 \end{align*}
 ```
 
+
+
 ### Example 3
+````{admonition} Implicit differentiation
+:class: tip
 
 Find the equation of the line tangent to the curve defined implicitly by
 
@@ -198,8 +221,11 @@ The equation of the line tangent to the curve at the point $(2,1)$ is
 
 $$y = -\frac{5}{12}(x-2) + 1.$$
 ```
+````
 
 ### Example 4
+````{admonition} Implicit Differentiation
+:class: tip
 
 Find $\dfrac{dy}{dx}$ at $(2,0)$ where $y$ is defined implicitly by
 
@@ -267,8 +293,12 @@ $$8\frac{dy}{dx} + 4 = 2 + 7\frac{dy}{dx}.$$
 
 Now rearranging terms is a little easier since we don't have to deal with any fractions.
 ```
+````
+
 
 ### Example 5
+````{admonition} Compute elasticity of demand using implicit differentiation
+:class: tip
 
 The demand equation for Dr. Hager's *Make Math Great Again* video series is given by
 
@@ -333,3 +363,4 @@ E(10)
 &= \frac{5}{18}
 \end{align*}
 ```
+````

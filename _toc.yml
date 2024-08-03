@@ -34,6 +34,7 @@ parts:
   - file: ch_Derivatives/derivatives_
     sections:
     - file: ch_Derivatives/derivatives_def.md
+    - file: ch_Derivatives/derivatives_differentiable.md
     - file: ch_Derivatives/derivatives_rules.md
     - file: ch_Derivatives/derivatives_TIY.md
   - file: ch_Marginal/marginal_

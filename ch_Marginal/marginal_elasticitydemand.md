@@ -17,16 +17,16 @@ kernelspec:
 ```{admonition} Definition
 :class: info
 
-The price elasticity of demand measures how sensitive customer demand is to a small percentage change in the price of a good.  Intuitively, elasticity is computed by the following ratio:
+The _**price elasticity of demand**_ measures how sensitive customer demand is to a small percentage change in the price of a good.  Intuitively, elasticity is computed by the following ratio:
 
 $$- \: \frac{\text{% Change in Quantity Demanded}}{\text{% Change in Price}}$$
-```
 
 Recall that the Law of Demand implies that a positive percent change in price will result in a negative percent change in demand.  Consequently, the negative sign appears in the formula for elasticity only to make sure that the final result will be a positive value.
+```
 
-```{admonition} Definition
+```{admonition} Mathematical Formula for Computing Elasticity of Demand
 :class: info
-If the price of the good is $p$ and the corresponding quantity demanded is $f(p)$, then the elasticity of demand at price $p$, $E(p)$, is defined by
+If the price of the good is $p$ and the corresponding quantity demanded is $f(p)$, then the _**elasticity of demand at price $p$**_, $E(p)$, is defined by
 
 \begin{align*}
 E(p) = -\frac{pf'(p)}{f(p)} %\label{elasticity}
@@ -36,6 +36,8 @@ E(p) = -\frac{pf'(p)}{f(p)} %\label{elasticity}
 
 (marginal:elasticitydemand:example1)=
 ## Example 1
+````{admonition} Elasticity of demand
+:class: tip
 
 A store has determined that the demand for used lamps is given by
 
@@ -63,40 +65,53 @@ E(p)
 &= \frac{15p}{500 - 15p}    
 \end{align*}
 ```
-
+````
 
 
 ### Inelastic, Elastic & Unitary Demand
 
-Suppose $E(100) = 1/2$.  This means that when the price is \$100, a 1\% increase in price (i.e., the price increases to \$101), will result in a 0.5\% decrease in demand.  Or similarly, a 1\%  decrease in price (i.e., the price decreases to \$99), will result in a 0.5\% increase in demand.  In this situation, the incentive is for the producer to increase their price.
+```{admonition} What if elasticity is less than one?
+:class: tip
 
-```{admonition} Definition
-:class: info
-
-If $E(p) < 1$ (i.e., a percent change in price results in a smaller percent change in demand), then demand is said to be **inelastic**. 
+Suppose $E(100) = 1/2$.  This means that when the price is \$100, a 1\% increase in price (i.e., the price increases to \$101), will result in a 0.5\% decrease in demand.  Or similarly, a 1\%  decrease in price (i.e., the price decreases to \$99), will result in a 0.5\% increase in demand.  Since the increase in price is greater than the loss of demand, **producers have an incentive to increase their price**.
 ```
 
-Suppose $E(100) = 3$.  This means that when the price is \$100, a 1\% increase in price will result in a 3\% decrease in demand.  Or similarly, a 1\% decrease in price will result in a 3\% increase in demand.  In this situation, the incentive is for the producer to reduce their price.
-
-
 ```{admonition} Definition
 :class: info
 
-If $E(p) > 1$ (i.e., a percent change in price results in a larger percent change in demand), then demand is said to be **elastic**. 
+If $E(p) < 1$ (i.e., a percent change in price results in a smaller percent change in demand), then demand is said to be _**inelastic**_. 
 ```
 
-Suppose $E(100) = 1$.  This means that when the price is \$100, a 1\% increase in price will result in a 1\% decrease in demand.  Or similarly, a 1\% decrease in price will result in a 1\% increase in demand.  In this situation, there is no incentive for the producer to change their price.
+```{admonition} What if elasticity is greater than one?
+:class: tip
+
+Suppose $E(100) = 3$.  This means that when the price is \$100, a 1\% increase in price will result in a 3\% decrease in demand.  Or similarly, a 1\% decrease in price will result in a 3\% increase in demand.  Since the decrease in price is less than the increase in demand, **producers have an incentive to decrease their price**.
+```
 
 
 ```{admonition} Definition
 :class: info
 
-If $E(p) = 1$ (i.e., a percent change in price results in the same percent change in demand), then demand is said to be **unitary**. 
+If $E(p) > 1$ (i.e., a percent change in price results in a larger percent change in demand), then demand is said to be _**elastic**_. 
+```
+
+```{admonition} What if elasticity is equal to one?
+:class: tip
+
+Suppose $E(100) = 1$.  This means that when the price is \$100, a 1\% increase in price will result in a 1\% decrease in demand.  Or similarly, a 1\% decrease in price will result in a 1\% increase in demand.  Since the increase in price matches the decrease in demand, there is **no incentive for the producer to change their price**.
+```
+
+```{admonition} Definition
+:class: info
+
+If $E(p) = 1$ (i.e., a percent change in price results in the same percent change in demand), then demand is said to be _**unitary**_. 
 ```
 
 
 
 ## Example 2
+````{admonition} Elasticity of demand
+:class: tip
 
 A store has determined that the demand for used lamps is given by
 
@@ -126,3 +141,4 @@ $$E(20) = \frac{300}{500 - 300} = \frac{300}{200} = \frac{3}{2}$$
 
 Since $E(20) > 1$, demand is elastic when the price of a lamp is \$20.
 ```
+````

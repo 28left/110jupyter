@@ -17,7 +17,7 @@ kernelspec:
 ```{admonition} Definition
 :class: info
 
-The **total cost function**, $C(x)$ measures the costs incurred from operating a business and is defined by
+The _**total cost function**_, $C(x)$ measures the costs incurred from operating a business and is defined by
 
 $$C(x) = F(x) + V(x)$$
 
@@ -28,7 +28,7 @@ where $F(x)$ denotes the fixed costs  (i.e., costs that remain the same regardle
 ```{admonition} Definition
 :class: info
 
-The **average cost function**, $\overline{C}(x)$, measures the average cost per unit produced and is defined by
+The _**average cost function**_, $\overline{C}(x)$, measures the average cost per unit produced and is defined by
 
 $$\overline{C}(x) = \frac{C(x)}{x}.$$
 ```
@@ -42,7 +42,7 @@ $$\overline{C}(x) = \frac{C(x)}{x}.$$
 ```{admonition} Definition
 :class: info
 
-The **total revenue function**, $R(x)$, measures the amount of money received from the sale of $x$ units and is defined by
+The _**total revenue function**_, $R(x)$, measures the amount of money received from the sale of $x$ units and is defined by
 
 $$R(x) = x\cdot p(x)$$
 
@@ -53,7 +53,7 @@ where $x$ is the number of units demanded and $p(x)$ is the unit price.
 ```{admonition} Definition
 :class: info
 
-The **average revenue function**, $\overline{R}(x)$, measures the average amount of money received per unit sold and is defined by
+The _**average revenue function**_, $\overline{R}(x)$, measures the average amount of money received per unit sold and is defined by
 
 $$\overline{R}(x) = \frac{R(x)}{x}.$$
 ```
@@ -65,7 +65,7 @@ $$\overline{R}(x) = \frac{R(x)}{x}.$$
 ```{admonition} Definition
 :class: info
 
-The **total profit function**, $P(x)$ measures the difference between the total revenue and total cost functions and is defined by
+The _**total profit function**_, $P(x)$ measures the difference between the total revenue and total cost functions and is defined by
 
 $$P(x) = R(x) - C(x)$$
 
@@ -75,7 +75,7 @@ where $R(x)$ is the total revenue function and $C(x)$ is the total cost function
 ```{admonition} Definition
 :class: info
 
-The **average profit function**, $\overline{P}(x)$, measures the average profit earned per unit produced and sold and is defined by
+The _**average profit function**_, $\overline{P}(x)$, measures the average profit earned per unit produced and sold and is defined by
 
 $$\overline{P}(x) = \frac{P(x)}{x}.$$
 ```
@@ -88,7 +88,7 @@ $$\overline{P}(x) = \frac{P(x)}{x}.$$
 ```{admonition} Definition
 :class: info
 
-The **break-even point** refers to the value of $x$ where the total revenue from the sale of $x$ units equals the total cost of producing $x$ units.  In other words, the break-even point is the value of $x$ such that 
+The _**break-even point**_ refers to the value of $x$ where the total revenue from the sale of $x$ units equals the total cost of producing $x$ units.  In other words, the break-even point is the value of $x$ such that 
 
 $$R(x) = C(x)$$
 
@@ -99,9 +99,10 @@ $$P(x) = 0.$$
 
 
 ## Example 1
+````{admonition} Find cost, revenue, profit, and break-even point.
+:class: tip
 
 A manufacturer of wireless security cameras has fixed monthly costs of \$10,000 and a processing cost of \$49 for each camera produced. Assuming each camera sells for \$99, compute the break-even point.
-
 
 
 ```{dropdown} **Step 1:** &nbsp; Compute the total cost function, &nbsp; $C(x)$.
@@ -143,3 +144,4 @@ P(x) = 0
 
 Therefore, the break-even point is 200 cameras.
 ```
+````

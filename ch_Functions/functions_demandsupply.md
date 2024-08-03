@@ -12,15 +12,21 @@ kernelspec:
 ---
 # Demand and Supply
 
+## Definitions
+
 ```{admonition} Definition
 :class: info
 
-**Demand** refers to the quantity of goods or services that consumers are willing to purchase at a given price.
+_**Demand**_ refers to the quantity of goods or services that consumers are willing to purchase at a given price.
 ```
 
+````{admonition} The Law of Demand
+:class: info
 
 :::::{grid} 2
 ::::{grid-item-card}
+:columns: 5
+:margin: 0 0 4 4
 The Law of Demand assumes
 - all factors affecting purchasing except price are held constant,
 - if price goes up, then consumers buy less, and
@@ -30,6 +36,8 @@ The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $
 ::::
 
 ::::{grid-item-card}
+:columns: 5
+:padding: 5 5 0 0 
 ```{image} ../images/pic_functions_demand.png
 :alt: Demand function
 :width: 300px
@@ -41,16 +49,25 @@ The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $
 ```{dropdown} Long Text Description
 There is a horizontal x-axis representing the quantity of a good that is demanded, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The curve is labeled p = d(x). 
 ```
+````
+
+
 
 ```{admonition} Definition
 :class: info
 
-**Supply** refers to the amount of goods that producers want to sell at a given price.
+_**Supply**_ refers to the amount of goods that producers want to sell at a given price.
 ```
 
 
+
+````{admonition} The Law of Supply
+:class: info
+
 :::::{grid} 2
 ::::{grid-item-card}
+:columns: 5
+:margin: 0 0 4 4
 The Law of Supply assumes
 - all factors affecting supply except price are held constant, 
 - if price goes up, then suppliers (are incentivized) to produce more, and  
@@ -60,6 +77,8 @@ The supply curve, $p = s(x)$, shows the quantity supplied, $x$, at each price, $
 ::::
 
 ::::{grid-item-card}
+:columns: 5
+:padding: 5 5 0 0
 ```{image} ../images/pic_functions_supply.png
 :alt: Supply function
 :width: 300px
@@ -71,6 +90,9 @@ The supply curve, $p = s(x)$, shows the quantity supplied, $x$, at each price, $
 ```{dropdown} Long Text Description
 There is a horizontal x-axis representing the quantity of a good that will be supplied, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red curve increasing from left to right representing the price at which suppliers will sell certain amounts of the good. The curve is labeled p = s(x). 
 ```
+````
+
+
 ```{admonition} Domain Considerations
 :class: info
 
@@ -78,7 +100,9 @@ For any demand or supply function, the domain should be restricted so that both 
 ```
 
 
-## Example 1
+### Example 1
+````{admonition} Domain of a demand function
+:class: tip
 
 Determine the appropriate domain for the demand function, $d(x) = 600 - 15x$.
 
@@ -92,7 +116,7 @@ Determine the appropriate domain for the demand function, $d(x) = 600 - 15x$.
 
 Therefore, the domain of the demand function $d(x) = 600-15x$ is $[0,40]$.
 ```
-
+````
 
 
 ## Market Equilibrium
@@ -100,8 +124,11 @@ Therefore, the domain of the demand function $d(x) = 600-15x$ is $[0,40]$.
 ```{admonition} Definition
 :class: info
 
-A **market equilibrium** exists when the quantity produced is equal to the quantity demanded.
+A _**market equilibrium**_ exists when the quantity produced is equal to the quantity demanded.
 ```
+
+````{admonition} How to Find the Market Equilibrium
+:class: info
 
 The market equilibrium quantity and price can be determined by finding the point of intersection of the demand and supply curves.
 
@@ -117,8 +144,13 @@ The market equilibrium is given where demand and supply curves intersect
 ```{dropdown} Long Text Description
 There is a horizontal x-axis representing the quantity of a good, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red curve increasing from left to right representing the price at which suppliers will sell certain amounts of the good.  The red curve is labeled p = s(x). There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The blue curve is labeled p = d(x). There is a point where the two curves meet, which is labeled “equilibrium price" along the p-axis and “equilibrium quantity” along the x-axis.
 ```
+````
 
-## Example 2
+
+
+### Example 2
+````{admonition} Find the market equilibrium values
+:class: tip
 
 The demand and supply functions for Penn State Berkey Creamery Gift Boxes are: 
 
@@ -128,6 +160,7 @@ p = s(x) &= 2x + 32
 \end{align*}
 
 where $x$ is the number of thousands of boxes and $p$ is in dollars.  Determine the market equilibrium values.
+
 
 ```{dropdown} **Step 1:** &nbsp; Determine the equilibrium quantity.
 
@@ -145,8 +178,6 @@ Adding $x^2+x-72$ to both sides and factoring yields
 
 which is equal to zero when $x=-8$ or when $x=5$.  But since $x$ must be nonnegative, the equilibrium quantity corresponds to $x=5$, which is 5000 boxes.
 ```
-
-
 
 ```{dropdown} **Step 2:** &nbsp; Determine the equilibrium price.
 
@@ -168,3 +199,4 @@ s(5)
 
 Therefore, the equilibrium price is 42 dollars.
 ```
+````

@@ -19,28 +19,47 @@ kernelspec:
 %load_ext itikz
 ```
 
+## Definitions
+
 ```{admonition} Definition
 :class: info
 
-The limit of $f(x)$ as $x$ approaches (positive) infinity is equal to the finite number $L$, denoted by
+The _**limit of $f(x)$ as $x$ approaches (positive) infinity is equal to the finite number $L$**_, denoted by
 
 $$\lim_{x\to \infty} f(x) = L $$ 
 
 if $f(x)$ can be made as close to $L$ as we want by taking $x$ large enough.
 
-Similarly, the limit of $f(x)$ as $x$ approaches negative infinity is equal to the finite number $M$, denoted by 
+Similarly, the _**limit of $f(x)$ as $x$ approaches negative infinity is equal to the finite number $M$**_, denoted by 
 
 $$\lim_{x\to -\infty} f(x) = M $$ 
 
 if $f(x)$ can be made as close to $M$ as we want by taking $x$ to be negative and sufficiently large in absolute value.
 ```
 
-## Example 1
+### Example 1
+
+````{admonition} A limit at infinity
+:class: tip
 
 The following graph illustrates a function $f(x)$ that approaches a value of 400 as $x$ increases without bound.  In other words, 
 
 $$\lim\limits_{x\to \infty} f(x) = 400.$$
 
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_limits_infinity_example_1.png
+:alt: Graph of a function with a limit at infinity
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points 50, 100, 150, 200, 250, and 300 marked. There is a vertical y-axis with the points 100, 200, 300, and 400. There is a horizontal red dotted line at y = 400. The graph of a function is plotted on these axes. The function is increasing and approaches the horizontal dotted line from below, but never reaches it.  The closer the graph of the function gets to the horizontal dotted line, the slower the graph of the function increases.
+```
+
+````
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -73,10 +92,9 @@ $$\lim\limits_{x\to \infty} f(x) = 400.$$
 \end{tikzpicture}
 \end{document} 
 ```
+-->
 
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points 50, 100, 150, 200, 250, and 300 marked. There is a vertical y-axis with the points 100, 200, 300, and 400. There is a horizontal red dotted line at y = 400. The graph of a function is plotted on these axes. The function is increasing and approaches the horizontal dotted line from below, but never reaches it.  The closer the graph of the function gets to the horizontal dotted line, the slower the graph of the function increases.
-```
+
 
 
 
@@ -84,18 +102,38 @@ There is a horizontal x-axis with the points 50, 100, 150, 200, 250, and 300 mar
 
 ## Properties of Limits at Infinity
 
-All previous properties for limits apply when $a$ is replaced with $\infty$ or $-\infty$.  Furthermore, the following additional properties are especially useful when evaluating limits at infinity.  For all $n>0$, we have
+```{admonition} Properties
+:class: info
+
+All {ref}`lim:prop_lim` apply when $a$ is replaced with $\infty$ or $-\infty$.  Furthermore, the following additional properties are especially useful when evaluating limits at infinity.  For all $n>0$, we have
 
 - $\lim\limits_{x \to \infty} \dfrac{1}{x^n}=0 $
 - $\lim\limits_{x \to -\infty} \dfrac{1}{x^n}=0$, provided that $x^n$ is defined for $x<0$.
+```
 
-
-## Example 2
+### Example 2
+````{admonition} Limits at infinity of $1/x$
+:class: tip
 
 Notice how the graph of $y=1/x$ approaches the $x$-axis as $x$ approaches positive and negative infinity.  In other words,
 
 $$\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} \frac{1}{x} = 0.$$
 
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_limits_infinity_example_2.png
+:alt: Graph of a $1/x$
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points -1 and 1 marked. The graph of the function y = 1/x is plotted on these axes. This function comes in just below the x-axis from the left, decreases to negative infinity as x approaches zero from the left.  The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
+```
+
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -130,19 +168,35 @@ $$\lim_{x\to -\infty} \frac{1}{x} = 0  ~~~~ \hbox{and} ~~~~~ \lim_{x\to \infty} 
 \end{tikzpicture}
 \end{document} 
 ```
+-->
 
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points -1 and 1 marked. The graph of the function y = 1/x is plotted on these axes. This function comes in just below the x-axis from the left, decreases to negative infinity as x approaches zero from the left.  The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
-```
 
-## Example 3
+
+### Example 3
+````{admonition} Limits at infinity of $1/\sqrt{x}$
+:class: tip
 
 Notice how the graph of $y=1/\sqrt{x}$ approaches the $x$-axis as $x$ approaches positive infinity.  In other words,
 
 $$\lim_{x\to \infty} \frac{1}{\sqrt{x}} = 0.$$
 
-Furthermore, there is no discussion of the limit as $x$ approaches negative infinity since $\sqrt{x}$ is not defined for negative values of $x$. 
+Furthermore, there is no discussion of the limit as $x$ approaches negative infinity since $\sqrt{x}$ is not defined for negative values of $x$.
 
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_limits_infinity_example_3.png
+:alt: Graph of a $1/\sqrt{x}$
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points 1 and 2 marked. The graph of the function one over square root x is plotted on these axes. The graph does not appear above negative x values. The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
+```
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -176,24 +230,39 @@ Furthermore, there is no discussion of the limit as $x$ approaches negative infi
 \end{tikzpicture}
 \end{document} 
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. There is a vertical y-axis with the points 1 and 2 marked. The graph of the function one over square root x is plotted on these axes. The graph does not appear above negative x values. The function is not defined at x = 0.  As x increases past zero, the function comes down from positive infinity and decreases towards the x-axis as it continues to the right.
-```
+-->
 
 ## Limits at Infinity of Rational Functions
 
-For Rational Functions, a limit at infinity, whether it be $\displaystyle\lim_{x\to\infty}$ or $\displaystyle\lim_{x\to -\infty}$, can be determined by comparing the degree of the polynomial in the numerator to the degree of the polynomial in the denominator.
+```{admonition} How to Compute the Limit at Infinity of a Rational Function
+:class: info
+
+For rational functions, the limit as $x$ approaches positive or negative infinity can be determined by comparing the degree of the polynomial in the numerator to the degree of the polynomial in the denominator.
 
 For infinite limits of Rational Functions, if the 
 - highest power is in the denominator, then the limit will equal $0$
 - highest power is in the numerator, then the limit will equal $\pm\infty$ (DNE)
 - highest power is the same in both the numerator and denominator, then the limit will equal the ratio of the leading coefficients, i.e. the ratio of the coefficients in front of the highest powers in the numerator and the denominator.
+```
 
-## Example 4
+### Example 4
 
-Applying the guidelines:
-1. $\displaystyle\lim_{x\to\infty}\frac{x+3}{6x^2+3x+1}$ = 0 (highest power is in denominator)   <br>  &nbsp;
+````{admonition} Limits at infinity of rational functions
+:class: tip
 
-2. $\displaystyle\lim_{x\to-\infty}\frac{6x^{3}+3}{x^{2}+4x-7}$ = $-\infty$ or DNE (highest power is in numerator)  <br>  &nbsp;
+1. $\displaystyle\lim_{x\to\infty}\frac{x+3}{6x^2+3x+1}$
+```{dropdown} Answer
+Since the highest power of $x$ is in the denominator, the limit exists and is equal to $0$.
+```
 
-3. $\displaystyle\lim_{x\to\infty}\frac{4x^5+3x-8}{9x^5-6x^3}$ = $4/9$ (highest powers are the same)  
+2. $\displaystyle\lim_{x\to-\infty}\frac{6x^{3}+3}{x^{2}+4x-7}$ 
+```{dropdown} Answer
+Since the highest power of $x$ is in the numerator, the limit does not exist.  
+
+Furthermore, by comparing the leading terms in the numerator and the denominator, we can determine whether the limit goes to postive or negative infinity.  Since the leading term in the numerator, $6x^3$, is negative as $x$ goes to negative infinity and the leading term in the denominator, $x^2$, is postive as $x$ goes to negative infinity, the ratio of the two (negative/positive) is negative.  Therefore, we can conclude that the limit goes to negative infinity.   
+```
+3. $\displaystyle\lim_{x\to\infty}\frac{4x^5+3x-8}{9x^5-6x^3}$
+```{dropdown} Answer
+Since the highest power in the numerator and in the denominator are the same, the limit exists and is equal to the ratio of leading coefficients, which in this case is $4/9$.
+```
+````

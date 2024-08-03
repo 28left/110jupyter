@@ -18,11 +18,11 @@ kernelspec:
 ```{admonition} Definition
 :class: info
 
-If $C(x)$ denotes the total cost function, then $C'(x)$ denotes the **marginal cost function**, which approximates the extra cost incurred in producing one additional unit
+If $C(x)$ denotes the total cost function, then $C'(x)$ denotes the _**marginal cost function**_, which approximates the extra cost incurred in producing one additional unit
 
 $$C'(x) \approx C(x+1) - C(x)$$
 
-and $\overline{C}'(x)$ denotes the **marginal average cost function**.
+and $\overline{C}'(x)$ denotes the _**marginal average cost function**_.
 ```
 
 
@@ -32,11 +32,11 @@ and $\overline{C}'(x)$ denotes the **marginal average cost function**.
 ```{admonition} Definition
 :class: info
 
-If $R(x)$ denotes the total revenue function, then $R'(x)$ denotes the **marginal revenue function**, which approximates the revenue realized from the sale of one additional unit
+If $R(x)$ denotes the total revenue function, then $R'(x)$ denotes the _**marginal revenue function**_, which approximates the revenue realized from the sale of one additional unit
 
 $$R'(x) \approx R(x+1) - R(x)$$
 
-and $\overline{R}'(x)$ denotes the **marginal average revenue function**.
+and $\overline{R}'(x)$ denotes the _**marginal average revenue function**_.
 ```
 
 
@@ -45,11 +45,11 @@ and $\overline{R}'(x)$ denotes the **marginal average revenue function**.
 ```{admonition} Definition
 :class: info
 
-If $P(x)$ denotes the total profit function, then $P'(x)$ denotes the marginal profit function, which approximates the profit generated from the production and sale of one additional unit
+If $P(x)$ denotes the total profit function, then $P'(x)$ denotes the _**marginal profit function**_, which approximates the profit generated from the production and sale of one additional unit
 
 $$P'(x) \approx P(x+1) - P(x)$$
 
-and $\overline{P}'(x)$ denotes the **marginal average profit function**.
+and $\overline{P}'(x)$ denotes the _**marginal average profit function**_.
 ```
 
 
@@ -64,6 +64,8 @@ and $\overline{P}'(x)$ denotes the **marginal average profit function**.
 
 
 ## Example 1
+````{admonition} Marginal revenue
+:class: tip
 
 The daily demand for the new PBox5 Game *Dr. Mathematica-Exam Day of Reckoning* is given by
 
@@ -104,10 +106,12 @@ where $x$ is the number of video games sold each day and $p$ is in dollars. Usin
 
 Therefore, the total daily revenue would increase by approximately \$7 if sales increased from 3 to 4 units each day.
 ```
-
+````
 
 
 ## Example 2
+````{admonition} Marginal profit
+:class: tip
 
 If the demand function for math self-help videos is given by
 
@@ -160,9 +164,11 @@ Evaluate the marginal profit function at $x=20$ and interpret the result.
 \end{align*}
 Therefore, the total profit will increase by approximately \$28 when the 21st video is produced and sold.
 ```
-
+````
 
 ## Example 3
+````{admonition} Marginal average cost
+:class: tip
 
 The daily cost (in dollars) of producing computer screens is given by 
 
@@ -207,3 +213,4 @@ We plug in $x=3$, since $x$ denotes the *number of thousands* of screens produce
 
 Therefore, the average cost of producing a thousand screens will decrease by approximately \$76 if the level of production is increased from 3000 to 4000 screens.
 ```
+````
