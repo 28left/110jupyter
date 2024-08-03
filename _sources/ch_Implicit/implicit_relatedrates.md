@@ -30,6 +30,8 @@ Here are a few guidelines to follow when solving a related rates problem.
 ```
 
 ## Example 1
+````{admonition} Related rates problem
+:class: tip
 
 Given $p^2x + 6x = 5$ and $\dfrac{dp}{dt} = 3$. Compute $\dfrac{dx}{dt}$ when $p = 2$.
 
@@ -71,8 +73,11 @@ $$2(2)(3)\frac{1}{2} + 2^2x' + 6x' = 0  ~~~~~\Rightarrow~~~~~ 6 + 10x' = 0 ~~~~~
 
 Therefore $\dfrac{dx}{dt} = -3/5$ when $p=2$ and $\dfrac{dp}{dt} = 3$.
 ```
+````
 
 ## Example 2
+````{admonition} Related rates problem: demand vs. revenue
+:class: tip
 
 A company is decreasing the production of energy drinks at a rate of 100 cases per day. All cases produced can be sold. The daily demand function is given by 
 
@@ -123,8 +128,11 @@ Plug the known values of the variables and their derivatives ($x=300$, $\frac{dx
 
 Therefore revenue is decreasing at \$4700 per day when the level of production is 300 cases per day and decreasing at 100 cases per day.
 ```
+````
 
 ## Example 3
+````{admonition} Related rates problem: price vs. demand
+:class: tip
 
 The weekly demand function is given by 
 
@@ -181,8 +189,11 @@ $$\frac{9}{2} + 5\frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ 5\frac{dx}{dt} = -\fra
 
 and since $x$ is measured in thousands of units, this means that demand is decreasing by $900$ units per week (i.e., $9/10$ of one thousand) when the weekly demand is 4000 units and the price is increasing at 25 cents per week.
 ```
+````
 
 ## Example 4
+````{admonition} Related rates problem: price vs. supply
+:class: tip
 
 The wholesale price $p$ of an e-tablet writing stylus in dollars is related to the supply $x$ in thousands by:
 
@@ -237,3 +248,4 @@ $$-20 - 40 \frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ -40 \frac{dx}{dt} = 20 ~~~~~
 
 and since $x$ is measured in thousands of units, this means that supply is falling by $500$ units per week (i.e., $1/2$ of one thousand) when the weekly demand is 20,000 styluses and the price is falling at 4 cents per week.
 ```
+````

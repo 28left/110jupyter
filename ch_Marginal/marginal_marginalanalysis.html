@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -489,30 +490,30 @@ document.write(`
 <h2>Marginal Cost &amp; Marginal Average Cost Functions<a class="headerlink" href="#marginal-cost-marginal-average-cost-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>If <span class="math notranslate nohighlight">\(C(x)\)</span> denotes the total cost function, then <span class="math notranslate nohighlight">\(C'(x)\)</span> denotes the <strong>marginal cost function</strong>, which approximates the extra cost incurred in producing one additional unit</p>
+<p>If <span class="math notranslate nohighlight">\(C(x)\)</span> denotes the total cost function, then <span class="math notranslate nohighlight">\(C'(x)\)</span> denotes the <em><strong>marginal cost function</strong></em>, which approximates the extra cost incurred in producing one additional unit</p>
 <div class="math notranslate nohighlight">
 \[C'(x) \approx C(x+1) - C(x)\]</div>
-<p>and <span class="math notranslate nohighlight">\(\overline{C}'(x)\)</span> denotes the <strong>marginal average cost function</strong>.</p>
+<p>and <span class="math notranslate nohighlight">\(\overline{C}'(x)\)</span> denotes the <em><strong>marginal average cost function</strong></em>.</p>
 </div>
 </section>
 <section id="marginal-revenue-marginal-average-revenue-functions">
 <h2>Marginal Revenue &amp; Marginal Average Revenue Functions<a class="headerlink" href="#marginal-revenue-marginal-average-revenue-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>If <span class="math notranslate nohighlight">\(R(x)\)</span> denotes the total revenue function, then <span class="math notranslate nohighlight">\(R'(x)\)</span> denotes the <strong>marginal revenue function</strong>, which approximates the revenue realized from the sale of one additional unit</p>
+<p>If <span class="math notranslate nohighlight">\(R(x)\)</span> denotes the total revenue function, then <span class="math notranslate nohighlight">\(R'(x)\)</span> denotes the <em><strong>marginal revenue function</strong></em>, which approximates the revenue realized from the sale of one additional unit</p>
 <div class="math notranslate nohighlight">
 \[R'(x) \approx R(x+1) - R(x)\]</div>
-<p>and <span class="math notranslate nohighlight">\(\overline{R}'(x)\)</span> denotes the <strong>marginal average revenue function</strong>.</p>
+<p>and <span class="math notranslate nohighlight">\(\overline{R}'(x)\)</span> denotes the <em><strong>marginal average revenue function</strong></em>.</p>
 </div>
 </section>
 <section id="marginal-profit-marginal-average-profit-functions">
 <h2>Marginal Profit &amp; Marginal Average Profit Functions<a class="headerlink" href="#marginal-profit-marginal-average-profit-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>If <span class="math notranslate nohighlight">\(P(x)\)</span> denotes the total profit function, then <span class="math notranslate nohighlight">\(P'(x)\)</span> denotes the marginal profit function, which approximates the profit generated from the production and sale of one additional unit</p>
+<p>If <span class="math notranslate nohighlight">\(P(x)\)</span> denotes the total profit function, then <span class="math notranslate nohighlight">\(P'(x)\)</span> denotes the <em><strong>marginal profit function</strong></em>, which approximates the profit generated from the production and sale of one additional unit</p>
 <div class="math notranslate nohighlight">
 \[P'(x) \approx P(x+1) - P(x)\]</div>
-<p>and <span class="math notranslate nohighlight">\(\overline{P}'(x)\)</span> denotes the <strong>marginal average profit function</strong>.</p>
+<p>and <span class="math notranslate nohighlight">\(\overline{P}'(x)\)</span> denotes the <em><strong>marginal average profit function</strong></em>.</p>
 </div>
 </section>
 <section id="marginal-analysis-notation">
@@ -551,6 +552,8 @@ document.write(`
 </section>
 <section id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Marginal revenue</p>
 <p>The daily demand for the new PBox5 Game <em>Dr. Mathematica-Exam Day of Reckoning</em> is given by</p>
 <div class="math notranslate nohighlight">
 \[p(x) = \frac{125}{x+2} - \frac{1}{2}x\]</div>
@@ -590,9 +593,12 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the total daily revenue would increase by approximately $7 if sales increased from 3 to 4 units each day.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
 <h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Marginal profit</p>
 <p>If the demand function for math self-help videos is given by</p>
 <div class="math notranslate nohighlight">
 \[p(x) = 35 - 0.1x\]</div>
@@ -645,9 +651,12 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the total profit will increase by approximately $28 when the 21st video is produced and sold.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-3">
 <h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Marginal average cost</p>
 <p>The daily cost (in dollars) of producing computer screens is given by</p>
 <div class="math notranslate nohighlight">
 \[C(x)=9x^3-30x^2+90x+900\]</div>
@@ -690,7 +699,8 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the average cost of producing a thousand screens will decrease by approximately $76 if the level of production is increased from 3000 to 4000 screens.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

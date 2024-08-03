@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -486,29 +487,32 @@ document.write(`
 <h1>Try It Yourself<a class="headerlink" href="#try-it-yourself" title="Link to this heading">#</a></h1>
 <section id="exercise-1">
 <h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Link to this heading">#</a></h2>
-<p>Find <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span> where <span class="math notranslate nohighlight">\(y\)</span> is defined implicitly by</p>
-<div class="math notranslate nohighlight">
-\[y^4 + x^3y^2 - x = 5.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Implicit differentiation</p>
+<p>Find <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span> where <span class="math notranslate nohighlight">\(y\)</span> is defined implicitly by <span class="math notranslate nohighlight">\(y^4 + x^3y^2 - x = 5\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\((1 - 3x^2y^2)/(4y^3  + 2x^3y)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-2">
 <h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Link to this heading">#</a></h2>
-<p>Find the equation of the line tangent to the curve defined implicitly by</p>
-<div class="math notranslate nohighlight">
-\[x^4y-x^3+14y=29\]</div>
-<p>at the point <span class="math notranslate nohighlight">\((1,2)\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Equation of tangent line via implicit differentiation</p>
+<p>Find the equation of the line tangent to the curve defined implicitly by <span class="math notranslate nohighlight">\(x^4y-x^3+14y=29\)</span> at the point <span class="math notranslate nohighlight">\((1,2)\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(y=-x/3 + 7/3\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-3">
 <h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Elasticity of demand using implicit differentiation</p>
 <p>The demand equation for Hager &amp; Little’s <em>Better Business Calculus</em> book series is given by</p>
 <div class="math notranslate nohighlight">
 \[p = -5x^2 - 2x + 100\]</div>
@@ -518,9 +522,12 @@ document.write(`
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(1/14\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-4">
 <h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Related rates problem: demand vs. revenue</p>
 <p>A company is increasing production of math-brain protein bars at a rate of 50 cases per day. All cases produced can be sold. The daily demand function is given by</p>
 <div class="math notranslate nohighlight">
 \[p(x) = 80 - \frac{x}{100}\]</div>
@@ -530,9 +537,12 @@ document.write(`
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: revenue increases by $3,500 per day</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-5">
 <h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Related rates problem: price vs. demand</p>
 <p>If the quantity demanded daily of a product is related to its unit price in dollars by</p>
 <div class="math notranslate nohighlight">
 \[p^2 = 106 - x^2,\]</div>
@@ -542,9 +552,12 @@ document.write(`
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: demand increases by <span class="math notranslate nohighlight">\(27/5\)</span> units per day</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-6">
 <h2>Exercise 6<a class="headerlink" href="#exercise-6" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Related rates problem: price vs. demand</p>
 <p>The weekly demand function is given by</p>
 <div class="math notranslate nohighlight">
 \[p + x + 3xp = 43\]</div>
@@ -554,7 +567,8 @@ document.write(`
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: demand decreases by 260 units per week</p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

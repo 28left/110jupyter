@@ -13,11 +13,16 @@ kernelspec:
 ---
 # The Domain of a Function
 
-```{admonition} Definition
-:class: tip
 
-The **domain** of a function is the set of all values of $x$ for which the function is defined.
+## Definition
+```{admonition} Definition
+:class: info
+
+The _**domain**_ of a function is the set of all values of $x$ for which the function is defined.
 ```
+
+```{admonition} How to Determine the Domain of a Function
+:class: note
 
 When determining the domain of a given function, do not include any value that leads to one or more of the following:
 
@@ -25,10 +30,13 @@ When determining the domain of a given function, do not include any value that l
 - the square root of a negative number
 - the logarithm of zero or a negative number
 
-Students should be familiar with the concepts of division and square roots.  Logarithms will be discussed in class and in a subsequent PSL Course Packet.   While there are other functions that lead to restrictions on the domain, we will limit our discussion to division, square roots, and logarithms.
-
+Students should be familiar with the concepts of division and square roots.  Logarithms will be discussed in class and in a subsequent Course Packet.   While there are other functions that lead to restrictions on the domain, we will limit our discussion to division, square roots, and logarithms.
+```
 
 ## Interval Notation
+
+````{admonition} An Interval of Values
+:class: info
 
 The domain of a function is typically written as a union of intervals.  In this course, we will make use of interval notation to express domains.  This notation is summarized in the following table.
 
@@ -46,24 +54,91 @@ Row 7. x is less than or equal to b. A ray going from a filled circle at b to ne
 Row 8. x is less than b. A ray going from an unfilled circle at b to negative infinity on the left. (negative infinity, b)
 
 ```
+````
+
+
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/F0Dg-6LK9RA" target="_blank">Understanding Interval Notation</a> (Links to an external site) <br>
+A review of how to rewrite inequalities using interval notation.
+:::
+::::
+````
+
+
+
+```{admonition} The Union of Intervals
+:class: note
+
 Given two intervals, $A$ and $B$, then the union of $A$ and $B$, denoted $A\cup B$, represents the collection of values that are in $A$ or in $B$.  For example,
 
 $$(-\infty,5) \cup [7,10)$$
 
 represents the values that are less than $5$ (i.e., $x<5$) or greater than or equal to $7$ and less than $10$ (i.e., $7\leq x < 10$).
+```
 
+
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/Sqi57_oAAbc" target="_blank">Interval Notation for Multiple Inequalities</a> (Links to an external site) <br>
+A review of how to write the union of multiple intervals using interval notation.
+:::
+::::
+````
+
+
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/Hm_RljsqCsM" target="_blank">Domain of a Function</a> (Links to an external site) <br>
+A review of how to determine the domain of a function and how to use interval notation to describe the domain.
+:::
+::::
+````
 
 
 
 ### Example 1 
 
-```{admonition} $ $
+````{admonition} The domain of $1/x$
 :class: tip
 
 Use interval notation to describe the domain of $1/x$.
-```
 
-```{dropdown} **Step 1:** &nbsp; Describe the domain of &nbsp; $1/x$ &nbsp; using an inequality.
+
+```{dropdown} **Step 1:** &nbsp; Describe the domain of &nbsp; $1/x$ &nbsp; using inequalities.
 
 The domain of $1/x$ includes all real numbers except $x=0$ (i.e., $x<0$ or $x>0$) since division by zero is not defined. 
 ```
@@ -75,17 +150,16 @@ in interval notation as
 
 $$(-\infty,0) \cup (0,\infty).$$
 ```
-
+````
 
 
 ### Example 2
 
-```{admonition} $ $
+````{admonition} The domain of $\sqrt{x}$
 :class: tip
 
-
 Use interval notation to describe the domain of $\sqrt{x}$.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Describe the domain of &nbsp; $\sqrt{x}$ &nbsp; using an inequality.
 
@@ -98,15 +172,16 @@ The domain of $\sqrt{x}$ consists of all values of $x$ such that $x\geq 0$, whic
 
 $$[0,\infty).$$
 ```
+````
 
 
 ### Example 3
 
-```{admonition} $ $
+````{admonition} The domain of the square root of a polynomial
 :class: tip
 
 Determine the domain of the function $f(x) = \sqrt{x^2 + 2x - 3}$.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Describe the domain using an inequality.
 
@@ -133,15 +208,16 @@ $$
 (-\infty, -3] \cup [1, \infty).
 $$
 ```
+````
 
 
 ### Example 4
 
-```{admonition} $ $
+````{admonition} The domain of a rational function
 :class: tip
 
 Determine the domain of the function $f(x) = \dfrac{x}{x^2 + 2x - 3}$.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Describe the domain by excluding all &nbsp; $x$ &nbsp; that make &nbsp; $f(x)$ &nbsp; undefined.
 
@@ -163,9 +239,10 @@ when $x=-3$ or $x=1$.
 
 ```{dropdown} **Step 3:** &nbsp; Exclude the values found in Step 2 from the domain.
 
-Since the only values of $x$ that lead to division by zero are $x=-3$ and $x=1$, the domain of $f$ consists of all $x$ such that $x<-3$, or $-3<x<1$, or $x>1$, which can be written in interval notation as
+Since the only values of $x$ that lead to division by zero are $x=-3$ and $x=1$, the domain of $f$ consists of all $x$ such that $x\neq -3$ and $x\neq 1$.  This can be written using inequalities as $x<-3$, or $-3<x<1$, or $x>1$, which can then be written in interval notation as
 
 $$
 (-\infty, -3) \cup (-3, 1) \cup (1, \infty).
 $$
 ```
+````

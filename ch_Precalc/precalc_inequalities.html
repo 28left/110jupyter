@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -485,20 +486,23 @@ document.write(`
 <h1>Solving Inequalities<a class="headerlink" href="#solving-inequalities" title="Link to this heading">#</a></h1>
 <section id="how-to-solve-an-inequality">
 <h2>How to Solve an Inequality<a class="headerlink" href="#how-to-solve-an-inequality" title="Link to this heading">#</a></h2>
-<p>In order to find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> or <span class="math notranslate nohighlight">\(f(x)&lt;0\)</span>, use the following procedure.</p>
 <div class="info admonition">
-<p class="admonition-title">Solving an inequality</p>
+<p class="admonition-title">Solving an Inequality</p>
+<p>In order to find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> or <span class="math notranslate nohighlight">\(f(x)&lt;0\)</span>, use the following procedure.</p>
 <ul class="simple">
-<li><p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f(x) = 0\)</span> or <span class="math notranslate nohighlight">\(f(x)\)</span> is not defined.</p></li>
-<li><p>Use the values found to break up the number line into intervals and select one number from each interval to plug into <span class="math notranslate nohighlight">\(f(x)\)</span> to determine if <span class="math notranslate nohighlight">\(f(x)\)</span> is positive or negative on that interval.</p></li>
+<li><p><strong>Step 1:</strong> Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f(x) = 0\)</span> or <span class="math notranslate nohighlight">\(f(x)\)</span> is not defined.</p></li>
+<li><p><strong>Step 2:</strong> Use one of the following two methods to solve the inequality</p>
+<ul>
+<li><p><strong>Method 1:</strong> Use the values found to break up the number line into intervals and select one number from each interval to plug into <span class="math notranslate nohighlight">\(f(x)\)</span> to determine if <span class="math notranslate nohighlight">\(f(x)\)</span> is positive or negative on that interval.</p></li>
+<li><p><strong>Method 2:</strong> Use the values found to help draw the graph of <span class="math notranslate nohighlight">\(f(x)\)</span>.  Portions of the graph that are above the <span class="math notranslate nohighlight">\(x\)</span>-axis correspond to values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> while portions of the graph that are below the <span class="math notranslate nohighlight">\(x\)</span>-axis correspond to values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span>.</p></li>
 </ul>
-<p><strong>OR</strong></p>
-<ul class="simple">
-<li><p>Use the values found to help draw the graph of <span class="math notranslate nohighlight">\(f(x)\)</span>.  Portions of the graph that are above the <span class="math notranslate nohighlight">\(x\)</span>-axis correspond to values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> while portions of the graph that are below the <span class="math notranslate nohighlight">\(x\)</span>-axis correspond to values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span>.</p></li>
+</li>
 </ul>
 </div>
 <section id="example-1">
 <span id="example1"></span><h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Determine the values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x)\)</span> is positive.</p>
 <p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 + 2x - 3 &gt; 0\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -512,43 +516,114 @@ document.write(`
 x + 3 = 0 ~~~~&amp;\Rightarrow~~~~ x = -3 \\
 x - 1 = 0 ~~~~&amp;\Rightarrow~~~~ x = 1 
 \end{align*}\]</div>
+<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(x^2 + 2x - 3\)</span> is defined for all values of <span class="math notranslate nohighlight">\(x\)</span>.</p>
 </div>
-</details><p>Use one of the following two methods to solve the inequality.</p>
-<div class="tip admonition">
-<p class="admonition-title">Method 1</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Use one of the two methods to solve the inequality.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Method 1: Break up the number line</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
-<li><p>Use the values of <span class="math notranslate nohighlight">\(x\)</span> found in <strong>Step 1</strong> to break up the number line and plug in one value from each interval into <span class="math notranslate nohighlight">\(f(x) = (x+3)(x-1)\)</span>.</p></li>
-<li><p>Since <span class="math notranslate nohighlight">\(f(-3) = 0\)</span> and <span class="math notranslate nohighlight">\(f(1) = 0\)</span>, pick one value less <span class="math notranslate nohighlight">\(-3\)</span>, one value between <span class="math notranslate nohighlight">\(-3\)</span> and <span class="math notranslate nohighlight">\(1\)</span>, and one value greater than <span class="math notranslate nohighlight">\(1\)</span>.  For example, since <span class="math notranslate nohighlight">\(f(-4) = 5 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f(x) &gt;0 \)</span> for all <span class="math notranslate nohighlight">\(x &lt; -3\)</span>.  And since <span class="math notranslate nohighlight">\(f(2) = 5 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> for all <span class="math notranslate nohighlight">\(x &gt; 1\)</span>.  However, <span class="math notranslate nohighlight">\(f(0) = -3 &lt; 0\)</span>, and therefore <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>.</p></li>
+<li><p class="sd-card-text">Use the values of <span class="math notranslate nohighlight">\(x\)</span> found in <strong>Step 1</strong> to break up the number line and plug in one value from each interval into <span class="math notranslate nohighlight">\(f(x) = (x+3)(x-1)\)</span>. <br><br></p></li>
+<li><p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f(-3) = 0\)</span> and <span class="math notranslate nohighlight">\(f(1) = 0\)</span>, pick one value less <span class="math notranslate nohighlight">\(-3\)</span>, one value between <span class="math notranslate nohighlight">\(-3\)</span> and <span class="math notranslate nohighlight">\(1\)</span>, and one value greater than <span class="math notranslate nohighlight">\(1\)</span>.  <br><br> For example, since <span class="math notranslate nohighlight">\(f(-4) = 5 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f(x) &gt;0 \)</span> for all <span class="math notranslate nohighlight">\(x &lt; -3\)</span>.  And since <span class="math notranslate nohighlight">\(f(2) = 5 &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f(x)&gt;0\)</span> for all <span class="math notranslate nohighlight">\(x &gt; 1\)</span>.  However, <span class="math notranslate nohighlight">\(f(0) = -3 &lt; 0\)</span>, and therefore <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>.</p></li>
 </ul>
-</div>
-<p>The calculations of method 1 are summarized in the following diagram.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/2b530e60eb55fb8aca536cfff38ad0b5b7d827d7bff8af39d1874af7640da737.svg" src="../_images/2b530e60eb55fb8aca536cfff38ad0b5b7d827d7bff8af39d1874af7640da737.svg" /></div>
-</div>
+<p class="sd-card-text">The calculations of Method 1 are summarized in the following diagram.</p>
+<img alt="Sign of $f(x)$" class="align-center" src="../_images/pic_precalc_inequalities_example_1_1.png" />
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a number line with the numbers -4, -3, 0, 1, and 2 marked. The line is labeled “sign of f(x)”. Some of the points are marked with signs. -4 is marked positive. Zero is marked negative. 2 is marked positive. The rest of the numbers are not marked with a sign.</p>
 </div>
-</details><p>Therefore, <span class="math notranslate nohighlight">\(x^2+2x-3 &gt;0\)</span> whenever <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
-<div class="tip admonition">
-<p class="admonition-title">Method 2</p>
-<p>Sketch the graph of <span class="math notranslate nohighlight">\(y=x^2+2x-3\)</span> by drawing a parabola that opens upward and goes through the points <span class="math notranslate nohighlight">\((-3,0)\)</span> and <span class="math notranslate nohighlight">\((1,0)\)</span>.</p>
+</details><p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(x^2+2x-3 &gt;0\)</span> whenever <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
 </div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/d85cfd7fc92ce7c60a0066856461656b4b53cc1be0ae2a35bc8f6332303788b6.svg" src="../_images/d85cfd7fc92ce7c60a0066856461656b4b53cc1be0ae2a35bc8f6332303788b6.svg" /></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Method 2: Draw a graph</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Sketch the graph of <span class="math notranslate nohighlight">\(y=x^2+2x-3\)</span> by drawing a parabola that opens upward and goes through the points <span class="math notranslate nohighlight">\((-3,0)\)</span> and <span class="math notranslate nohighlight">\((1,0)\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y=x^2+2x-3$" src="../_images/pic_precalc_inequalities_example_1_2.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -4, -2, and 2 marked. There is a vertical y-axis with no points marked. The graph of the concave up parabola y = x squared + 2x - 3. Its x-intercepts are marked with large black dots.</p>
 </div>
-</details><p>Finding values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2+2x-3 &gt; 0\)</span> is equivalent to identifying the portions of the graph of <span class="math notranslate nohighlight">\(x^2+2x-3\)</span> that are above the <span class="math notranslate nohighlight">\(x\)</span>-axis.  Based on the graph shown above, <span class="math notranslate nohighlight">\(x^2+2x-3 &gt;0\)</span> whenever <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
+</details><p class="sd-card-text">Finding values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2+2x-3 &gt; 0\)</span> is equivalent to identifying the portions of the graph of <span class="math notranslate nohighlight">\(x^2+2x-3\)</span> that are above the <span class="math notranslate nohighlight">\(x\)</span>-axis.</p>
+<p class="sd-card-text">Based on the graph shown above, <span class="math notranslate nohighlight">\(x^2+2x-3 &gt;0\)</span> whenever <span class="math notranslate nohighlight">\(x&lt;-3\)</span> or <span class="math notranslate nohighlight">\(x&gt;1\)</span>.</p>
+</div>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=1]
+\draw[white,fill=white] (-9.5,-1) rectangle (4,1);
+\draw[->](-6,0) -- (4,0) ;
+\foreach \x in {-3, 1}
+	\draw (\x, 6pt) -- (\x, -6pt) node[below, scale=1.5] {$\x$};
+	
+\node[above, scale=1.5] at (-4,0){$+$};
+\node[above, scale=1.5] at (0,0){$-$};
+\node[above, scale=1.5] at (2,0){$+$};
+
+	\draw (-4, 3pt) -- (-4, -3pt) node[below, scale=1.5] {$-4$} ;
+	\draw (0, 3pt) -- (0, -3pt) node[below, scale=1.5] {$0$} ;
+	\draw (2, 3pt) -- (2, -3pt) node[below, scale=1.5] {$2$} ;
+
+\node[left, scale=1.5] at (-6,0.5){sign of $f(x)$};
+\end{tikzpicture} 
+\end{document}
+```
+-->
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin {document}
+\begin{tikzpicture}[xscale=1,yscale=0.6]
+
+\draw[white,fill=white] (-5.3,-5.3) rectangle (3.3,5.3);
+%\draw[very thin,color=lightgray,step=1] (-4.9,-4.9) grid (2.9,4.9);
+
+\draw[->] (-5,0) -- (3,0) node[below] {$x$};
+\draw[->] (0,-5) -- (0,5) node[right] {$y$};
+       
+\draw [fill=black] (-3,0) ellipse [x radius = 0.15, y radius = 0.25];
+\draw [fill=black] (1,0) ellipse [x radius = 0.15, y radius = 0.25];
+
+% tick marks
+\foreach \x in {-4,-2,2} 
+	\draw [thick] (\x cm,6pt) -- (\x cm,-6pt) node[below] {$\x$};
+\foreach \y in {} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+	
+\clip (-6,-5) rectangle (6,5);
+\draw[domain=-4:2,smooth,variable=\x,black,ultra thick] plot ({\x},{\x*\x + 2*\x - 3}); 
+%\node at (4.1, 4.5){$y = x^2 + 2x - 3$};
+\end{tikzpicture}
+\end{document}
+```
+-->
 </section>
 <section id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Determine the values of <span class="math notranslate nohighlight">\(x\)</span> where <span class="math notranslate nohighlight">\(f(x)\)</span> is negative.</p>
 <p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(\dfrac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -556,36 +631,106 @@ x - 1 = 0 ~~~~&amp;\Rightarrow~~~~ x = 1
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} = 0\)</span> whenever the numerator is equal to zero, which only happens when <span class="math notranslate nohighlight">\(x=0\)</span> (since <span class="math notranslate nohighlight">\(x^2+3\)</span> is never equal to zero).</p>
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> is not defined whenever the denominator is equal to zero, which only happens when <span class="math notranslate nohighlight">\(x=-2\)</span> or <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
 </div>
-</details><p>Use one of the following two methods to solve the inequality.</p>
-<div class="tip admonition">
-<p class="admonition-title">Method 1</p>
-<p>Break up the number line at <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> and plug in one value from each interval to determine the sign of <span class="math notranslate nohighlight">\(f(x) = \frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> on that interval.</p>
-</div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/174bf6d38cf19c6e8ce7cfdfef4dde0e1627da1b5f9ed006503804a444e2c3fc.svg" src="../_images/174bf6d38cf19c6e8ce7cfdfef4dde0e1627da1b5f9ed006503804a444e2c3fc.svg" /></div>
-</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Use one of the two methods to solve the inequality.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Method 1: Break up the number line</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Break up the number line at <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> and plug in one value from each interval to determine the sign of <span class="math notranslate nohighlight">\(f(x) = \frac{x^2(x^2+3)}{(4-x^2)^3}\)</span> on that interval.</p>
+<p class="sd-card-text">The calculations of Method 1 are summarized in the following diagram.</p>
+<img alt="Sign of $f(x)$" class="align-center" src="../_images/pic_precalc_inequalities_example_2_1.png" />
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a number line with the numbers -3, -2, -1, 0, 1, 2, and 3 marked. The sign of f(x) is denoted at several points along the line, and is negative at the point -3, positive at the point -1, positive at the point 1, and negative at the point 3.</p>
 </div>
-</details><p>Therefore, <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span> when <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.</p>
-<div class="tip admonition">
-<p class="admonition-title">Method 2</p>
-<p>Notice that <span class="math notranslate nohighlight">\(x^2\)</span> and <span class="math notranslate nohighlight">\(x^2+3\)</span> are both positive for <span class="math notranslate nohighlight">\(x\neq 0\)</span>, therefore <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3}&lt;0\)</span> whenever <span class="math notranslate nohighlight">\(4-x^2 &lt; 0\)</span>.</p>
+</details><p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span> when <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.</p>
 </div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/e3b4ff174385d00b49ba70652b242b63a13054b97b01982a0a25fd80c6e3d392.svg" src="../_images/e3b4ff174385d00b49ba70652b242b63a13054b97b01982a0a25fd80c6e3d392.svg" /></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Method 2: Draw a graph</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Notice that <span class="math notranslate nohighlight">\(x^2\)</span> and <span class="math notranslate nohighlight">\(x^2+3\)</span> are both positive for <span class="math notranslate nohighlight">\(x\neq 0\)</span>, therefore <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3}&lt;0\)</span> whenever <span class="math notranslate nohighlight">\(4-x^2 &lt; 0\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y=4-x^2$" src="../_images/pic_precalc_inequalities_example_2_2.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">There is a horizontal x-axis with the points -3, -1, 1, and 3 marked. There is a vertical y-axis with no points marked. The graph of the concave down quadratic function four minus x squared is plotted on these axes, with it’s x-intercepts at (-2,0) and (2,0) marked with large black dots.</p>
+<p class="sd-card-text">There is a horizontal x-axis with the points -3, -1, 1, and 3 marked. There is a vertical y-axis with no points marked. The graph of the concave down quadratic function four minus x squared is plotted on these axes, with its x-intercepts at (-2,0) and (2,0) marked with large black dots.</p>
 </div>
-</details><p>The graph of <span class="math notranslate nohighlight">\(y = 4-x^2\)</span> as shown above is below the <span class="math notranslate nohighlight">\(x\)</span>-axis (i.e., <span class="math notranslate nohighlight">\(4-x^2 &lt; 0\)</span>) if <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span> when <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.</p>
-</section>
+</details><p class="sd-card-text">The graph of <span class="math notranslate nohighlight">\(y = 4-x^2\)</span> as shown above is below the <span class="math notranslate nohighlight">\(x\)</span>-axis (i.e., <span class="math notranslate nohighlight">\(4-x^2 &lt; 0\)</span>) if <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\frac{x^2(x^2+3)}{(4-x^2)^3} &lt; 0\)</span> when <span class="math notranslate nohighlight">\(x&lt;-2\)</span> or <span class="math notranslate nohighlight">\(x&gt;2\)</span>.</p>
+</div>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin {document}
+\begin{tikzpicture}[scale=1.5]
+\draw[white,fill=white] (-6.5,-0.6) rectangle (4,0.6);
+\draw[->](-4,0) -- (4,0) ;
+\foreach \x in {-2,0,2}
+	\draw (\x, 3pt) -- (\x, -3pt) node[below, scale=1.5] {$\x$} ;
+	
+\node[above, scale=1.5] at (-3,0){$-$};
+\node[above, scale=1.5] at (-1,0){$+$};
+\node[above, scale=1.5] at (1,0){$+$} ;
+\node[above, scale=1.5] at (3,0){$-$} ;
+
+	\draw (-3, 2pt) -- (-3, -2pt) node[below, scale=1.5] {$-3$} ;
+	\draw (-1, 2pt) -- (-1, -2pt) node[below, scale=1.5] { $-1$} ;
+	\draw (1, 2pt) -- (1, -2pt) node[below, scale=1.5] { $1$} ;
+	\draw (3, 2pt) -- (3, -2pt) node[below, scale=1.5] {$3$} ;
+
+\node[left, scale=1.5] at (-4,0.25){sign of $f(x)$};
+
+\end{tikzpicture} 
+\end{document}
+```
+-->
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin {document}
+\begin{tikzpicture}[xscale=1,yscale=0.6]
+
+\draw[white,fill=white] (-4.3,-5.3) rectangle (4.3,5.3);
+%\draw[very thin,color=lightgray,step=1] (-4.9,-4.9) grid (2.9,4.9);
+
+\draw[->] (-4,0) -- (4,0) node[below] {$x$};
+\draw[->] (0,-5) -- (0,5) node[right] {$y$};
+       
+\draw [fill=black] (-2,0) ellipse [x radius = 0.15, y radius = 0.25];
+\draw [fill=black] (2,0) ellipse [x radius = 0.15, y radius = 0.25];
+
+% tick marks
+\foreach \x in {-3,-1,1,3} 
+	\draw [thick] (\x cm,6pt) -- (\x cm,-6pt) node[below] {$\x$};
+\foreach \y in {} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+	
+\clip (-6,-5) rectangle (6,5);
+\draw[domain=-3:3,smooth,variable=\x,black,ultra thick] plot ({\x},{4 - \x*\x}); 
+%\node at (4.1, 4.5){$y = x^2 + 2x - 3$};
+\end{tikzpicture}
+\end{document}
+```
+--></section>
 </section>
 </section>
 

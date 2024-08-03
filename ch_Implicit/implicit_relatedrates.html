@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -495,6 +496,8 @@ document.write(`
 </div>
 <section id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Related rates problem</p>
 <p>Given <span class="math notranslate nohighlight">\(p^2x + 6x = 5\)</span> and <span class="math notranslate nohighlight">\(\dfrac{dp}{dt} = 3\)</span>. Compute <span class="math notranslate nohighlight">\(\dfrac{dx}{dt}\)</span> when <span class="math notranslate nohighlight">\(p = 2\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -537,9 +540,12 @@ document.write(`
 \[2(2)(3)\frac{1}{2} + 2^2x' + 6x' = 0  ~~~~~\Rightarrow~~~~~ 6 + 10x' = 0 ~~~~~\Rightarrow~~~~~ x' = -3/5\]</div>
 <p class="sd-card-text">Therefore <span class="math notranslate nohighlight">\(\dfrac{dx}{dt} = -3/5\)</span> when <span class="math notranslate nohighlight">\(p=2\)</span> and <span class="math notranslate nohighlight">\(\dfrac{dp}{dt} = 3\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
 <h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Related rates problem: demand vs. revenue</p>
 <p>A company is decreasing the production of energy drinks at a rate of 100 cases per day. All cases produced can be sold. The daily demand function is given by</p>
 <div class="math notranslate nohighlight">
 \[p(x) = 50 - \frac{x}{200}\]</div>
@@ -590,9 +596,12 @@ R &amp;= x\cdot p(x) &amp;&amp; \text{revenue function}\\
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore revenue is decreasing at $4700 per day when the level of production is 300 cases per day and decreasing at 100 cases per day.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-3">
 <h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Related rates problem: price vs. demand</p>
 <p>The weekly demand function is given by</p>
 <div class="math notranslate nohighlight">
 \[2p + x + 4xp = 22\]</div>
@@ -648,9 +657,12 @@ R &amp;= x\cdot p(x) &amp;&amp; \text{revenue function}\\
 \[\frac{9}{2} + 5\frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ 5\frac{dx}{dt} = -\frac{9}{2} ~~~~~\Rightarrow~~~~~ \frac{dx}{dt} = -\frac{9}{10}\]</div>
 <p class="sd-card-text">and since <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of units, this means that demand is decreasing by <span class="math notranslate nohighlight">\(900\)</span> units per week (i.e., <span class="math notranslate nohighlight">\(9/10\)</span> of one thousand) when the weekly demand is 4000 units and the price is increasing at 25 cents per week.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-4">
 <h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Related rates problem: price vs. supply</p>
 <p>The wholesale price <span class="math notranslate nohighlight">\(p\)</span> of an e-tablet writing stylus in dollars is related to the supply <span class="math notranslate nohighlight">\(x\)</span> in thousands by:</p>
 <div class="math notranslate nohighlight">
 \[125p^2 - x^2 = 100\]</div>
@@ -704,7 +716,8 @@ R &amp;= x\cdot p(x) &amp;&amp; \text{revenue function}\\
 \[-20 - 40 \frac{dx}{dt} = 0  ~~~~~\Rightarrow~~~~~ -40 \frac{dx}{dt} = 20 ~~~~~\Rightarrow~~~~~ \frac{dx}{dt} = -\frac{1}{2}\]</div>
 <p class="sd-card-text">and since <span class="math notranslate nohighlight">\(x\)</span> is measured in thousands of units, this means that supply is falling by <span class="math notranslate nohighlight">\(500\)</span> units per week (i.e., <span class="math notranslate nohighlight">\(1/2\)</span> of one thousand) when the weekly demand is 20,000 styluses and the price is falling at 4 cents per week.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

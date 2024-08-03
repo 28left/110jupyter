@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -469,17 +470,19 @@ document.write(`
                   
   <section id="an-application">
 <h1>An Application<a class="headerlink" href="#an-application" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">The cost of construction</p>
 <p>A rectangular box with a <strong>square</strong> base and a volume of <span class="math notranslate nohighlight">\(24\)</span> ft<span class="math notranslate nohighlight">\(^3\)</span> has costs to construct of <span class="math notranslate nohighlight">\(\$10 / \text{ft}^2\)</span> for the sides, <span class="math notranslate nohighlight">\(\$20 / \text{ft}^2\)</span> for the top, and <span class="math notranslate nohighlight">\(\$40 / \text{ft}^2\)</span> for the base. If <span class="math notranslate nohighlight">\(x\)</span> denotes the length of one side of the base (in feet), determine the function in the variable <span class="math notranslate nohighlight">\(x\)</span> giving the total cost of constructing the box in dollars and state the appropriate domain</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Draw and label a figure.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<a class="reference internal image-reference" href="../_images/pic_functions_box.png"><img alt="a box with base length and depth $x$ and height $y$" class="align-center" src="../_images/pic_functions_box.png" style="width: 300px;" /></a>
-<p class="sd-card-text">Note that we are temporarily using the variable <span class="math notranslate nohighlight">\(y\)</span> to denote the height of the box.</p>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<a class="reference internal image-reference" href="../_images/pic_functions_box.png"><img alt="a box with base length and depth $x$ and height $y$" class="align-center" src="../_images/pic_functions_box.png" style="width: 250px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">A two dimensional projective diagram of a three dimensional square prism, with the square face horizontal and of side length x, and height y.</p>
+</div>
+</details><p class="sd-card-text">Note that we are temporarily using the variable <span class="math notranslate nohighlight">\(y\)</span> to denote the height of the box.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -508,11 +511,12 @@ C(x) &amp;=&amp;  60x^2 + 40x\left(\frac{24}{x^2}\right) \\
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 4:</strong>   Note any restrictions to be placed on the domain.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Determine the appropriate domain.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Note any restrictions to be placed on the domain of the function from physical considerations of the problem.</p>
 <p class="sd-card-text">Since <span class="math notranslate nohighlight">\(x\)</span> denotes the length of one side of the base, its value must be at least zero.  However, <span class="math notranslate nohighlight">\(x\)</span> cannot be equal to zero since the height, <span class="math notranslate nohighlight">\(y = 24/x^2\)</span>, is undefined at <span class="math notranslate nohighlight">\(x=0\)</span>.  Therefore, the domain of <span class="math notranslate nohighlight">\(C(x)\)</span> is <span class="math notranslate nohighlight">\((0,\infty)\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 
     <script type="text/x-thebe-config">
     {

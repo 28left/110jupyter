@@ -1,0 +1,829 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Differentiability &#8212; Penn State Math 110 Companion Site</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-2H7BN83HGG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2H7BN83HGG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2H7BN83HGG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch_Derivatives/derivatives_differentiable';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basic Rules of Differentiation" href="derivatives_rules.html" />
+    <link rel="prev" title="The Concept of the Derivative" href="derivatives_def.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-light" alt="Penn State Math 110 Companion Site - Home"/>
+    <script>document.write(`<img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-dark" alt="Penn State Math 110 Companion Site - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Math 110
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Packets e-book</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Precalc/precalc_.html">Precalculus Review</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_simplification.html">Algebraic Simplification Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_factoring.html">Factoring Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_solvingequations.html">Solving Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_graphing.html">Graphing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_inequalities.html">Solving Inequalities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_domain.html">The Domain of a Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Functions/functions_.html">Functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_functionsdomainrange.html">Functions, Domain, and Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="derivatives_.html">Derivatives</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Differentiability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives_rules.html">Basic Rules of Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Marginal/marginal_.html">Marginal Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_costrevprofit.html">Cost, Revenue, &amp; Profit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_marginalanalysis.html">Marginal Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_elasticitydemand.html">Elasticity of Demand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_elasticityrevenue.html">Elasticity &amp; Total Revenue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Implicit/implicit_.html">Implicit Differentiation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Implicit/implicit_differentiation.html">Implicit Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Implicit/implicit_relatedrates.html">Related Rates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Implicit/implicit_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">Curve Sketching</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_increasedecrease.html">Intervals of Increase &amp; Decrease</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_relative_extrema.html">Relative Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_critical_points.html">Critical Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_first_derivative_test.html">The First Derivative Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_second_derivative_test.html">The Second Derivative Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_concavity.html">Intervals of Concavity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_inflection.html">Inflection Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_asymptotes.html">Asymptotes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_sketching.html">Curve Sketching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Optimization/optimization_.html">Optimization</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_relative_extrema.html">Relative Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_critical_points.html">Critical Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_first_derivative_test.html">The First Derivative Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_second_derivative_test.html">The Second Derivative Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_absolute_extrema.html">Absolute Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_applications.html">Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Exponential/exponential_.html">Exponential &amp; Logarithmic Functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_functions.html">Exponential and Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_laws.html">Laws of Exponential and Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_logarithmic_diff.html">Logarithmic Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_logistic.html">Logistic Growth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_.html">Compound Interest</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_notation.html">Notation and Terminology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_accumulated_amount.html">Accumulated Amount Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_present_value.html">Present Value Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Definite/definite_.html">Definite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_riemann.html">Riemann Sums and the Definite Integral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_ftc.html">The Fundamental Theorem of Calculus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_substitution.html">Substitution for Definite Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_average_value.html">Average Value of a Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_.html">Applications of Definite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_integration.html">Integration by Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Other</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Other/privacy.html">Privacy</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ch_Derivatives/derivatives_differentiable.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Differentiability</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiable">Differentiable</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="differentiability">
+<h1>Differentiability<a class="headerlink" href="#differentiability" title="Link to this heading">#</a></h1>
+<section id="differentiable">
+<h2>Differentiable<a class="headerlink" href="#differentiable" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>The function <span class="math notranslate nohighlight">\(f(x)\)</span> is <em><strong>differentiable at <span class="math notranslate nohighlight">\(x = a\)</span></strong></em> if the following limit exists.</p>
+<div class="math notranslate nohighlight">
+\[\lim_{h\to 0} \frac{f(a+h) - f(a)}{h}\]</div>
+<p>Intuitively, <span class="math notranslate nohighlight">\(f(x)\)</span> is differentiable at <span class="math notranslate nohighlight">\(x=a\)</span> if we can zoom in on the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span> at the point <span class="math notranslate nohighlight">\((a,f(a))\)</span> until the graph looks like a single uninterrupted straight line.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Differentiability versus Continuity</p>
+<p>If a function is differentiable at <span class="math notranslate nohighlight">\(x=a\)</span>, then it is continuous at <span class="math notranslate nohighlight">\(x=a\)</span>. This also means that if a function is <strong>not</strong> continuous at <span class="math notranslate nohighlight">\(x=a\)</span>, then it is automatically <strong>not</strong> differentiable at <span class="math notranslate nohighlight">\(x=a\)</span>.</p>
+<p>However, if a function is continuous at <span class="math notranslate nohighlight">\(x=a\)</span>, then it <strong>is not necessarily</strong> differentiable at <span class="math notranslate nohighlight">\(x=a\)</span>.</p>
+</div>
+<section id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Continuous and differentiable</p>
+<p>The function defined by the following graph is continuous and differentiable at every point on the graph.</p>
+<p>Intuitively, the graph can be drawn without picking up a pencil from the paper (i.e., it’s continuous) and we can zoom in close enough to any point on the graph so that the graph looks like a straight line (i.e., it’s differentiable).</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a function that is continuous and differentiable" src="../_images/pic_derivatives_differentiable_example_1.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of a continuous function that increases before x = -1, decreases between x=-1 and x=1, and then increases after x=1.  The graph does not have any sharp corners or vertical tangent lines.</p>
+</div>
+</details></div>
+<!--
+\begin{tikzpicture}[scale=2]
+
+\draw[black,fill=white] (-2.55,-1.1) rectangle (2.8,4.2);
+\draw[very thin,color=lightgray,step=1] (-2.35,-0.9) grid (2.6,3.9);
+
+\draw[->] (-2.35,0) -- (2.6,0) node[below] {$x$};
+\draw[->] (0,-1) -- (0,4) node[right] {$y$};
+
+\draw[domain=-2.35:2.55,smooth,variable=\x,blue,ultra thick,samples=100] plot ({\x},\x^3/3 - \x + 1);
+       
+% tick marks
+\foreach \x in {-2,-1,1,2} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {1,2,3} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+\end{tikzpicture}
+-->
+</section>
+<section id="example-2">
+<span id="der-diff-example-2"></span><h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Continuous but not differentiable at a point</p>
+<p>The functions defined by the following two graphs are continuous at every point on the graph.  However, both functions are not differentiable at <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+<p>For the graph on the left, the function is not differentiable at <span class="math notranslate nohighlight">\(x=1\)</span> since there is a sharp corner on the graph at <span class="math notranslate nohighlight">\(x=1\)</span> (i.e., <span class="math notranslate nohighlight">\(f'(1)\)</span> does not exist).  The function is differentiable everywhere else.</p>
+<p>For the graph on the right, the function is not differentiable at <span class="math notranslate nohighlight">\(x=1\)</span> since it has a vertical tangent line at <span class="math notranslate nohighlight">\(x=1\)</span> and vertical lines do not have a slope associated with them (i.e., <span class="math notranslate nohighlight">\(f'(1)\)</span> does not exist).  The function is differentiable everywhere else.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-mt-0 sd-mb-0 sd-ml-4 sd-mr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a function that is continuous and but not differentiable at a point" class="align-center" src="../_images/pic_derivatives_differentiable_example_2.png" />
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a function that is continuous and but not differentiable at a point" class="align-center" src="../_images/pic_derivatives_differentiable_example_2_2.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There are two graphs displayed.  The first graph corresponds to a function that increases linearly with a slope of postive 1 to the point (1,3) where it reaches a corner and then decreases linearly with a slope of -1.</p>
+<p class="sd-card-text">The second graph corresponds to a function that increases from left to right.  The curve becomes increaseingly steep as x approaches 1 from the left and ultimately becomes vertical at x = 1.  The curve continues to increase for x greater than 1 but flattens out as x increases.</p>
+</div>
+</details></div>
+<!--
+\begin{tikzpicture}[scale=1.5]
+
+\draw[black,fill=white] (-2.6,-1.6) rectangle (4.7,3.7);
+\draw[very thin,color=lightgray,step=1] (-2.5,-1.5) grid (4.5,3.5);
+%\draw[very thin,color=gray,step=2] (-3.5,-5) grid (3.5,1);
+
+\draw[->] (-2.5,0) -- (4.5,0) node[below] {$x$};
+\draw[->] (0,-1.5) -- (0,3.5) node[right] {$y$};
+       
+%s\node[right] at (0.9, -0.5){$y = x^2-4$};
+
+% tick marks
+\foreach \x in {-2,-1,1,2,3,4} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {-1,1,2,3} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+
+%\draw[domain=-2.1:4.1,smooth,variable=\x,blue,ultra thick] plot ({\x},{3 - abs(\x-1)});
+
+\draw[blue,ultra thick] (-2.5,-0.5) -- (1,3) -- (4.5,-0.5);
+
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=1.5]
+
+\draw[black,fill=white] (-2.6,-1.6) rectangle (4.7,3.7);
+\draw[very thin,color=lightgray,step=1] (-2.5,-1.5) grid (4.5,3.5);
+%\draw[very thin,color=gray,step=2] (-3.5,-5) grid (3.5,1);
+
+\draw[->] (-2.5,0) -- (4.5,0) node[below] {$x$};
+\draw[->] (0,-1.5) -- (0,3.5) node[right] {$y$};
+       
+%s\node[right] at (0.9, -0.5){$y = x^2-4$};
+
+% tick marks
+\foreach \x in {-2,-1,1,2,3,4} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {-1,1,2,3} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+
+\draw[domain=-1.5:1.5,smooth,variable=\x,blue,ultra thick,samples=200] plot ({\x*\x*\x+ 1},{\x + 1});
+
+\end{tikzpicture}
+-->
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Not continuous and not differentiable at a point</p>
+<p>The functions defined by the following graphs are not continuous and not differentiable at <span class="math notranslate nohighlight">\(x=-1\)</span>.</p>
+<p>For the graph on the left, the function is not defined at <span class="math notranslate nohighlight">\(x=-1\)</span> and therefore is not continuous and not differentiable at <span class="math notranslate nohighlight">\(x=-1\)</span>.  The function is continuous and differentiable everywhere else.</p>
+<p>For the graph on the right, the function has a jump discontinuity at <span class="math notranslate nohighlight">\(x=-1\)</span> (i.e., <span class="math notranslate nohighlight">\(\lim\limits_{x\to-1} f(x)\)</span> does not exist) and therefore is not continuous and not differentiable at <span class="math notranslate nohighlight">\(x=-1\)</span>.  The function is continuous and differentiable everywhere else.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-mt-0 sd-mb-0 sd-ml-4 sd-mr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a function that is not continuous and not differentiable" class="align-center" src="../_images/pic_derivatives_differentiable_example_3.png" />
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a function that is not continuous and not differentiable" class="align-center" src="../_images/pic_derivatives_differentiable_example_3_2.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There are two graphs displayed.  The first graph corresponds to a function that increases for x less than -1, is not defined at x = -1 (indicated by an open circle at the point (-1,1.6)), decreases between x-1 and x=1, and then increases after x = 1.  The graph does not have any sharp corners or vertical tangent lines, but has a discontinuity at x = -1.</p>
+<p class="sd-card-text">The second graph corresponds to a function that increases for x less than -1 until it reaches an open circle at the point (-1,1.6).  The value of the function then jumps to 2.6, as indicated by a closed circle at the point (-1,2.6).  The curve continues to increase from that point, until x = 1, at which point the function decreases.</p>
+</div>
+</details></div>
+<!--
+\begin{tikzpicture}[scale=2]
+
+\draw[black,fill=white] (-2.55,-1.1) rectangle (2.8,4.2);
+\draw[very thin,color=lightgray,step=1] (-2.35,-0.9) grid (2.6,3.9);
+
+\draw[->] (-2.35,0) -- (2.6,0) node[below] {$x$};
+\draw[->] (0,-1) -- (0,4) node[right] {$y$};
+
+\draw[domain=-2.35:2.55,smooth,variable=\x,blue,ultra thick,samples=100] plot ({\x},\x^3/3 - \x + 1);
+       
+% tick marks
+\foreach \x in {-2,-1,1,2} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {1,2,3} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+\draw [blue,fill=white] (-1,5/3) circle (2pt);
+
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=2]
+
+\draw[black,fill=white] (-2.55,-1.1) rectangle (2.8,4.2);
+\draw[very thin,color=lightgray,step=1] (-2.35,-0.9) grid (2.6,3.9);
+
+\draw[->] (-2.35,0) -- (2.6,0) node[below] {$x$};
+\draw[->] (0,-1) -- (0,4) node[right] {$y$};
+
+\draw[domain=-2.35:-1,smooth,variable=\x,blue,ultra thick,samples=100] plot ({\x},\x^3/3 - \x + 1);
+
+\draw[domain=-1:2.55,smooth,variable=\x,blue,ultra thick,samples=100] plot ({\x},-\x^3/6 + \x/2 + 3);
+       
+% tick marks
+\foreach \x in {-2,-1,1,2} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {1,2,3} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+\draw [blue,fill=white] (-1,5/3) circle (2pt);
+\draw [blue,fill=blue] (-1,8/3) circle (2pt);
+
+\end{tikzpicture}
+
+--></section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch_Derivatives"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="derivatives_def.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">The Concept of the Derivative</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="derivatives_rules.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Basic Rules of Differentiation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#differentiable">Differentiable</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Department of Mathematics, Penn State University Park
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

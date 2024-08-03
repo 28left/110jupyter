@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -486,14 +487,14 @@ document.write(`
 <h2>Total Cost &amp; Average Cost Functions<a class="headerlink" href="#total-cost-average-cost-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The <strong>total cost function</strong>, <span class="math notranslate nohighlight">\(C(x)\)</span>, measures the costs incurred from operating a business and is defined by</p>
+<p>The <em><strong>total cost function</strong></em>, <span class="math notranslate nohighlight">\(C(x)\)</span>, measures the costs incurred from operating a business and is defined by</p>
 <div class="math notranslate nohighlight">
 \[C(x) = F(x) + V(x)\]</div>
 <p>where <span class="math notranslate nohighlight">\(F(x)\)</span> denotes the fixed costs  (i.e., costs that remain the same regardless of the level of production <span class="math notranslate nohighlight">\(x\)</span>) and <span class="math notranslate nohighlight">\(V(x)\)</span> denotes the variable costs (i.e., costs that vary depending on the level of production <span class="math notranslate nohighlight">\(x\)</span>) of operating a business.</p>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The <strong>average cost function</strong>, <span class="math notranslate nohighlight">\(\overline{C}(x)\)</span>, measures the average cost per unit produced and is defined by</p>
+<p>The <em><strong>average cost function</strong></em>, <span class="math notranslate nohighlight">\(\overline{C}(x)\)</span>, measures the average cost per unit produced and is defined by</p>
 <div class="math notranslate nohighlight">
 \[\overline{C}(x) = \frac{C(x)}{x}.\]</div>
 </div>
@@ -502,14 +503,14 @@ document.write(`
 <h2>Total Revenue &amp; Average Revenue Functions<a class="headerlink" href="#total-revenue-average-revenue-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The <strong>total revenue function</strong>, <span class="math notranslate nohighlight">\(R(x)\)</span>, measures the amount of money received from the sale of <span class="math notranslate nohighlight">\(x\)</span> units and is defined by</p>
+<p>The <em><strong>total revenue function</strong></em>, <span class="math notranslate nohighlight">\(R(x)\)</span>, measures the amount of money received from the sale of <span class="math notranslate nohighlight">\(x\)</span> units and is defined by</p>
 <div class="math notranslate nohighlight">
 \[R(x) = x\cdot p(x)\]</div>
 <p>where <span class="math notranslate nohighlight">\(x\)</span> is the number of units demanded and <span class="math notranslate nohighlight">\(p(x)\)</span> is the unit price.</p>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The <strong>average revenue function</strong>, <span class="math notranslate nohighlight">\(\overline{R}(x)\)</span>, measures the average amount of money received per unit sold and is defined by</p>
+<p>The <em><strong>average revenue function</strong></em>, <span class="math notranslate nohighlight">\(\overline{R}(x)\)</span>, measures the average amount of money received per unit sold and is defined by</p>
 <div class="math notranslate nohighlight">
 \[\overline{R}(x) = \frac{R(x)}{x}.\]</div>
 </div>
@@ -518,20 +519,22 @@ document.write(`
 <h2>Total Profit &amp; Average Profit Functions<a class="headerlink" href="#total-profit-average-profit-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The <strong>total profit function</strong>, <span class="math notranslate nohighlight">\(P(x)\)</span>, measures the difference between the total revenue and total cost functions and is defined by</p>
+<p>The <em><strong>total profit function</strong></em>, <span class="math notranslate nohighlight">\(P(x)\)</span>, measures the difference between the total revenue and total cost functions and is defined by</p>
 <div class="math notranslate nohighlight">
 \[P(x) = R(x) - C(x)\]</div>
 <p>where <span class="math notranslate nohighlight">\(R(x)\)</span> is the total revenue function and <span class="math notranslate nohighlight">\(C(x)\)</span> is the total cost function.</p>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The <strong>average profit function</strong>, <span class="math notranslate nohighlight">\(\overline{P}(x)\)</span>, measures the average profit earned per unit produced and sold and is defined by</p>
+<p>The <em><strong>average profit function</strong></em>, <span class="math notranslate nohighlight">\(\overline{P}(x)\)</span>, measures the average profit earned per unit produced and sold and is defined by</p>
 <div class="math notranslate nohighlight">
 \[\overline{P}(x) = \frac{P(x)}{x}.\]</div>
 </div>
 </section>
 <section id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Cost, revenue, profit and average profit</p>
 <p>A manufacturer of Robot Tutors has a fixed monthly cost of $500 and a processing cost
 of $9 for each robot tutor produced. Assuming each robot sells for $19, compute the total profit and the average profit per robot when 250 robots are produced and sold.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -588,7 +591,8 @@ C(x) &amp;= F(x) + V(x) &amp;&amp; \text{total cost equals fixed costs plus vari
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, each of the 250 robots produced and sold earns an average profit of $8.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

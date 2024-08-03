@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="derivatives_.html">Derivatives</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Try It Yourself</a></li>
 </ul>
@@ -491,120 +492,141 @@ document.write(`
 <h1>Try It Yourself<a class="headerlink" href="#try-it-yourself" title="Link to this heading">#</a></h1>
 <section id="exercise-1">
 <h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Link to this heading">#</a></h2>
-<p>Find the derivative of the function <span class="math notranslate nohighlight">\(f(x) = 5x^2 - 2x\)</span> using the limit definition of the derivative.</p>
+<div class="tip admonition">
+<p class="admonition-title">Compute derivative using the limit definition</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x) = 5x^2 - 2x\)</span> using the limit definition of the derivative.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(10x - 2\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-2">
 <h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Link to this heading">#</a></h2>
-<p>Evaluate <span class="math notranslate nohighlight">\(f'(x)\)</span> for <span class="math notranslate nohighlight">\(f(x)= 3x^2 + 5x^{-2} + 7\sqrt{x}\)</span> using the basic rules of differentiation.</p>
+<div class="tip admonition">
+<p class="admonition-title">Compute derivative using rules of differentiation</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)= 3x^2 + 5x^{-2} + 7\sqrt{x}\)</span> using the basic rules of differentiation.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(6x - 10x^{-3} + \frac{7}{2}x^{-1/2}\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-3">
 <h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Link to this heading">#</a></h2>
-<p>Evaluate <span class="math notranslate nohighlight">\(f'(x)\)</span> for</p>
-<div class="math notranslate nohighlight">
-\[f(x)= \dfrac{7}{x^7} + \dfrac{5}{x^5} + \dfrac{3}{x^3}.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Compute the derivative</p>
+<p>Compute the derivattive of <span class="math notranslate nohighlight">\(f(x)= \dfrac{7}{x^7} + \dfrac{5}{x^5} + \dfrac{3}{x^3}\)</span>.</p>
 <p>Hint: Avoid using the quotient rule by rewriting each term so that it involves multplying by a negative power of <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(-49x^{-8} - 25x^{-6} - 9x^{-4}\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-4">
 <h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Link to this heading">#</a></h2>
-<p>Find the equation of the tangent line of</p>
-<div class="math notranslate nohighlight">
-\[f(x)=\dfrac{x^{3/2}+x^{1/2}+1}{x^2} \text{ at } x=4.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Equation of a tangent line</p>
+<p>Find the equation of the line tangent to <span class="math notranslate nohighlight">\(f(x)=\dfrac{x^{3/2}+x^{1/2}+1}{x^2}\)</span> at <span class="math notranslate nohighlight">\(x=4\)</span>.</p>
 <p>Hint: Avoid using the quotient rule by dividing each term of the numerator by <span class="math notranslate nohighlight">\(x^2\)</span> and then simplifying.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(y = -\frac{9}{64}(x-4) + \frac{11}{16}\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-5">
 <h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(f'(x)\)</span> for</p>
-<div class="math notranslate nohighlight">
-\[f(x)= (x^3+6)(x-2)(x+2).\]</div>
-<p>Hint: Simplify <span class="math notranslate nohighlight">\((x-2)(x+2)\)</span> and then apply the product rule.</p>
+<div class="tip admonition">
+<p class="admonition-title">Compute the derivative</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)= (x^3+6)(x-2)(x+2)\)</span>.</p>
+<p>Hint: Expand <span class="math notranslate nohighlight">\((x-2)(x+2)\)</span> and then apply the product rule.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(5x^4 - 12x^2 + 12x\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-6">
 <h2>Exercise 6<a class="headerlink" href="#exercise-6" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(f'(x)\)</span> for</p>
-<div class="math notranslate nohighlight">
-\[f(x)= \sqrt{\dfrac{x^2-1}{x+1}}.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Compute the derivative</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)= \sqrt{\dfrac{x^2-1}{x+1}}\)</span>.</p>
 <p>Hint: Simplify the function before computing the derivative.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(\frac{1}{2\sqrt{x-1}}\)</span></p>
+<p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(\dfrac{1}{2\sqrt{x-1}}\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-7">
 <h2>Exercise 7<a class="headerlink" href="#exercise-7" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(f'(x)\)</span> for</p>
-<div class="math notranslate nohighlight">
-\[f(x)=\dfrac{17}{(3x+4)^2}.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Compute the derivative</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)=\dfrac{17}{(3x+4)^2}\)</span>.</p>
 <p>Hint: Rewrite the function before differentiating in order to avoid using the quotient rule.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(-\frac{102}{(3x+4)^3}\)</span></p>
+<p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(-\dfrac{102}{(3x+4)^3}\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-8">
 <h2>Exercise 8<a class="headerlink" href="#exercise-8" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(f'(x)\)</span> for <span class="math notranslate nohighlight">\(f(x)=5x^4(x^3+6)^{7}\)</span> and simplify your answer.</p>
+<div class="tip admonition">
+<p class="admonition-title">Compute the derivative</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)=5x^4(x^3+6)^{7}\)</span> and simplify your answer.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(5x^3(x^3+6)^6(25x^3 + 24)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-9">
 <h2>Exercise 9<a class="headerlink" href="#exercise-9" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(f'(x)\)</span> for <span class="math notranslate nohighlight">\(f(x)=\dfrac{(x^2+4)^5}{(x^6+ 1)^3}\)</span> and simplify your answer.</p>
+<div class="tip admonition">
+<p class="admonition-title">Compute the derivative</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)=\dfrac{(x^2+4)^5}{(x^6+ 1)^3}\)</span> and simplify your answer.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(\frac{2x(x^2+4)^4(-4x^6-36x^4+5)}{(x^6+1)^4}\)</span></p>
+<p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(\dfrac{2x(x^2+4)^4(-4x^6-36x^4+5)}{(x^6+1)^4}\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-10">
 <h2>Exercise 10<a class="headerlink" href="#exercise-10" title="Link to this heading">#</a></h2>
-<p>Evaluate</p>
-<div class="math notranslate nohighlight">
-\[\displaystyle\lim_{h\to 0}\dfrac{(1+h)^5-1}{h}.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Evaluate a limit</p>
+<p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle\lim_{h\to 0}\dfrac{(1+h)^5-1}{h}\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(5\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-11">
 <h2>Exercise 11<a class="headerlink" href="#exercise-11" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Continuous but not differentiable</p>
 <p>Draw the graph of a function <span class="math notranslate nohighlight">\(f(x)\)</span> that is continuous at <span class="math notranslate nohighlight">\(x=a\)</span> but not differentiable at <span class="math notranslate nohighlight">\(x=a\)</span>. Explain why the function is continuous but not differentiable at this point.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Answer: Consider a graph with a corner or a vertical tangent line</p>
+<p class="sd-card-text">Answer: Consider a graph with a corner or a vertical tangent line at <span class="math notranslate nohighlight">\(x=a\)</span>.  See <a class="reference internal" href="derivatives_differentiable.html#der-diff-example-2"><span class="std std-ref">Example 2</span></a> in Differentiability.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

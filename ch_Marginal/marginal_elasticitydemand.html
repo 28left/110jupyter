@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -485,14 +486,14 @@ document.write(`
 <h1>Elasticity of Demand<a class="headerlink" href="#elasticity-of-demand" title="Link to this heading">#</a></h1>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The price elasticity of demand measures how sensitive customer demand is to a small percentage change in the price of a good.  Intuitively, elasticity is computed by the following ratio:</p>
+<p>The <em><strong>price elasticity of demand</strong></em> measures how sensitive customer demand is to a small percentage change in the price of a good.  Intuitively, elasticity is computed by the following ratio:</p>
 <div class="math notranslate nohighlight">
 \[- \: \frac{\text{% Change in Quantity Demanded}}{\text{% Change in Price}}\]</div>
-</div>
 <p>Recall that the Law of Demand implies that a positive percent change in price will result in a negative percent change in demand.  Consequently, the negative sign appears in the formula for elasticity only to make sure that the final result will be a positive value.</p>
+</div>
 <div class="info admonition">
-<p class="admonition-title">Definition</p>
-<p>If the price of the good is <span class="math notranslate nohighlight">\(p\)</span> and the corresponding quantity demanded is <span class="math notranslate nohighlight">\(f(p)\)</span>, then the elasticity of demand at price <span class="math notranslate nohighlight">\(p\)</span>, <span class="math notranslate nohighlight">\(E(p)\)</span>, is defined by</p>
+<p class="admonition-title">Mathematical Formula for Computing Elasticity of Demand</p>
+<p>If the price of the good is <span class="math notranslate nohighlight">\(p\)</span> and the corresponding quantity demanded is <span class="math notranslate nohighlight">\(f(p)\)</span>, then the <em><strong>elasticity of demand at price <span class="math notranslate nohighlight">\(p\)</span></strong></em>, <span class="math notranslate nohighlight">\(E(p)\)</span>, is defined by</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 E(p) = -\frac{pf'(p)}{f(p)} %\label{elasticity}
@@ -500,6 +501,8 @@ E(p) = -\frac{pf'(p)}{f(p)} %\label{elasticity}
 </div>
 <section id="example-1">
 <span id="marginal-elasticitydemand-example1"></span><h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Elasticity of demand</p>
 <p>A store has determined that the demand for used lamps is given by</p>
 <div class="math notranslate nohighlight">
 \[
@@ -527,27 +530,39 @@ E(p)
 &amp;= \frac{15p}{500 - 15p}    
 \end{align*}\]</div>
 </div>
-</details><section id="inelastic-elastic-unitary-demand">
+</details></div>
+<section id="inelastic-elastic-unitary-demand">
 <h3>Inelastic, Elastic &amp; Unitary Demand<a class="headerlink" href="#inelastic-elastic-unitary-demand" title="Link to this heading">#</a></h3>
-<p>Suppose <span class="math notranslate nohighlight">\(E(100) = 1/2\)</span>.  This means that when the price is $100, a 1% increase in price (i.e., the price increases to $101), will result in a 0.5% decrease in demand.  Or similarly, a 1%  decrease in price (i.e., the price decreases to $99), will result in a 0.5% increase in demand.  In this situation, the incentive is for the producer to increase their price.</p>
-<div class="info admonition">
-<p class="admonition-title">Definition</p>
-<p>If <span class="math notranslate nohighlight">\(E(p) &lt; 1\)</span> (i.e., a percent change in price results in a smaller percent change in demand), then demand is said to be <strong>inelastic</strong>.</p>
+<div class="tip admonition">
+<p class="admonition-title">What if elasticity is less than one?</p>
+<p>Suppose <span class="math notranslate nohighlight">\(E(100) = 1/2\)</span>.  This means that when the price is $100, a 1% increase in price (i.e., the price increases to $101), will result in a 0.5% decrease in demand.  Or similarly, a 1%  decrease in price (i.e., the price decreases to $99), will result in a 0.5% increase in demand.  Since the increase in price is greater than the loss of demand, <strong>producers have an incentive to increase their price</strong>.</p>
 </div>
-<p>Suppose <span class="math notranslate nohighlight">\(E(100) = 3\)</span>.  This means that when the price is $100, a 1% increase in price will result in a 3% decrease in demand.  Or similarly, a 1% decrease in price will result in a 3% increase in demand.  In this situation, the incentive is for the producer to reduce their price.</p>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>If <span class="math notranslate nohighlight">\(E(p) &gt; 1\)</span> (i.e., a percent change in price results in a larger percent change in demand), then demand is said to be <strong>elastic</strong>.</p>
+<p>If <span class="math notranslate nohighlight">\(E(p) &lt; 1\)</span> (i.e., a percent change in price results in a smaller percent change in demand), then demand is said to be <em><strong>inelastic</strong></em>.</p>
 </div>
-<p>Suppose <span class="math notranslate nohighlight">\(E(100) = 1\)</span>.  This means that when the price is $100, a 1% increase in price will result in a 1% decrease in demand.  Or similarly, a 1% decrease in price will result in a 1% increase in demand.  In this situation, there is no incentive for the producer to change their price.</p>
+<div class="tip admonition">
+<p class="admonition-title">What if elasticity is greater than one?</p>
+<p>Suppose <span class="math notranslate nohighlight">\(E(100) = 3\)</span>.  This means that when the price is $100, a 1% increase in price will result in a 3% decrease in demand.  Or similarly, a 1% decrease in price will result in a 3% increase in demand.  Since the decrease in price is less than the increase in demand, <strong>producers have an incentive to decrease their price</strong>.</p>
+</div>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>If <span class="math notranslate nohighlight">\(E(p) = 1\)</span> (i.e., a percent change in price results in the same percent change in demand), then demand is said to be <strong>unitary</strong>.</p>
+<p>If <span class="math notranslate nohighlight">\(E(p) &gt; 1\)</span> (i.e., a percent change in price results in a larger percent change in demand), then demand is said to be <em><strong>elastic</strong></em>.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">What if elasticity is equal to one?</p>
+<p>Suppose <span class="math notranslate nohighlight">\(E(100) = 1\)</span>.  This means that when the price is $100, a 1% increase in price will result in a 1% decrease in demand.  Or similarly, a 1% decrease in price will result in a 1% increase in demand.  Since the increase in price matches the decrease in demand, there is <strong>no incentive for the producer to change their price</strong>.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>If <span class="math notranslate nohighlight">\(E(p) = 1\)</span> (i.e., a percent change in price results in the same percent change in demand), then demand is said to be <em><strong>unitary</strong></em>.</p>
 </div>
 </section>
 </section>
 <section id="example-2">
 <h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Elasticity of demand</p>
 <p>A store has determined that the demand for used lamps is given by</p>
 <div class="math notranslate nohighlight">
 \[
@@ -575,7 +590,8 @@ f(p) = 500 - 15p
 \[E(20) = \frac{300}{500 - 300} = \frac{300}{200} = \frac{3}{2}\]</div>
 <p class="sd-card-text">Since <span class="math notranslate nohighlight">\(E(20) &gt; 1\)</span>, demand is elastic when the price of a lamp is $20.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -465,8 +466,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explicit-versus-implicit-functions">Explicit versus Implicit Functions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-differentiate-implicitly">How to Differentiate Implicitly</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
@@ -486,21 +490,37 @@ document.write(`
                   
   <section id="implicit-differentiation">
 <h1>Implicit Differentiation<a class="headerlink" href="#implicit-differentiation" title="Link to this heading">#</a></h1>
-<section id="the-rules">
-<h2>The Rules<a class="headerlink" href="#the-rules" title="Link to this heading">#</a></h2>
+<section id="explicit-versus-implicit-functions">
+<h2>Explicit versus Implicit Functions<a class="headerlink" href="#explicit-versus-implicit-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Explicit versus Implicit Functions</p>
-<p>Suppose we have an equation relating two variables: <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.  If <span class="math notranslate nohighlight">\(y\)</span> is isolated on one side of the equation, we say that <span class="math notranslate nohighlight">\(y\)</span> is <strong>explicitly defined</strong> as a function of <span class="math notranslate nohighlight">\(x\)</span>, or simply, <span class="math notranslate nohighlight">\(y\)</span> is a function of <span class="math notranslate nohighlight">\(x\)</span>. If <span class="math notranslate nohighlight">\(y\)</span> is not isolated on one side of the equation, we say that <span class="math notranslate nohighlight">\(y\)</span> is <strong>defined implicitly</strong> in terms of <span class="math notranslate nohighlight">\(x\)</span>, or <span class="math notranslate nohighlight">\(y\)</span> is an implicit function of <span class="math notranslate nohighlight">\(x\)</span>.</p>
-<p><strong>Explicit Functions</strong></p>
+<p class="admonition-title">Definition</p>
+<p>Suppose we have an equation relating two variables: <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.  If <span class="math notranslate nohighlight">\(y\)</span> is isolated on one side of the equation, we say that <span class="math notranslate nohighlight">\(y\)</span> is <em><strong>explicitly defined</strong></em> as a function of <span class="math notranslate nohighlight">\(x\)</span>, or simply, <span class="math notranslate nohighlight">\(y\)</span> is a function of <span class="math notranslate nohighlight">\(x\)</span>. If <span class="math notranslate nohighlight">\(y\)</span> is not isolated on one side of the equation, we say that <span class="math notranslate nohighlight">\(y\)</span> is <em><strong>defined implicitly</strong></em> in terms of <span class="math notranslate nohighlight">\(x\)</span>, or <span class="math notranslate nohighlight">\(y\)</span> is an implicit function of <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-mt-0 sd-mb-0 sd-ml-4 sd-mr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Explicit Functions</strong></p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(y = x^2 - 3\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(y = \sqrt{x + 7}\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(y = x^2 - 3\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(y = \sqrt{x + 7}\)</span></p></li>
 </ul>
-<p><strong>Implicit Functions</strong></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Implicit Functions</strong></p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(x^2 + xy - y = 1\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(x^3 + y^3 + yx - 4 = 0\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(x^2 + xy - y = 1\)</span></p></li>
+<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(x^3 + y^3 + yx - 4 = 0\)</span></p></li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Computing Derivatives Implicitly</p>
@@ -510,6 +530,8 @@ document.write(`
 </div>
 <section id="example-1">
 <span id="example1"></span><h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Differentiate by treating <span class="math notranslate nohighlight">\(y\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span></p>
 <p>Compute the derivative of <span class="math notranslate nohighlight">\(x^2 y^3\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> by treating <span class="math notranslate nohighlight">\(y\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
@@ -537,9 +559,14 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\frac{d}{dx} x^2y^3 = 2xy^3 + 3x^2y^2y'\]</div>
 </div>
-</details><div class="info admonition">
+</details></div>
+</section>
+</section>
+<section id="how-to-differentiate-implicitly">
+<h2>How to Differentiate Implicitly<a class="headerlink" href="#how-to-differentiate-implicitly" title="Link to this heading">#</a></h2>
+<div class="info admonition">
 <p class="admonition-title">The Method of Implicit Differentiation</p>
-<p>Suppose we are given an equation relating the variables <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>.  We can compute the derivative of <span class="math notranslate nohighlight">\(y\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> using the following technique.</p>
+<p>Suppose we are given an equation relating the variables <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>. In other words, <span class="math notranslate nohighlight">\(y\)</span> is defined implicitly as a function of <span class="math notranslate nohighlight">\(x\)</span> by the given equation.  We can compute the derivative of <span class="math notranslate nohighlight">\(y\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> using the following technique.</p>
 <ol class="arabic simple">
 <li><p>Differentiate both sides of the equation with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
 <li><p>If given, plug in specific values of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> into the resulting equation.</p></li>
@@ -549,9 +576,10 @@ b. Factor out <span class="math notranslate nohighlight">\(y'\)</span> from each
 c. Divide both sides by the appropriate factor to solve for <span class="math notranslate nohighlight">\(y'\)</span>.</p></li>
 </ol>
 </div>
-</section>
 <section id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Implicit differentiation</p>
 <p>Find <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span> where <span class="math notranslate nohighlight">\(y\)</span> is defined implicitly by
 <span class="math notranslate nohighlight">\({x^2}y - x^4 + y^3 = 1\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
@@ -591,7 +619,8 @@ c. Divide both sides by the appropriate factor to solve for <span class="math no
 <div class="math notranslate nohighlight">
 \[\frac{dy}{dx} = \frac{4x^3 - 2xy}{x^2 + 3y^2}.\]</div>
 </div>
-</details><div class="warning admonition">
+</details></div>
+<div class="warning admonition">
 <p class="admonition-title">Observation</p>
 <p>Once we get used to the idea of thinking of <span class="math notranslate nohighlight">\(y\)</span> as a function of <span class="math notranslate nohighlight">\(x\)</span>, it’s not necessary to replace <span class="math notranslate nohighlight">\(y\)</span> with <span class="math notranslate nohighlight">\(f(x)\)</span>.  Instead, we can use the general power rule written in the following form:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -604,6 +633,8 @@ c. Divide both sides by the appropriate factor to solve for <span class="math no
 </section>
 <section id="example-3">
 <h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Implicit differentiation</p>
 <p>Find the equation of the line tangent to the curve defined implicitly by</p>
 <div class="math notranslate nohighlight">
 \[ x^2 y^3 - y^2 + xy = 5 \]</div>
@@ -641,9 +672,12 @@ c. Divide both sides by the appropriate factor to solve for <span class="math no
 <div class="math notranslate nohighlight">
 \[y = -\frac{5}{12}(x-2) + 1.\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-4">
 <h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Implicit Differentiation</p>
 <p>Find <span class="math notranslate nohighlight">\(\dfrac{dy}{dx}\)</span> at <span class="math notranslate nohighlight">\((2,0)\)</span> where <span class="math notranslate nohighlight">\(y\)</span> is defined implicitly by</p>
 <div class="math notranslate nohighlight">
 \[xy + x = \sqrt{2x + 7y}.\]</div>
@@ -697,9 +731,12 @@ c. Divide both sides by the appropriate factor to solve for <span class="math no
 \[8\frac{dy}{dx} + 4 = 2 + 7\frac{dy}{dx}.\]</div>
 <p>Now rearranging terms is a little easier since we don’t have to deal with any fractions.</p>
 </div>
+</div>
 </section>
 <section id="example-5">
 <h3>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Compute elasticity of demand using implicit differentiation</p>
 <p>The demand equation for Dr. Hager’s <em>Make Math Great Again</em> video series is given by</p>
 <div class="math notranslate nohighlight">
 \[p = -4x^2 - 2x + 30\]</div>
@@ -751,7 +788,8 @@ E(10)
 &amp;= \frac{5}{18}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 </section>
 
@@ -819,8 +857,11 @@ E(10)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explicit-versus-implicit-functions">Explicit versus Implicit Functions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-differentiate-implicitly">How to Differentiate Implicitly</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>

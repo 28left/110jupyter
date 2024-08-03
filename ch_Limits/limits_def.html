@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="limits_.html">Limits and Continuity</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -465,8 +466,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-a-limit">Definition of a Limit</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-sided-limits">One-Sided Limits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-a-limit">Definition of a Limit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-sided-limits">One-Sided Limits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limit-vs-one-sided-limits">Limit vs. One-Sided Limits</a></li>
 </ul>
             </nav>
@@ -485,19 +492,24 @@ document.write(`
 <h2>Definition of a Limit<a class="headerlink" href="#definition-of-a-limit" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The limit of <span class="math notranslate nohighlight">\(f(x)\)</span> as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span> is equal to the finite number <span class="math notranslate nohighlight">\(L\)</span>, denoted by</p>
+<p>The <em><strong>limit of <span class="math notranslate nohighlight">\(f(x)\)</span> as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span> is equal to the finite number <span class="math notranslate nohighlight">\(L\)</span></strong></em>, denoted by</p>
 <div class="math notranslate nohighlight">
 \[ \lim_{x\to a} f(x) = L\]</div>
 <p>if the value of <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(L\)</span> as we want by taking x values <em>sufficiently close</em> to, but not equal to, <span class="math notranslate nohighlight">\(a\)</span>.</p>
 </div>
+<div class="note admonition">
+<p class="admonition-title">The Value of a Limit versus the Value of a Function</p>
 <p>Keep in mind that the value of a limit does not depend on the value of the function at <span class="math notranslate nohighlight">\(x=a\)</span>.  In fact, it is possible that <span class="math notranslate nohighlight">\(\lim\limits_{x\to a}f(x) = L\)</span> even though</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(f(a)\)</span> does not exist, or</p></li>
 <li><p><span class="math notranslate nohighlight">\(f(a)\)</span> exists, but is not equal to <span class="math notranslate nohighlight">\(L\)</span>.</p></li>
 </ul>
-<div class="warning admonition">
-<p class="admonition-title">Exercise</p>
-<p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(1\)</span> (but <strong>not equal to</strong> <span class="math notranslate nohighlight">\(1\)</span>). What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1} f(x)\)</span> would be?</p>
+</div>
+<section id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">The limit of a function from a table of values</p>
+<p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are close to <span class="math notranslate nohighlight">\(2\)</span> (but <strong>not equal to</strong> <span class="math notranslate nohighlight">\(2\)</span>). The first four values are for inputs <span class="math notranslate nohighlight">\(x&lt;2\)</span> and the last four values are for inputs <span class="math notranslate nohighlight">\(x&gt;2\)</span>.</p>
 <div class="sd-card sd-sphinx-override sd-w-50 sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="pst-scrollable-table-container"><table class="table">
@@ -507,52 +519,70 @@ document.write(`
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p class="sd-card-text">1.100000</p></td>
+<tr class="row-even"><td><p class="sd-card-text">1.900000</p></td>
 <td class="text-right"><p class="sd-card-text">4.63000000</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">1.010000</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">1.990000</p></td>
 <td class="text-right"><p class="sd-card-text">4.06030000</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">1.001000</p></td>
+<tr class="row-even"><td><p class="sd-card-text">1.999000</p></td>
 <td class="text-right"><p class="sd-card-text">4.00600300</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">1.000100</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">1.999900</p></td>
 <td class="text-right"><p class="sd-card-text">4.00060003</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">2.000100</p></td>
+<td class="text-right"><p class="sd-card-text">3.99959997</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">2.001000</p></td>
+<td class="text-right"><p class="sd-card-text">3.99599700</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">2.010000</p></td>
+<td class="text-right"><p class="sd-card-text">3.95970000</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">2.100000</p></td>
+<td class="text-right"><p class="sd-card-text">3.57000000</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
+<p>What do the values of <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim\limits_{x\to 2} f(x)\)</span> would be?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Show solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="math notranslate nohighlight">\(4\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(2\)</span>.
+This suggests that <span class="math notranslate nohighlight">\(\lim\limits_{x \to 2} f(x) = 4\)</span>.</p>
+<p class="sd-card-text">Notice that <span class="math notranslate nohighlight">\(\lim\limits_{x \to 2} f(x)\)</span> exists even though <span class="math notranslate nohighlight">\(f(2)\)</span> is not defined in the table of values.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Show solution</p>
-<p>The values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="math notranslate nohighlight">\(4\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1\)</span>.
-This suggests that <span class="math notranslate nohighlight">\(\lim\limits_{x \to 1} f(x) = 4\)</span>.</p>
-</div>
+</details></div>
+</section>
 </section>
 <section id="one-sided-limits">
 <h2>One-Sided Limits<a class="headerlink" href="#one-sided-limits" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The limit of <span class="math notranslate nohighlight">\(f(x)\)</span> as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span> <em>from the right</em> is equal to the finite number <span class="math notranslate nohighlight">\(L\)</span>, denoted by</p>
+<p>The <em><strong>limit of <span class="math notranslate nohighlight">\(f(x)\)</span> as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span> <em>from the right</em> is equal to the finite number <span class="math notranslate nohighlight">\(L\)</span></strong></em>, denoted by</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to a^+} f(x) = L \]</div>
 <p>if the values of <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(L\)</span> as we want by taking <span class="math notranslate nohighlight">\(x\)</span> <em>sufficiently close</em> to (but not equal to) <span class="math notranslate nohighlight">\(a\)</span> and to the right of <span class="math notranslate nohighlight">\(a\)</span> (i.e., <span class="math notranslate nohighlight">\(x&gt;a\)</span>).</p>
-<p>Similarly, the limit of <span class="math notranslate nohighlight">\(f(x)\)</span> as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span> <em>from the left</em> is equal to the finite number <span class="math notranslate nohighlight">\(M\)</span>, denoted by</p>
+<p>Similarly, the <em><strong>limit of <span class="math notranslate nohighlight">\(f(x)\)</span> as <span class="math notranslate nohighlight">\(x\)</span> approaches <span class="math notranslate nohighlight">\(a\)</span> <em>from the left</em> is equal to the finite number <span class="math notranslate nohighlight">\(M\)</span></strong></em>, denoted by</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to a^-} f(x) = M\]</div>
 <p>if the values of <span class="math notranslate nohighlight">\(f(x)\)</span> can be made as close to <span class="math notranslate nohighlight">\(M\)</span> as we want by taking <span class="math notranslate nohighlight">\(x\)</span> <em>sufficiently close</em> to (but not equal to) <span class="math notranslate nohighlight">\(a\)</span> and to the left of <span class="math notranslate nohighlight">\(a\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;a\)</span>).</p>
 </div>
-<div class="warning admonition">
-<p class="admonition-title">Exercise</p>
-<p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(f(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(1\)</span> (but <strong>not equal to</strong> <span class="math notranslate nohighlight">\(1\)</span>). The first four values are for inputs <span class="math notranslate nohighlight">\(x &lt; 1\)</span>, the next four are for inputs <span class="math notranslate nohighlight">\(x&gt; 1\)</span>.</p>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">One-sided limits of a function from a table of values</p>
+<p>Below, you see a table in which we evaluate a function <span class="math notranslate nohighlight">\(g(x)\)</span> for values of <span class="math notranslate nohighlight">\(x\)</span> that are closer and closer to <span class="math notranslate nohighlight">\(1\)</span> (but <strong>not equal to</strong> <span class="math notranslate nohighlight">\(1\)</span>). The first four values are for inputs <span class="math notranslate nohighlight">\(x &lt; 1\)</span> and the last four values are for inputs <span class="math notranslate nohighlight">\(x&gt; 1\)</span>.</p>
 <div class="sd-card sd-sphinx-override sd-w-50 sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p class="sd-card-text"><span class="math notranslate nohighlight">\(x\)</span></p></th>
-<th class="head text-right"><p class="sd-card-text"><span class="math notranslate nohighlight">\(f(x)\)</span></p></th>
+<th class="head text-right"><p class="sd-card-text"><span class="math notranslate nohighlight">\(g(x)\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -585,24 +615,33 @@ This suggests that <span class="math notranslate nohighlight">\(\lim\limits_{x \
 </div>
 </div>
 </div>
-<p>What do the values <span class="math notranslate nohighlight">\(f(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^+} f(x)\)</span> and <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^-} f(x)\)</span>  would be?</p>
+<p>What do the values of <span class="math notranslate nohighlight">\(g(x)\)</span> suggest <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^-} g(x)\)</span> and <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^+} g(x)\)</span>  would be?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Show solution</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If approaching from the left (<span class="math notranslate nohighlight">\(x&lt; 1\)</span>), the values <span class="math notranslate nohighlight">\(g(x)\)</span> get closer to <span class="math notranslate nohighlight">\(2\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1\)</span>. This suggests that <span class="math notranslate nohighlight">\(\lim\limits_{x \to 1^-} g(x) = 2\)</span>.</p>
+<p class="sd-card-text">If approaching from the right (<span class="math notranslate nohighlight">\(x&gt; 1\)</span>), the values <span class="math notranslate nohighlight">\(g(x)\)</span> get closer to <span class="math notranslate nohighlight">\(1\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1\)</span>. This suggests that <span class="math notranslate nohighlight">\(\lim\limits_{x \to 1^+} g(x) = 1\)</span>.</p>
 </div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Show solution</p>
-<p>If approaching from the left (<span class="math notranslate nohighlight">\(x&lt; 1\)</span>), the values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="math notranslate nohighlight">\(2\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1\)</span>. This suggests that <span class="math notranslate nohighlight">\(\lim\limits_{x \to 1^-} f(x) = 2\)</span>.</p>
-<p>If approaching from the right (<span class="math notranslate nohighlight">\(x&gt; 1\)</span>), the values <span class="math notranslate nohighlight">\(f(x)\)</span> get closer to <span class="math notranslate nohighlight">\(1\)</span> as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(1\)</span>. This suggests that <span class="math notranslate nohighlight">\(\lim\limits_{x \to 1^+} f(x) = 1\)</span>.</p>
-</div>
+</details></div>
+</section>
 </section>
 <section id="limit-vs-one-sided-limits">
 <h2>Limit vs. One-Sided Limits<a class="headerlink" href="#limit-vs-one-sided-limits" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Fact</p>
+<p class="admonition-title">Connection Between Limits and One-Sided Limits</p>
 <p>If both one-sided limits exist and are equal to the same value, <span class="math notranslate nohighlight">\(L\)</span>, then we can say that the limit exists, and is also equal to <span class="math notranslate nohighlight">\(L\)</span>.  In other words,</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to a} f(x) = L\]</div>
 <p>means the same thing as</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to a^-} f(x) = L ~~~~ \hbox{and} ~~~~ \lim_{x\to a^+} f(x)= L.\]</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Example 1 versus Example 2</p>
+<p>In Example 1 above, we claimed that <span class="math notranslate nohighlight">\(\lim\limits_{x \to 2} f(x) = 4\)</span>.  This means that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 2^-} f(x) = 4 ~~~~ \hbox{and} ~~~~ \lim_{x\to 2^+} f(x)= 4.\]</div>
+<p>In Example 2 above, we claimed that <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^-} g(x) = 2\)</span> and <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^+} g(x)= 1\)</span>.  This means that <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1} g(x)\)</span> does not exist since the two one-sided limits exist, but are not equal to each other.</p>
 </div>
 <!-- ## Try It Yourself!
 
@@ -677,8 +716,14 @@ This suggests that <span class="math notranslate nohighlight">\(\lim\limits_{x \
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-a-limit">Definition of a Limit</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-sided-limits">One-Sided Limits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-a-limit">Definition of a Limit</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-sided-limits">One-Sided Limits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limit-vs-one-sided-limits">Limit vs. One-Sided Limits</a></li>
 </ul>
   </nav></div>

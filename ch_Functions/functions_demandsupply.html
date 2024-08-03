@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -465,9 +466,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#market-equilibrium">Market Equilibrium</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#market-equilibrium">Market Equilibrium</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -481,13 +487,17 @@ document.write(`
                   
   <section id="demand-and-supply">
 <h1>Demand and Supply<a class="headerlink" href="#demand-and-supply" title="Link to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p><strong>Demand</strong> refers to the quantity of goods or services that consumers are willing to purchase at a given price.</p>
+<p><em><strong>Demand</strong></em> refers to the quantity of goods or services that consumers are willing to purchase at a given price.</p>
 </div>
+<div class="info admonition">
+<p class="admonition-title">The Law of Demand</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-mt-0 sd-mb-0 sd-ml-4 sd-mr-4 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">The Law of Demand assumes</p>
@@ -500,7 +510,7 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-pt-5 sd-pb-5 sd-pl-0 sd-pr-0 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class="reference internal image-reference" href="../_images/pic_functions_demand.png"><img alt="Demand function" class="align-center" src="../_images/pic_functions_demand.png" style="width: 300px;" /></a>
@@ -514,13 +524,16 @@ document.write(`
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis representing the quantity of a good that is demanded, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The curve is labeled p = d(x).</p>
 </div>
-</details><div class="info admonition">
+</details></div>
+<div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p><strong>Supply</strong> refers to the amount of goods that producers want to sell at a given price.</p>
+<p><em><strong>Supply</strong></em> refers to the amount of goods that producers want to sell at a given price.</p>
 </div>
+<div class="info admonition">
+<p class="admonition-title">The Law of Supply</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-mt-0 sd-mb-0 sd-ml-4 sd-mr-4 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">The Law of Supply assumes</p>
@@ -533,7 +546,7 @@ document.write(`
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-pt-5 sd-pb-5 sd-pl-0 sd-pr-0 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class="reference internal image-reference" href="../_images/pic_functions_supply.png"><img alt="Supply function" class="align-center" src="../_images/pic_functions_supply.png" style="width: 300px;" /></a>
@@ -547,12 +560,15 @@ document.write(`
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis representing the quantity of a good that will be supplied, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red curve increasing from left to right representing the price at which suppliers will sell certain amounts of the good. The curve is labeled p = s(x).</p>
 </div>
-</details><div class="info admonition">
+</details></div>
+<div class="info admonition">
 <p class="admonition-title">Domain Considerations</p>
 <p>For any demand or supply function, the domain should be restricted so that both the quantity <span class="math notranslate nohighlight">\(x\)</span> and price <span class="math notranslate nohighlight">\(p\)</span> are nonnegative (i.e., <span class="math notranslate nohighlight">\(x\geq 0\)</span> and <span class="math notranslate nohighlight">\(p\geq 0\)</span>).</p>
 </div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Domain of a demand function</p>
 <p>Determine the appropriate domain for the demand function, <span class="math notranslate nohighlight">\(d(x) = 600 - 15x\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -565,13 +581,17 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the domain of the demand function <span class="math notranslate nohighlight">\(d(x) = 600-15x\)</span> is <span class="math notranslate nohighlight">\([0,40]\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 <section id="market-equilibrium">
 <h2>Market Equilibrium<a class="headerlink" href="#market-equilibrium" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>A <strong>market equilibrium</strong> exists when the quantity produced is equal to the quantity demanded.</p>
+<p>A <em><strong>market equilibrium</strong></em> exists when the quantity produced is equal to the quantity demanded.</p>
 </div>
+<div class="info admonition">
+<p class="admonition-title">How to Find the Market Equilibrium</p>
 <p>The market equilibrium quantity and price can be determined by finding the point of intersection of the demand and supply curves.</p>
 <figure class="align-default" id="illustration-equilibrium">
 <a class="reference internal image-reference" href="../_images/pic_functions_equilibrium.png"><img alt="The equilibrium is given where demand and supply curves intersect" src="../_images/pic_functions_equilibrium.png" style="width: 600px;" /></a>
@@ -584,9 +604,11 @@ document.write(`
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis representing the quantity of a good, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a red curve increasing from left to right representing the price at which suppliers will sell certain amounts of the good.  The red curve is labeled p = s(x). There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The blue curve is labeled p = d(x). There is a point where the two curves meet, which is labeled “equilibrium price” along the p-axis and “equilibrium quantity” along the x-axis.</p>
 </div>
-</details></section>
+</details></div>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Find the market equilibrium values</p>
 <p>The demand and supply functions for Penn State Berkey Creamery Gift Boxes are:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -629,7 +651,9 @@ s(5)
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the equilibrium price is 42 dollars.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -696,9 +720,14 @@ s(5)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#market-equilibrium">Market Equilibrium</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#market-equilibrium">Market Equilibrium</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

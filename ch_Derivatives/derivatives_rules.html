@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -77,7 +77,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Try It Yourself" href="derivatives_TIY.html" />
-    <link rel="prev" title="The Concept of the Derivative" href="derivatives_def.html" />
+    <link rel="prev" title="Differentiability" href="derivatives_differentiable.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="derivatives_.html">Derivatives</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -465,21 +466,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-the-rules">Applying the Rules</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-sum-and-constant-multiple-rule">Example 1 (Sum and Constant Multiple Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-product-rule">Example 2 (Product Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-quotient-rule">Example 3 (Quotient Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-general-power-rule">Example 4 (General Power Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5-product-and-general-power-rule">Example 5 (Product and General Power Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-quotient-and-general-power-rule">Example 6 (Quotient and General Power Rule)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-applied-example">An Applied Example</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-7">Example 7</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-derivative-to-compute-limits">Using the derivative to compute limits</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-derivative-to-compute-limits">Using the Derivative to Compute Limits</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-8">Example 8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9">Example 9</a></li>
 </ul>
@@ -560,15 +560,11 @@ document.write(`
 \]</div>
 <p>This is a special case of the Chain Rule with <span class="math notranslate nohighlight">\(g(x) = x^n\)</span>.</p>
 </div>
-</section>
-<section id="applying-the-rules">
-<h2>Applying the Rules<a class="headerlink" href="#applying-the-rules" title="Link to this heading">#</a></h2>
-<section id="example-1-sum-and-constant-multiple-rule">
-<h3>Example 1 (Sum and Constant Multiple Rule)<a class="headerlink" href="#example-1-sum-and-constant-multiple-rule" title="Link to this heading">#</a></h3>
-<p>Find the derivative of the function</p>
-<div class="math notranslate nohighlight">
-\[f(x) = 5x^2 - 4x + 2 + \frac{3}{x^4}\]</div>
-<p>using the basic rules of differentiation.</p>
+<section id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Sum and Constant Multiple Rule</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x) = 5x^2 - 4x + 2 + \dfrac{3}{x^4}\)</span> using the basic rules of differentiation.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Remember the sum rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -622,13 +618,13 @@ f'(x)
 <div class="math notranslate nohighlight">
 \[f'(x) = 10x - 4 - \frac{12}{x^5}\]</div>
 </div>
-</details></section>
-<section id="example-2-product-rule">
-<h3>Example 2 (Product Rule)<a class="headerlink" href="#example-2-product-rule" title="Link to this heading">#</a></h3>
-<p>Find the derivative of the function</p>
-<div class="math notranslate nohighlight">
-\[h(x)=(3x^2+1)(x^2+x+1)\]</div>
-<p>using the basic rules of differentiation.</p>
+</details></div>
+</section>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Product Rule</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(h(x)=(3x^2+1)(x^2+x+1)\)</span> using the basic rules of differentiation.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Remember the product rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -672,13 +668,13 @@ h'(x) &amp;= f'(x)g(x)+f(x)g'(x) &amp;&amp; \hbox{product rule}\\ \\
 &amp;=12x^3+9x^2+8x+1 &amp;&amp; \hbox{combine like terms}
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-3-quotient-rule">
-<h3>Example 3 (Quotient Rule)<a class="headerlink" href="#example-3-quotient-rule" title="Link to this heading">#</a></h3>
-<p>Find the derivative of the function</p>
-<div class="math notranslate nohighlight">
-\[h(x)=\dfrac{x^3-7x+10}{x^2+4}\]</div>
-<p>using the basic rules of differentiation and then evaluate <span class="math notranslate nohighlight">\(h'(2)\)</span>.</p>
+</details></div>
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Quotient Rule</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(h(x)=\dfrac{x^3-7x+10}{x^2+4}\)</span> using the basic rules of differentiation and then evaluate <span class="math notranslate nohighlight">\(h'(2)\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Remember the quotient rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -724,13 +720,13 @@ h'(2) &amp;= \frac{2^4+19\cdot2^2-20\cdot2-28}{(2^2+4)^2}\\ \\
 <p class="admonition-title">Good to know</p>
 <p>Keep in mind that if the only goal is to compute <span class="math notranslate nohighlight">\(h'(2)\)</span>, then Step 3 can be skipped and <span class="math notranslate nohighlight">\(x=2\)</span> can be plugged in immediately after computing the derivative in Step 2.  This will reduce the number of computations and help avoid some possible algebraic mistakes while simplifying.</p>
 </div>
+</div>
 </section>
-<section id="example-4-general-power-rule">
-<h3>Example 4 (General Power Rule)<a class="headerlink" href="#example-4-general-power-rule" title="Link to this heading">#</a></h3>
-<p>Find the derivative of the function</p>
-<div class="math notranslate nohighlight">
-\[h(x) = \sqrt{3x^2 - 4x + 2}\]</div>
-<p>using the basic rules of differentiation.</p>
+<section id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">General Power Rule</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(h(x) = \sqrt{3x^2 - 4x + 2}\)</span> using the basic rules of differentiation.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Remember the general power rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -754,13 +750,13 @@ h'(x) &amp;= \frac{d}{dx} (3x^2 - 4x + 2)^{1/2}\\ \\
 &amp;= \frac{3x-2}{\sqrt{3x^2-4+2}}
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-5-product-and-general-power-rule">
-<h3>Example 5 (Product and General Power Rule)<a class="headerlink" href="#example-5-product-and-general-power-rule" title="Link to this heading">#</a></h3>
-<p>Find the derivative of the function</p>
-<div class="math notranslate nohighlight">
-\[h(x) = (4x+1)^3(2x-5)^4\]</div>
-<p>using the basic rules of differentiation.</p>
+</details></div>
+</section>
+<section id="example-5">
+<h3>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Product and General Power Rule</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(h(x) = (4x+1)^3(2x-5)^4\)</span> using the basic rules of differentiation.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Remember the product rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -799,13 +795,13 @@ h'(x) &amp;= 4(4x+1)^2(2x-5)^3\left[6x-15 + 8x+2\right]\\ \\
 &amp;= 4(4x+1)^2(2x-5)^3(14x-13)
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-6-quotient-and-general-power-rule">
-<h3>Example 6 (Quotient and General Power Rule)<a class="headerlink" href="#example-6-quotient-and-general-power-rule" title="Link to this heading">#</a></h3>
-<p>Find the derivative of the function</p>
-<div class="math notranslate nohighlight">
-\[h(x) = \dfrac{x^5}{(4x-7)^3}\]</div>
-<p>using the basic rules of differentiation.</p>
+</details></div>
+</section>
+<section id="example-6">
+<h3>Example 6<a class="headerlink" href="#example-6" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Quotient and General Power Rule</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(h(x) = \dfrac{x^5}{(4x-7)^3}\)</span> using the basic rules of differentiation.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Remember the quotient rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -844,12 +840,15 @@ h'(x) &amp;= \frac{x^4\cancel{(4x-7)^2}[20x-35 - 12x]}{(4x-7)^{\cancel{6}4}} \\ 
 &amp;= \frac{x^4(8x-35)}{(4x-7)^4} 
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 <section id="an-applied-example">
 <h2>An Applied Example<a class="headerlink" href="#an-applied-example" title="Link to this heading">#</a></h2>
 <section id="example-7">
 <h3>Example 7<a class="headerlink" href="#example-7" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Rate of Change of Unit Price</p>
 <p>Penn State Learning has a weekly demand funciton for their calculators which is given by</p>
 <div class="math notranslate nohighlight">
 \[p = d(x) = 300 - 2x^2\]</div>
@@ -880,12 +879,15 @@ d'(x) &amp;= \frac{d}{dx}(300 - 2x^2)\\ \\
 \[d'(5) = -4\cdot5 = -20\]</div>
 <p class="sd-card-text">Therefore, the instantaneous rate of change of the unit price is <span class="math notranslate nohighlight">\(-20\)</span> dollars per thousand calculators when the quantity demanded is 5000 calculators.  This means that the unit price would decrease by approximately 20 dollars if the demand increased from 5000 to 6000 calculators.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 <section id="using-the-derivative-to-compute-limits">
-<h2>Using the derivative to compute limits<a class="headerlink" href="#using-the-derivative-to-compute-limits" title="Link to this heading">#</a></h2>
+<h2>Using the Derivative to Compute Limits<a class="headerlink" href="#using-the-derivative-to-compute-limits" title="Link to this heading">#</a></h2>
 <section id="example-8">
 <h3>Example 8<a class="headerlink" href="#example-8" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Evaluate a Limit using a Derivative</p>
 <p>Use the limit definition of the derivative to evaluate</p>
 <div class="math notranslate nohighlight">
 \[\lim_{h\to 0}\dfrac{(x+h)^2-5(x+h)-(x^2-5x)}{h}.\]</div>
@@ -926,9 +928,12 @@ f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
 &amp;= 2x - 5
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-9">
 <h3>Example 9<a class="headerlink" href="#example-9" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Evaluate a Limit using a Derivative</p>
 <p>Use the limit definition of the derivative to evaluate</p>
 <div class="math notranslate nohighlight">
 \[\lim_{h\to 0}\dfrac{(2+h)^3-8}{h}.\]</div>
@@ -968,7 +973,8 @@ f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
 &amp;= 12
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 </section>
 
@@ -1003,12 +1009,12 @@ f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="derivatives_def.html"
+       href="derivatives_differentiable.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">The Concept of the Derivative</p>
+        <p class="prev-next-title">Differentiability</p>
       </div>
     </a>
     <a class="right-next"
@@ -1036,21 +1042,20 @@ f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-the-rules">Applying the Rules</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-sum-and-constant-multiple-rule">Example 1 (Sum and Constant Multiple Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-product-rule">Example 2 (Product Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3-quotient-rule">Example 3 (Quotient Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4-general-power-rule">Example 4 (General Power Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5-product-and-general-power-rule">Example 5 (Product and General Power Rule)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6-quotient-and-general-power-rule">Example 6 (Quotient and General Power Rule)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-applied-example">An Applied Example</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-7">Example 7</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-derivative-to-compute-limits">Using the derivative to compute limits</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-derivative-to-compute-limits">Using the Derivative to Compute Limits</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-8">Example 8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9">Example 9</a></li>
 </ul>

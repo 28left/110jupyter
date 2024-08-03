@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -489,6 +490,8 @@ document.write(`
 <h1>Try It Yourself<a class="headerlink" href="#try-it-yourself" title="Link to this heading">#</a></h1>
 <section id="exercise-1">
 <h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Domain</p>
 <p>Let <span class="math notranslate nohighlight">\(f(x) = \dfrac{x - 1}{2x - 6}\)</span> and <span class="math notranslate nohighlight">\(g(x) = \sqrt{2x + 1}\)</span>.</p>
 <p>Determine the domain for <span class="math notranslate nohighlight">\(f+g\)</span>, <span class="math notranslate nohighlight">\(f-g\)</span>, <span class="math notranslate nohighlight">\(fg\)</span>, and <span class="math notranslate nohighlight">\(f/g\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -496,9 +499,12 @@ document.write(`
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: Domain for <span class="math notranslate nohighlight">\(f+g\)</span>, <span class="math notranslate nohighlight">\(f-g\)</span>, <span class="math notranslate nohighlight">\(fg\)</span>: <span class="math notranslate nohighlight">\([-1/2,3) \cup (3,\infty)\)</span>; Domain for <span class="math notranslate nohighlight">\(f/g\)</span>: <span class="math notranslate nohighlight">\((-1/2,3) \cup (3,\infty)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-2">
 <h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Composition of functions</p>
 <p>Let <span class="math notranslate nohighlight">\(f(x) = 3\sqrt{x}\)</span> and <span class="math notranslate nohighlight">\(g(x) = \dfrac{x}{2x-1}\)</span>.</p>
 <p>Determine the rule for the composite functions <span class="math notranslate nohighlight">\(f \circ g\)</span> and <span class="math notranslate nohighlight">\(g \circ f\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -506,41 +512,48 @@ document.write(`
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\((f\circ g)(x) = 3\sqrt{x/(2x-1)}\)</span>; <span class="math notranslate nohighlight">\((g\circ f)(x) = 3\sqrt{x}/(6\sqrt{x}-1)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-3">
 <h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Break-even point</p>
 <p>A manufacturer of Everlasting LED lightbulbs has fixed monthly costs of $25,000 and a processing cost of $3 for each lightbulb produced. Assuming each lightbulb sells for $5, compute the break-even point.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: 12,500 lightbulbs</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-4">
 <h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Link to this heading">#</a></h2>
-<p>Determine the degree of the polynomial</p>
-<div class="math notranslate nohighlight">
-\[(x^4 + x)^2(x^3 + x + 1)^5.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Degree of a polynomial</p>
+<p>Determine the degree of the polynomial <span class="math notranslate nohighlight">\((x^4 + x)^2(x^3 + x + 1)^5\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(23\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-5">
 <h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading">#</a></h2>
-<p>Write</p>
-<div class="math notranslate nohighlight">
-\[\dfrac{x}{x^2-4} - \dfrac{2x+1}{x+5}\]</div>
-<p>as a ratio of polynomials and determine its domain.</p>
+<div class="tip admonition">
+<p class="admonition-title">Rational function</p>
+<p>Write <span class="math notranslate nohighlight">\(\dfrac{x}{x^2-4} - \dfrac{2x+1}{x+5}\)</span> as a ratio of polynomials and determine its domain.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\((-2x^3 + 13x + 4)/(x^3 + 5x^2 - 4x - 20)\)</span>, Domain: <span class="math notranslate nohighlight">\((-\infty,-5) \cup (-5,-2) \cup (-2,2) \cup (2,\infty)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-6">
 <h2>Exercise 6<a class="headerlink" href="#exercise-6" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Equilibrium point</p>
 <p>The demand and supply functions for <em>The Best of Math 110: A DVD Collection</em> are:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -553,13 +566,19 @@ p = s(x) &amp;= 2x^2 + 4x - 140
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: Equilibrium quantity = 8000; Equilibrium price = $20</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-7">
 <h2>Exercise 7<a class="headerlink" href="#exercise-7" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Area of rectangular region enclosed by a fence</p>
 <p>A rectangular field is to be enclosed by 200 feet of fence. One side of the field is a building, so fencing is not required on that side.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/b8ca3a5b8366637f470a6a703a8cf6258d28bcb7429d63f6cbfbcf1f28589b70.svg" src="../_images/b8ca3a5b8366637f470a6a703a8cf6258d28bcb7429d63f6cbfbcf1f28589b70.svg" /></div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column sd-m-auto docutils">
+<img alt="Rectangular region enclosed by a fence on three sides" src="../_images/pic_functions_tiy_exercise_7.png" />
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -572,22 +591,55 @@ p = s(x) &amp;= 2x^2 + 4x - 140
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: Area: <span class="math notranslate nohighlight">\(200x - 2x^2\)</span>, Domain: <span class="math notranslate nohighlight">\([0,100]\)</span></p>
 </div>
-</details></section>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-cell]
+
+%load_ext itikz
+```
+
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale = 8]
+\draw[fill = yellow,opacity=0.5] (0,0) rectangle (1,.5);
+\draw[ultra thick] (-.2,0)--(1.2,0) node[midway,below] {Building};
+\draw (0,0) -- (0,0.5) node[midway,left] {$x$} 
+-- (1,0.5) %node[midway,above] {} 
+-- (1,0) node[midway,right] {$x$};
+\node at (.5,.25) {Fenced Area};
+\end{tikzpicture}
+\end{document}
+```
+-->
+</section>
 <section id="exercise-8">
 <h2>Exercise 8<a class="headerlink" href="#exercise-8" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Profit function</p>
 <p>A game box manufacturer determines that in order to sell <span class="math notranslate nohighlight">\(x\)</span> units, the price per unit in dollars must be <span class="math notranslate nohighlight">\(p(x) = 250 - x\)</span>. The manufacture also determines that the total cost of producing <span class="math notranslate nohighlight">\(x\)</span> units is given by <span class="math notranslate nohighlight">\(C(x) = 2500 + 10x\)</span>.  Determine the profit as a function of <span class="math notranslate nohighlight">\(x\)</span> and state the appropriate domain.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: Profit: <span class="math notranslate nohighlight">\(240x - x^2 - 2500\)</span>, Domain: <span class="math notranslate nohighlight">\([0,250]\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-9">
 <h2>Exercise 9<a class="headerlink" href="#exercise-9" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Area of printed region</p>
 <p>A printer needs to make a poster that has a total area of <span class="math notranslate nohighlight">\(200\)</span> in<span class="math notranslate nohighlight">\(^2\)</span>, <span class="math notranslate nohighlight">\(1\)</span> inch margins on the sides, a <span class="math notranslate nohighlight">\(2.5\)</span> inch margin on the top, and a <span class="math notranslate nohighlight">\(1.5\)</span> inch margin on the bottom.  If <span class="math notranslate nohighlight">\(x\)</span> denotes the width (in inches) of the poster, find a function in the variable <span class="math notranslate nohighlight">\(x\)</span> giving the area of the printed (i.e., shaded) region and state the appropriate domain.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/6e9384ecfcdc60ac52ead6ad77160d63a471adff22b279437c8bdc28ae28da8b.svg" src="../_images/6e9384ecfcdc60ac52ead6ad77160d63a471adff22b279437c8bdc28ae28da8b.svg" /></div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column sd-m-auto docutils">
+<img alt="Poster with margins" src="../_images/pic_functions_tiy_exercise_9.png" />
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -599,7 +651,35 @@ p = s(x) &amp;= 2x^2 + 4x - 140
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: Area: <span class="math notranslate nohighlight">\((x-2)(200/x-4)\)</span>, Domain: <span class="math notranslate nohighlight">\([2,50]\)</span></p>
 </div>
-</details></section>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\def\bbWidth{6}
+\def\bbHeight{4.5}
+\def\bbSideMargin{1.0}
+\def\bbTopMargin{1.1}
+\def\bbBottomMargin{0.9}
+\begin{tikzpicture}[scale=1.3]
+\draw [thick,fill=white] (0,0) rectangle (\bbWidth,\bbHeight);
+\draw [thick,fill=yellow,opacity=0.5] (\bbSideMargin,\bbBottomMargin) rectangle (\bbWidth - \bbSideMargin, \bbHeight - \bbTopMargin);
+%\draw [<->] (0,\bbHeight + 0.25) -- +(\bbWidth,0) node [midway,fill=white] {$x$};
+\draw [<-] (0,\bbHeight/2) -- +(-0.5,0); 
+\draw [<-] (\bbSideMargin,\bbHeight/2) -- +(0.5,0);
+\node at (\bbSideMargin/2,\bbHeight/2) {\small 1 in.};
+\draw [<->] (\bbWidth/2,\bbHeight) -- +(0,-\bbTopMargin) node [midway,fill=white] {\small 2.5 in.};
+\draw [<->] (\bbWidth/2,0) -- +(0,\bbBottomMargin) node [midway,fill=white] {\small 1.5 in.};
+
+%label
+\draw [|-|] (0,-0.4) -- (\bbWidth,-0.4) node [midway,fill=white] {$x$};
+\end{tikzpicture}
+\end{document}
+```
+--></section>
 </section>
 
     <script type="text/x-thebe-config">

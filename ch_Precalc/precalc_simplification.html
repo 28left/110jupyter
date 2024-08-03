@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -514,9 +515,7 @@ document.write(`
 <p class="admonition-title">Multiplying Fractions</p>
 <p>To multiply two fractions, multiply the numerators and multiply the denominators of the two fractions.</p>
 <div class="math notranslate nohighlight">
-\[
-\frac{A}{B} \times \frac{C}{D} = \frac{AC}{BD}
-\]</div>
+\[\frac{A}{B} \times \frac{C}{D} = \frac{AC}{BD}\]</div>
 <p>e.g., <span class="math notranslate nohighlight">\(\dfrac{2}{3} \times \dfrac{5}{7} = \dfrac{2\cdot 5}{3\cdot 7} = \dfrac{10}{21}\)</span></p>
 </div>
 <div class="info admonition">
@@ -526,12 +525,52 @@ document.write(`
 \[\frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \times \frac{D}{C} = \frac{AD}{BC}\]</div>
 <p>e.g., <span class="math notranslate nohighlight">\(\dfrac{2}{3} \div \dfrac{5}{7} = \dfrac{2}{3} \times \dfrac{7}{5} = \dfrac{14}{15}\)</span></p>
 </div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+
+from IPython.display import IFrame
+IFrame("https://www.youtube.com/embed/LyMESqKEVnY?rel=0&amp;controls=1&amp;showinfo=0", '100%', '200px')
+```
+-->
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/YV0wFncCTGw" target="_blank">Order of Operations</a> (Links to an external site) <br>
+A review of how to evaluate expressions involving parentheses, exponents, multiplication, division, addition, and/or subtraction.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/LyMESqKEVnY" target="_blank">Understand Fractions in Minutes</a> (Links to an external site) <br>
+A review of how to add, subtract, multiply and divide fractions.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Important</p>
+<p>In the previous examples of combining fractions, only numerical values appeared in the numerators and denominators.  However, the same formulas can be used to simplify expressions where the numerators and/or denominators contain functions.</p>
+</div>
 <section id="example-1">
 <h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Subtracting fractions with the same denominator</p>
 <p>Rewrite <span class="math notranslate nohighlight">\(\dfrac{x+1}{x+4} - \dfrac{3x-2}{x+4}\)</span> as a single ratio.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>  Subtract fractions with common denominator.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -548,18 +587,27 @@ document.write(`
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \dfrac{x+1}{x+4} - \dfrac{3x-2}{x+4}
-&amp;= \frac{x+1 - (3x-2)}{x+4} &amp;&amp; \text{subtract numerators}\\
+&amp;= \frac{x+1 - (3x-2)}{x+4} &amp;&amp; \text{subtract numerators}
+\end{align*}\]</div>
+<p class="sd-card-text">Note the use of parantheses around <span class="math notranslate nohighlight">\(3x-2\)</span>.  Since we are subtracting <span class="math notranslate nohighlight">\(3x-2\)</span>, the parantheses are needed to make sure we distribute the minus sign to both terms of <span class="math notranslate nohighlight">\(3x-2\)</span>, which we will do in the next step.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>  Simplify the numerator.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{x+1 - (3x-2)}{x+4}
 &amp;= \frac{x+1 - 3x+2}{x+4}  &amp;&amp; \text{distribute the minus sign}\\
-&amp;= \frac{3-2x}{x+4} &amp;&amp; \text{combine like terms}
+&amp;= \frac{3-2x}{x+4} &amp;&amp; \text{combine like terms in the numerator}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Adding fractions with different denominators</p>
 <p>Rewrite <span class="math notranslate nohighlight">\(\dfrac{3}{x} + \dfrac{4}{x-5}\)</span> as a single ratio.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Apply  formula for adding fractions with different denominators.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -577,22 +625,29 @@ document.write(`
 \[\begin{align*}
 \dfrac{3}{x} + \dfrac{4}{x-5}
 &amp;= \frac{3(x-5)}{x(x-5)} + \frac{4x}{x(x-5)} &amp;&amp; \text{get a common denominator}\\
-&amp;= \frac{3(x-5)+4x}{x(x-5)} &amp;&amp; \text{add numerators}\\
-&amp;= \frac{3x - 15 + 4x}{x(x-5)} &amp;&amp; \text{distribute the 3}\\
-&amp;= \frac{7x-15}{x(x-5)} &amp;&amp; \text{combine like terms}
+&amp;= \frac{3(x-5)+4x}{x(x-5)} &amp;&amp; \text{add numerators}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Simplify the numerator.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{3(x-5)+4x}{x(x-5)} 
+&amp;= \frac{3x - 15 + 4x}{x(x-5)} &amp;&amp; \text{distribute the 3}\\
+&amp;= \frac{7x-15}{x(x-5)} &amp;&amp; \text{combine like terms in the numerator}
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
 <section id="example-3">
 <h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Simplifying quotients of fractions</p>
-<p>Simplify</p>
-<div class="math notranslate nohighlight">
-\[
+<p>Simplify
+<span class="math notranslate nohighlight">\(
 \cfrac{\left(\cfrac{3p}{\sqrt{180-6p}}\right)}{ \sqrt{180-6p}}.
-\]</div>
-</div>
+\)</span></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Recall formula for the quotient of fractions.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -609,11 +664,20 @@ document.write(`
 \cfrac{\left(\cfrac{3p}{\sqrt{180-6p}}\right)}{ \sqrt{180-6p}}
 &amp;= \frac{3p}{\sqrt{180-6p}} \div \sqrt{180-6p} \\ \\
 &amp;= \frac{3p}{\sqrt{180-6p}} \times \frac{1}{\sqrt{180-6p}} &amp;&amp; \text{division is multiplication by reciprocal}\\  \\
-&amp;= \frac{3p}{\sqrt{180-6p}\times \sqrt{180-6p}} &amp;&amp; \text{multiply numerators and denominators}\\ \\
-&amp;= \frac{3p}{180 - 6p} &amp;&amp; \text{simplify}
+&amp;= \frac{3p}{\sqrt{180-6p}\times \sqrt{180-6p}} &amp;&amp; \text{multiply numerators and denominators}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Simplify the denominator.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{3p}{\sqrt{180-6p}\times \sqrt{180-6p}}
+&amp;= \frac{3p}{180 - 6p}
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
 </section>
 <section id="distributive-property-of-multiplication">
 <h2>Distributive Property of Multiplication<a class="headerlink" href="#distributive-property-of-multiplication" title="Link to this heading">#</a></h2>
@@ -626,29 +690,54 @@ A(B+C) = AB + AC
 \]</div>
 <p>e.g., <span class="math notranslate nohighlight">\(7(3+2) = 7\cdot 3 + 7\cdot 2\)</span></p>
 </div>
+<div class="note admonition">
+<p class="admonition-title">Important</p>
+<p>In the above example of the distributive property of multiplication, only numerical values were used.  However, the distributive property can also be used to expand products of functions.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/zLvp5H2rgVU" target="_blank">Multiplying Polynomials</a> (Links to an external site) <br>
+A review of how to use the distributive property to expand the product of polynomials.</p>
+</div>
+</div>
+</div>
+</div>
 <section id="example-4">
 <h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Expanding a product of polynomials</p>
 <p>Expand <span class="math notranslate nohighlight">\(x^2(5x^3 + 7)\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong>   Use distributivity to expand given product.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Use distributivity to expand the given product.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 x^2(5x^3 + 7)
-&amp;= 5x^2x^3 + 7x^2 &amp;&amp; \text{distribute $x^2$}\\
-&amp;= 5x^5 + 7x^2 &amp;&amp; \text{simplify}
+&amp;= 5x^2x^3 + 7x^2 &amp;&amp; \text{distribute $x^2$}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Simplify each term.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+5x^2x^3 + 7x^2 &amp;= 5x^5 + 7x^2 
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
 </section>
 <section id="the-foil-method">
 <h2>The FOIL Method<a class="headerlink" href="#the-foil-method" title="Link to this heading">#</a></h2>
-<p>The FOIL method is a way to remember how to apply the distributive property of multiplication when expanding the product of two binomial expressions.  FOIL is an acronym for</p>
 <div class="info admonition">
 <p class="admonition-title">F-O-I-L</p>
+<p>The FOIL method is a way to remember how to apply the distributive property of multiplication when expanding the product of two binomial expressions.  FOIL is an acronym for</p>
 <ul class="simple">
 <li><p><strong>F</strong>irst (i.e., multiply the first terms from each binomial)</p></li>
 <li><p><strong>O</strong>uter (i.e., multiply the first term from the first factor and the second term from the second factor)</p></li>
@@ -659,13 +748,27 @@ x^2(5x^3 + 7)
 \[
 (a + b)(c + d) = \underbrace{ac}_{\text{(F)irst}} + \underbrace{ad}_{\text{(O)uter}} + \underbrace{bc}_{\text{(I)nner}} + \underbrace{bd}_{\text{(L)ast}}
 \]</div>
+<p>After expanding the product using the FOIL method, combine like terms, if possible.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/P_B6YBGKwVU" target="_blank">The FOIL Method</a> (Links to an external site) <br>
+A review of how to expand the product of two binomial expressions.</p>
+</div>
+</div>
+</div>
 </div>
 <section id="example-5">
 <h3>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Applying the FOIL method</p>
 <p>Expand <span class="math notranslate nohighlight">\((x+2)(3x-5)\)</span> using the FOIL method.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Recall the formula for the FOIL method.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -681,16 +784,25 @@ x^2(5x^3 + 7)
 \[\begin{align*}
   (x+2)(3x-5) 
   &amp;= x(3x) + x(-5) + 2(3x) + 2(-5) &amp;&amp;\text{FOIL}\\
-  &amp;= 3x^2 - 5x + 6x - 10 &amp;&amp; \text{simplify each term}\\
-  &amp;= 3x^2 + x - 10 &amp;&amp; \text{combine like terms}
+  &amp;= 3x^2 - 5x + 6x - 10 &amp;&amp; \text{simplify each term}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Combine like terms.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  3x^2 - 5x + 6x - 10 
+  &amp;= 3x^2 + x - 10
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
 </section>
 <section id="squaring-a-binomial">
 <h2>Squaring a Binomial<a class="headerlink" href="#squaring-a-binomial" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Applying the FOIL method to a binomial</p>
+<p class="admonition-title">Applying the FOIL Method to the Square of a Binomial</p>
 <p>When applying the FOIL method to the square of a binomial (i.e., <span class="math notranslate nohighlight">\((a+b)^2\)</span> or <span class="math notranslate nohighlight">\((a-b)^2\)</span>), we arrive at the following formulas:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -699,53 +811,79 @@ x^2(5x^3 + 7)
 (a - b)^2 = a^2 - 2ab + b^2
 \]</div>
 </div>
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/QlWekLztefU" target="_blank">Squaring a Binomial</a> (Links to an external site) <br>
+A review of how to square a binomial expression using the FOIL method or using the above formulas.</p>
+</div>
+</div>
+</div>
+</div>
 <section id="example-6">
 <h3>Example 6<a class="headerlink" href="#example-6" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Expanding a binomial</p>
 <p>Expand <span class="math notranslate nohighlight">\((3x-5)^2\)</span> by squaring the binomial.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong>   Apply binomial formula.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Apply the appropriate binomial formula.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Apply <span class="math notranslate nohighlight">\((a - b)^2 = a^2 - 2ab + b^2\)</span> with <span class="math notranslate nohighlight">\(a=3x\)</span> and <span class="math notranslate nohighlight">\(b=5\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 (3x-5)^2
-&amp;= (3x)^2 - 2(3x)(5) + 5^2 &amp;&amp; \text{square the binomial} \\ \\ 
-&amp;= 3^2x^2 - 30x + 25 &amp;&amp; \text{simplify}\\ \\
-&amp;= 9x^2 - 30x + 25
-\end{align*}\]</div>
-</div>
-</details></section>
-<section id="example-7">
-<h3>Example 7<a class="headerlink" href="#example-7" title="Link to this heading">#</a></h3>
-<div class="tip admonition">
-<p class="admonition-title">Expanding a product of a monomial and a binomial</p>
-<p>Expand <span class="math notranslate nohighlight">\(3x^5(4+x)^2\)</span>.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong>   Apply binomial formula.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Apply <span class="math notranslate nohighlight">\((a + b)^2 = a^2 + 2ab + b^2\)</span> with <span class="math notranslate nohighlight">\(a=4\)</span> and <span class="math notranslate nohighlight">\(b=x\)</span>.</p>
-<div class="amsmath math notranslate nohighlight">
-\[\begin{align*}
-3x^5(4+x)^2
-&amp;= 3x^5(4^2 + 2(4)(x) + x^2) &amp;&amp; \text{square the binomial}\\ \\
-&amp;= 3x^5(16 + 8x + x^2) &amp;&amp; \text{simplify}
+&amp;= (3x)^2 - 2(3x)(5) + 5^2 
 \end{align*}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong>   Use the distributive property of multiplication.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Simplify each term.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(3x)^2 - 2(3x)(5) + 5^2  &amp;= 9x^2 - 30x + 25
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-7">
+<h3>Example 7<a class="headerlink" href="#example-7" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Expanding a product of a monomial and the square of a binomial</p>
+<p>Expand <span class="math notranslate nohighlight">\(3x^5(4+x)^2\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Apply the appropriate binomial formula.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Apply <span class="math notranslate nohighlight">\((a + b)^2 = a^2 + 2ab + b^2\)</span> with <span class="math notranslate nohighlight">\(a=4\)</span> and <span class="math notranslate nohighlight">\(b=x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+3x^5(4+x)^2 &amp;= 3x^5(4^2 + 2(4)(x) + x^2) 
+\end{align*}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Simplify each term.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+3x^5(4^2 + 2(4)(x) + x^2) &amp;= 3x^5(16 + 8x + x^2) 
+\end{align*}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Distribute the factor of <span class="math notranslate nohighlight">\(3x^5\)</span> and simplify again.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 3x^5(16 + 8x + x^2) 
 &amp;= 3x^5(16) + 3x^5(8x) + 3x^5(x^2) &amp;&amp; \text{distribute $3x^5$} \\ \\
-&amp;= 48x^5 + 24x^6 + 3x^7 &amp;&amp; \text{simplify}
+&amp;= 48x^5 + 24x^6 + 3x^7 &amp;&amp; \text{simplify each term}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 </section>
 

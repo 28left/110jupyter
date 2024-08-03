@@ -11,26 +11,24 @@ kernelspec:
   name: python3
 ---
 # An Application
-
+`````{admonition} The cost of construction
+:class: tip
 
 A rectangular box with a **square** base and a volume of $24$ ft$^3$ has costs to construct of $\$10 / \text{ft}^2$ for the sides, $\$20 / \text{ft}^2$ for the top, and $\$40 / \text{ft}^2$ for the base. If $x$ denotes the length of one side of the base (in feet), determine the function in the variable $x$ giving the total cost of constructing the box in dollars and state the appropriate domain
 
 
 ````{dropdown} **Step 1:** &nbsp; Draw and label a figure.
 
-
 ```{image} ../images/pic_functions_box.png
 :alt: a box with base length and depth $x$ and height $y$
 :align: center
-:width: 300px
+:width: 250px
 ```
-
-Note that we are temporarily using the variable $y$ to denote the height of the box.
-````
-
 ```{dropdown} Long Text Description
 A two dimensional projective diagram of a three dimensional square prism, with the square face horizontal and of side length x, and height y.
 ```
+Note that we are temporarily using the variable $y$ to denote the height of the box.
+````
 
 
 ```{dropdown} **Step 2:** &nbsp; Translate the problem description into a function.
@@ -62,9 +60,10 @@ C(x) &=&  60x^2 + 40x\left(\frac{24}{x^2}\right) \\
 ```
 
 
-```{dropdown} **Step 4:** &nbsp; Note any restrictions to be placed on the domain.
+```{dropdown} **Step 4:** &nbsp; Determine the appropriate domain.
 
 Note any restrictions to be placed on the domain of the function from physical considerations of the problem.
 
 Since $x$ denotes the length of one side of the base, its value must be at least zero.  However, $x$ cannot be equal to zero since the height, $y = 24/x^2$, is undefined at $x=0$.  Therefore, the domain of $C(x)$ is $(0,\infty)$.
 ```
+`````

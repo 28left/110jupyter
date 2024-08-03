@@ -15,7 +15,7 @@ kernelspec:
 
 ## Pull out Common Factors
 
-```{admonition} Common factors
+```{admonition} Common Factors
 :class: info
 
 The act of pulling out common factors from a sum can be thought of as applying the distributive property of multiplication in reverse.
@@ -25,13 +25,53 @@ $$AB + AC = A(B+C)$$
 e.g., $21 + 14 = 7\cdot 3 + 7\cdot 2 = 7(3+2)$
 ```
 
+
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/83qOOms8_Ok" target="_blank">Factor Polynomials Using the Greatest Common Factor Method</a> (Links to an external site) <br>
+A review of identifying and pulling out the greatest common factors when factoring a polynomial.
+:::
+::::
+````
+
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/g1wNljq3xiE" target="_blank">Factoring Algebraic Expressions with Rational Exponents</a> (Links to an external site) <br>
+A review of identifying and pulling out the greatest common factors when factoring expressions with rational exponents.
+:::
+::::
+````
+
+
 ### Example 1
 
-```{admonition} Factoring
+````{admonition} Factoring
 :class: tip
 
 Factor $10x^5 + 15x^4$ by pulling out common factors.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Determine the factors common to both terms.
 
@@ -49,18 +89,15 @@ Therefore, the factor common to both terms is $5x^4$.
 &= 5x^4(2x + 3) && \text{pull out common factor}
 \end{align*}
 ```
+````
 
 
 ### Example 2
 
-```{admonition} Factoring
+````{admonition} Factoring
 :class: tip
-Factor 
+Factor  $4x^3(2x^3+1)^5 + 30x^6(2x^3+1)^4$ by first pulling out common factors.
 
-$$4x^3(2x^3+1)^5 + 30x^6(2x^3+1)^4$$ 
-
-by first pulling out common factors.
-```
 
 ```{dropdown} **Step 1:** &nbsp; Determine the factors common to both terms.
 
@@ -81,18 +118,15 @@ Therefore, the factor common to both terms is $2x^3(2x^3+1)^4$.
 &= 2x^3(2x^3+1)^4(19x^3+2)
 \end{align*}
 ```
+````
 
 
 ### Example 3
 
-```{admonition} Factoring
+````{admonition} Factoring
 :class: tip
-Factor 
+Factor  $4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2}$ by first pulling out common factors.
 
-$$4x^3(2x^3+1)^{1/2} + 3x^6(2x^3+1)^{-1/2}$$ 
-
-by first pulling out common factors.
-```
 
 ```{dropdown} **Step 1:** &nbsp; Determine the factors common to both terms.
 
@@ -114,11 +148,13 @@ Therefore, the factor common to both terms is $x^3(2x^3+1)^{-1/2}$.
 &= \frac{x^3(11x^3+4)}{\sqrt{2x^3+1}}
 \end{align*}
 ```
+````
+
 
 
 ## Difference of Squares
 
-```{admonition} Applying FOIL to product $(A+B)(A-B)$.
+```{admonition} Applying the FOIL Method to the Product $(A+B)(A-B)$.
 :class: info
 
 When applying the FOIL technique to a product of the form $(A+B)(A-B)$, we get the following result.
@@ -140,11 +176,11 @@ $$
 
 ### Example 4
 
-```{admonition} Applying difference of squares
+````{admonition} Applying difference of squares
 :class: tip
 
 Factor $x^2-25$.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Rewrite the expression as a difference of squares.
 
@@ -159,16 +195,17 @@ x^2 - 25
 &= (x+5)(x-5) && \text{difference of squares}
 \end{align*}
 ```
+````
 
 
 
 ### Example 5
 
-```{admonition} Applying difference of squares
+````{admonition} Applying difference of squares
 :class: tip
 
 Factor $9x^3-4x^5$.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Determine the factors common to both terms.
 
@@ -201,9 +238,13 @@ $$x^3(9 - 4x^2) = x^3[3^2 - (2x)^2]$$
 &= x^3(3+2x)(3-2x) && \text{difference of squares}
 \end{align*}
 ```
+````
 
 
 ## AC Grouping Method
+
+```{admonition} Steps of the AC Grouping Method.
+:class: info
 
 The AC grouping method is a technique for factoring certain quadratic expressions of the form
 
@@ -211,23 +252,20 @@ $$ax^2 + bx + c.$$
 
 The process is broken down into the following five steps.
 
-```{admonition} Steps of the AC Grouping Method.
-:class: info
-
 1. Find two integers, $r$ and $s$, that multiply to $a\times c$ and sum to $b$.
 2. Replace $bx$ with $rx$ + $sx$.
-3. Group terms with common factors.
+3. Group the first two terms and the last two terms of $ax^2 + rx + sx + c$.
 4. Pull out common factors from each group.
 5. Pull out common factor.
 ```
 
 ### Example 6
 
-```{admonition} Applying AC grouping
+````{admonition} Applying AC grouping
 :class: tip
 
 Factor $6x^2 + 7x - 5$ using the AC grouping method.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Find two integers that multiply to &nbsp; $6(-5) = -30$ &nbsp; and sum to &nbsp; $7$.
 
@@ -245,7 +283,7 @@ Since the product is negative, the two numbers must have opposite signs.  And si
 $$6x^2 - 3x + 10x - 5$$
 ```
 
-```{dropdown} **Step 3:** &nbsp; Group terms with common factors.
+```{dropdown} **Step 3:** &nbsp; Group the first two terms and the last two terms.
 
 $$(6x^2 - 3x) + (10x - 5)$$
 ```
@@ -277,15 +315,16 @@ After factoring a polynomial, it's always a good idea to check your work by expa
 &= 6x^2 + 7x -5  && \text{combine like terms}
 \end{align*}
 ```
+````
 
 
 ### Example 7
 
-```{admonition} Applying AC grouping
+````{admonition} Applying AC grouping
 :class: tip
 
 Factor $x^2 - 13x + 36$ using the AC grouping method.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Find two integers that multiply to &nbsp; $1\times 36 = 36$ &nbsp; and sum to &nbsp; $-13$.
 
@@ -303,7 +342,7 @@ Since the product is positive, the two numbers must have the same sign.  And sin
 $$x^2 - 4x - 9x + 36$$
 ```
 
-```{dropdown} **Step 3:** &nbsp; Group terms with common factors.
+```{dropdown} **Step 3:** &nbsp; Group the first two terms and the last two terms.
 
 $$(x^2 - 4x) + (-9x + 36)$$
 ```
@@ -332,13 +371,13 @@ $$x^2 - 13x + 36 = (x-4)(x-9)$$
 &= x^2 - 13x + 36 && \text{combine like terms}
 \end{align*}
 ```
-
+````
 
 
 ## A Special Case of the AC Grouping Method
 
 ```{admonition} Important Observation
-:class: danger
+:class: info
 If the coefficient of $x^2$ is one (i.e., $a=1$ in $ax^2 + bx + c$), then Step 1 of the $AC$ grouping method is to find two numbers that multiply to $c$ and sum to $b$. Once these numbers have been found, then the factorization can be written as
 
 $$x^2 + bx + c = (x+r)(x+s)$$
@@ -350,11 +389,10 @@ where $r+s = b$ and $rs = c$.
 (01_02_example8)=
 ### Example 8
 
-```{admonition} AC grouping
+````{admonition} AC grouping
 :class: tip
 
 Factor $x^2 - 4x - 12$.
-```
 
 
 ```{dropdown} **Step 1:** &nbsp; Find two integers that multiply to &nbsp; $-12$ &nbsp; and sum to &nbsp; $-4$.
@@ -384,15 +422,15 @@ $$x^2 - 4x - 12 = (x+2)(x-6).$$
 &= x^2 - 4x - 12 && \text{combine like terms}
 \end{align*}
 ```
+````
 
 
 ### Example 9
 
-```{admonition} AC grouping and pulling out common factors
+````{admonition} AC grouping and pulling out common factors
 :class: tip
 
 Factor $7x^4 + 35x^3 + 42x^2$.
-```
 
 
 ```{dropdown} **Step 1:** &nbsp; Determine the factors common to all three terms.
@@ -440,6 +478,6 @@ Therefore,
 &= 7x^4 + 35x^3 + 42x^2 && \text{simplify}
 \end{align*}
 ```
-
+````
 
 

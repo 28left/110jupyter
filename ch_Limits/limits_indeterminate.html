@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -77,7 +77,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Limits at Infinity" href="limits_infinity.html" />
-    <link rel="prev" title="Examples: Computing Limits Algebraically" href="limits_algebra.html" />
+    <link rel="prev" title="Computing Limits Algebraically" href="limits_algebra.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -218,8 +218,8 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="limits_.html">Limits and Continuity</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -465,8 +466,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -480,16 +484,23 @@ document.write(`
                   
   <section id="indeterminate-forms">
 <h1>Indeterminate Forms<a class="headerlink" href="#indeterminate-forms" title="Link to this heading">#</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
 <p>If <span class="math notranslate nohighlight">\(\lim\limits_{x\to a} f(x) = 0\)</span> and <span class="math notranslate nohighlight">\(\lim\limits_{x\to a}g(x) = 0\)</span>, then</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to a}\frac{f(x)}{g(x)}\]</div>
-<p>is called an <strong>indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span></strong>.</p>
+<p>is called an <em><strong>indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span></strong></em>.</p>
 </div>
+<div class="info admonition">
+<p class="admonition-title">How to Evaluate an Indeterminate Form of Type <span class="math notranslate nohighlight">\(0/0\)</span></p>
 <p>To evaluate an indeterminate form, simplify the ratio <span class="math notranslate nohighlight">\(f(x)/g(x)\)</span> by factoring or rationalizing the expression and then canceling out common factors.</p>
+</div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">An indeterminate form involving a rational function</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to 5} \dfrac{x-5}{x^2-25}.\)</span></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -497,7 +508,7 @@ document.write(`
 <p class="sd-card-text">We evaluate these limits by plugging in <span class="math notranslate nohighlight">\(x=5\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to 5} x-5 = 5 - 5 = 0 ~~~~ \text{and} ~~~~~ \lim_{x\to 5} x^2 - 25 = 5^2-25 = 0\]</div>
-<p class="sd-card-text">This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to do more work to evaluate it.</p>
+<p class="sd-card-text">This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to simplify the function before we can evaluate the limit.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -517,13 +528,16 @@ document.write(`
 \[\begin{align*}
 \lim_{x\to 5}\frac{x-5}{x^2-25}
 &amp;= \lim_{x\to 5} \frac{1}{x+5} \\ \\
-&amp;= \frac{1}{5+5}  &amp;&amp; \text{plug in $x=5$ (Property 7)}\\ \\
+&amp;= \frac{1}{5+5}  &amp;&amp; \text{plug in $x=5$}\\ \\
 &amp;= \frac{1}{10} &amp;&amp; \text{simplify}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">An indeterminate form involving a square root function</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to 10} \dfrac{\sqrt{x-6}-2}{x-10}\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -531,7 +545,7 @@ document.write(`
 <p class="sd-card-text">Plug in <span class="math notranslate nohighlight">\(x=10\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to 10} \sqrt{x-6}-2 = \sqrt{10-6} - 2 = 0 ~~~~ \hbox{and} ~~~~~ \lim_{x\to 10} x-10 = 10-10 = 0\]</div>
-<p class="sd-card-text">This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to do more work to evaluate it.</p>
+<p class="sd-card-text">This means that the given limit is an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>, so we need to simplify the function before we can evaluate the limit.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -560,7 +574,9 @@ document.write(`
 &amp;= \frac{1}{4}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -599,7 +615,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Examples: Computing Limits Algebraically</p>
+        <p class="prev-next-title">Computing Limits Algebraically</p>
       </div>
     </a>
     <a class="right-next"
@@ -627,8 +643,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

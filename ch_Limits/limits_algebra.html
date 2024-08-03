@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Examples: Computing Limits Algebraically &#8212; Penn State Math 110 Companion Site</title>
+    <title>Computing Limits Algebraically &#8212; Penn State Math 110 Companion Site</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -77,7 +77,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Indeterminate Forms" href="limits_indeterminate.html" />
-    <link rel="prev" title="Examples: Computing Limits from Graphs" href="limits_graphs.html" />
+    <link rel="prev" title="Computing Limits from Graphs" href="limits_graphs.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -218,8 +218,8 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="limits_.html">Limits and Continuity</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -455,7 +456,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Examples: Computing Limits Algebraically</h1>
+    <h1>Computing Limits Algebraically</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -465,10 +466,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-constant-function">Example: Constant Function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-rational-function-1">Example: Rational Function (1)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-rational-function-2">Example: Rational Function (2)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-piecewise-polynomial-function">Example: Piecewise Polynomial Function</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
 </ul>
             </nav>
         </div>
@@ -480,46 +482,95 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="examples-computing-limits-algebraically">
-<h1>Examples: Computing Limits Algebraically<a class="headerlink" href="#examples-computing-limits-algebraically" title="Link to this heading">#</a></h1>
-<section id="example-constant-function">
-<h2>Example: Constant Function<a class="headerlink" href="#example-constant-function" title="Link to this heading">#</a></h2>
-<p>If <span class="math notranslate nohighlight">\(f(x) = 2\)</span>, find <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^{-}}f(x)\)</span>.</p>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p><span class="math notranslate nohighlight">\(f\)</span> is a constant function, hence a polynomial. Therefore, by Property 7 of <a class="reference internal" href="limits_proplim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1} f(x) = f(1) = 2\)</span>. Since the limit exists, the one-sided limits exist, too and coincide with the limit. Thus, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^{-}}f(x) = 2\)</span>.</p>
+  <section id="computing-limits-algebraically">
+<h1>Computing Limits Algebraically<a class="headerlink" href="#computing-limits-algebraically" title="Link to this heading">#</a></h1>
+<section id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">The limit of a constant function</p>
+<p>If <span class="math notranslate nohighlight">\(f(x) = 2\)</span>, evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^{-}}f(x)\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the limit property of a constant function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">For any real number <span class="math notranslate nohighlight">\(c\)</span>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to a}c = c\)</span>.</p>
+<p class="sd-card-text">See <a class="reference internal" href="limits_proplim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a> for a list of all limit properties.</p>
 </div>
-</section>
-<section id="example-rational-function-1">
-<h2>Example: Rational Function (1)<a class="headerlink" href="#example-rational-function-1" title="Link to this heading">#</a></h2>
-<p>Evaluate</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the limit property of a constant function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f(x) = 2\)</span> is a constant function, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1}f(x) = 2\)</span>, which implies that the one-side limit also exists and</p>
 <div class="math notranslate nohighlight">
-\[\lim\limits_{x\to -1} \dfrac{x^3 +4x^2-x-3}{2x^2+1}.\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p>The function</p>
+\[\lim\limits_{x\to 1^{-}}f(x) = 2.\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">The limit of a rational function</p>
+<p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to -1} \dfrac{x^3 +4x^2-x-3}{2x^2+1}\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the limit property of a rational function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(x)\)</span> is a rational function and <span class="math notranslate nohighlight">\(a\)</span> is in the domain of <span class="math notranslate nohighlight">\(f(x)\)</span>, then <span class="math notranslate nohighlight">\(\lim\limits_{x\to a}f(x) = f(a)\)</span>.</p>
+<p class="sd-card-text">See <a class="reference internal" href="limits_proplim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a> for a list of all limit properties.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Determine if <span class="math notranslate nohighlight">\(x=-1\)</span> is in the domain of the function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The function</p>
 <div class="math notranslate nohighlight">
 \[ g(x) = \dfrac{x^3 +4x^2-x-3}{2x^2+1}\]</div>
-<p>is a rational function, and since <span class="math notranslate nohighlight">\(2(-1)^2 + 1 = 3 \neq 0\)</span>, it follows that <span class="math notranslate nohighlight">\(-1\)</span> is in the domain of <span class="math notranslate nohighlight">\(g\)</span>.
-Again by Property 7 of <a class="reference internal" href="limits_proplim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a>, <span class="math notranslate nohighlight">\(\lim\limits_{x\to -1} g(x)\)</span> exists and equals</p>
+<p class="sd-card-text">is a rational function and since <span class="math notranslate nohighlight">\(2(-1)^2 + 1 \neq 0\)</span> (i.e., the denominator is not equal to zero when <span class="math notranslate nohighlight">\(x=-1\)</span>), it follows that <span class="math notranslate nohighlight">\(-1\)</span> is in the domain of <span class="math notranslate nohighlight">\(g\)</span>.</p>
+<p class="sd-card-text">Therefore, the limit exists and</p>
 <div class="math notranslate nohighlight">
-\[g(-1) = \frac{(-1)^3 + 4(-1)^2 - (-1) -3}{2(-1)^2+1} = \frac{1}{3}.\]</div>
+\[\lim\limits_{x\to -1} g(x) = g(-1) = \frac{(-1)^3 + 4(-1)^2 - (-1) -3}{2(-1)^2+1} = \frac{1}{3}.\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">The limit of a rational function</p>
+<p>Evaluate <span class="math notranslate nohighlight">\(\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Determine if <span class="math notranslate nohighlight">\(x=2\)</span> is in the domain of the function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The function</p>
+<div class="math notranslate nohighlight">
+\[ h(x) = \dfrac{x^2 +4x-1}{x-2}\]</div>
+<p class="sd-card-text">is a rational function and since <span class="math notranslate nohighlight">\(2-2 = 0\)</span> (i.e., the denominator equals zero when <span class="math notranslate nohighlight">\(x=2\)</span>), it follows that <span class="math notranslate nohighlight">\(2\)</span> is not in the domain of <span class="math notranslate nohighlight">\(h\)</span>.  Unfortunately, this means that the limit property we used in the previous example does not apply.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Determine if the limit exists.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">When we evaluate the numerator of <span class="math notranslate nohighlight">\(h(x)\)</span> at <span class="math notranslate nohighlight">\(x=2\)</span>, we get</p>
+<div class="math notranslate nohighlight">
+\[2^2 +4(2) - 1 = 11.\]</div>
+<p class="sd-card-text">Since the denominator goes to zero but the numerator does not, we can immediately conclude that <span class="math notranslate nohighlight">\(\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}\)</span> does not exist.</p>
+<p class="sd-card-text">Moreover, if we let <span class="math notranslate nohighlight">\(x\)</span> approach <span class="math notranslate nohighlight">\(2\)</span> from the left (i.e., <span class="math notranslate nohighlight">\(x&lt;2\)</span>), the values of <span class="math notranslate nohighlight">\((x^2 +4x-1)/(x-2)\)</span> will be negative and we can conclude that</p>
+<div class="math notranslate nohighlight">
+\[\lim\limits_{x\to 2^-} \dfrac{x^2 +4x-1}{x-2} = -\infty \]</div>
+<p class="sd-card-text">And if we let <span class="math notranslate nohighlight">\(x\)</span> approach <span class="math notranslate nohighlight">\(2\)</span> from the right (i.e., <span class="math notranslate nohighlight">\(x&gt;2\)</span>), the values of <span class="math notranslate nohighlight">\((x^2 +4x-1)/(x-2)\)</span> will be positive and we can conclude that</p>
+<div class="math notranslate nohighlight">
+\[\lim\limits_{x\to 2^+} \dfrac{x^2 +4x-1}{x-2} = \infty\]</div>
+<p class="sd-card-text">Even though we can say that the one-sided limits are equal to positive or negative infinity, this still means that the one-sided limits do not exist, and therefore the original limit does not exist either.</p>
+</div>
+</details></div>
+<div class="note admonition">
+<p class="admonition-title">Evaluating the Limit of a Rational Function</p>
+<p>When evaluating the limit of a rational function, <span class="math notranslate nohighlight">\(\lim\limits_{x\to a} \dfrac{f(x)}{g(x)}\)</span>, start by plugging in <span class="math notranslate nohighlight">\(x=a\)</span> into both <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span>.</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(g(a) \neq 0\)</span>, then the limit exists and is equal to <span class="math notranslate nohighlight">\(f(a)/g(a)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(g(a)=0\)</span> and <span class="math notranslate nohighlight">\(f(a)\neq 0\)</span>, then the limit does not exist.  By carefully analyzing the sign of the numerator and of the denominator, we can determine if the one-sided limits go to positive or negative infinity.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(g(a) = 0\)</span> and <span class="math notranslate nohighlight">\(f(a)=0\)</span>, it’s still possible the limit exists.  We will consider this situation in the next section.</p></li>
+</ul>
 </div>
 </section>
-<section id="example-rational-function-2">
-<h2>Example: Rational Function (2)<a class="headerlink" href="#example-rational-function-2" title="Link to this heading">#</a></h2>
-<p>Evaluate</p>
-<div class="math notranslate nohighlight">
-\[\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}.\]</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Solution</p>
-<p>For <span class="math notranslate nohighlight">\(x=2\)</span>, the denominator of the expression above is zero, so we cannot apply Property 7 of <a class="reference internal" href="limits_proplim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a> in this case. We observe that, as <span class="math notranslate nohighlight">\(x\)</span> gets closer to <span class="math notranslate nohighlight">\(2\)</span>, the values of the denominator get closer to <span class="math notranslate nohighlight">\(0\)</span>, while the values of the numerator approach <span class="math notranslate nohighlight">\(11\)</span>.</p>
-<p>Moreover, if we approach <span class="math notranslate nohighlight">\(2\)</span> from the left, the values of <span class="math notranslate nohighlight">\((x^2 +4x-1)/(x-2)\)</span> will be negative and approach <span class="math notranslate nohighlight">\(-\infty\)</span>, while if we approach from the right, the values are positive and approach <span class="math notranslate nohighlight">\(+\infty\)</span>.</p>
-<p>Therefore, neither the left-hand limit nor the right-limit exists, and hence <span class="math notranslate nohighlight">\(\lim\limits_{x\to 2} \dfrac{x^2 +4x-1}{x-2}\)</span> does not exist either.</p>
-</div>
-</section>
-<section id="example-piecewise-polynomial-function">
-<h2>Example: Piecewise Polynomial Function<a class="headerlink" href="#example-piecewise-polynomial-function" title="Link to this heading">#</a></h2>
+<section id="example-4">
+<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">The limit of a piecewise function</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 6} h(x)\)</span>, where</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
@@ -532,41 +583,95 @@ x^2-5x-6 &amp; \hbox{if } x&gt;6 \\
 \end{equation*}\]</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong>   Find the limit from the left.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">In this case, since we are approaching 6 from the left, we can assume that <span class="math notranslate nohighlight">\(x&lt;6\)</span>, and therefore <span class="math notranslate nohighlight">\(h(x) = x^2-4x-12\)</span>.</p>
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the limit property of a polynomial</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(f(x)\)</span> is a polynomial function, then <span class="math notranslate nohighlight">\(\lim\limits_{x\to a}f(x) = f(a)\)</span>.</p>
+<p class="sd-card-text">See <a class="reference internal" href="limits_proplim.html#lim-prop-lim"><span class="std std-ref">Properties of Finite Limits</span></a> for a list of all limit properties.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Compute the limit from the left.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since we are approaching 6 from the left, we can assume that <span class="math notranslate nohighlight">\(x&lt;6\)</span>, which means <span class="math notranslate nohighlight">\(h(x) = x^2-4x-12\)</span> and we can apply the limit property of a polynomial.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \lim_{x\to 6^{-}} h(x) 
 &amp;= \lim_{x\to 6^-} x^2-4x-12\\ \\
-&amp;= 6^2-4(6)-12 &amp;&amp; \text{plug in $x=6$ (Property 7)}\\ \\
+&amp;= 6^2-4(6)-12 &amp;&amp; \text{plug in $x=6$}\\ \\
 &amp;= 36-24-12 &amp;&amp; \text{simplify}\\ \\
 &amp;= 0
 \end{align*}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong>   Find the limit from the right.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">In this case, since we are approaching 6 from the right, we can assume that <span class="math notranslate nohighlight">\(x&gt;6\)</span>, and therefore <span class="math notranslate nohighlight">\(h(x) = x^2-5x-6\)</span>.</p>
+<span class="sd-summary-text"><strong>Step 3:</strong>   Compute the limit from the right.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since we are approaching 6 from the right, we can assume that <span class="math notranslate nohighlight">\(x&gt;6\)</span>, which means <span class="math notranslate nohighlight">\(h(x) = x^2-5x-6\)</span>, and we can apply the limit property of a polynomial.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \lim_{x\to 6^{+}} h(x) 
 &amp;= \lim_{x\to 6^+} x^2-5x-6\\ \\
-&amp;= 6^2-5(6)-6  &amp;&amp; \text{plug in $x=6$ (Property 7)}\\ \\
+&amp;= 6^2-5(6)-6  &amp;&amp; \text{plug in $x=6$}\\ \\
 &amp;= 36-30-6 &amp;&amp; \text{simplify}\\ \\
 &amp;= 0
 \end{align*}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong>   Check to see if the two limits are equal.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to 6^-} h(x) = 0\)</span> and <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to 6^+} h(x) = 0\)</span>, we conclude that the limit exists and</p>
+<span class="sd-summary-text"><strong>Step 4:</strong>   Check to see if the two one-sided limits are equal.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to 6^-} h(x) = 0\)</span> and <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to 6^+} h(x) = 0\)</span> (i.e., the two one-sided limits both exist and are equal), we conclude that the limit exists and</p>
 <div class="math notranslate nohighlight">
 \[\lim_{x\to 6} h(x) = 0.\]</div>
 </div>
 </details><div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Keep in mind that just because <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 6} h(x) \neq h(6) = 8\)</span>, this does not mean that the limit does not exist.</p>
+<p>Notice that we did not use the fact that <span class="math notranslate nohighlight">\(h(6) = 8\)</span> while computing <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 6} h(x)\)</span>.  Futhermore, the fact that <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 6} h(x) \neq h(6)\)</span>  does not mean that the limit does not exist.</p>
 </div>
+</div>
+</section>
+<section id="example-5">
+<h2>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">The limit of a piecewise function</p>
+<p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle\lim_{x\to 4} g(x)\)</span>, where</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+g(x)=
+\begin{cases} 
+\dfrac{x+5}{3} &amp; \hbox{if } x\leq 4 \\
+6 - x^2&amp; \hbox{if } x&gt;4 
+\end{cases}
+\end{equation*}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Compute the limit from the left.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since we are approaching 4 from the left, we can assume that <span class="math notranslate nohighlight">\(x&lt;4\)</span>, which means <span class="math notranslate nohighlight">\(g(x) =\frac{x+5}{3}\)</span> and we can apply the limit property of a polynomial.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{x\to 4^{-}} g(x) 
+&amp;= \lim_{x\to 4^-} \frac{x+5}{3} \\ \\
+&amp;= \frac{4+5}{3} &amp;&amp; \text{plug in $x=4$}\\ \\
+&amp;= 9/3 &amp;&amp; \text{simplify}\\ \\
+&amp;= 3
+\end{align*}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Compute the limit from the right.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since we are approaching 4 from the right, we can assume that <span class="math notranslate nohighlight">\(x&gt;4\)</span>, which means <span class="math notranslate nohighlight">\(g(x) = 6 - x^2\)</span>, and we can apply the limit property of a polynomial.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lim_{x\to 4^{+}} g(x) 
+&amp;= \lim_{x\to 6^+} 6 - x^2\\ \\
+&amp;= 6 - 4^2  &amp;&amp; \text{plug in $x=4$}\\ \\
+&amp;= 6 - 16 &amp;&amp; \text{simplify}\\ \\
+&amp;= -10
+\end{align*}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Check to see if the two one-sided limits are equal.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to 4^-} g(x) = 3\)</span> and <span class="math notranslate nohighlight">\(\displaystyle \lim_{x\to 4^+} g(x) = -10\)</span> (i.e., the two one-sided limits both exist but are not equal), we conclude that
+<span class="math notranslate nohighlight">\(\lim\limits_{x\to 4} g(x)\)</span> does not exist.</p>
+</div>
+</details></div>
 </section>
 </section>
 
@@ -606,7 +711,7 @@ x^2-5x-6 &amp; \hbox{if } x&gt;6 \\
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Examples: Computing Limits from Graphs</p>
+        <p class="prev-next-title">Computing Limits from Graphs</p>
       </div>
     </a>
     <a class="right-next"
@@ -634,10 +739,11 @@ x^2-5x-6 &amp; \hbox{if } x&gt;6 \\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-constant-function">Example: Constant Function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-rational-function-1">Example: Rational Function (1)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-rational-function-2">Example: Rational Function (2)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-piecewise-polynomial-function">Example: Piecewise Polynomial Function</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
 </ul>
   </nav></div>
 

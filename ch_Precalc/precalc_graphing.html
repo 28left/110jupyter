@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -497,14 +498,49 @@ document.write(`
 <h1>Graphing<a class="headerlink" href="#graphing" title="Link to this heading">#</a></h1>
 <section id="equations-for-a-line">
 <h2>Equations for a Line<a class="headerlink" href="#equations-for-a-line" title="Link to this heading">#</a></h2>
+<!--
+````{admonition} Slope-Intercept Form
+:class: info
+
+
+::::{grid} 2
+:::{grid-item-card}
+The equation of the line with slope $m$ and $y$-intercept equal to $b$ is given by
+
+$$
+\boxed{y = mx + b}
+$$
+:::
+
+:::{grid-item-card}
+```{image} ../images/pic_precalc_graphing_slope_intercept.png
+alt: Graph of a line with y-intercept
+:align: center
+```
+:::
+::::
+
+```{dropdown} Long Text Description
+There is a horizontal x-axis with no points marked. There is a vertical y-axis with the point b marked. The graph of the linear function y=mx+b is plotted on these axes. It crosses the y-axis at the point y=b.
+```
+````
+-->
 <div class="info admonition">
 <p class="admonition-title">Slope-Intercept Form</p>
 <p>The equation of the line with slope <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(y\)</span>-intercept equal to <span class="math notranslate nohighlight">\(b\)</span> is given by</p>
 <div class="math notranslate nohighlight">
-\[
-\boxed{y = mx + b}
-\]</div>
-<a class="reference internal image-reference" href="../_images/pic_precalc_graphing_slope_intercept.png"><img alt="Graph of a line with y-intercept" class="align-center" src="../_images/pic_precalc_graphing_slope_intercept.png" style="width: 402px;" /></a>
+\[y = mx + b \]</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a line with y-intercept" src="../_images/pic_precalc_graphing_slope_intercept.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -512,6 +548,12 @@ document.write(`
 </div>
 </details></div>
 <!--
+```{code-cell}
+:tags: [remove-cell]
+
+%load_ext itikz
+```
+
 ```{code-cell}
 :tags: [remove-input]
 
@@ -532,10 +574,18 @@ document.write(`
 <p class="admonition-title">Point-Slope Form</p>
 <p>The equation of the line with slope <span class="math notranslate nohighlight">\(m\)</span> that goes through the point <span class="math notranslate nohighlight">\((a,b)\)</span> is given by</p>
 <div class="math notranslate nohighlight">
-\[
-\boxed{y = m(x-a) + b}
-\]</div>
-<a class="reference internal image-reference" href="../_images/pic_precalc_graphing_point_slope.png"><img alt="Graph of a line with y-intercept" class="align-center" src="../_images/pic_precalc_graphing_point_slope.png" style="width: 406px;" /></a>
+\[y = m(x-a) + b\]</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a line through the point (a,b)" src="../_images/pic_precalc_graphing_point_slope.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -559,7 +609,7 @@ document.write(`
 \end{document}
 -->
 <div class="note admonition">
-<p class="admonition-title">Positive versus negative slope</p>
+<p class="admonition-title">Positive versus Negative Slope</p>
 <p>Recall that the slope of a line is positive if the line goes up from left-to-right and the slope is negative if the line goes down from left-to-right.</p>
 </div>
 <section id="example-1">
@@ -567,7 +617,6 @@ document.write(`
 <div class="tip admonition">
 <p class="admonition-title">Sketch the graph of a line in slope-intercept form</p>
 <p>Sketch the graph of the line defined by  <span class="math notranslate nohighlight">\(y = 2x + 3\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Determine the slope and <span class="math notranslate nohighlight">\(y\)</span>-intercept.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -577,15 +626,26 @@ document.write(`
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong>   Sketch the graph.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Draw the graph of the line that has a <span class="math notranslate nohighlight">\(y\)</span>-intercept of <span class="math notranslate nohighlight">\(3\)</span> (i.e., goes through the point <span class="math notranslate nohighlight">\((0,3)\)</span>) and a slope of <span class="math notranslate nohighlight">\(2\)</span>.</p>
-<a class="reference internal image-reference" href="../_images/pic_precalc_graphing_example_1.png"><img alt="Graph of line with slope 2 and y-intercept of 3" class="align-center" src="../_images/pic_precalc_graphing_example_1.png" style="width: 500px;" /></a>
+<p class="sd-card-text">Note that the red dashed line is not part of the graph and is used only as a guide for drawing a line with slope 2.  In particular, in order for a line to have slope equal to <span class="math notranslate nohighlight">\(2\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 1 unit, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be increased by 2 units.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of line with slope 2 and y-intercept of 3" src="../_images/pic_precalc_graphing_example_1.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -3 and 3 marked. There is a vertical y-axis with the points -3, 3, and 6 marked. There is a grid with one unit by one unit cells in the background. The graph of the linear function y = 2x + 3 is plotted. There is a red dashed staircase pattern which meets the linear function at the point (-3,-3) and moves to the right by one unit, and then up by two units in a repeating pattern which ends at the point (2,7).</p>
 </div>
-</details><p class="sd-card-text">Note that the red dashed line is not part of the graph and is used only as a guide for drawing a line with slope 2.  In particular, in order for a line to have slope equal to <span class="math notranslate nohighlight">\(2\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 1 unit, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be increased by 2 units.</p>
-</div>
-</details><!---
+</details></div>
+</details></div>
+<!---
 ```{code-cell}
 :tags: [remove-input]
 
@@ -620,7 +680,6 @@ document.write(`
 <div class="tip admonition">
 <p class="admonition-title">Sketch the graph of a line in point-slope form</p>
 <p>Sketch the graph of the line defined by <span class="math notranslate nohighlight">\(y = -2(x - 4) + 3\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Determine the slope and a point on the line.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -630,15 +689,26 @@ document.write(`
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong>   Sketch the graph.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Draw the graph of the line that goes through the point <span class="math notranslate nohighlight">\((4,3)\)</span> and has a slope of <span class="math notranslate nohighlight">\(-2\)</span>.</p>
-<a class="reference internal image-reference" href="../_images/pic_precalc_graphing_example_2.png"><img alt="Graph of line with slope -2 and goes through the point $(4,3)$" class="align-center" src="../_images/pic_precalc_graphing_example_2.png" style="width: 419px;" /></a>
+<p class="sd-card-text">In order for a line to have slope equal to <span class="math notranslate nohighlight">\(-2\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 1 unit, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be decreased by 2 units.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of line with slope -2 and goes through the point $(4,3)$" src="../_images/pic_precalc_graphing_example_2.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points 2 and 4 marked. There is a vertical y-axis with the points 3, 6, 9, and 12 marked. There is a grid with one unit by one unit cells in the background. The line defined by y-3 = -2(x-4) is plotted. There is a red dotted staircase pattern which meets the line at the point (-1,13) and moves to the right by one unit, and then down by two units in a repeating pattern which ends at the point (6,-1).</p>
 </div>
-</details><p class="sd-card-text">In order for a line to have slope equal to <span class="math notranslate nohighlight">\(-2\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 1 unit, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be decreased by 2 units.</p>
-</div>
-</details><!---
+</details></div>
+</details></div>
+<!---
 ```{code-cell}
 :tags: [remove-input]
 
@@ -676,7 +746,6 @@ document.write(`
 <div class="tip admonition">
 <p class="admonition-title">Sketch the graph of a line in point-slope form</p>
 <p>Sketch the graph of the line defined by <span class="math notranslate nohighlight">\(y = \dfrac{2}{5}(x + 2) + 1\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Determine the slope and a point on the line.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -686,15 +755,26 @@ document.write(`
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong>   Sketch the graph.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Draw the graph of the line that goes through the point <span class="math notranslate nohighlight">\((-2,1)\)</span> and has a slope of <span class="math notranslate nohighlight">\(2/5\)</span>.</p>
-<a class="reference internal image-reference" href="../_images/pic_precalc_graphing_example_3.png"><img alt="Graph of line with slope -2 and goes through the point $(4,3)$" class="align-center" src="../_images/pic_precalc_graphing_example_3.png" style="width: 500px;" /></a>
+<p class="sd-card-text">In order for a line to have slope equal to <span class="math notranslate nohighlight">\(2/5\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 5 units, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be increased by 2 units.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of line with slope -2 and goes through the point $(4,3)$" src="../_images/pic_precalc_graphing_example_3.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -6, -4, -2, 2, 4, 6, and 8 marked. There is a vertical y-axis with the points -2, 2, and 4 marked. There is a grid with one unit by one unit cells in the background. The line defined by y-1 = (2/5)(x+2) is plotted. There is a red dotted staircase pattern which meets the linear function at the point (-7,-1) and moves to the right by five units, and then up by two units in a repeating pattern which ends at the point (8,5).</p>
 </div>
-</details><p class="sd-card-text">In order for a line to have slope equal to <span class="math notranslate nohighlight">\(2/5\)</span>, if the <span class="math notranslate nohighlight">\(x\)</span>-coordinate of any point on the line is increased by 5 units, then the <span class="math notranslate nohighlight">\(y\)</span>-coordinate must be increased by 2 units.</p>
-</div>
-</details><!---
+</details></div>
+</details></div>
+<!---
 ```{code-cell}
 :tags: [remove-input]
 
@@ -728,58 +808,229 @@ document.write(`
 </section>
 <section id="graphing-quadratic-polynomials">
 <h2>Graphing Quadratic Polynomials<a class="headerlink" href="#graphing-quadratic-polynomials" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Quadratic Polynomials</p>
 <p>The general form of a quadratic polynomial (i.e., a polynomial of degree two) is</p>
 <div class="math notranslate nohighlight">
 \[y = ax^2 + bx + c\]</div>
 <p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(c\)</span> are real numbers and <span class="math notranslate nohighlight">\(a\neq 0\)</span>.  The graph of a quadratic polynomial has the shape of a parabola.  If <span class="math notranslate nohighlight">\(a&gt;0\)</span>, then the parabola opens upward (i.e., looks like the letter ``U’’) and if <span class="math notranslate nohighlight">\(a&lt;0\)</span>, then the parabola opens downward.</p>
+</div>
 <section id="example-4">
 <h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Compare the graphs of two parabolas</p>
 <p>Compare the graphs of <span class="math notranslate nohighlight">\(y = x^2\)</span> and <span class="math notranslate nohighlight">\(y=-x^2\)</span>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/bd5533437e14efc14ff8b4f64c1479bf69428cb31961ae6274eac1db472ca134.svg" src="../_images/bd5533437e14efc14ff8b4f64c1479bf69428cb31961ae6274eac1db472ca134.svg" /></div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Graph of <span class="math notranslate nohighlight">\(y=x^2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> is a parabola that goes through the point <span class="math notranslate nohighlight">\((0,0)\)</span> and opens upward.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y=x^2$" src="../_images/pic_precalc_graphing_example_4_1.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y-axis with the points 2 and 4 marked. There is a grid of one unit by one unit cells in the background. The concave up quadratic function y = x squared is graphed on these axes, resembling a horseshoe shape. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,0), and increases as it goes off to the right.</p>
 </div>
-</details><div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/287520d5e6df027a4469a4b4203c2b042e175a16a4d4983ba2f52aba21bd573f.svg" src="../_images/287520d5e6df027a4469a4b4203c2b042e175a16a4d4983ba2f52aba21bd573f.svg" /></div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Graph of <span class="math notranslate nohighlight">\(y=-x^2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> is a parabola that goes through the point <span class="math notranslate nohighlight">\((0,0)\)</span> and opens downward.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y=-x^2$" src="../_images/pic_precalc_graphing_example_4_2.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -2 and 2 marked. There is a vertical y-axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = -x squared is graphed on these axes, resembling a horseshoe shape. The function is increasing as it comes from the left to x=0, meets the y-axis at (0,0), and decreases as it goes off to the right.</p>
 </div>
-</details><p>Notice how the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> is a parabola that goes through the point <span class="math notranslate nohighlight">\((0,0)\)</span> and opens upward while the graph of <span class="math notranslate nohighlight">\(y=-x^2\)</span> is a parabola that also goes through the point <span class="math notranslate nohighlight">\((0,0)\)</span> but opens downward.</p>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=1.5]
+
+\draw[black,fill=white] (-3.75,-1.25) rectangle (3.75,5.25);
+\draw[very thin,color=lightgray,step=0.5] (-3.4,-0.9) grid (3.4,4.9);
+%\draw[very thin,color=gray,step=2] (-3.5,-1) grid (3.5,5);
+
+\draw[->] (-3.5,0) -- (3.5,0) node[below] {$x$};
+\draw[->] (0,-1) -- (0,5) node[right] {$y$};
+\draw[domain=-2.23:2.23,smooth,variable=\x,black,ultra thick] plot ({\x},{\x*\x});%  node[right] {$y=x^2$};
+       
+\node[right] at (1.7, 3){$y = x^2$};
+
+% tick marks
+\foreach \x in {-2,2} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {2,4} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+\end{tikzpicture}
+\end{document}
+```
+-->
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=1.5]
+
+\draw[black,fill=white] (-3.75,-5.25) rectangle (3.75,1.25);
+\draw[very thin,color=lightgray,step=0.5] (-3.4,-4.9) grid (3.4,0.9);
+%\draw[very thin,color=gray,step=2] (-3.5,-5) grid (3.5,1);
+
+\draw[->] (-3.5,0) -- (3.5,0) node[below] {$x$};
+\draw[->] (0,-5) -- (0,1) node[right] {$y$};
+\draw[domain=-2.23:2.23,smooth,variable=\x,black,ultra thick] plot ({\x},{-\x*\x});%  node[right] {$y=x^2$};
+       
+\node[right] at (1.7, -3){$y = -x^2$};
+
+% tick marks
+\foreach \x in {-2,2} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {-2,-4} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+\end{tikzpicture}
+\end{document}
+```
+-->
 </section>
 <section id="example-5">
 <h3>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Compare the graphs of two parabolas</p>
 <p>Compare the graphs of <span class="math notranslate nohighlight">\(y=x^2-4\)</span> and <span class="math notranslate nohighlight">\(y=4-x^2\)</span></p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/5eedffa253114ff40de5a16961a92eb5d55d5e7b6fcb4bda29667182f5c8dd1f.svg" src="../_images/5eedffa253114ff40de5a16961a92eb5d55d5e7b6fcb4bda29667182f5c8dd1f.svg" /></div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Graph of <span class="math notranslate nohighlight">\(y=x^2 - 4\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Notice how the graph of <span class="math notranslate nohighlight">\(y=x^2-4\)</span> looks like the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> with each point shifted down <span class="math notranslate nohighlight">\(4\)</span> units.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y=x^2-4$" src="../_images/pic_precalc_graphing_example_5_1.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a vertical y-axis with the points -2 and -4 marked. There is a grid of one unit by one unit cells in the background. The concave up quadratic function y = x squared - 4 is graphed on these axes. The function is decreasing as it comes from the left to x=0, meets the y-axis at (0,-4), and increases as it goes off to the right.</p>
 </div>
-</details><div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/682246065f814627050f713d7431d47ba54b33259b19746d1af3a140678c8605.svg" src="../_images/682246065f814627050f713d7431d47ba54b33259b19746d1af3a140678c8605.svg" /></div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Graph of <span class="math notranslate nohighlight">\(y= 4 - x^2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Notice how the graph of <span class="math notranslate nohighlight">\(y=4-x^2\)</span> looks like the graph of <span class="math notranslate nohighlight">\(y=-x^2\)</span> with each point shifted up <span class="math notranslate nohighlight">\(4\)</span> units.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y=4 - x^2$" src="../_images/pic_precalc_graphing_example_5_2.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -3, -1, 1 and 3 marked. There is a vertical y-axis with the points 2 and 4 marked. There is a grid of one unit by one unit cells in the background. The concave down quadratic function y = -x squared + 4 is graphed on these axes. The function is increasing as it comes from the left to x=0, meets the y-axis at (0,4), and decreases as it goes off to the right.</p>
 </div>
-</details><p>Notice how the graph of <span class="math notranslate nohighlight">\(y=x^2-4\)</span> looks like the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> with each point shifted down <span class="math notranslate nohighlight">\(4\)</span> units.  Also, the graph of <span class="math notranslate nohighlight">\(y=4-x^2\)</span> looks like the graph of <span class="math notranslate nohighlight">\(y=-x^2\)</span> with each point shifted up <span class="math notranslate nohighlight">\(4\)</span> units.</p>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=1.5]
+\draw[black,fill=white] (-3.75,-5.25) rectangle (3.75,1.25);
+\draw[very thin,color=lightgray,step=0.5] (-3.4,-4.9) grid (3.4,0.9);
+%\draw[very thin,color=gray,step=2] (-3.5,-5) grid (3.5,1);
+
+\draw[->] (-3.5,0) -- (3.5,0) node[below] {$x$};
+\draw[->] (0,-5) -- (0,1) node[right] {$y$};
+\draw[domain=-2.23:2.23,smooth,variable=\x,black,ultra thick] plot ({\x},{\x*\x- 4});%  node[right] {$y=x^2$};
+       
+\node[right] at (0.9, -3.5){$y = x^2-4$};
+
+% tick marks
+\foreach \x in {-3,-1,1,3} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {-2} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+\end{tikzpicture}
+\end{document}
+```
+-->
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=1.5]
+\draw[black,fill=white] (-3.75,-1.25) rectangle (3.75,5.25);
+\draw[very thin,color=lightgray,step=0.5] (-3.4,-0.9) grid (3.4,4.9);
+%\draw[very thin,color=gray,step=2] (-3.5,-1) grid (3.5,5);
+
+\draw[->] (-3.5,0) -- (3.5,0) node[below] {$x$};
+\draw[->] (0,-1) -- (0,5) node[right] {$y$};
+\draw[domain=-2.23:2.23,smooth,variable=\x,black,ultra thick] plot ({\x},{4 - \x*\x});%  node[right] {$y=x^2$};
+       
+\node[right] at (0.9, 3.5){$y = 4-x^2$};
+
+% tick marks
+\foreach \x in {-3,-1,1,3} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {2} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+\end{tikzpicture}
+\end{document}
+```
+-->
+<div class="note admonition">
+<p class="admonition-title">Effect of Adding or Subtracting a Constant</p>
+<p>For any function, <span class="math notranslate nohighlight">\(f(x)\)</span>, and constant, <span class="math notranslate nohighlight">\(C\)</span>, the graph of <span class="math notranslate nohighlight">\(y=f(x) + C\)</span> is the result of shifting the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span> up or down, depending on if the constant, <span class="math notranslate nohighlight">\(C\)</span>, is positive or negative, respectively.</p>
+</div>
 </section>
 <section id="example-6">
 <span id="precalc-graphing-example6"></span><h3>Example 6<a class="headerlink" href="#example-6" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Sketch the graph of a parabola</p>
 <p>Sketch the graph of <span class="math notranslate nohighlight">\(f(x) = x^2 - 4x -12\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -806,52 +1057,187 @@ x - 6 = 0 ~~~~&amp;\Rightarrow~~~~ x = 6
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span> goes through the points <span class="math notranslate nohighlight">\((-2,0)\)</span> and <span class="math notranslate nohighlight">\((6,0)\)</span>.</p>
 </div>
-</details><p>Draw the graph of a parabola that opens upward (since the coefficient of <span class="math notranslate nohighlight">\(x^2\)</span> in <span class="math notranslate nohighlight">\(f(x)\)</span> is positive) and goes through the points found in <strong>Steps 1</strong> and <strong>2</strong>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/9186f5ccf7de7798d1dd8922b87cbfff87265fe9a7d174bdb827ea5af32e1fc0.svg" src="../_images/9186f5ccf7de7798d1dd8922b87cbfff87265fe9a7d174bdb827ea5af32e1fc0.svg" /></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Sketch the parabola based on the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>-intercepts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Draw the graph of a parabola that opens upward (since the coefficient of <span class="math notranslate nohighlight">\(x^2\)</span> in <span class="math notranslate nohighlight">\(f(x)\)</span> is positive) and goes through the points found in <strong>Steps 1</strong> and <strong>2</strong>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y= x^2 - 4x - 12$" src="../_images/pic_precalc_graphing_example_6.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -3, 3, 6 and 9 marked. There is a vertical y-axis with the points -12 marked. There is a grid of one unit by two unit cells in the background. The concave up quadratic function y = x squared - 4x - 12 is graphed on these axes. The function is decreasing as it comes from the left to x=2 and increases as it goes off to the right.  The function meets the y-axis at the point (0,-12) and meets the x-axis at the points (-3,0) and (6,0).</p>
 </div>
-</details></section>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[xscale=0.8,yscale=0.5]
+
+\draw[black,fill=white] (-6.6,-19) rectangle (11.6,11);
+\draw[very thin,color=lightgray,xstep=1,ystep=2] (-5.9,-17.9) grid (10.9,9.9);
+
+\draw[->] (-6,0) -- (11,0) node[below] {$x$};
+\draw[->] (0,-18) -- (0,10) node[right] {$y$};
+\draw[domain=-3:7,smooth,variable=\x,black,ultra thick] plot ({\x},{\x*\x - 4*\x - 12});
+       
+\node[right] at (5, -9){$y = x^2-4x-12$};
+
+%\draw [fill=black,thick] (-2,0) circle [radius=0.15];
+%\draw [fill=black,thick] (6,0) circle [radius=0.15];
+%\draw [fill=black,thick] (0,-12) circle [radius=0.15];
+\draw [fill=black] (-2,0) ellipse [x radius = 0.15, y radius = 0.225];
+\draw [fill=black] (6,0) ellipse [x radius = 0.15, y radius = 0.225];
+\draw [fill=black] (0,-12) ellipse [x radius = 0.15, y radius = 0.225];
+
+% tick marks
+\foreach \x in {-3,3,9} 
+	\draw [thick] (\x cm,6pt) -- (\x cm,-6pt) node[below] {$\x$};
+\foreach \y in {-12} 
+	\draw [thick] (-2pt,\y cm) -- (2pt,\y cm) node[right] {$\y$};
+	
+\clip (-8,-20) rectangle (12,10);
+\draw[domain=-4:8,smooth,variable=\x,black,ultra thick] plot ({\x},{\x*\x - 4*\x - 12});
+
+\end{tikzpicture}
+\end{document}
+```
+-->
+</section>
 </section>
 <section id="graphing-power-and-root-functions">
 <h2>Graphing Power and Root Functions<a class="headerlink" href="#graphing-power-and-root-functions" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Power Functions</p>
 <p>Any function of the form</p>
 <div class="math notranslate nohighlight">
 \[y = x^r\]</div>
-<p>where <span class="math notranslate nohighlight">\(r\)</span> is any real number is called a power function.  Thus <span class="math notranslate nohighlight">\(x^2\)</span>, <span class="math notranslate nohighlight">\(x^3\)</span>, <span class="math notranslate nohighlight">\(x^4\)</span>, etc. are examples of power functions.  Root functions, like the square root (i.e., <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> or <span class="math notranslate nohighlight">\(x^{1/2}\)</span>) and cube root (i.e., <span class="math notranslate nohighlight">\(\sqrt[3]{x}\)</span> or <span class="math notranslate nohighlight">\(x^{1/3}\)</span>) are also examples of power functions</p>
+<p>where <span class="math notranslate nohighlight">\(r\)</span> is any real number is called a power function.  Thus <span class="math notranslate nohighlight">\(x^2\)</span>, <span class="math notranslate nohighlight">\(x^3\)</span>, <span class="math notranslate nohighlight">\(x^4\)</span>, etc. are examples of power functions.  Root functions, like the square root (i.e., <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> or <span class="math notranslate nohighlight">\(x^{1/2}\)</span>) and cube root (i.e., <span class="math notranslate nohighlight">\(\sqrt[3]{x}\)</span> or <span class="math notranslate nohighlight">\(x^{1/3}\)</span>) are also examples of power functions.</p>
+</div>
 <section id="example-7">
 <h3>Example 7<a class="headerlink" href="#example-7" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Sketch the graph of a power function</p>
 <p>Sketch the graph of <span class="math notranslate nohighlight">\(y = x^3\)</span>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/f5e7c187969c06524d47dc3d4768f8b3359e60e9a8ee19eb32e55c913224c515.svg" src="../_images/f5e7c187969c06524d47dc3d4768f8b3359e60e9a8ee19eb32e55c913224c515.svg" /></div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Graph of <span class="math notranslate nohighlight">\(y= x^3\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Notice how the graph of <span class="math notranslate nohighlight">\(y=x^3\)</span> always increases from left-to-right and looks like a horizontal line as it goes through the origin.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y=x^3$" src="../_images/pic_precalc_graphing_example_7.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points -2, -1, 1 and 2 marked. There is a vertical y-axis with the points -3, -2, -1, 1, 2, and 3 marked. There is a grid of one unit by one unit cells in the background. The cubic function y = x cubed is graphed on these axes. The function is increasing and concave down as it comes from the left to x=0, meets the y-axis at (0,0), and is increasing and concave up as it goes off to the right.</p>
 </div>
-</details><p>Notice how the graph of <span class="math notranslate nohighlight">\(y=x^3\)</span> always increases from left-to-right and looks like a horizontal line as it goes through the origin.</p>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=2]
+
+\draw[black,fill=white] (-3.5,-4.3) rectangle (3.5,4.3);
+\draw[very thin,color=lightgray,step=1] (-2.9,-3.9) grid (2.9,3.9);
+
+      \draw[->] (-3,0) -- (3,0) node[below] {$x$};
+      \draw[->] (0,-4) -- (0,4) node[right] {$y$};
+      \draw[domain=-1.57:1.57,smooth,variable=\x,black,ultra thick,samples=100] plot ({\x},\x^3);
+      \node at (2.4,3.2){$y = x^3$};
+       
+      % tick marks
+\foreach \x in {-2,-1,1,2} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {-3,-2,-1,1,2,3} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+    \end{tikzpicture}
+\end{document}
+```
+-->
 </section>
 <section id="example-8">
 <h3>Example 8<a class="headerlink" href="#example-8" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Sketch the graph of a root function</p>
 <p>Sketch the graph of the square root function, <span class="math notranslate nohighlight">\(y = \sqrt{x}\)</span>.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/4cb113d44053fdec4565aa907bdc5bf160ca50f2f9f03377e7586df87ff36b8d.svg" src="../_images/4cb113d44053fdec4565aa907bdc5bf160ca50f2f9f03377e7586df87ff36b8d.svg" /></div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Graph of <span class="math notranslate nohighlight">\(y= \sqrt{x}\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Notice how the graph of <span class="math notranslate nohighlight">\(y=\sqrt{x}\)</span> looks like the upper half of a parabola that opens to the right.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y=\sqrt{x}$" src="../_images/pic_precalc_graphing_example_8.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, 7, 8, and 9 marked. There is a vertical y-axis with the points 1, 2, and 3 marked. There is a grid of one unit by one unit cells in the background. The increasing concave down function y = square root x is graphed on these axes. The graph begins at (0,0).</p>
 </div>
-</details><p>Notice how the graph of <span class="math notranslate nohighlight">\(y=\sqrt{x}\)</span> looks like the upper half of a parabola that opens to the right.</p>
-</section>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=2]
+
+\draw[black,fill=white] (-0.8,-0.8) rectangle (10.3,4.3);
+\draw[very thin,color=lightgray,step=1] (0,0) grid (9.9,3.9);
+
+      \draw[->] (-0.5,0) -- (10,0) node[below] {$x$};
+      \draw[->] (0,-0.5) -- (0,4) node[right] {$y$};
+      \draw[domain=0:1,smooth,variable=\x,black,ultra thick,samples=100] plot ({\x},\x^0.5);
+      \draw[domain=1:10,smooth,variable=\x,black,ultra thick,samples=36] plot ({\x},\x^0.5);
+      \node at (7,3.2){$y = \sqrt{x}$};
+       
+      % tick marks
+\foreach \x in {1,...,9} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {1,2,3} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+    \end{tikzpicture}
+\end{document}
+```
+--></section>
 </section>
 </section>
 

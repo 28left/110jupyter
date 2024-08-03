@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -491,54 +492,68 @@ document.write(`
 <h1>Try It Yourself<a class="headerlink" href="#try-it-yourself" title="Link to this heading">#</a></h1>
 <section id="exercise-1">
 <h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Link to this heading">#</a></h2>
-<p>Rewrite</p>
-<div class="math notranslate nohighlight">
-\[\dfrac{3}{x-1} - \dfrac{5}{2x+1}\]</div>
-<p>as a single ratio.</p>
+<div class="tip admonition">
+<p class="admonition-title">Simplify</p>
+<p>Rewrite <span class="math notranslate nohighlight">\(\dfrac{3}{x-1} - \dfrac{5}{2x+1}\)</span> as a single ratio.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer:  <span class="math notranslate nohighlight">\(\dfrac{x+8}{(x-1)(2x+1)}\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-2">
 <h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Expand</p>
 <p>Expand <span class="math notranslate nohighlight">\((8x+11)(2x-5)\)</span> using the FOIL method.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(16x^2 - 18x - 55\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-3">
 <h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Expand</p>
 <p>Expand <span class="math notranslate nohighlight">\(5x^6(3x-4)^2\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(45x^8 - 120x^7 + 80x^6\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-4">
 <h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Expand</p>
 <p>Expand <span class="math notranslate nohighlight">\((1+3x)(1-3x)(2+x)\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(2 + x - 18x^2 - 9x^3\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-5">
 <h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Expand</p>
 <p>Factor <span class="math notranslate nohighlight">\(4x^5 - 25x^3\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer:  <span class="math notranslate nohighlight">\(x^3(2x-5)(2x+5)\)</span> (use difference of squares)</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-6">
 <h2>Exercise 6<a class="headerlink" href="#exercise-6" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Simplify</p>
 <p>Simplify</p>
 <div class="math notranslate nohighlight">
 \[\dfrac{2x^4 - 2x^3 -12x^2}{9x^2 - x^4}\]</div>
@@ -548,22 +563,31 @@ document.write(`
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(-2(x+2)/(x+3)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-7">
 <h2>Exercise 7<a class="headerlink" href="#exercise-7" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Factor and Simplify</p>
 <p>Factor and simplify <span class="math notranslate nohighlight">\(10x(x+2)^5 - 5x^2(x+2)^3\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(5x(x+2)^3(2x^2+7x + 8)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-8">
 <h2>Exercise 8<a class="headerlink" href="#exercise-8" title="Link to this heading">#</a></h2>
-<p>Sketch the graph of the line defined by <span class="math notranslate nohighlight">\(y + 2 = \dfrac{1}{4}(x-5)\)</span>. Use the fact that the line is described in point-slope form.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/733892602faabe22c4508f01ef52d76b5e975ad20d2247050f42fb743bb497b9.svg" src="../_images/733892602faabe22c4508f01ef52d76b5e975ad20d2247050f42fb743bb497b9.svg" /></div>
+<div class="tip admonition">
+<p class="admonition-title">Sketch a line</p>
+<p>Sketch the graph of the line defined by <span class="math notranslate nohighlight">\(y = \dfrac{1}{4}(x-5) - 2\)</span>. Use the fact that the line is described in point-slope form.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column sd-m-auto docutils">
+<img alt="Grid" src="../_images/pic_precalc_tiy_exercise_8.png" />
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -573,27 +597,78 @@ document.write(`
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Answer: Line through the point <span class="math notranslate nohighlight">\((5,-2)\)</span> with a slope of <span class="math notranslate nohighlight">\(1/4\)</span>.</p>
+<p class="sd-card-text">Answer: Line through the point <span class="math notranslate nohighlight">\((5,-2)\)</span> with a slope of <span class="math notranslate nohighlight">\(1/4\)</span>.  The line has an <span class="math notranslate nohighlight">\(x\)</span>-intercept at <span class="math notranslate nohighlight">\(x=13\)</span> and a <span class="math notranslate nohighlight">\(y\)</span>-intercept at <span class="math notranslate nohighlight">\(y=-3.25\)</span></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column sd-m-auto docutils">
+<img alt="Graph of $y= \dfrac{1}{4}(x-5) - 2$" src="../_images/pic_precalc_tiy_exercise_8_answer.png" />
 </div>
-</details></section>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Graph of the line y = (x-5)/4 - 2.  The line crosses the y-axis at the point (0,-3.25) and crosses the x-axis at the point (13,0).</p>
+</div>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-cell]
+
+%load_ext itikz
+```
+
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\begin{tikzpicture}[scale=0.8]
+
+\draw[black,fill=white] (-5.5,-6.5) rectangle (20.5,3.5);
+\draw[very thin,color=lightgray,step=1] (-4.9,-5.9) grid (19.9,2.9);
+
+      \draw[->] (-5,0) -- (20,0) node[below] {$x$};
+      \draw[->] (0,-6) -- (0,3) node[right] {$y$};
+%\draw[domain=-5:20,smooth,variable=\x,black,ultra thick,samples=100] plot ({\x},\x/4 - 13/4);
+       
+      % tick marks
+\foreach \x in {-4,4,8,12,16} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {-4,-2,2} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+    \end{tikzpicture}
+\end{document}
+```
+-->
+</section>
 <section id="exercise-9">
 <h2>Exercise 9<a class="headerlink" href="#exercise-9" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Solve an inequality</p>
 <p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 - 16 &gt; 0\)</span>.  Write your answer using interval notation.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\((-\infty,-4) \cup (4,\infty)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-10">
 <h2>Exercise 10<a class="headerlink" href="#exercise-10" title="Link to this heading">#</a></h2>
-<p>Sketch the graph of</p>
-<div class="math notranslate nohighlight">
-\[f(x) = 12x^2 - x - 6\]</div>
-<p>by finding the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>-intercepts (see Graphing, <a class="reference internal" href="precalc_graphing.html#precalc-graphing-example6"><span class="std std-ref">Example 6</span></a>).</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/1a7d151b49100514413af6d9973a2d11d622ad529bd531f8100083617d2db9ab.svg" src="../_images/1a7d151b49100514413af6d9973a2d11d622ad529bd531f8100083617d2db9ab.svg" /></div>
+<div class="tip admonition">
+<p class="admonition-title">Sketch a line</p>
+<p>Sketch the graph of <span class="math notranslate nohighlight">\(f(x) = 12x^2 - x - 6\)</span> by finding the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span>-intercepts (see Graphing, <a class="reference internal" href="precalc_graphing.html#precalc-graphing-example6"><span class="std std-ref">Example 6</span></a>).</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column sd-m-auto docutils">
+<img alt="Graph of $y=\sqrt{x}$" src="../_images/pic_precalc_tiy_exercise_10.png" />
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -604,10 +679,52 @@ document.write(`
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: Parabola that opens upward and goes through the points <span class="math notranslate nohighlight">\((0,-6)\)</span>, <span class="math notranslate nohighlight">\((3/4,0)\)</span>, and <span class="math notranslate nohighlight">\((-2/3,0)\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column sd-m-auto docutils">
+<img alt="Graph of $y=\sqrt{x}$" src="../_images/pic_precalc_tiy_exercise_10_answer.png" />
 </div>
-</details></section>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of the function y = 12 x squared - x - 6.  The graph is a parabola that opens up, crosses the x-axis at the points (-2/3,0) and (3/4,0), and crosses the y-axis at the point (0,-6).</p>
+</div>
+</details></div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\begin{tikzpicture}[xscale=3,yscale=0.6]
+
+\draw[black,fill=white] (-1.5,-8.6) rectangle (1.5,8.6);
+\draw[very thin,color=lightgray,ystep=1,xstep=0.25] (-1.3,-7.9) grid (1.3,7.9);
+
+      \draw[->] (-1.3,0) -- (1.3,0) node[below] {$x$};
+      \draw[->] (0,-8) -- (0,8) node[right] {$y$};
+%\draw[domain=-1:1,smooth,variable=\x,black,ultra thick,samples=100] plot ({\x},12*\x*\x-\x-6);
+       
+      % tick marks
+\foreach \x in {-1,1} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\foreach \y in {-8,-6,-4,-2,2,4,6} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {$\y$};
+
+    \end{tikzpicture}
+\end{document}
+```
+-->
+</section>
 <section id="exercise-11">
 <h2>Exercise 11<a class="headerlink" href="#exercise-11" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Domain</p>
 <p>Determine the domain of each of the following functions.  Write your answer using interval notation.</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(g(x) = \dfrac{x}{12x^2 - x - 6}\)</span> <br><br></p></li>
@@ -619,7 +736,8 @@ document.write(`
 <p class="sd-card-text">Answer: 1.) <span class="math notranslate nohighlight">\((-\infty,-2/3) \cup (-2/3,3/4) \cup (3/4,\infty)\)</span>,<br />
 2.) <span class="math notranslate nohighlight">\((-\infty,-2/3) \cup (3/4,\infty)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

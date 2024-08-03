@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -486,9 +487,9 @@ document.write(`
 <h1>Solving Equations<a class="headerlink" href="#solving-equations" title="Link to this heading">#</a></h1>
 <section id="how-to-solve-an-equation">
 <h2>How to Solve an Equation<a class="headerlink" href="#how-to-solve-an-equation" title="Link to this heading">#</a></h2>
-<p>To find all values of <span class="math notranslate nohighlight">\(x\)</span> that satisfy an equation (e.g., <span class="math notranslate nohighlight">\(f(x) = g(x)\)</span>), complete the following steps:</p>
 <div class="info admonition">
-<p class="admonition-title">Steps for solving an equation</p>
+<p class="admonition-title">Steps for Solving an Equation</p>
+<p>To find all values of <span class="math notranslate nohighlight">\(x\)</span> that satisfy an equation (e.g., <span class="math notranslate nohighlight">\(f(x) = g(x)\)</span>), complete the following steps:</p>
 <ol class="arabic simple">
 <li><p>Rewrite equation as <span class="math notranslate nohighlight">\(f(x) - g(x) = 0\)</span>, if needed.</p></li>
 <li><p>Simplify and factor the left-hand side.</p></li>
@@ -500,7 +501,6 @@ document.write(`
 <div class="tip admonition">
 <p class="admonition-title">Solving a quadratic equation</p>
 <p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x^2 - 4x - 12 = 0\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Factor   <span class="math notranslate nohighlight">\(x^2 - 4x - 12\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -527,13 +527,13 @@ x - 6 &amp;= 0  ~~~~\Rightarrow~~~~  x = 6
 6^2 - 4(6) - 12 &amp;= 36 - 24 - 12 = 0
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Solving a rational equation</p>
 <p>Find all values of <span class="math notranslate nohighlight">\(p\)</span> such that <span class="math notranslate nohighlight">\(\dfrac{3p}{180-6p} = 1\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Multiply both sides of   <span class="math notranslate nohighlight">\(\frac{3p}{180-6p} = 1\)</span>   by the denominator,   <span class="math notranslate nohighlight">\(180-6p\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -542,12 +542,12 @@ x - 6 &amp;= 0  ~~~~\Rightarrow~~~~  x = 6
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong>   Subtract   <span class="math notranslate nohighlight">\(180 - 6p\)</span>   from both sides.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Subtract   <span class="math notranslate nohighlight">\(180 - 6p\)</span>   from both sides and simplify.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 3p - (180-6p) &amp;= 0 \\
-3p - 180 +6p &amp;= 0 &amp;&amp; \hbox{Distribute the minus sign}\\
-9p - 180 &amp;= 0 &amp;&amp; \hbox{Combine like terms}
+3p - 180 +6p &amp;= 0 &amp;&amp; \hbox{distribute the minus sign}\\
+9p - 180 &amp;= 0 &amp;&amp; \hbox{combine like terms}
 \end{align*}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -566,13 +566,13 @@ x - 6 &amp;= 0  ~~~~\Rightarrow~~~~  x = 6
 <div class="math notranslate nohighlight">
 \[\dfrac{3(20)}{180-6(20)} = \frac{60}{180-120} = \frac{60}{60} = 1\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-3">
 <h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Points of intersection</p>
 <p>Find all points of intersection of <span class="math notranslate nohighlight">\(f(x) = 6x^2 - 4x\)</span> and <span class="math notranslate nohighlight">\(g(x) = 2 - 5x\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Set   <span class="math notranslate nohighlight">\(f(x) = g(x)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -582,12 +582,12 @@ x - 6 &amp;= 0  ~~~~\Rightarrow~~~~  x = 6
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong>   Subtract   <span class="math notranslate nohighlight">\(2-5x\)</span>   from both sides of the equation in Step 1.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Subtract   <span class="math notranslate nohighlight">\(2-5x\)</span>   from both sides of the equation in Step 1 and simplify.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-6x^2 - 4x - (2 - 5x) &amp;=  0 &amp;&amp; \hbox{Note the parentheses around $2-5x$}\\
-6x^2 - 4x - 2 + 5x &amp;=  0 &amp;&amp; \hbox{Distribute the minus sign}\\
-6x^2 + x - 2 &amp;=  0 &amp;&amp; \hbox{Combine like terms}
+6x^2 - 4x - (2 - 5x) &amp;=  0 &amp;&amp; \hbox{note the parentheses around $2-5x$}\\
+6x^2 - 4x - 2 + 5x &amp;=  0 &amp;&amp; \hbox{distribute the minus sign}\\
+6x^2 + x - 2 &amp;=  0 &amp;&amp; \hbox{combine like terms}
 \end{align*}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -655,7 +655,8 @@ x - 6 &amp;= 0  ~~~~\Rightarrow~~~~  x = 6
 </table>
 </div>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 </section>
 

@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -465,11 +466,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -483,25 +487,27 @@ document.write(`
                   
   <section id="power-polynomial-rational-functions">
 <h1>Power, Polynomial &amp; Rational Functions<a class="headerlink" href="#power-polynomial-rational-functions" title="Link to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>A <strong>power function</strong> is a function that can be written in the form</p>
+<p>A <em><strong>power function</strong></em> is a function that can be written in the form</p>
 <div class="math notranslate nohighlight">
 \[ax^r\]</div>
 <p>where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(r\)</span> are constants.</p>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>A <strong>polynomial function of degree <span class="math notranslate nohighlight">\(n\)</span></strong> is a function that can be written in the form</p>
+<p>A <em><strong>polynomial function of degree <span class="math notranslate nohighlight">\(n\)</span></strong></em> is a function that can be written in the form</p>
 <div class="math notranslate nohighlight">
 \[a_0 + a_1x + a_2x^2 + \cdots + a_nx^n\]</div>
-<p>where <span class="math notranslate nohighlight">\(n\)</span> is a nonnegative integer and the constants <span class="math notranslate nohighlight">\(a_0, a_1, \ldots, a_n\)</span>  (<span class="math notranslate nohighlight">\(a_n\neq 0\)</span>) are called the <strong>coefficients</strong> of the polynomial.</p>
+<p>where <span class="math notranslate nohighlight">\(n\)</span> is a nonnegative integer and the constants <span class="math notranslate nohighlight">\(a_0, a_1, \ldots, a_n\)</span>  (<span class="math notranslate nohighlight">\(a_n\neq 0\)</span>) are called the <em><strong>coefficients</strong></em> of the polynomial.</p>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>A <strong>rational function</strong> is a function that can be written as the ratio of two polynomials.</p>
-</div>
+<p>A <em><strong>rational function</strong></em> is a function that can be written as the ratio of two polynomials.</p>
 <p>By definition, every polynomial is also considered to be a rational function.</p>
+</div>
 <div class="info admonition">
 <p class="admonition-title">Domain Considerations</p>
 <ul class="simple">
@@ -510,32 +516,40 @@ document.write(`
 </ul>
 </div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">The square root function</p>
 <p>The square root function, <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>, is</p>
 <ul class="simple">
 <li><p>a power function since <span class="math notranslate nohighlight">\(\sqrt{x} = x^{1/2}\)</span>, but</p></li>
 <li><p>is neither a polynomial nor a rational function since it includes a fractional power of <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
 </ul>
+</div>
 </section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">The reciprocal function</p>
 <p>The reciprocal function, <span class="math notranslate nohighlight">\(\dfrac{1}{x}\)</span>, is</p>
 <ul class="simple">
 <li><p>a power function since <span class="math notranslate nohighlight">\(\dfrac{1}{x} = x^{-1}\)</span>, and</p></li>
 <li><p>is also a rational function since it is the ratio of two polynomials, but</p></li>
 <li><p>is not a polynomial since it includes a negative power of <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
 </ul>
+</div>
 </section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">The volume of a sphere</p>
 <p>The volume of a sphere with radius <span class="math notranslate nohighlight">\(r\)</span> is <span class="math notranslate nohighlight">\(\dfrac{4}{3}\pi r^3\)</span>, which is a power function, a polynomial, and a rational function in the variable <span class="math notranslate nohighlight">\(r\)</span>.</p>
+</div>
 </section>
 <section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
-<p>Show that</p>
-<div class="math notranslate nohighlight">
-\[f(x) = (x^2 + 7)(x^3 - 1)\]</div>
-<p>is a polynomial (and therefore also a rational function) and determine its degree.</p>
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">The product of polynomials</p>
+<p>Show that <span class="math notranslate nohighlight">\(f(x) = (x^2 + 7)(x^3 - 1)\)</span> is a polynomial (and therefore also a rational function) and determine its degree.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Expand the product using the FOIL technique.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -548,14 +562,17 @@ document.write(`
 <span class="sd-summary-text"><strong>Step 2:</strong>   Determine the degree of   <span class="math notranslate nohighlight">\(f\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The degree of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\(5\)</span> since <span class="math notranslate nohighlight">\(f\)</span> is a polynomial and the largest power of <span class="math notranslate nohighlight">\(x\)</span> is <span class="math notranslate nohighlight">\(5\)</span>.</p>
 </div>
-</details><div class="warning admonition">
-<p class="admonition-title">Observation</p>
+</details></div>
+<div class="note admonition">
+<p class="admonition-title">An Observation about the Degree of a Product of Polynomials</p>
 <p>In the previous example, the degree of the polynomial could have been determined by adding the degrees of the individual factors.  More specifically, <span class="math notranslate nohighlight">\(f\)</span> is the product of a polynomial of degree 2 (i.e., <span class="math notranslate nohighlight">\(x^2 + 7\)</span>) and a polynomial of degree 3 (i.e., <span class="math notranslate nohighlight">\(x^3-1\)</span>).  Therefore, the degree of <span class="math notranslate nohighlight">\(f\)</span> is the sum of <span class="math notranslate nohighlight">\(2\)</span> and <span class="math notranslate nohighlight">\(3\)</span>, which is <span class="math notranslate nohighlight">\(5\)</span>.</p>
 <p>In general, a product of polynomials is also a polynomial and its degree is the sum of the degrees of the polynomial factors.</p>
 </div>
 </section>
 <section id="example-5">
-<h2>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h2>
+<h3>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">A rational function</p>
 <p>Show that <span class="math notranslate nohighlight">\(g(x) = \dfrac{4}{x-1} + \dfrac{5}{x}\)</span> is a rational function (but not a polynomial) and determine its domain.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -568,7 +585,7 @@ document.write(`
 <span class="sd-summary-text"><strong>Step 2:</strong>   Add numerators and simplify.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\frac{4x + 5(x-1)}{x(x-1)} = \frac{9x-5}{x(x-1)}\]</div>
-<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(g(x)\)</span> can be written as a ratio of polynomials, it too is a rational function.</p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(g(x)\)</span> can be written as a ratio of polynomials, it is also a rational function.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -578,7 +595,9 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[(-\infty,0)\cup (0,1) \cup (1,\infty).\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -645,11 +664,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

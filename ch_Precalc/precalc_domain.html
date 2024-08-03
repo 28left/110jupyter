@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -465,6 +466,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interval-notation">Interval Notation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
@@ -485,19 +487,27 @@ document.write(`
                   
   <section id="the-domain-of-a-function">
 <h1>The Domain of a Function<a class="headerlink" href="#the-domain-of-a-function" title="Link to this heading">#</a></h1>
-<div class="tip admonition">
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">#</a></h2>
+<div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The <strong>domain</strong> of a function is the set of all values of <span class="math notranslate nohighlight">\(x\)</span> for which the function is defined.</p>
+<p>The <em><strong>domain</strong></em> of a function is the set of all values of <span class="math notranslate nohighlight">\(x\)</span> for which the function is defined.</p>
 </div>
+<div class="note admonition">
+<p class="admonition-title">How to Determine the Domain of a Function</p>
 <p>When determining the domain of a given function, do not include any value that leads to one or more of the following:</p>
 <ul class="simple">
 <li><p>division by zero</p></li>
 <li><p>the square root of a negative number</p></li>
 <li><p>the logarithm of zero or a negative number</p></li>
 </ul>
-<p>Students should be familiar with the concepts of division and square roots.  Logarithms will be discussed in class and in a subsequent PSL Course Packet.   While there are other functions that lead to restrictions on the domain, we will limit our discussion to division, square roots, and logarithms.</p>
+<p>Students should be familiar with the concepts of division and square roots.  Logarithms will be discussed in class and in a subsequent Course Packet.   While there are other functions that lead to restrictions on the domain, we will limit our discussion to division, square roots, and logarithms.</p>
+</div>
+</section>
 <section id="interval-notation">
 <h2>Interval Notation<a class="headerlink" href="#interval-notation" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">An Interval of Values</p>
 <p>The domain of a function is typically written as a union of intervals.  In this course, we will make use of interval notation to express domains.  This notation is summarized in the following table.</p>
 <p><img alt="Table of interval types" src="../_images/pic_precalc_intervaltypes.png" /></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -513,19 +523,64 @@ Row 6. a is less than x. A ray going from an unfilled circle at a to positive in
 Row 7. x is less than or equal to b. A ray going from a filled circle at b to negative infinity on the left. (negative infinity, b]
 Row 8. x is less than b. A ray going from an unfilled circle at b to negative infinity on the left. (negative infinity, b)</p>
 </div>
-</details><p>Given two intervals, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, then the union of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\cup B\)</span>, represents the collection of values that are in <span class="math notranslate nohighlight">\(A\)</span> or in <span class="math notranslate nohighlight">\(B\)</span>.  For example,</p>
+</details></div>
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/F0Dg-6LK9RA" target="_blank">Understanding Interval Notation</a> (Links to an external site) <br>
+A review of how to rewrite inequalities using interval notation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">The Union of Intervals</p>
+<p>Given two intervals, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, then the union of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, denoted <span class="math notranslate nohighlight">\(A\cup B\)</span>, represents the collection of values that are in <span class="math notranslate nohighlight">\(A\)</span> or in <span class="math notranslate nohighlight">\(B\)</span>.  For example,</p>
 <div class="math notranslate nohighlight">
 \[(-\infty,5) \cup [7,10)\]</div>
 <p>represents the values that are less than <span class="math notranslate nohighlight">\(5\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;5\)</span>) or greater than or equal to <span class="math notranslate nohighlight">\(7\)</span> and less than <span class="math notranslate nohighlight">\(10\)</span> (i.e., <span class="math notranslate nohighlight">\(7\leq x &lt; 10\)</span>).</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/Sqi57_oAAbc" target="_blank">Interval Notation for Multiple Inequalities</a> (Links to an external site) <br>
+A review of how to write the union of multiple intervals using interval notation.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/Hm_RljsqCsM" target="_blank">Domain of a Function</a> (Links to an external site) <br>
+A review of how to determine the domain of a function and how to use interval notation to describe the domain.</p>
+</div>
+</div>
+</div>
+</div>
 <section id="example-1">
 <h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
-<p class="admonition-title"><span class="math notranslate nohighlight">\( \)</span></p>
+<p class="admonition-title">The domain of <span class="math notranslate nohighlight">\(1/x\)</span></p>
 <p>Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(1/x\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong>   Describe the domain of   <span class="math notranslate nohighlight">\(1/x\)</span>   using an inequality.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Describe the domain of   <span class="math notranslate nohighlight">\(1/x\)</span>   using inequalities.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The domain of <span class="math notranslate nohighlight">\(1/x\)</span> includes all real numbers except <span class="math notranslate nohighlight">\(x=0\)</span> (i.e., <span class="math notranslate nohighlight">\(x&lt;0\)</span> or <span class="math notranslate nohighlight">\(x&gt;0\)</span>) since division by zero is not defined.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -536,13 +591,13 @@ in interval notation as</p>
 <div class="math notranslate nohighlight">
 \[(-\infty,0) \cup (0,\infty).\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
-<p class="admonition-title"><span class="math notranslate nohighlight">\( \)</span></p>
+<p class="admonition-title">The domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span></p>
 <p>Use interval notation to describe the domain of <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Describe the domain of   <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>   using an inequality.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -555,13 +610,13 @@ in interval notation as</p>
 <div class="math notranslate nohighlight">
 \[[0,\infty).\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-3">
 <h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
-<p class="admonition-title"><span class="math notranslate nohighlight">\( \)</span></p>
+<p class="admonition-title">The domain of the square root of a polynomial</p>
 <p>Determine the domain of the function <span class="math notranslate nohighlight">\(f(x) = \sqrt{x^2 + 2x - 3}\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Describe the domain using an inequality.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -585,13 +640,13 @@ since the square root of a negative number is not defined.</p>
 (-\infty, -3] \cup [1, \infty).
 \]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-4">
 <h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
-<p class="admonition-title"><span class="math notranslate nohighlight">\( \)</span></p>
+<p class="admonition-title">The domain of a rational function</p>
 <p>Determine the domain of the function <span class="math notranslate nohighlight">\(f(x) = \dfrac{x}{x^2 + 2x - 3}\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Describe the domain by excluding all   <span class="math notranslate nohighlight">\(x\)</span>   that make   <span class="math notranslate nohighlight">\(f(x)\)</span>   undefined.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -611,13 +666,14 @@ since the square root of a negative number is not defined.</p>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 3:</strong>   Exclude the values found in Step 2 from the domain.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Since the only values of <span class="math notranslate nohighlight">\(x\)</span> that lead to division by zero are <span class="math notranslate nohighlight">\(x=-3\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x&lt;-3\)</span>, or <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>, or <span class="math notranslate nohighlight">\(x&gt;1\)</span>, which can be written in interval notation as</p>
+<p class="sd-card-text">Since the only values of <span class="math notranslate nohighlight">\(x\)</span> that lead to division by zero are <span class="math notranslate nohighlight">\(x=-3\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>, the domain of <span class="math notranslate nohighlight">\(f\)</span> consists of all <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(x\neq -3\)</span> and <span class="math notranslate nohighlight">\(x\neq 1\)</span>.  This can be written using inequalities as <span class="math notranslate nohighlight">\(x&lt;-3\)</span>, or <span class="math notranslate nohighlight">\(-3&lt;x&lt;1\)</span>, or <span class="math notranslate nohighlight">\(x&gt;1\)</span>, which can then be written in interval notation as</p>
 <div class="math notranslate nohighlight">
 \[
 (-\infty, -3) \cup (-3, 1) \cup (1, \infty).
 \]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 </section>
 
@@ -685,6 +741,7 @@ since the square root of a negative number is not defined.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interval-notation">Interval Notation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>

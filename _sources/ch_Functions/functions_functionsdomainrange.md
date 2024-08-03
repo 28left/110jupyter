@@ -17,9 +17,10 @@ kernelspec:
 ```{admonition} Definition
 :class: info
 A _**function**_ is a rule that assigns to each element in a set $A$ **one and only one** element in a set $B$.
-```
 
 It is customary to denote a function by a letter of the alphabet, such as $f$, $g$, $h$, etc.
+```
+
 
 
 ```{admonition} Definition
@@ -32,11 +33,10 @@ $$f(x)$$
 (read "$f$ of $x$") and is called the _**value**_ of $f$ at $x$.
 ```
 
-```{admonition} Definition
+````{admonition} Definition
 :class: info
 
 The set of all possible values of $f(x)$ resulting from all the possible values of $x$ in its domain, is called the _**range**_ of $f(x)$.
-```
 
 
 ```{figure} ../images/pic_limits_domainrange.png
@@ -49,6 +49,7 @@ Illustration of the domain and the range of a function
 ```{dropdown} Long Text Description
 A diagram with two ovals, one on the left marked with A, labeled domain, and one on the right marked B and labeled range. There is an arrowed line representing the function f beginning at a point labeled x in the left oval, and ending in a point labeled f(x) in the right oval.
 ```
+````
 
 ```{admonition} Definition
 :class: info
@@ -63,19 +64,22 @@ Suppose we are given the function $y=f(x)$.
 
 ## Domain Considerations
 
+```{admonition} Restrictions on the Domain
+:class: info
+
 To determine the domain of a function, we need to find what restrictions, if any, are to be placed on the independent variable. 
 
-In many practical problems, the domain of a function is dictated by the nature of the problem and any restrictions on the function used in the expression.  In this course, these restrictions will be limited to one or more of the following:
-
-```{admonition} Key restrictions
-:class: danger
+In many practical problems, the domain of a function is dictated by the context of the problem and any restrictions on the function itself.  In this course, these restrictions will be limited to one or more of the following:
 
 - **cannot take the square root of a negative number**
 - **cannot divide by zero**
 - **cannot take the logarithm of zero or a negative number**
 ```
 
+
 ### Example 1
+`````{admonition} Find the domain and range
+:class: tip
 
 Determine the domain and range of $f(x) = x^2 - 1$.  
 
@@ -85,17 +89,30 @@ Determine the domain and range of $f(x) = x^2 - 1$.
 Since $f$ does not include any division, square roots, or logarithms, its domain consists of all real numbers, $(-\infty,\infty)$.
 ```
 
-
-
-
-```{dropdown} **Step 2:** &nbsp; Determine the range of &nbsp; $f$. 
+````{dropdown} **Step 2:** &nbsp; Determine the range of &nbsp; $f$. 
 
 Since $x^2 \geq 0$ for all real $x$, by subtracting $1$ from both sides of the inequality, we obtain $f(x) = x^2 - 1 \geq -1$ for all real $x$.  Therefore, the range of $f$ is $[-1,\infty)$.
-```
 
 
 Another way to determine the domain and range of $f$ is to consider the graph of $y = f(x)$.  For this example, the graph of $y = x^2 - 1$ is a parabola that opens up and is shifted down one unit, as illustrated below.
 
+
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_functions_functionsdomainrange_example_1.png
+:alt: Graph of $y=x^2 - 1$
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points -2, -1, 1, and 2 marked. There is a vertical y-axis with the points -1, 1, 2, and 3 marked. The graph of the concave up quadratic function y = x^2 - 1 is plotted. It has x-intercepts at the points (-1,0) and (1,0), and a rounded vertex at (0,-1).
+```
+- The domain of $f$ consists of all the different $x$-coordinates of points on the graph of $f$, which is $(-\infty,\infty)$.  
+- The range of $f$ consists of all the different $y$-coordinates of points on the graph of $f$, which is $[-1,\infty)$. 
+````
+`````
 
 ```{code-cell}
 :tags: [remove-cell]
@@ -103,6 +120,7 @@ Another way to determine the domain and range of $f$ is to consider the graph of
 %load_ext itikz
 ```
 
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -132,18 +150,14 @@ Another way to determine the domain and range of $f$ is to consider the graph of
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} **Long Text Descriptions**
-There is a horizontal x-axis with the points -2, -1, 1, and 2 marked. There is a vertical y-axis with the points -1, 1, 2, and 3 marked. The graph of the concave up quadratic function y = x^2 - 1 is plotted. It has x-intercepts at the points (-1,0) and (1,0), and a rounded vertex at (0,-1).
-```
-- The domain of $f$ consists of all the different $x$-coordinates of points on the graph of $f$, which is $(-\infty,\infty)$.  
-- The range of $f$ consists of all the different $y$-coordinates of points on the graph of $f$, which is $[-1,\infty)$. 
+-->
 
 
 ### Example 2
+````{admonition} Find the domain
+:class: tip
 
-Determine the domain of 
-
-$$g(x) = \dfrac{1}{\sqrt{x}}.$$
+Determine the domain of $g(x) = \dfrac{1}{\sqrt{x}}$.
 
 
 ```{dropdown} **Step 1:** &nbsp; Consider how the square root restricts the domain.
@@ -160,9 +174,12 @@ Since $g$ includes division, we must exclude any value of $x$ that makes the den
 
 Based on the previous two steps, the domain of $g$ consists of all real numbers greater than zero, which can be written in interval notation as $(0,\infty)$.
 ```
-
+````
 
 ## Domain Analysis
+
+```{admonition} The Sum, Difference, Product, and Quotient of Two Functions and their Domains
+:class: info
 
 Let $f$ and $g$ be functions with domains $A$ and $B$, respectively.  The sum, difference, product, and quotient of $f$ and $g$ are functions defined by
 
@@ -173,10 +190,8 @@ Let $f$ and $g$ be functions with domains $A$ and $B$, respectively.  The sum, d
 (f/g)(x) &= \frac{f(x)}{g(x)} && \hbox{Quotient}
 \end{align*}
 
-```{admonition} Domains of sums, differences, products, and divisions of functions
-:class: info
 
-- The domain of $f+g$, $f-g$, and $fg$ consists of all values of $x$ that appear in both $A$ and $B$, which is called the **intersection** of $A$ and $B$, and is denoted by $A\cap B$.
+- The domain of $f+g$, $f-g$, and $fg$ consists of all values of $x$ that appear in both $A$ and $B$, which is called the **intersection** of $A$ and $B$, and is denoted by $A\cap B$. <br><br>
 
 - The domain of $f/g$ consists of $A\cap B$ excluding all values of $x$ such that $g(x)=0$.
 ```
@@ -185,6 +200,8 @@ Let $f$ and $g$ be functions with domains $A$ and $B$, respectively.  The sum, d
 
 
 ### Example 3
+````{admonition} Find the domain
+:class: tip
 
 Let $f(x) = \sqrt{x + 2}$ and $g(x) = \sqrt{5-x}$.  Determine the domain of $f+g$, $f-g$, $fg$, and $f/g$.  Use interval notation to express each domain.
 
@@ -220,5 +237,6 @@ And finally, adding $5$ to both sides yields $x=5$ (i.e., $g(x) = 0$ only when $
 
 ```{dropdown} **Step 4:** &nbsp; Determine the domain of &nbsp; $f/g$.
 
-The domain of $f/g$ consists of $[-2,5]$, excluding all values of $x$ such that $g(x) = 0$.  In the previous step, we determined that the only value of $x$ that satisfies $g(x) = 0$ is $x=5$.  Therefore, the domain of $f/g$ is $[-2,5)$.
+The domain of $f/g$ consists of $[-2,5]$, excluding all values of $x$ such that $g(x) = 0$.  In the previous step, we determined that the only value of $x$ that satisfies $g(x) = 0$ is $x=5$, which must now be excluded from the domain.  Therefore, the domain of $f/g$ is $[-2,5)$.
 ```
+````

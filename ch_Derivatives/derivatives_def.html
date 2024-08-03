@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
@@ -76,7 +76,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch_Derivatives/derivatives_def';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Basic Rules of Differentiation" href="derivatives_rules.html" />
+    <link rel="next" title="Differentiability" href="derivatives_differentiable.html" />
     <link rel="prev" title="Derivatives" href="derivatives_.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -218,8 +218,8 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Examples: Computing Limits from Graphs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Examples: Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
@@ -228,6 +228,7 @@
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="derivatives_.html">Derivatives</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="derivatives_differentiable.html">Differentiability</a></li>
 <li class="toctree-l2"><a class="reference internal" href="derivatives_rules.html">Basic Rules of Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="derivatives_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -465,7 +466,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-basic-definitions">The Basic Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-derivatives-using-the-limit-definition">Computing Derivatives Using the Limit Definition</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
@@ -484,48 +485,55 @@ document.write(`
                   
   <section id="the-concept-of-the-derivative">
 <h1>The Concept of the Derivative<a class="headerlink" href="#the-concept-of-the-derivative" title="Link to this heading">#</a></h1>
-<section id="the-basic-definitions">
-<h2>The Basic Definitions<a class="headerlink" href="#the-basic-definitions" title="Link to this heading">#</a></h2>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Slope of a Tangent Line</p>
-<p>The <strong>slope of the tangent line</strong> to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at the point <span class="math notranslate nohighlight">\(P(x, f(x))\)</span> is given by</p>
+<p class="admonition-title">The Slope of a Tangent Line</p>
+<p>The <em><strong>slope of the line tangent</strong></em> to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at the point <span class="math notranslate nohighlight">\((x, f(x))\)</span> is given by</p>
 <div class="math notranslate nohighlight">
 \[\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
 <p>if the limit exists.</p>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Average and Instantaneous Rate of Change</p>
-<p>The <strong>average rate of change</strong> of <span class="math notranslate nohighlight">\(f(x)\)</span> over the interval <span class="math notranslate nohighlight">\((x, x+h)\)</span> or slope of the secant line to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> through the points <span class="math notranslate nohighlight">\((x,f(x))\)</span> and <span class="math notranslate nohighlight">\((x+h, f(x+h))\)</span> is</p>
+<p>The <em><strong>average rate of change</strong></em> of <span class="math notranslate nohighlight">\(f(x)\)</span> over the interval <span class="math notranslate nohighlight">\((x, x+h)\)</span>, which is also the slope of the secant line to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> through the points <span class="math notranslate nohighlight">\((x,f(x))\)</span> and <span class="math notranslate nohighlight">\((x+h, f(x+h))\)</span>, is given by</p>
 <div class="math notranslate nohighlight">
 \[ \frac{f(x+h) - f(x)}{h}.\]</div>
-<p>The <strong>instantaneous rate of change</strong> of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x\)</span> or slope of the tangent line to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\((x,f(x))\)</span> is</p>
+<p>The <em><strong>instantaneous rate of change</strong></em> of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x\)</span>, which is also the slope of the tangent line to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\((x,f(x))\)</span>, is given by</p>
 <div class="math notranslate nohighlight">
 \[\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
 <p>if the limit exists.</p>
 </div>
 <div class="info admonition">
 <p class="admonition-title">The Limit Definition of the Derivative</p>
-<p>The <strong>derivative</strong> of a function <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> is the function <span class="math notranslate nohighlight">\(f'(x)\)</span> which is defined as follows</p>
+<p>The <em><strong>derivative</strong></em> of a function <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> is the function <span class="math notranslate nohighlight">\(f'(x)\)</span> which is defined as follows</p>
 <div class="math notranslate nohighlight">
 \[f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
 <p>and the domain of <span class="math notranslate nohighlight">\(f'(x)\)</span> is the set of all <span class="math notranslate nohighlight">\(x\)</span> where the limit exists.</p>
 </div>
-<div class="warning admonition">
-<p class="admonition-title">Differentiability and Continuity</p>
-<p>The function <span class="math notranslate nohighlight">\(f(x)\)</span> is <strong>differentiable</strong> at <span class="math notranslate nohighlight">\(x = a\)</span> if the following limit exists.</p>
+<div class="info admonition">
+<p class="admonition-title">The Equation of a Tangent Line</p>
+<p>The equation of the line tangent to <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x=a\)</span> is given by</p>
 <div class="math notranslate nohighlight">
-\[\lim_{h\to 0} \frac{f(a+h) - f(a)}{h}\]</div>
-<p>If a function is differentiable at <span class="math notranslate nohighlight">\(x=a\)</span>, then it is continuous at <span class="math notranslate nohighlight">\(x=a\)</span>. However, if a function is continuous at <span class="math notranslate nohighlight">\(x=a\)</span>, then it <strong>is not necessarily</strong> differentiable at <span class="math notranslate nohighlight">\(x=a\)</span>.</p>
+\[y = f'(a)(x-a) + f(a)\]</div>
+<p>The above equation is equivalent to the point-slope equation of a line (i.e., <span class="math notranslate nohighlight">\(y=m(x-a) + b\)</span>) where the slope, <span class="math notranslate nohighlight">\(m\)</span>, is equal to <span class="math notranslate nohighlight">\(f'(a)\)</span>, and the line goes through the point <span class="math notranslate nohighlight">\((a,b)\)</span>, where <span class="math notranslate nohighlight">\(b = f(a)\)</span>.</p>
 </div>
 </section>
 <section id="computing-derivatives-using-the-limit-definition">
 <h2>Computing Derivatives Using the Limit Definition<a class="headerlink" href="#computing-derivatives-using-the-limit-definition" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Simplify the difference quotient</p>
+<p>When computing the derivative, <span class="math notranslate nohighlight">\(f'(x)\)</span>, using its limit definition, it turns out that the limit will most likely be an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>.  This means that to evaluate the limit, we’ll have to simplify the difference quotient</p>
+<div class="math notranslate nohighlight">
+\[\frac{f(x+h) - f(x)}{h}\]</div>
+<p>until we can cancel out the factor of <span class="math notranslate nohighlight">\(h\)</span> in the denominator.   This simplification will usually consist of some combination of expanding (e.g., FOIL) and/or rationalization.</p>
+<p>Once the factor of <span class="math notranslate nohighlight">\(h\)</span> in the denominator has been cancelled out, we can evaluate the limit by plugging in <span class="math notranslate nohighlight">\(h=0\)</span>.</p>
+</div>
 <section id="example-1">
 <h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
-<p>Find the slope of the tangent line to the function</p>
-<div class="math notranslate nohighlight">
-\[f(x)=3x^2+12\]</div>
-<p>at <span class="math notranslate nohighlight">\(x=5\)</span> using the limit definition of the derivative.</p>
+<div class="tip admonition">
+<p class="admonition-title">Equation of a tangent line</p>
+<p>Compute the slope of the line tangent to <span class="math notranslate nohighlight">\(f(x)=3x^2+12\)</span> at <span class="math notranslate nohighlight">\(x=5\)</span> using the limit definition of the derivative.  Then write down the equation of the line tangent to <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x=5\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Write down the limit definition of a derivative.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -538,7 +546,7 @@ document.write(`
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong>   Plug   <span class="math notranslate nohighlight">\(f(x+h)\)</span>   and   <span class="math notranslate nohighlight">\(f(x)\)</span>   into definition.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Plug <span class="math notranslate nohighlight">\(f(x+h)\)</span> and <span class="math notranslate nohighlight">\(f(x)\)</span> into the limit definition of the derivative.
+<p class="sd-card-text">Plug <span class="math notranslate nohighlight">\(f(x+h) = 3(x+h)^2 + 12\)</span> and <span class="math notranslate nohighlight">\(f(x) = 3x^2 + 12\)</span> into the limit definition of the derivative.
 Using brackets will help avoid errors from forgetting to distribute the negative sign:</p>
 <div class="math notranslate nohighlight">
 \[ f'(x)=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\]</div>
@@ -565,21 +573,40 @@ f'(x) &amp;=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\\ \\
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 5:</strong>   Evaluate the limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<div class="math notranslate nohighlight">
-\[f'(x)=\lim_{h \to 0} 6x+3h=6x+3(0)=6x\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(x)
+&amp;=\lim_{h \to 0} 6x+3h \\
+&amp;= 6x+3(0) &amp;&amp;\text{plug in $h=0$}\\
+&amp;=6x &amp;&amp; \text{simplify}
+\end{align*}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 6:</strong>   Plug   <span class="math notranslate nohighlight">\(x=5\)</span>   into evaluated limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 6:</strong>   Compute <span class="math notranslate nohighlight">\(f'(5)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">We have found that <span class="math notranslate nohighlight">\(f'(x) = 6x\)</span> is the derivative of our function and the general form of the slope of the tangent line. All that’s left for us to do is to plug in <span class="math notranslate nohighlight">\(x=5\)</span>. Therefore, the slope of the tangent line when <span class="math notranslate nohighlight">\(x=5\)</span> (i.e., <span class="math notranslate nohighlight">\(f'(5)\)</span>) is equal to <span class="math notranslate nohighlight">\(30\)</span>.</p>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 7:</strong>   Compute <span class="math notranslate nohighlight">\(f(5)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">In order to write down the equation of the tangent line, we also need to know the value <span class="math notranslate nohighlight">\(f(5)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[f(5) = 3(5)^2 + 12 = 87\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 8:</strong>   Write down the equation of the tangent line.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Now that we know <span class="math notranslate nohighlight">\(f(5) = 87\)</span> and <span class="math notranslate nohighlight">\(f'(5) = 30\)</span>, the equation of the tangent line is given by</p>
+<div class="math notranslate nohighlight">
+\[y = 30(x-5) + 87\]</div>
+</div>
+</details></div>
+</section>
 <section id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
-<p>Find the derivative of the function</p>
-<div class="math notranslate nohighlight">
-\[f(x)=3\sqrt{x}\]</div>
-<p>using the limit definition of the derivative.</p>
+<div class="tip admonition">
+<p class="admonition-title">Derivative of a square root function</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)=3\sqrt{x}\)</span> using the limit definition of the derivative.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Write down the limit definition of a derivative.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -591,7 +618,7 @@ f'(x) &amp;=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\\ \\
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong>   Plug   <span class="math notranslate nohighlight">\(f(x+h)\)</span>   and   <span class="math notranslate nohighlight">\(f(x)\)</span>   into definition.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Plug <span class="math notranslate nohighlight">\(f(x+h)\)</span> and <span class="math notranslate nohighlight">\(f(x)\)</span> into the limit definition of the derivative.</p>
+<p class="sd-card-text">Plug <span class="math notranslate nohighlight">\(f(x+h) = 3\sqrt{x+h}\)</span> and <span class="math notranslate nohighlight">\(f(x) = 3\sqrt{x}\)</span> into the limit definition of the derivative.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 f'(x) 
@@ -601,15 +628,14 @@ f'(x)
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong>   Rationalize, FOIL, and Simplify.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Rationalize, FOIL, and simplify.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 f'(x) 
-&amp;= \lim_{h \to 0} \frac{3(\sqrt{x+h}-\sqrt{x})}{h}\cdot \frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}} &amp;&amp; \hbox{Rationalize} \\ \\
+&amp;= \lim_{h \to 0} \frac{3(\sqrt{x+h}-\sqrt{x})}{h}\cdot \frac{\sqrt{x+h}+\sqrt{x}}{\sqrt{x+h}+\sqrt{x}} &amp;&amp; \hbox{rationalize} \\ \\
 &amp;= \lim_{h \to 0} \frac{3(\sqrt{x+h}-\sqrt{x})(\sqrt{x+h}+\sqrt{x})}{h(\sqrt{x+h}+\sqrt{x})}  \\ \\
 &amp;= \lim_{h \to 0} \frac{3(\sqrt{x+h}\sqrt{x+h} + \sqrt{x+h}\sqrt{x}-\sqrt{x}\sqrt{x+h} - \sqrt{x}\sqrt{x})}{h(\sqrt{x+h}+\sqrt{x})} &amp;&amp; \hbox{FOIL} \\ \\
-&amp;= \lim_{h \to 0} \frac{3(x+h + \cancel{\sqrt{x+h}\sqrt{x}}-\cancel{\sqrt{x}\sqrt{x+h}} - x)}{h(\sqrt{x+h}+\sqrt{x})} &amp;&amp; \hbox{Simplify} \\ \\
-&amp;= \lim_{h \to 0} \frac{3(\cancel{x}+h-\cancel{x})}{h(\sqrt{x+h}+\sqrt{x})}  \\ \\
+&amp;= \lim_{h \to 0} \frac{3(\cancel{x}+h + \cancel{\sqrt{x+h}\sqrt{x}}-\cancel{\sqrt{x}\sqrt{x+h}} - \cancel{x})}{h(\sqrt{x+h}+\sqrt{x})} &amp;&amp; \hbox{simplify} \\ \\
 &amp;= \lim_{h \to 0} \frac{3 h}{h(\sqrt{x+h}+\sqrt{x})} 
 \end{align*}\]</div>
 <p class="sd-card-text">Notice how making use of the formula <span class="math notranslate nohighlight">\((\sqrt{A} - \sqrt{B})(\sqrt{A} + \sqrt{B}) = A - B\)</span> can help eliminate some of the above computations.</p>
@@ -623,11 +649,18 @@ f'(x)
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 5:</strong>   Evaluate the limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<div class="math notranslate nohighlight">
-\[f'(x) = \lim_{h \to 0} \frac{3}{\sqrt{x+h}+\sqrt{x}} = \frac{3}{\sqrt{x + 0}+\sqrt{x}} = \frac{3}{\sqrt{x}+\sqrt{x}} = \frac{3}{2\sqrt{x}}\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(x) 
+&amp;= \lim_{h \to 0} \frac{3}{\sqrt{x+h}+\sqrt{x}} \\
+&amp;= \frac{3}{\sqrt{x + 0}+\sqrt{x}} &amp;&amp; \text{plug in $h=0$}\\
+&amp;= \frac{3}{\sqrt{x}+\sqrt{x}} &amp;&amp; \text{simplify}\\
+&amp;= \frac{3}{2\sqrt{x}} &amp;&amp; \text{combine like terms}
+\end{align*}\]</div>
 <p class="sd-card-text">Therefore, the derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> is equal to <span class="math notranslate nohighlight">\(\frac{3}{2\sqrt{x}}\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 </section>
 
@@ -671,11 +704,11 @@ f'(x)
       </div>
     </a>
     <a class="right-next"
-       href="derivatives_rules.html"
+       href="derivatives_differentiable.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Basic Rules of Differentiation</p>
+        <p class="prev-next-title">Differentiability</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -695,7 +728,7 @@ f'(x)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-basic-definitions">The Basic Definitions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-derivatives-using-the-limit-definition">Computing Derivatives Using the Limit Definition</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
