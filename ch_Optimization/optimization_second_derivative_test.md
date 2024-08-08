@@ -25,9 +25,11 @@ Suppose $c$ is a critical point of $f$ where $f'(c) = 0$ and $f''(x)$ is continu
 3. If $f''(c) = 0$, then the test is **inconclusive**.
 ```
 
-## Example 1
+### Example 1
+````{admonition} Classifying critical points using the second derivative test
+:class: tip 
 
-In [Example 1](optimization_critical_points_example_1), we found that the critical points of 
+In [Example 1](optimization_critical_points_example_1) from Critical Points, we found that the critical points of 
 
 $$f(x)=2x^3-15x^2+36x+20$$ 
 
@@ -37,7 +39,7 @@ were $x=2$ and $x=3$. Classify each critical point using the Second Derivative T
 
 \begin{align*}
   f''(x) 
-  &= \frac{d}{dx}(6x^2 - 30x+36) & \hbox{using $f'(x)$ from Example 4}\\
+  &= \frac{d}{dx}(6x^2 - 30x+36) & \hbox{using $f'(x)$ from previous example}\\
   &= 12x - 30
 \end{align*}
 ```
@@ -48,10 +50,13 @@ Since $f'(2) = 0$ and $f''(2) = -6 < 0$, $f(x)$ has a relative maximum at $x=2$.
 
 Since $f'(3) = 0$ and  $f''(3) = 6 > 0$, $f(x)$ has a relative minimum at $x=3$.
 ```
+````
 
-## Example 2
+### Example 2
+````{admonition} Classifying critical points using the second derivative test
+:class: tip 
 
-In [Example 2](optimization_critical_points_example_2), we found that the only critical point of 
+In [Example 2](optimization_critical_points_example_2) from Critical Points, we found that the only critical point of 
 
 $$f(x)=\frac{1}{x^2-1}$$ 
 
@@ -61,7 +66,7 @@ was $x=0$. Classify the critical point using the Second Derivative Test.
 
 \begin{align*}
   f''(x) 
-  &= \frac{d}{dx}\left(\frac{-2x}{(x^2-1)^2}\right) & \hbox{using $f'(x)$ from Example 5}\\
+  &= \frac{d}{dx}\left(\frac{-2x}{(x^2-1)^2}\right) & \hbox{using $f'(x)$ from previous example}\\
   &= \frac{-2(x^2-1)^2 - (-2x)\cdot 2(x^2-1)2x}{(x^2-1)^4}\\
   &= \frac{2(x^2-1)[-(x^2-1) + 4x^2]}{(x^2-1)^4}\\
   &= \frac{2(1 + 3x^2)}{(x^2-1)^3}
@@ -72,3 +77,4 @@ was $x=0$. Classify the critical point using the Second Derivative Test.
 
 Since $f'(0) = 0$ and $f''(0) = -2 < 0$, $f(x)$ has a relative maximum at $x=0$.
 ```
+````

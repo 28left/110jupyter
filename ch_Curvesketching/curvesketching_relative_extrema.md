@@ -19,19 +19,42 @@ kernelspec:
 %load_ext itikz
 ```
 
+## Definitions
 ```{admonition} Definition
 :class: info
 
-The relative extrema of a function $f$:
-
-- A function $f$ has a **relative maximum** at $x=c$ if there exists an open interval $(a,b)$ containing $c$ such that $f(c) \geq f(x)$ for all $x$ in $(a,b)$.
-- A function $f$ has a **relative minimum** at $x=c$ if there exists an open interval $(a,b)$ containing $c$ such that $f(c) \leq f(x)$ for all $x$ in $(a,b)$.
+A function $f$ has a _**relative maximum**_ at $x=c$ if there exists an open interval $(a,b)$ containing $c$ such that $f(c) \geq f(x)$ for all $x$ in $(a,b)$.  In this case, $f(c)$ is called a  _**relative maximum value**_  of $f$. 
 ```
 
-## Example 1
+```{admonition} Definition
+:class: info
 
-The relative extrema are highlighted on the following graph. Observe how the relative extrema appear at points on the curve where the increasing/decreasing behavior of the function changes. 
+A function $f$ has a _**relative minimum**_ at $x=c$ if there exists an open interval $(a,b)$ containing $c$ such that $f(c) \leq f(x)$ for all $x$ in $(a,b)$.  In this case, $f(c)$ is called a  _**relative minimum value**_  of $f$. 
+```
 
+
+### Example 1
+
+````{admonition} Relative Extrema
+:class: tip
+
+The relative extrema are highlighted on the following graph. Observe how the relative extrema appear at points on the curve where the increasing/decreasing behavior of the function changes.  In other words, relative extrema appear at points on the graph of the function where the derivative changes sign.
+
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_curvesketching_relative_extrema.png
+:alt: Graph of a generic function
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis. There is a vertical y-axis. The graph of a function is plotted on these axes. Moving from left to right, the function goes up towards a rounded corner, which is marked in red and labeled a relative maximum, then goes downward towards a sharp corner, which is marked in green and labeled a relative minimum, then goes up again towards another sharp corner, which is marked in red and labeled a relative maximum, then goes down again towards a rounded corner, which is marked in green and labeled a relative minimum, and then goes upward.
+```
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -68,11 +91,10 @@ The relative extrema are highlighted on the following graph. Observe how the rel
 \end{tikzpicture}
 \end{document} 
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis. There is a vertical y-axis. The graph of a function is plotted on these axes. Moving from left to right, the function goes up towards a rounded corner, which is marked in red and labeled a relative maximum, then goes downward towards a sharp corner, which is marked in green and labeled a relative minimum, then goes up again towards another sharp corner, which is marked in red and labeled a relative maximum, then goes down again towards a rounded corner, which is marked in green and labeled a relative minimum, and then goes upward.
-```
-In other words, relative extrema appear at points on the graph of the function where the derivative changes sign.
+-->
 
-## How To Find Relative Extrema
+```{admonition} Observation About $f'$ Where Relative Extrema Appear
+:class: note
 
 The relative extrema of a function appear where $f'(x)$ changes from positive to negative or from negative to positive. Since $f'(x)$ changes sign when there is a relative extrema, it must be the case that either $f'(x)=0$ or $f'(x)$ does not exist at the relative extrema.
+```

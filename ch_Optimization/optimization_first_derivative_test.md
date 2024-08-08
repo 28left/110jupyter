@@ -32,9 +32,11 @@ Suppose $c$ is a critical point of the continuous function $f$.
 3. If $f'(x)$ **does not change sign** at $x=c$, then $f(c)$ is **not a relative extrema.** 
 ```
 
-## Example 1
+### Example 1
+`````{admonition} Classifying critical points using the first derivative test
+:class: tip 
 
-In [Example 1](optimization_critical_points_example_1), we found that the critical points of 
+In [Example 1](optimization_critical_points_example_1) from Critical Points, we found that the critical points of 
 
 $$f(x)=2x^3-15x^2+36x+20$$ 
 
@@ -53,10 +55,10 @@ width: 400px
 ---
 Interval analysis of $f'(x) = 6(x-2)(x-3)$
 ```
-````
 ```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with positive to the left of two, negative between two and three, and positive to the right of three.
 ```
+````
 
 ```{dropdown} **Step 2:** Classify each critical point.
 
@@ -64,11 +66,13 @@ Since $f'(x)$ changes from positive to negative at $x=2$, $f(x)$ has a relative 
 
 Since $f'(x)$ changes from negative to positive at $x=3$, $f(x)$ has a relative minimum at $x=3$.
 ```
+`````
 
+### Example 2
+`````{admonition} Classifying critical points using the first derivative test
+:class: tip 
 
-## Example 2
-
-In [Example 2](optimization_critical_points_example_2), we found that the only critical point of 
+In [Example 2](optimization_critical_points_example_2) from Critical Points, we found that the only critical point of 
 
 $$f(x)=\frac{1}{x^2-1}$$ 
 
@@ -87,12 +91,14 @@ width: 400px
 ---
 Interval analysis of $f'(x) = -\dfrac{2x}{(x^2-1)^2}$.
 ```
-````
 ```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with positive to the left of negative one, positive between negative one and zero, negative between zero and one, and positive to the right of one.
 ```
+````
+
 
 ```{dropdown} **Step 2:** Classify each critical point.
 
 Since $f'(x)$ changes from positive to negative at $x=0$, $f(x)$ has a relative maximum at $x=0$.
 ```
+`````

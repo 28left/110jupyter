@@ -30,7 +30,9 @@ kernelspec:
 4. **Identify the critical points** of the function, and determine the corresponding optimization values of the function over its domain using any of the optimization strategies discussed in class (e.g. First Derivative Test, Second Derivative Test, Graphing).
 ```
 
-## Example 1
+### Example 1
+````{admonition} Maximize profits
+:class: tip 
 
 An apartment complex has 100 two-bedroom units. The monthly profit in dollars realized from renting out the apartments is given by: 
 
@@ -80,36 +82,33 @@ Instead, observe that $P(x)$ is a parabola that opens downward (i.e., $P''(x) = 
 
 Therefore, profit is maximized when 43 units are rented out.
 ```
+````
 
-## Example 2
+
+### Example 2
+`````{admonition} Maximize area
+:class: tip 
 
 A rectangular field is to be enclosed by a fence. One side of the fenced-in area is a building, so fencing is not required on that side. If we have 200 feet of fencing material, determine the dimensions of the largest field that can be enclosed by the fencing material.
 
-```{dropdown} **Step 1:** Draw a figure, if necessary.
 
-See below.
+````{dropdown} **Step 1:** Draw a figure, if necessary.
+
+::::{grid} auto
+:::{grid-item}
+:margin: auto
+```{image} ../images/pic_optimization_applications_area.png
+:alt: Rectangular region bounded on one side by a building
 ```
-
-```{code-cell}
-:tags: [remove-input]
-
-%%itikz
-\documentclass[tikz]{standalone}
-\begin{document}
-
-\begin{tikzpicture}[scale = 5]
-  \draw[fill = white!80!black] (0,0) rectangle (1,.5);
-  \draw[ultra thick] (-.2,0)--(1.2,0) node[midway,below] {Building};
-  \draw (0,0) -- (0,0.5) node[midway,left] {$x$} 
-  -- (1,0.5) node[midway,above] {$y$} 
-  -- (1,0) node[midway,right] {$x$};
-  \node at (.5,.25) {Fenced Area};
-\end{tikzpicture}
-\end{document} 
-```
+:::
+::::
 ```{dropdown} Long Text Description
 There is a thick black horizontal line representing the edge of the building. Above that there is a grey rectangle representing the fenced area. The side lengths of the rectangle are height = x and width = y.
 ```
+````
+
+
+
 ```{dropdown} **Step 2:** Translate the problem description into an expression that includes the quantity to be optimized.
 
 $$\text{Maximize: Area} = x \cdot y$$
@@ -153,16 +152,9 @@ Solve for $y$ to find the other dimension of the field:
 
 We conclude that the field with maximum area enclosed by 200 feet of fencing material is 50 feet deep and 100 feet wide. 
 ```
+`````
 
-## Example 3
-
-A rectangular box with a **square** base and a volume of $24$ ft$^3$ has costs to construct of $\$10 / \text{ft}^2$ for the sides, $\$20 / \text{ft}^2$ for the top, and $\$40 / \text{ft}^2$ for the base. Determine the dimensions of the box which minimize the total cost to construct the box.
-
-```{dropdown} **Step 1:** Draw a figure, if necessary.
-
-See below.
-```
-
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -170,45 +162,43 @@ See below.
 \documentclass[tikz]{standalone}
 \begin{document}
 
-\def\boxWidth{3}
-\def\boxHeight{4}
-\def\boxDepth{2}
-
-\begin{tikzpicture}[scale=0.8]
-
-  % labels
-  \draw [|-|] (0,-0.4) -- (\boxWidth,-0.4) node [midway,fill=white] {$x$};
-  \draw [|-|] (\boxWidth + \boxDepth/1.414 + 0.4,\boxDepth/1.414) -- +(0,\boxHeight)
-  node [midway,fill=white] {$y$};
-  \draw [|-|] (\boxWidth + 0.2828, -0.2828) -- +(\boxDepth/1.414,\boxDepth/1.414) node [midway,fill=white] {$x$};
-
-
-  % silohette
-  \fill [white,opacity=1.0] (0,0) -- ++(0,\boxHeight) -- ++(\boxDepth/1.414,\boxDepth/1.414) -- ++(\boxWidth,0) -- ++(0,-\boxHeight) -- ++(-\boxDepth/1.414,-\boxDepth/1.414) -- cycle;
-
-  % back face with a top
-  \draw [thick] (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) -| ++(\boxWidth,-\boxHeight);
-  \draw [dashed,thick] (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) |- ++(\boxWidth,-\boxHeight);
-
-  %% back face without a top
-  %\draw [thick] (\boxDepth/1.414,\boxHeight) -- (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) -| ++(\boxWidth,-\boxHeight);
-  %\draw [dashed,thick] (\boxDepth/1.414,\boxHeight) |- ++(\boxWidth,-\boxHeight + \boxDepth/1.414);
-
-  % diagonals
-  \draw [thick] (0,\boxHeight) -- +(\boxDepth/1.414,\boxDepth/1.414);
-  \draw [dashed,thick] (0,0) -- +(\boxDepth/1.414,\boxDepth/1.414);
-  \draw [thick] (\boxWidth,0) -- +(\boxDepth/1.414,\boxDepth/1.414);
-  \draw [thick] (\boxWidth,\boxHeight) -- +(\boxDepth/1.414,\boxDepth/1.414);
-
-  % \front face
-  \draw [thick] (0,0) rectangle (\boxWidth,\boxHeight);
+\begin{tikzpicture}[scale = 5]
+  \draw[fill = white!80!black] (0,0) rectangle (1,.5);
+  \draw[ultra thick] (-.2,0)--(1.2,0) node[midway,below] {Building};
+  \draw (0,0) -- (0,0.5) node[midway,left] {$x$} 
+  -- (1,0.5) node[midway,above] {$y$} 
+  -- (1,0) node[midway,right] {$x$};
+  \node at (.5,.25) {Fenced Area};
 \end{tikzpicture}
 \end{document} 
 ```
+-->
+
+
+### Example 3
+`````{admonition} Minimize costs
+:class: tip 
+
+A rectangular box with a **square** base and a volume of $24$ ft$^3$ has costs to construct of $\$10 / \text{ft}^2$ for the sides, $\$20 / \text{ft}^2$ for the top, and $\$40 / \text{ft}^2$ for the base. Determine the dimensions of the box which minimize the total cost to construct the box.
+
+
+````{dropdown} **Step 1:** Draw a figure, if necessary.
+
+::::{grid} auto
+:::{grid-item}
+:margin: auto
+```{image} ../images/pic_optimization_applications_box.png
+:alt: A rectangular box with square base
+:width: 250px
+```
+:::
+::::
 ```{dropdown} Long Text Description
 A two dimensional projective diagram of a three dimensional square prism, with the square face horizontal and of side length x, and height y.
-
 ```
+````
+
+
 ```{dropdown} **Step 2:** Translate the problem description into an expression that includes the quantity to be optimized.
 
 \begin{align*}
@@ -264,8 +254,57 @@ $$ y = \frac{24}{2^2}= 6$$
 
 Therefore, the dimensions of the box that minimize the cost of construction are $2 \times 2 \times 6$.
 ```
+`````
 
-## Example 4
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\def\boxWidth{3}
+\def\boxHeight{4}
+\def\boxDepth{2}
+
+\begin{tikzpicture}[scale=0.8]
+
+  % labels
+  \draw [|-|] (0,-0.4) -- (\boxWidth,-0.4) node [midway,fill=white] {$x$};
+  \draw [|-|] (\boxWidth + \boxDepth/1.414 + 0.4,\boxDepth/1.414) -- +(0,\boxHeight)
+  node [midway,fill=white] {$y$};
+  \draw [|-|] (\boxWidth + 0.2828, -0.2828) -- +(\boxDepth/1.414,\boxDepth/1.414) node [midway,fill=white] {$x$};
+
+
+  % silohette
+  \fill [white,opacity=1.0] (0,0) -- ++(0,\boxHeight) -- ++(\boxDepth/1.414,\boxDepth/1.414) -- ++(\boxWidth,0) -- ++(0,-\boxHeight) -- ++(-\boxDepth/1.414,-\boxDepth/1.414) -- cycle;
+
+  % back face with a top
+  \draw [thick] (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) -| ++(\boxWidth,-\boxHeight);
+  \draw [dashed,thick] (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) |- ++(\boxWidth,-\boxHeight);
+
+  %% back face without a top
+  %\draw [thick] (\boxDepth/1.414,\boxHeight) -- (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) -| ++(\boxWidth,-\boxHeight);
+  %\draw [dashed,thick] (\boxDepth/1.414,\boxHeight) |- ++(\boxWidth,-\boxHeight + \boxDepth/1.414);
+
+  % diagonals
+  \draw [thick] (0,\boxHeight) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [dashed,thick] (0,0) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [thick] (\boxWidth,0) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [thick] (\boxWidth,\boxHeight) -- +(\boxDepth/1.414,\boxDepth/1.414);
+
+  % \front face
+  \draw [thick] (0,0) rectangle (\boxWidth,\boxHeight);
+\end{tikzpicture}
+\end{document} 
+```
+-->
+
+
+### Example 4
+````{admonition} Maximize profits
+:class: tip 
 
 A computer manufacturer determines that in order to sell $x$ units of a new computer, the price per unit in dollars must be:
 
@@ -276,6 +315,7 @@ The manufacturer also determines that the total cost of producing $x$ units is g
 $$C(x) = 3400 + 60x$$
 
 Assuming all units produced can be sold, how many units must the company produce to maximize profit $P(x)$?
+
 
 ```{dropdown} **Step 1:** Draw a figure, if necessary.
 
@@ -318,3 +358,4 @@ We can confirm that $x = 610$ corresponds to the maximum profit by verifying tha
 
 Therefore, in order to maximize profits, the company must produce and sell 610 units (at a price of $p(610) = 2500 - 2\cdot 610 = 1280$ dollars per unit).
 ```
+````

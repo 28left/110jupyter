@@ -19,23 +19,47 @@ kernelspec:
 %load_ext itikz
 ```
 
+## Definitions
 ```{admonition} Definition
 :class: info
 
-The absolute extrema of a function $f$:
-
-- If $f(c) \geq f(x)$ for all $x$ in the domain of $f$, then $f(c)$ is called the **absolute maximum value** of $f$.
-- If $f(c) \leq f(x)$ for all $x$ in the domain of $f$, then $f(c)$ is called the **absolute minimum value** of $f$.
+A function $f$ has an _**absolute maximum**_ at $x=c$ if $f(c) \geq f(x)$ for all $x$ in the domain of $f$.  In this case, $f(c)$ is called the  _**absolute maximum value**_  of $f$. 
 ```
 
-## Absolute Extrema in a Closed Interval
+```{admonition} Definition
+:class: info
+
+A function $f$ has an _**absolute minimum**_ at $x=c$ if $f(c) \leq f(x)$ for all $x$ in the domain of $f$.  In this case, $f(c)$ is called the  _**absolute minimum value**_  of $f$. 
+```
+
+
+```{admonition} Absolute Extrema on a Closed Interval
+:class: note
 
 If a function $f$ is continuous on a closed interval $[a,b]$, then $f$ has both an absolute maximum value and an absolute minimum value on $[a,b]$.
+```
 
-## Example 1
 
-Observe that for a continuous function defined on a closed interval, absolute extrema can either appear at the endpoints of the interval or at the same place as a relative extrema.
+### Example 1
+````{admonition} Absolute extrema
+:class: tip
 
+For a continuous function defined on a closed interval, absolute extrema can either appear at the endpoints of the interval or at the same place as a relative extrema.
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_optimization_absolute_extrema.png
+:alt: Absolute extrema
+```
+:::
+::::
+```{dropdown} Long Text Descriptions
+There is a horizontal x axis with the points a and b marked. There is a vertical y axis. The graph of a function is plotted on these axes. The function begins on the left with a red marked point labelled "not a relative extremum," is decreasing and concave up until it hits a rounded corner at a red marked point labelled "relative minimum," is increasing and concave up until it hits a hard corner marked red and labelled "relative maximum," decreases while concave up to a rounded corner at a red marked point labelled "absolute and relative maximum," and increases and is concave up until it ends at a point labelled "absolute maximum." There is a vertical dashed line between the point labelled "not a relative extremum" and the point (a,0). There is a vertical dashed line between the point labelled "absolute maximum" and the point (b,0).
+```
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -74,11 +98,7 @@ Observe that for a continuous function defined on a closed interval, absolute ex
 \end{tikzpicture}
 \end{document} 
 ```
-```{dropdown} **Long Text Descriptions**
-
-There is a horizontal x axis with the points a and b marked. There is a vertical y axis. The graph of a function is plotted on these axes. The function begins on the left with a red marked point labelled "not a relative extremum," is decreasing and concave up until it hits a rounded corner at a red marked point labelled "relative minimum," is increasing and concave up until it hits a hard corner marked red and labelled "relative maximum," decreases while concave up to a rounded corner at a red marked point labelled "absolute and relative maximum," and increases and is concave up until it ends at a point labelled "absolute maximum." There is a vertical dashed line between the point labelled "not a relative extremum" and the point (a,0). There is a vertical dashed line between the point labelled "absolute maximum" and the point (b,0).
-
-```
+-->
 
 ## How to Find the Absolute Extrema of a Function on a Closed Interval
 
@@ -92,13 +112,11 @@ To find the absolute extrema of a function $f$ on a closed interval $[a,b]$
 3. The absolute maximum value and absolute minimum value of $f$ will correspond to the largest and smallest numbers, respectively, found in Step 2.
 ```
 
-## Example 2
+### Example 2
+````{admonition} Finding absolute extrema
+:class: tip
 
-Find the absolute extrema of the function 
-
-$$f(x)=x^3-2x^2-4x+4$$ 
-
-on the interval $[0,3]$.
+Find the absolute extrema of the function $f(x)=x^3-2x^2-4x+4$ on the interval $[0,3]$.
 
 ```{dropdown} **Step 1:** Decide whether $f$ is continuous on the interval.
 
@@ -128,14 +146,14 @@ Therefore, $f'(x)=0$ when $x=-2/3$ and $x=2$. But since $x=-2/3$ is not on the i
 
 It follows that $f(2)=-4$ is the absolute minimum value and $f(0)=4$ is the absolute maximum value.
 ```
+````
 
-## Example 3
 
-Find the absolute extrema of the function 
+### Example 3
+````{admonition} Finding absolute extrema
+:class: tip
 
-$$f(x)=4x^5+5x^4$$ 
-
-on the interval $[-2,1]$.
+Find the absolute extrema of the function $f(x)=4x^5+5x^4$ on the interval $[-2,1]$.
 
 ```{dropdown} **Step 1:** Decide whether $f$ is continuous on the interval.
 
@@ -166,14 +184,14 @@ Therefore, $f'(x) = 0$ when $x=0$ and $x=-1$, both of which are on $(-2,1)$.
 
 It follows that $f(-2)=-48$ is the absolute minimum value and $f(1)=9$ is the absolute maximum value.
 ```
+````
 
-## Example 4
 
-Find the absolute extrema of the function 
+### Example 4
+````{admonition} Finding absolute extrema
+:class: tip
 
-$$f(x)=\frac{1}{x-1}$$ 
-
-on the interval $[2,4]$.
+Find the absolute extrema of the function $f(x)=\dfrac{1}{x-1}$ on the interval $[2,4]$.
 
 ```{dropdown} **Step 1:** Decide whether $f$ is continuous on the interval.
 
@@ -206,3 +224,4 @@ Since there are no critical points, we need only evaluate $f$ at $x=2$ and $x=4$
 
 It follows that $f(4)=1/3$ is the absolute minimum value and $f(2)=1$ is the absolute maximum value.
 ```
+````
