@@ -466,9 +466,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-first-derivative-to-classify-critical-points">Using the First Derivative to Classify Critical Points</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-first-derivative-to-classify-critical-points">Using the First Derivative to Classify Critical Points</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -493,17 +496,51 @@ document.write(`
 <li><p>If <span class="math notranslate nohighlight">\(f'(x)\)</span> <strong>does not change sign</strong> at <span class="math notranslate nohighlight">\(x=c\)</span>, then <span class="math notranslate nohighlight">\(f(c)\)</span> is <strong>not a relative extrema.</strong></p></li>
 </ol>
 </div>
-</section>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Classify critical points based on graph of <span class="math notranslate nohighlight">\(f'\)</span></p>
+<p>The following graph corresponds to <span class="math notranslate nohighlight">\(f'(x)\)</span>, the first derivative of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Using the graph of <span class="math notranslate nohighlight">\(f'(x)\)</span>, find and classify all critical points of <span class="math notranslate nohighlight">\(f(x)\)</span>.  You may assume that <span class="math notranslate nohighlight">\(f'(x)\)</span> is continuous for all <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(f'(x) = 0\)</span> only when <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=1\)</span>, and <span class="math notranslate nohighlight">\(x=3\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y = f'(x)$" src="../_images/pic_curvesketching_firstderivativetest_3.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of the derivative of a continuous function on the interval (-3,4).  The derivative is equal to zero at x = -2, x = 1, and x = 3.  The derivative decreases on the interval (-3,-1.2), increases on the interval (-1.2,1), decreases on the interval (1,2.4), and increases on the interval (2.4,4).</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Determine the critical points of <span class="math notranslate nohighlight">\(f(x)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> is continuous for all <span class="math notranslate nohighlight">\(x\)</span>, and therefore defined for all <span class="math notranslate nohighlight">\(x\)</span>, the only critical points of <span class="math notranslate nohighlight">\(f(x)\)</span> occur where <span class="math notranslate nohighlight">\(f'(x) = 0\)</span>.  And we were specifically told that the derivative is equal to zero only when <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=1\)</span>, and <span class="math notranslate nohighlight">\(x=3\)</span>, so these are the three critical points of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Classify each critical point.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from positive to negative at <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative maximum at <span class="math notranslate nohighlight">\(x=-2\)</span>.</p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> does not change sign at <span class="math notranslate nohighlight">\(x=1\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> does not have a relative extrema at <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from negative to positive at <span class="math notranslate nohighlight">\(x=3\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x=3\)</span>.</p>
+</div>
+</details></div>
+</section>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Classifying critical points using the first derivative test</p>
-<p>In <a class="reference internal" href="curvesketching_critical_points.html#curvesketching-critical-points-example-1"><span class="std std-ref">Example 1</span></a>, we found that the critical points of</p>
+<p>In <a class="reference internal" href="curvesketching_critical_points.html#curvesketching-critical-points-example-1"><span class="std std-ref">Example 1</span></a> of the previous section, we found that the critical points of</p>
 <div class="math notranslate nohighlight">
 \[f(x) = \sqrt[3]{x^2-1}\]</div>
 <p>were <span class="math notranslate nohighlight">\(x=-1\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=1\)</span>.
 Classify each critical point using the First Derivative Test.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Break up the domain of   <span class="math notranslate nohighlight">\(f'(x)\)</span>   at each critical point.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -515,28 +552,28 @@ Classify each critical point using the First Derivative Test.</p>
 <p><span class="caption-number">Fig. 4 </span><span class="caption-text">Interval analysis of <span class="math notranslate nohighlight">\(f'(x) = \dfrac{2x}{3(x^2 - 1)^{2/3}}\)</span></span><a class="headerlink" href="#pic-curvesketching-firstderivativetest-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">A number line with positive and negative signs assigned to intervals, which are negative to the left of negative one, negative between negative one and zero, positive between zero and one, and positive to the right of one.</p>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong>   Classify each critical point.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from negative to positive at <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
-<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> does not change sign at <span class="math notranslate nohighlight">\(x=-1\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> does not have relative extrema at these values of <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> does not change sign at <span class="math notranslate nohighlight">\(x=-1\)</span> and at <span class="math notranslate nohighlight">\(x=1\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> does not have relative extrema at these values of <span class="math notranslate nohighlight">\(x\)</span>.</p>
 </div>
-</details></section>
-<section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+</details></div>
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Classifying critical points using the first derivative test</p>
-<p>In <a class="reference internal" href="curvesketching_critical_points.html#curvesketching-critical-points-example-2"><span class="std std-ref">Example 2</span></a>, we found that the critical points of</p>
+<p>In <a class="reference internal" href="curvesketching_critical_points.html#curvesketching-critical-points-example-2"><span class="std std-ref">Example 2</span></a> of the previous section, we found that the critical points of</p>
 <div class="math notranslate nohighlight">
 \[f(x) = x^3 +3x^2 - 24x + 1\]</div>
 <p>were <span class="math notranslate nohighlight">\(x=-4\)</span> and <span class="math notranslate nohighlight">\(x=2\)</span>. Classify the critical point using the First Derivative Test.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Break up the domain of   <span class="math notranslate nohighlight">\(f'(x)\)</span>   at each critical point.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -548,18 +585,21 @@ Classify each critical point using the First Derivative Test.</p>
 <p><span class="caption-number">Fig. 5 </span><span class="caption-text">Interval analysis of <span class="math notranslate nohighlight">\(f'(x) = 3(x+4)(x-2)\)</span>.</span><a class="headerlink" href="#pic-curvesketching-firstderivativetest-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">A number line with positive and negative signs assigned to intervals, with positive to the left of negative four, negative between negative four and two, and positive to the right of two.</p>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong>   Classify each critical point.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from positive to negative at <span class="math notranslate nohighlight">\(x=-4\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative maximum at <span class="math notranslate nohighlight">\(x=-4\)</span>.  Since <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from negative to positive at <span class="math notranslate nohighlight">\(x=2\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from positive to negative at <span class="math notranslate nohighlight">\(x=-4\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative maximum at <span class="math notranslate nohighlight">\(x=-4\)</span>.</p>
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from negative to positive at <span class="math notranslate nohighlight">\(x=2\)</span>, <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -626,9 +666,12 @@ Classify each critical point using the First Derivative Test.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-first-derivative-to-classify-critical-points">Using the First Derivative to Classify Critical Points</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-first-derivative-to-classify-critical-points">Using the First Derivative to Classify Critical Points</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

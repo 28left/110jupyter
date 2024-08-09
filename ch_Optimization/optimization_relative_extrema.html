@@ -466,10 +466,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-find-relative-extrema">How To Find Relative Extrema</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -483,45 +485,97 @@ document.write(`
                   
   <section id="relative-extrema">
 <h1>Relative Extrema<a class="headerlink" href="#relative-extrema" title="Link to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The relative extrema of a function <span class="math notranslate nohighlight">\(f\)</span>:</p>
-<ul class="simple">
-<li><p>A function <span class="math notranslate nohighlight">\(f\)</span> has a <strong>relative maximum</strong> at <span class="math notranslate nohighlight">\(x=c\)</span> if there exists an open interval <span class="math notranslate nohighlight">\((a,b)\)</span> containing <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\(f(c) \geq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
-<li><p>A function <span class="math notranslate nohighlight">\(f\)</span> has a <strong>relative minimum</strong> at <span class="math notranslate nohighlight">\(x=c\)</span> if there exists an open interval <span class="math notranslate nohighlight">\((a,b)\)</span> containing <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\(f(c) \leq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
-</ul>
+<p>A function <span class="math notranslate nohighlight">\(f\)</span> has a <em><strong>relative maximum</strong></em> at <span class="math notranslate nohighlight">\(x=c\)</span> if there exists an open interval <span class="math notranslate nohighlight">\((a,b)\)</span> containing <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\(f(c) \geq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>.  In this case, <span class="math notranslate nohighlight">\(f(c)\)</span> is called a  <em><strong>relative maximum value</strong></em>  of <span class="math notranslate nohighlight">\(f\)</span>.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>A function <span class="math notranslate nohighlight">\(f\)</span> has a <em><strong>relative minimum</strong></em> at <span class="math notranslate nohighlight">\(x=c\)</span> if there exists an open interval <span class="math notranslate nohighlight">\((a,b)\)</span> containing <span class="math notranslate nohighlight">\(c\)</span> such that <span class="math notranslate nohighlight">\(f(c) \leq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>.  In this case, <span class="math notranslate nohighlight">\(f(c)\)</span> is called a  <em><strong>relative minimum value</strong></em>  of <span class="math notranslate nohighlight">\(f\)</span>.</p>
 </div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
-<p>The relative extrema are highlighted on the following graph. Observe how the relative extrema appear at points on the curve where the increasing/decreasing behavior of the function changes.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/2c057c1d21f24236657c7c6347a940ffbdca80a54194ddd41ef291b61ba44ac1.svg" src="../_images/2c057c1d21f24236657c7c6347a940ffbdca80a54194ddd41ef291b61ba44ac1.svg" /></div>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Relative Extrema</p>
+<p>The relative extrema are highlighted on the following graph. Observe how the relative extrema appear at points on the curve where the increasing/decreasing behavior of the function changes.  In other words, relative extrema appear at points on the graph of the function where the derivative changes sign.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a generic function" src="../_images/pic_curvesketching_relative_extrema.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">There is a horizontal x axis. There is a vertical y axis. The graph of a function is plotted on these axes. Moving from left to right, the function goes up towards a rounded corner, which is marked in red and labeled a relative maximum, then goes downward towards a sharp corner, which is marked in green and labeled a relative minimum, then goes up again towards another sharp corner, which is marked in red and labeled a relative maximum, then goes down again towards a rounded corner, which is marked in green and labeled a relative minimum, and then goes upward.</p>
+<p class="sd-card-text">There is a horizontal x-axis. There is a vertical y-axis. The graph of a function is plotted on these axes. Moving from left to right, the function goes up towards a rounded corner, which is marked in red and labeled a relative maximum, then goes downward towards a sharp corner, which is marked in green and labeled a relative minimum, then goes up again towards another sharp corner, which is marked in red and labeled a relative maximum, then goes down again towards a rounded corner, which is marked in green and labeled a relative minimum, and then goes upward.</p>
 </div>
-</details><p>In other words, relative extrema appear at points on the graph of the function where the derivative changes sign.</p>
-</section>
-<section id="how-to-find-relative-extrema">
-<h2>How To Find Relative Extrema<a class="headerlink" href="#how-to-find-relative-extrema" title="Link to this heading">#</a></h2>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+
+\begin{tikzpicture}[scale = 1.2]
+
+  \draw[white,fill=white] (-1,-1) rectangle (12.5,7.5);
+  \draw[->] (-0.5,0) -- (12,0) node[below] {$x$};
+  \draw[->] (0,-0.5) -- (0,7) node[right] {$y$};
+      
+  % draw curve
+  \draw [ultra thick] 
+  (1,1) parabola bend (2.5,4) (4,2) 
+  .. controls (5.5,5) and (7,2) .. (8.5,5) 
+  parabola bend (10,3) (11.5,6);
+
+  % draw points
+  \draw [black,fill=red] (2.5,4) circle (2.5pt);
+  \draw [black,fill=green] (4,2) circle (2.5pt);
+  \draw [black,fill=red] (8.5,5) circle (2.5pt);
+  \draw [black,fill=green] (10,3) circle (2.5pt);
+
+  % label extrema
+  \draw [<-, >=stealth', shorten <=3pt] (2.5,4) -- (3.25,6) node[right] {\bf \large Relative Maxima}; 
+  \draw [<-, >=stealth', shorten <=3pt] (8.5,5) -- (7,6);
+  \draw [<-, >=stealth', shorten <=3pt] (4,2) -- (5,1) node[right] {\bf \large Relative Minima}; 
+  \draw [<-, >=stealth', shorten <=3pt] (10,3) -- (8.7,1);
+\end{tikzpicture}
+\end{document} 
+```
+-->
+<div class="note admonition">
+<p class="admonition-title">Observation About <span class="math notranslate nohighlight">\(f'\)</span> Where Relative Extrema Appear</p>
 <p>The relative extrema of a function appear where <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from positive to negative or from negative to positive. Since <span class="math notranslate nohighlight">\(f'(x)\)</span> changes sign when there is a relative extrema, it must be the case that either <span class="math notranslate nohighlight">\(f'(x)=0\)</span> or <span class="math notranslate nohighlight">\(f'(x)\)</span> does not exist at the relative extrema.</p>
+</div>
 </section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Compare graph of <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(f'\)</span></p>
 <p>Compare the graphs of <span class="math notranslate nohighlight">\(f(x) = x^2 - 1\)</span> and <span class="math notranslate nohighlight">\(f'(x) = 2x\)</span>.</p>
+<p>Observe that <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(f'(0) = 0\)</span>, and <span class="math notranslate nohighlight">\(f'(x)\)</span> changes sign (from negative to positive) at <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
-<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-mt-0 sd-mb-0 sd-ml-4 sd-mr-4 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class="reference internal image-reference" href="../_images/pic_optimization_relativeextrema_1.png"><img alt="graph of $f(x) = x^2 - 1$" class="align-center" src="../_images/pic_optimization_relativeextrema_1.png" style="height: 500px;" /></a>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class="reference internal image-reference" href="../_images/pic_optimization_relativeextrema_2.png"><img alt="graph of $f'(x) = 2x$" class="align-center" src="../_images/pic_optimization_relativeextrema_2.png" style="height: 500px;" /></a>
@@ -537,21 +591,24 @@ document.write(`
 <p class="sd-card-text">On the left, the graph of the function x squared minus one is plotted. The function is concave up along its domain, is decreasing as it comes in from the left to a red dot at its rounded vertex at (0,-1), and increasing to the right of that.</p>
 <p class="sd-card-text">On the right, the graph of it’s derivative two x is plotted. It is linear increasing and passes through a red dot at the origin.</p>
 </div>
-</details><p>Observe that <span class="math notranslate nohighlight">\(f(x)\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(f'(0) = 0\)</span>, and <span class="math notranslate nohighlight">\(f'(x)\)</span> changes sign (from negative to positive) at <span class="math notranslate nohighlight">\(x=0\)</span>.</p>
+</details></div>
 </section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Compare graph of <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(f'\)</span></p>
 <p>Compare the graphs of <span class="math notranslate nohighlight">\(f(x) = x^3 + 1\)</span> and <span class="math notranslate nohighlight">\(f'(x) = 3x^2\)</span>.</p>
+<p>Observe that <span class="math notranslate nohighlight">\(f(x)\)</span> does not have any relative extrema despite the fact that <span class="math notranslate nohighlight">\(f'(0) = 0\)</span>.  Notice that <span class="math notranslate nohighlight">\(f'(x)\)</span> does not change sign at <span class="math notranslate nohighlight">\(x=0\)</span>. In other words, in order for a function to have a relative extrema, there must be a change in sign of its derivative.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
-<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 sd-mt-0 sd-mb-0 sd-ml-4 sd-mr-4 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class="reference internal image-reference" href="../_images/pic_optimization_relativeextrema_3.png"><img alt="graph of $f(x) = x^3 + 1$" class="align-center" src="../_images/pic_optimization_relativeextrema_3.png" style="height: 500px;" /></a>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-col sd-d-flex-row sd-col-5 sd-col-xs-5 sd-col-sm-5 sd-col-md-5 sd-col-lg-5 docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <a class="reference internal image-reference" href="../_images/pic_optimization_relativeextrema_4.png"><img alt="graph of $f'(x) = 3x^2$" class="align-center" src="../_images/pic_optimization_relativeextrema_4.png" style="height: 500px;" /></a>
@@ -567,7 +624,8 @@ document.write(`
 <p class="sd-card-text">On the left, the graph of the function x cubed plus one is plotted. The function is increasing along its domain, is concave down as it comes in from the left to a red dot at a point of flatness at (0,1), and concave up to the right of that.</p>
 <p class="sd-card-text">On the right, the graph of it’s derivative three x squared is plotted. It is a concave up parabola which decreases on the left down to a red dot at its vertex (0,0), and then is increasing after that.</p>
 </div>
-</details><p>Observe that <span class="math notranslate nohighlight">\(f(x)\)</span> does not have any relative extrema despite the fact that <span class="math notranslate nohighlight">\(f'(0) = 0\)</span>.  Notice that <span class="math notranslate nohighlight">\(f'(x)\)</span> does not change sign at <span class="math notranslate nohighlight">\(x=0\)</span>. In other words, in order for a function to have a relative extrema, there must be a change in sign of its derivative.</p>
+</details></div>
+</section>
 </section>
 </section>
 
@@ -635,10 +693,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-find-relative-extrema">How To Find Relative Extrema</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

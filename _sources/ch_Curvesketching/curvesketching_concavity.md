@@ -13,42 +13,54 @@ kernelspec:
 ---
 # Intervals of Concavity
 
+## Definitions
 
-
-```{admonition} Concave Up
+```{admonition} Definition
 :class: info
 
-A function is **concave up** on an interval if its derivative is increasing on the interval.
-```
-
-```{admonition} Theorem
-:class: warning
-
-If $f''(x) > 0$ for all $x$ on the interval $(a,b)$, then $f$ is concave up on $(a,b)$.
+A function is _**concave up**_ on an interval if its derivative is increasing on the interval.
 ```
 
 
-```{admonition} Concave Down
+
+
+```{admonition} Definition
 :class: info
 
-A function is **concave down** on an interval if its derivative is decreasing on the interval.
+A function is _**concave down**_ on an interval if its derivative is decreasing on the interval.
 ```
 
-```{admonition} Theorem
-:class: warning
+```{admonition} What the Sign of $f''$ Tells Us About $f$.
+:class: important
 
-If $f''(x) < 0$ for all $x$ on the interval $(a,b)$, then $f$ is concave down on $(a,b)$.
+- If $f''(x) > 0$ for all $x$ on the interval $(a,b)$, then $f$ is concave up on $(a,b)$.
+- If $f''(x) < 0$ for all $x$ on the interval $(a,b)$, then $f$ is concave down on $(a,b)$.
+
 ```
 
 
-## Example 1
 
-```{admonition} Finding intervals of concavity from the graph of a function
+### Example 1
+
+````{admonition} Finding intervals of concavity from the graph of a function
 :class: tip
 
 The following is the graph of a continuous function that is concave down on the interval $(1,4)$ and concave up on the interval $(4,7)$.
-```
 
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_curvesketching_concavity_example_1.png
+:alt: Graph of generic function
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y-axis. The graph of a function is plotted on these axes. Reading from left to right, the function goes up at a slowing pace, reaches a rounded corner, decreases at an accelerating pace, decreases at a slowing pace, reaches another rounded corner, and goes upward at an accelerating pace.
+```
+````
+<!--
 ```{code-cell}
 :tags: [remove-cell]
 
@@ -79,14 +91,12 @@ The following is the graph of a continuous function that is concave down on the 
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y-axis. The graph of a function is plotted on these axes. Reading from left to right, the function goes up at a slowing pace, reaches a rounded corner, decreases at an accelerating pace, decreases at a slowing pace, reaches another rounded corner, and goes upward at an accelerating pace.
-```
+-->
 
 ## Finding Intervals of Concavity using the Second Derivative
 
-```{admonition} How to find intervals of concavity of a function
-:class: warning
+```{admonition} How to Find Intervals of Concavity of a Function
+:class: info
 
 - Find all values of $x$ such that $f''(x) = 0$ or $f''(x)$ does not exist.
 - Break up domain of $f$ into open intervals between values found in Step 1. 
@@ -95,9 +105,9 @@ There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. The
     - If $f''(c) < 0$, then $f$ is concave down on $(a,b)$.
 ```
 
-## Example 2
+### Example 2
 
-```{admonition} Finding intervals of concavity
+`````{admonition} Finding intervals of concavity
 :class: tip
 
 If the second derivative of $f(x)$ is 
@@ -105,7 +115,7 @@ If the second derivative of $f(x)$ is
 $$\displaystyle f''(x) = \frac{x^2-4x}{x-6}$$ 
 
 find the intervals  of concavity of $f$.
-```
+
 
 ```{dropdown} **Step 1:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f''(x) = 0$.
 
@@ -141,8 +151,10 @@ width: 600px
 ---
 Interval analysis of $f''(x) = \frac{x(x-4)}{x-6}$.
 ```
-Therefore, $f$ is concave up on the intervals $(0,4)$ and $(6,\infty)$ and concave down on the intervals $(-\infty,0)$ and $(4,6)$.
-````
 ```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, which are negative to the left of zero, positive from zero to four, negative from four to six, and positive to the right of six.
 ```
+
+Therefore, $f$ is concave up on the intervals $(0,4)$ and $(6,\infty)$ and concave down on the intervals $(-\infty,0)$ and $(4,6)$.
+````
+`````

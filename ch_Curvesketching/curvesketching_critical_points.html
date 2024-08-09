@@ -466,8 +466,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -481,24 +485,23 @@ document.write(`
                   
   <section id="critical-points">
 <h1>Critical Points<a class="headerlink" href="#critical-points" title="Link to this heading">#</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>A <strong>critical point</strong> of the function <span class="math notranslate nohighlight">\(f\)</span> is any number <span class="math notranslate nohighlight">\(c\)</span> <em>in the domain of</em> <span class="math notranslate nohighlight">\(f\)</span> such that</p>
+<p>A <em><strong>critical point</strong></em> of the function <span class="math notranslate nohighlight">\(f\)</span> is any number <span class="math notranslate nohighlight">\(c\)</span> <strong>in the domain of</strong> <span class="math notranslate nohighlight">\(f\)</span> such that</p>
 <div class="math notranslate nohighlight">
 \[f'(c)=0 \quad \text{or} \quad \text{$f'(c)$ does not exist.}\]</div>
 </div>
 <div class="warning admonition">
-<p class="admonition-title">Critical points versus relative extrema</p>
-<p>Critical points of <span class="math notranslate nohighlight">\(f\)</span> correspond to <em>possible</em> locations of relative extrema.  In other words, not all critical points correspond to a relative extrema.  However, every relative extrema must appear at a critical point.</p>
+<p class="admonition-title">Critical Points versus Relative Extrema</p>
+<p>Critical points of <span class="math notranslate nohighlight">\(f\)</span> correspond to <strong>possible</strong> locations of relative extrema.  In other words, not all critical points correspond to a relative extrema.  However, every relative extrema must appear at a critical point.</p>
 </div>
 <section id="example-1">
-<span id="curvesketching-critical-points-example-1"></span><h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<span id="curvesketching-critical-points-example-1"></span><h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Finding critical points</p>
-<p>Find the critical points of</p>
-<div class="math notranslate nohighlight">
-\[f(x) = \sqrt[3]{x^2-1}.\]</div>
-</div>
+<p>Find the critical points of <span class="math notranslate nohighlight">\(f(x) = \sqrt[3]{x^2-1}\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Compute   <span class="math notranslate nohighlight">\(f'(x)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -525,15 +528,13 @@ f'(x)
 <span class="sd-summary-text"><strong>Step 4:</strong>   Verify that the values found in Steps 2 and 3 are in the domain of   <span class="math notranslate nohighlight">\(f\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The domain of <span class="math notranslate nohighlight">\(f\)</span> is all real numbers.  Therefore, <span class="math notranslate nohighlight">\(x=-1\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=1\)</span> are all critical points of <span class="math notranslate nohighlight">\(f\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<span id="curvesketching-critical-points-example-2"></span><h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<span id="curvesketching-critical-points-example-2"></span><h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Finding critical points</p>
-<p>Find the critical points of</p>
-<div class="math notranslate nohighlight">
-\[f(x) = x^3 +3x^2 - 24x + 1.\]</div>
-</div>
+<p>Find the critical points of <span class="math notranslate nohighlight">\(f(x) = x^3 +3x^2 - 24x + 1\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Compute   <span class="math notranslate nohighlight">\(f'(x)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -564,7 +565,44 @@ f'(x)
 <span class="sd-summary-text"><strong>Step 4:</strong>   Verify that the values found in Steps 2 and 3 are in the domain of   <span class="math notranslate nohighlight">\(f\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The domain of <span class="math notranslate nohighlight">\(f\)</span> is all real numbers.  Therefore, <span class="math notranslate nohighlight">\(x=-4\)</span> and <span class="math notranslate nohighlight">\(x=2\)</span> are both critical points of <span class="math notranslate nohighlight">\(f\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+<section id="example-3">
+<span id="curvesketching-critical-points-example-3"></span><h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Finding critical points</p>
+<p>Find the critical points of <span class="math notranslate nohighlight">\(f(x) = \dfrac{x}{x^2-4}\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Compute   <span class="math notranslate nohighlight">\(f'(x)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(x)
+&amp;= \frac{d}{dx} \dfrac{x}{x^2-4} \\
+&amp;= \frac{1(x^2-1) - x(2x)}{(x^2-4)^2} &amp;&amp; \text{quotient rule}\\
+&amp;= \frac{x^2 - 1 - 2x^2}{(x^2-4)^2} &amp;&amp; \text{simplify numerator}\\
+&amp;= \frac{- 1 - x^2}{(x^2-4)^2} \\
+&amp;= -\frac{1 + x^2}{(x^2-4)^2} 
+\end{align*}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Find all   <span class="math notranslate nohighlight">\(x\)</span>   such that   <span class="math notranslate nohighlight">\(f'(x) = 0\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f'(x)=0\)</span> when <span class="math notranslate nohighlight">\(1+x^2 = 0\)</span>.  However, there are no values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(1 + x^2 = 0\)</span>.  Therefore, <span class="math notranslate nohighlight">\(f'(x)\)</span> is never equal to zero.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Find all   <span class="math notranslate nohighlight">\(x\)</span>   such that   <span class="math notranslate nohighlight">\(f'(x)\)</span>   does not exist.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f'(x)\)</span> does not exist when <span class="math notranslate nohighlight">\(x^2-4 = 0\)</span>, which occurs when <span class="math notranslate nohighlight">\(x=2\)</span> and when <span class="math notranslate nohighlight">\(x=-2\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Verify that the values found in Steps 2 and 3 are in the domain of   <span class="math notranslate nohighlight">\(f\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The domain of <span class="math notranslate nohighlight">\(f\)</span> is all real numbers except <span class="math notranslate nohighlight">\(x = \pm 2\)</span>, which means that the values found in Step 3 are not critical points since they are not in the domain of <span class="math notranslate nohighlight">\(f\)</span>.  And since there were no other values found in Step 2, <span class="math notranslate nohighlight">\(f\)</span> does not have any critical points.</p>
+</div>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -631,8 +669,12 @@ f'(x)
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

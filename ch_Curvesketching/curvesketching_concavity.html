@@ -466,9 +466,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-concavity-using-the-second-derivative">Finding Intervals of Concavity using the Second Derivative</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-concavity-using-the-second-derivative">Finding Intervals of Concavity using the Second Derivative</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -482,42 +487,83 @@ document.write(`
                   
   <section id="intervals-of-concavity">
 <h1>Intervals of Concavity<a class="headerlink" href="#intervals-of-concavity" title="Link to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Concave Up</p>
-<p>A function is <strong>concave up</strong> on an interval if its derivative is increasing on the interval.</p>
-</div>
-<div class="warning admonition">
-<p class="admonition-title">Theorem</p>
-<p>If <span class="math notranslate nohighlight">\(f''(x) &gt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> on the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is concave up on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p>
+<p class="admonition-title">Definition</p>
+<p>A function is <em><strong>concave up</strong></em> on an interval if its derivative is increasing on the interval.</p>
 </div>
 <div class="info admonition">
-<p class="admonition-title">Concave Down</p>
-<p>A function is <strong>concave down</strong> on an interval if its derivative is decreasing on the interval.</p>
+<p class="admonition-title">Definition</p>
+<p>A function is <em><strong>concave down</strong></em> on an interval if its derivative is decreasing on the interval.</p>
 </div>
-<div class="warning admonition">
-<p class="admonition-title">Theorem</p>
-<p>If <span class="math notranslate nohighlight">\(f''(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> on the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is concave down on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p>
+<div class="important admonition">
+<p class="admonition-title">What the Sign of <span class="math notranslate nohighlight">\(f''\)</span> Tells Us About <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(f''(x) &gt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> on the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is concave up on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(f''(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> on the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is concave down on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
+</ul>
 </div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Finding intervals of concavity from the graph of a function</p>
 <p>The following is the graph of a continuous function that is concave down on the interval <span class="math notranslate nohighlight">\((1,4)\)</span> and concave up on the interval <span class="math notranslate nohighlight">\((4,7)\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of generic function" src="../_images/pic_curvesketching_concavity_example_1.png" />
 </div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/c8c8f2cc4e5b3427d64bdba56fa3c3155b2e64cf41f90c2b328a5de1d66f9ba6.svg" src="../_images/c8c8f2cc4e5b3427d64bdba56fa3c3155b2e64cf41f90c2b328a5de1d66f9ba6.svg" /></div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y-axis. The graph of a function is plotted on these axes. Reading from left to right, the function goes up at a slowing pace, reaches a rounded corner, decreases at an accelerating pace, decreases at a slowing pace, reaches another rounded corner, and goes upward at an accelerating pace.</p>
 </div>
-</details></section>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-cell]
+
+%load_ext itikz
+```
+
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[xscale = 2,yscale=1.5]
+\draw[white,fill=white] (0,0) rectangle (3,4);
+ \draw[very thin,color=darkgray,step=1.0] (0,0) grid (8,4);
+ \draw[very thin,color=lightgray,step=0.25] (0,0) grid (8,4);
+
+\draw[->] (0,0) -- (8,0) node[below] {$x$};
+\draw[->] (0,0) -- (0,4) node[right] {$y$};
+     
+% draw curve
+\draw [ultra thick,smooth,variable=\x] plot [domain=1:7] (\x,{0.2*(pow(\x-4,3)) - 1.5*(\x-4) + 2});
+
+% tick marks
+\foreach \x in {1,...,7} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+
+\end{tikzpicture}
+\end{document}
+```
+-->
+</section>
+</section>
 <section id="finding-intervals-of-concavity-using-the-second-derivative">
 <h2>Finding Intervals of Concavity using the Second Derivative<a class="headerlink" href="#finding-intervals-of-concavity-using-the-second-derivative" title="Link to this heading">#</a></h2>
-<div class="warning admonition">
-<p class="admonition-title">How to find intervals of concavity of a function</p>
+<div class="info admonition">
+<p class="admonition-title">How to Find Intervals of Concavity of a Function</p>
 <ul class="simple">
 <li><p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f''(x) = 0\)</span> or <span class="math notranslate nohighlight">\(f''(x)\)</span> does not exist.</p></li>
 <li><p>Break up domain of <span class="math notranslate nohighlight">\(f\)</span> into open intervals between values found in Step 1.</p></li>
@@ -529,16 +575,14 @@ document.write(`
 </li>
 </ul>
 </div>
-</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Finding intervals of concavity</p>
 <p>If the second derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[\displaystyle f''(x) = \frac{x^2-4x}{x-6}\]</div>
 <p>find the intervals  of concavity of <span class="math notranslate nohighlight">\(f\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Find all values of   <span class="math notranslate nohighlight">\(x\)</span>   such that   <span class="math notranslate nohighlight">\(f''(x) = 0\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -570,14 +614,16 @@ f''(7) &amp;= \frac{(7)(7-4)}{7-6} &gt;0
 <p><span class="caption-number">Fig. 7 </span><span class="caption-text">Interval analysis of <span class="math notranslate nohighlight">\(f''(x) = \frac{x(x-4)}{x-6}\)</span>.</span><a class="headerlink" href="#pic-curvesketching-concavity" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(f\)</span> is concave up on the intervals <span class="math notranslate nohighlight">\((0,4)\)</span> and <span class="math notranslate nohighlight">\((6,\infty)\)</span> and concave down on the intervals <span class="math notranslate nohighlight">\((-\infty,0)\)</span> and <span class="math notranslate nohighlight">\((4,6)\)</span>.</p>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">A number line with positive and negative signs assigned to intervals, which are negative to the left of zero, positive from zero to four, negative from four to six, and positive to the right of six.</p>
 </div>
-</details></section>
+</details><p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(f\)</span> is concave up on the intervals <span class="math notranslate nohighlight">\((0,4)\)</span> and <span class="math notranslate nohighlight">\((6,\infty)\)</span> and concave down on the intervals <span class="math notranslate nohighlight">\((-\infty,0)\)</span> and <span class="math notranslate nohighlight">\((4,6)\)</span>.</p>
+</div>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -644,9 +690,14 @@ f''(7) &amp;= \frac{(7)(7-4)}{7-6} &gt;0
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-concavity-using-the-second-derivative">Finding Intervals of Concavity using the Second Derivative</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-concavity-using-the-second-derivative">Finding Intervals of Concavity using the Second Derivative</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

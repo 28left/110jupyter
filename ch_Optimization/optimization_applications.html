@@ -466,11 +466,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimization-problems">Optimization Problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimization-problems">Optimization Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -495,9 +497,10 @@ document.write(`
 <li><p><strong>Identify the critical points</strong> of the function, and determine the corresponding optimization values of the function over its domain using any of the optimization strategies discussed in class (e.g. First Derivative Test, Second Derivative Test, Graphing).</p></li>
 </ol>
 </div>
-</section>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Maximize profits</p>
 <p>An apartment complex has 100 two-bedroom units. The monthly profit in dollars realized from renting out the apartments is given by:</p>
 <div class="math notranslate nohighlight">
 \[P(x)=-20x^2+1720x-20,000\]</div>
@@ -539,24 +542,29 @@ document.write(`
 <p class="sd-card-text">Instead, observe that <span class="math notranslate nohighlight">\(P(x)\)</span> is a parabola that opens downward (i.e., <span class="math notranslate nohighlight">\(P''(x) = -40\)</span> which means that <span class="math notranslate nohighlight">\(P(x)\)</span> is concave down). This implies that the critical point at <span class="math notranslate nohighlight">\(x=43\)</span> must correspond to the maximum profit.</p>
 <p class="sd-card-text">Therefore, profit is maximized when 43 units are rented out.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Maximize area</p>
 <p>A rectangular field is to be enclosed by a fence. One side of the fenced-in area is a building, so fencing is not required on that side. If we have 200 feet of fencing material, determine the dimensions of the largest field that can be enclosed by the fencing material.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong> Draw a figure, if necessary.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">See below.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column sd-m-auto docutils">
+<img alt="Rectangular region bounded on one side by a building" src="../_images/pic_optimization_applications_area.png" />
 </div>
-</details><div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/ea05efe6155a0944e7879f1c44aead82732d2cbff39ef62b903cdcadff97dfc4.svg" src="../_images/ea05efe6155a0944e7879f1c44aead82732d2cbff39ef62b903cdcadff97dfc4.svg" /></div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a thick black horizontal line representing the edge of the building. Above that there is a grey rectangle representing the fenced area. The side lengths of the rectangle are height = x and width = y.</p>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong> Translate the problem description into an expression that includes the quantity to be optimized.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -597,24 +605,48 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">We conclude that the field with maximum area enclosed by 200 feet of fencing material is 50 feet deep and 100 feet wide.</p>
 </div>
-</details></section>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\begin{tikzpicture}[scale = 5]
+  \draw[fill = white!80!black] (0,0) rectangle (1,.5);
+  \draw[ultra thick] (-.2,0)--(1.2,0) node[midway,below] {Building};
+  \draw (0,0) -- (0,0.5) node[midway,left] {$x$} 
+  -- (1,0.5) node[midway,above] {$y$} 
+  -- (1,0) node[midway,right] {$x$};
+  \node at (.5,.25) {Fenced Area};
+\end{tikzpicture}
+\end{document} 
+```
+-->
+</section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Minimize costs</p>
 <p>A rectangular box with a <strong>square</strong> base and a volume of <span class="math notranslate nohighlight">\(24\)</span> ft<span class="math notranslate nohighlight">\(^3\)</span> has costs to construct of <span class="math notranslate nohighlight">\(\$10 / \text{ft}^2\)</span> for the sides, <span class="math notranslate nohighlight">\(\$20 / \text{ft}^2\)</span> for the top, and <span class="math notranslate nohighlight">\(\$40 / \text{ft}^2\)</span> for the base. Determine the dimensions of the box which minimize the total cost to construct the box.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong> Draw a figure, if necessary.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">See below.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-column sd-m-auto docutils">
+<a class="reference internal image-reference" href="../_images/pic_optimization_applications_box.png"><img alt="A rectangular box with square base" src="../_images/pic_optimization_applications_box.png" style="width: 250px;" /></a>
 </div>
-</details><div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/c474e7a1fb352f7e7396555c05aa8c8472c2b283bd439800907380eaee4d3f18.svg" src="../_images/c474e7a1fb352f7e7396555c05aa8c8472c2b283bd439800907380eaee4d3f18.svg" /></div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">A two dimensional projective diagram of a three dimensional square prism, with the square face horizontal and of side length x, and height y.</p>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong> Translate the problem description into an expression that includes the quantity to be optimized.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -665,9 +697,56 @@ document.write(`
 \[ y = \frac{24}{2^2}= 6\]</div>
 <p class="sd-card-text">Therefore, the dimensions of the box that minimize the cost of construction are <span class="math notranslate nohighlight">\(2 \times 2 \times 6\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\def\boxWidth{3}
+\def\boxHeight{4}
+\def\boxDepth{2}
+
+\begin{tikzpicture}[scale=0.8]
+
+  % labels
+  \draw [|-|] (0,-0.4) -- (\boxWidth,-0.4) node [midway,fill=white] {$x$};
+  \draw [|-|] (\boxWidth + \boxDepth/1.414 + 0.4,\boxDepth/1.414) -- +(0,\boxHeight)
+  node [midway,fill=white] {$y$};
+  \draw [|-|] (\boxWidth + 0.2828, -0.2828) -- +(\boxDepth/1.414,\boxDepth/1.414) node [midway,fill=white] {$x$};
+
+
+  % silohette
+  \fill [white,opacity=1.0] (0,0) -- ++(0,\boxHeight) -- ++(\boxDepth/1.414,\boxDepth/1.414) -- ++(\boxWidth,0) -- ++(0,-\boxHeight) -- ++(-\boxDepth/1.414,-\boxDepth/1.414) -- cycle;
+
+  % back face with a top
+  \draw [thick] (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) -| ++(\boxWidth,-\boxHeight);
+  \draw [dashed,thick] (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) |- ++(\boxWidth,-\boxHeight);
+
+  %% back face without a top
+  %\draw [thick] (\boxDepth/1.414,\boxHeight) -- (\boxDepth/1.414,\boxHeight + \boxDepth/1.414) -| ++(\boxWidth,-\boxHeight);
+  %\draw [dashed,thick] (\boxDepth/1.414,\boxHeight) |- ++(\boxWidth,-\boxHeight + \boxDepth/1.414);
+
+  % diagonals
+  \draw [thick] (0,\boxHeight) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [dashed,thick] (0,0) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [thick] (\boxWidth,0) -- +(\boxDepth/1.414,\boxDepth/1.414);
+  \draw [thick] (\boxWidth,\boxHeight) -- +(\boxDepth/1.414,\boxDepth/1.414);
+
+  % \front face
+  \draw [thick] (0,0) rectangle (\boxWidth,\boxHeight);
+\end{tikzpicture}
+\end{document} 
+```
+-->
+</section>
 <section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Maximize profits</p>
 <p>A computer manufacturer determines that in order to sell <span class="math notranslate nohighlight">\(x\)</span> units of a new computer, the price per unit in dollars must be:</p>
 <div class="math notranslate nohighlight">
 \[p(x) = 2500 - 2x\]</div>
@@ -713,7 +792,9 @@ document.write(`
 <p class="sd-card-text">We can confirm that <span class="math notranslate nohighlight">\(x = 610\)</span> corresponds to the maximum profit by verifying that the second derivative is negative. Since <span class="math notranslate nohighlight">\(P''(x) = -4 &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the domain, and <span class="math notranslate nohighlight">\(x=610\)</span> is in the domain, we see that <span class="math notranslate nohighlight">\(P(610)\)</span> is the absolute maximum profit.</p>
 <p class="sd-card-text">Therefore, in order to maximize profits, the company must produce and sell 610 units (at a price of <span class="math notranslate nohighlight">\(p(610) = 2500 - 2\cdot 610 = 1280\)</span> dollars per unit).</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -780,11 +861,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimization-problems">Optimization Problems</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimization-problems">Optimization Problems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

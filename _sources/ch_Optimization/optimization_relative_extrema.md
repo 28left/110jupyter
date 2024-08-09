@@ -19,19 +19,43 @@ kernelspec:
 %load_ext itikz
 ```
 
+
+## Definitions
 ```{admonition} Definition
 :class: info
 
-The relative extrema of a function $f$:
-
-- A function $f$ has a **relative maximum** at $x=c$ if there exists an open interval $(a,b)$ containing $c$ such that $f(c) \geq f(x)$ for all $x$ in $(a,b)$.
-- A function $f$ has a **relative minimum** at $x=c$ if there exists an open interval $(a,b)$ containing $c$ such that $f(c) \leq f(x)$ for all $x$ in $(a,b)$.
+A function $f$ has a _**relative maximum**_ at $x=c$ if there exists an open interval $(a,b)$ containing $c$ such that $f(c) \geq f(x)$ for all $x$ in $(a,b)$.  In this case, $f(c)$ is called a  _**relative maximum value**_  of $f$. 
 ```
 
-## Example 1
+```{admonition} Definition
+:class: info
 
-The relative extrema are highlighted on the following graph. Observe how the relative extrema appear at points on the curve where the increasing/decreasing behavior of the function changes. 
+A function $f$ has a _**relative minimum**_ at $x=c$ if there exists an open interval $(a,b)$ containing $c$ such that $f(c) \leq f(x)$ for all $x$ in $(a,b)$.  In this case, $f(c)$ is called a  _**relative minimum value**_  of $f$. 
+```
 
+
+### Example 1
+````{admonition} Relative Extrema
+:class: tip
+
+The relative extrema are highlighted on the following graph. Observe how the relative extrema appear at points on the curve where the increasing/decreasing behavior of the function changes.  In other words, relative extrema appear at points on the graph of the function where the derivative changes sign.
+
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_curvesketching_relative_extrema.png
+:alt: Graph of a generic function
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis. There is a vertical y-axis. The graph of a function is plotted on these axes. Moving from left to right, the function goes up towards a rounded corner, which is marked in red and labeled a relative maximum, then goes downward towards a sharp corner, which is marked in green and labeled a relative minimum, then goes up again towards another sharp corner, which is marked in red and labeled a relative maximum, then goes down again towards a rounded corner, which is marked in green and labeled a relative minimum, and then goes upward.
+```
+````
+
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -68,36 +92,43 @@ The relative extrema are highlighted on the following graph. Observe how the rel
 \end{tikzpicture}
 \end{document} 
 ```
-```{dropdown} Long Text Description
-There is a horizontal x axis. There is a vertical y axis. The graph of a function is plotted on these axes. Moving from left to right, the function goes up towards a rounded corner, which is marked in red and labeled a relative maximum, then goes downward towards a sharp corner, which is marked in green and labeled a relative minimum, then goes up again towards another sharp corner, which is marked in red and labeled a relative maximum, then goes down again towards a rounded corner, which is marked in green and labeled a relative minimum, and then goes upward.
-```
-In other words, relative extrema appear at points on the graph of the function where the derivative changes sign.
+-->
 
-## How To Find Relative Extrema
+
+
+```{admonition} Observation About $f'$ Where Relative Extrema Appear
+:class: note
 
 The relative extrema of a function appear where $f'(x)$ changes from positive to negative or from negative to positive. Since $f'(x)$ changes sign when there is a relative extrema, it must be the case that either $f'(x)=0$ or $f'(x)$ does not exist at the relative extrema.
+```
 
-## Example 2
+### Example 2
+````{admonition} Compare graph of $f$ and $f'$
+:class: tip
 
 Compare the graphs of $f(x) = x^2 - 1$ and $f'(x) = 2x$.
 
-:::::{grid}
-::::{grid-item-card}
+Observe that $f(x)$ has a relative minimum at $x=0$, $f'(0) = 0$, and $f'(x)$ changes sign (from negative to positive) at $x=0$.
+
+::::{grid}
+:::{grid-item-card}
+:columns: 5
+:margin: 0 0 4 4
 ```{image} ../images/pic_optimization_relativeextrema_1.png
 :alt: graph of $f(x) = x^2 - 1$
 :height: 500px
 :align: center
-::::
+:::
 
-::::{grid-item-card}
+:::{grid-item-card}
+:columns: 5
 ```{image} ../images/pic_optimization_relativeextrema_2.png
 :alt: graph of $f'(x) = 2x$
 :height: 500px
 :align: center
 ```
+:::
 ::::
-:::::
-
 ```{dropdown} Long Text Description
 There are two sets of axes, in each a horizontal x axis and an unlabeled vertical axis.
 
@@ -105,28 +136,35 @@ On the left, the graph of the function x squared minus one is plotted. The funct
 
 On the right, the graph of it's derivative two x is plotted. It is linear increasing and passes through a red dot at the origin.
 ```
-Observe that $f(x)$ has a relative minimum at $x=0$, $f'(0) = 0$, and $f'(x)$ changes sign (from negative to positive) at $x=0$.
+````
 
-## Example 3
+### Example 3
+````{admonition} Compare graph of $f$ and $f'$
+:class: tip
 
 Compare the graphs of $f(x) = x^3 + 1$ and $f'(x) = 3x^2$.
 
-:::::{grid}
-::::{grid-item-card}
+Observe that $f(x)$ does not have any relative extrema despite the fact that $f'(0) = 0$.  Notice that $f'(x)$ does not change sign at $x=0$. In other words, in order for a function to have a relative extrema, there must be a change in sign of its derivative.
+
+::::{grid}
+:::{grid-item-card}
+:columns: 5
+:margin: 0 0 4 4
 ```{image} ../images/pic_optimization_relativeextrema_3.png
 :alt: graph of $f(x) = x^3 + 1$
 :height: 500px
 :align: center
-::::
+:::
 
-::::{grid-item-card}
+:::{grid-item-card}
+:columns: 5
 ```{image} ../images/pic_optimization_relativeextrema_4.png
 :alt: graph of $f'(x) = 3x^2$
 :height: 500px
 :align: center
 ```
+:::
 ::::
-:::::
 ```{dropdown} Long Text Description
 There are two sets of axes, in each a horizontal x axis and an unlabeled vertical axis.
 
@@ -134,4 +172,4 @@ On the left, the graph of the function x cubed plus one is plotted. The function
 
 On the right, the graph of it's derivative three x squared is plotted. It is a concave up parabola which decreases on the left down to a red dot at its vertex (0,0), and then is increasing after that.
 ```
-Observe that $f(x)$ does not have any relative extrema despite the fact that $f'(0) = 0$.  Notice that $f'(x)$ does not change sign at $x=0$. In other words, in order for a function to have a relative extrema, there must be a change in sign of its derivative.
+````

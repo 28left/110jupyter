@@ -65,7 +65,7 @@ The above equation is equivalent to the point-slope equation of a line (i.e., $y
 
 ## Computing Derivatives Using the Limit Definition
 
-```{admonition} Simplify the difference quotient
+```{admonition} Simplify the Difference Quotient
 :class: info
 
 When computing the derivative, $f'(x)$, using its limit definition, it turns out that the limit will most likely be an indeterminate form of type $0/0$.  This means that to evaluate the limit, we'll have to simplify the difference quotient
@@ -87,75 +87,124 @@ Compute the slope of the line tangent to $f(x)=3x^2+12$ at $x=5$ using the limit
 
 ```{dropdown} **Step 1:** &nbsp; Write down the limit definition of a derivative.
 
-$$ 
-\boxed{f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}}
-$$
+$$ f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$$
 
-Remember: $f(x+h)$ means that we take $f(x)$ and replace $x$ with $(x+h)$.  For example, if $f(x) = x^2$, then $f(x+h)=(x+h)^2=x^2+2xh+h^2.$
+Remember: $f(x+h)$ means that we take $f(x)$ and replace every occurrence of $x$ with $(x+h)$.  For example, if $f(x) = x^2$, then $f(x+h)=(x+h)^2=x^2+2xh+h^2.$
 ```
 
-```{dropdown} **Step 2:** &nbsp; Plug &nbsp; $f(x+h)$ &nbsp; and &nbsp; $f(x)$ &nbsp; into definition.
+```{dropdown} **Step 2:** &nbsp; Plug &nbsp; $f(5+h)$ &nbsp; and &nbsp; $f(5)$ &nbsp; into definition.
 
-Plug $f(x+h) = 3(x+h)^2 + 12$ and $f(x) = 3x^2 + 12$ into the limit definition of the derivative.
-Using brackets will help avoid errors from forgetting to distribute the negative sign:
-
-$$ f'(x)=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}$$
-```
-
-
-```{dropdown} **Step 3:** &nbsp; FOIL and Simplify
+Recall that the slope of the line tagent to $f(x)$ at $x=5$ is given by $f'(5)$.  To compute $f'(5)$, 
+plug $f(5+h) = 3(5+h)^2 + 12$ and $f(5) = 3(5)^2 + 12 = 87$ into the limit definition of the derivative.
 
 \begin{align*}
-f'(x) &=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\\ \\
-&=\lim_{h \to 0} \frac{[3(x^2+2xh+h^2)+12]-[3x^2+12]}{h} && \hbox{FOIL $(x+h)^2$}\\ \\
-&=\lim_{h \to 0} \frac{3x^2+6xh+3h^2+12-3x^2-12}{h} && \hbox{distribute the 3 and the minus sign}\\ \\
-&=\lim_{h \to 0} \frac{\cancel{3x^2}+6xh+3h^2+\cancel{12}-\cancel{3x^2}-\cancel{12}}{h} && \hbox{simplify}\\ \\
-&=\lim_{h \to 0} \frac{6xh+3h^2}{h}
+f'(5)
+&=\lim_{h \to 0} \frac{f(5+h) - f(5)}{h} && \text{limit definition of $f'(5)$}\\ \\
+&=\lim_{h \to 0} \frac{[3(5+h)^2+12]-[87]}{h}
 \end{align*}
 ```
 
 
-```{dropdown} **Step 4:** &nbsp; Factor out &nbsp; $h$ &nbsp; and cancel.
+```{dropdown} **Step 3:** &nbsp; Simplify the Difference Quotient
 
-Factor out an $h$ in the numerator and cancel it with the factor of $h$ in the denominator.
+Simplify until we can factor out an $h$ in the numerator and cancel it with the factor of $h$ in the denominator.
 
-$$f'(x)=\lim_{h \to 0} \frac{6xh+3h^2}{h}=\lim_{h \to 0} \frac{h(6x+3h)}{h}=\lim_{h \to 0} 6x+3h$$
+
+\begin{align*}
+\frac{f(5+h) - f(5)}{h}
+&= \frac{[3(5+h)^2+12]-87}{h}\\ \\
+&= \frac{[3(25+10h+h^2)+12]-87}{h} && \text{FOIL $(5+h)^2$}\\ \\
+&= \frac{75+30h+3h^2+12-87}{h} && \text{distribute the 3}\\ \\
+&= \frac{30h+3h^2}{h} && \text{simplify} \\ \\
+&= \frac{h(30+3h)}{h} && \text{factor out $h$ in the numerator} \\ \\
+&= 30+3h && \text{cancel the factor of $h$ in the numerator and denominator}
+\end{align*}
+
+The last step of cancelling out the $h$ assumes $h\neq 0$.  Note that when we evaluate the limit as $h$ goes to zero in the next step, this will be a valid assumption.
 ```
 
 
-```{dropdown} **Step 5:** &nbsp; Evaluate the limit.
+
+```{dropdown} **Step 4:** &nbsp; Evaluate the limit.
 
 \begin{align*}
-f'(x)
-&=\lim_{h \to 0} 6x+3h \\
-&= 6x+3(0) &&\text{plug in $h=0$}\\
-&=6x && \text{simplify}
+f'(5)
+&= \lim_{h \to 0} \frac{f(5+h) - f(5)}{h} \\
+&= \lim_{h \to 0} 30+3h && \text{from Step 3} \\
+&= 30+3(0) &&\text{plug in $h=0$}\\
+&= 30 && \text{simplify}
 \end{align*}
 ```
 
+```{dropdown} **Step 5:** &nbsp; Write down the equation of the tangent line.
 
-```{dropdown} **Step 6:** &nbsp; Compute $f'(5)$.
-
-We have found that $f'(x) = 6x$ is the derivative of our function and the general form of the slope of the tangent line. All that's left for us to do is to plug in $x=5$. Therefore, the slope of the tangent line when $x=5$ (i.e., $f'(5)$) is equal to $30$.
-```
-
-```{dropdown} **Step 7:** &nbsp; Compute $f(5)$.
-
-In order to write down the equation of the tangent line, we also need to know the value $f(5)$.
-
-$$f(5) = 3(5)^2 + 12 = 87$$
-
-```
-
-```{dropdown} **Step 8:** &nbsp; Write down the equation of the tangent line.
-
-Now that we know $f(5) = 87$ and $f'(5) = 30$, the equation of the tangent line is given by
+From Steps 2 and 4, we know $f(5) = 87$ and $f'(5) = 30$.  Therefore, the equation of the tangent line is given by
 
 $$y = 30(x-5) + 87$$
 ```
 ````
 
+
+
+
 ### Example 2
+````{admonition} Compute the derivative at a point
+:class: tip
+
+Compute the derivative of $f(x)=\dfrac{3}{x+2}$ at $x=1$ using the limit definition of the derivative.
+
+
+```{dropdown} **Step 1:** &nbsp; Write down the limit definition of a derivative.
+
+$$ f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$$
+```
+
+```{dropdown} **Step 2:** &nbsp; Plug &nbsp; $f(1+h)$ &nbsp; and &nbsp; $f(1)$ &nbsp; into definition.
+
+To compute $f'(1)$, plug $f(1+h) = \frac{3}{1+h+2} = \frac{3}{3+h}$ and $f(1) = \frac{3}{1+2} = 1$ into the limit definition of the derivative.
+
+\begin{align*}
+f'(1)
+&= \lim_{h \to 0} \frac{f(1+h) - f(1)}{h} && \text{limit definition of $f'(1)$}\\ \\
+&= \lim_{h \to 0} \frac{\frac{3}{3+h}-1}{h}
+\end{align*}
+```
+
+
+```{dropdown} **Step 3:** &nbsp; Simplify the Difference Quotient
+
+Simplify until we can cancel out the factor of $h$ in the denominator.
+
+
+\begin{align*}
+\frac{f(1+h) - f(1)}{h}
+&= \frac{\frac{3}{3+h}-1}{h} \\ \\
+&= \left(\frac{3}{3+h}-1\right) \frac{1}{h} && \text{dividing by $h$ is the same as multiplying by $1/h$} \\ \\
+&= \left(\frac{3}{3+h}-\frac{3+h}{3+h}\right) \frac{1}{h} && \text{get a common denominator} \\ \\
+&= \left(\frac{3 - (3+h)}{3+h}\right) \frac{1}{h} && \text{subtract numerators}\\ \\
+&= \left(\frac{3 - 3-h}{3+h}\right) \frac{1}{h} && \text{distribute the minus sign} \\ \\
+&= \left(\frac{-h}{3+h}\right) \frac{1}{h} && \text{simplify the numerator}\\ \\
+&= -\frac{1}{3+h} && \text{cancel the factor of $h$ in the numerator and denominator}
+\end{align*}
+```
+
+
+
+```{dropdown} **Step 4:** &nbsp; Evaluate the limit.
+
+\begin{align*}
+f'(1)
+&= \lim_{h \to 0} \frac{f(1+h) - f(1)}{h}  \\
+&= \lim_{h \to 0} -\frac{1}{3+h} && \text{from Step 3} \\
+&= -\frac{1}{3+0} &&\text{plug in $h=0$}\\
+&= -\frac{1}{3} && \text{simplify}
+\end{align*}
+Therefore, the derivative of $f(x)$ at $x=1$ is equal to $-1/3$.
+```
+````
+
+
+### Example 3
 ````{admonition} Derivative of a square root function
 :class: tip
 
@@ -165,7 +214,7 @@ Compute the derivative of $f(x)=3\sqrt{x}$ using the limit definition of the der
 ```{dropdown} **Step 1:** &nbsp; Write down the limit definition of a derivative.
 
 $$
-\boxed{f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}}
+f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
 $$
 ```
 
@@ -212,3 +261,4 @@ f'(x)
 Therefore, the derivative of $f(x)$ is equal to $\frac{3}{2\sqrt{x}}$.
 ```
 ````
+

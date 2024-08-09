@@ -466,12 +466,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-extrema-in-a-closed-interval">Absolute Extrema in a Closed Interval</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval">How to Find the Absolute Extrema of a Function on a Closed Interval</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval">How to Find the Absolute Extrema of a Function on a Closed Interval</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -485,31 +489,84 @@ document.write(`
                   
   <section id="absolute-extrema">
 <h1>Absolute Extrema<a class="headerlink" href="#absolute-extrema" title="Link to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>The absolute extrema of a function <span class="math notranslate nohighlight">\(f\)</span>:</p>
-<ul class="simple">
-<li><p>If <span class="math notranslate nohighlight">\(f(c) \geq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>, then <span class="math notranslate nohighlight">\(f(c)\)</span> is called the <strong>absolute maximum value</strong> of <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
-<li><p>If <span class="math notranslate nohighlight">\(f(c) \leq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>, then <span class="math notranslate nohighlight">\(f(c)\)</span> is called the <strong>absolute minimum value</strong> of <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
-</ul>
+<p>A function <span class="math notranslate nohighlight">\(f\)</span> has an <em><strong>absolute maximum</strong></em> at <span class="math notranslate nohighlight">\(x=c\)</span> if <span class="math notranslate nohighlight">\(f(c) \geq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>.  In this case, <span class="math notranslate nohighlight">\(f(c)\)</span> is called the  <em><strong>absolute maximum value</strong></em>  of <span class="math notranslate nohighlight">\(f\)</span>.</p>
 </div>
-<section id="absolute-extrema-in-a-closed-interval">
-<h2>Absolute Extrema in a Closed Interval<a class="headerlink" href="#absolute-extrema-in-a-closed-interval" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition</p>
+<p>A function <span class="math notranslate nohighlight">\(f\)</span> has an <em><strong>absolute minimum</strong></em> at <span class="math notranslate nohighlight">\(x=c\)</span> if <span class="math notranslate nohighlight">\(f(c) \leq f(x)\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>.  In this case, <span class="math notranslate nohighlight">\(f(c)\)</span> is called the  <em><strong>absolute minimum value</strong></em>  of <span class="math notranslate nohighlight">\(f\)</span>.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Absolute Extrema on a Closed Interval</p>
 <p>If a function <span class="math notranslate nohighlight">\(f\)</span> is continuous on a closed interval <span class="math notranslate nohighlight">\([a,b]\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> has both an absolute maximum value and an absolute minimum value on <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
-</section>
+</div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
-<p>Observe that for a continuous function defined on a closed interval, absolute extrema can either appear at the endpoints of the interval or at the same place as a relative extrema.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/a8bfa1e1e555810bf3ccfd05cc7c94a7dea178ae0fb2ecccc9ee1a34824e4cfe.svg" src="../_images/a8bfa1e1e555810bf3ccfd05cc7c94a7dea178ae0fb2ecccc9ee1a34824e4cfe.svg" /></div>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Absolute extrema</p>
+<p>For a continuous function defined on a closed interval, absolute extrema can either appear at the endpoints of the interval or at the same place as a relative extrema.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Absolute extrema" src="../_images/pic_optimization_absolute_extrema.png" />
+</div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Long Text Descriptions</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Long Text Descriptions</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x axis with the points a and b marked. There is a vertical y axis. The graph of a function is plotted on these axes. The function begins on the left with a red marked point labelled “not a relative extremum,” is decreasing and concave up until it hits a rounded corner at a red marked point labelled “relative minimum,” is increasing and concave up until it hits a hard corner marked red and labelled “relative maximum,” decreases while concave up to a rounded corner at a red marked point labelled “absolute and relative maximum,” and increases and is concave up until it ends at a point labelled “absolute maximum.” There is a vertical dashed line between the point labelled “not a relative extremum” and the point (a,0). There is a vertical dashed line between the point labelled “absolute maximum” and the point (b,0).</p>
 </div>
-</details></section>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+
+\begin{tikzpicture}[scale = 1.8]
+
+  \draw [white,fill=white] (-1,-1) rectangle (8.5,5);
+  \draw [->] (-.5,0) -- (8,0) node [below] {$x$};
+  \draw [->] (0,-.5) -- (0,4.5) node [right] {$y$};
+
+  \draw [black,ultra thick] (1,3) node [above,align=center] {Not a Relative\\Extrema} 
+  sin (2,1.5) node [below,align=center] {Relative\\Minimum} 
+  cos (3,2.5) node [above,align=center] {Relative\\Maximum}
+  sin (5,1.0)  node [below,align=center] {Abs. \& Rel.\\Minimum} 
+  cos (7,4) node [above,align=center] {Absolute\\Maximum};
+
+  % draw dashed lines
+  \node [align=center, below] at (1,0) {$a$};
+  \draw [dashed] (1,0) -- (1,3);
+  %\node [align=center, below] at (2,0) {$x_{1}$};
+  %\draw [dashed] (2,0) -- (2,1.5);
+  %\node [align=center, below] at (3,0) {$x_{2}$};
+  %\draw [dashed] (3,0) -- (3,2.5);
+  %\node [align=center, below] at (5,0) {$x_{3}$};
+  %\draw [dashed] (5,0) -- (5,1.0);
+  \node [align=center, below] at (7,0) {$b$};
+  \draw [dashed] (7,0) -- (7,4);
+
+  % draw points
+  \foreach \point in {(1,3), (2,1.5), (3,2.5), (5,1.0), (7,4)}
+  \draw [black,fill=red] \point circle [radius=.06];
+
+\end{tikzpicture}
+\end{document} 
+```
+-->
+</section>
+</section>
 <section id="how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval">
 <h2>How to Find the Absolute Extrema of a Function on a Closed Interval<a class="headerlink" href="#how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval" title="Link to this heading">#</a></h2>
 <div class="info admonition">
@@ -521,13 +578,11 @@ document.write(`
 <li><p>The absolute maximum value and absolute minimum value of <span class="math notranslate nohighlight">\(f\)</span> will correspond to the largest and smallest numbers, respectively, found in Step 2.</p></li>
 </ol>
 </div>
-</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
-<p>Find the absolute extrema of the function</p>
-<div class="math notranslate nohighlight">
-\[f(x)=x^3-2x^2-4x+4\]</div>
-<p>on the interval <span class="math notranslate nohighlight">\([0,3]\)</span>.</p>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Finding absolute extrema</p>
+<p>Find the absolute extrema of the function <span class="math notranslate nohighlight">\(f(x)=x^3-2x^2-4x+4\)</span> on the interval <span class="math notranslate nohighlight">\([0,3]\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong> Decide whether <span class="math notranslate nohighlight">\(f\)</span> is continuous on the interval.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -558,13 +613,13 @@ document.write(`
 <span class="sd-summary-text"><strong>Step 4:</strong> Find absolute extrema by comparing values from Step 3.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">It follows that <span class="math notranslate nohighlight">\(f(2)=-4\)</span> is the absolute minimum value and <span class="math notranslate nohighlight">\(f(0)=4\)</span> is the absolute maximum value.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
-<p>Find the absolute extrema of the function</p>
-<div class="math notranslate nohighlight">
-\[f(x)=4x^5+5x^4\]</div>
-<p>on the interval <span class="math notranslate nohighlight">\([-2,1]\)</span>.</p>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Finding absolute extrema</p>
+<p>Find the absolute extrema of the function <span class="math notranslate nohighlight">\(f(x)=4x^5+5x^4\)</span> on the interval <span class="math notranslate nohighlight">\([-2,1]\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong> Decide whether <span class="math notranslate nohighlight">\(f\)</span> is continuous on the interval.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -596,13 +651,13 @@ document.write(`
 <span class="sd-summary-text"><strong>Step 4:</strong> Find absolute extrema by comparing values from Step 3.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">It follows that <span class="math notranslate nohighlight">\(f(-2)=-48\)</span> is the absolute minimum value and <span class="math notranslate nohighlight">\(f(1)=9\)</span> is the absolute maximum value.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
-<p>Find the absolute extrema of the function</p>
-<div class="math notranslate nohighlight">
-\[f(x)=\frac{1}{x-1}\]</div>
-<p>on the interval <span class="math notranslate nohighlight">\([2,4]\)</span>.</p>
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Finding absolute extrema</p>
+<p>Find the absolute extrema of the function <span class="math notranslate nohighlight">\(f(x)=\dfrac{1}{x-1}\)</span> on the interval <span class="math notranslate nohighlight">\([2,4]\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong> Decide whether <span class="math notranslate nohighlight">\(f\)</span> is continuous on the interval.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -635,7 +690,9 @@ document.write(`
 <span class="sd-summary-text"><strong>Step 4:</strong> Find absolute extrema by comparing values from Step 3.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">It follows that <span class="math notranslate nohighlight">\(f(4)=1/3\)</span> is the absolute minimum value and <span class="math notranslate nohighlight">\(f(2)=1\)</span> is the absolute maximum value.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -702,12 +759,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#absolute-extrema-in-a-closed-interval">Absolute Extrema in a Closed Interval</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval">How to Find the Absolute Extrema of a Function on a Closed Interval</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-find-the-absolute-extrema-of-a-function-on-a-closed-interval">How to Find the Absolute Extrema of a Function on a Closed Interval</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

@@ -344,7 +344,7 @@ There is a horizontal x-axis with the points -6, -4, -2, 2, 4, 6, and 8 marked. 
 ```{admonition} Quadratic Polynomials
 :class: info
 
-The general form of a quadratic polynomial (i.e., a polynomial of degree two) is
+The general form of a _**quadratic polynomial**_ (i.e., a polynomial of degree two) is
 
 $$y = ax^2 + bx + c$$
 
@@ -671,7 +671,7 @@ Any function of the form
 
 $$y = x^r$$
 
-where $r$ is any real number is called a power function.  Thus $x^2$, $x^3$, $x^4$, etc. are examples of power functions.  Root functions, like the square root (i.e., $\sqrt{x}$ or $x^{1/2}$) and cube root (i.e., $\sqrt[3]{x}$ or $x^{1/3}$) are also examples of power functions.
+where $r$ is any real number is called a _**power function**_.  Thus $x^2$, $x^3$, $x^4$, etc. are examples of power functions.  Root functions, like the square root (i.e., $\sqrt{x}$ or $x^{1/2}$) and cube root (i.e., $\sqrt[3]{x}$ or $x^{1/3}$) are also examples of power functions.
 ```
 
 ### Example 7

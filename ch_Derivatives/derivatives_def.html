@@ -470,6 +470,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-derivatives-using-the-limit-definition">Computing Derivatives Using the Limit Definition</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
 </ul>
 </li>
 </ul>
@@ -522,7 +523,7 @@ document.write(`
 <section id="computing-derivatives-using-the-limit-definition">
 <h2>Computing Derivatives Using the Limit Definition<a class="headerlink" href="#computing-derivatives-using-the-limit-definition" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Simplify the difference quotient</p>
+<p class="admonition-title">Simplify the Difference Quotient</p>
 <p>When computing the derivative, <span class="math notranslate nohighlight">\(f'(x)\)</span>, using its limit definition, it turns out that the limit will most likely be an indeterminate form of type <span class="math notranslate nohighlight">\(0/0\)</span>.  This means that to evaluate the limit, we’ll have to simplify the difference quotient</p>
 <div class="math notranslate nohighlight">
 \[\frac{f(x+h) - f(x)}{h}\]</div>
@@ -538,65 +539,53 @@ document.write(`
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Write down the limit definition of a derivative.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
-\[ 
-\boxed{f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}}
-\]</div>
-<p class="sd-card-text">Remember: <span class="math notranslate nohighlight">\(f(x+h)\)</span> means that we take <span class="math notranslate nohighlight">\(f(x)\)</span> and replace <span class="math notranslate nohighlight">\(x\)</span> with <span class="math notranslate nohighlight">\((x+h)\)</span>.  For example, if <span class="math notranslate nohighlight">\(f(x) = x^2\)</span>, then <span class="math notranslate nohighlight">\(f(x+h)=(x+h)^2=x^2+2xh+h^2.\)</span></p>
+\[ f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\]</div>
+<p class="sd-card-text">Remember: <span class="math notranslate nohighlight">\(f(x+h)\)</span> means that we take <span class="math notranslate nohighlight">\(f(x)\)</span> and replace every occurrence of <span class="math notranslate nohighlight">\(x\)</span> with <span class="math notranslate nohighlight">\((x+h)\)</span>.  For example, if <span class="math notranslate nohighlight">\(f(x) = x^2\)</span>, then <span class="math notranslate nohighlight">\(f(x+h)=(x+h)^2=x^2+2xh+h^2.\)</span></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong>   Plug   <span class="math notranslate nohighlight">\(f(x+h)\)</span>   and   <span class="math notranslate nohighlight">\(f(x)\)</span>   into definition.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Plug <span class="math notranslate nohighlight">\(f(x+h) = 3(x+h)^2 + 12\)</span> and <span class="math notranslate nohighlight">\(f(x) = 3x^2 + 12\)</span> into the limit definition of the derivative.
-Using brackets will help avoid errors from forgetting to distribute the negative sign:</p>
-<div class="math notranslate nohighlight">
-\[ f'(x)=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\]</div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong>   FOIL and Simplify</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Plug   <span class="math notranslate nohighlight">\(f(5+h)\)</span>   and   <span class="math notranslate nohighlight">\(f(5)\)</span>   into definition.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Recall that the slope of the line tagent to <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x=5\)</span> is given by <span class="math notranslate nohighlight">\(f'(5)\)</span>.  To compute <span class="math notranslate nohighlight">\(f'(5)\)</span>,
+plug <span class="math notranslate nohighlight">\(f(5+h) = 3(5+h)^2 + 12\)</span> and <span class="math notranslate nohighlight">\(f(5) = 3(5)^2 + 12 = 87\)</span> into the limit definition of the derivative.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-f'(x) &amp;=\lim_{h \to 0} \frac{[3(x+h)^2+12]-[3x^2+12]}{h}\\ \\
-&amp;=\lim_{h \to 0} \frac{[3(x^2+2xh+h^2)+12]-[3x^2+12]}{h} &amp;&amp; \hbox{FOIL $(x+h)^2$}\\ \\
-&amp;=\lim_{h \to 0} \frac{3x^2+6xh+3h^2+12-3x^2-12}{h} &amp;&amp; \hbox{distribute the 3 and the minus sign}\\ \\
-&amp;=\lim_{h \to 0} \frac{\cancel{3x^2}+6xh+3h^2+\cancel{12}-\cancel{3x^2}-\cancel{12}}{h} &amp;&amp; \hbox{simplify}\\ \\
-&amp;=\lim_{h \to 0} \frac{6xh+3h^2}{h}
+f'(5)
+&amp;=\lim_{h \to 0} \frac{f(5+h) - f(5)}{h} &amp;&amp; \text{limit definition of $f'(5)$}\\ \\
+&amp;=\lim_{h \to 0} \frac{[3(5+h)^2+12]-[87]}{h}
 \end{align*}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 4:</strong>   Factor out   <span class="math notranslate nohighlight">\(h\)</span>   and cancel.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Factor out an <span class="math notranslate nohighlight">\(h\)</span> in the numerator and cancel it with the factor of <span class="math notranslate nohighlight">\(h\)</span> in the denominator.</p>
-<div class="math notranslate nohighlight">
-\[f'(x)=\lim_{h \to 0} \frac{6xh+3h^2}{h}=\lim_{h \to 0} \frac{h(6x+3h)}{h}=\lim_{h \to 0} 6x+3h\]</div>
+<span class="sd-summary-text"><strong>Step 3:</strong>   Simplify the Difference Quotient</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Simplify until we can factor out an <span class="math notranslate nohighlight">\(h\)</span> in the numerator and cancel it with the factor of <span class="math notranslate nohighlight">\(h\)</span> in the denominator.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{f(5+h) - f(5)}{h}
+&amp;= \frac{[3(5+h)^2+12]-87}{h}\\ \\
+&amp;= \frac{[3(25+10h+h^2)+12]-87}{h} &amp;&amp; \text{FOIL $(5+h)^2$}\\ \\
+&amp;= \frac{75+30h+3h^2+12-87}{h} &amp;&amp; \text{distribute the 3}\\ \\
+&amp;= \frac{30h+3h^2}{h} &amp;&amp; \text{simplify} \\ \\
+&amp;= \frac{h(30+3h)}{h} &amp;&amp; \text{factor out $h$ in the numerator} \\ \\
+&amp;= 30+3h &amp;&amp; \text{cancel the factor of $h$ in the numerator and denominator}
+\end{align*}\]</div>
+<p class="sd-card-text">The last step of cancelling out the <span class="math notranslate nohighlight">\(h\)</span> assumes <span class="math notranslate nohighlight">\(h\neq 0\)</span>.  Note that when we evaluate the limit as <span class="math notranslate nohighlight">\(h\)</span> goes to zero in the next step, this will be a valid assumption.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 5:</strong>   Evaluate the limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Evaluate the limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-f'(x)
-&amp;=\lim_{h \to 0} 6x+3h \\
-&amp;= 6x+3(0) &amp;&amp;\text{plug in $h=0$}\\
-&amp;=6x &amp;&amp; \text{simplify}
+f'(5)
+&amp;= \lim_{h \to 0} \frac{f(5+h) - f(5)}{h} \\
+&amp;= \lim_{h \to 0} 30+3h &amp;&amp; \text{from Step 3} \\
+&amp;= 30+3(0) &amp;&amp;\text{plug in $h=0$}\\
+&amp;= 30 &amp;&amp; \text{simplify}
 \end{align*}\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 6:</strong>   Compute <span class="math notranslate nohighlight">\(f'(5)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">We have found that <span class="math notranslate nohighlight">\(f'(x) = 6x\)</span> is the derivative of our function and the general form of the slope of the tangent line. All that’s left for us to do is to plug in <span class="math notranslate nohighlight">\(x=5\)</span>. Therefore, the slope of the tangent line when <span class="math notranslate nohighlight">\(x=5\)</span> (i.e., <span class="math notranslate nohighlight">\(f'(5)\)</span>) is equal to <span class="math notranslate nohighlight">\(30\)</span>.</p>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 7:</strong>   Compute <span class="math notranslate nohighlight">\(f(5)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">In order to write down the equation of the tangent line, we also need to know the value <span class="math notranslate nohighlight">\(f(5)\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[f(5) = 3(5)^2 + 12 = 87\]</div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 8:</strong>   Write down the equation of the tangent line.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Now that we know <span class="math notranslate nohighlight">\(f(5) = 87\)</span> and <span class="math notranslate nohighlight">\(f'(5) = 30\)</span>, the equation of the tangent line is given by</p>
+<span class="sd-summary-text"><strong>Step 5:</strong>   Write down the equation of the tangent line.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">From Steps 2 and 4, we know <span class="math notranslate nohighlight">\(f(5) = 87\)</span> and <span class="math notranslate nohighlight">\(f'(5) = 30\)</span>.  Therefore, the equation of the tangent line is given by</p>
 <div class="math notranslate nohighlight">
 \[y = 30(x-5) + 87\]</div>
 </div>
@@ -605,6 +594,59 @@ f'(x)
 <section id="example-2">
 <h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
+<p class="admonition-title">Compute the derivative at a point</p>
+<p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)=\dfrac{3}{x+2}\)</span> at <span class="math notranslate nohighlight">\(x=1\)</span> using the limit definition of the derivative.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Write down the limit definition of a derivative.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="math notranslate nohighlight">
+\[ f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Plug   <span class="math notranslate nohighlight">\(f(1+h)\)</span>   and   <span class="math notranslate nohighlight">\(f(1)\)</span>   into definition.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To compute <span class="math notranslate nohighlight">\(f'(1)\)</span>, plug <span class="math notranslate nohighlight">\(f(1+h) = \frac{3}{1+h+2} = \frac{3}{3+h}\)</span> and <span class="math notranslate nohighlight">\(f(1) = \frac{3}{1+2} = 1\)</span> into the limit definition of the derivative.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(1)
+&amp;= \lim_{h \to 0} \frac{f(1+h) - f(1)}{h} &amp;&amp; \text{limit definition of $f'(1)$}\\ \\
+&amp;= \lim_{h \to 0} \frac{\frac{3}{3+h}-1}{h}
+\end{align*}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Simplify the Difference Quotient</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Simplify until we can cancel out the factor of <span class="math notranslate nohighlight">\(h\)</span> in the denominator.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{f(1+h) - f(1)}{h}
+&amp;= \frac{\frac{3}{3+h}-1}{h} \\ \\
+&amp;= \left(\frac{3}{3+h}-1\right) \frac{1}{h} &amp;&amp; \text{dividing by $h$ is the same as multiplying by $1/h$} \\ \\
+&amp;= \left(\frac{3}{3+h}-\frac{3+h}{3+h}\right) \frac{1}{h} &amp;&amp; \text{get a common denominator} \\ \\
+&amp;= \left(\frac{3 - (3+h)}{3+h}\right) \frac{1}{h} &amp;&amp; \text{subtract numerators}\\ \\
+&amp;= \left(\frac{3 - 3-h}{3+h}\right) \frac{1}{h} &amp;&amp; \text{distribute the minus sign} \\ \\
+&amp;= \left(\frac{-h}{3+h}\right) \frac{1}{h} &amp;&amp; \text{simplify the numerator}\\ \\
+&amp;= -\frac{1}{3+h} &amp;&amp; \text{cancel the factor of $h$ in the numerator and denominator}
+\end{align*}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Evaluate the limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'(1)
+&amp;= \lim_{h \to 0} \frac{f(1+h) - f(1)}{h}  \\
+&amp;= \lim_{h \to 0} -\frac{1}{3+h} &amp;&amp; \text{from Step 3} \\
+&amp;= -\frac{1}{3+0} &amp;&amp;\text{plug in $h=0$}\\
+&amp;= -\frac{1}{3} &amp;&amp; \text{simplify}
+\end{align*}\]</div>
+<p class="sd-card-text">Therefore, the derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x=1\)</span> is equal to <span class="math notranslate nohighlight">\(-1/3\)</span>.</p>
+</div>
+</details></div>
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
 <p class="admonition-title">Derivative of a square root function</p>
 <p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x)=3\sqrt{x}\)</span> using the limit definition of the derivative.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -612,7 +654,7 @@ f'(x)
 <span class="sd-summary-text"><strong>Step 1:</strong>   Write down the limit definition of a derivative.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[
-\boxed{f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}}
+f'(x)=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
 \]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -732,6 +774,7 @@ f'(x)
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-derivatives-using-the-limit-definition">Computing Derivatives Using the Limit Definition</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
 </ul>
 </li>
 </ul>

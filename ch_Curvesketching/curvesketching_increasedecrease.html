@@ -466,10 +466,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-increase-decrease-using-the-derivative">Finding Intervals of Increase/Decrease using the Derivative</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-representation-of-sign-analysis">Graphical representation of sign analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-increase-decrease-using-the-derivative">Finding Intervals of Increase/Decrease using the Derivative</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -483,60 +487,226 @@ document.write(`
                   
   <section id="intervals-of-increase-decrease">
 <h1>Intervals of Increase &amp; Decrease<a class="headerlink" href="#intervals-of-increase-decrease" title="Link to this heading">#</a></h1>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>A function <span class="math notranslate nohighlight">\(f\)</span> is <strong>increasing</strong> on the interval <span class="math notranslate nohighlight">\((a,b)\)</span> if for any two numbers <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(d\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\(f(c) &lt; f(d)\)</span> whenever <span class="math notranslate nohighlight">\(c&lt;d\)</span>.</p>
+<p>A function <span class="math notranslate nohighlight">\(f\)</span> is <em><strong>increasing</strong></em> on the interval <span class="math notranslate nohighlight">\((a,b)\)</span> if for any two numbers <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(d\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\(f(c) &lt; f(d)\)</span> whenever <span class="math notranslate nohighlight">\(c&lt;d\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_curvesketching_increasing.png"><img alt="Graph of an increasing function" src="../_images/pic_curvesketching_increasing.png" style="width: 250px;" /></a>
 </div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/686518bdc811c58801157840929ef7e0581c30e9b8dde4e6690d177404ff19d5.svg" src="../_images/686518bdc811c58801157840929ef7e0581c30e9b8dde4e6690d177404ff19d5.svg" /></div>
 </div>
+</div>
+</div>
+</div>
+<!--
+::::{grid} 2
+:::{grid-item}
+:columns: 6
+:margin: 4 0 4 4
+A function $f$ is _**increasing**_ on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) < f(d)$ whenever $c<d$.
+:::
+
+:::{grid-item-card}
+:columns: 4
+```{image} ../images/pic_curvesketching_increasing.png
+:alt: Graph of an increasing function
+```
+:::
+::::
+-->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(c) and f(d) marked. It is noted that f(c) is less than f(d).  The graph of the function f is plotted on these axes and the points (c,f(c)) and (d,f(d)) are each indicated by a red filled-in circle on the graph. The value of the function goes up as it goes from left to right. There is a red dashed line going from the point (c,0) to (c,f(c)) and then continuing to (0,f(c)). There is another red dashed line going from the point (d,0) to (d,f(d)) and then continuing to (0,f(d)).</p>
 </div>
-</details><div class="warning admonition">
-<p class="admonition-title">Theorem</p>
-<p>If <span class="math notranslate nohighlight">\(f'(x) &gt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is increasing on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p>
-</div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=2.0]
+\tikzstyle{every node}=[font=\large]
+\draw[white,fill=white] (0,-0.2) rectangle (3,3.8);
+
+% axis
+\draw[<->] (0,3) |- (3,0);
+     
+% dash lines
+\draw[dashed,red] (0,1.04) node[left] {\textcolor{black}{$f(c)$}} -| (1.2,0);
+\draw[dashed,red] (0,1.94) node[left] {\textcolor{black}{$f(d)$}} -| (1.8,0);
+
+% draw curve
+\draw [ultra thick] (0.5,0.5) cos (1.5,1.5) sin (2.5,2.5);
+
+% draw points
+\draw [black,fill=red] (1.2,1.04) circle (2.0pt);
+\draw [black,fill=red] (1.8,1.94) circle (2.0pt);
+
+\node[rotate=90] at (-0.5,1.5) {$<$};
+\node[above] at (0.5,-0.6) {$a$};
+\node[above] at (1.2,-0.6) {$c$};
+\node[above] at (1.5,-0.6) {$<$};
+\node[above] at (1.8,-0.6) {$d$};
+\node[above] at (2.5,-0.6) {$b$};
+
+% tick marks
+\draw [thick] (0.5 cm,2pt) -- (0.5 cm,-2pt);
+\draw [thick] (1.2 cm,2pt) -- (1.2 cm,-2pt);
+\draw [thick] (1.8 cm,2pt) -- (1.8 cm,-2pt);
+\draw [thick] (2.5 cm,2pt) -- (2.5 cm,-2pt);
+\end{tikzpicture}
+\end{document}
+```
+-->
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>A function <span class="math notranslate nohighlight">\(f\)</span> is decreasing on the interval <span class="math notranslate nohighlight">\((a,b)\)</span> if for any two numbers <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(d\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\(f(c) &gt; f(d)\)</span> whenever <span class="math notranslate nohighlight">\(c&lt;d\)</span>.</p>
+<p>A function <span class="math notranslate nohighlight">\(f\)</span> is <em><strong>decreasing</strong></em> on the interval <span class="math notranslate nohighlight">\((a,b)\)</span> if for any two numbers <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(d\)</span> in <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\(f(c) &gt; f(d)\)</span> whenever <span class="math notranslate nohighlight">\(c&lt;d\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_curvesketching_decreasing.png"><img alt="Graph of a decreasing function" src="../_images/pic_curvesketching_decreasing.png" style="width: 250px;" /></a>
 </div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/9e0a85c15f96440b800415f7e051b59f237fa788ecc4d6e1bcf0a526f8a15c25.svg" src="../_images/9e0a85c15f96440b800415f7e051b59f237fa788ecc4d6e1bcf0a526f8a15c25.svg" /></div>
 </div>
+</div>
+</div>
+</div>
+<!--
+::::{grid} 2
+:::{grid-item}
+:columns: 6
+:margin: 4 0 4 4
+A function $f$ is _**decreasing**_ on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) > f(d)$ whenever $c<d$.
+:::
+:::{grid-item-card}
+:columns: 4
+```{image} ../images/pic_curvesketching_decreasing.png
+:alt: Graph of a decreasing function
+:align: center
+```
+:::
+::::
+-->
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(d) and f(c) marked. It is noted that f(c) is more than f(d). The graph of the function f is plotted on these axes and the points (c,f(c)) and (d,f(d)) are each indicated by a red filled-in circle on the graph. The value of the function goes down as it goes from left to right. There is a red dashed line going from the point (c,0) to (c,f(c)) and then continuing to (0,f(c)). There is another red dashed line going from the point (d,0) to (d,f(d)) and then continuing to (0,f(d)).</p>
 </div>
-</details><div class="warning admonition">
-<p class="admonition-title">Theorem</p>
-<p>If <span class="math notranslate nohighlight">\(f'(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is decreasing on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=2.0]
+\tikzstyle{every node}=[font=\large]
+\draw[white,fill=white] (0,-0.2) rectangle (3,3.8);
+
+% axis
+\draw[<->] (0,3) |- (3,0);
+     
+% dash lines
+\draw[dashed,red] (0,1.94) node[left] {\textcolor{black}{$f(c)$}} -| (1.2,0);
+\draw[dashed,red] (0,1.04) node[left] {\textcolor{black}{$f(d)$}} -| (1.8,0);
+
+% draw curve
+\draw [ultra thick] (0.5,2.5) cos (1.5,1.5) sin (2.5,0.5);
+
+% draw points
+\draw [black,fill=red] (1.2,1.94) circle (2.0pt);
+\draw [black,fill=red] (1.8,1.04) circle (2.0pt);
+
+\node[rotate=90] at (-0.5,1.5) {$<$};
+\node[above] at (0.5,-0.6) {$a$};
+\node[above] at (1.2,-0.6) {$c$};
+\node[above] at (1.5,-0.6) {$<$};
+\node[above] at (1.8,-0.6) {$d$};
+\node[above] at (2.5,-0.6) {$b$};
+
+% tick marks
+\draw [thick] (0.5 cm,2pt) -- (0.5 cm,-2pt);
+\draw [thick] (1.2 cm,2pt) -- (1.2 cm,-2pt);
+\draw [thick] (1.8 cm,2pt) -- (1.8 cm,-2pt);
+\draw [thick] (2.5 cm,2pt) -- (2.5 cm,-2pt);
+\end{tikzpicture}
+\end{document}
+```
+-->
+<div class="important admonition">
+<p class="admonition-title">What the Sign of <span class="math notranslate nohighlight">\(f'\)</span> Tells Us About <span class="math notranslate nohighlight">\(f\)</span></p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(f'(x) &gt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is increasing on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(f'(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> in the interval <span class="math notranslate nohighlight">\((a,b)\)</span>, then <span class="math notranslate nohighlight">\(f\)</span> is decreasing on <span class="math notranslate nohighlight">\((a,b)\)</span>.</p></li>
+</ul>
 </div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Intervals of increase/decrease from the graph of a function</p>
 <p>The following is the graph of a continuous function that is increasing on the intervals <span class="math notranslate nohighlight">\((1,2)\)</span> and <span class="math notranslate nohighlight">\((4,6)\)</span> and decreasing on the intervals <span class="math notranslate nohighlight">\((2,4)\)</span> and <span class="math notranslate nohighlight">\((6,7)\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a generic function" src="../_images/pic_curvesketching_increasedecrease_example_1.png" />
 </div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/00b8b219d67120f1b560de234f0a5e9e7d56511df6cf94ac7212a5144467b8a0.svg" src="../_images/00b8b219d67120f1b560de234f0a5e9e7d56511df6cf94ac7212a5144467b8a0.svg" /></div>
+</div>
+</div>
+</div>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y-axis with no points marked. The graph of a function is plotted here. The graph moves consistently upward as it goes from x = 1 to x = 2, moves consistently downward as it goes from x = 2 to x = 4, moves consistently upward as it goes from x = 4 to x = 6, moves consistently downward as it goes from x = 6 to x = 7. The graph has rounded corners at x = 2 and 4, and has a sharp corner at x = 6.</p>
 </div>
-</details></section>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\begin{document}
+\begin{tikzpicture}[scale=2.0]
+\tikzstyle{every node}=[font=\large]
+
+\draw[white,fill=white] (0,0) rectangle (8,4);
+ \draw[very thin,color=darkgray,step=1.0] (0,0) grid (8,4);
+ \draw[very thin,color=lightgray,step=0.25] (0,0) grid (8,4);
+
+\draw[->] (0,0) -- (8,0) node[below] {$x$};
+\draw[->] (0,0) -- (0,4) node[right] {$y$};
+     
+% draw curve
+\draw [ultra thick] 
+(1,1.5) sin (2,2.5) cos (3,1.5) sin (4,0.5) cos (6,3.5) sin (7,1.5);
+
+
+% tick marks
+\foreach \x in {1,...,7} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {$\x$};
+\end{tikzpicture}
+\end{document}
+```
+-->
+</section>
+</section>
 <section id="finding-intervals-of-increase-decrease-using-the-derivative">
 <h2>Finding Intervals of Increase/Decrease using the Derivative<a class="headerlink" href="#finding-intervals-of-increase-decrease-using-the-derivative" title="Link to this heading">#</a></h2>
-<div class="warning admonition">
-<p class="admonition-title">How to find the intervals of increase/decrease of a function</p>
+<div class="info admonition">
+<p class="admonition-title">How to Find the Intervals of Increase/Decrease of a Function</p>
 <ol class="arabic simple">
 <li><p>Find all values of <span class="math notranslate nohighlight">\(x\)</span> such that <span class="math notranslate nohighlight">\(f'(x) = 0\)</span> or <span class="math notranslate nohighlight">\(f'(x)\)</span> does not exist.</p></li>
 <li><p>Break up domain of <span class="math notranslate nohighlight">\(f\)</span> into open intervals between values found in Step 1.</p></li>
@@ -548,16 +718,11 @@ document.write(`
 </li>
 </ol>
 </div>
-</section>
 <section id="example-2">
-<span id="curvesketching-increasedecrease-example2"></span><h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<span id="curvesketching-increasedecrease-example2"></span><h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Finding intervals of increase/decrease</p>
-<p>Determine the intervals where</p>
-<div class="math notranslate nohighlight">
-\[f(x) = x^3 + 3 x^2 - 9 x -8\]</div>
-<p>is increasing and where it is decreasing.</p>
-</div>
+<p>Determine the intervals where <span class="math notranslate nohighlight">\(f(x) = x^3 + 3 x^2 - 9 x -8\)</span> is increasing and where it is decreasing.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Compute   <span class="math notranslate nohighlight">\(f'(x)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -601,9 +766,9 @@ Since <span class="math notranslate nohighlight">\(f'(0) = 3(3)(-1) &lt; 0\)</sp
 Since <span class="math notranslate nohighlight">\(f'(2) = 3(5)(1) &gt; 0\)</span>,
 <span class="math notranslate nohighlight">\(f\)</span> is increasing on <span class="math notranslate nohighlight">\((1,\infty)\)</span>.</p>
 </div>
-</details></section>
-<section id="graphical-representation-of-sign-analysis">
-<h2>Graphical representation of sign analysis<a class="headerlink" href="#graphical-representation-of-sign-analysis" title="Link to this heading">#</a></h2>
+</details></div>
+<div class="warning admonition">
+<p class="admonition-title">Graphical Representation of Sign Analysis</p>
 <p>We will typically represent the above sign analysis by drawing a number line, marking off the values in the domain of <span class="math notranslate nohighlight">\(f\)</span> such that <span class="math notranslate nohighlight">\(f'(x) = 0\)</span> or <span class="math notranslate nohighlight">\(f'(x)\)</span> does not exist, and then putting a <span class="math notranslate nohighlight">\(+\)</span> or <span class="math notranslate nohighlight">\(-\)</span> above each interval according to the sign of <span class="math notranslate nohighlight">\(f'(c)\)</span>, where <span class="math notranslate nohighlight">\(c\)</span> is the test value taken from the corresponding interval.  The number line associated with the calculations in <a class="reference internal" href="#curvesketching-increasedecrease-example2"><span class="std std-ref">Example 2</span></a> is shown below.</p>
 <a class="reference internal image-reference" href="../_images/pic_curvesketching_intervalsignanalysis.png"><img alt="graphical representation of sign analysis on the number line" class="align-center" src="../_images/pic_curvesketching_intervalsignanalysis.png" style="width: 600px;" /></a>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -611,7 +776,9 @@ Since <span class="math notranslate nohighlight">\(f'(2) = 3(5)(1) &gt; 0\)</spa
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">A number line with positive and negative signs assigned to intervals, with positive to the left of negative three, negative between negative three and one, and positive to the right of one.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -678,10 +845,14 @@ Since <span class="math notranslate nohighlight">\(f'(2) = 3(5)(1) &gt; 0\)</spa
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-increase-decrease-using-the-derivative">Finding Intervals of Increase/Decrease using the Derivative</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-representation-of-sign-analysis">Graphical representation of sign analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-increase-decrease-using-the-derivative">Finding Intervals of Increase/Decrease using the Derivative</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
