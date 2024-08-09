@@ -13,18 +13,19 @@ kernelspec:
 ---
 # Asymptotes
 
+## Definitions
 
-```{admonition} Vertical Asymptotes
+```{admonition} Definition
 :class: info
 
-The line $x=a$ is a **vertical asymptote** of the function $f$ if
+The line $x=a$ is a _**vertical asymptote**_ of the function $f$ if
 
 $$\lim_{x \to a^+} f(x)= \pm \infty \qquad \text{or} \qquad
 \lim_{x \to a^-} f(x)= \pm \infty$$
 ```
 
-```{admonition} Vertical Asymptotes for a Rational Function
-:class: attention
+```{admonition} Vertical Asymptotes of a Rational Function
+:class: note
 
 The rational function 
 
@@ -36,10 +37,10 @@ We can find the vertical asymptotes by factoring $g(x)$ and $h(x)$ and then canc
 ```
 
 
-```{admonition} Horizontal Asymptotes
+```{admonition} Definition
 :class: info
 
-The line $y=b$ is a **horizontal asymptote** of the function $f$ if:
+The line $y=b$ is a _**horizontal asymptote**_ of the function $f$ if:
 
 $$\lim_{x \to \infty} f(x)= b \qquad \text{or} \qquad \lim_{x \to -\infty} f(x)= b$$
 
@@ -49,11 +50,34 @@ A function can have at most two different horizontal asymptotes.
 ```
 
 
-## Example 1
+```{admonition} Horizontal Asymptotes of a Rational Function
+:class: note
+
+Horizontal asymptotes of rational functions are determined by computing the limit at infinity of the given rational function, which can be accomplished by comparing the degree of the numerator to the degree of the denominator.  See {ref}`lim:lim_infinity_rational` for a review of this process.
+```
+
+
+### Example 1
+
+````{admonition} Graph of vertical and horizontal asymptotes
+:class: tip
 
 The following graph is an example of a function that has vertical asymptotes at $x=-1$ and $x=3$ and a horizontal asymptote at $y=1$.
 
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_curvesketching_asymptotes.png
+:alt: Graph of function with vertical and horizontal asymptotes$
+```
+:::
+::::
+```{dropdown} Long Text Description
+There is a horizontal x-axis with the points -1 and 3 marked. There is a vertical y-axis. There is a grid in the background of 1/2 by 1/2 squares. There is a blue dashed horizontal line at y = 1. There is a red dashed vertical line at x = -1. There is a red dashed vertical line at x = 3. The graph of a function is plotted on these axes. From left to right, the function decreases from the blue dashed line and goes to negative infinity as it approaches the red dashed line at x = -1, comes down from positive infinity to the right of -1, goes down to negative infinity as it approaches the red dashed line at x = 3, and comes down from positive infinity at x = 3 towards the blue dashed line as it heads off to the right.
+```
+````
 
+<!--
 ```{code-cell}
 :tags: [remove-cell]
 
@@ -101,18 +125,16 @@ The following graph is an example of a function that has vertical asymptotes at 
 \end{tikzpicture}
 \end{document}
 ```
-```{dropdown} Long Text Description
-There is a horizontal x-axis with the points -1 and 3 marked. There is a vertical y-axis. There is a grid in the background of 1/2 by 1/2 squares. There is a blue dashed horizontal line at y = 1. There is a red dashed vertical line at x = -1. There is a red dashed vertical line at x = 3. The graph of a function is plotted on these axes. From left to right, the function decreases from the blue dashed line and goes to negative infinity as it approaches the red dashed line at x = -1, comes down from positive infinity to the right of -1, goes down to negative infinity as it approaches the red dashed line at x = 3, and comes down from positive infinity at x = 3 towards the blue dashed line as it heads off to the right.
-```
-## Example 2
+-->
 
-```{admonition} Find asymptotes
+
+### Example 2
+
+````{admonition} Find asymptotes
 :class: tip
 
-Find the horizontal and vertical asymptotes of 
+Find the horizontal and vertical asymptotes of $f(x)=\dfrac{7x^2+2x+1}{2x^2+3x-9}$.
 
-$$f(x)=\dfrac{7x^2+2x+1}{2x^2+3x-9}.$$
-```
 
 ```{dropdown} **Step 1:** &nbsp;  Horizontal Asymptotes.
 
@@ -140,19 +162,17 @@ Since the numerator cannot be factored, to make sure these values of $x$ corresp
 
 Since $g(-3) \neq 0 $ and $g(3/2) \neq 0$, $x=-3$ and $x=3/2$ are both vertical asymptotes.
 ```
+````
 
 
 
+### Example 3
 
-## Example 3
-
-```{admonition} Find asymptotes
+````{admonition} Find asymptotes
 :class: tip
 
-Find the horizontal and vertical asymptotes of 
+Find the horizontal and vertical asymptotes of $f(x)=\dfrac{x^4-x^2}{x^3 + x^2 - 2 x}$.
 
-$$f(x)=\dfrac{x^4-x^2}{x^3 + x^2 - 2 x}.$$
-```
 
 ```{dropdown} **Step 1:** &nbsp;  Horizontal Asymptotes.
 
@@ -178,6 +198,7 @@ f(x)
 
 Since only $x=-2$ makes the denominator equal to zero, after cancellation, $x=-2$ is the only vertical asymptote.
 ```
+````
 
 
 

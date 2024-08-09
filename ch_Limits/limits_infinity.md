@@ -232,6 +232,7 @@ There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. The
 ```
 -->
 
+(lim:lim_infinity_rational)=
 ## Limits at Infinity of Rational Functions
 
 ```{admonition} How to Compute the Limit at Infinity of a Rational Function

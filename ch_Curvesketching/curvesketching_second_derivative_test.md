@@ -25,15 +25,12 @@ Suppose $c$ is a critical point of $f$ where $f'(c) = 0$ and $f''(x)$ is continu
 3. If $f''(c) = 0$, then the test is **inconclusive** and the First Derivative Test should be used instead.
 ```
 
-## Example 1
-
-```{admonition} Classifying critical points using the second derivative test
+### Example 1
+`````{admonition} Classifying critical points using the second derivative test
 :class: tip
 
-Find the relative extrema of 
+Find the relative extrema of $f(x) = 12 x^5 - 45 x^4 - 200 x^3 +12$.
 
-$$f(x) = 12 x^5 - 45 x^4 - 200 x^3 +12.$$
-```
 
 ```{dropdown} **Step 1:** &nbsp; Find the critical points of &nbsp; $f$.
 
@@ -77,3 +74,4 @@ A number line with positive and negative signs assigned to intervals, with negat
 ```
 - $x=5$: Since $f'(5) = 0$ and $f''(5) = 60(5)(100-45-20) > 0$, $f$ has a relative minimum at $x=5$.
 ````
+`````

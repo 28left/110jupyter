@@ -13,18 +13,26 @@ kernelspec:
 ---
 # Critical Points
 
+## Definition
+
 ```{admonition} Definition
 :class: info
 
-A **critical point** of the function $f$ is any number $c$ *in the domain of* $f$ such that 
+A _**critical point**_ of the function $f$ is any number $c$ **in the domain of** $f$ such that 
 
 $$f'(c)=0 \quad \text{or} \quad \text{$f'(c)$ does not exist.}$$
 ```
 
-Critical points of $f$ correspond to *possible* locations of relative extrema.
+```{admonition} Critical Points versus Relative Extrema
+:class: warning
+Critical points of $f$ correspond to **possible** locations of relative extrema.  In other words, not all critical points correspond to a relative extrema.  However, every relative extrema must appear at a critical point.
+```
+
 
 (optimization_critical_points_example_1)=
 ## Example 1
+````{admonition} Finding critical points
+:class: tip 
 
 Find all critical points of $f(x)=2x^3-15x^2+36x+20$.
 
@@ -53,9 +61,13 @@ Since $f'(x)$ is polynomial, it exists for all real numbers.
 
 The domain of $f(x)$ is all real numbers. Therefore, since both values are in the domain of $f$, $x=2$ and $x=3$ are critical points of $f$.
 ```
+````
+
 
 (optimization_critical_points_example_2)=
 ## Example 2
+````{admonition} Finding critical points
+:class: tip 
 
 Find all critical points of $f(x)=\dfrac{1}{x^2-1}$.
 
@@ -82,3 +94,4 @@ $f'(x)$ does not exist when $(x^2-1)^2 = 0$, which occurs when $x=1$ and when $x
 
 The domain of $f(x)$ is all real numbers except $x=1$ and $x=-1$. Therefore, $x=0$ is a critical point, but $x=1$ and $x=-1$ are not critical points since they are not in the domain of $f$. 
 ```
+````

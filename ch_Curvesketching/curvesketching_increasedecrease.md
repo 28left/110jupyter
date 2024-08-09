@@ -13,18 +13,52 @@ kernelspec:
 ---
 # Intervals of Increase & Decrease
 
+## Definitions
 ```{code-cell}
 :tags: [remove-cell]
 
 %load_ext itikz
 ```
 
-```{admonition} Definition
+````{admonition} Definition
 :class: info
 
-A function $f$ is **increasing** on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) < f(d)$ whenever $c<d$.
+A function $f$ is _**increasing**_ on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) < f(d)$ whenever $c<d$.
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_curvesketching_increasing.png
+:alt: Graph of an increasing function
+:width: 250px
+```
+:::
+::::
+
+<!--
+::::{grid} 2
+:::{grid-item}
+:columns: 6
+:margin: 4 0 4 4
+A function $f$ is _**increasing**_ on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) < f(d)$ whenever $c<d$.
+:::
+
+:::{grid-item-card}
+:columns: 4
+```{image} ../images/pic_curvesketching_increasing.png
+:alt: Graph of an increasing function
+```
+:::
+::::
+-->
+```{dropdown} Long Text Description 
+There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(c) and f(d) marked. It is noted that f(c) is less than f(d).  The graph of the function f is plotted on these axes and the points (c,f(c)) and (d,f(d)) are each indicated by a red filled-in circle on the graph. The value of the function goes up as it goes from left to right. There is a red dashed line going from the point (c,0) to (c,f(c)) and then continuing to (0,f(c)). There is another red dashed line going from the point (d,0) to (d,f(d)) and then continuing to (0,f(d)). 
 ```
 
+
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -64,25 +98,51 @@ A function $f$ is **increasing** on the interval $(a,b)$ if for any two numbers 
 \end{tikzpicture}
 \end{document}
 ```
+-->
 
 
-```{dropdown} Long Text Description 
-There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(c) and f(d) marked. It is noted that f(c) is less than f(d).  The graph of the function f is plotted on these axes and the points (c,f(c)) and (d,f(d)) are each indicated by a red filled-in circle on the graph. The value of the function goes up as it goes from left to right. There is a red dashed line going from the point (c,0) to (c,f(c)) and then continuing to (0,f(c)). There is another red dashed line going from the point (d,0) to (d,f(d)) and then continuing to (0,f(d)). 
-```
-
-```{admonition} Theorem
-:class: warning
-
-If $f'(x) > 0$ for all $x$ in the interval $(a,b)$, then $f$ is increasing on $(a,b)$.
-```
 
 
-```{admonition} Definition
+
+
+
+````{admonition} Definition
 :class: info
 
-A function $f$ is decreasing on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) > f(d)$ whenever $c<d$.
-```
+A function $f$ is _**decreasing**_ on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) > f(d)$ whenever $c<d$.
 
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_curvesketching_decreasing.png
+:alt: Graph of a decreasing function
+:width: 250px
+```
+:::
+::::
+
+<!--
+::::{grid} 2
+:::{grid-item}
+:columns: 6
+:margin: 4 0 4 4
+A function $f$ is _**decreasing**_ on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) > f(d)$ whenever $c<d$.
+:::
+:::{grid-item-card}
+:columns: 4
+```{image} ../images/pic_curvesketching_decreasing.png
+:alt: Graph of a decreasing function
+:align: center
+```
+:::
+::::
+-->
+```{dropdown} Long Text Description 
+There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(d) and f(c) marked. It is noted that f(c) is more than f(d). The graph of the function f is plotted on these axes and the points (c,f(c)) and (d,f(d)) are each indicated by a red filled-in circle on the graph. The value of the function goes down as it goes from left to right. There is a red dashed line going from the point (c,0) to (c,f(c)) and then continuing to (0,f(c)). There is another red dashed line going from the point (d,0) to (d,f(d)) and then continuing to (0,f(d)). 
+```
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -122,27 +182,40 @@ A function $f$ is decreasing on the interval $(a,b)$ if for any two numbers $c$ 
 \end{tikzpicture}
 \end{document}
 ```
+-->
 
-```{dropdown} Long Text Description 
-There is a horizontal axis with the points a, c, d, and b marked. It is noted that c is less than d. There is a vertical axis with the points f(d) and f(c) marked. It is noted that f(c) is more than f(d). The graph of the function f is plotted on these axes and the points (c,f(c)) and (d,f(d)) are each indicated by a red filled-in circle on the graph. The value of the function goes down as it goes from left to right. There is a red dashed line going from the point (c,0) to (c,f(c)) and then continuing to (0,f(c)). There is another red dashed line going from the point (d,0) to (d,f(d)) and then continuing to (0,f(d)). 
+
+```{admonition} What the Sign of $f'$ Tells Us About $f$
+:class: important
+
+- If $f'(x) > 0$ for all $x$ in the interval $(a,b)$, then $f$ is increasing on $(a,b)$.
+- If $f'(x) < 0$ for all $x$ in the interval $(a,b)$, then $f$ is decreasing on $(a,b)$.
+
 ```
 
-```{admonition} Theorem
-:class: warning
-
-If $f'(x) < 0$ for all $x$ in the interval $(a,b)$, then $f$ is decreasing on $(a,b)$.
-```
 
 
+### Example 1
 
-## Example 1
-
-```{admonition} Intervals of increase/decrease from the graph of a function
+````{admonition} Intervals of increase/decrease from the graph of a function
 :class: tip
 
 The following is the graph of a continuous function that is increasing on the intervals $(1,2)$ and $(4,6)$ and decreasing on the intervals $(2,4)$ and $(6,7)$.  
-```
 
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_curvesketching_increasedecrease_example_1.png
+:alt: Graph of a generic function
+```
+:::
+::::
+``` {dropdown} Long Text Description
+There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y-axis with no points marked. The graph of a function is plotted here. The graph moves consistently upward as it goes from x = 1 to x = 2, moves consistently downward as it goes from x = 2 to x = 4, moves consistently upward as it goes from x = 4 to x = 6, moves consistently downward as it goes from x = 6 to x = 7. The graph has rounded corners at x = 2 and 4, and has a sharp corner at x = 6.
+```
+````
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -170,14 +243,12 @@ The following is the graph of a continuous function that is increasing on the in
 \end{tikzpicture}
 \end{document}
 ```
-``` {dropdown} Long Text Description
-There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. There is a vertical y-axis with no points marked. The graph of a function is plotted here. The graph moves consistently upward as it goes from x = 1 to x = 2, moves consistently downward as it goes from x = 2 to x = 4, moves consistently upward as it goes from x = 4 to x = 6, moves consistently downward as it goes from x = 6 to x = 7. The graph has rounded corners at x = 2 and 4, and has a sharp corner at x = 6.
-```
+-->
 
 ## Finding Intervals of Increase/Decrease using the Derivative
 
-```{admonition} How to find the intervals of increase/decrease of a function
-:class: warning
+```{admonition} How to Find the Intervals of Increase/Decrease of a Function
+:class: info
 
 1. Find all values of $x$ such that $f'(x) = 0$ or $f'(x)$ does not exist. 
 2. Break up domain of $f$ into open intervals between values found in Step 1.
@@ -187,16 +258,11 @@ There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. The
 ```
 
 (curvesketching:increasedecrease:example2)=
-## Example 2
+### Example 2
 
-```{admonition} Finding intervals of increase/decrease
+````{admonition} Finding intervals of increase/decrease
 :class: tip
-Determine the intervals where 
-
-$$f(x) = x^3 + 3 x^2 - 9 x -8$$
-
-is increasing and where it is decreasing.
-```
+Determine the intervals where $f(x) = x^3 + 3 x^2 - 9 x -8$ is increasing and where it is decreasing.
 
 ```{dropdown} **Step 1:** &nbsp; Compute &nbsp; $f'(x)$.
 
@@ -242,10 +308,12 @@ $\mathbf{(1,\infty)}$:  Plug $x=2$ into $f'(x)$.
 Since $f'(2) = 3(5)(1) > 0$, 
 $f$ is increasing on $(1,\infty)$.
 ```
+````
 
 
-## Graphical representation of sign analysis
 
+````{admonition} Graphical Representation of Sign Analysis
+:class: warning
 We will typically represent the above sign analysis by drawing a number line, marking off the values in the domain of $f$ such that $f'(x) = 0$ or $f'(x)$ does not exist, and then putting a $+$ or $-$ above each interval according to the sign of $f'(c)$, where $c$ is the test value taken from the corresponding interval.  The number line associated with the calculations in {ref}`curvesketching:increasedecrease:example2` is shown below.
 
 ```{image} ../images/pic_curvesketching_intervalsignanalysis.png
@@ -256,3 +324,4 @@ We will typically represent the above sign analysis by drawing a number line, ma
 ```{dropdown} Long Text Description
 A number line with positive and negative signs assigned to intervals, with positive to the left of negative three, negative between negative three and one, and positive to the right of one.
 ```
+````
