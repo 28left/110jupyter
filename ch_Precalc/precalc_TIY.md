@@ -58,7 +58,7 @@ Answer: $2 + x - 18x^2 - 9x^3$
 ````
 
 ## Exercise 5
-````{admonition} Expand
+````{admonition} Factor
 :class: tip
 
 Factor $4x^5 - 25x^3$. 

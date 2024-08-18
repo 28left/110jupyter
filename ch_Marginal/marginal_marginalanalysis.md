@@ -13,7 +13,7 @@ kernelspec:
 ---
 # Marginal Analysis
 
-## Marginal Cost & Marginal Average Cost Functions
+## Definitions
 
 ```{admonition} Definition
 :class: info
@@ -25,8 +25,6 @@ $$C'(x) \approx C(x+1) - C(x)$$
 and $\overline{C}'(x)$ denotes the _**marginal average cost function**_.
 ```
 
-
-## Marginal Revenue & Marginal Average Revenue Functions
 
 
 ```{admonition} Definition
@@ -40,7 +38,6 @@ and $\overline{R}'(x)$ denotes the _**marginal average revenue function**_.
 ```
 
 
-## Marginal Profit & Marginal Average Profit Functions
 
 ```{admonition} Definition
 :class: info
@@ -53,17 +50,18 @@ and $\overline{P}'(x)$ denotes the _**marginal average profit function**_.
 ```
 
 
-## Marginal Analysis Notation
-
+```{admonition} Summary of Marginal Analysis Notation
+:class: note
 
 | Name    | Function | Average                            | Marginal Function | Marginal Average                                  |
 |---------|----------|------------------------------------|-------------------|---------------------------------------------------|
-| Cost    | $C(x)$   | $\overline{C}(x) = \frac{C(x)}{x}$ | $C'(x)$           | $ \overline{C}'(x) = \frac{d}{dx}\overline{C}(x)$ |
-| Revenue | $R(x)$   | $\overline{R}(x) = \frac{R(x)}{x}$ | $R'(x)$           | $ \overline{R}'(x) = \frac{d}{dx}\overline{R}(x)$ |
-| Profit  | $P(x)$   | $\overline{P}(x) = \frac{P(x)}{x}$ | $P'(x)$           | $\overline{P}'(x) = \frac{d}{dx}\overline{P}(x)$  |
+| Cost    | $C(x)$   | $\overline{C}(x) = \dfrac{C(x)}{x}$ | $C'(x)$           | $ \overline{C}'(x) = \dfrac{d}{dx}\overline{C}(x)$ |
+| Revenue | $R(x)$   | $\overline{R}(x) = \dfrac{R(x)}{x}$ | $R'(x)$           | $ \overline{R}'(x) = \dfrac{d}{dx}\overline{R}(x)$ |
+| Profit  | $P(x)$   | $\overline{P}(x) = \dfrac{P(x)}{x}$ | $P'(x)$           | $\overline{P}'(x) = \dfrac{d}{dx}\overline{P}(x)$  |
+```
 
 
-## Example 1
+### Example 1
 ````{admonition} Marginal revenue
 :class: tip
 
@@ -109,7 +107,7 @@ Therefore, the total daily revenue would increase by approximately \$7 if sales 
 ````
 
 
-## Example 2
+### Example 2
 ````{admonition} Marginal profit
 :class: tip
 
@@ -166,7 +164,7 @@ Therefore, the total profit will increase by approximately \$28 when the 21st vi
 ```
 ````
 
-## Example 3
+### Example 3
 ````{admonition} Marginal average cost
 :class: tip
 

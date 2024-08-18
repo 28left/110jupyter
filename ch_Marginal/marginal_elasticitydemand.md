@@ -13,6 +13,7 @@ kernelspec:
 ---
 # Elasticity of Demand
 
+## Definition
 
 ```{admonition} Definition
 :class: info
@@ -24,7 +25,7 @@ $$- \: \frac{\text{% Change in Quantity Demanded}}{\text{% Change in Price}}$$
 Recall that the Law of Demand implies that a positive percent change in price will result in a negative percent change in demand.  Consequently, the negative sign appears in the formula for elasticity only to make sure that the final result will be a positive value.
 ```
 
-```{admonition} Mathematical Formula for Computing Elasticity of Demand
+```{admonition} Mathematical Definition for Elasticity of Demand
 :class: info
 If the price of the good is $p$ and the corresponding quantity demanded is $f(p)$, then the _**elasticity of demand at price $p$**_, $E(p)$, is defined by
 
@@ -35,7 +36,7 @@ E(p) = -\frac{pf'(p)}{f(p)} %\label{elasticity}
 
 
 (marginal:elasticitydemand:example1)=
-## Example 1
+### Example 1
 ````{admonition} Elasticity of demand
 :class: tip
 
@@ -68,7 +69,7 @@ E(p)
 ````
 
 
-### Inelastic, Elastic & Unitary Demand
+## Inelastic, Elastic & Unitary Demand
 
 ```{admonition} What if elasticity is less than one?
 :class: tip
@@ -109,7 +110,7 @@ If $E(p) = 1$ (i.e., a percent change in price results in the same percent chang
 
 
 
-## Example 2
+### Example 2
 ````{admonition} Elasticity of demand
 :class: tip
 

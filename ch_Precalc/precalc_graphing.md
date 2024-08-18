@@ -104,7 +104,7 @@ $$y = m(x-a) + b$$
 :::
 ::::
 ```{dropdown} Long Text Description
-There is a horizontal x-axis with no points marked. There is a vertical y-axis with no points marked. The line defined by y = m(x-a) + b is plotted on these axes. The point (x,y) = (a,b) on the line is marked.
+There is a horizontal x-axis with no points marked. There is a vertical y-axis with no points marked. The line defined by y = m(x - a) + b is plotted on these axes. The point (a,b) on the line is marked.
 ```
 ````
 

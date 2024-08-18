@@ -20,18 +20,39 @@ kernelspec:
 
 # Logistic Growth
 
-```{admonition} Definition of Logistic Growth
+## Definitions and Properties
+
+```{admonition} Definition
 :class: info
 
-A logistic growth model is a function that can be written in the form 
+A _**logistic growth model**_ is a function that can be written in the form 
 
 $$y = \frac{A}{1+Be^{-kt}}$$
 
 where $A$, $B$, and $k$ are positive constants.  
 ```
 
-The graph of a typical logistic growth model is shown below.
 
+````{admonition} The Graph of a Logistic Growth Model
+:class: note
+
+Logistic growth models are increasing functions that exhibit an initial period of exponential-like growth followed by a period of restricted growth.  These two portions of the curve are separated by an inflection point, as illustrated below.
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_exponential_logistic.png
+:alt: Graph of a logistic growth model
+```
+:::
+::::
+```{dropdown} Long Text Description
+A horizontal t-axis and a vertical y-axis are displayed.  A horizontal dashed blue line, labeled y = A, is drawn above the t-axis.  The graph of a logistic growth function is drawn between the t-axis and the line y = A.  From left-to-right, the graph starts very close to and above the t-axis.  The graph increases and is concave up as it crosses the y-axis and until it reaches an inflection point half way between the t-axis and the line y = A.  The graph cross the y-axis at a height of A/(1+B), which is labeled on the y-axis.  The graph continues to increase after the inflection point, but it is now concave down as it approaches the line y = A from below.  The graph continues to increase, getting closer and closer to the line y=A, but it never intersects the line.  
+```
+````
+
+
+<!--
 ```{code-cell}
 :tags: [remove-input]
 
@@ -59,10 +80,9 @@ The graph of a typical logistic growth model is shown below.
 \end{tikzpicture}
 \end{document}
 ```
+-->
 
-Logistic growth models are increasing functions that exhibit an initial period of exponential-like growth followed by a period of restricted growth.  These two portions of the curve are separated by an inflection point, as illustrated above.
 
-A wide variety of business and natural phenomena exhibit logistic growth, including product diffusion, company growth, epidemic spread of diseases, and population growth.
 
 
 ```{admonition} Properties of Logistic Growth Models
@@ -80,9 +100,21 @@ where $A$, $B$ and $k$ are positive constants, then $s(t)$ has the following pro
 ```
 
 
-## Example 1
 
-The number of tickets sold to see *Taylor Series: The Summations Tour* during it's theatrical run is modeled by 
+```{admonition} Applications of Logistic Growth Models
+:class: note 
+
+A wide variety of business and natural phenomena exhibit logistic growth, including product diffusion, company growth, epidemic spread of diseases, and population growth.
+```
+
+
+
+
+### Example 1
+````{admonition} Logistic growth
+:class: tip 
+
+The number of tickets sold to see *Taylor Series: The Summations Tour* during its theatrical run is modeled by 
 
 $$s(t) = \frac{136}{5 + 47e^{-0.2t}}$$
 
@@ -116,7 +148,7 @@ Therefore, the given function corresponds to a logistic growth model with $A=27.
 
 ```{dropdown} **Step 2:** &nbsp; Compute the number of tickets sold on opening day.
 
-This corresponds to the initial value of the logistic growth model.
+The number of tickets sold on opening day corresponds to the initial value of the logistic growth model.
 
 Recall that the initial value of a logistic growth model is given by $\frac{A}{1+B}$, if the model is written in standard form.  Using our answer from Step 1, we have an initial value of 
 
@@ -134,7 +166,7 @@ since $e^0 = 1$.
 
 ```{dropdown} **Step 3:** &nbsp; Compute the number of tickets sold during the entire theatrical run. 
 
-This corresponds to the carrying capacity of the logistic growth model.
+The number of tickets sold during the entire theatrical run corresponds to the carrying capacity of the logistic growth model.
 
 Recall that the carrying capacity of a logistic growth model is given by the value $A$, if the model is written in standard form.  Using our answer from Step 1, the carrying capacity is 27.2 million tickets.
 
@@ -150,7 +182,7 @@ Alternatively, the carrying capacity can be computed by evaluating $\lim\limits_
 
 ```{dropdown} **Step 4:** &nbsp; Determine the day on which tickets sales are increasing at the fastest rate.
 
-This corresponds to the location of the inflection point of the logistic growth model.
+The day on which tickets sales are increasing at the fastest rate corresponds to the location of the inflection point of the logistic growth model.
 
 Recall that the inflection point of a logistic growth model appears at the point $\left(\frac{\ln(B)}{k},\frac{A}{2}\right)$, if the model is written in standard form.  Using our answer from Step 1, the inflection point is located at
 
@@ -182,3 +214,4 @@ To do so, set $s(t)$ equal to 20 and solve for $t$.
 
 Therefore $t \approx 16.31180$, which means that ticket sales reached a total of 20 million approximately 16.3 days after the premiere.
 ```
+````

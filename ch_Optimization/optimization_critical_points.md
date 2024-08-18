@@ -30,7 +30,7 @@ Critical points of $f$ correspond to **possible** locations of relative extrema.
 
 
 (optimization_critical_points_example_1)=
-## Example 1
+### Example 1
 ````{admonition} Finding critical points
 :class: tip 
 
@@ -65,7 +65,7 @@ The domain of $f(x)$ is all real numbers. Therefore, since both values are in th
 
 
 (optimization_critical_points_example_2)=
-## Example 2
+### Example 2
 ````{admonition} Finding critical points
 :class: tip 
 
