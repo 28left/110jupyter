@@ -13,6 +13,10 @@ kernelspec:
 ---
 # Laws of Exponential and Logarithmic Functions
 
+## Laws, Properties, and Derivatives
+
+````{admonition} Laws of Exponential and Logarithmic Functions
+:class: info
 Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and $n$ be positive numbers.
 
 ::::{grid} 2
@@ -60,9 +64,11 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
   $$\log_b(b) = 1 ~~\&~~ \ln(e) = 1$$
 :::
 ::::
+````
 
 
-## Cancellation properties
+````{admonition} Cancellation Properties of $e^x$ and $\ln(x)$
+:class: info 
 
 ::::{grid} 2
 :::{grid-item-card} 
@@ -78,9 +84,10 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
   $$\ln(e^x) = x$$
 :::
 ::::
+````
 
-
-## Derivatives
+````{admonition} Derivatives of $e^x$ and $\ln(x)$
+:class: info 
 
 ::::{grid} 2
 :::{grid-item-card}
@@ -105,10 +112,12 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 
 :::
 ::::
+````
 
 
-
-## Example 1
+### Example 1
+````{admonition} Solve for unknown value in the exponent
+:class: tip
 
 Find all values of $x$ such that $\displaystyle 4^{x-x^2} = \frac{1}{16^x}$.
 
@@ -137,13 +146,16 @@ $$4^{x-x^2} = 4^{-2x}.$$
 
 \begin{align*}
   x-x^2 &= -2x && \\
-  3x-x^2 &= 0 && \text{Move all variables to one side}\\
-  x(3-x) &= 0 && \text{Factor}\\
-  x = 0&, x = 3 && \text{Solve for } x \text{ by setting each factor equal to } 0
+  3x-x^2 &= 0 && \text{move all variables to one side}\\
+  x(3-x) &= 0 && \text{factor}\\
+  x = 0&, x = 3 && \text{folve for $x$ by setting each factor equal to $0$}
 \end{align*}
 ```
+````
 
-## Example 2
+### Example 2
+````{admonition} Solve for unknown value in the exponent
+:class: tip
 
 Find all values of $x$ such that: 
 
@@ -181,8 +193,11 @@ $$u=8 ~~~~ \hbox{ or } ~~~~ u=32.$$
   x&=3 & x&=5
 \end{align*}
 ```
+````
 
-## Example 3
+### Example 3
+````{admonition} Solve for unknown value in the exponent
+:class: tip
 
 Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 
@@ -191,10 +206,10 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 :animate: fade-in
 
 \begin{align*}
-  360 &= 90(1+9e^{-2t}) && \text{Multiply both sides by the denominator} \\ \\
-  4 &= 1+9e^{-2t} && \text{Divide both sides by 90} &&\\ \\
-  3 &= 9e^{-2t} && \text{Subtract 1 from both sides}&&\\ \\
-  1/3 &= e^{-2t} && \text{Divide both sides by 9}&&
+  360 &= 90(1+9e^{-2t}) && \text{multiply both sides by the denominator} \\ \\
+  4 &= 1+9e^{-2t} && \text{divide both sides by 90} &&\\ \\
+  3 &= 9e^{-2t} && \text{subtract 1 from both sides}&&\\ \\
+  1/3 &= e^{-2t} && \text{divide both sides by 9}&&
 \end{align*}
 ```
 
@@ -205,7 +220,7 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
 \begin{align*}
   \ln \left(\frac{1}{3} \right) 
   &= \ln(e^{-2t}) \\ 
-  &= -2t && \hbox{Cancellation property $\ln(e^x) = x$}
+  &= -2t && \hbox{cancellation property $\ln(e^x) = x$}
 \end{align*}
 ```
 
@@ -219,8 +234,11 @@ Find all values of $t$ such that $\dfrac{360}{1+9e^{-2t}} = 90$.
   &= \frac{1}{2}\ln(3)  && \hbox{since $\ln(1/3) = \ln(3^{-1}) = -\ln(3)$}
 \end{align*}
 ```
+````
 
-## Example 4
+### Example 4
+````{admonition} Expand using properties of logarithms
+:class: tip
 
 Expand the following expression:
 
@@ -232,15 +250,18 @@ $$\ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right).$$
 
 \begin{align*}
   \ln \left(\frac{\sqrt[3]{(x+1)^2}\cdot e^{5x}}{x}\right) 
-  &= \ln(\sqrt[3]{(x+1)^2}\cdot e^{5x}) - \ln(x) && \hbox{using $\ln(m/n) = \ln(m) - \ln(n)$} \\ \\
-  &= \ln(\sqrt[3]{(x+1)^2}) + \ln(e^{5x}) - \ln(x) && \hbox{using $\ln(mn) = \ln(m) + \ln(n)$}\\ \\
+  &= \ln(\sqrt[3]{(x+1)^2}\cdot e^{5x}) - \ln(x) && \text{since $\ln(m/n) = \ln(m) - \ln(n)$} \\ \\
+  &= \ln(\sqrt[3]{(x+1)^2}) + \ln(e^{5x}) - \ln(x) && \text{since $\ln(mn) = \ln(m) + \ln(n)$}\\ \\
   %&= \ln((x+1)^{2/3}) + \ln(e^{5x}) - \ln(x)\\ \\
-  &= \frac{2}{3} \ln(x+1) + 5x \ln(e) - \ln(x) && \hbox{using $\ln(m^n) = n\ln(m)$}\\ \\
-  &= \frac{2}{3} \ln(x+1) + 5x - \ln(x) && \hbox{using $\ln(e) = 1$.}
+  &= \frac{2}{3} \ln(x+1) + 5x \ln(e) - \ln(x) && \text{sine $\ln(m^n) = n\ln(m)$}\\ \\
+  &= \frac{2}{3} \ln(x+1) + 5x - \ln(x) && \text{since $\ln(e) = 1$.}
 \end{align*}
 ```
+````
 
-## Example 5
+### Example 5
+````{admonition} Equation of the tangent line
+:class: tip
 
 Find the tangent line to $y=\dfrac{e^{27x}}{x^9}$ at the point $(1,e^{27})$.
 
@@ -250,7 +271,7 @@ Find the tangent line to $y=\dfrac{e^{27x}}{x^9}$ at the point $(1,e^{27})$.
 
 Point-Slope: 
 
-$$y-b = m(x-a),$$
+$$y = m(x-a) + b,$$
 
 where $m$ is the slope of the line and $(a,b)$ is a point on the line.
 ```
@@ -279,11 +300,14 @@ Since the given point is $(1,e^{27})$, plug in $x=1$ into the derivative to find
 
 Since we were given the point $(1,e^{27})$ (i.e., $a=1$ and $b=e^{27}$) and we found the slope ($m=18e^{27}$), we can now write down the equation of the tangent line using the point-slope equation of a line. 
 
-$$y-e^{27} = 18e^{27}(x-1).$$
+$$y = 18e^{27}(x-1) + e^{27}.$$
 ```
+````
 
 
-## Example 6
+### Example 6
+````{admonition} Marginal revenue function
+:class: tip
 
 Suppose the unit selling price $p(x)$ and the quantity supplied $x$ of a certain product is given by 
 
@@ -307,12 +331,16 @@ Recall $\dfrac{d}{dx}e^{f(x)} = e^{f(x)} f'(x)$.
 
 \begin{align*}
   R'(x) 
-  &= 4x^3(e^{5x})+x^4(e^{5x}\cdot 5) + 12 && \text{using Product Rule}\\
+  &= 4x^3(e^{5x})+x^4(e^{5x}\cdot 5) + 12 && \text{using product rule}\\
   &= x^3 e^{5x}(4+5x) + 12.
 \end{align*}
 ```
+````
 
-## Example 7
+
+### Example 7
+````{admonition} Derivative of a logarithmic function
+:class: tip
 
 Compute the derivative of $f(x) = \ln\left(\dfrac{\sqrt{6x+1}}{5x}\right)$.
 
@@ -340,9 +368,12 @@ Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
   &= \frac{3}{6x+1} - \frac{1}{x}.
 \end{align*}
 ```
+````
 
 
-## Example 8
+### Example 8
+````{admonition} Implicit differentiation
+:class: tip
 
 Let $\ln(xy)+y^7 = x^3 + 2x$. Find $\dfrac{dy}{dx}$.
 
@@ -393,3 +424,4 @@ $$y'(x + 7xy^7) = 3x^3y + 2xy - y.$$
 
 $$y' = \frac{3x^3y + 2xy - y}{x + 7xy^7}.$$
 ```
+````

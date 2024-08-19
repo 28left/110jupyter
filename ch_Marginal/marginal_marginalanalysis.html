@@ -466,13 +466,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-cost-marginal-average-cost-functions">Marginal Cost &amp; Marginal Average Cost Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-revenue-marginal-average-revenue-functions">Marginal Revenue &amp; Marginal Average Revenue Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-profit-marginal-average-profit-functions">Marginal Profit &amp; Marginal Average Profit Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-analysis-notation">Marginal Analysis Notation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -486,8 +485,8 @@ document.write(`
                   
   <section id="marginal-analysis">
 <h1>Marginal Analysis<a class="headerlink" href="#marginal-analysis" title="Link to this heading">#</a></h1>
-<section id="marginal-cost-marginal-average-cost-functions">
-<h2>Marginal Cost &amp; Marginal Average Cost Functions<a class="headerlink" href="#marginal-cost-marginal-average-cost-functions" title="Link to this heading">#</a></h2>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
 <p>If <span class="math notranslate nohighlight">\(C(x)\)</span> denotes the total cost function, then <span class="math notranslate nohighlight">\(C'(x)\)</span> denotes the <em><strong>marginal cost function</strong></em>, which approximates the extra cost incurred in producing one additional unit</p>
@@ -495,9 +494,6 @@ document.write(`
 \[C'(x) \approx C(x+1) - C(x)\]</div>
 <p>and <span class="math notranslate nohighlight">\(\overline{C}'(x)\)</span> denotes the <em><strong>marginal average cost function</strong></em>.</p>
 </div>
-</section>
-<section id="marginal-revenue-marginal-average-revenue-functions">
-<h2>Marginal Revenue &amp; Marginal Average Revenue Functions<a class="headerlink" href="#marginal-revenue-marginal-average-revenue-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
 <p>If <span class="math notranslate nohighlight">\(R(x)\)</span> denotes the total revenue function, then <span class="math notranslate nohighlight">\(R'(x)\)</span> denotes the <em><strong>marginal revenue function</strong></em>, which approximates the revenue realized from the sale of one additional unit</p>
@@ -505,9 +501,6 @@ document.write(`
 \[R'(x) \approx R(x+1) - R(x)\]</div>
 <p>and <span class="math notranslate nohighlight">\(\overline{R}'(x)\)</span> denotes the <em><strong>marginal average revenue function</strong></em>.</p>
 </div>
-</section>
-<section id="marginal-profit-marginal-average-profit-functions">
-<h2>Marginal Profit &amp; Marginal Average Profit Functions<a class="headerlink" href="#marginal-profit-marginal-average-profit-functions" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
 <p>If <span class="math notranslate nohighlight">\(P(x)\)</span> denotes the total profit function, then <span class="math notranslate nohighlight">\(P'(x)\)</span> denotes the <em><strong>marginal profit function</strong></em>, which approximates the profit generated from the production and sale of one additional unit</p>
@@ -515,9 +508,8 @@ document.write(`
 \[P'(x) \approx P(x+1) - P(x)\]</div>
 <p>and <span class="math notranslate nohighlight">\(\overline{P}'(x)\)</span> denotes the <em><strong>marginal average profit function</strong></em>.</p>
 </div>
-</section>
-<section id="marginal-analysis-notation">
-<h2>Marginal Analysis Notation<a class="headerlink" href="#marginal-analysis-notation" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Summary of Marginal Analysis Notation</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Name</p></th>
@@ -530,28 +522,28 @@ document.write(`
 <tbody>
 <tr class="row-even"><td><p>Cost</p></td>
 <td><p><span class="math notranslate nohighlight">\(C(x)\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\overline{C}(x) = \frac{C(x)}{x}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{C}(x) = \dfrac{C(x)}{x}\)</span></p></td>
 <td><p><span class="math notranslate nohighlight">\(C'(x)\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\( \overline{C}'(x) = \frac{d}{dx}\overline{C}(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\( \overline{C}'(x) = \dfrac{d}{dx}\overline{C}(x)\)</span></p></td>
 </tr>
 <tr class="row-odd"><td><p>Revenue</p></td>
 <td><p><span class="math notranslate nohighlight">\(R(x)\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\overline{R}(x) = \frac{R(x)}{x}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{R}(x) = \dfrac{R(x)}{x}\)</span></p></td>
 <td><p><span class="math notranslate nohighlight">\(R'(x)\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\( \overline{R}'(x) = \frac{d}{dx}\overline{R}(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\( \overline{R}'(x) = \dfrac{d}{dx}\overline{R}(x)\)</span></p></td>
 </tr>
 <tr class="row-even"><td><p>Profit</p></td>
 <td><p><span class="math notranslate nohighlight">\(P(x)\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\overline{P}(x) = \frac{P(x)}{x}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{P}(x) = \dfrac{P(x)}{x}\)</span></p></td>
 <td><p><span class="math notranslate nohighlight">\(P'(x)\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\overline{P}'(x) = \frac{d}{dx}\overline{P}(x)\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\overline{P}'(x) = \dfrac{d}{dx}\overline{P}(x)\)</span></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</section>
+</div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Marginal revenue</p>
 <p>The daily demand for the new PBox5 Game <em>Dr. Mathematica-Exam Day of Reckoning</em> is given by</p>
@@ -596,7 +588,7 @@ document.write(`
 </details></div>
 </section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Marginal profit</p>
 <p>If the demand function for math self-help videos is given by</p>
@@ -654,7 +646,7 @@ document.write(`
 </details></div>
 </section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Marginal average cost</p>
 <p>The daily cost (in dollars) of producing computer screens is given by</p>
@@ -700,6 +692,7 @@ document.write(`
 <p class="sd-card-text">Therefore, the average cost of producing a thousand screens will decrease by approximately $76 if the level of production is increased from 3000 to 4000 screens.</p>
 </div>
 </details></div>
+</section>
 </section>
 </section>
 
@@ -767,13 +760,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-cost-marginal-average-cost-functions">Marginal Cost &amp; Marginal Average Cost Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-revenue-marginal-average-revenue-functions">Marginal Revenue &amp; Marginal Average Revenue Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-profit-marginal-average-profit-functions">Marginal Profit &amp; Marginal Average Profit Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marginal-analysis-notation">Marginal Analysis Notation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

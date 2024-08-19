@@ -498,11 +498,13 @@ document.write(`
 </div>
 <section id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Logarithmic differentiation</p>
 <p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x) = \dfrac{(5x+1)^7}{x^4\sqrt{x^3+4}}\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 1:</strong>   Observe that   <span class="math notranslate nohighlight">\(f(x)\)</span>   involves products, quotients, and powers.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">While <span class="math notranslate nohighlight">\(f'(x)\)</span> could be computed using the product, quotient, and general power rules of differentiation, it is a good candidate for logarithmic differentiation.</p>
+<p class="sd-card-text">While <span class="math notranslate nohighlight">\(f'(x)\)</span> could be computed using the product, quotient, and general power rules of differentiation, since there are more than two factors, each with an exponent, it is a good candidate for logarithmic differentiation.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -521,7 +523,7 @@ document.write(`
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 3:</strong>   Differentiate both sides.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Recall <span class="math notranslate nohighlight">\(\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)\)</span>.</p>
+<p class="sd-card-text">Recall <span class="math notranslate nohighlight">\(\dfrac{d}{dx}\ln(y) = \dfrac{y'}{y}\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
     \frac{y'}{y} 
@@ -541,9 +543,12 @@ document.write(`
     &amp;= \dfrac{(5x+1)^7}{x^4\sqrt{x^3+4}} \left[ \frac{35}{5x+1} - \frac{4}{x} - \frac{3x^2}{2(x^3+4)} \right]. 
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
 <h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Logarithmic differentiation</p>
 <p>Compute the derivative of <span class="math notranslate nohighlight">\(f(x) = \left(3x+5\right)^{x^2}\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -568,7 +573,7 @@ document.write(`
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
     \frac{y'}{y} 
-    &amp;= 2x \ln(3x+5) + x^2 \frac{1}{3x+5}\cdot 3  &amp; \hbox{using the Product Rule}\\ \\
+    &amp;= 2x \ln(3x+5) + x^2 \frac{1}{3x+5}\cdot 3  &amp; \hbox{using the product rule}\\ \\
     &amp;= 2x \ln(3x+5) +  \frac{3x^2}{3x+5}.
 \end{align*}\]</div>
 </div>
@@ -583,7 +588,8 @@ document.write(`
     &amp;= \left( 3x+5\right)^{x^2} \left[ 2x \ln(3x+5) +  \frac{3x^2}{3x+5} \right]. 
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

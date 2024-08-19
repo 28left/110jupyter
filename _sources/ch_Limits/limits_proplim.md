@@ -14,56 +14,52 @@ kernelspec:
 (lim:prop_lim)=
 # Properties of Finite Limits
 
-Suppose $\displaystyle \lim_{x\to a} f(x) = L$ and $\displaystyle \lim_{x\to a} g(x) = M$, where both $L$ and $M$ are finite values.
+````{admonition} Properties
+:class: info
+
+Le $c$ be any real number and suppose $\displaystyle \lim_{x\to a} f(x) = L$ and $\displaystyle \lim_{x\to a} g(x) = M$, where both $L$ and $M$ are finite values.
 
 ```{admonition} Limit of a Constant
-:class: info
-For any real number $c$, 
+:class: note
 
 $$\lim_{x\to a} c = c $$
 ```
 
 ```{admonition} The Sum & Difference Properties
-:class: info
+:class: note
 
 $$\lim_{x\to a} [f(x) \pm g(x)] = \lim_{x\to a} f(x) \pm \lim_{x\to a} g(x)=L \pm M$$
 ```
 
 ```{admonition} The Constant Multiple Property
-:class: info
-
-For any real number $c$, 
+:class: note
 
 $$\lim_{x\to a} cf(x) = c\lim_{x\to a} f(x) = cL$$
 ```
 
 ```{admonition} Generalized Product Property
-:class: info
+:class: note
 
 $$\lim_{x\to a} [f(x)g(x)] = [\lim_{x\to a} f(x)][\lim_{x\to a} g(x)]=LM$$
 ```
 
 ```{admonition} Quotient Property
-:class: info
+:class: note
 
-If $M\neq 0$,
-
-$$\lim_{x\to a} \dfrac{f(x)}{g(x)} = \dfrac{\lim\limits_{x\to a} f(x)}{\lim\limits_{x\to a} g(x)}=\dfrac{L}{M}$$
+$$\lim_{x\to a} \dfrac{f(x)}{g(x)} = \dfrac{\lim\limits_{x\to a} f(x)}{\lim\limits_{x\to a} g(x)}=\dfrac{L}{M}  ~~~~ \text {if $M\neq 0$}$$
 ```
 
 ```{admonition} The Power Property
-:class: info
-For any real number $r$, 
+:class: note
 
-$$\lim_{x\to a} [f(x)]^r = \left[\lim_{x\to a} f(x)\right]^r = L^r$$
-
-if $L^r$ is defined.
+$$\lim_{x\to a} [f(x)]^c = \left[\lim_{x\to a} f(x)\right]^c = L^c ~~~~ \text {if $L^c$ is defined}$$
 ```
 
 ```{admonition} Polynomial and Rational Functions
-:class: info
+:class: note
 
 If $f(x)$ is a polynomial or rational function and $a$ is in the domain of $f(x)$, then
 
 $$\lim_{x\to a} f(x) = f(a)$$
 ```
+````

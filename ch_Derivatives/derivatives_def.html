@@ -488,26 +488,65 @@ document.write(`
 <h1>The Concept of the Derivative<a class="headerlink" href="#the-concept-of-the-derivative" title="Link to this heading">#</a></h1>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
+<!--
+```{admonition} Definition
+:class: info
+
+The _**slope of the line tangent**_ to the graph of $f(x)$ at the point $(x, f(x))$ is given by 
+
+$$\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},$$ 
+
+if the limit exists.
+```
+-->
 <div class="info admonition">
-<p class="admonition-title">The Slope of a Tangent Line</p>
-<p>The <em><strong>slope of the line tangent</strong></em> to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at the point <span class="math notranslate nohighlight">\((x, f(x))\)</span> is given by</p>
+<p class="admonition-title">Definition</p>
+<p>The <em><strong>average rate of change</strong></em> of <span class="math notranslate nohighlight">\(f(x)\)</span> over the interval <span class="math notranslate nohighlight">\([a, a+h]\)</span>, which is also the <em><strong>slope of the line secant to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> through the points <span class="math notranslate nohighlight">\((a,f(a))\)</span> and <span class="math notranslate nohighlight">\((a+h, f(a+h))\)</span></strong></em>, is given by</p>
 <div class="math notranslate nohighlight">
-\[\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
-<p>if the limit exists.</p>
+\[ \frac{f(a+h) - f(a)}{h}.\]</div>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a function and a secant line" src="../_images/pic_derivatives_def_secant_line.png" />
 </div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x-axis with points a and a+h marked.  There is a vertical y-axis with the points f(a) and f(a+h) marked.  The graph of a generic function is drawn.  The point (a,f(a)) is marked by a red dot on the graph of the function.  The point (a+h, f(a+h)) is marked by a green dot on the graph of the function.  A red line is drawn through the points (a,f(a)) and (a+h,f(a+h)) and is labeled as the secant line.</p>
+</div>
+</details></div>
 <div class="info admonition">
-<p class="admonition-title">Average and Instantaneous Rate of Change</p>
-<p>The <em><strong>average rate of change</strong></em> of <span class="math notranslate nohighlight">\(f(x)\)</span> over the interval <span class="math notranslate nohighlight">\((x, x+h)\)</span>, which is also the slope of the secant line to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> through the points <span class="math notranslate nohighlight">\((x,f(x))\)</span> and <span class="math notranslate nohighlight">\((x+h, f(x+h))\)</span>, is given by</p>
+<p class="admonition-title">Definition</p>
+<p>The <em><strong>instantaneous rate of change</strong></em> of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x=a\)</span>, which is also the <em><strong>slope of the line tangent to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\((a,f(a))\)</span></strong></em>, is given by</p>
 <div class="math notranslate nohighlight">
-\[ \frac{f(x+h) - f(x)}{h}.\]</div>
-<p>The <em><strong>instantaneous rate of change</strong></em> of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x\)</span>, which is also the slope of the tangent line to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\((x,f(x))\)</span>, is given by</p>
-<div class="math notranslate nohighlight">
-\[\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
+\[\lim_{h\to 0} \frac{f(a+h) - f(a)}{h},\]</div>
 <p>if the limit exists.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a function and a tangent line" src="../_images/pic_derivatives_def_tangent_line.png" />
 </div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x-axis with point a marked.  There is a vertical y-axis with the point f(a) marked.  The graph of a generic function is drawn.  The point (a,f(a)) is marked by a red dot on the graph of the function.  A gray line is drawn through the point (a,f(a)) and is labeled as the tangent line.  The tangent line is drawn so that it closely resembles the graph of the function near the point (a,f(a)).</p>
+</div>
+</details></div>
 <div class="info admonition">
 <p class="admonition-title">The Limit Definition of the Derivative</p>
-<p>The <em><strong>derivative</strong></em> of a function <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> is the function <span class="math notranslate nohighlight">\(f'(x)\)</span> which is defined as follows</p>
+<p>The <em><strong>derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span></strong></em>, denoted <span class="math notranslate nohighlight">\(f'(x)\)</span>, is the function defined as</p>
 <div class="math notranslate nohighlight">
 \[f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
 <p>and the domain of <span class="math notranslate nohighlight">\(f'(x)\)</span> is the set of all <span class="math notranslate nohighlight">\(x\)</span> where the limit exists.</p>

@@ -15,18 +15,21 @@ kernelspec:
 
 ## Example 1
 
+````{admonition} Accumulated amount
+:class: tip
+
 Suppose $\$1000$ is deposited into an account with an interest rate of $16 \%$ compounded annually. How much money is in the account after $3$ years?
 
-```{dropdown} **Step 1:** Since interest is compounded annually, use the accumulated amount for discrete compound interest.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 1:** &nbsp; Recall appropriate accumulated amount formula.
+
+Since interest is compounded annually, use the accumulated amount for discrete compound interest.
 
 $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $P = 1000$, $r = 0.16$, $m=1$, and $t = 3$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
+
+$P = 1000$, $r = 0.16$, $m=1$, and $t = 3$.
 
 \begin{align*}
   A
@@ -36,23 +39,24 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 \end{align*}
 Therefore, after 3 years of accumulating interest, the original investment of \$1,000 is worth \$1,560.90.
 ```
+````
 
 ## Example 2
+````{admonition} Accumulated amount
+:class: tip
 
 Suppose $\$1000$ is deposited into an account with an interest rate of $16 \%$ compounded quarterly. How much money is in the account after $3$ years?
 
-```{dropdown} **Step 1:** Since interest is compounded quarterly, use the accumulated amount for discrete compound interest.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 1:** &nbsp; Recall appropriate accumulated amount formula.
 
+Since interest is compounded quarterly, use the accumulated amount for discrete compound interest.
 
 $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $P = 1000$, $r = 0.16$, $m=4$, and $t = 3$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
 
+$P = 1000$, $r = 0.16$, $m=4$, and $t = 3$.
 
 \begin{align*}
   A
@@ -63,6 +67,9 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 
 Therefore, after 3 years of accumulating interest, the original investment of \$1,000 is worth \$1,601.03.
 ```
+````
+
+
 
 ```{admonition} Observation
 :class: warning
@@ -71,21 +78,21 @@ Compare the accumulated amounts in the above two examples. Both examples have th
 ```
 
 ## Example 3
+````{admonition} Determine the interest rate
+:class: tip
 
 Find the interest rate required for an investment of $ \$3000$ to double in value after 5 years if interest is compounded quarterly.
 
-```{dropdown} **Step 1:** Since interest is compounded quarterly, use the accumulated amount for discrete compound interest.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 1:** &nbsp; Recall appropriate accumulated amount formula.
 
+Since interest is compounded quarterly, use the accumulated amount for discrete compound interest.
 
 $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $P=3000$, $A=6000$ (since the investment is to double in value), $m=4$, and $t=5$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
 
+$P=3000$, $A=6000$ (since the investment is to double in value), $m=4$, and $t=5$.
 
 \begin{align*}
   6000 
@@ -94,14 +101,30 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Solve for the interest rate, $r$.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 3:** &nbsp; Solve for the interest rate, $r$.
 
 **Method 1**
 
-Divide both sides by 3000
+Start by dividing both sides of the equation found in **Step 2** by 3000.
+
+$$2 = \left(1 + \frac{r}{4} \right)^{20}$$
+
+Now take the 20th root of both sides (i.e., raise both sides to the power of $1/20$).
+
+$$2^{1/20} = 1 + \frac{r}{4}$$
+
+Subtract 1 from both sides.
+
+$$2^{1/20} - 1 = \frac{r}{4}$$
+
+And finally, multiply both sides by 4.
+
+$$r = 4(2^{1/20} - 1) \approx 0.1411$$
+
+**Method 2**
+
+Start with the following equation.
+
 $$2 = \left(1 + \frac{r}{4} \right)^{20}$$
 
 Take the natural logarithm of both sides.
@@ -132,23 +155,7 @@ And finally, multiply both sides by 4.
 
 $$r = 4(e^{\ln(2)/20} - 1)  \approx  0.1411.$$
 
-**Method 2**
-
-Here is an alternate method for solving for the interest rate $r$. We start with the following equation.
-
-$$2 = \left(1 + \frac{r}{4} \right)^{20}$$
-
-Instead of taking the natural logarithm of both sides as we did before, now take the 20th root of both sides (i.e., raise both sides to the power of $1/20$).
-
-$$2^{1/20} = 1 + \frac{r}{4}$$
-
-Subtract 1 from both sides.
-
-$$2^{1/20} - 1 = \frac{r}{4}$$
-
-And finally, multiply both sides by 4.
-
-$$r = 4(2^{1/20} - 1) \approx 0.1411$$
+---
 
 Note that this value of $r$ is numerically equal to the value we found previously since 
 
@@ -160,22 +167,24 @@ Note that this value of $r$ is numerically equal to the value we found previousl
 
 Therefore, an interest rate of approximately 14.11\% compounded quarterly is required for an investment of \$3000 to double in value in 5 years.
 ```
+````
 
 ## Example 4
+````{admonition} Determine the interest rate
+:class: tip
 
 Find the interest rate required for an investment of $ \$3000$ to double in value after 5 years if interest is compounded continuously.
 
-```{dropdown} **Step 1:** Since interest is compounded continuously, use the accumulated amount for continuous compound interest.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 1:** &nbsp; Recall appropriate accumulated amount formula.
 
+Since interest is compounded continuously, use the accumulated amount for continuous compound interest.
 
 $$A=Pe^{rt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $P=3000$, $A=6000$ (since the investment is to double in value), and $t=5$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 2:** &nbsp; Plug in the given values. 
+
+$P=3000$, $A=6000$ (since the investment is to double in value), and $t=5$.
 
 
 \begin{align*}
@@ -183,12 +192,9 @@ $$A=Pe^{rt}$$
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Solve for the interest rate, $r$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 3:** &nbsp; Solve for the interest rate, $r$.
 
-
-Divide both sides by 3000.
+Start by dividing both sides of the equation found in **Step 2** by 3000.
 
 $$2 = e^{5r}$$
 
@@ -206,6 +212,8 @@ $$r = \ln(2) / 5 \approx 0.1386$$
 
 Therefore, an interest rate of approximately 13.86\% compounded continuously is required for an investment of \$3000 to double in value in 5 years.
 ```
+````
+
 
 ```{admonition} Observation
 :class: warning
@@ -214,21 +222,21 @@ Compare the last two examples. Since continuous compounding of interest earns in
 ```
 
 ## Example 5
+````{admonition} Determine the length of time
+:class: tip
 
 How long will it take for $\$5000 $ to grow to $\$8000 $ if the investment earns interest at 6\% per year compounded monthly?
 
-```{dropdown} **Step 1:** Since interest is compounded monthly, use the accumulated amount for discrete compound interest.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 1:** &nbsp; Recall appropriate accumulated amount formula.
 
+Since interest is compounded monthly, use the accumulated amount for discrete compound interest.
 
 $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $P=5000$, $A=8000$, $m=12$, and $r=0.06$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
 
+$P=5000$, $A=8000$, $m=12$, and $r=0.06$.
 
 \begin{align*}
   8000 
@@ -237,12 +245,10 @@ $$A=P\left(1+\frac{r}{m}\right)^{mt}$$
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Solve for the unknown term $t$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 3:** &nbsp; Solve for the unknown term $t$.
 
 
-Divide both sides by 5000.
+Divide both sides of the equation found in **Step 2** by 5000.
 
 $$8/5 = 1.005^{12t}$$
 
@@ -262,23 +268,24 @@ Divide both sides by $12\ln(1.005)$.
 
 Therefore, it will take approximately 7.85 years for \$5000 to grow to \$8000 if the investment earns interest at 6\% per year compounded monthly.
 ```
+````
 
 ## Example 6
+````{admonition} Determine the length of time
+:class: tip
 
 How long will it take for $\$5000 $ to grow to $\$8000 $ if the investment earns interest at 6\% per year compounded continuously?
 
-```{dropdown} **Step 1:** Since interest is compounded continuously, use the accumulated amount for continuous compound interest.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 1:** &nbsp; Recall appropriate accumulated amount formula.
 
+Since interest is compounded continuously, use the accumulated amount for continuous compound interest.
 
 $$A=Pe^{rt}$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $P=5000$, $A=8000$, and $r=0.06$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
 
+$P=5000$, $A=8000$, and $r=0.06$.
 
 \begin{align*}
   8000 
@@ -286,12 +293,9 @@ $$A=Pe^{rt}$$
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Solve for the unknown term $t$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 3:** &nbsp; Solve for the unknown term $t$.
 
-
-Divide both sides by 5000.
+Divide both sides of the equation found in **Step 2** by 5000.
 
 $$8/5 = e^{0.06t}$$
 
@@ -312,29 +316,28 @@ Divide both sides by $0.06$.
 
 Therefore, it will take approximately 7.83 years for \$5000 to grow to \$8000 if the investment earns interest at 6\% per year compounded monthly.
 ```
+````
 
 ```{admonition} Observation
 :class: warning
 
-Compare the last two examples. Both examples have the same principal, accumulated amount, and interest rate. But since continuous compounding of interest earns interest faster than discrete compounding, it should take less time for the investment to grow to \$8000 if interest is compounded continuously.  
+Compare the last two examples. Both examples have the same principal, accumulated amount, and interest rate. But since continuous compounding of interest earns interest faster than discrete compounding, it takes less time for the investment to grow to \$8000 when interest is compounded continuously.  
 ```
 
 ## Example 7
+````{admonition} Effective rate of interest
+:class: tip
 
 Find the effective interest rate corresponding to a nominal interest rate of $10\%$ compounded semiannually.
 
-```{dropdown} **Step 1:** Recall the formula for effective interest rate, $r_{\text{eff}}$.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 1:** &nbsp; Recall the formula for effective interest rate, $r_{\text{eff}}$.
 
 $$r_{\text{eff}}=\left(1+\frac{r}{m}\right)^m-1$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $r = 0.1$ and $m=2$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
 
+ $r = 0.1$ and $m=2$.
 
 \begin{align*}
   r_{\text{eff}}
@@ -345,23 +348,22 @@ $$r_{\text{eff}}=\left(1+\frac{r}{m}\right)^m-1$$
 
 Therefore, an investment earning interest compounded semiannually at 10\% earns the same amount of interest after 1 year as an investment earning simple interest at 10.25\%.
 ```
+````
 
 ## Example 8
+````{admonition} A load for your cousin
+:class: tip
 
-Suppose you have $\$12,000$ in the bank earning interest at a rate of $12\%$ compounded quarterly. Your cousin calls you and needs $\$12,000$ to buy a new car. You are willing him to loan him the money, but you'd hate to lose out on the interest you would gather by simply leaving your money alone. If you charge your cousin an interest rate compounded continuously, what rate should you charge in order to earn the same amount of interest you otherwise would have?
+Suppose you have $\$12,000$ in the bank earning interest at a rate of $12\%$ compounded quarterly. Your cousin calls you and needs $\$12,000$ to buy a new car. You are willing to loan him the money, but you'd hate to lose out on the interest you would gather by simply leaving your money in the bank. If you charge your cousin an interest rate compounded continuously, what rate should you charge in order to earn the same amount of interest you otherwise would have?
 
-```{dropdown} **Step 1:** Assume your cousin is prepared to pay you back after $t$ years.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 1:** &nbsp; Assume your cousin is prepared to pay you back after $t$ years.
 
 We'll use $t$ as the term in each of the following calculations. Eventually, we'll see that the interest rate you charge does not depend on the specific value of $t$.
 ```
 
-```{dropdown} **Step 2:** Compute the accumulated amount of the $\$12,000$ after $t$ years assuming you leave your money in the bank.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 2:** &nbsp; Compute the accumulated amount assuming you leave your money in the bank.
 
+Plug in $P = \$12,000$, $r=0.12$, $m=4$ and $t$ years
 
 \begin{align*}
   A 
@@ -371,24 +373,20 @@ We'll use $t$ as the term in each of the following calculations. Eventually, we'
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Compute the accumulated amount of the $\$12,000$ after $t$ years assuming you let your cousin borrow the money.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 3:** &nbsp; Compute the accumulated amount assuming you let your cousin borrow the money.
 
-
-This would be the amount that your cousin repays you after $t$ years.
+Plug in $P = \$12,000$ and $t$ years
 
 \begin{align*}
   A 
   &= Pe^{rt}\\
   &= 12000e^{rt}
 \end{align*}
+
+This would be the amount your cousin repays you after $t$ years.
 ```
 
-```{dropdown} **Step 4:** Equate the two accumulated amounts and solve for $r$.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 4:** &nbsp; Equate the two accumulated amounts and solve for $r$.
 
 $$12000\left(1.03\right)^{4t} = 12000e^{rt}$$
 
@@ -410,3 +408,4 @@ $$r = 4\ln(1.03) \approx 0.1182$$
 
 Therefore, charging your cousin 11.82\% interest compounded continuously earns the same amount of interest as leaving your money in the bank earning interest at a rate of 12\% compounded quarterly.
 ```
+````

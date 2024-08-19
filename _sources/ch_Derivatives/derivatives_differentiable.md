@@ -13,7 +13,7 @@ kernelspec:
 ---
 # Differentiability
 
-## Differentiable
+## Definition
 
 ```{admonition} Definition
 :class: info

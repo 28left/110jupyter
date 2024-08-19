@@ -113,7 +113,7 @@ There is a horizontal p-axis and a vertical y-axis. A concave down quadratic loo
 ```
 -->
 
-```{admonition} How a change in price affects Total Revenue
+```{admonition} How a Change in Price Affects Total Revenue
 :class: info
 
 1. Any price movement **towards** the unitary price **increases** total revenue.

@@ -466,7 +466,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-and-properties">Definitions and Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -480,20 +483,64 @@ document.write(`
                   
   <section id="logistic-growth">
 <h1>Logistic Growth<a class="headerlink" href="#logistic-growth" title="Link to this heading">#</a></h1>
+<section id="definitions-and-properties">
+<h2>Definitions and Properties<a class="headerlink" href="#definitions-and-properties" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Definition of Logistic Growth</p>
-<p>A logistic growth model is a function that can be written in the form</p>
+<p class="admonition-title">Definition</p>
+<p>A <em><strong>logistic growth model</strong></em> is a function that can be written in the form</p>
 <div class="math notranslate nohighlight">
 \[y = \frac{A}{1+Be^{-kt}}\]</div>
 <p>where <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(k\)</span> are positive constants.</p>
 </div>
-<p>The graph of a typical logistic growth model is shown below.</p>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="../_images/fe43f3b727e60660068b9e243fcf087f801e2e53ce6df96cff8b11b000a03d72.svg" src="../_images/fe43f3b727e60660068b9e243fcf087f801e2e53ce6df96cff8b11b000a03d72.svg" /></div>
+<div class="note admonition">
+<p class="admonition-title">The Graph of a Logistic Growth Model</p>
+<p>Logistic growth models are increasing functions that exhibit an initial period of exponential-like growth followed by a period of restricted growth.  These two portions of the curve are separated by an inflection point, as illustrated below.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of a logistic growth model" src="../_images/pic_exponential_logistic.png" />
 </div>
-<p>Logistic growth models are increasing functions that exhibit an initial period of exponential-like growth followed by a period of restricted growth.  These two portions of the curve are separated by an inflection point, as illustrated above.</p>
-<p>A wide variety of business and natural phenomena exhibit logistic growth, including product diffusion, company growth, epidemic spread of diseases, and population growth.</p>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A horizontal t-axis and a vertical y-axis are displayed.  A horizontal dashed blue line, labeled y = A, is drawn above the t-axis.  The graph of a logistic growth function is drawn between the t-axis and the line y = A.  From left-to-right, the graph starts very close to and above the t-axis.  The graph increases and is concave up as it crosses the y-axis and until it reaches an inflection point half way between the t-axis and the line y = A.  The graph cross the y-axis at a height of A/(1+B), which is labeled on the y-axis.  The graph continues to increase after the inflection point, but it is now concave down as it approaches the line y = A from below.  The graph continues to increase, getting closer and closer to the line y=A, but it never intersects the line.</p>
+</div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\documentclass[tikz]{standalone}
+\usepackage{amsmath}
+\begin{document}
+\begin{tikzpicture}[scale=1.75]
+
+%\draw[black,fill=white] (-6,-1) rectangle (8,4);
+%\draw[very thin,color=lightgray,step=0.5] (-3.4,-4.9) grid (3.4,0.9);
+%\draw[very thin,color=gray,step=2] (-3.5,-5) grid (3.5,1);
+
+\draw[->] (-5,0) -- (7.0,0) node[below] {\large $t$};
+\draw[->] (0,-0.5) -- (0,3.5) node[right] {\large $y$};
+       
+\node[right] at (-5, 2.7){\large $y = A$};
+\node[right] at (3, 2.3){\large $y = \dfrac{A}{1+Be^{-kt}}$};
+\draw (0.2,0.75) -- (-0.2,0.75) node[left] {\large  $\frac{A}{1+B}$};
+
+\draw[domain=-5.0:7.0,smooth,variable=\x,black,ultra thick] plot ({\x},{3/(1 + 3/exp(1.35*\x))});
+\draw[thick,blue,dashed] (-5,3) -- (7,3);
+
+\draw [black,fill=black] (0.814,1.5) circle (2.5pt) node[below right] {\large inflection point};
+\end{tikzpicture}
+\end{document}
+```
+-->
 <div class="info admonition">
 <p class="admonition-title">Properties of Logistic Growth Models</p>
 <p>If the logistic growth model is written in the standard form</p>
@@ -506,9 +553,15 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\(s(t)\)</span> has a point of diminishing returns at <span class="math notranslate nohighlight">\(\left(\frac{\ln(B)}{k},\frac{A}{2}\right)\)</span>, which is an inflection point on a portion of the curve that is increasing and where the curve changes from concave up to concave down. It also corresponds to the location of the steepest part of the curve.</p></li>
 </ul>
 </div>
+<div class="note admonition">
+<p class="admonition-title">Applications of Logistic Growth Models</p>
+<p>A wide variety of business and natural phenomena exhibit logistic growth, including product diffusion, company growth, epidemic spread of diseases, and population growth.</p>
+</div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
-<p>The number of tickets sold to see <em>Taylor Series: The Summations Tour</em> during it’s theatrical run is modeled by</p>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Logistic growth</p>
+<p>The number of tickets sold to see <em>Taylor Series: The Summations Tour</em> during its theatrical run is modeled by</p>
 <div class="math notranslate nohighlight">
 \[s(t) = \frac{136}{5 + 47e^{-0.2t}}\]</div>
 <p>where <span class="math notranslate nohighlight">\(s(t)\)</span> is in millions of tickets and <span class="math notranslate nohighlight">\(t\)</span> is the number of days after the premiere.</p>
@@ -539,7 +592,7 @@ document.write(`
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 2:</strong>   Compute the number of tickets sold on opening day.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">This corresponds to the initial value of the logistic growth model.</p>
+<p class="sd-card-text">The number of tickets sold on opening day corresponds to the initial value of the logistic growth model.</p>
 <p class="sd-card-text">Recall that the initial value of a logistic growth model is given by <span class="math notranslate nohighlight">\(\frac{A}{1+B}\)</span>, if the model is written in standard form.  Using our answer from Step 1, we have an initial value of</p>
 <div class="math notranslate nohighlight">
 \[\frac{27.2}{1+9.4} \approx 2.6153846\]</div>
@@ -552,7 +605,7 @@ document.write(`
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 3:</strong>   Compute the number of tickets sold during the entire theatrical run.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">This corresponds to the carrying capacity of the logistic growth model.</p>
+<p class="sd-card-text">The number of tickets sold during the entire theatrical run corresponds to the carrying capacity of the logistic growth model.</p>
 <p class="sd-card-text">Recall that the carrying capacity of a logistic growth model is given by the value <span class="math notranslate nohighlight">\(A\)</span>, if the model is written in standard form.  Using our answer from Step 1, the carrying capacity is 27.2 million tickets.</p>
 <p class="sd-card-text">Alternatively, the carrying capacity can be computed by evaluating <span class="math notranslate nohighlight">\(\lim\limits_{t\to \infty}s(t)\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
@@ -566,7 +619,7 @@ document.write(`
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text"><strong>Step 4:</strong>   Determine the day on which tickets sales are increasing at the fastest rate.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">This corresponds to the location of the inflection point of the logistic growth model.</p>
+<p class="sd-card-text">The day on which tickets sales are increasing at the fastest rate corresponds to the location of the inflection point of the logistic growth model.</p>
 <p class="sd-card-text">Recall that the inflection point of a logistic growth model appears at the point <span class="math notranslate nohighlight">\(\left(\frac{\ln(B)}{k},\frac{A}{2}\right)\)</span>, if the model is written in standard form.  Using our answer from Step 1, the inflection point is located at</p>
 <div class="math notranslate nohighlight">
 \[\left(\frac{\ln(9.4)}{0.2},\frac{27.2}{2}\right) \approx (11.20355,13.6)\]</div>
@@ -594,7 +647,9 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore <span class="math notranslate nohighlight">\(t \approx 16.31180\)</span>, which means that ticket sales reached a total of 20 million approximately 16.3 days after the premiere.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -661,7 +716,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-and-properties">Definitions and Properties</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
