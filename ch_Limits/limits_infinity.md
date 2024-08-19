@@ -29,13 +29,18 @@ The _**limit of $f(x)$ as $x$ approaches (positive) infinity is equal to the fin
 $$\lim_{x\to \infty} f(x) = L $$ 
 
 if $f(x)$ can be made as close to $L$ as we want by taking $x$ large enough.
+```
 
-Similarly, the _**limit of $f(x)$ as $x$ approaches negative infinity is equal to the finite number $M$**_, denoted by 
+```{admonition} Definition
+:class: info
+
+The _**limit of $f(x)$ as $x$ approaches negative infinity is equal to the finite number $M$**_, denoted by 
 
 $$\lim_{x\to -\infty} f(x) = M $$ 
 
 if $f(x)$ can be made as close to $M$ as we want by taking $x$ to be negative and sufficiently large in absolute value.
 ```
+
 
 ### Example 1
 

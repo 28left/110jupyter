@@ -15,7 +15,8 @@ kernelspec:
 
 ## Definitions
 
-```{admonition} The Slope of a Tangent Line
+<!--
+```{admonition} Definition
 :class: info
 
 The _**slope of the line tangent**_ to the graph of $f(x)$ at the point $(x, f(x))$ is given by 
@@ -24,26 +25,59 @@ $$\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},$$
 
 if the limit exists.
 ```
+-->
 
-```{admonition} Average and Instantaneous Rate of Change
+````{admonition} Definition
 :class: info
 
-The _**average rate of change**_ of $f(x)$ over the interval $(x, x+h)$, which is also the slope of the secant line to the graph of $f(x)$ through the points $(x,f(x))$ and $(x+h, f(x+h))$, is given by
+The _**average rate of change**_ of $f(x)$ over the interval $[a, a+h]$, which is also the _**slope of the line secant to the graph of $f(x)$ through the points $(a,f(a))$ and $(a+h, f(a+h))$**_, is given by
 
-$$ \frac{f(x+h) - f(x)}{h}.$$
+$$ \frac{f(a+h) - f(a)}{h}.$$
 
-The _**instantaneous rate of change**_ of $f(x)$ at $x$, which is also the slope of the tangent line to the graph of $f(x)$ at $(x,f(x))$, is given by
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_derivatives_def_secant_line.png
+:alt: Graph of a function and a secant line
+```
+:::
+::::
+```{dropdown} Long Text Description
 
-$$\lim_{h\to 0} \frac{f(x+h) - f(x)}{h},$$ 
+There is a horizontal x-axis with points a and a+h marked.  There is a vertical y-axis with the points f(a) and f(a+h) marked.  The graph of a generic function is drawn.  The point (a,f(a)) is marked by a red dot on the graph of the function.  The point (a+h, f(a+h)) is marked by a green dot on the graph of the function.  A red line is drawn through the points (a,f(a)) and (a+h,f(a+h)) and is labeled as the secant line.
+```
+````
+
+
+
+````{admonition} Definition
+:class: info
+
+The _**instantaneous rate of change**_ of $f(x)$ at $x=a$, which is also the _**slope of the line tangent to the graph of $f(x)$ at $(a,f(a))$**_, is given by
+
+$$\lim_{h\to 0} \frac{f(a+h) - f(a)}{h},$$ 
 
 if the limit exists.
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_derivatives_def_tangent_line.png
+:alt: Graph of a function and a tangent line
 ```
+:::
+::::
+```{dropdown} Long Text Description
+
+There is a horizontal x-axis with point a marked.  There is a vertical y-axis with the point f(a) marked.  The graph of a generic function is drawn.  The point (a,f(a)) is marked by a red dot on the graph of the function.  A gray line is drawn through the point (a,f(a)) and is labeled as the tangent line.  The tangent line is drawn so that it closely resembles the graph of the function near the point (a,f(a)).
+```
+````
 
 
 ```{admonition} The Limit Definition of the Derivative
 :class: info
 
-The _**derivative**_ of a function $f(x)$ with respect to $x$ is the function $f'(x)$ which is defined as follows 
+The _**derivative of $f(x)$ with respect to $x$**_, denoted $f'(x)$, is the function defined as 
 
 $$f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h},$$
 

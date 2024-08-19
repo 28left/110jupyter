@@ -31,12 +31,14 @@ the process of logarithmic differentiation is carried out in the following manne
 ```
 
 ## Example 1
+````{admonition} Logarithmic differentiation
+:class: tip
 
 Compute the derivative of $f(x) = \dfrac{(5x+1)^7}{x^4\sqrt{x^3+4}}$.
 
 ```{dropdown} **Step 1:** &nbsp; Observe that &nbsp; $f(x)$ &nbsp; involves products, quotients, and powers.
 
-While $f'(x)$ could be computed using the product, quotient, and general power rules of differentiation, it is a good candidate for logarithmic differentiation.
+While $f'(x)$ could be computed using the product, quotient, and general power rules of differentiation, since there are more than two factors, each with an exponent, it is a good candidate for logarithmic differentiation.
 ```
 
 ```{dropdown} **Step 2:** &nbsp; Take the natural logarithm and expand.
@@ -55,7 +57,7 @@ Take the natural logarithm of both sides of $y=f(x)$ and expand $\ln(f(x))$ usin
 
 ```{dropdown} **Step 3:** &nbsp; Differentiate both sides. 
 
-Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
+Recall $\dfrac{d}{dx}\ln(y) = \dfrac{y'}{y}$.
 
 \begin{align*}
     \frac{y'}{y} 
@@ -75,8 +77,12 @@ Multiply both sides by $y$ and replace $y$ with $f(x)$:
     &= \dfrac{(5x+1)^7}{x^4\sqrt{x^3+4}} \left[ \frac{35}{5x+1} - \frac{4}{x} - \frac{3x^2}{2(x^3+4)} \right]. 
 \end{align*}
 ```
+````
+
 
 ## Example 2
+````{admonition} Logarithmic differentiation
+:class: tip
 
 Compute the derivative of $f(x) = \left(3x+5\right)^{x^2}$.
 
@@ -102,7 +108,7 @@ Recall $\dfrac{d}{dx}\ln(f(x)) = \dfrac{1}{f(x)} f'(x)$.
 
 \begin{align*}
     \frac{y'}{y} 
-    &= 2x \ln(3x+5) + x^2 \frac{1}{3x+5}\cdot 3  & \hbox{using the Product Rule}\\ \\
+    &= 2x \ln(3x+5) + x^2 \frac{1}{3x+5}\cdot 3  & \hbox{using the product rule}\\ \\
     &= 2x \ln(3x+5) +  \frac{3x^2}{3x+5}.
 \end{align*}
 ```
@@ -117,3 +123,4 @@ Multiply both sides by $y$ and replace $y$ with $f(x)$:
     &= \left( 3x+5\right)^{x^2} \left[ 2x \ln(3x+5) +  \frac{3x^2}{3x+5} \right]. 
 \end{align*}
 ```
+````

@@ -34,7 +34,7 @@ A function $f$ has an _**absolute minimum**_ at $x=c$ if $f(c) \leq f(x)$ for al
 
 
 ```{admonition} Absolute Extrema on a Closed Interval
-:class: note
+:class: important
 
 If a function $f$ is continuous on a closed interval $[a,b]$, then $f$ has both an absolute maximum value and an absolute minimum value on $[a,b]$.
 ```

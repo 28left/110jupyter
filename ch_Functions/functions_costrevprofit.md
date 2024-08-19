@@ -12,7 +12,7 @@ kernelspec:
 ---
 # Cost, Revenue, and Profit
 
-## Total Cost & Average Cost Functions
+## Definitions
 
 ```{admonition} Definition
 :class: info
@@ -35,10 +35,6 @@ $$\overline{C}(x) = \frac{C(x)}{x}.$$
 
 
 
-
-## Total Revenue & Average Revenue Functions
-
-
 ```{admonition} Definition
 :class: info
 
@@ -58,8 +54,6 @@ The _**average revenue function**_, $\overline{R}(x)$, measures the average amou
 $$\overline{R}(x) = \frac{R(x)}{x}.$$
 ```
 
-
-## Total Profit & Average Profit Functions
 
 
 ```{admonition} Definition
@@ -82,9 +76,6 @@ $$\overline{P}(x) = \frac{P(x)}{x}.$$
 
 
 
-
-## Break-Even Point
-
 ```{admonition} Definition
 :class: info
 
@@ -98,7 +89,7 @@ $$P(x) = 0.$$
 ```
 
 
-## Example 1
+### Example 1
 ````{admonition} Find cost, revenue, profit, and break-even point.
 :class: tip
 

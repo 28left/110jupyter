@@ -11,6 +11,7 @@ kernelspec:
   language: python
   name: python3
 ---
+(solving_inequalities)=
 # Solving Inequalities
 
 ## How to Solve an Inequality
