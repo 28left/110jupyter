@@ -15,40 +15,38 @@ kernelspec:
 
 ## Income Streams
 
-An **income stream** refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.
+```{admonition} Definition and Notation
+:class: info
 
-::::{grid} 2
-:::{grid-item-card} Future Value
-
-The **future value** of an income stream is the total of all of the money transferred plus all of the interest earned.
-:::
-
-:::{grid-item-card} Present Value
-
-The **present value** of an income stream is the principal investment $P$ that yields the same accumulated value as the income stream when $P$ is invested for a period of $T$ years at the same rate of interest.
-:::
-::::
-
+An _**income stream**_ refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.
 
 - $R(t)$ = rate at which income is generated (in dollars per year)
 - $T$ = length of time (in years) of the income stream    
 - $r$ = annual interest rate (compounded continuously)
-
-```{admonition} Future Value Formula
-:class: info
-
-$$A = e^{rT}\int_0^T R(t) e^{-rt} ~dt$$
 ```
 
-```{admonition} Present Value Formula
+
+```{admonition} Future Value
 :class: info
 
-$$PV = \int_0^T R(t) e^{-rt} ~dt$$
+The _**future value of an income stream**_ is the total of all of the money transferred plus all of the interest earned and is given by
+
+$$A = e^{rT}\int_0^T R(t) e^{-rt} ~dt.$$
 ```
 
-## Example 1
+```{admonition} Present Value
+:class: info
 
-```{admonition} Compute future and present value of an investment
+The _**present value of an income stream**_ is the principal investment, $PV$, that yields the same accumulated value as the income stream when $PV$ is invested for a period of $T$ years at the same interest rate and is given by
+
+$$PV = \int_0^T R(t) e^{-rt} ~dt.$$
+```
+
+
+
+### Example 1
+
+````{admonition} Compute future and present value of an investment
 :class: tip
 
 Suppose an investment is expected to generate income at the rate of 
@@ -56,14 +54,14 @@ Suppose an investment is expected to generate income at the rate of
 $$R(t) = 5 + 3t$$
 
 thousands of dollars per year for the next 10 years. Find the present and future values from this investment if the prevailing interest rate is 2\% per year compounded continuously.
-```
 
-```{dropdown} **Step 1:** Write the present and future values of the income stream as definite integrals.
+
+```{dropdown} **Step 1:** &nbsp; Write the present and future values of the income stream as definite integrals.
 
 $$PV = \int^{10}_0 \left( 5 + 3t \right)e^{-0.02t} ~dt ~~~~~~~ A = e^{0.2}\int^{10}_0 \left( 5 + 3t \right)e^{-0.02t} ~dt$$
 ```
 
-```{dropdown} **Step 2:** Compute $\displaystyle \int \left( 5 + 3t \right)e^{-0.02t}~dt$ using integration by parts.
+```{dropdown} **Step 2:** &nbsp; Compute $\displaystyle \int \left( 5 + 3t \right)e^{-0.02t}~dt$ using integration by parts.
 
 Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{a}e^{ax}+C$.) 
 
@@ -82,7 +80,7 @@ Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{
 \end{align*}
 ```
 
-```{dropdown} **Step 3:** Compute the present value using the answer to Step 2.
+```{dropdown} **Step 3:** &nbsp; Compute the present value using the answer to Step 2.
 
 \begin{align*}
   PV 
@@ -96,7 +94,7 @@ Pick $u$ and $dv$ and compute $du$ and $v$. (Recall $\int e^{ax} ~dx = \frac{1}{
 Therefore, the present value of this income stream is approximately \$176,740.53.
 ```
 
-```{dropdown} **Step 4:** Compute the future value using the answer to Step 3.
+```{dropdown} **Step 4:** &nbsp; Compute the future value using the answer to Step 3.
 
 \begin{align*}
   A 
@@ -110,3 +108,4 @@ Therefore, the present value of this income stream is approximately \$176,740.53
 
 Therefore, the future value of this income stream is approximately \$215,871.38.
 ```
+````

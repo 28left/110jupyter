@@ -22,7 +22,7 @@ The act of pulling out common factors from a sum can be thought of as applying t
 
 $$AB + AC = A(B+C)$$
 
-e.g., $21 + 14 = 7\cdot 3 + 7\cdot 2 = 7(3+2)$
+For example, $21 + 14 = 7\cdot 3 + 7\cdot 2 = 7(3+2)$.
 ```
 
 
@@ -166,11 +166,10 @@ When applying the FOIL technique to a product of the form $(A+B)(A-B)$, we get t
 &= A^2 - B^2
 \end{align*}
 
-We refer to $A^2-B^2$ as a difference of squares and can reinterpret the above calculation as a way to factor any difference of squares.
+We refer to $A^2-B^2$ as a difference of squares, which can always be factored in the following manner.
 
-$$
-\boxed{A^2-B^2 = (A+B)(A-B)}
-$$
+$$A^2-B^2 = (A+B)(A-B)$$
+
 ```
 
 
@@ -302,11 +301,11 @@ Therefore,
 $$6x^2 + 7x - 5 = (2x-1)(3x+5)$$
 ```
 
-```{dropdown} Check Your Work.
+```{dropdown} Check Our Work.
 :color: light
 :animate: fade-in
 
-After factoring a polynomial, it's always a good idea to check your work by expanding the product using the distributive property of multiplication and/or the FOIL method:
+After factoring a polynomial, it's always a good idea to check our work by expanding the product and making sure we get back what we started with.
 
 \begin{align*}
 (2x-1)(3x+5)
@@ -361,7 +360,7 @@ Therefore,
 $$x^2 - 13x + 36 = (x-4)(x-9)$$
 ```
 
-```{dropdown} Check Your Work.
+```{dropdown} Check Our Work.
 :color: light
 :animate: fade-in
 
@@ -378,7 +377,7 @@ $$x^2 - 13x + 36 = (x-4)(x-9)$$
 
 ```{admonition} Important Observation
 :class: info
-If the coefficient of $x^2$ is one (i.e., $a=1$ in $ax^2 + bx + c$), then Step 1 of the $AC$ grouping method is to find two numbers that multiply to $c$ and sum to $b$. Once these numbers have been found, then the factorization can be written as
+If the coefficient of $x^2$ is one (i.e., $a=1$ in $ax^2 + bx + c$), then Step 1 of the $AC$ grouping method is to find two numbers that multiply to $c$ and sum to $b$. If those numbers exist, call them $r$ and $s$, then the factorization can be written as
 
 $$x^2 + bx + c = (x+r)(x+s)$$
 
@@ -412,7 +411,7 @@ Since the coefficient of $x^2$ is one, then the factorization is given by
 $$x^2 - 4x - 12 = (x+2)(x-6).$$
 ```
 
-```{dropdown} Check Your Work.
+```{dropdown} Check Our Work.
 :color: light
 :animate: fade-in
 
@@ -466,7 +465,7 @@ Therefore,
 ```
 
 
-```{dropdown} Check Your Work.
+```{dropdown} Check Our Work.
 :color: light
 :animate: fade-in
 

@@ -45,7 +45,6 @@ The demand curve, $p = d(x)$, shows the quantity demanded, $x$, at each price, $
 ```
 ::::
 :::::
-
 ```{dropdown} Long Text Description
 There is a horizontal x-axis representing the quantity of a good that is demanded, and a vertical p-axis representing the price of the same good. The image is restricted to the positive side of both axes. There is a blue curve decreasing from left to right representing how much consumers of the good will pay for a given quantity of the good. The curve is labeled p = d(x). 
 ```
@@ -120,7 +119,6 @@ Therefore, the domain of the demand function $d(x) = 600-15x$ is $[0,40]$.
 
 
 ## Market Equilibrium
-
 ```{admonition} Definition
 :class: info
 

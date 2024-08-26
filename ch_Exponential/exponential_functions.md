@@ -419,8 +419,6 @@ For a review of solving inequalities like $f(x) > 0$, see {ref}`solving_inequali
 ````{admonition} Limits of logarithmic functions
 :class: tip
 
-Evaluate the following limits.
-
 Evaluate the following limits by first evaluating the limit of the inner function and then applying the corresponding limit property of logarithmic functions to evaluate the given limit.
 
 1. $\lim\limits_{x\to 8^+} \log_{3}(x^2-64) $
@@ -437,7 +435,6 @@ $$\lim_{x\to 0^+} \log_{b}(x) = -\infty$$
 for $b>1$.  Therefore, $\lim\limits_{x\to 8^+} \log_{3}(x^2-64) = -\infty$.
 ```
 ---
-
 
 
 2. $\lim\limits_{x\to 5^-} \log_{1/2}\left(\dfrac{1}{5-x}\right) $
@@ -475,7 +472,7 @@ for $0<b<1$.  Therefore, $\lim\limits_{x\to \infty} \log_{1/5}\left(\dfrac{2}{x}
 
 
 
-## The Natural Exponential and Logarthimic Functions
+## The Natural Exponential and Logarithmic Functions
 
 
 ```{admonition} Definition
@@ -488,6 +485,21 @@ $$e = \lim_{n\to \infty} \left(1 + \frac{1}{n}\right)^n$$
 
 The _**natural logarithmic function**_, denoted $\ln(x)$, is the logarithmic function with base $e$ (i.e., $\ln(x) = \log_e(x)$).
 ```
+
+
+```{admonition} Limit Properties of the Natural Exponential and Logarithmic Functions
+:class: note
+
+The functions $e^x$ and $\ln(x)$ satisfy the corresponding properties listed above for all exponential and logarithmic functions.  And in particular, since $e>1$, we have the following.
+
+  - $e^x$ is increasing on $(-\infty,\infty)$
+  - $\lim\limits_{x\to -\infty} e^x = 0$  and $\lim\limits_{x\to \infty} e^x = \infty$ <br><br>
+
+
+  - $\ln(x)$ is increasing on $(0,\infty)$
+  - $\lim\limits_{x\to 0^+} \ln(x) = -\infty$  and $\lim\limits_{x\to \infty} \ln(x) = \infty$ <br><br>
+```
+
 
 
 ### Example 7
@@ -542,3 +554,149 @@ From bottom-to-top, the graph of y = ln(x) starts very close to and to the right
 
 \end{tikzpicture}
 -->
+
+
+### Example 8
+````{admonition} Limits of $e^x$ and $\ln(x)$
+:class: tip
+
+Evaluate the following limits.
+
+1. $\lim\limits_{x \to \infty} e^{-x^7}$
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the exponent.
+ The exponent, $-x^7$, goes to negative infinity as $x$ goes to positive infinity.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since the exponent goes to negative infinity, we'll apply the property that 
+
+$$\lim_{x\to -\infty} e^x = 0$$
+
+Therefore, $\lim\limits_{x \to \infty} e^{-x^7} = 0$.
+```
+---
+
+
+2. $\lim\limits_{x \to -\infty} e^{-x^2}$
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the exponent.
+ The exponent, $-x^2$, goes to negative infinity as $x$ goes to negative infinity.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since the exponent goes to negative infinity, we'll apply the property that 
+
+$$\lim_{x\to -\infty} e^x = 0$$
+
+Therefore, $\lim\limits_{x \to \infty} e^{-x^2} = 0$.
+```
+---
+
+
+3. $\lim\limits_{x \to 0^+} e^{5/x}$
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the exponent.
+ The exponent, $5/x$, goes to positive infinity as $x$ goes to zero from the right.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since the exponent goes to positive infinity, we'll apply the property that 
+
+$$\lim_{x\to \infty} e^x = \infty$$
+
+Therefore, $\lim\limits_{x \to 0^+} e^{5/x} = \infty$.
+```
+---
+
+4. $\lim\limits_{x \to 0^-} e^{3/x}$
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the exponent.
+ The exponent, $3/x$, goes to negative infinity as $x$ goes to zero from the left.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since the exponent goes to negative infinity, we'll apply the property that 
+
+$$\lim_{x\to -\infty} e^x = 0$$
+
+Therefore, $\lim\limits_{x \to 0^-} e^{3/x} = 0$.
+```
+---
+
+5. $\lim\limits_{x \to -\infty} e^{4/x}$
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the exponent.
+ The exponent, $4/x$, goes to zero as $x$ goes to negative infinity.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since the exponent goes to zero, we don't need to apply any of the above properties of exponential functions regarding limits at infinity.  Instead, we can make use of the fact that $e^x$ is continuous everywhere.  In particular, $e^x$ is continuous at zero, which means that 
+
+$$\lim_{x\to 0} e^x = e^0 = 1$$
+
+Therefore, $\lim\limits_{x \to -\infty} e^{4/x} = 1$.
+```
+---
+
+
+6. $\lim\limits_{x\to 1^-} \ln(1-x^2)$
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the inner function.
+ The inner function, $1-x^2$, goes to zero from the right as $x$ goes to one from the left.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since $1-x^2$ goes to zero from the right, we'll apply the property that 
+
+$$\lim_{x\to 0^+} \ln(x) = -\infty$$
+
+Therefore, $\lim\limits_{x\to 1^-} \ln(1 - x^2) = -\infty$.
+```
+---
+
+
+7. $\lim\limits_{x\to 3^+} \ln\left(\dfrac{1}{x - 3}\right) $
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the inner function.
+ The inner function, $\dfrac{1}{x-3}$, goes to infinity as $x$ goes to three from the right.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since $\dfrac{1}{x-3}$ goes to infinity, we'll apply the property that 
+
+$$\lim_{x\to \infty} \ln(x) = \infty$$
+
+Therefore, $\lim\limits_{x\to 3^+} \ln\left(\dfrac{1}{x-3}\right) = \infty$.
+```
+---
+
+8. $\lim\limits_{x\to \infty} \ln\left(\dfrac{2}{x}\right)$
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the inner function.
+ The inner function, $\dfrac{2}{x}$, goes to zero from the right as $x$ goes to infinity.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since $\dfrac{2}{x}$ goes to zero from the right, we'll apply the property that 
+
+$$\lim_{x\to 0^+} \ln(x) = -\infty$$
+
+Therefore, $\lim\limits_{x\to \infty} \ln\left(\dfrac{2}{x}\right) = -\infty$.
+```
+
+
+9. $\lim\limits_{x\to -\infty} \ln\left(\dfrac{5x^2 + 3}{7x^2 - 1}\right)$
+
+```{dropdown} **Step 1:** &nbsp; Evaluate the limit of the inner function.
+ The inner function, $\dfrac{5x^2 + 3}{7x^2 - 1}$, goes to $5/7$ as $x$ goes to negative infinity.
+```
+
+```{dropdown} **Step 2:** &nbsp; Evaluate the given limit.
+Since $\dfrac{5x^2 + 3}{7x^2 - 1}$ goes to $5/7$, we don't need to apply any of the above properties of logarithmic functions regarding infinite limits.  Instead, we can make use of the fact that $\ln(x)$ is continuous on $(0,\infty)$.  In particular, $\ln(x)$ is continuous at $5/7$, which means that 
+
+$$\lim_{x\to 5/7} \ln(x) = \ln(5/7)$$
+
+Therefore, $\lim\limits_{x\to -\infty} \ln\left(\dfrac{5x^2 + 3}{7x^2 - 1}\right) = \ln(5/7)$.
+```
+````

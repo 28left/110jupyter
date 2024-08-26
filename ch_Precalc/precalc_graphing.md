@@ -132,6 +132,28 @@ Recall that the slope of a line is positive if the line goes up from left-to-rig
 ```
 
 
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/dFT-2xdJHrM" target="_blank">Equation of a Line</a> (Links to an external site) <br>
+A review of the slope-intercept and point-slope form of the equation of a line.
+:::
+::::
+````
+
+
+
+
 ### Example 1
 `````{admonition} Sketch the graph of a line in slope-intercept form
 :class: tip

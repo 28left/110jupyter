@@ -48,6 +48,32 @@ There is a horizontal x-axis with points a and a+h marked.  There is a vertical 
 ```
 ````
 
+<!--
+\begin{tikzpicture}[scale=1.5]
+
+\draw[black,fill=white] (-1.6,-0.6) rectangle (4.7,3.2);
+
+\draw[->] (-0.5,0) -- (4.5,0) node[below] {$x$};
+\draw[->] (0,-0.5) -- (0,3) node[right] {$y$};
+
+\draw[dashed,lightgray] (1,0) |- (0,1.1);
+\draw[dashed,lightgray] (3,0) |- (0,1.9);
+
+
+\draw[domain=-0.5:4.5,smooth,variable=\x,black,ultra thick,samples=200] plot ({\x},{ (\x-4)*(4-\x)/10 + 2});
+
+\draw[domain=-0.5:4.5,smooth,variable=\x,red,ultra thick,samples=200] plot ({\x},{ 0.4*(\x-1) + 1.1}) node[left] {secant line~~~~};
+
+\draw [black,fill=red] (1,1.1) circle (2pt);
+\draw [black,fill=green] (3,1.9) circle (2pt);
+
+\draw [thick] (1,2pt) -- (1,-2pt) node[below] {$a$};
+\draw [thick] (3,2pt) -- (3,-2pt) node[below] {$a+h$};
+
+\draw [thick] (-2pt,1.1) -- (2pt,1.1) node[left] {$f(a)~$};
+\draw [thick] (-2pt,1.9) -- (2pt,1.9) node[left] {$f(a+h)~$};
+\end{tikzpicture}
+-->
 
 
 ````{admonition} Definition
@@ -73,6 +99,28 @@ There is a horizontal x-axis with point a marked.  There is a vertical y-axis wi
 ```
 ````
 
+<!--
+\begin{tikzpicture}[scale=1.5]
+
+\draw[black,fill=white] (-1.6,-0.6) rectangle (4.7,3.2);
+
+\draw[->] (-0.5,0) -- (4.5,0) node[below] {$x$};
+\draw[->] (0,-0.5) -- (0,3) node[right] {$y$};
+
+\draw[dashed,lightgray] (1,0) |- (0,1.1);
+
+\draw[domain=-0.5:4.5,smooth,variable=\x,black,ultra thick,samples=200] plot ({\x},{ (\x-4)*(4-\x)/10 + 2});
+
+
+\draw[domain=-0.5:4.25,smooth,variable=\x,gray,ultra thick,samples=200] plot ({\x},{ 0.6*(\x-1) + 1.1}) node[below left] {tangent line~~~~~~~};
+
+\draw [black,fill=red] (1,1.1) circle (2pt);
+
+\draw [thick] (1,2pt) -- (1,-2pt) node[below] {$a$};
+
+\draw [thick] (-2pt,1.1) -- (2pt,1.1) node[left] {$f(a)~$};
+\end{tikzpicture}
+-->
 
 ```{admonition} The Limit Definition of the Derivative
 :class: info
@@ -82,6 +130,15 @@ The _**derivative of $f(x)$ with respect to $x$**_, denoted $f'(x)$, is the func
 $$f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h},$$
 
 and the domain of $f'(x)$ is the set of all $x$ where the limit exists.
+```
+
+
+```{admonition} Notation
+:class: note
+
+For a given function, $y = f(x)$, each of the following symbols refers to the derivative of $f(x)$ with respect to $x$.
+
+$$f'(x) \hspace{30pt} y' \hspace{30pt} \frac{d}{dx}f(x) \hspace{30pt} \frac {dy}{dx}$$
 ```
 
 
@@ -95,6 +152,7 @@ $$y = f'(a)(x-a) + f(a)$$
 
 The above equation is equivalent to the point-slope equation of a line (i.e., $y=m(x-a) + b$) where the slope, $m$, is equal to $f'(a)$, and the line goes through the point $(a,b)$, where $b = f(a)$.
 ```
+
 
 
 ## Computing Derivatives Using the Limit Definition

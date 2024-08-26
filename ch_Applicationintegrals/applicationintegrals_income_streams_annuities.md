@@ -15,80 +15,50 @@ kernelspec:
 
 ## Income Streams
 
-An **income stream** refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.
+```{admonition} Definition and Notation
+:class: info
 
-::::{grid} 2
-:::{grid-item-card}  Future Value
-The **future value** of an income stream is the total of all of the money transferred plus all of the interest earned.
-:::
-
-:::{grid-item-card}  Present Value
-The **present value** of an income stream is the principal investment, $P$, that yields the same accumulated value as the income stream when $P$ is invested for a period of $T$ years at the same rate of interest.
-:::
-::::
+An _**income stream**_ refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.
 
 - $R(t)$ = rate at which income is generated (in dollars per year)
 - $T$ = length of time (in years) of the income stream    
 - $r$ = annual interest rate (compounded continuously)
-
-```{admonition} Future Value Formula
-:class: info
-
-$$A = e^{rT}\int_0^T R(t) e^{-rt} ~dt$$
 ```
 
-```{admonition} Present Value Formula
+
+```{admonition} Future Value
 :class: info
 
-$$PV = \int_0^T R(t) e^{-rt} ~dt$$
+The _**future value of an income stream**_ is the total of all of the money transferred plus all of the interest earned and is given by
+
+$$A = e^{rT}\int_0^T R(t) e^{-rt} ~dt.$$
 ```
 
-## Annuities
-
-:::{card} Annuity
-An **annuity** is a sequence of payments made at regular intervals. 
-
-- $P=$ the size of each payment
-- $T=$ length of time (in years) that payments are made
-- $r$ = annual interest rate (compounded continuously)
-- $m=$ the number of payments per year
-:::
-
-:::{card} Compounding intervals
-|Annually|Semiannually|Quarterly|Monthly|Weekly|Daily|
-| :---: | :---: | :---: | :---: | :---: | :---: |
-|$m=1$|$m=2$|$m=4$|$m=12$|$m=52$|$m=365$|
-:::
-
-
-The following formulas for the amount and present value of an annuity are based on treating an annuity as an income stream where $R(t) = mP$.
-
-```{admonition} Amount of an Annuity
+```{admonition} Present Value
 :class: info
 
-$$A = \frac{mP}{r}\left(e^{rT} - 1\right)$$
+The _**present value of an income stream**_ is the principal investment, $PV$, that yields the same accumulated value as the income stream when $PV$ is invested for a period of $T$ years at the same interest rate and is given by
+
+$$PV = \int_0^T R(t) e^{-rt} ~dt.$$
 ```
 
-```{admonition} Present Value of an Annuity
-:class: info
 
-$$PV = \frac{mP}{r}\left(1 - e^{-rT}\right)$$
-```
 
-## Example 1
+### Example 1
 
-```{admonition} Future value of an income stream
+````{admonition} Future value of an income stream
 :class: tip
 
 Penn State Learning is expected to generate \$3,000 a year for the next 2 years from the sales of its *Calculus on Demand* iOS app.  Assuming the income is invested at an interest rate of 5\%, what is the future value of this income stream?
-```
 
-```{dropdown} **Step 1:** Recall the formula for the future value of an income stream.
+```{dropdown} **Step 1:** &nbsp; Recall the formula for the future value of an income stream.
 
 $$A = e^{rT} \int_0^T R(t) e^{-rt} ~dt$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $R(t)=3000$, $r=0.05$, and $T=2$. 
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
+
+$R(t)=3000$, $r=0.05$, and $T=2$. 
 
 \begin{align*}
   e^{0.05(2)}\int_0^2 3000e^{-0.05t}~dt
@@ -100,21 +70,25 @@ $$A = e^{rT} \int_0^T R(t) e^{-rt} ~dt$$
   &\approx \$6,310.26 
 \end{align*}
 ```
+````
 
-## Example 2
 
-```{admonition}  Present value of an investment
+### Example 2
+
+````{admonition}  Present value of an investment
 :class: tip
 
 An investment is expected to generate income at a rate of \$300,000 per year for the next 6 years. Find the present value of this investment if the interest rate is 10\% compounded continuously. 
-```
 
-```{dropdown} **Step 1:** Recall the formula for the present value of an income stream.
+
+```{dropdown} **Step 1:** &nbsp; Recall the formula for the present value of an income stream.
 
 $$PV = \int_0^T R(t) e^{-rt} ~dt$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $R(t)=300000$, $r=0.1$, and $T=6$. 
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
+
+$R(t)=300000$, $r=0.1$, and $T=6$. 
 
 \begin{align*}
   \int_0^6 300000e^{-0.1t} ~dt
@@ -126,21 +100,71 @@ $$PV = \int_0^T R(t) e^{-rt} ~dt$$
   &\approx \$1,353,565.09
 \end{align*}
 ```
+````
 
-## Example 3
 
-```{admonition} Amount of an annuity 
-:class: tip
+## Annuities
 
-A Math 110 student decides to make semiannual payments of \$2,500 into a retirement account paying 2\% interest per year compounded continuously. How much will the student have in their retirement account after 20 years?
+```{admonition} Definition and Notation
+:class: info
+
+An _**annuity**_ is a sequence of payments made at regular intervals. 
+
+- $P=$ the size of each payment
+- $T=$ length of time (in years) that payments are made
+- $r$ = annual interest rate (compounded continuously)
+- $m=$ the number of payments per year
+
+|Annually|Semiannually|Quarterly|Monthly|Weekly|Daily|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|$m=1$|$m=2$|$m=4$|$m=12$|$m=52$|$m=365$|
 ```
 
-```{dropdown} **Step 1:** Recall the formula for the amount of an annuity.
+
+
+
+
+
+```{admonition} Amount of an Annuity
+:class: info
+
+The _**amount of an annuity**_ is the total of all of the payments plus all of the interest earned and is given by
 
 $$A = \frac{mP}{r}\left(e^{rT} - 1\right)$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $m=2$, $P=2500$, $r=0.02$, and $T=20$. 
+```{admonition} Present Value of an Annuity
+:class: info
+
+The _**present value of an annuity**_ is the principal investment, $PV$, that yields the same accumulated value as the annuity when $PV$ is invested for a period of $T$ years at the same interest rate and is given by
+
+
+$$PV = \frac{mP}{r}\left(1 - e^{-rT}\right)$$
+```
+
+```{admonition} Observation
+:class: important
+
+The above formulas for the amount and present value of an annuity are approximations and are based on treating an annuity as an income stream where $R(t) = mP$.
+```
+
+
+
+### Example 3
+
+````{admonition} Amount of an annuity 
+:class: tip
+
+A Math 110 student decides to make semiannual payments of \$2,500 into a retirement account paying 2\% interest per year compounded continuously. How much will the student have in their retirement account after 20 years?
+
+```{dropdown} **Step 1:** &nbsp; Recall the formula for the amount of an annuity.
+
+$$A = \frac{mP}{r}\left(e^{rT} - 1\right)$$
+```
+
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
+
+$m=2$, $P=2500$, $r=0.02$, and $T=20$. 
 
 \begin{align*}
   \frac{(2)(2,500)}{0.02} \left(e^{(0.02)(20)}-1 \right)
@@ -153,21 +177,24 @@ $$A = \frac{mP}{r}\left(e^{rT} - 1\right)$$
 
 Therefore, the student will have approximately \$122,956.17 in their retirement account after 20 years.
 ```
+````
 
-## Example 4
+### Example 4
 
-```{admonition} Present value of an annuity
+````{admonition} Present value of an annuity
 :class: tip
 
 Determine the present value of an annuity if payments of \$100 are made monthly for the next 10 years and the account earns an interest rate of 10\% per year compounded continuously.
-```
 
-```{dropdown} **Step 1:** Recall the formula for the present value of an annuity.
+
+```{dropdown} **Step 1:** &nbsp; Recall the formula for the present value of an annuity.
 
 $$PV = \frac{mP}{r}\left(1 - e^{-rT}\right)$$
 ```
 
-```{dropdown} **Step 2:** Plug in the given values: $m=12$, $P=100$, $r=0.1$, and $T=10$. 
+```{dropdown} **Step 2:** &nbsp; Plug in the given values.
+
+$m=12$, $P=100$, $r=0.1$, and $T=10$. 
 
 \begin{align*}
   \frac{(12)(100)}{0.1} \left(1-e^{-(0.1)(10)} \right)
@@ -179,3 +206,4 @@ $$PV = \frac{mP}{r}\left(1 - e^{-rT}\right)$$
 
 Therefore, the annuity is worth a single lump sum of money worth approximately \$7,585.45.
 ```
+````
