@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -478,8 +481,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-natural-exponential-and-logarthimic-functions">The Natural Exponential and Logarthimic Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-natural-exponential-and-logarithmic-functions">The Natural Exponential and Logarithmic Functions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-7">Example 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-8">Example 8</a></li>
 </ul>
 </li>
 </ul>
@@ -881,7 +885,6 @@ document.write(`
 <h3>Example 6<a class="headerlink" href="#example-6" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Limits of logarithmic functions</p>
-<p>Evaluate the following limits.</p>
 <p>Evaluate the following limits by first evaluating the limit of the inner function and then applying the corresponding limit property of logarithmic functions to evaluate the given limit.</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to 8^+} \log_{3}(x^2-64) \)</span></p></li>
@@ -937,14 +940,24 @@ document.write(`
 </section>
 </section>
 <hr class="docutils" />
-<section id="the-natural-exponential-and-logarthimic-functions">
-<h2>The Natural Exponential and Logarthimic Functions<a class="headerlink" href="#the-natural-exponential-and-logarthimic-functions" title="Link to this heading">#</a></h2>
+<section id="the-natural-exponential-and-logarithmic-functions">
+<h2>The Natural Exponential and Logarithmic Functions<a class="headerlink" href="#the-natural-exponential-and-logarithmic-functions" title="Link to this heading">#</a></h2>
 <div class="note admonition">
 <p class="admonition-title">Definition</p>
 <p>The <em><strong>natural exponential function</strong></em>, denoted <span class="math notranslate nohighlight">\(e^x\)</span>, is an exponential function with base <span class="math notranslate nohighlight">\(e \approx 2.71828\)</span>.  The exact value of <span class="math notranslate nohighlight">\(e\)</span> can be defined in a variety of different ways, one of which is the following:</p>
 <div class="math notranslate nohighlight">
 \[e = \lim_{n\to \infty} \left(1 + \frac{1}{n}\right)^n\]</div>
 <p>The <em><strong>natural logarithmic function</strong></em>, denoted <span class="math notranslate nohighlight">\(\ln(x)\)</span>, is the logarithmic function with base <span class="math notranslate nohighlight">\(e\)</span> (i.e., <span class="math notranslate nohighlight">\(\ln(x) = \log_e(x)\)</span>).</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Limit Properties of the Natural Exponential and Logarithmic Functions</p>
+<p>The functions <span class="math notranslate nohighlight">\(e^x\)</span> and <span class="math notranslate nohighlight">\(\ln(x)\)</span> satisfy the corresponding properties listed above for all exponential and logarithmic functions.  And in particular, since <span class="math notranslate nohighlight">\(e&gt;1\)</span>, we have the following.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(e^x\)</span> is increasing on <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to -\infty} e^x = 0\)</span>  and <span class="math notranslate nohighlight">\(\lim\limits_{x\to \infty} e^x = \infty\)</span> <br><br></p></li>
+<li><p><span class="math notranslate nohighlight">\(\ln(x)\)</span> is increasing on <span class="math notranslate nohighlight">\((0,\infty)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to 0^+} \ln(x) = -\infty\)</span>  and <span class="math notranslate nohighlight">\(\lim\limits_{x\to \infty} \ln(x) = \infty\)</span> <br><br></p></li>
+</ul>
 </div>
 <section id="example-7">
 <h3>Example 7<a class="headerlink" href="#example-7" title="Link to this heading">#</a></h3>
@@ -997,7 +1010,166 @@ document.write(`
 \draw[ultra thick,domain=-5:1.6,smooth,samples=100,black] plot ({exp(\x)},\x) node [above left,fill=white] {$\ln(x)$};
 
 \end{tikzpicture}
---></section>
+-->
+</section>
+<section id="example-8">
+<h3>Example 8<a class="headerlink" href="#example-8" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Limits of <span class="math notranslate nohighlight">\(e^x\)</span> and <span class="math notranslate nohighlight">\(\ln(x)\)</span></p>
+<p>Evaluate the following limits.</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to \infty} e^{-x^7}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(-x^7\)</span>, goes to negative infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to positive infinity.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to negative infinity, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to -\infty} e^x = 0\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to \infty} e^{-x^7} = 0\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="2">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} e^{-x^2}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(-x^2\)</span>, goes to negative infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to negative infinity.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to negative infinity, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to -\infty} e^x = 0\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to \infty} e^{-x^2} = 0\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="3">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to 0^+} e^{5/x}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(5/x\)</span>, goes to positive infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to zero from the right.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to positive infinity, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to \infty} e^x = \infty\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to 0^+} e^{5/x} = \infty\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="4">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to 0^-} e^{3/x}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(3/x\)</span>, goes to negative infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to zero from the left.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to negative infinity, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to -\infty} e^x = 0\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to 0^-} e^{3/x} = 0\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="5">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} e^{4/x}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(4/x\)</span>, goes to zero as <span class="math notranslate nohighlight">\(x\)</span> goes to negative infinity.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to zero, we don’t need to apply any of the above properties of exponential functions regarding limits at infinity.  Instead, we can make use of the fact that <span class="math notranslate nohighlight">\(e^x\)</span> is continuous everywhere.  In particular, <span class="math notranslate nohighlight">\(e^x\)</span> is continuous at zero, which means that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 0} e^x = e^0 = 1\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} e^{4/x} = 1\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="6">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^-} \ln(1-x^2)\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the inner function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The inner function, <span class="math notranslate nohighlight">\(1-x^2\)</span>, goes to zero from the right as <span class="math notranslate nohighlight">\(x\)</span> goes to one from the left.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(1-x^2\)</span> goes to zero from the right, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 0^+} \ln(x) = -\infty\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 1^-} \ln(1 - x^2) = -\infty\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="7">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to 3^+} \ln\left(\dfrac{1}{x - 3}\right) \)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the inner function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The inner function, <span class="math notranslate nohighlight">\(\dfrac{1}{x-3}\)</span>, goes to infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to three from the right.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(\dfrac{1}{x-3}\)</span> goes to infinity, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to \infty} \ln(x) = \infty\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x\to 3^+} \ln\left(\dfrac{1}{x-3}\right) = \infty\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="8">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to \infty} \ln\left(\dfrac{2}{x}\right)\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the inner function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The inner function, <span class="math notranslate nohighlight">\(\dfrac{2}{x}\)</span>, goes to zero from the right as <span class="math notranslate nohighlight">\(x\)</span> goes to infinity.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(\dfrac{2}{x}\)</span> goes to zero from the right, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 0^+} \ln(x) = -\infty\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x\to \infty} \ln\left(\dfrac{2}{x}\right) = -\infty\)</span>.</p>
+</div>
+</details><ol class="arabic simple" start="9">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to -\infty} \ln\left(\dfrac{5x^2 + 3}{7x^2 - 1}\right)\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the inner function.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The inner function, <span class="math notranslate nohighlight">\(\dfrac{5x^2 + 3}{7x^2 - 1}\)</span>, goes to <span class="math notranslate nohighlight">\(5/7\)</span> as <span class="math notranslate nohighlight">\(x\)</span> goes to negative infinity.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(\dfrac{5x^2 + 3}{7x^2 - 1}\)</span> goes to <span class="math notranslate nohighlight">\(5/7\)</span>, we don’t need to apply any of the above properties of logarithmic functions regarding infinite limits.  Instead, we can make use of the fact that <span class="math notranslate nohighlight">\(\ln(x)\)</span> is continuous on <span class="math notranslate nohighlight">\((0,\infty)\)</span>.  In particular, <span class="math notranslate nohighlight">\(\ln(x)\)</span> is continuous at <span class="math notranslate nohighlight">\(5/7\)</span>, which means that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 5/7} \ln(x) = \ln(5/7)\]</div>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x\to -\infty} \ln\left(\dfrac{5x^2 + 3}{7x^2 - 1}\right) = \ln(5/7)\)</span>.</p>
+</div>
+</details></div>
+</section>
 </section>
 </section>
 
@@ -1077,8 +1249,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-natural-exponential-and-logarthimic-functions">The Natural Exponential and Logarthimic Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-natural-exponential-and-logarithmic-functions">The Natural Exponential and Logarithmic Functions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-7">Example 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-8">Example 8</a></li>
 </ul>
 </li>
 </ul>

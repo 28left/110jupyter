@@ -76,7 +76,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch_Applicationintegrals/applicationintegrals_income_streams_annuities';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Integration by Parts &amp; Improper Integrals" href="../ch_Byparts/byparts_.html" />
+    <link rel="next" title="Try It Yourself" href="applicationintegrals_TIY.html" />
     <link rel="prev" title="Consumer, Producer, &amp; Total Surplus" href="applicationintegrals_consumer_producer_total_surplus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -466,12 +469,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#income-streams">Income Streams</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annuities">Annuities</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#income-streams">Income Streams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annuities">Annuities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -487,114 +494,42 @@ document.write(`
 <h1>Income Streams &amp; Annuities<a class="headerlink" href="#income-streams-annuities" title="Link to this heading">#</a></h1>
 <section id="income-streams">
 <h2>Income Streams<a class="headerlink" href="#income-streams" title="Link to this heading">#</a></h2>
-<p>An <strong>income stream</strong> refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Future Value</div>
-<p class="sd-card-text">The <strong>future value</strong> of an income stream is the total of all of the money transferred plus all of the interest earned.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Present Value</div>
-<p class="sd-card-text">The <strong>present value</strong> of an income stream is the principal investment, <span class="math notranslate nohighlight">\(P\)</span>, that yields the same accumulated value as the income stream when <span class="math notranslate nohighlight">\(P\)</span> is invested for a period of <span class="math notranslate nohighlight">\(T\)</span> years at the same rate of interest.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="info admonition">
+<p class="admonition-title">Definition and Notation</p>
+<p>An <em><strong>income stream</strong></em> refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(R(t)\)</span> = rate at which income is generated (in dollars per year)</p></li>
 <li><p><span class="math notranslate nohighlight">\(T\)</span> = length of time (in years) of the income stream</p></li>
 <li><p><span class="math notranslate nohighlight">\(r\)</span> = annual interest rate (compounded continuously)</p></li>
 </ul>
-<div class="info admonition">
-<p class="admonition-title">Future Value Formula</p>
-<div class="math notranslate nohighlight">
-\[A = e^{rT}\int_0^T R(t) e^{-rt} ~dt\]</div>
 </div>
 <div class="info admonition">
-<p class="admonition-title">Present Value Formula</p>
+<p class="admonition-title">Future Value</p>
+<p>The <em><strong>future value of an income stream</strong></em> is the total of all of the money transferred plus all of the interest earned and is given by</p>
 <div class="math notranslate nohighlight">
-\[PV = \int_0^T R(t) e^{-rt} ~dt\]</div>
-</div>
-</section>
-<section id="annuities">
-<h2>Annuities<a class="headerlink" href="#annuities" title="Link to this heading">#</a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Annuity</div>
-<p class="sd-card-text">An <strong>annuity</strong> is a sequence of payments made at regular intervals.</p>
-<ul class="simple">
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(P=\)</span> the size of each payment</p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(T=\)</span> length of time (in years) that payments are made</p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(r\)</span> = annual interest rate (compounded continuously)</p></li>
-<li><p class="sd-card-text"><span class="math notranslate nohighlight">\(m=\)</span> the number of payments per year</p></li>
-</ul>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Compounding intervals</div>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-center"><p class="sd-card-text">Annually</p></th>
-<th class="head text-center"><p class="sd-card-text">Semiannually</p></th>
-<th class="head text-center"><p class="sd-card-text">Quarterly</p></th>
-<th class="head text-center"><p class="sd-card-text">Monthly</p></th>
-<th class="head text-center"><p class="sd-card-text">Weekly</p></th>
-<th class="head text-center"><p class="sd-card-text">Daily</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(m=1\)</span></p></td>
-<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(m=2\)</span></p></td>
-<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(m=4\)</span></p></td>
-<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(m=12\)</span></p></td>
-<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(m=52\)</span></p></td>
-<td class="text-center"><p class="sd-card-text"><span class="math notranslate nohighlight">\(m=365\)</span></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<p>The following formulas for the amount and present value of an annuity are based on treating an annuity as an income stream where <span class="math notranslate nohighlight">\(R(t) = mP\)</span>.</p>
-<div class="info admonition">
-<p class="admonition-title">Amount of an Annuity</p>
-<div class="math notranslate nohighlight">
-\[A = \frac{mP}{r}\left(e^{rT} - 1\right)\]</div>
+\[A = e^{rT}\int_0^T R(t) e^{-rt} ~dt.\]</div>
 </div>
 <div class="info admonition">
-<p class="admonition-title">Present Value of an Annuity</p>
+<p class="admonition-title">Present Value</p>
+<p>The <em><strong>present value of an income stream</strong></em> is the principal investment, <span class="math notranslate nohighlight">\(PV\)</span>, that yields the same accumulated value as the income stream when <span class="math notranslate nohighlight">\(PV\)</span> is invested for a period of <span class="math notranslate nohighlight">\(T\)</span> years at the same interest rate and is given by</p>
 <div class="math notranslate nohighlight">
-\[PV = \frac{mP}{r}\left(1 - e^{-rT}\right)\]</div>
+\[PV = \int_0^T R(t) e^{-rt} ~dt.\]</div>
 </div>
-</section>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Future value of an income stream</p>
 <p>Penn State Learning is expected to generate $3,000 a year for the next 2 years from the sales of its <em>Calculus on Demand</em> iOS app.  Assuming the income is invested at an interest rate of 5%, what is the future value of this income stream?</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Recall the formula for the future value of an income stream.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the formula for the future value of an income stream.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[A = e^{rT} \int_0^T R(t) e^{-rt} ~dt\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Plug in the given values: <span class="math notranslate nohighlight">\(R(t)=3000\)</span>, <span class="math notranslate nohighlight">\(r=0.05\)</span>, and <span class="math notranslate nohighlight">\(T=2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Plug in the given values.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(R(t)=3000\)</span>, <span class="math notranslate nohighlight">\(r=0.05\)</span>, and <span class="math notranslate nohighlight">\(T=2\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   e^{0.05(2)}\int_0^2 3000e^{-0.05t}~dt
@@ -606,22 +541,23 @@ Compounding intervals</div>
   &amp;\approx \$6,310.26 
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Present value of an investment</p>
 <p>An investment is expected to generate income at a rate of $300,000 per year for the next 6 years. Find the present value of this investment if the interest rate is 10% compounded continuously.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Recall the formula for the present value of an income stream.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the formula for the present value of an income stream.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[PV = \int_0^T R(t) e^{-rt} ~dt\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Plug in the given values: <span class="math notranslate nohighlight">\(R(t)=300000\)</span>, <span class="math notranslate nohighlight">\(r=0.1\)</span>, and <span class="math notranslate nohighlight">\(T=6\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Plug in the given values.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(R(t)=300000\)</span>, <span class="math notranslate nohighlight">\(r=0.1\)</span>, and <span class="math notranslate nohighlight">\(T=6\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_0^6 300000e^{-0.1t} ~dt
@@ -633,22 +569,73 @@ Compounding intervals</div>
   &amp;\approx \$1,353,565.09
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
+<section id="annuities">
+<h2>Annuities<a class="headerlink" href="#annuities" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition and Notation</p>
+<p>An <em><strong>annuity</strong></em> is a sequence of payments made at regular intervals.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P=\)</span> the size of each payment</p></li>
+<li><p><span class="math notranslate nohighlight">\(T=\)</span> length of time (in years) that payments are made</p></li>
+<li><p><span class="math notranslate nohighlight">\(r\)</span> = annual interest rate (compounded continuously)</p></li>
+<li><p><span class="math notranslate nohighlight">\(m=\)</span> the number of payments per year</p></li>
+</ul>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Annually</p></th>
+<th class="head text-center"><p>Semiannually</p></th>
+<th class="head text-center"><p>Quarterly</p></th>
+<th class="head text-center"><p>Monthly</p></th>
+<th class="head text-center"><p>Weekly</p></th>
+<th class="head text-center"><p>Daily</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p><span class="math notranslate nohighlight">\(m=1\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(m=2\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(m=4\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(m=12\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(m=52\)</span></p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(m=365\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Amount of an Annuity</p>
+<p>The <em><strong>amount of an annuity</strong></em> is the total of all of the payments plus all of the interest earned and is given by</p>
+<div class="math notranslate nohighlight">
+\[A = \frac{mP}{r}\left(e^{rT} - 1\right)\]</div>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Present Value of an Annuity</p>
+<p>The <em><strong>present value of an annuity</strong></em> is the principal investment, <span class="math notranslate nohighlight">\(PV\)</span>, that yields the same accumulated value as the annuity when <span class="math notranslate nohighlight">\(PV\)</span> is invested for a period of <span class="math notranslate nohighlight">\(T\)</span> years at the same interest rate and is given by</p>
+<div class="math notranslate nohighlight">
+\[PV = \frac{mP}{r}\left(1 - e^{-rT}\right)\]</div>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Observation</p>
+<p>The above formulas for the amount and present value of an annuity are approximations and are based on treating an annuity as an income stream where <span class="math notranslate nohighlight">\(R(t) = mP\)</span>.</p>
+</div>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Amount of an annuity</p>
 <p>A Math 110 student decides to make semiannual payments of $2,500 into a retirement account paying 2% interest per year compounded continuously. How much will the student have in their retirement account after 20 years?</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Recall the formula for the amount of an annuity.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the formula for the amount of an annuity.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[A = \frac{mP}{r}\left(e^{rT} - 1\right)\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Plug in the given values: <span class="math notranslate nohighlight">\(m=2\)</span>, <span class="math notranslate nohighlight">\(P=2500\)</span>, <span class="math notranslate nohighlight">\(r=0.02\)</span>, and <span class="math notranslate nohighlight">\(T=20\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Plug in the given values.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(m=2\)</span>, <span class="math notranslate nohighlight">\(P=2500\)</span>, <span class="math notranslate nohighlight">\(r=0.02\)</span>, and <span class="math notranslate nohighlight">\(T=20\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \frac{(2)(2,500)}{0.02} \left(e^{(0.02)(20)}-1 \right)
@@ -660,22 +647,23 @@ Compounding intervals</div>
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the student will have approximately $122,956.17 in their retirement account after 20 years.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Present value of an annuity</p>
 <p>Determine the present value of an annuity if payments of $100 are made monthly for the next 10 years and the account earns an interest rate of 10% per year compounded continuously.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Recall the formula for the present value of an annuity.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the formula for the present value of an annuity.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[PV = \frac{mP}{r}\left(1 - e^{-rT}\right)\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Plug in the given values: <span class="math notranslate nohighlight">\(m=12\)</span>, <span class="math notranslate nohighlight">\(P=100\)</span>, <span class="math notranslate nohighlight">\(r=0.1\)</span>, and <span class="math notranslate nohighlight">\(T=10\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Plug in the given values.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(m=12\)</span>, <span class="math notranslate nohighlight">\(P=100\)</span>, <span class="math notranslate nohighlight">\(r=0.1\)</span>, and <span class="math notranslate nohighlight">\(T=10\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \frac{(12)(100)}{0.1} \left(1-e^{-(0.1)(10)} \right)
@@ -686,7 +674,9 @@ Compounding intervals</div>
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the annuity is worth a single lump sum of money worth approximately $7,585.45.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -729,11 +719,11 @@ Compounding intervals</div>
       </div>
     </a>
     <a class="right-next"
-       href="../ch_Byparts/byparts_.html"
+       href="applicationintegrals_TIY.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Integration by Parts &amp; Improper Integrals</p>
+        <p class="prev-next-title">Try It Yourself</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -753,12 +743,16 @@ Compounding intervals</div>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#income-streams">Income Streams</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annuities">Annuities</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#income-streams">Income Streams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#annuities">Annuities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

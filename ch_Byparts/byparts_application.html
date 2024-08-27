@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="byparts_.html">Integration by Parts &amp; Improper Integrals</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -312,6 +314,7 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -466,8 +469,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#income-streams">Income Streams</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#income-streams">Income Streams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -483,63 +488,44 @@ document.write(`
 <h1>Application of Integration by Parts<a class="headerlink" href="#application-of-integration-by-parts" title="Link to this heading">#</a></h1>
 <section id="income-streams">
 <h2>Income Streams<a class="headerlink" href="#income-streams" title="Link to this heading">#</a></h2>
-<p>An <strong>income stream</strong> refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Future Value</div>
-<p class="sd-card-text">The <strong>future value</strong> of an income stream is the total of all of the money transferred plus all of the interest earned.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Present Value</div>
-<p class="sd-card-text">The <strong>present value</strong> of an income stream is the principal investment <span class="math notranslate nohighlight">\(P\)</span> that yields the same accumulated value as the income stream when <span class="math notranslate nohighlight">\(P\)</span> is invested for a period of <span class="math notranslate nohighlight">\(T\)</span> years at the same rate of interest.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="info admonition">
+<p class="admonition-title">Definition and Notation</p>
+<p>An <em><strong>income stream</strong></em> refers to income that is generated continuously and transferred into an account that earns interest at a fixed rate. Interest is assumed to be compounded continuously.</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(R(t)\)</span> = rate at which income is generated (in dollars per year)</p></li>
 <li><p><span class="math notranslate nohighlight">\(T\)</span> = length of time (in years) of the income stream</p></li>
 <li><p><span class="math notranslate nohighlight">\(r\)</span> = annual interest rate (compounded continuously)</p></li>
 </ul>
-<div class="info admonition">
-<p class="admonition-title">Future Value Formula</p>
-<div class="math notranslate nohighlight">
-\[A = e^{rT}\int_0^T R(t) e^{-rt} ~dt\]</div>
 </div>
 <div class="info admonition">
-<p class="admonition-title">Present Value Formula</p>
+<p class="admonition-title">Future Value</p>
+<p>The <em><strong>future value of an income stream</strong></em> is the total of all of the money transferred plus all of the interest earned and is given by</p>
 <div class="math notranslate nohighlight">
-\[PV = \int_0^T R(t) e^{-rt} ~dt\]</div>
+\[A = e^{rT}\int_0^T R(t) e^{-rt} ~dt.\]</div>
 </div>
-</section>
+<div class="info admonition">
+<p class="admonition-title">Present Value</p>
+<p>The <em><strong>present value of an income stream</strong></em> is the principal investment, <span class="math notranslate nohighlight">\(PV\)</span>, that yields the same accumulated value as the income stream when <span class="math notranslate nohighlight">\(PV\)</span> is invested for a period of <span class="math notranslate nohighlight">\(T\)</span> years at the same interest rate and is given by</p>
+<div class="math notranslate nohighlight">
+\[PV = \int_0^T R(t) e^{-rt} ~dt.\]</div>
+</div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Compute future and present value of an investment</p>
 <p>Suppose an investment is expected to generate income at the rate of</p>
 <div class="math notranslate nohighlight">
 \[R(t) = 5 + 3t\]</div>
 <p>thousands of dollars per year for the next 10 years. Find the present and future values from this investment if the prevailing interest rate is 2% per year compounded continuously.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Write the present and future values of the income stream as definite integrals.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Write the present and future values of the income stream as definite integrals.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[PV = \int^{10}_0 \left( 5 + 3t \right)e^{-0.02t} ~dt ~~~~~~~ A = e^{0.2}\int^{10}_0 \left( 5 + 3t \right)e^{-0.02t} ~dt\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Compute <span class="math notranslate nohighlight">\(\displaystyle \int \left( 5 + 3t \right)e^{-0.02t}~dt\)</span> using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Compute <span class="math notranslate nohighlight">\(\displaystyle \int \left( 5 + 3t \right)e^{-0.02t}~dt\)</span> using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span> and compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>. (Recall <span class="math notranslate nohighlight">\(\int e^{ax} ~dx = \frac{1}{a}e^{ax}+C\)</span>.)</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -558,7 +544,7 @@ Present Value</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Compute the present value using the answer to Step 2.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Compute the present value using the answer to Step 2.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   PV 
@@ -572,7 +558,7 @@ Present Value</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 4:</strong> Compute the future value using the answer to Step 3.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Compute the future value using the answer to Step 3.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   A 
@@ -585,7 +571,9 @@ Present Value</div>
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the future value of this income stream is approximately $215,871.38.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -652,8 +640,10 @@ Present Value</div>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#income-streams">Income Streams</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#income-streams">Income Streams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

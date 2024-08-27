@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -466,10 +469,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-the-average-value-of-a-continuous-function">Computing the Average Value of a Continuous Function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-the-average-value-of-a-continuous-function">Computing the Average Value of a Continuous Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -487,20 +492,18 @@ document.write(`
 <h2>Computing the Average Value of a Continuous Function<a class="headerlink" href="#computing-the-average-value-of-a-continuous-function" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
-<p>If <span class="math notranslate nohighlight">\(f\)</span> is integrable on <span class="math notranslate nohighlight">\([a, b]\)</span>, then the average value of <span class="math notranslate nohighlight">\(f\)</span> over <span class="math notranslate nohighlight">\([a, b]\)</span> is given by</p>
+<p>If <span class="math notranslate nohighlight">\(f\)</span> is integrable on <span class="math notranslate nohighlight">\([a, b]\)</span>, then the <em><strong>average value of <span class="math notranslate nohighlight">\(f\)</span> over <span class="math notranslate nohighlight">\([a, b]\)</span></strong></em> is given by</p>
 <div class="math notranslate nohighlight">
-\[\frac{1}{b-a}\int_a^b f(x)dx.\]</div>
+\[\frac{1}{b-a}\int_a^b f(x) ~dx.\]</div>
 </div>
-</section>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Computing the average value</p>
-<p>Find the average value of <span class="math notranslate nohighlight">\(f(x) = 3x^2 + 4x^3\)</span> over the interval <span class="math notranslate nohighlight">\([-1, 1]\)</span>.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<p>Compute the average value of <span class="math notranslate nohighlight">\(f(x) = 3x^2 + 4x^3\)</span> over the interval <span class="math notranslate nohighlight">\([-1, 1]\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> The average value is given by</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   The average value is given by</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
     \frac{1}{1-(-1)} \int_{-1}^1 3x^2 + 4x^3 ~dx 
@@ -511,16 +514,16 @@ document.write(`
     &amp;= 1
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Computing the average value</p>
-<p>Find the average value of <span class="math notranslate nohighlight">\(f(x) = \dfrac{12}{x}\)</span> over the interval <span class="math notranslate nohighlight">\([-9, -3]\)</span>.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<p>Compute the average value of <span class="math notranslate nohighlight">\(f(x) = \dfrac{12}{x}\)</span> over the interval <span class="math notranslate nohighlight">\([-9, -3]\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> The average value is given by</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   The average value is given by</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \frac{1}{-3-(-9)} \int_{-9}^{-3} \frac{12}{x} ~dx 
@@ -528,48 +531,49 @@ document.write(`
   &amp;= 2\ln|x|\Biggr|_{-9}^{-3} \\
   &amp;= 2[\ln|-3| - \ln|-9|]\\ \\
   &amp;= 2[\ln(3) - \ln(9)]\\ \\
-  &amp;= 2\ln(3/9) &amp;&amp; \hbox{Since $\ln(m/n) = \ln(m) - \ln(n)$}\\ \\
+  &amp;= 2\ln(3/9) &amp;&amp; \hbox{since $\ln(m/n) = \ln(m) - \ln(n)$}\\ \\
   &amp;= 2\ln(3^{-1}) \\ \\
-  &amp;= -\ln(9) &amp;&amp; \hbox{Since $m\ln(n) = \ln(n^m)$}
+  &amp;= -\ln(9) &amp;&amp; \hbox{since $m\ln(n) = \ln(n^m)$}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Computing average sales</p>
 <p>Sales of the Penn State Learning Calculus tutorial software packages are approximated by</p>
 <div class="math notranslate nohighlight">
 \[f(t) = \frac{t^2}{(t^3+5)^2},\]</div>
 <p>where <span class="math notranslate nohighlight">\(t\)</span> is in years and <span class="math notranslate nohighlight">\(f(t)\)</span> is in millions of software packages. What are the average sales over the time interval <span class="math notranslate nohighlight">\(0 \leq t \leq 3\)</span> years?</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Use the definition of average value.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Use the definition of average value.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The average value is given by</p>
 <div class="math notranslate nohighlight">
 \[\frac{1}{3-0}\int_0^3 \frac{t^2}{(t^3+5)^2}~dt = \frac{1}{3}\int_0^3 \frac{t^2}{(t^3+5)^2}~dt.\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Based on rewriting the integral in the following form</p>
 <div class="math notranslate nohighlight">
 \[\frac{1}{3}\int_{t=0}^{t=3} (t^3+5)^{-2}~t^2 ~dt\]</div>
 <p class="sd-card-text">let <span class="math notranslate nohighlight">\(u = t^3 + 5\)</span> and <span class="math notranslate nohighlight">\(du = 3t^2 ~dt\)</span>, or equivalently <span class="math notranslate nohighlight">\(\dfrac{1}{3} du = t^2 ~dt\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Determine the new limits of integration using the substitution <span class="math notranslate nohighlight">\(u = t^3 + 5\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Determine the new limits of integration.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(u = t^3 + 5\)</span>, then</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\text{When } t=3 ~~&amp;\Longrightarrow~~ u = 3^3 + 5 = 32\\
-\text{When } t=0 ~~&amp;\Longrightarrow~~ u = 0^3 + 5 = 5
+\text{when } t=3 ~~&amp;\Longrightarrow~~ u = 3^3 + 5 = 32\\
+\text{when } t=0 ~~&amp;\Longrightarrow~~ u = 0^3 + 5 = 5
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 4:</strong> Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \frac{1}{3}\int_{t=0}^{t=3} (t^3+5)^{-2}~t^2 ~dt
@@ -579,18 +583,20 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 5:</strong> Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 5:</strong>   Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \frac{1}{9} \int_{u=5}^{u=32} u^{-2} ~du 
-  &amp;= \frac{1}{9}(-u^{-1}) \Big|_{5}^{32}  &amp;&amp; \hbox{Since $\dfrac{u^{-1}}{-1}$ is an antiderivative of $u^{-2}$}\\
-  &amp;= \frac{1}{9}\left[\left( -\frac{1}{32}\right)- \left(-\frac{1}{5}\right)\right] &amp;&amp; \hbox{Plug in limits of integration}\\
-  &amp;= \frac{1}{9}\left(\frac{1}{5} - \frac{1}{32}\right) &amp;&amp; \hbox{Simplify}\\
+  &amp;= \frac{1}{9}(-u^{-1}) \Big|_{5}^{32}  &amp;&amp; \hbox{power rule}\\
+  &amp;= \frac{1}{9}\left[\left( -\frac{1}{32}\right)- \left(-\frac{1}{5}\right)\right] &amp;&amp; \hbox{plug in limits of integration}\\
+  &amp;= \frac{1}{9}\left(\frac{1}{5} - \frac{1}{32}\right) &amp;&amp; \hbox{simplify}\\
   &amp;= 3/160
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the average sales over the time interval <span class="math notranslate nohighlight">\(0\leq t \leq 3\)</span> is <span class="math notranslate nohighlight">\(3/160\)</span> millions of software packages per year.</p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -657,10 +663,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-the-average-value-of-a-continuous-function">Computing the Average Value of a Continuous Function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-the-average-value-of-a-continuous-function">Computing the Average Value of a Continuous Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

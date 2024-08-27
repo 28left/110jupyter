@@ -76,7 +76,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch_Indefinite/indefinite_rules';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Initial Value Problem" href="indefinite_init_value.html" />
+    <link rel="next" title="Initial Value Problems" href="indefinite_init_value.html" />
     <link rel="prev" title="Indefinite Integrals" href="indefinite_integrals.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="indefinite_.html">Indefinite Integrals</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -466,15 +469,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-7">Example 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-8">Example 8</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9">Example 9</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-7">Example 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-8">Example 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9">Example 9</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -488,6 +494,8 @@ document.write(`
                   
   <section id="basic-rules-of-integration">
 <h1>Basic Rules of Integration<a class="headerlink" href="#basic-rules-of-integration" title="Link to this heading">#</a></h1>
+<section id="the-rules">
+<h2>The Rules<a class="headerlink" href="#the-rules" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Integral of a Costant</p>
 <p>For any real number <span class="math notranslate nohighlight">\(k\)</span>,</p>
@@ -515,10 +523,7 @@ document.write(`
 <p class="admonition-title">Integral of <span class="math notranslate nohighlight">\(e^x\)</span></p>
 <p>For any real number <span class="math notranslate nohighlight">\(a\neq 0\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\int e^x ~dx = e^x + C\]</div>
-<p>and</p>
-<div class="math notranslate nohighlight">
-\[\int e^{ax} ~dx = \frac{e^{ax}}{a} + C\]</div>
+\[\int e^x ~dx = e^x + C ~~~~~ \text{and} ~~~~~ \int e^{ax} ~dx = \frac{e^{ax}}{a} + C\]</div>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Integral of <span class="math notranslate nohighlight">\(1/x\)</span></p>
@@ -532,40 +537,53 @@ document.write(`
 \[\int f(g(x))g'(x) ~dx = \int f(u) ~du\]</div>
 </div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of a constant</p>
 <p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int 13 ~dz\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Notice the differential <span class="math notranslate nohighlight">\(dz\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Notice the differential <span class="math notranslate nohighlight">\(dz\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">This indicates that we are looking for a function of <span class="math notranslate nohighlight">\(z\)</span>, <span class="math notranslate nohighlight">\(f(z)\)</span>, such that <span class="math notranslate nohighlight">\(f'(z) = 13\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Recall the formula for the integral of a constant.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Recall the formula for the integral of a constant.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\int k ~dx = kx + C\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 3:</strong> Apply the rule with <span class="math notranslate nohighlight">\(k = 13\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Apply the rule with <span class="math notranslate nohighlight">\(k = 13\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Therefore,</p>
 <div class="math notranslate nohighlight">
 \[\int 13 ~dz = 13z + C\]</div>
+<p class="sd-card-text">In other words, every function of <span class="math notranslate nohighlight">\(z\)</span> with derivative equal to <span class="math notranslate nohighlight">\(13\)</span> can be written in the form <span class="math notranslate nohighlight">\(13z + C\)</span> for some constant <span class="math notranslate nohighlight">\(C\)</span>.</p>
 </div>
-</details></section>
-<section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int  x^7 ~dx\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Recall the power rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(13\)</span> is the derivative of <span class="math notranslate nohighlight">\(13z\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dz} 13z = 13\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of a power function</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int  x^7 ~dx\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the power rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">For any real number <span class="math notranslate nohighlight">\(n\neq -1\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\int x^n ~dx = \frac{x^{n+1}}{n+1} + C\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Apply the power rule with <span class="math notranslate nohighlight">\(n = 7\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the power rule with <span class="math notranslate nohighlight">\(n = 7\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int x^7  dx 
@@ -573,19 +591,35 @@ document.write(`
   &amp;= \frac{x^8}{8} + C 
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{y}} ~dy\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Rewrite the integrand in the appropriate form to apply the power rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(x^7\)</span> is the derivative of <span class="math notranslate nohighlight">\(\dfrac{x^8}{8}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} \frac{x^8}{8} 
+&amp;= \frac{d}{dx} \frac{1}{8}x^8 \\ 
+&amp;= \frac{1}{8} \frac{d}{dx} x^8 \\ 
+&amp;= \frac{1}{8} 8x^7 \\ 
+&amp;= x^7
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of a power function with rational exponent</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int \frac{1}{\sqrt{y}} ~dy\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Rewrite the integrand in the appropriate form to apply the power rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\int  \frac{1}{\sqrt{y}} ~dy = \int  y^{-1/2} ~dy\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Apply the power rule with <span class="math notranslate nohighlight">\(n = -1/2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the power rule with <span class="math notranslate nohighlight">\(n = -1/2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int  y^{-1/2} ~dy 
@@ -594,60 +628,113 @@ document.write(`
   &amp;= 2\sqrt{y} + C
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int  4x^{7/3} ~dx\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Recall the constant multiple rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(\dfrac{1}{\sqrt{y}}\)</span> is the derivative of <span class="math notranslate nohighlight">\(2\sqrt{y}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dy} 2\sqrt{y}
+&amp;= 2 \frac{d}{dy} y^{1/2} \\ 
+&amp;= 2 \frac{1}{2} y^{-1/2} \\ 
+&amp;= \dfrac{1}{\sqrt{y}} 
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of a constant multiple of a power function</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int  4x^{7/3} ~dx\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the constant multiple rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">For any real number <span class="math notranslate nohighlight">\(k\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\int kf(x) ~dx = k\int f(x) ~dx\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Apply the constant multiple rule with <span class="math notranslate nohighlight">\(k=4\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the constant multiple rule with <span class="math notranslate nohighlight">\(k=4\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int 4x^{7/3}  ~dx 
   &amp;= 4\int x^{7/3} ~dx \\
-  &amp;= 4 \left(\frac{x^{7/3+1}}{7/3+1}\right) + C &amp;&amp; \text{Power rule with $n=7/3$}\\
-  &amp;= 4 \left( \frac{x^{10/3}}{10/3}\right) + C &amp;&amp; \hbox{Simplify} \\
+  &amp;= 4 \left(\frac{x^{7/3+1}}{7/3+1}\right) + C &amp;&amp; \text{power rule with $n=7/3$}\\
+  &amp;= 4 \left( \frac{x^{10/3}}{10/3}\right) + C &amp;&amp; \hbox{simplify} \\
   &amp;= 4 \cdot \frac{3}{10} x^{10/3} + C \\
   &amp;=  \frac{6}{5} x^{10/3} + C 
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-5">
-<h2>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int 5t^3-\frac{10}{t^{6}}+4\sqrt{t} ~dt\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Recall the sum rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(4x^{7/3}\)</span> is the derivative of <span class="math notranslate nohighlight">\(\dfrac{6}{5} x^{10/3}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} \frac{6}{5} x^{10/3}
+&amp;= \frac{6}{5} \frac{d}{dx}  x^{10/3} \\ 
+&amp;= \frac{6}{5} \cdot \frac{10}{3}  x^{7/3} \\ 
+&amp;= 4x^{7/3} 
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-5">
+<h3>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of a sum of power functions</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int 5t^3-\frac{10}{t^{6}}+4\sqrt{t} ~dt\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the sum and difference rule.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\int f(x)\pm g(x) ~dx = \int f(x) ~dx \pm \int g(x) ~dx\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Apply the sum and constant multiple rules and then integrate each term.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the sum, difference and constant multiple rules.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int 5t^3-\frac{10}{t^{6}}+4\sqrt{t}  ~dt
-  &amp;= \int 5t^3 ~dt - \int \frac{10}{t^{6}} ~dt + \int 4\sqrt{t}  ~dt &amp;&amp; \text{Sum rule}\\
-  &amp;= 5\int t^3 ~dt - 10\int \frac{1}{t^{6}} ~dt + 4\int \sqrt{t}  ~dt &amp;&amp; \text{Constant multiple rule}\\
-  &amp;= 5\int t^3 ~dt - 10\int t^{-6} ~dt + 4\int t^{1/2} ~dt  \\
-  &amp;= 5\cdot \frac{t^4}{4} - 10\cdot \frac{t^{-5}}{-5} + 4\frac{t^{3/2}}{3/2} + C  &amp;&amp; \hbox{Power rule}\\
-  &amp;= \frac{5}{4}t^4 + 2t^{-5} + \frac{8}{3}t^{3/2} + C  &amp;&amp; \hbox{Simplify}
+  &amp;= \int 5t^3 ~dt - \int \frac{10}{t^{6}} ~dt + \int 4\sqrt{t}  ~dt &amp;&amp; \text{sum rule}\\
+  &amp;= 5\int t^3 ~dt - 10\int \frac{1}{t^{6}} ~dt + 4\int \sqrt{t}  ~dt &amp;&amp; \text{constant multiple rule}\\
+  &amp;= 5\int t^3 ~dt - 10\int t^{-6} ~dt + 4\int t^{1/2} ~dt 
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-6">
-<h2>Example 6<a class="headerlink" href="#example-6" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int \frac{4x^9 - 15x^4 + 7x^3}{x^4} ~dx\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Integrate each term and then simplify.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ 
+5\int t^3 ~dt - 10\int t^{-6} ~dt + 4\int t^{1/2} ~dt 
+  &amp;= 5\cdot \frac{t^4}{4} - 10\cdot \frac{t^{-5}}{-5} + 4\frac{t^{3/2}}{3/2} + C  &amp;&amp; \hbox{power rule}\\
+  &amp;= \frac{5}{4}t^4 + 2t^{-5} + \frac{8}{3}t^{3/2} + C  &amp;&amp; \hbox{simplify}
+\end{align*}\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Rewrite the integrand as a sum.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(5t^3-\dfrac{10}{t^{6}}+4\sqrt{t}\)</span> is the derivative of <span class="math notranslate nohighlight">\(\dfrac{5}{4}t^4 + 2t^{-5} + \dfrac{8}{3}t^{3/2}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dt} \left(\frac{5}{4}t^4 + 2t^{-5} + \frac{8}{3}t^{3/2} \right)
+&amp;=  \frac{5}{4}4t^3 + 2(-5)t^{-6} + \frac{8}{3}\cdot \frac{3}{2}t^{1/2} \\ 
+&amp;= 5t^3-\frac{10}{t^{6}}+4\sqrt{t}
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-6">
+<h3>Example 6<a class="headerlink" href="#example-6" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of a polynomial divided by a power function</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int \frac{4x^9 - 15x^4 + 7x^3}{x^4} ~dx\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Rewrite the integrand as a sum.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \frac{4x^9-15x^4 + 7x^3}{x^4}
@@ -655,32 +742,44 @@ document.write(`
   &amp;= 4x^5 - 15 + \frac{7}{x}
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Apply the sum and constant multiple rules and then integrate each term.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the sum and constant multiple rules.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int \frac{4x^9 - 15x^4 + 7x^3}{x^4} ~dx 
   &amp;= \int 4x^5 - 15 + \frac{7}{x} ~dx \\ \\
-  &amp;= \int 4x^5 ~dx - \int 15 ~dx + \int \frac{7}{x}~dx &amp;&amp; \hbox{Sum rule}\\ \\
-  &amp;= 4\int x^5 ~dx - \int 15 ~dx + 7\int \frac{1}{x}~dx &amp;&amp; \hbox{Constant multiple rule}\\ \\
-  &amp;= \frac{4x^6}{6} - 15x + 7\ln|x| + C &amp;&amp; \text{Integrate each term}\\ \\
-  &amp;= \frac{2x^6}{3} - 15x + 7\ln|x| + C &amp;&amp; \text{Simplify}\\
+  &amp;= \int 4x^5 ~dx - \int 15 ~dx + \int \frac{7}{x}~dx &amp;&amp; \hbox{sum rule}\\ \\
+  &amp;= 4\int x^5 ~dx - \int 15 ~dx + 7\int \frac{1}{x}~dx &amp;&amp; \hbox{constant multiple rule}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Integrate each term and then simplify.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ 
+  4\int x^5 ~dx - \int 15 ~dx + 7\int \frac{1}{x}~dx 
+  &amp;= \frac{4x^6}{6} - 15x + 7\ln|x| + C &amp;&amp; \text{integrate each term}\\ \\
+  &amp;= \frac{2x^6}{3} - 15x + 7\ln|x| + C &amp;&amp; \text{simplify}\\
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
 <section id="example-7">
-<h2>Example 7<a class="headerlink" href="#example-7" title="Link to this heading">#</a></h2>
-<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int e^{2x/5}dx\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Recall the formula for the integral of <span class="math notranslate nohighlight">\(e^{ax}\)</span> for <span class="math notranslate nohighlight">\(a\neq 0\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<h3>Example 7<a class="headerlink" href="#example-7" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of an exponential function</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int e^{2x/5} ~dx\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Recall the formula for the integral of <span class="math notranslate nohighlight">\(e^{ax}\)</span> for <span class="math notranslate nohighlight">\(a\neq 0\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\int e^{ax} ~dx = \frac{e^{ax}}{a} + C\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Apply the formula for the integral of <span class="math notranslate nohighlight">\(e^{ax}\)</span> with <span class="math notranslate nohighlight">\(a=2/5\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the formula for the integral of <span class="math notranslate nohighlight">\(e^{ax}\)</span> with <span class="math notranslate nohighlight">\(a=2/5\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int e^{2x/5} ~dx 
@@ -688,54 +787,70 @@ document.write(`
   &amp;= \frac{5}{2}e^{2x/5} + C
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-8">
-<h2>Example 8<a class="headerlink" href="#example-8" title="Link to this heading">#</a></h2>
+<h3>Example 8<a class="headerlink" href="#example-8" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of a sum of functions</p>
 <p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int 3e^{2x}+\frac{8}{x}+\frac{4}{x^3} ~dx\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Apply the sum and constant multiple rules and then integrate each term.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Apply the sum and constant multiple rules.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int 3e^{2x}+\frac{8}{x}+\frac{4}{x^3} ~dx 
-  &amp;= \int 3e^{2x} ~dx + \int \frac{8}{x} ~dx + \int 4x^{-3}~dx  &amp;&amp; \hbox{Sum rule}\\ \\
-  &amp;= 3\int e^{2x} ~dx + 8\int \frac{1}{x} ~dx + 4\int x^{-3}~dx  &amp;&amp; \hbox{Constant multiple rule}\\ \\
-  &amp;= 3\frac{e^{2x}}{2} + 8\int \frac{1}{x} ~dx + 4\int x^{-3}dx &amp;&amp; \text{Integral of $e^{ax}$}\\ \\
-  &amp;= 3\frac{e^{2x}}{2} + 8\ln|x| + 4\int x^{-3}dx &amp;&amp; \text{Integral of $1/x$}\\ \\
-  &amp;= 3\frac{e^{2x}}{2} + 8\ln|x| + \frac{4x^{-2}}{-2}+C &amp;&amp; \text{Power rule}\\ \\
-  &amp;=\frac{3}{2}e^{2x} + 8\ln|x| - \frac{2}{x^{2}}+C &amp;&amp; \text{Simplify}\\
+  &amp;= \int 3e^{2x} ~dx + \int \frac{8}{x} ~dx + \int 4x^{-3}~dx  &amp;&amp; \hbox{sum rule}\\ \\
+  &amp;= 3\int e^{2x} ~dx + 8\int \frac{1}{x} ~dx + 4\int x^{-3}~dx  &amp;&amp; \hbox{constant multiple rule}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Integrate each term and then simplify.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+  
+  &amp;= 3\frac{e^{2x}}{2} + 8\int \frac{1}{x} ~dx + 4\int x^{-3}dx &amp;&amp; \text{integral of $e^{ax}$}\\ \\
+  &amp;= 3\frac{e^{2x}}{2} + 8\ln|x| + 4\int x^{-3}dx &amp;&amp; \text{integral of $1/x$}\\ \\
+  &amp;= 3\frac{e^{2x}}{2} + 8\ln|x| + \frac{4x^{-2}}{-2}+C &amp;&amp; \text{power rule}\\ \\
+  &amp;=\frac{3}{2}e^{2x} + 8\ln|x| - \frac{2}{x^{2}}+C &amp;&amp; \text{simplify}
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
 <section id="example-9">
-<h2>Example 9<a class="headerlink" href="#example-9" title="Link to this heading">#</a></h2>
+<h3>Example 9<a class="headerlink" href="#example-9" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integral of a product of functions</p>
 <p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int (e^{3x} + 1)(e^{-3x} - 1) ~dx\)</span>.</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Rewrite the integrand as a sum.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Rewrite the integrand as a sum.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   (e^{3x} + 1)(e^{-3x} - 1)
-  &amp;= e^{3x}e^{-3x} + e^{-3x} - e^{3x} - 1 &amp;&amp; \hbox{Expand product}\\
-  &amp;= e^{3x-3x} + e^{-3x} - e^{3x} - 1 &amp;&amp; \hbox{Since $e^a e^b = e^{a+b}$}\\
+  &amp;= e^{3x}e^{-3x} + e^{-3x} - e^{3x} - 1 &amp;&amp; \hbox{FOIL}\\
+  &amp;= e^{3x-3x} + e^{-3x} - e^{3x} - 1 &amp;&amp; \hbox{since $e^a e^b = e^{a+b}$}\\
   &amp;= e^{0} + e^{-3x} - e^{3x} - 1\\
-  &amp;= 1 + e^{-3x} - e^{3x} - 1 &amp;&amp; \hbox{Since $e^0 = 1$}\\
-  &amp;= e^{-3x} - e^{3x} &amp;&amp; \hbox{Simplify}
+  &amp;= 1 + e^{-3x} - e^{3x} - 1 &amp;&amp; \hbox{since $e^0 = 1$}\\
+  &amp;= e^{-3x} - e^{3x} &amp;&amp; \hbox{simplify}
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Apply the sum rule and then integrate each term.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the sum rule and then integrate each term.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int (e^{3x} + 1)(e^{-3x} - 1) ~dx
   &amp;= \int e^{-3x} - e^{3x} ~dx \\
   &amp;= \int e^{-3x} ~dx  - \int e^{3x} ~dx \\
-  &amp;= \frac{1}{-3} e^{-3x}  - \frac{1}{3} e^{3x} + C &amp;&amp; \text{Integral of $e^{ax}$}\\
-  &amp;= -\frac{1}{3}(e^{-3x} + e^{3x}) + C &amp;&amp; \text{Simplify}
+  &amp;= \frac{1}{-3} e^{-3x}  - \frac{1}{3} e^{3x} + C &amp;&amp; \text{integral of $e^{ax}$}\\
+  &amp;= -\frac{1}{3}(e^{-3x} + e^{3x}) + C &amp;&amp; \text{simplify}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -782,7 +897,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Initial Value Problem</p>
+        <p class="prev-next-title">Initial Value Problems</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -802,15 +917,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-7">Example 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-8">Example 8</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9">Example 9</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rules">The Rules</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-7">Example 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-8">Example 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-9">Example 9</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

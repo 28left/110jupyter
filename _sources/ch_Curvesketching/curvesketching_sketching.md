@@ -11,6 +11,8 @@ kernelspec:
   language: python
   name: python3
 ---
+
+(cur:sketching)=
 # Curve Sketching
 
 

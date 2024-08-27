@@ -11,14 +11,22 @@ kernelspec:
   language: python
   name: python3
 ---
-# Initial Value Problem
+# Initial Value Problems
 
-An initial value problem is a differential equation (i.e., an equation involving $f'$) combined with an initial condition (i.e., $f(a) = b$).
+## Definition
+```{admonition} Definition
+:class: info
+
+An _**initial value problem**_ is a differential equation (i.e., an equation involving $f'$) combined with an initial condition (i.e., $f(a) = b$).  
+
+The goal of an initial value problem is to find the unique function that satisfies the differential equation and the initial condition.
+```
+
+
+```{admonition} How to Solve an Initial Value Problem
+:class: info
 
 Use the following strategy to solve an initial value problem.
-
-```{admonition} Strategy to Solve an Initial Value Problem
-:class: info
 
 - Find the general solution to the differential equation by using the techniques of integration. 
   \begin{align*}
@@ -31,7 +39,9 @@ Use the following strategy to solve an initial value problem.
 - Use the initial condition, $f(a) = b$, to solve for $C$.
 ```
 
-## Example 1
+### Example 1
+````{admonition} An initial value problem
+:class: tip
 
 Solve the following initial value problem:
 
@@ -40,10 +50,7 @@ Solve the following initial value problem:
   f(1) &= 6
 \end{align*}
 
-```{dropdown} **Step 1:** Find the general solution to the differential equation.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 1:** &nbsp; Find the general solution to the differential equation.
 
 \begin{align*}
   f(x) 
@@ -53,16 +60,13 @@ Solve the following initial value problem:
 \end{align*}
 ```
 
-```{dropdown} **Step 2:** Use the initial condition to solve for $C$.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 2:** &nbsp; Use the initial condition to solve for $C$.
 
 \begin{align*}
   6 
   &= f(1) \\
-  &= 1 - 1 + \frac{1}{2} + 9 +C && \text{Plug $x=1$ into our result from Step 1}\\
-  &= \frac{1}{2}+9 +C && \text{Simplify}
+  &= 1 - 1 + \frac{1}{2} + 9 +C && \text{plug $x=1$ into our result from Step 1}\\
+  &= \frac{1}{2}+9 +C && \text{simplify}
 \end{align*}
 
 Therefore
@@ -70,22 +74,19 @@ Therefore
 $$C = 6 - \frac{1}{2} - 9 = - \frac{7}{2}.$$
 ```
 
-```{dropdown} **Step 3:** Combine the results from Steps 1 and 2 to get the solution to the initial value problem.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 3:** &nbsp; Combine the results from Steps 1 and 2 to get the solution to the initial value problem.
 
 $$f(x) = x^4 - x^3 + \frac{x^2}{2} + 9x - \frac{7}{2}$$
 ```
+````
 
-## Example 2
+### Example 2
+````{admonition} Find maximum profit given the marginal profit function
+:class: tip
 
 The estimated marginal profit associated with producing/selling jasmine rice is $P'(x) = -0.08x + 24$ dollars per pound per month where $x$ is the production level in pounds per month. The fixed cost of producing/selling rice is \$1,500 a month. What is the maximum monthly profit?
 
-```{dropdown} **Step 1:** Find the value of $x$ that maximizes profit.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 1:** &nbsp; Find the value of $x$ that maximizes profit.
 
 $P'(x)$ equals zero when
 
@@ -95,28 +96,22 @@ which is when
 
 $$x = \frac{24\cdot 100}{8} = 300$$
 
-Notice that $P''(x) = -8/100$ is always negative. Therefore, $P(x)$ is always concave down and $x = 300$ corresponds to an absolute maximum profit.
+Notice that $P''(x) = -8/100$ is always negative. Therefore, $P(x)$ is always concave down which means $x = 300$ corresponds to an absolute maximum profit.
 
 Ultimately, we will evaluate $P(300)$ to find the maximum monthly profit, but we don't currently have a formula for $P(x)$. Therefore, our next goal is to find $P(x)$.
 ```
 
-```{dropdown} **Step 2:** Identify the initial value problem.
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 2:** &nbsp; Identify the initial value problem.
 
 \begin{align*}
-  P'(x) &= -\frac{8}{100}x +24 && \text{Stated in the problem}\\
-  P(0) &=- 1,500 && \text{Since fixed costs are \$1,500}
+  P'(x) &= -\frac{8}{100}x +24 && \text{stated in the problem}\\
+  P(0) &= -1,500 && \text{since fixed costs are \$1,500}
 \end{align*}
 
 Note that the initial profit is negative since fixed costs count against profit.
 ```
 
-```{dropdown} **Step 3:** Solve the initial value problem:
-:color: light
-:animate: fade-in
-
+```{dropdown} **Step 3:** &nbsp; Solve the initial value problem.
 
 \begin{align*}
   P(x) &= \int P'(x) ~dx \\
@@ -134,10 +129,9 @@ P(0) &= -1500 \\
 Therefore, $P(x) = -\dfrac{4}{100}x^2 + 24x -1500$.
 ```
 
-```{dropdown} **Step 4:** From Step 1, we know that profit is maximized when $x=300$.
-:color: light
-:animate: fade-in
+```{dropdown} **Step 4:** &nbsp; Compute the maximum profit.
 
+From Step 1, we know that profit is maximized when $x=300$.
 
 \begin{align*}
   P(300) 
@@ -148,3 +142,4 @@ Therefore, $P(x) = -\dfrac{4}{100}x^2 + 24x -1500$.
   &= 2100
 \end{align*}
 ```
+````

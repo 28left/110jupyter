@@ -14,50 +14,54 @@ kernelspec:
 # Try It Yourself
 
 ## Exercise 1
+````{admonition} Riemann sums
+:class: tip
 
-Using a right Riemann sum with 3 subintervals of equal length, approximate 
-
-$$\int_2^{8} \frac{1}{x}~dx.$$
+Using a right Riemann sum with 3 subintervals of equal length, approximate $\displaystyle \int_2^{8} \frac{1}{x}~dx$.
 
 ```{dropdown} Show answer
 Answer: $13/12$
 ```
-
+````
 
 ## Exercise 2
+````{admonition} Riemann sums
+:class: tip
 
-Using a left Riemann sum with 3 subintervals of equal length, approximate 
-
-$$\int_2^9 3x - 4 ~dx.$$
+Using a left Riemann sum with 3 subintervals of equal length, approximate $\displaystyle \int_2^9 3x - 4 ~dx$.
 
 ```{dropdown} Show answer
 Answer: $63$
 ```
-
+````
 
 ## Exercise 3
-Evaluate 
+````{admonition} Definite integral
+:class: tip
 
-$$\displaystyle \int_0^2 e^{3x} + \frac{x^2}{3}+5x  ~dx.$$
+Evaluate $\displaystyle \int_0^2 e^{3x} + \frac{x^2}{3}+5x  ~dx$.
 
 ```{dropdown} Show answer
 Answer: $e^6/3 + 95/9$
 ```
-
+````
 
 ## Exercise 4
-Find the area under the graph of 
+````{admonition} Area of a region
+:class: tip
 
-$$f(x) = \dfrac{\ln(x)}{x}$$ 
-
-over the interval $[e^4, e^7].$
+Find the area under the graph of $f(x) = \dfrac{\ln(x)}{x}$ over the interval $[e^4, e^7].$
 
 ```{dropdown} Show answer
 Answer: $33/2$
 ```
+````
 
 
 ## Exercise 5
+````{admonition} Total cost
+:class: tip
+
 The marginal cost function associated with producing $x$ widgets is given by
 
 $$C'(x) = -0.4x + 75$$
@@ -67,34 +71,40 @@ where $C'(x)$ is measured in dollars/unit and $x$ denotes the number of widgets.
 ```{dropdown} Show answer
 Answer: $\$6,100$
 ```
+````
+
 
 ## Exercise 6
-Evaluate 
+````{admonition} Definite integral
+:class: tip
 
-$$\displaystyle \int_0^4 \frac{x}{2x^2+10}~dx.$$
+Evaluate $\displaystyle \int_0^4 \frac{x}{2x^2+10}~dx$.
 
 ```{dropdown} Show answer
-Answer: $\frac{1}{4}\ln(\frac{21}{5})$
+Answer: $\dfrac{1}{4}\ln(21/5)$
 ```
+````
 
 
 ## Exercise 7
-Evaluate 
+````{admonition} Definite integral
+:class: tip
 
-$$\int_0^{\ln(3)/3} \frac{e^{3x}}{\left(e^{3x}+1\right)^3}~dx.$$
+Evaluate $\displaystyle \int_0^{\ln(3)/3} \frac{e^{3x}}{\left(e^{3x}+1\right)^3}~dx$.
 
 ```{dropdown} Show answer
 Answer: $1/32$
 ```
+````
 
 
 ## Exercise 8
-Compute the average value of 
+````{admonition} Average value
+:class: tip
 
-$$f(x) = x^2+8x-2$$ 
-
-on the interval $[-2, 2]$.
+Compute the average value of $f(x) = x^2+8x-2$ on the interval $[-2, 2]$.
 
 ```{dropdown} Show answer
 Answer: $-2/3$
 ```
+````

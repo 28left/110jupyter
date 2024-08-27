@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -466,11 +469,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-antiderivatives-to-evaluate-definite-integrals">How to Use Antiderivatives to Evaluate Definite Integrals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-antiderivatives-to-evaluate-definite-integrals">How to Use Antiderivatives to Evaluate Definite Integrals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -493,66 +498,68 @@ document.write(`
 \[ \int_a^b f(x) ~dx = F(b) - F(a) \]</div>
 <p>where <span class="math notranslate nohighlight">\(F\)</span> is any antiderivative of <span class="math notranslate nohighlight">\(f\)</span>.</p>
 </div>
-<div class="info admonition">
+<div class="note admonition">
 <p class="admonition-title">Notation</p>
 <div class="math notranslate nohighlight">
 \[F(x) \Big|_a^b = F(b) - F(a)\]</div>
 </div>
-</section>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Area under a graph</p>
-<p>Write the area under the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> on <span class="math notranslate nohighlight">\([1,3]\)</span> as a definite integral and then use the Fundamental Theorem of Calculus to evaluate it. Compare the result with the approximations found in Example 1.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Write the area under the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> on <span class="math notranslate nohighlight">\([1,3]\)</span> as a definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p>Write the area under the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> on <span class="math notranslate nohighlight">\([1,3]\)</span> as a definite integral and then use the Fundamental Theorem of Calculus to evaluate it. Compare the result with the approximations found in <a class="reference internal" href="definite_riemann.html#def-int-example-1"><span class="std std-ref">Example 1</span></a> of the previous section.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Write the area under the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> on <span class="math notranslate nohighlight">\([1,3]\)</span> as a definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\int_1^3 x^2 ~dx\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Find an antiderivative of <span class="math notranslate nohighlight">\(x^2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Find an antiderivative of <span class="math notranslate nohighlight">\(x^2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  \int x^2~dx &amp;= \frac{1}{3}x^3 + C &amp;&amp; \text{Power rule}
+  \int x^2~dx &amp;= \frac{1}{3}x^3 + C &amp;&amp; \text{power rule}
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(x^3/3\)</span> is an antiderivative of <span class="math notranslate nohighlight">\(x^2\)</span>, and can be used to evaluate the definite integral from Step 1.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 3:</strong> Apply the Fundamental Theorem of Calculus.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Apply the Fundamental Theorem of Calculus.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  \int_1^3 x^2dx &amp;= \frac{1}{3}x^3 \Biggr|_1^3 &amp; \hbox{Since $\frac{1}{3}x^3$ is an antiderivative of $x^2$} \\
-  &amp;= \frac{1}{3}3^3 - \frac{1}{3}1^3 &amp; \hbox{Plug in the limits of integration} \\
-  &amp;= \frac{27}{3} - \frac{1}{3} &amp; \hbox{Simplify} \\
+  \int_1^3 x^2dx &amp;= \frac{1}{3}x^3 \Biggr|_1^3 &amp;&amp; \text{since $\frac{1}{3}x^3$ is an antiderivative of $x^2$} \\
+  &amp;= \frac{1}{3}3^3 - \frac{1}{3}1^3 &amp;&amp; \text{plug in the limits of integration} \\
+  &amp;= \frac{27}{3} - \frac{1}{3} &amp;&amp; \text{simplify} \\
   &amp;= 26/3
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the area under the graph of <span class="math notranslate nohighlight">\(y=x^2\)</span> on <span class="math notranslate nohighlight">\([1,3]\)</span> is <span class="math notranslate nohighlight">\(26/3 = 8.\overline{6}\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 4:</strong> Compare the result from Step 3 to the approximations found in Example 1.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The above calculations show that the area of the region is exactly <span class="math notranslate nohighlight">\(8.\overline{6}\)</span>. The approximations we calculated in Example 1 were <span class="math notranslate nohighlight">\(10.75\)</span> (using right Riemann sum), <span class="math notranslate nohighlight">\(6.75\)</span> (using left Riemann sum), and <span class="math notranslate nohighlight">\(8.625\)</span> (using the Midpoint Rule).</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Compare the result from Step 3 to the approximations found in Example 1.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The above calculations show that the area of the region is exactly <span class="math notranslate nohighlight">\(8.\overline{6}\)</span>. The approximations we calculated in <a class="reference internal" href="definite_riemann.html#def-int-example-1"><span class="std std-ref">Example 1</span></a> of the previous section were <span class="math notranslate nohighlight">\(10.75\)</span> (using right Riemann sum), <span class="math notranslate nohighlight">\(6.75\)</span> (using left Riemann sum), and <span class="math notranslate nohighlight">\(8.625\)</span> (using the Midpoint Rule).</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Evaluating a definite integral</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_1^2 \frac{x^2 + 4x^4}{x^3} ~dx\)</span>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Simplify the integrand by writing it as a sum.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{x^2 + 4x^4}{x^3} 
+&amp;= \frac{x^2}{x^3} + \frac{4x^4}{x^3} \\
+&amp;=  \frac{1}{x} + 4x
+\end{align*}\]</div>
 </div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Simplify the integrand by writing it as a sum.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<div class="math notranslate nohighlight">
-\[\frac{x^2 + 4x^4}{x^3} = \frac{x^2}{x^3} + \frac{4x^4}{x^3} =  \frac{1}{x} + 4x\]</div>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Find an antiderivative of <span class="math notranslate nohighlight">\(\dfrac{1}{x} + 4x\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Find an antiderivative of <span class="math notranslate nohighlight">\(\dfrac{1}{x} + 4x\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int \frac{1}{x} + 4x ~dx
@@ -561,40 +568,41 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(\ln|x| + 2x^2 \)</span> is an antiderivative of <span class="math notranslate nohighlight">\(\dfrac{1}{x} + 4x\)</span>, and can be used to evaluate the given definite integral.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 3:</strong> Apply the Fundamental Theorem of Calculus.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Apply the Fundamental Theorem of Calculus.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 \int_1^2 \frac{x^2 + 4x^4}{x^3} ~dx
   &amp;= \int_1^2 \frac{1}{x} + 4x  ~dx \\
-  &amp;= \ln|x| + 2x^2 \Big|_1^2 &amp;&amp; \hbox{Since $\ln|x| + 2x^2$ is an antiderivative}\\
-  &amp;= (\ln|2| + 2(2)^2) - (\ln|1| + 2(1)^2) &amp;&amp; \text{Plug in limits of integration}\\
-  &amp;= \ln(2) + 8 - 0 - 2 &amp;&amp; \hbox{Recall $\ln(1) = 0$}\\
+  &amp;= \ln|x| + 2x^2 \Big|_1^2 &amp;&amp; \hbox{since $\ln|x| + 2x^2$ is an antiderivative}\\
+  &amp;= (\ln|2| + 2(2)^2) - (\ln|1| + 2(1)^2) &amp;&amp; \text{plug in limits of integration}\\
+  &amp;= \ln(2) + 8 - 0 - 2 &amp;&amp; \hbox{since $\ln(1) = 0$}\\
   &amp;= 6 + \ln(2).
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Evaluating a definite integral</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_{0}^{4} e^x ~dx\)</span>.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Apply the Fundamental Theorem of Calculus.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Apply the Fundamental Theorem of Calculus.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_{0}^{4} e^x ~dx
-  &amp;= e^x \Big|_0^4 &amp;&amp; \hbox{Since $e^x$ is an antiderivative of $e^x$}\\
-  &amp;= e^4 - e^0 &amp;&amp; \text{Plug in limits of integration}\\
-  &amp;= e^4 - 1 &amp;&amp; \hbox{Recall $e^0 = 1$}\\
+  &amp;= e^x \Big|_0^4 &amp;&amp; \hbox{since $e^x$ is an antiderivative of $e^x$}\\
+  &amp;= e^4 - e^0 &amp;&amp; \text{plug in limits of integration}\\
+  &amp;= e^4 - 1 &amp;&amp; \hbox{since $e^0 = 1$}\\
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Computing total revenue from marginal revenue</p>
 <p>The daily marginal revenue function associated with selling <span class="math notranslate nohighlight">\(m\)</span> gadgets is given by <span class="math notranslate nohighlight">\(R'(m)=0.2m + 50\)</span>, where <span class="math notranslate nohighlight">\(R'(m)\)</span> is given in dollars per unit.</p>
@@ -602,15 +610,14 @@ document.write(`
 <li><p>Find the daily total revenue realized from the sale of the first 20 gadgets.</p></li>
 <li><p>Find the additional revenue realized when sales increase from 20 to 50 gadgets.</p></li>
 </ul>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Apply the Fundamental Theorem of Calculus for the first case.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Apply the Fundamental Theorem of Calculus for the first case.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">By the Fundamental Theorem of Calculus, the total revenue from the sale of the first 20 gadgets is given by</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   R(20) 
-  &amp;= R(20) - R(0) &amp;&amp; \hbox{Since $R(0) = 0$} \\
+  &amp;= R(20) - R(0) &amp;&amp; \hbox{since $R(0) = 0$} \\
   &amp;= \int_0^{20} R'(m)~dm &amp;&amp; \hbox{Fundamental Theorem of Calculus}\\
   &amp;= \int_0^{20} \frac{2}{10}m + 50 ~dm.
 \end{align*}\]</div>
@@ -625,9 +632,9 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the total revenue from the sale of the first 20 gadgets is <span class="math notranslate nohighlight">\(\$1,040\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Apply the Fundamental Theorem of Calculus for the second case.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Apply the Fundamental Theorem of Calculus for the second case.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">By the Fundamental Theorem of Calculus, the additional revenue realized when sales increase from 20 to 50 gadgets is given by</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -647,7 +654,9 @@ document.write(`
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the additional revenue realized when sales increase from 20 to 50 gadgets is <span class="math notranslate nohighlight">\(\$1,710.\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -714,11 +723,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-antiderivatives-to-evaluate-definite-integrals">How to Use Antiderivatives to Evaluate Definite Integrals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-antiderivatives-to-evaluate-definite-integrals">How to Use Antiderivatives to Evaluate Definite Integrals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

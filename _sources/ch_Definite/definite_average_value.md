@@ -18,22 +18,19 @@ kernelspec:
 ```{admonition} Definition
 :class: info
 
-If $f$ is integrable on $[a, b]$, then the average value of $f$ over $[a, b]$ is given by
+If $f$ is integrable on $[a, b]$, then the _**average value of $f$ over $[a, b]$**_ is given by
 
-$$\frac{1}{b-a}\int_a^b f(x)dx.$$
+$$\frac{1}{b-a}\int_a^b f(x) ~dx.$$
 ```
 
-## Example 1
+### Example 1
 
-```{admonition} Computing the average value
+````{admonition} Computing the average value
 :class: tip
 
-Find the average value of $f(x) = 3x^2 + 4x^3$ over the interval $[-1, 1]$.
-```
+Compute the average value of $f(x) = 3x^2 + 4x^3$ over the interval $[-1, 1]$.
 
-```{dropdown} **Step 1:** The average value is given by
- :animate: fade-in
-
+```{dropdown} **Step 1:** &nbsp; The average value is given by
 
 \begin{align*}
     \frac{1}{1-(-1)} \int_{-1}^1 3x^2 + 4x^3 ~dx 
@@ -44,18 +41,17 @@ Find the average value of $f(x) = 3x^2 + 4x^3$ over the interval $[-1, 1]$.
     &= 1
 \end{align*}
 ```
+````
 
-## Example 2
 
-```{admonition} Computing the average value
+### Example 2
+
+````{admonition} Computing the average value
 :class: tip
 
-Find the average value of $f(x) = \dfrac{12}{x}$ over the interval $[-9, -3]$.
-```
+Compute the average value of $f(x) = \dfrac{12}{x}$ over the interval $[-9, -3]$.
 
-```{dropdown} **Step 1:** The average value is given by
- :animate: fade-in
-
+```{dropdown} **Step 1:** &nbsp; The average value is given by
 
 \begin{align*}
   \frac{1}{-3-(-9)} \int_{-9}^{-3} \frac{12}{x} ~dx 
@@ -63,15 +59,16 @@ Find the average value of $f(x) = \dfrac{12}{x}$ over the interval $[-9, -3]$.
   &= 2\ln|x|\Biggr|_{-9}^{-3} \\
   &= 2[\ln|-3| - \ln|-9|]\\ \\
   &= 2[\ln(3) - \ln(9)]\\ \\
-  &= 2\ln(3/9) && \hbox{Since $\ln(m/n) = \ln(m) - \ln(n)$}\\ \\
+  &= 2\ln(3/9) && \hbox{since $\ln(m/n) = \ln(m) - \ln(n)$}\\ \\
   &= 2\ln(3^{-1}) \\ \\
-  &= -\ln(9) && \hbox{Since $m\ln(n) = \ln(n^m)$}
+  &= -\ln(9) && \hbox{since $m\ln(n) = \ln(n^m)$}
 \end{align*}
 ```
+````
 
-## Example 3
+### Example 3
 
-```{admonition} Computing average sales
+````{admonition} Computing average sales
 :class: tip
 
 Sales of the Penn State Learning Calculus tutorial software packages are approximated by
@@ -79,20 +76,15 @@ Sales of the Penn State Learning Calculus tutorial software packages are approxi
 $$f(t) = \frac{t^2}{(t^3+5)^2},$$
 
 where $t$ is in years and $f(t)$ is in millions of software packages. What are the average sales over the time interval $0 \leq t \leq 3$ years?
-```
 
-```{dropdown} **Step 1:** Use the definition of average value.
- :animate: fade-in
-
+```{dropdown} **Step 1:** &nbsp; Use the definition of average value.
 
 The average value is given by
 
 $$\frac{1}{3-0}\int_0^3 \frac{t^2}{(t^3+5)^2}~dt = \frac{1}{3}\int_0^3 \frac{t^2}{(t^3+5)^2}~dt.$$
 ```
 
-```{dropdown} **Step 2:** Identify a suitable substitution.
- :animate: fade-in
-
+```{dropdown} **Step 2:** &nbsp; Identify a suitable substitution.
 
 Based on rewriting the integral in the following form
 
@@ -101,19 +93,16 @@ $$\frac{1}{3}\int_{t=0}^{t=3} (t^3+5)^{-2}~t^2 ~dt$$
 let $u = t^3 + 5$ and $du = 3t^2 ~dt$, or equivalently $\dfrac{1}{3} du = t^2 ~dt$.
 ```
 
-```{dropdown} **Step 3:** Determine the new limits of integration using the substitution $u = t^3 + 5$.
- :animate: fade-in
+```{dropdown} **Step 3:** &nbsp; Determine the new limits of integration.
 
-
+If $u = t^3 + 5$, then
 \begin{align*}
-\text{When } t=3 ~~&\Longrightarrow~~ u = 3^3 + 5 = 32\\
-\text{When } t=0 ~~&\Longrightarrow~~ u = 0^3 + 5 = 5
+\text{when } t=3 ~~&\Longrightarrow~~ u = 3^3 + 5 = 32\\
+\text{when } t=0 ~~&\Longrightarrow~~ u = 0^3 + 5 = 5
 \end{align*}
 ```
 
-```{dropdown} **Step 4:** Rewrite the integral in terms of $u$ and $du$.
- :animate: fade-in
-
+```{dropdown} **Step 4:** &nbsp; Rewrite the integral in terms of $u$ and $du$.
 
 \begin{align*}
   \frac{1}{3}\int_{t=0}^{t=3} (t^3+5)^{-2}~t^2 ~dt
@@ -122,16 +111,16 @@ let $u = t^3 + 5$ and $du = 3t^2 ~dt$, or equivalently $\dfrac{1}{3} du = t^2 ~d
 \end{align*}
 ```
 
-```{dropdown} **Step 5:** Evaluate the integral.
-
+```{dropdown} **Step 5:** &nbsp; Evaluate the integral.
 
 \begin{align*}
   \frac{1}{9} \int_{u=5}^{u=32} u^{-2} ~du 
-  &= \frac{1}{9}(-u^{-1}) \Big|_{5}^{32}  && \hbox{Since $\dfrac{u^{-1}}{-1}$ is an antiderivative of $u^{-2}$}\\
-  &= \frac{1}{9}\left[\left( -\frac{1}{32}\right)- \left(-\frac{1}{5}\right)\right] && \hbox{Plug in limits of integration}\\
-  &= \frac{1}{9}\left(\frac{1}{5} - \frac{1}{32}\right) && \hbox{Simplify}\\
+  &= \frac{1}{9}(-u^{-1}) \Big|_{5}^{32}  && \hbox{power rule}\\
+  &= \frac{1}{9}\left[\left( -\frac{1}{32}\right)- \left(-\frac{1}{5}\right)\right] && \hbox{plug in limits of integration}\\
+  &= \frac{1}{9}\left(\frac{1}{5} - \frac{1}{32}\right) && \hbox{simplify}\\
   &= 3/160
 \end{align*}
 
 Therefore, the average sales over the time interval $0\leq t \leq 3$ is $3/160$ millions of software packages per year.
 ```
+````

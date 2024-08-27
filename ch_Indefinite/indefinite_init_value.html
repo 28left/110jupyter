@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Initial Value Problem &#8212; Penn State Math 110 Companion Site</title>
+    <title>Initial Value Problems &#8212; Penn State Math 110 Companion Site</title>
   
   
   
@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="indefinite_.html">Indefinite Integrals</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Initial Value Problem</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -456,7 +459,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Initial Value Problem</h1>
+    <h1>Initial Value Problems</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -466,8 +469,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -479,12 +485,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="initial-value-problem">
-<h1>Initial Value Problem<a class="headerlink" href="#initial-value-problem" title="Link to this heading">#</a></h1>
-<p>An initial value problem is a differential equation (i.e., an equation involving <span class="math notranslate nohighlight">\(f'\)</span>) combined with an initial condition (i.e., <span class="math notranslate nohighlight">\(f(a) = b\)</span>).</p>
-<p>Use the following strategy to solve an initial value problem.</p>
+  <section id="initial-value-problems">
+<h1>Initial Value Problems<a class="headerlink" href="#initial-value-problems" title="Link to this heading">#</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Strategy to Solve an Initial Value Problem</p>
+<p class="admonition-title">Definition</p>
+<p>An <em><strong>initial value problem</strong></em> is a differential equation (i.e., an equation involving <span class="math notranslate nohighlight">\(f'\)</span>) combined with an initial condition (i.e., <span class="math notranslate nohighlight">\(f(a) = b\)</span>).</p>
+<p>The goal of an initial value problem is to find the unique function that satisfies the differential equation and the initial condition.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">How to Solve an Initial Value Problem</p>
+<p>Use the following strategy to solve an initial value problem.</p>
 <ul>
 <li><p>Find the general solution to the differential equation by using the techniques of integration.</p>
 <div class="amsmath math notranslate nohighlight">
@@ -499,16 +511,18 @@ document.write(`
 </ul>
 </div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">An initial value problem</p>
 <p>Solve the following initial value problem:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   f'(x) &amp;= 4x^3 -3x^2 +x+9\\
   f(1) &amp;= 6
 \end{align*}\]</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Find the general solution to the differential equation.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find the general solution to the differential equation.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   f(x) 
@@ -517,55 +531,58 @@ document.write(`
   &amp;= x^4-x^3+\frac{x^2}{2}+9 x + C
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Use the initial condition to solve for <span class="math notranslate nohighlight">\(C\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Use the initial condition to solve for <span class="math notranslate nohighlight">\(C\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   6 
   &amp;= f(1) \\
-  &amp;= 1 - 1 + \frac{1}{2} + 9 +C &amp;&amp; \text{Plug $x=1$ into our result from Step 1}\\
-  &amp;= \frac{1}{2}+9 +C &amp;&amp; \text{Simplify}
+  &amp;= 1 - 1 + \frac{1}{2} + 9 +C &amp;&amp; \text{plug $x=1$ into our result from Step 1}\\
+  &amp;= \frac{1}{2}+9 +C &amp;&amp; \text{simplify}
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore</p>
 <div class="math notranslate nohighlight">
 \[C = 6 - \frac{1}{2} - 9 = - \frac{7}{2}.\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 3:</strong> Combine the results from Steps 1 and 2 to get the solution to the initial value problem.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Combine the results from Steps 1 and 2 to get the solution to the initial value problem.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[f(x) = x^4 - x^3 + \frac{x^2}{2} + 9x - \frac{7}{2}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Find maximum profit given the marginal profit function</p>
 <p>The estimated marginal profit associated with producing/selling jasmine rice is <span class="math notranslate nohighlight">\(P'(x) = -0.08x + 24\)</span> dollars per pound per month where <span class="math notranslate nohighlight">\(x\)</span> is the production level in pounds per month. The fixed cost of producing/selling rice is $1,500 a month. What is the maximum monthly profit?</p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 1:</strong> Find the value of <span class="math notranslate nohighlight">\(x\)</span> that maximizes profit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find the value of <span class="math notranslate nohighlight">\(x\)</span> that maximizes profit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(P'(x)\)</span> equals zero when</p>
 <div class="math notranslate nohighlight">
 \[-\frac{8}{100}x + 24 = 0\]</div>
 <p class="sd-card-text">which is when</p>
 <div class="math notranslate nohighlight">
 \[x = \frac{24\cdot 100}{8} = 300\]</div>
-<p class="sd-card-text">Notice that <span class="math notranslate nohighlight">\(P''(x) = -8/100\)</span> is always negative. Therefore, <span class="math notranslate nohighlight">\(P(x)\)</span> is always concave down and <span class="math notranslate nohighlight">\(x = 300\)</span> corresponds to an absolute maximum profit.</p>
+<p class="sd-card-text">Notice that <span class="math notranslate nohighlight">\(P''(x) = -8/100\)</span> is always negative. Therefore, <span class="math notranslate nohighlight">\(P(x)\)</span> is always concave down which means <span class="math notranslate nohighlight">\(x = 300\)</span> corresponds to an absolute maximum profit.</p>
 <p class="sd-card-text">Ultimately, we will evaluate <span class="math notranslate nohighlight">\(P(300)\)</span> to find the maximum monthly profit, but we don’t currently have a formula for <span class="math notranslate nohighlight">\(P(x)\)</span>. Therefore, our next goal is to find <span class="math notranslate nohighlight">\(P(x)\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 2:</strong> Identify the initial value problem.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Identify the initial value problem.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  P'(x) &amp;= -\frac{8}{100}x +24 &amp;&amp; \text{Stated in the problem}\\
-  P(0) &amp;=- 1,500 &amp;&amp; \text{Since fixed costs are \$1,500}
+  P'(x) &amp;= -\frac{8}{100}x +24 &amp;&amp; \text{stated in the problem}\\
+  P(0) &amp;= -1,500 &amp;&amp; \text{since fixed costs are \$1,500}
 \end{align*}\]</div>
 <p class="sd-card-text">Note that the initial profit is negative since fixed costs count against profit.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 3:</strong> Solve the initial value problem:</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Solve the initial value problem.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   P(x) &amp;= \int P'(x) ~dx \\
@@ -581,9 +598,10 @@ P(0) &amp;= -1500 \\
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(P(x) = -\dfrac{4}{100}x^2 + 24x -1500\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
-<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text"><strong>Step 4:</strong> From Step 1, we know that profit is maximized when <span class="math notranslate nohighlight">\(x=300\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Compute the maximum profit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">From Step 1, we know that profit is maximized when <span class="math notranslate nohighlight">\(x=300\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   P(300) 
@@ -594,7 +612,9 @@ P(0) &amp;= -1500 \\
   &amp;= 2100
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -661,8 +681,11 @@ P(0) &amp;= -1500 \\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition">Definition</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

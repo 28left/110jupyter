@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="byparts_.html">Integration by Parts &amp; Improper Integrals</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -466,14 +469,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-integrate-products-of-different-types-of-functions">How to Integrate Products of Different Types of Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lae-how-to-pick-u-and-dv">LAE: How to Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-integrate-products-of-different-types-of-functions">How to Integrate Products of Different Types of Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -489,49 +493,50 @@ document.write(`
 <h1>Integration by Parts<a class="headerlink" href="#integration-by-parts" title="Link to this heading">#</a></h1>
 <section id="how-to-integrate-products-of-different-types-of-functions">
 <h2>How to Integrate Products of Different Types of Functions<a class="headerlink" href="#how-to-integrate-products-of-different-types-of-functions" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Reversing the Product Rule of Differentiation</p>
 <p>The product rule for differentiating <span class="math notranslate nohighlight">\(f(x)g(x)\)</span> (i.e., <span class="math notranslate nohighlight">\(\frac{d}{dx}(fg) = f'g + fg'\)</span>) can be translated into the following rule for computing the antiderivative of a product:</p>
 <div class="math notranslate nohighlight">
 \[\int fg' ~dx = fg - \int f'g ~dx\]</div>
-<p>This rule is known as integration by parts and its usefulness relies on <span class="math notranslate nohighlight">\(f'g\)</span> being easier to integrate than <span class="math notranslate nohighlight">\(fg'\)</span>. The first consideration, given a product of two functions, is determining which factor corresponds to <span class="math notranslate nohighlight">\(f\)</span> and which factor corresponds to <span class="math notranslate nohighlight">\(g'\)</span> in the above formula. This will be addressed below.</p>
+<p>This rule is known as <em><strong>integration by parts</strong></em> and its usefulness relies on <span class="math notranslate nohighlight">\(f'g\)</span> being easier to integrate than <span class="math notranslate nohighlight">\(fg'\)</span>. When applying integration by parts to the integral of a product, <span class="math notranslate nohighlight">\(fg'\)</span>, the first consideration is determining which factor corresponds to <span class="math notranslate nohighlight">\(f\)</span> and which factor corresponds to <span class="math notranslate nohighlight">\(g'\)</span>. This will be addressed below.</p>
+</div>
 <div class="info admonition">
-<p class="admonition-title">Definition</p>
-<p>Letting <span class="math notranslate nohighlight">\(u=f(x)\)</span> and <span class="math notranslate nohighlight">\(v=g(x)\)</span> (and therefore, <span class="math notranslate nohighlight">\(du = f'(x)~dx\)</span> and <span class="math notranslate nohighlight">\(dv = g'(x) ~dx\)</span>), <strong>integration by parts</strong> can be written more succinctly as</p>
+<p class="admonition-title">Notation</p>
+<p>Integration by parts is often written in the following form</p>
 <div class="math notranslate nohighlight">
 \[\int u ~dv = uv - \int v ~du.\]</div>
+<p>where <span class="math notranslate nohighlight">\(u = f(x)\)</span>, <span class="math notranslate nohighlight">\(dv = g'(x) ~dx\)</span>, and therefore <span class="math notranslate nohighlight">\(du = f'(x)~dx\)</span> and <span class="math notranslate nohighlight">\(v = g(x)\)</span>.</p>
 </div>
-</section>
-<section id="lae-how-to-pick-u-and-dv">
-<h2>LAE: How to Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span><a class="headerlink" href="#lae-how-to-pick-u-and-dv" title="Link to this heading">#</a></h2>
-<p>The method of integration by parts is most commonly applied to integrating products of different types of functions. For example, the product of a polynomial and an exponential function or the product of a polynomial and a logarithmic function. Integration by parts can also be used to integrate inverse functions, like <span class="math notranslate nohighlight">\(\ln(x)\)</span>.</p>
-<p>When deciding which factor corresponds to <span class="math notranslate nohighlight">\(u\)</span> (i.e., <span class="math notranslate nohighlight">\(f(x)\)</span>), use the acronym <em>LAE</em> to help remember the order in which different types of functions are preferred.</p>
 <div class="info admonition">
-<p class="admonition-title">LAE</p>
-<p>To decide which factor corresponds to <span class="math notranslate nohighlight">\(u\)</span>, prioritize:</p>
+<p class="admonition-title">When to Apply Integration by Parts</p>
+<p>The method of integration by parts is most commonly applied to integrating products of different types of functions. For example, the product of a polynomial and an exponential function or the product of a polynomial and a logarithmic function. Integration by parts can also be used to integrate inverse functions, like <span class="math notranslate nohighlight">\(\ln(x)\)</span>.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">LAE: How to Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span></p>
+<p>When deciding which factor corresponds to <span class="math notranslate nohighlight">\(u\)</span> (i.e., <span class="math notranslate nohighlight">\(f(x)\)</span>), use the acronym <em>LAE</em> to help remember the order in which different types of functions are preferred.</p>
 <ul class="simple">
 <li><p><strong>L</strong>ogarithmic functions (e.g., <span class="math notranslate nohighlight">\(\ln(x)\)</span>)</p></li>
-<li><p><strong>A</strong>lgebraic (including polynomial) functions (e.g., <span class="math notranslate nohighlight">\(x^2\)</span>, <span class="math notranslate nohighlight">\(1/x\)</span>, <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>)</p></li>
+<li><p><strong>A</strong>lgebraic (including power, polynomial, and rational) functions (e.g., <span class="math notranslate nohighlight">\(x^2\)</span>, <span class="math notranslate nohighlight">\(1/x\)</span>, <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>)</p></li>
 <li><p><strong>E</strong>xponential functions (e.g., <span class="math notranslate nohighlight">\(e^x\)</span>)</p></li>
 </ul>
-</div>
-<p>In other words, a logarithmic function is your first choice for <span class="math notranslate nohighlight">\(u\)</span>, if it appears in the integrand. If not, then your second choice is for an algebraic function, and your last choice would be an exponential function.</p>
-<p>Once you have selected the preferred <span class="math notranslate nohighlight">\(u\)</span>, set <span class="math notranslate nohighlight">\(dv\)</span> to be the remaining factors of the integrand, including the differential form <span class="math notranslate nohighlight">\(dx\)</span>. Furthermore, if you selected <span class="math notranslate nohighlight">\(u = f(x)\)</span> and <span class="math notranslate nohighlight">\(dv = g(x) ~dx\)</span>, then</p>
+<p>In other words, a logarithmic function is our first choice for <span class="math notranslate nohighlight">\(u\)</span>, if it appears in the integrand. If not, then our second choice is for an algebraic function, and our last choice would be an exponential function.</p>
+<p>Once <span class="math notranslate nohighlight">\(u\)</span> has been selected, set <span class="math notranslate nohighlight">\(dv\)</span> to be the remaining factors of the integrand, including the differential <span class="math notranslate nohighlight">\(dx\)</span>. Furthermore, if <span class="math notranslate nohighlight">\(u = f(x)\)</span> and <span class="math notranslate nohighlight">\(dv = g(x) ~dx\)</span>, then</p>
 <div class="math notranslate nohighlight">
-\[du = f'(x) ~dx ~~~~~~~~ v = \int g(x)~dx  ~~~ \hbox{(no $+ C$ required)}\]</div>
-</section>
-<section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
-<div class="tip admonition">
-<p class="admonition-title">Product with an exponential function</p>
-<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int 2x e^x ~dx.\)</span></p>
+\[du = f'(x) ~dx ~~~~\text{and} ~~~~ v = \int g(x)~dx  ~~~ \hbox{(no $+ C$ required)}\]</div>
 </div>
+<section id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integrate the product of a power function and an exponential function</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int 2x e^x ~dx.\)</span></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Based on the integrand and the preferred LAE order, pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Based on the integrand and the preferred LAE order, pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Since the integrand is <span class="math notranslate nohighlight">\(2xe^x\)</span>, the preferred choice for <span class="math notranslate nohighlight">\(u\)</span> is <span class="math notranslate nohighlight">\(u=2x\)</span> and therefore <span class="math notranslate nohighlight">\(dv = e^x ~dx\)</span>.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   u &amp;= 2x &amp; dv &amp;= e^x~dx \\
@@ -540,7 +545,7 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Compute the integral using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Compute the integral using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int 2xe^x ~dx
@@ -551,21 +556,33 @@ document.write(`
   &amp;= 2e^x(x-1) + C
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
-<div class="tip admonition">
-<p class="admonition-title">Product with a logarithmic function</p>
-<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int x^2 \ln(x) ~dx.\)</span></p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(2x e^x\)</span> is the derivative of <span class="math notranslate nohighlight">\(2e^x(x-1)\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} 2e^x(x-1)
+&amp;= 2e^x(x-1) + 2e^x &amp;&amp; \text{product rule} \\
+&amp;= 2xe^x - 2e^x + 2e^x &amp;&amp; \text{expand} \\ 
+&amp;= 2xe^x &amp;&amp; \text{simplify}
+\end{align*}\]</div>
 </div>
+</details></div>
+</section>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Integrate the product of a power function and a logarithmic function</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int x^2 \ln(x) ~dx.\)</span></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Based on the integrand and the preferred LAE order, pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Based on the integrand and the preferred LAE order, pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Since the integrand is <span class="math notranslate nohighlight">\(x^2 \ln(x)\)</span>, the preferred choice for <span class="math notranslate nohighlight">\(u\)</span> is <span class="math notranslate nohighlight">\(u=\ln(x)\)</span> and therefore <span class="math notranslate nohighlight">\(dv = x^2 ~dx\)</span>.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   u &amp;= \ln(x) &amp; dv &amp;= x^2~dx \\
@@ -574,7 +591,7 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Compute the integral using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Compute the integral using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int x^2\ln(x) ~dx 
@@ -585,21 +602,33 @@ document.write(`
   &amp;= \frac{1}{3}x^3\ln(x) - \frac{1}{9}x^3 + C
 \end{align*}\]</div>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(x^2 \ln(x)\)</span> is the derivative of <span class="math notranslate nohighlight">\(\dfrac{1}{3}x^3\ln(x) - \dfrac{1}{9}x^3\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} \left(\frac{1}{3}x^3\ln(x) - \frac{1}{9}x^3\right)
+&amp;= \frac{1}{3}3x^2\ln(x) + \frac{1}{3}x^3\frac{1}{x} - \frac{1}{9}3x^2 &amp;&amp; \text{product and sum rules} \\
+&amp;= x^2\ln(x) + \frac{1}{3}x^2 - \frac{1}{3}x^2 &amp;&amp; \text{simplify}\\
+&amp;= x^2\ln(x) &amp;&amp; \text{simplify}
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Integrating the logarithm</p>
 <p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int \ln(x) ~dx.\)</span></p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Based on the integrand and the preferred LAE order, pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Based on the integrand and the preferred LAE order, pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Since the integrand is <span class="math notranslate nohighlight">\(\ln(x)\)</span>, the preferred choice for <span class="math notranslate nohighlight">\(u\)</span> is <span class="math notranslate nohighlight">\(u=\ln(x)\)</span> and therefore <span class="math notranslate nohighlight">\(dv = dx\)</span>.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   u &amp;= \ln(x) &amp; dv &amp;= 1~dx \\
@@ -608,7 +637,7 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Compute the integral using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Compute the integral using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int \ln(x) ~dx 
@@ -618,22 +647,34 @@ document.write(`
   &amp;= x\ln(x) - x + C
 \end{align*}\]</div>
 </div>
-</details></section>
-<section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
-<div class="tip admonition">
-<p class="admonition-title">Area under a graph</p>
-<p>Compute the area of the region under the graph of <span class="math notranslate nohighlight">\(\displaystyle f(x) = 3xe^{-2x} \)</span> from <span class="math notranslate nohighlight">\(x=0\)</span> to <span class="math notranslate nohighlight">\(x=4\)</span>.</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(\ln(x)\)</span> is the derivative of <span class="math notranslate nohighlight">\(x\ln(x) - x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} \left(x\ln(x) - x\right) 
+&amp;= \ln(x) + x\frac{1}{x} - 1 &amp;&amp; \text{product and sum rules} \\
+&amp;= \ln(x) + 1 - 1 &amp;&amp; \text{simplify}\\
+&amp;= \ln(x) &amp;&amp; \text{simplify}
+\end{align*}\]</div>
 </div>
+</details></div>
+</section>
+<section id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Area of a region</p>
+<p>Compute the area of the region under the graph of <span class="math notranslate nohighlight">\(\displaystyle f(x) = 3xe^{-2x} \)</span> from <span class="math notranslate nohighlight">\(x=0\)</span> to <span class="math notranslate nohighlight">\(x=4\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Write the area of the region as a definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Write the area of the region as a definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\hbox{Area} = \int_0^4 3xe^{-2x}~dx\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Compute <span class="math notranslate nohighlight">\(\displaystyle \int 3xe^{-2x} ~dx \)</span> using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Compute <span class="math notranslate nohighlight">\(\displaystyle \int 3xe^{-2x} ~dx \)</span> using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span> and compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>. (Recall <span class="math notranslate nohighlight">\(\int e^{ax} ~dx = \frac{1}{a}e^{ax}+C\)</span>.)</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -649,10 +690,22 @@ document.write(`
   &amp;= -\frac{3}{2}xe^{-2x} + \frac{3}{2}\left(-\frac{1}{2}\right)e^{-2x} + C &amp;&amp; \text{using } \int e^{ax}dx = \frac{1}{a}e^{ax}+C \\
   &amp;= -\frac{3}{2}xe^{-2x} - \frac{3}{4}e^{-2x} + C \\
 \end{align*}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(3xe^{-2x}\)</span> is the derivative of <span class="math notranslate nohighlight">\(-\dfrac{3}{2}xe^{-2x} - \dfrac{3}{4}e^{-2x}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} \left(-\frac{3}{2}xe^{-2x} - \frac{3}{4}e^{-2x}\right) 
+&amp;= -\frac{3}{2}e^{-2x} - \frac{3}{2}xe^{-2x}(-2) - \frac{3}{4}e^{-2x}(-2) &amp;&amp; \text{product and sum rules} \\
+&amp;= -\frac{3}{2}e^{-2x} + 3xe^{-2x} + \frac{3}{2}e^{-2x} &amp;&amp; \text{simplify}\\
+&amp;= 3xe^{-2x} &amp;&amp; \text{simplify}
+\end{align*}\]</div>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_0^4 3xe^{-2x} ~dx \)</span> using the answer to Step 2.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_0^4 3xe^{-2x} ~dx \)</span> using the answer to Step 2.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \hbox{Area} 
@@ -663,16 +716,16 @@ document.write(`
   &amp;= \frac{3}{4} - \frac{27}{4}e^{-8} &amp;&amp; \hbox{simplify}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-5">
-<h2>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h2>
+<h3>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
-<p class="admonition-title">Evaluating a definite integral by parts</p>
+<p class="admonition-title">Evaluating a definite integral using integration by parts</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_1^e (4x+1)\ln(x) ~dx\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Compute <span class="math notranslate nohighlight">\(\displaystyle \int (4x+1)\ln(x) ~dx \)</span> using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Compute <span class="math notranslate nohighlight">\(\displaystyle \int (4x+1)\ln(x) ~dx \)</span> using integration by parts.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span> and compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -688,10 +741,22 @@ document.write(`
   &amp;= (2x^2+x)\ln(x) - (x^2+x) + C \\
   &amp;= (2x^2+x)\ln(x) - x^2 - x + C 
 \end{align*}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\((4x+1)\ln(x)\)</span> is the derivative of <span class="math notranslate nohighlight">\((2x^2+x)\ln(x) - x^2 - x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} \left((2x^2+x)\ln(x) - x^2 - x\right) 
+&amp;= (4x+1)\ln(x) + (2x^2+x)\frac{1}{x} - 2x - 1&amp;&amp; \text{product and sum rules} \\
+&amp;= (4x+1)\ln(x) + 2x+1 - 2x - 1 &amp;&amp; \text{expand}\\
+&amp;= (4x+1)\ln(x) &amp;&amp; \text{simplify}
+\end{align*}\]</div>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_1^e (4x+1)\ln(x) ~dx\)</span> using the answer to Step 1.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_1^e (4x+1)\ln(x) ~dx\)</span> using the answer to Step 1.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_1^e (4x+1)\ln(x) ~dx 
@@ -701,16 +766,16 @@ document.write(`
   &amp;= e^2 + 2 &amp;&amp;\hbox{simplify}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-6">
-<h2>Example 6<a class="headerlink" href="#example-6" title="Link to this heading">#</a></h2>
+<h3>Example 6<a class="headerlink" href="#example-6" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
-<p class="admonition-title">Evaluating a definite integral by parts</p>
+<p class="admonition-title">An integral that requires two applications of integration by parts</p>
 <p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int 5x^2e^x ~dx\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Use integration by parts to compute <span class="math notranslate nohighlight">\(\displaystyle \int 5x^2e^x ~dx\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Use integration by parts to compute <span class="math notranslate nohighlight">\(\displaystyle \int 5x^2e^x ~dx\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span> and compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -727,7 +792,8 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span> and compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Use integration by parts to compute <span class="math notranslate nohighlight">\(\displaystyle \int 10xe^x ~dx\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span> and compute <span class="math notranslate nohighlight">\(du\)</span> and <span class="math notranslate nohighlight">\(v\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   u &amp;= 10x &amp; dv &amp;= e^x~dx \\
@@ -737,23 +803,50 @@ document.write(`
 \[\begin{align*}
   \int 10xe^x ~dx
   &amp;= uv - \int v ~du \\
-  &amp;= 10xe^x - \int 10e^x~dx
+  &amp;= 10xe^x - \int 10e^x~dx \\
+  &amp;= 10xe^x - 10e^x + C \\
+  &amp;= (10x - 10)e^x + C
+\end{align*}\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(10xe^x\)</span> is the derivative of <span class="math notranslate nohighlight">\((10x - 10)e^x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} (10x - 10)e^x
+&amp;= 10e^x + (10x - 10)e^x &amp;&amp; \text{product rule} \\
+&amp;= (10 + 10x - 10)e^x &amp;&amp; \text{pull out common factor of $e^x$}\\
+&amp;= 10xe^x &amp;&amp; \text{simplify}
 \end{align*}\]</div>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Use the answer to Step 2 to complete the computations in Step 1.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Use the answer to Step 2 to complete the computations in Step 1.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int 5x^2e^x ~dx
-  &amp;= 5x^2e^x - \int 10xe^x~dx  &amp;&amp; \hbox{using Step 1}\\
-  &amp;= 5x^2e^x - \left(10xe^x - \int 10e^x ~dx\right) &amp;&amp; \hbox{using Step 2}\\
-  &amp;= 5x^2e^x - 10xe^x + 10\int e^x ~dx &amp;&amp; \hbox{simplify}\\
-  &amp;= 5x^2e^x - 10xe^x + 10e^x + C \\
-  &amp;= (5x^2 - 10x + 10)e^x + C
+  &amp;= 5x^2e^x - \int 10xe^x~dx  &amp;&amp; \text{using Step 1}\\
+  &amp;= 5x^2e^x - (10x - 10)e^x + C &amp;&amp; \text{using Step 2}\\
+  &amp;= (5x^2 - (10x - 10))e^x + C &amp;&amp; \text{pull out common factor of $e^x$}\\
+  &amp;= (5x^2 - 10x + 10)e^x + C &amp;&amp; \text{simplify}
 \end{align*}\]</div>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We can verify our answer by showing <span class="math notranslate nohighlight">\(5x^2e^x\)</span> is the derivative of <span class="math notranslate nohighlight">\((5x^2 - 10x + 10)e^x\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dx} (5x^2 - 10x + 10)e^x
+&amp;= (10x - 10)e^x + (5x^2 - 10x +10)e^x &amp;&amp; \text{product rule} \\
+&amp;= (10x - 10 + 5x^2 - 10x + 10)e^x &amp;&amp; \text{pull out common factor of $e^x$}\\
+&amp;= 5x^2e^x &amp;&amp; \text{simplify}
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -820,14 +913,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-integrate-products-of-different-types-of-functions">How to Integrate Products of Different Types of Functions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lae-how-to-pick-u-and-dv">LAE: How to Pick <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-integrate-products-of-different-types-of-functions">How to Integrate Products of Different Types of Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-6">Example 6</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

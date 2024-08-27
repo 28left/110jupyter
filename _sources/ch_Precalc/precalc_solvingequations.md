@@ -51,12 +51,14 @@ x + 2 &= 0  ~~~~\Rightarrow~~~~  x = -2\\
 x - 6 &= 0  ~~~~\Rightarrow~~~~  x = 6
 \end{align*}
 
-Therefore, $x=6$ and $x=-2$ satisfy $x^2 - 4x - 12 = 0$.
+Therefore, $x=-2$ and $x=6$ satisfy $x^2 - 4x - 12 = 0$.
 ```
 
-```{dropdown} Check Your Work.
+```{dropdown} Check Our Work.
 :color: light
 :animate: fade-in
+
+We can check our work by plugging in $x=-2$ and $x=6$ into the given polynomial and making sure it evaluates to zero.
 
 \begin{align*}
 (-2)^2 - 4(-2) - 12 &= 4 + 8 - 12 = 0 \\
@@ -98,9 +100,11 @@ $$3p = 180 - 6p$$
 Therefore, $p=20$ is the only value that satisfies $\frac{3p}{180-6p} = 1$.
 ```
 
-```{dropdown} Check Your Work.
+```{dropdown} Check Our Work.
 :color: light
 :animate: fade-in
+
+We can check our work by plugging in $p=20$ into $\dfrac{3p}{180-6p}$ and making sure it evaluates to one.
 
 $$\dfrac{3(20)}{180-6(20)} = \frac{60}{180-120} = \frac{60}{60} = 1$$
 ```
@@ -160,9 +164,12 @@ Therefore,
 Therefore, the only points of intersection of $f(x) = 6x^2 - 4x$ and $g(x) = 2 - 5x$ occur when $x=-2/3$ and $x=1/2$.
 ```
 
-```{dropdown} Check Your Work.
+```{dropdown} Check Our Work.
 :color: light
 :animate: fade-in
+
+We can check our work by making sure $f(x) = g(x)$ when we plug in $x=-2/3$ and when we plug int $x=1/2$.
+
 
 | $x$  | $f(x) = 6x^2 - 4x$ | $g(x) = 2 - 5x$ |
 | ---  | ----               | ----            |

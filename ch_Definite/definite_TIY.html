@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -489,51 +492,56 @@ document.write(`
 <h1>Try It Yourself<a class="headerlink" href="#try-it-yourself" title="Link to this heading">#</a></h1>
 <section id="exercise-1">
 <h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Link to this heading">#</a></h2>
-<p>Using a right Riemann sum with 3 subintervals of equal length, approximate</p>
-<div class="math notranslate nohighlight">
-\[\int_2^{8} \frac{1}{x}~dx.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Riemann sums</p>
+<p>Using a right Riemann sum with 3 subintervals of equal length, approximate <span class="math notranslate nohighlight">\(\displaystyle \int_2^{8} \frac{1}{x}~dx\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(13/12\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-2">
 <h2>Exercise 2<a class="headerlink" href="#exercise-2" title="Link to this heading">#</a></h2>
-<p>Using a left Riemann sum with 3 subintervals of equal length, approximate</p>
-<div class="math notranslate nohighlight">
-\[\int_2^9 3x - 4 ~dx.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Riemann sums</p>
+<p>Using a left Riemann sum with 3 subintervals of equal length, approximate <span class="math notranslate nohighlight">\(\displaystyle \int_2^9 3x - 4 ~dx\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(63\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-3">
 <h2>Exercise 3<a class="headerlink" href="#exercise-3" title="Link to this heading">#</a></h2>
-<p>Evaluate</p>
-<div class="math notranslate nohighlight">
-\[\displaystyle \int_0^2 e^{3x} + \frac{x^2}{3}+5x  ~dx.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Definite integral</p>
+<p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_0^2 e^{3x} + \frac{x^2}{3}+5x  ~dx\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(e^6/3 + 95/9\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-4">
 <h2>Exercise 4<a class="headerlink" href="#exercise-4" title="Link to this heading">#</a></h2>
-<p>Find the area under the graph of</p>
-<div class="math notranslate nohighlight">
-\[f(x) = \dfrac{\ln(x)}{x}\]</div>
-<p>over the interval <span class="math notranslate nohighlight">\([e^4, e^7].\)</span></p>
+<div class="tip admonition">
+<p class="admonition-title">Area of a region</p>
+<p>Find the area under the graph of <span class="math notranslate nohighlight">\(f(x) = \dfrac{\ln(x)}{x}\)</span> over the interval <span class="math notranslate nohighlight">\([e^4, e^7].\)</span></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(33/2\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-5">
 <h2>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Total cost</p>
 <p>The marginal cost function associated with producing <span class="math notranslate nohighlight">\(x\)</span> widgets is given by</p>
 <div class="math notranslate nohighlight">
 \[C'(x) = -0.4x + 75\]</div>
@@ -543,41 +551,44 @@ document.write(`
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(\$6,100\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-6">
 <h2>Exercise 6<a class="headerlink" href="#exercise-6" title="Link to this heading">#</a></h2>
-<p>Evaluate</p>
-<div class="math notranslate nohighlight">
-\[\displaystyle \int_0^4 \frac{x}{2x^2+10}~dx.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Definite integral</p>
+<p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_0^4 \frac{x}{2x^2+10}~dx\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(\frac{1}{4}\ln(\frac{21}{5})\)</span></p>
+<p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(\dfrac{1}{4}\ln(21/5)\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-7">
 <h2>Exercise 7<a class="headerlink" href="#exercise-7" title="Link to this heading">#</a></h2>
-<p>Evaluate</p>
-<div class="math notranslate nohighlight">
-\[\int_0^{\ln(3)/3} \frac{e^{3x}}{\left(e^{3x}+1\right)^3}~dx.\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Definite integral</p>
+<p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_0^{\ln(3)/3} \frac{e^{3x}}{\left(e^{3x}+1\right)^3}~dx\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(1/32\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="exercise-8">
 <h2>Exercise 8<a class="headerlink" href="#exercise-8" title="Link to this heading">#</a></h2>
-<p>Compute the average value of</p>
-<div class="math notranslate nohighlight">
-\[f(x) = x^2+8x-2\]</div>
-<p>on the interval <span class="math notranslate nohighlight">\([-2, 2]\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Average value</p>
+<p>Compute the average value of <span class="math notranslate nohighlight">\(f(x) = x^2+8x-2\)</span> on the interval <span class="math notranslate nohighlight">\([-2, 2]\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Show answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Answer: <span class="math notranslate nohighlight">\(-2/3\)</span></p>
 </div>
-</details></section>
+</details></div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

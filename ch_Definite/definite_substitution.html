@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -466,11 +469,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-limits-of-integration-via-substitution">Changing the Limits of Integration via Substitution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-limits-of-integration-via-substitution">Changing the Limits of Integration via Substitution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -486,101 +491,114 @@ document.write(`
 <h1>Substitution for Definite Integrals<a class="headerlink" href="#substitution-for-definite-integrals" title="Link to this heading">#</a></h1>
 <section id="changing-the-limits-of-integration-via-substitution">
 <h2>Changing the Limits of Integration via Substitution<a class="headerlink" href="#changing-the-limits-of-integration-via-substitution" title="Link to this heading">#</a></h2>
-<p>When we evaluate the definite integral <span class="math notranslate nohighlight">\(\int_a^b f(x) ~dx\)</span>, the limits of integration are assumed to be in terms of the variable <span class="math notranslate nohighlight">\(x\)</span> (i.e., we are integrating from <span class="math notranslate nohighlight">\(x = a\)</span> to <span class="math notranslate nohighlight">\(x = b\)</span>). If we apply the substitution <span class="math notranslate nohighlight">\(u = g(x)\)</span>, then we have to rewrite the limits of integration in terms of the new variable <span class="math notranslate nohighlight">\(u\)</span>. The substitution rule for definite integrals tells us exactly how to do that.</p>
 <div class="info admonition">
 <p class="admonition-title">Substitution Rule for Definite Integrals</p>
+<p>When evaluating the definite integral <span class="math notranslate nohighlight">\(\displaystyle \int_a^b f(x) ~dx\)</span>, the limits of integration are assumed to be in terms of the variable <span class="math notranslate nohighlight">\(x\)</span> (i.e., we are integrating from <span class="math notranslate nohighlight">\(x = a\)</span> to <span class="math notranslate nohighlight">\(x = b\)</span>). If we change the variable by applying the substitution <span class="math notranslate nohighlight">\(u = g(x)\)</span>, then we also need to change the limits of integration so that they are in terms of the new variable <span class="math notranslate nohighlight">\(u\)</span>. The substitution rule for definite integrals, as stated below, tells us exactly how to do that.</p>
 <div class="math notranslate nohighlight">
 \[\int_{x=a}^{x=b} f(g(x))g'(x)~dx = \int_{u=g(a)}^{u=g(b)} f(u) ~du\]</div>
 <p>where <span class="math notranslate nohighlight">\(u=g(x)\)</span> and <span class="math notranslate nohighlight">\(du = g'(x) ~dx\)</span>.</p>
 </div>
-</section>
+<div class="info admonition">
+<p class="admonition-title">Method of Integration by Substitution for Definite Integrals</p>
+<ol class="arabic">
+<li><p>Write the given integral in one of the following two forms:</p>
+<div class="math notranslate nohighlight">
+\[\int_{x=a}^{x=b} [g(x)]^n g'(x) ~dx \qquad \text{or} \qquad \int_{x=a}^{x=b} e^{g(x)} g'(x) ~dx\]</div>
+</li>
+<li><p>Let <span class="math notranslate nohighlight">\(u=g(x)\)</span> and compute the corresponding differential <span class="math notranslate nohighlight">\(du = g'(x) dx\)</span>.</p></li>
+<li><p>Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.  This includes changing the limits of integration so that the new lower limit of integration is <span class="math notranslate nohighlight">\(g(a)\)</span> and the new upper limit of integration is <span class="math notranslate nohighlight">\(g(b)\)</span>.</p></li>
+<li><p>Evaluate the integral in terms of the variable <span class="math notranslate nohighlight">\(u\)</span>.</p></li>
+<li><p>Plug in the new limits of integration, <span class="math notranslate nohighlight">\(g(b)\)</span> and <span class="math notranslate nohighlight">\(g(a)\)</span>.</p></li>
+</ol>
+</div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Using substitution to integrate rational functions</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_{1}^{2} \frac{6x^2}{2x^3 + 1}~dx\)</span>.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Based on rewriting the integral in the following form</p>
 <div class="math notranslate nohighlight">
 \[\int_{x=1}^{x=2} (2x^3+1)^{-1} 6x^2 ~dx\]</div>
 <p class="sd-card-text">let <span class="math notranslate nohighlight">\(u = 2x^3+1\)</span> and <span class="math notranslate nohighlight">\(du = 6x^2 ~du\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Determine the new limits of integration using the substitution <span class="math notranslate nohighlight">\(u = 2x^3+1\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Determine the new limits of integration.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(u = 2x^3+1\)</span>, then</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  \text{When } x=2 ~~&amp;\Longrightarrow~~ u = 2(2)^3 + 1 = 17 \\
-  \text{When } x=1 ~~&amp;\Longrightarrow~~ u = 2(1)^3 + 1 = 3 
+  \text{when } x=2 ~~&amp;\Longrightarrow~~ u = 2(2)^3 + 1 = 17 \\
+  \text{when } x=1 ~~&amp;\Longrightarrow~~ u = 2(1)^3 + 1 = 3 
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\int_{x=1}^{x=2} (2x^3+1)^{-1} 6x^2 ~dx = \int_{u=3}^{u=17} u^{-1} ~du\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 4:</strong> Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_{u=3}^{u=17} \frac{1}{u}~du 
-  &amp;= \ln|u| \Big|_3^{17} &amp;&amp; \hbox{Since $\ln|u|$ is an antiderivative of $\dfrac{1}{u}$}\\
-  &amp;= \ln(17) - \ln(3) &amp;&amp; \hbox{Plug in limits of integration}\\
-  &amp;= \ln(17/3) &amp;&amp; \hbox{Since $\ln(m/n) = \ln(m) - \ln(n)$}
+  &amp;= \ln|u| \Big|_3^{17} &amp;&amp; \text{since $\ln|u|$ is an antiderivative of $\dfrac{1}{u}$}\\
+  &amp;= \ln(17) - \ln(3) &amp;&amp; \text{plug in limits of integration}\\
+  &amp;= \ln(17/3) &amp;&amp; \text{since $\ln(m/n) = \ln(m) - \ln(n)$}
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore,</p>
 <div class="math notranslate nohighlight">
 \[\int_{1}^{2} \frac{6x^2}{2x^3 + 1}~dx = \ln(17/3).\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Finding the area under a graph</p>
 <p>Find the area of the region under the graph of <span class="math notranslate nohighlight">\(f(x) = e^{-3x/2}\)</span> between <span class="math notranslate nohighlight">\(x = -2\)</span> and <span class="math notranslate nohighlight">\(x = 6\)</span>.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Find the definite integral that corresponds to the area of the given region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find the definite integral that corresponds to the area of the given region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Since <span class="math notranslate nohighlight">\(e^{-3x/2} \geq 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span>, the area under the graph of <span class="math notranslate nohighlight">\(f\)</span> on <span class="math notranslate nohighlight">\([-2,6]\)</span> is given by</p>
 <div class="math notranslate nohighlight">
 \[ \int_{x=-2}^{x=6} e^{-3x/2} ~dx.\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Let <span class="math notranslate nohighlight">\(u = -3x/2\)</span>  and <span class="math notranslate nohighlight">\(du = -\dfrac{3}{2}~dx\)</span>, or equivalently <span class="math notranslate nohighlight">\(-\dfrac{2}{3} ~du = dx\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Determine the new limits of integration using the substitution <span class="math notranslate nohighlight">\(u = -3x/2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Determine the new limits of integration.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(u = -3x/2\)</span>, then</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  \text{When } x=6 ~~&amp;\Longrightarrow~~ u = -3(6)/2 = -9 \\
-  \text{When } x=-2 ~~&amp;\Longrightarrow~~ u = -3(-2)/2  = 3 
+  \text{when } x=6 ~~&amp;\Longrightarrow~~ u = -3(6)/2 = -9 \\
+  \text{when } x=-2 ~~&amp;\Longrightarrow~~ u = -3(-2)/2  = 3 
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 4:</strong> Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_{x=-2}^{x=6} e^{-3x/2} ~dx 
   &amp;= \int_{u=3}^{u=-9} e^{u} \left(-\frac{2}{3}\right)~du \\
   &amp;= -\frac{2}{3}\int_{u=3}^{u=-9} e^{u} ~du 
 \end{align*}\]</div>
-<p class="sd-card-text">Notice that the new lower limit of integration (<span class="math notranslate nohighlight">\(u=3\)</span>) is larger than the new upper limit (<span class="math notranslate nohighlight">\(u=-9\)</span>). There is nothing wrong with this and we will continue the calculation in the next step as is. However, it is possible to switch limits of integration using the second property of definite integrals listed on page 3. Specifically,</p>
+<p class="sd-card-text">Notice that the new lower limit of integration (<span class="math notranslate nohighlight">\(u=3\)</span>) is larger than the new upper limit (<span class="math notranslate nohighlight">\(u=-9\)</span>). There is nothing wrong with this and we will continue the calculation in the next step as is. However, it is possible to switch limits of integration using the second <a class="reference internal" href="definite_riemann.html#def-int-properties"><span class="std std-ref">Properties of the Definite Integral</span></a>. Specifically,</p>
 <div class="math notranslate nohighlight">
 \[ -\frac{2}{3}\int_{u=3}^{u=-9} e^{u} ~du = \frac{2}{3}\int_{u=-9}^{u=3} e^{u} ~du.\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 5:</strong> Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 5:</strong>   Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   -\frac{2}{3}\int_{u=3}^{u=-9} e^{u} ~du
@@ -596,33 +614,34 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ \int e^{ax} ~dx = \frac{1}{a}e^{ax} + C ~~~~~ \hbox{for } a\neq 0.\]</div>
 </div>
+</div>
 </section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Using substitution</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_{1}^{3} x\sqrt{3x^2-2}~dx\)</span>.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Based on rewriting the integral in the following form</p>
 <div class="math notranslate nohighlight">
 \[\int_{x=1}^{x=3} (3x^2-2)^{1/2} ~x ~dx\]</div>
 <p class="sd-card-text">let <span class="math notranslate nohighlight">\(u = 3x^2-2\)</span> and <span class="math notranslate nohighlight">\(du = 6x ~dx\)</span>, or equivalently <span class="math notranslate nohighlight">\(\dfrac{1}{6} du = x ~dx\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Determine the new limits of integration using the substitution <span class="math notranslate nohighlight">\(u = 3x^2-2\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Determine the new limits of integration.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(u = 3x^2-2\)</span>, then</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  \text{When } x=3 ~~&amp;\Longrightarrow~~ u = 3(3)^2 - 2 = 25 \\
-  \text{When } x=1 ~~&amp;\Longrightarrow~~ u = 3(1)^2 - 2 = 1
+  \text{when } x=3 ~~&amp;\Longrightarrow~~ u = 3(3)^2 - 2 = 25 \\
+  \text{when } x=1 ~~&amp;\Longrightarrow~~ u = 3(1)^2 - 2 = 1
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_{x=1}^{x=3} (3x^2-2)^{1/2} ~x ~dx 
@@ -630,49 +649,50 @@ document.write(`
   &amp;= \frac{1}{6}\int_{u=1}^{u=25} u^{1/2} ~du
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 4:</strong> Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \frac{1}{6}\int_{u=1}^{u=25} u^{1/2} ~du 
-  &amp;= \frac{1}{6}\cdot\frac{2}{3}u^{3/2}\Biggr|_1^{25} &amp;&amp; \hbox{Power rule}\\
-  &amp;= \frac{1}{9}u^{3/2}\Biggr|_1^{25} &amp;&amp; \hbox{Simplify}\\
-  &amp;= \frac{1}{9}(25^{3/2} - 1^{3/2}) &amp;&amp; \hbox{Plug in limits of integration}\\
-  &amp;= \frac{1}{9}(5^{3} - 1) &amp;&amp; \hbox{Since $25^{3/2} = (25^{1/2})^3 = 5^3$}\\
+  &amp;= \frac{1}{6}\cdot\frac{2}{3}u^{3/2}\Biggr|_1^{25} &amp;&amp; \text{power rule}\\
+  &amp;= \frac{1}{9}u^{3/2}\Biggr|_1^{25} &amp;&amp; \text{simplify}\\
+  &amp;= \frac{1}{9}(25^{3/2} - 1^{3/2}) &amp;&amp; \text{plug in limits of integration}\\
+  &amp;= \frac{1}{9}(5^{3} - 1) &amp;&amp; \text{since $25^{3/2} = (25^{1/2})^3 = 5^3$}\\
   &amp;= 124/9
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore,</p>
 <div class="math notranslate nohighlight">
 \[\int_{1}^{3} x\sqrt{3x^2-2}~dx = 124/9.\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Using substitution</p>
 <p>Evaluate <span class="math notranslate nohighlight">\(\displaystyle \int_{0}^{2} \frac{e^x}{1+e^x} ~dx\)</span>.</p>
-</div>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Identify a suitable substitution.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Based on rewriting the integral in the following form</p>
 <div class="math notranslate nohighlight">
 \[\int_{x=0}^{x=2} (1+e^x)^{-1} ~e^x ~dx\]</div>
 <p class="sd-card-text">let <span class="math notranslate nohighlight">\(u = 1+e^x\)</span> and <span class="math notranslate nohighlight">\(du = e^x ~dx\)</span>.</p>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Determine the new limits of integration using the substitution <span class="math notranslate nohighlight">\(u = 1+e^x\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Determine the new limits of integration.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If <span class="math notranslate nohighlight">\(u = 1+e^x\)</span>, then</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  \text{When } x=2 ~~&amp;\Longrightarrow~~ u = 1+e^2 \\
-  \text{When } x=0 ~~&amp;\Longrightarrow~~ u = 1+e^0 = 2
+  \text{when } x=2 ~~&amp;\Longrightarrow~~ u = 1+e^2 \\
+  \text{when } x=0 ~~&amp;\Longrightarrow~~ u = 1+e^0 = 2
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Rewrite the integral in terms of <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(du\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_{x=0}^{x=2} (1+e^x)^{-1} ~e^x ~dx
@@ -680,21 +700,23 @@ document.write(`
   &amp;= \int_{u=2}^{u=1+e^2} \frac{1}{u} ~du
 \end{align*}\]</div>
 </div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 4:</strong> Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Evaluate the integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_{u=2}^{u=1+e^2} \frac{1}{u} ~du 
   &amp;= \ln|u| \Big|_2^{1+e^2} \\
-  &amp;=  \ln(1+e^2)-\ln(2) &amp;&amp; \hbox{Plug in limits of integration}\\
-  &amp;= \ln\left(\frac{1+e^2}{2}\right)&amp;&amp; \text{Since $\ln(m/n) = \ln(m) - \ln(n)$}
+  &amp;=  \ln(1+e^2)-\ln(2) &amp;&amp; \text{plug in limits of integration}\\
+  &amp;= \ln\left(\frac{1+e^2}{2}\right)&amp;&amp; \text{since $\ln(m/n) = \ln(m) - \ln(n)$}
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore,</p>
 <div class="math notranslate nohighlight">
 \[\int_{0}^{2} \frac{e^x}{1+e^x} ~dx = \ln\left(\frac{1+e^2}{2}\right).\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -761,11 +783,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-limits-of-integration-via-substitution">Changing the Limits of Integration via Substitution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-the-limits-of-integration-via-substitution">Changing the Limits of Integration via Substitution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

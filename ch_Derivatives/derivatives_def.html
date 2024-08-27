@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -521,6 +524,32 @@ if the limit exists.
 <p class="sd-card-text">There is a horizontal x-axis with points a and a+h marked.  There is a vertical y-axis with the points f(a) and f(a+h) marked.  The graph of a generic function is drawn.  The point (a,f(a)) is marked by a red dot on the graph of the function.  The point (a+h, f(a+h)) is marked by a green dot on the graph of the function.  A red line is drawn through the points (a,f(a)) and (a+h,f(a+h)) and is labeled as the secant line.</p>
 </div>
 </details></div>
+<!--
+\begin{tikzpicture}[scale=1.5]
+
+\draw[black,fill=white] (-1.6,-0.6) rectangle (4.7,3.2);
+
+\draw[->] (-0.5,0) -- (4.5,0) node[below] {$x$};
+\draw[->] (0,-0.5) -- (0,3) node[right] {$y$};
+
+\draw[dashed,lightgray] (1,0) |- (0,1.1);
+\draw[dashed,lightgray] (3,0) |- (0,1.9);
+
+
+\draw[domain=-0.5:4.5,smooth,variable=\x,black,ultra thick,samples=200] plot ({\x},{ (\x-4)*(4-\x)/10 + 2});
+
+\draw[domain=-0.5:4.5,smooth,variable=\x,red,ultra thick,samples=200] plot ({\x},{ 0.4*(\x-1) + 1.1}) node[left] {secant line~~~~};
+
+\draw [black,fill=red] (1,1.1) circle (2pt);
+\draw [black,fill=green] (3,1.9) circle (2pt);
+
+\draw [thick] (1,2pt) -- (1,-2pt) node[below] {$a$};
+\draw [thick] (3,2pt) -- (3,-2pt) node[below] {$a+h$};
+
+\draw [thick] (-2pt,1.1) -- (2pt,1.1) node[left] {$f(a)~$};
+\draw [thick] (-2pt,1.9) -- (2pt,1.9) node[left] {$f(a+h)~$};
+\end{tikzpicture}
+-->
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
 <p>The <em><strong>instantaneous rate of change</strong></em> of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\(x=a\)</span>, which is also the <em><strong>slope of the line tangent to the graph of <span class="math notranslate nohighlight">\(f(x)\)</span> at <span class="math notranslate nohighlight">\((a,f(a))\)</span></strong></em>, is given by</p>
@@ -544,12 +573,40 @@ if the limit exists.
 <p class="sd-card-text">There is a horizontal x-axis with point a marked.  There is a vertical y-axis with the point f(a) marked.  The graph of a generic function is drawn.  The point (a,f(a)) is marked by a red dot on the graph of the function.  A gray line is drawn through the point (a,f(a)) and is labeled as the tangent line.  The tangent line is drawn so that it closely resembles the graph of the function near the point (a,f(a)).</p>
 </div>
 </details></div>
+<!--
+\begin{tikzpicture}[scale=1.5]
+
+\draw[black,fill=white] (-1.6,-0.6) rectangle (4.7,3.2);
+
+\draw[->] (-0.5,0) -- (4.5,0) node[below] {$x$};
+\draw[->] (0,-0.5) -- (0,3) node[right] {$y$};
+
+\draw[dashed,lightgray] (1,0) |- (0,1.1);
+
+\draw[domain=-0.5:4.5,smooth,variable=\x,black,ultra thick,samples=200] plot ({\x},{ (\x-4)*(4-\x)/10 + 2});
+
+
+\draw[domain=-0.5:4.25,smooth,variable=\x,gray,ultra thick,samples=200] plot ({\x},{ 0.6*(\x-1) + 1.1}) node[below left] {tangent line~~~~~~~};
+
+\draw [black,fill=red] (1,1.1) circle (2pt);
+
+\draw [thick] (1,2pt) -- (1,-2pt) node[below] {$a$};
+
+\draw [thick] (-2pt,1.1) -- (2pt,1.1) node[left] {$f(a)~$};
+\end{tikzpicture}
+-->
 <div class="info admonition">
 <p class="admonition-title">The Limit Definition of the Derivative</p>
 <p>The <em><strong>derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span></strong></em>, denoted <span class="math notranslate nohighlight">\(f'(x)\)</span>, is the function defined as</p>
 <div class="math notranslate nohighlight">
 \[f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h},\]</div>
 <p>and the domain of <span class="math notranslate nohighlight">\(f'(x)\)</span> is the set of all <span class="math notranslate nohighlight">\(x\)</span> where the limit exists.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Notation</p>
+<p>For a given function, <span class="math notranslate nohighlight">\(y = f(x)\)</span>, each of the following symbols refers to the derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[f'(x) \hspace{30pt} y' \hspace{30pt} \frac{d}{dx}f(x) \hspace{30pt} \frac {dy}{dx}\]</div>
 </div>
 <div class="info admonition">
 <p class="admonition-title">The Equation of a Tangent Line</p>

@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -507,7 +510,7 @@ document.write(`
 <p>The act of pulling out common factors from a sum can be thought of as applying the distributive property of multiplication in reverse.</p>
 <div class="math notranslate nohighlight">
 \[AB + AC = A(B+C)\]</div>
-<p>e.g., <span class="math notranslate nohighlight">\(21 + 14 = 7\cdot 3 + 7\cdot 2 = 7(3+2)\)</span></p>
+<p>For example, <span class="math notranslate nohighlight">\(21 + 14 = 7\cdot 3 + 7\cdot 2 = 7(3+2)\)</span>.</p>
 </div>
 <div class="important admonition">
 <p class="admonition-title">Video Resource</p>
@@ -635,11 +638,9 @@ A review of identifying and pulling out the greatest common factors when factori
 &amp;= A^2 \cancel{- AB} \cancel{+ AB} - B^2\\
 &amp;= A^2 - B^2
 \end{align*}\]</div>
-<p>We refer to <span class="math notranslate nohighlight">\(A^2-B^2\)</span> as a difference of squares and can reinterpret the above calculation as a way to factor any difference of squares.</p>
+<p>We refer to <span class="math notranslate nohighlight">\(A^2-B^2\)</span> as a difference of squares, which can always be factored in the following manner.</p>
 <div class="math notranslate nohighlight">
-\[
-\boxed{A^2-B^2 = (A+B)(A-B)}
-\]</div>
+\[A^2-B^2 = (A+B)(A-B)\]</div>
 </div>
 <section id="example-4">
 <h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
@@ -782,8 +783,8 @@ x^2 - 25
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text">Check Your Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">After factoring a polynomial, it’s always a good idea to check your work by expanding the product using the distributive property of multiplication and/or the FOIL method:</p>
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">After factoring a polynomial, it’s always a good idea to check our work by expanding the product and making sure we get back what we started with.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 (2x-1)(3x+5)
@@ -855,7 +856,7 @@ x^2 - 25
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text">Check Your Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 (x-4)(x-9)
@@ -870,7 +871,7 @@ x^2 - 25
 <h2>A Special Case of the AC Grouping Method<a class="headerlink" href="#a-special-case-of-the-ac-grouping-method" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">Important Observation</p>
-<p>If the coefficient of <span class="math notranslate nohighlight">\(x^2\)</span> is one (i.e., <span class="math notranslate nohighlight">\(a=1\)</span> in <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span>), then Step 1 of the <span class="math notranslate nohighlight">\(AC\)</span> grouping method is to find two numbers that multiply to <span class="math notranslate nohighlight">\(c\)</span> and sum to <span class="math notranslate nohighlight">\(b\)</span>. Once these numbers have been found, then the factorization can be written as</p>
+<p>If the coefficient of <span class="math notranslate nohighlight">\(x^2\)</span> is one (i.e., <span class="math notranslate nohighlight">\(a=1\)</span> in <span class="math notranslate nohighlight">\(ax^2 + bx + c\)</span>), then Step 1 of the <span class="math notranslate nohighlight">\(AC\)</span> grouping method is to find two numbers that multiply to <span class="math notranslate nohighlight">\(c\)</span> and sum to <span class="math notranslate nohighlight">\(b\)</span>. If those numbers exist, call them <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(s\)</span>, then the factorization can be written as</p>
 <div class="math notranslate nohighlight">
 \[x^2 + bx + c = (x+r)(x+s)\]</div>
 <p>where <span class="math notranslate nohighlight">\(r+s = b\)</span> and <span class="math notranslate nohighlight">\(rs = c\)</span>.</p>
@@ -910,7 +911,7 @@ x^2 - 25
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text">Check Your Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 (x+2)(x-6)
@@ -973,7 +974,7 @@ x^2 - 25
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
 <summary class="sd-summary-title sd-card-header sd-bg-light sd-bg-text-light">
-<span class="sd-summary-text">Check Your Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Check Our Work.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 7x^2(x+2)(x+3)

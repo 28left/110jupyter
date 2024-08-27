@@ -210,6 +210,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
@@ -288,7 +289,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
 </ul>
@@ -305,6 +306,7 @@
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Area Between Two Curves</a></li>
 <li class="toctree-l2"><a class="reference internal" href="applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applicationintegrals_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -312,6 +314,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
 </ul>
 </details></li>
 </ul>
@@ -466,13 +469,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-the-area-of-a-region-bounded-by-two-curves">Computing the Area of a Region Bounded by Two Curves</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-finding-the-area-between-two-curves">When Finding the Area Between Two Curves</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-the-area-of-a-region-bounded-by-two-curves">Computing the Area of a Region Bounded by Two Curves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -488,6 +492,9 @@ document.write(`
 <h1>Area Between Two Curves<a class="headerlink" href="#area-between-two-curves" title="Link to this heading">#</a></h1>
 <section id="computing-the-area-of-a-region-bounded-by-two-curves">
 <h2>Computing the Area of a Region Bounded by Two Curves<a class="headerlink" href="#computing-the-area-of-a-region-bounded-by-two-curves" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Computing the Area between Two Curves</p>
+<p>Suppose <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> are continuous functions with <span class="math notranslate nohighlight">\(f(x) \geq g(x)\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_1.png"><img alt="../_images/pic_applicationintegrals_area_between_curves_1.png" src="../_images/pic_applicationintegrals_area_between_curves_1.png" style="width: 600px;" /></a>
 <figcaption>
@@ -499,17 +506,13 @@ document.write(`
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x axis with the points a and b labeled, and a vertical y axis with no points labeled. The graphs of two functions are plotted. One, labeled f(x), is above the other, labeled g(x). The curve representing f(x) goes up and down with its concavity downward and then upward moving from left to right. The curve representing g(x) goes down and then up, with its concavity always up. The region between the curves, starting at x value a and ending at x value b, is shaded yellow and labeled R.</p>
 </div>
-</details><div class="info admonition">
-<p class="admonition-title">Computing the Area between Two Curves</p>
-<p>Suppose <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> are continuous functions with <span class="math notranslate nohighlight">\(f(x) \geq g(x)\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span>.</p>
-<p>Then the area of the region, <span class="math notranslate nohighlight">\(R\)</span>, bounded above by <span class="math notranslate nohighlight">\(y=f(x)\)</span> and below by <span class="math notranslate nohighlight">\(y=g(x)\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span> is given by</p>
+</details><p>Then the area of the region, <span class="math notranslate nohighlight">\(R\)</span>, bounded above by <span class="math notranslate nohighlight">\(y=f(x)\)</span> and below by <span class="math notranslate nohighlight">\(y=g(x)\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span> is given by</p>
 <div class="math notranslate nohighlight">
 \[\int_a^b f(x)-g(x) ~dx.\]</div>
 </div>
-</section>
-<section id="when-finding-the-area-between-two-curves">
-<h2>When Finding the Area Between Two Curves<a class="headerlink" href="#when-finding-the-area-between-two-curves" title="Link to this heading">#</a></h2>
-<p>It’s extremely important to draw the region in question to make sure the above formula is applied correctly. While it’s not necessary to draw each curve using all of the techniques built up in the Curve Sketching packet, the curves should be drawn with enough detail to clearly identify the top and bottom functions and the corresponding boundaries.</p>
+<div class="note admonition">
+<p class="admonition-title">How to Find the Area Between Two Curves</p>
+<p>It’s extremely important to draw the region in question to make sure the above formula is applied correctly. While it’s not necessary to draw each curve using all of the techniques built up in the section on <a class="reference internal" href="../ch_Curvesketching/curvesketching_sketching.html#cur-sketching"><span class="std std-ref">Curve Sketching</span></a>, the curves should be drawn with enough detail to clearly identify the top and bottom functions and the corresponding boundaries.</p>
 <p>The following guidelines should be applied to make sure the area of the region is computed correctly.</p>
 <ul class="simple">
 <li><p>Find all points of intersection of <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> on <span class="math notranslate nohighlight">\([a,b]\)</span>.</p></li>
@@ -519,14 +522,13 @@ document.write(`
 <li><p>Calculate the area of each subregion using the formula above.</p></li>
 <li><p>Combine the areas of the different subregions.</p></li>
 </ul>
-</section>
+</div>
 <section id="example-1">
-<h2>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h2>
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Area between two curves on given interval</p>
 <p>Find a sum of integrals that represents the area of the region bounded by <span class="math notranslate nohighlight">\(y=f(x)\)</span> and <span class="math notranslate nohighlight">\(y=g(x)\)</span> on <span class="math notranslate nohighlight">\([1,7]\)</span> as shown below.</p>
 <a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_2.png"><img alt="Area between $f(x)$ and $g(x)$ on interval $[1,7]$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_2.png" style="width: 500px;" /></a>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -534,14 +536,14 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Find the points of intersection.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find the points of intersection.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Notice that the functions intersect each other at <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(x=6\)</span>. Therefore, we need to break up the original interval, <span class="math notranslate nohighlight">\([1,7]\)</span>, into the following subintervals</p>
 <div class="math notranslate nohighlight">
 \[[1,2], ~[2,6], ~\hbox{and} ~[6,7].\]</div>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Determine which function is larger on each subinterval and calculate the area of each subregion.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Determine which function is larger on each subinterval and calculate the area of each subregion.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ul>
 <li><p class="sd-card-text"><span class="math notranslate nohighlight">\([1,2]\)</span>: On this interval, <span class="math notranslate nohighlight">\(f(x) \geq g(x)\)</span>.  Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(f(x)\)</span> and <span class="math notranslate nohighlight">\(g(x)\)</span> on <span class="math notranslate nohighlight">\([1,2]\)</span> is</p>
 <div class="math notranslate nohighlight">
@@ -559,35 +561,39 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Combine the areas of the different subregions.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Combine the areas of the different subregions.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The area of the region described above is given by</p>
 <div class="math notranslate nohighlight">
 \[\int_1^2 f(x) - g(x)~dx + \int_2^6 g(x) - f(x) ~dx + \int_6^7 f(x)-g(x)~dx.\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-2">
-<h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
-<p class="admonition-title">Area between <span class="math notranslate nohighlight">\(y = x^2-x\)</span> and <span class="math notranslate nohighlight">\(y = 2\)</span> on given interval</p>
+<p class="admonition-title">Area between two curves on given interval</p>
 <p>Find the area of the region bounded by <span class="math notranslate nohighlight">\(y = x^2-x\)</span> and <span class="math notranslate nohighlight">\(y = 2\)</span> on the interval <span class="math notranslate nohighlight">\([0, 3]\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find the points of intersection.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">The two curves intersect each other when <span class="math notranslate nohighlight">\(x^2-x = 2\)</span>, or equivalently when</p>
 <div class="math notranslate nohighlight">
 \[x^2 - x - 2 = (x-2)(x+1)\]</div>
 <p class="sd-card-text">equals zero, which happens when <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(x=-1\)</span>. Notice that <span class="math notranslate nohighlight">\(x=-1\)</span> is not relevant since it is not on the interval <span class="math notranslate nohighlight">\([0,3]\)</span>.</p>
-<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_3.png"><img alt="Point of intersection of the two curves" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_3.png" style="width: 500px;" /></a>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Use the points of intersection to help sketch the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_3.png"><img alt="Point of intersection of the two curves" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_3.png" style="width: 500px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x axis with points labeled one, two, and three, and a vertical y axis with no points labeled. The graphs of two functions are plotted. The first is the constant function y = 2, which begins above the second which is y=x^2-x. The second, quadratic, function begins below the first function, dips below the x axis, and meets the second function at x = 2, and is above it to the right of x=2. The region where x^2-x &lt; 2, beginning at x=0 and ending at x=2, is shaded yellow and labeled R_1, and the region where x^2-x &gt; 2, beginning at x=2 and ending at x=3, is shaded yellow and labeled R_2.</p>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Calculate the area of each subregion.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Calculate the area of each subregion.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
 <li><p class="sd-card-text">Area of region <span class="math notranslate nohighlight">\(R_1\)</span>. Note that <span class="math notranslate nohighlight">\(2\geq x^2 - x\)</span> on <span class="math notranslate nohighlight">\([0,2]\)</span>.</p></li>
 </ul>
@@ -611,121 +617,138 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Combine the areas of the different subregions.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The area of the region bounded by <span class="math notranslate nohighlight">\(y = x^2-x\)</span> and <span class="math notranslate nohighlight">\(y = 2\)</span> on <span class="math notranslate nohighlight">\([0, 3]\)</span> is <span class="math notranslate nohighlight">\(\frac{10}{3} + \frac{11}{6} = 31/6.\)</span></p>
+<span class="sd-summary-text"><strong>Step 4:</strong>   Combine the areas of the different subregions.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The area of the region bounded by <span class="math notranslate nohighlight">\(y = x^2-x\)</span> and <span class="math notranslate nohighlight">\(y = 2\)</span> on <span class="math notranslate nohighlight">\([0, 3]\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\frac{10}{3} + \frac{11}{6} = 31/6.\]</div>
 </div>
 </details><div class="warning admonition">
-<p class="admonition-title">Observation</p>
-<p>Observe that the area of the region is not equal to <span class="math notranslate nohighlight">\(\int_0^3 2 - (x^2-x) ~dx  = 3/2\)</span>. This underscores the importance of drawing the region <strong>before</strong> setting up the integral.</p>
+<p class="admonition-title">Caution</p>
+<p>Because the relative position of the curves change at the point of intersection, the area of the region cannot be computed via a single definite integral like the following:</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \int_0^3 2 - (x^2-x) ~dx  = 3/2.\]</div>
+<p>This underscores the importance of drawing the region <strong>before</strong> setting up the integral.</p>
+</div>
 </div>
 </section>
 <section id="example-3">
-<h2>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h2>
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Area enclosed by three curves</p>
 <p>Find the area of the bounded region enclosed by <span class="math notranslate nohighlight">\(y=\dfrac{2}{\sqrt{x}}\)</span>, <span class="math notranslate nohighlight">\(y= \dfrac{2}{x^3}\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find the points of intersection.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  \frac{2}{\sqrt{x}} &amp;= \frac{2}{x^3} &amp;&amp; \text{Set the equations equal to each other}\\
-  2x^3 &amp;= 2\sqrt{x} &amp;&amp; \text{Cross multiply}\\
-  x^3&amp;=\sqrt{x} &amp;&amp; \text{Divide both sides by 2}\\
-  x^\frac{5}{2} &amp;= 1 &amp;&amp; \text{Divide both sides by }\sqrt{x}\\
-  x&amp;=1 &amp;&amp; \hbox{Raise both sides to the power of $2/5$}
+  \frac{2}{\sqrt{x}} &amp;= \frac{2}{x^3} &amp;&amp; \text{set the equations equal to each other}\\
+  2x^3 &amp;= 2\sqrt{x} &amp;&amp; \text{cross multiply}\\
+  x^3&amp;=\sqrt{x} &amp;&amp; \text{divide both sides by 2}\\
+  x^\frac{5}{2} &amp;= 1 &amp;&amp; \text{divide both sides by }\sqrt{x}\\
+  x&amp;=1 &amp;&amp; \hbox{raise both sides to the power of $2/5$}
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the curves intersect only when <span class="math notranslate nohighlight">\(x=1\)</span>.  And since only one vertical line, <span class="math notranslate nohighlight">\(x=2\)</span>, was given that bounds the region, we must use the point of intersection at <span class="math notranslate nohighlight">\(x=1\)</span> as the other vertical line that bounds the region.</p>
-<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_4.png"><img alt="Point of intersection at $x=1$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_4.png" style="width: 500px;" /></a>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Use the points of intersection to help sketch the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_4.png"><img alt="Point of intersection at $x=1$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_4.png" style="width: 500px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x-axis with the points 1 and 2 labeled, and a vertical y-axis with no points labeled. The graphs of two decreasing, concave up functions are plotted. The first function, y=2/x^3, begins above the second, 2/sqrt(2). The two meet at x=1 and to the right of x=1 y=2/sqrt(x) is above y=2/x^3. The region between the two functions from x=1 and x=2 is shaded yellow and is not labeled.</p>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Calculate the area of the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(\dfrac{2}{\sqrt{x}} \geq \dfrac{2}{x^3}\)</span> on <span class="math notranslate nohighlight">\([1,2]\)</span> and therefore the area of the region is given by <span class="math notranslate nohighlight">\(\int_1^2 \frac{2}{\sqrt{x}} - \frac{2}{x^3} ~dx\)</span>.</p>
+<span class="sd-summary-text"><strong>Step 3:</strong>   Calculate the area of the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(\dfrac{2}{\sqrt{x}} \geq \dfrac{2}{x^3}\)</span> on <span class="math notranslate nohighlight">\([1,2]\)</span> and therefore the area of the region is given by <span class="math notranslate nohighlight">\(\displaystyle \int_1^2 \frac{2}{\sqrt{x}} - \frac{2}{x^3} ~dx\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int_1^2 \frac{2}{\sqrt{x}} - \frac{2}{x^3} ~dx
   &amp;= \int_1^2 2x^{-1/2} - 2x^{-3} ~dx \\
-  &amp;= \left(2\frac{x^{1/2}}{1/2} - 2 \frac{x^{-2}}{-2} \right) \Biggr|_1^2 &amp;&amp; \hbox{Power rule}\\
-  &amp;= \left(4\sqrt{x} + \frac{1}{x^2} \right) \Biggr|_1^2 &amp;&amp; \hbox{Simplify}\\
+  &amp;= \left(2\frac{x^{1/2}}{1/2} - 2 \frac{x^{-2}}{-2} \right) \Biggr|_1^2 &amp;&amp; \text{power rule}\\
+  &amp;= \left(4\sqrt{x} + \frac{1}{x^2} \right) \Biggr|_1^2 &amp;&amp; \text{simplify}\\
   &amp;= \left(4 \sqrt{2} + \frac{1}{4}\right) - (4 + 1) \\
   &amp;= 4 \sqrt{2} - \frac{19}{4}
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(y=12\sqrt{x}\)</span>, <span class="math notranslate nohighlight">\(y=2/x^3\)</span>, and <span class="math notranslate nohighlight">\(x=2\)</span> is <span class="math notranslate nohighlight">\(4 \sqrt{2} - 19/4\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-4">
-<h2>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h2>
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Area enclosed by two curves with two points of intersection</p>
 <p>Find the area of the bounded region enclosed by <span class="math notranslate nohighlight">\(y=x\)</span> and <span class="math notranslate nohighlight">\(y=x^2\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find the points of intersection.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  x&amp;=x^2 &amp;&amp; \text{Set the two functions equal to each other}\\
-  0&amp;=x^2-x &amp;&amp; \text{Move everything to one side}\\
-  0&amp;=x(x-1) &amp;&amp; \text{Factor}
+  x&amp;=x^2 &amp;&amp; \text{set the two functions equal to each other}\\
+  0&amp;=x^2-x &amp;&amp; \text{move everything to one side}\\
+  0&amp;=x(x-1) &amp;&amp; \text{factor}
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the curves intersect when <span class="math notranslate nohighlight">\(x=0\)</span> and when <span class="math notranslate nohighlight">\(x=1\)</span>.</p>
-<p class="sd-card-text">Notice that the points of intersection are used as the left and right boundaries of our region.</p>
-<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_5.png"><img alt="Points of intersection at $x=0$ and $x=1$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_5.png" style="width: 500px;" /></a>
+<p class="sd-card-text">Notice that the points of intersection will be used as the left and right boundaries of our region.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Use the points of intersection to help sketch the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_5.png"><img alt="Points of intersection at $x=0$ and $x=1$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_5.png" style="width: 500px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x axis with the point 1 labeled and a vertical y axis with no points labeled. The graphs of two functions are plotted. The first function, the increasing linear function y=x is above the other function, the increasing quadratic function y=x^2, from the y axis to x=1. The region between the two functions from the y axis to x=1 in shaded yellow and is not labeled.</p>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Calculate the area of the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(x \geq x^2\)</span> on <span class="math notranslate nohighlight">\([0,1]\)</span> and therefore the area of the region is given by <span class="math notranslate nohighlight">\(\int_0^1 x-x^2 ~dx\)</span>.</p>
+<span class="sd-summary-text"><strong>Step 3:</strong>   Calculate the area of the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Note that <span class="math notranslate nohighlight">\(x \geq x^2\)</span> on <span class="math notranslate nohighlight">\([0,1]\)</span> and therefore the area of the region is given by <span class="math notranslate nohighlight">\(\displaystyle \int_0^1 x-x^2 ~dx\)</span>.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
   \int^1_0 x-x^2 ~dx
-  &amp;= \left(\frac{x^2}{2} - \frac{x^3}{3}\right)\Biggr|^1_0 &amp;&amp; \text{Compute the antiderivative}\\
-  &amp;= \left(\frac{1^2}{2} - \frac{1^3}{3}\right)-\left(\frac{0^2}{2} + \frac{0^3}{3}\right) &amp;&amp; \text{Plug in the limits of integration}\\
+  &amp;= \left(\frac{x^2}{2} - \frac{x^3}{3}\right)\Biggr|^1_0 &amp;&amp; \text{compute the antiderivative}\\
+  &amp;= \left(\frac{1^2}{2} - \frac{1^3}{3}\right)-\left(\frac{0^2}{2} + \frac{0^3}{3}\right) &amp;&amp; \text{plug in the limits of integration}\\
   &amp;= \frac{1}{2} - \frac{1}{3} \\
   &amp;= 1/6
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the area of the region bounded by <span class="math notranslate nohighlight">\(y=x\)</span> and <span class="math notranslate nohighlight">\(y=x^2\)</span> is <span class="math notranslate nohighlight">\(1/6\)</span>.</p>
 </div>
-</details></section>
+</details></div>
+</section>
 <section id="example-5">
-<h2>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h2>
+<h3>Example 5<a class="headerlink" href="#example-5" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Area enclosed by two curves with three points of intersection</p>
 <p>Find the area of the bounded region enclosed by <span class="math notranslate nohighlight">\(y = x^3\)</span> and <span class="math notranslate nohighlight">\(y = 4x\)</span>.</p>
-</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong> Find the points of intersection and use them to help sketch the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find the points of intersection.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-  x^3 &amp;= 4x &amp;&amp; \text{Set the functions equal to each other}\\
-  x^3 - 4x &amp;= 0 &amp;&amp; \text{Subtract $4x$ from both sides}\\
-  x(x^2-4) &amp;= 0 &amp;&amp; \text{Factor out an }x\\
-  x(x-2)(x+2) &amp;= 0 &amp;&amp; \text{Factor } x^2 - 4
+  x^3 &amp;= 4x &amp;&amp; \text{set the functions equal to each other}\\
+  x^3 - 4x &amp;= 0 &amp;&amp; \text{subtract $4x$ from both sides}\\
+  x(x^2-4) &amp;= 0 &amp;&amp; \text{factor out an }x\\
+  x(x-2)(x+2) &amp;= 0 &amp;&amp; \text{factor } x^2 - 4
 \end{align*}\]</div>
 <p class="sd-card-text">Therefore, the curves intersect when <span class="math notranslate nohighlight">\(x=-2\)</span>, when <span class="math notranslate nohighlight">\(x=0\)</span>, and when <span class="math notranslate nohighlight">\(x=2\)</span>.</p>
-<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_6.png"><img alt="Points of intersection at $x=-2$, $x=0$, and $x=2$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_6.png" style="width: 500px;" /></a>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Use the points of intersection to help sketch the region.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_applicationintegrals_area_between_curves_6.png"><img alt="Points of intersection at $x=-2$, $x=0$, and $x=2$" class="align-center" src="../_images/pic_applicationintegrals_area_between_curves_6.png" style="width: 500px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">There is a horizontal x axis with the points -2 and 2 labeled and a vertical y axis with no points labeled. The graphs of two functions are plotted. The increasing linear function 4x is below the increasing cubic function y=x^3 from x=-2 to the y-axis, and it is above the cubic function from the y-axis to x=2. The area between the curves from x=-2 to the y axis is labeled R_1 and is shaded yellow. The area between the curves from the y axis to x=2 is labeled R_2 and is shaded yellow.</p>
 </div>
+</details></div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 2:</strong> Calculate the area of each subregion.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Calculate the area of each subregion.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <ul class="simple">
 <li><p class="sd-card-text">Area of region <span class="math notranslate nohighlight">\(R_1\)</span>. Note that <span class="math notranslate nohighlight">\(x^3\geq 4x\)</span> on <span class="math notranslate nohighlight">\([-2,0]\)</span>.</p></li>
 </ul>
@@ -749,12 +772,14 @@ document.write(`
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 3:</strong> Combine the areas of the different subregions.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The area of the region bounded by the curves <span class="math notranslate nohighlight">\(y = x^3\)</span> and <span class="math notranslate nohighlight">\(y = 4x\)</span> on the interval <span class="math notranslate nohighlight">\([-1, 3]\)</span> is</p>
+<span class="sd-summary-text"><strong>Step 3:</strong>   Combine the areas of the different subregions.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The area of the region bounded by the curves <span class="math notranslate nohighlight">\(y = x^3\)</span> and <span class="math notranslate nohighlight">\(y = 4x\)</span> is</p>
 <div class="math notranslate nohighlight">
 \[4 + 4 = 8.\]</div>
 </div>
-</details></section>
+</details></div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -821,13 +846,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-the-area-of-a-region-bounded-by-two-curves">Computing the Area of a Region Bounded by Two Curves</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-finding-the-area-between-two-curves">When Finding the Area Between Two Curves</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-the-area-of-a-region-bounded-by-two-curves">Computing the Area of a Region Bounded by Two Curves</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-5">Example 5</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
