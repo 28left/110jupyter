@@ -40,7 +40,7 @@ $$
 For any real number $c$, 
 
 $$
-\frac{d}{dx}[cf(x)] = c\frac{d}{dx}[f(x)]
+\frac{d}{dx}[cf(x)] = cf'(x)
 $$
 ```
 
@@ -48,7 +48,7 @@ $$
 :class: info
 
 $$
-\frac{d}{dx}[f(x)\pm g(x)] = \frac{d}{dx}[f(x)]\pm \frac{d}{dx}[g(x)]
+\frac{d}{dx}[f(x)\pm g(x)] = f'(x) \pm g'(x)
 $$
 ```
 

@@ -22,13 +22,13 @@ If the fractions have a common denominator, then they can be combined into a sin
 
 $$ \frac{A}{B} \pm \frac{C}{B} = \frac{A \pm C}{B} $$
 
-e.g., $\dfrac{2}{3} + \dfrac{5}{3} = \dfrac{7}{3}$
+For example, $\dfrac{2}{3} + \dfrac{5}{3} = \dfrac{7}{3}$.
 
 If the fractions do not have a common denominator, then a common denominator can be formed by multiplying the denominators together.
 
 $$ \frac{A}{B} \pm \frac{C}{D} = \frac{AD}{BD} \pm \frac{BC}{BD}  = \frac{AD \pm BC}{BD} $$
 
-e.g., $\dfrac{2}{3} - \dfrac{5}{7} = \dfrac{2\cdot 7- 3\cdot5}{3\cdot 7} = -\dfrac{1}{21}$
+For example, $\dfrac{2}{3} - \dfrac{5}{7} = \dfrac{2\cdot 7- 3\cdot5}{3\cdot 7} = -\dfrac{1}{21}$.
 ```
 
 
@@ -39,7 +39,7 @@ To multiply two fractions, multiply the numerators and multiply the denominators
 
 $$\frac{A}{B} \times \frac{C}{D} = \frac{AC}{BD}$$
 
-e.g., $\dfrac{2}{3} \times \dfrac{5}{7} = \dfrac{2\cdot 5}{3\cdot 7} = \dfrac{10}{21}$
+For example, $\dfrac{2}{3} \times \dfrac{5}{7} = \dfrac{2\cdot 5}{3\cdot 7} = \dfrac{10}{21}$.
 ```
 
 
@@ -50,7 +50,7 @@ To divide two fractions, remember that division is the same as multiplication by
 
 $$\frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \times \frac{D}{C} = \frac{AD}{BC}$$
 
-e.g., $\dfrac{2}{3} \div \dfrac{5}{7} = \dfrac{2}{3} \times \dfrac{7}{5} = \dfrac{14}{15}$
+For example, $\dfrac{2}{3} \div \dfrac{5}{7} = \dfrac{2}{3} \times \dfrac{7}{5} = \dfrac{14}{15}$.
 ```
 
 <!--
@@ -235,7 +235,7 @@ $$
 A(B+C) = AB + AC
 $$
 
-e.g., $7(3+2) = 7\cdot 3 + 7\cdot 2$
+For example, $7(3+2) = 7\cdot 3 + 7\cdot 2$.
 ```
 
 ```{admonition} Important

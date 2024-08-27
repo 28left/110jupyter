@@ -110,7 +110,7 @@ $$x \leq 5/3$$
 and therefore, the domain of $f\circ g$ is $(-\infty,5/3]$.
 ```
 
-```{dropdown} **Step 1:** &nbsp; Determine the rule for the composite function &nbsp; $g \circ f$.  
+```{dropdown} **Step 2:** &nbsp; Determine the rule for the composite function &nbsp; $g \circ f$.  
 
 \begin{align*}
 (g \circ f)(x)

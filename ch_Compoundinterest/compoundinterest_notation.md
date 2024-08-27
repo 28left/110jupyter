@@ -57,6 +57,13 @@ Interest is always computed based on the original principal.
 |$I = Prt$| $A = P(1 + rt)$
 -->
 
+```{admonition} Present Value
+:class: info
+
+The _**present value**_ of an investment is the principal investment, $P$, that yields a given accumulated amount, $A$, in the future.
+```
+
+
 ````{admonition} Discrete Compound Interest
 :class: info
 

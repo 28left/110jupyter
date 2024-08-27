@@ -16,20 +16,23 @@ kernelspec:
 
 ## Improper Integrals over $[a, \infty)$ and $(-\infty, b]$
 
-An improper integral is an integral over an unbounded interval and is defined to be the limit of a definite integral.
 
 ```{admonition} Definition
 :class: info
 
-Let $f$ be a continuous function on the unbounded interval $[a, \infty)$. The **improper integral** of $f$ over the interval $[a, \infty)$ is defined by 
+Let $f$ be a continuous function on the unbounded interval $[a, \infty)$. The _**improper integral of $f$ over the interval $[a, \infty)$**_ is defined by 
 
 $$\int_a^\infty f(x) ~dx = \lim_{t \rightarrow \infty} \int_a^t f(x) ~dx$$
 
-if the limit exists. Similarly, the **improper integral** of $f$ over the interval $(-\infty, b]$ is defined by 
+if the limit exists. Similarly, the _**improper integral of $f$ over the interval $(-\infty, b]$**_ is defined by 
 
 $$\int_{-\infty}^b f(x) ~dx = \lim_{s \rightarrow -\infty} \int_s^b f(x) ~dx$$
 if the limit exists.
+
 ```
+
+````{admonition} Geometric Interpretation of an Improper Integral
+:class: info
 
 If an improper integral exists, it corresponds to the area of a region that is unbounded on the left or on the right.
 
@@ -44,13 +47,15 @@ Improper integral unbounded on the right
 ```{dropdown} Long Text Description
 There is a horizontal x axis with the points 1, 3, 5, 6, and 9 labeled. There is a vertical y axis. The decreasing, concave up curve y = f(x) is plotted on these axes. The region between the curve and the x axis, beginning at x = 1 on the left, is shaded yellow.
 ```
-## Example 1
+````
 
-```{admonition} Evaluating an improper integral unbounded on the right
+
+### Example 1
+````{admonition} Improper integral unbounded on the right
 :class: tip
 
 Evaluate $\displaystyle \int_2^\infty \frac{1}{x} ~dx$, if it exists.
-```
+
 
 ```{dropdown} **Step 1:** Evaluate $\displaystyle \int_2^t \frac{1}{x} ~dx$.
 
@@ -72,14 +77,15 @@ Evaluate $\displaystyle \int_2^\infty \frac{1}{x} ~dx$, if it exists.
 
 Therefore, the improper integral does not exist.
 ```
+````
 
-## Example 2
+### Example 2
 
-```{admonition} Evaluating an improper integral unbounded on the left
+````{admonition} Improper integral unbounded on the left
 :class: tip
 
 Evaluate $\displaystyle \int_{-\infty}^{-1} \frac{1}{x^4}~dx$, if it exists.
-```
+
 
 ```{dropdown} **Step 1:** Evaluate $\displaystyle \int_s^{-1} \frac{1}{x^4} ~dx$.
 
@@ -101,14 +107,15 @@ Evaluate $\displaystyle \int_{-\infty}^{-1} \frac{1}{x^4}~dx$, if it exists.
   &= \frac{1}{3} && \hbox{since $\lim\limits_{s\to -\infty} \frac{1}{3s^3} = 0$}
 \end{align*}
 ```
+````
 
-## Example 3
 
-```{admonition} Finding the area under a graph unbounded on the right
+### Example 3
+````{admonition} Finding the area under a graph unbounded on the right
 :class: tip
 
 Find the area of the region under the graph of $f(x) = e^{-x/2}$ for $x \geq 2$.
-```
+
 
 ```{dropdown} **Step 1:** Write the area of the region as an improper integral.
 
@@ -137,6 +144,9 @@ $$\text{Area} =  \int_{2}^{\infty} e^{-x/2}~dx$$
 
 Therefore, the area of the region is $2/e$.
 ```
+````
+
+
 
 ## Improper Integrals over $(-\infty, \infty)$
 
@@ -147,18 +157,22 @@ Let $f$ be a continuous function on $(-\infty,\infty)$. Let $c$ be a real number
 
 $$\int_{\infty}^c f(x)~dx ~~~~\text{ and }~~~~ \int_c^\infty f(x)~dx $$
 
-both exist. Then the **improper integral** of $f$ over $(-\infty, \infty)$ is defined by
+both exist. Then the _**improper integral of $f$ over $(-\infty, \infty)$**_ is defined by
 
 \begin{align*}
   \int_{-\infty}^\infty f(x)~dx
   &= \int_{-\infty}^c f(x)~dx + \int_c^\infty f(x)~dx \\ 
   &= \lim_{s \rightarrow -\infty} \int_s^c f(x)~dx + \lim_{t \rightarrow \infty} \int_c^t f(x)~dx.
 \end{align*}
+
+If the liits exist, the value of the above improper integral is the same regardless of the value we choose for $c$ and therefore the value $c=0$ is typically used.
 ```
 
-The value of the integral is the same regardless of the value we choose for $c$ and therefore the value $c=0$ is typically used.
 
-If an improper integral exists, it corresponds to the area of a region that is unbounded on the left and on the right.
+````{admonition} Geometric Interpretation of an Improper Integral
+:class: info
+
+If the above improper integral exists, it corresponds to the area of a region that is unbounded on the left and on the right.
 
 
 ```{figure} ../images/pic_byparts_improper_2.png
@@ -171,22 +185,29 @@ Improper integral unbounded on the left and the right
 ```{dropdown} Long Text Description
 There is a horizontal x axis with the points -3, -1, 1, 3, 5, and 7 labeled. There is a vertical y axis. The curve y=f(x), which is increasing and concave up as it comes in from the left, becomes increasing and concave down, becomes decreasing and concave down, and then becomes decreasing and concave up as it goes off to the right, is plotted. The entire region between the curve y= f(x) and the x axis is shaded yellow.
 ```
+````
+
+
 ## Example 4
 
-```{admonition} Evaluating an improper integral unbounded on both sides
+````{admonition} Improper integral unbounded on both sides
 :class: tip
 
 Evaluate $\displaystyle \int_{-\infty}^\infty \frac{e^x}{(1 + e^x)^3}~dx$, if it exists.
-```
+
 
 ```{dropdown} **Step 1:** Rewrite the integral as a sum of two improper integrals.
 
 $$ \int_{-\infty}^\infty \frac{e^x}{(1 + e^x)^3}~dx = \int_{-\infty}^0 \frac{e^x}{(1 + e^x)^3}~dx + \int_{0}^\infty \frac{e^x}{(1 + e^x)^3}~dx.$$
 ```
 
-```{dropdown} **Step 2:** Compute $\displaystyle \int \frac{e^x}{(1+e^{x})^3} ~dx$ using the following substitution.
+```{dropdown} **Step 2:** Compute $\displaystyle \int \frac{e^x}{(1+e^{x})^3} ~dx$.
+
+Using the following substitution
 
 $$u = 1+e^x \qquad du = e^x~dx$$
+
+gives
 
 \begin{align*}
   \int \frac{e^x}{(1+e^{x})^3} ~dx
@@ -232,18 +253,23 @@ $$u = 1+e^x \qquad du = e^x~dx$$
   &= \frac{1}{2}
 \end{align*}
 ```
+````
 
 ## Example 5
 
-```{admonition} Evaluate an improper integral unbounded on both sides
+````{admonition} Improper integral unbounded on both sides
 :class: tip
 
 Evaluate $\displaystyle \int_{-\infty}^\infty xe^{-x^2}~dx$, if it exists.
-```
 
-```{dropdown} **Step 1:** Compute $\displaystyle \int xe^{-x^2}dx$ using the following substitution.
+
+```{dropdown} **Step 1:** Compute $\displaystyle \int xe^{-x^2} ~dx$.
+
+Using the following substitution
 
 $$u = -x^2 \qquad du = -2x ~dx ~~~~ \hbox{(or $-\frac{1}{2}~du = x ~dx$)}$$
+
+gives
 
 \begin{align*}
   \int xe^{-x^2} ~dx
@@ -286,3 +312,4 @@ $$u = -x^2 \qquad du = -2x ~dx ~~~~ \hbox{(or $-\frac{1}{2}~du = x ~dx$)}$$
   &= 0
 \end{align*}
 ```
+````

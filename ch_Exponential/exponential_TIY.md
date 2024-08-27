@@ -17,7 +17,7 @@ kernelspec:
 ````{admonition} Solve for unknown value in the exponent
 :class: tip 
 
-Find all values of $t$ such that $25^{(t^2-2t-1)} = \frac{1}{5^{t}}$.
+Find all values of $t$ such that $25^{t^2-2t-1} = \dfrac{1}{5^{t}}$.
 
 ```{dropdown} Show answer
 Answer: $t = 2$, $t=-1/2$
