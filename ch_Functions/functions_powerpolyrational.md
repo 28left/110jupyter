@@ -41,8 +41,17 @@ where $n$ is a nonnegative integer and the constants $a_0, a_1, \ldots, a_n$  ($
 :class: info
 
 A _**rational function**_ is a function that can be written as the ratio of two polynomials.
+```
 
-By definition, every polynomial is also considered to be a rational function.
+
+```{admonition} Polynomials are Rational Functions
+:class: note
+
+Any polynomial function, $f(x)$, can also be written as a ratio of polynomials in the following manner:
+
+$$\dfrac{f(x)}{1}$$ 
+
+since the constant $1$ is a polynomial of degree zero.  In other words, every polynomial is also considered to be a rational function.
 ```
 
 

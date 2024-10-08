@@ -86,3 +86,8 @@ only_build_toc_files: true
 
 # Exlude Try-it-yourself notebooks
 exclude_patterns: [110_02_01_limits_def_TIY.ipynb, old_stuff/*]  
+
+sphinx:
+  config:
+    html_js_files:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js

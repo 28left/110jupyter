@@ -128,7 +128,7 @@ A _**market equilibrium**_ exists when the quantity produced is equal to the qua
 ````{admonition} How to Find the Market Equilibrium
 :class: info
 
-The market equilibrium quantity and price can be determined by finding the point of intersection of the demand and supply curves.
+The market equilibrium quantity and price correspond to the point of intersection of the demand and supply curves.  To find the equilibirum quantity, set $d(x) = s(x)$ and solve for $x$.  Then plug that value of $x$ into $d(x)$ or $s(x)$ to find the equilibrium price.
 
 ```{figure} ../images/pic_functions_equilibrium.png
 ---

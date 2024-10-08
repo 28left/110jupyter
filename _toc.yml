@@ -111,7 +111,35 @@ parts:
     - file: ch_Byparts/byparts_improper.md
     - file: ch_Byparts/byparts_application_improper.md
     - file: ch_Byparts/byparts_TIY.md
-
+  - file: ch_NewMath110/newmath110_
+    sections:
+    - file: ch_NewMath110/newmath110_content.md
+  - file: ch_Severalvariables/severalvariables_
+    sections:
+    - file: ch_Severalvariables/severalvariables_reviewgraphs.md
+    - file: ch_Severalvariables/severalvariables_functions.md
+    - file: ch_Severalvariables/severalvariables_reviewderivatives.md
+    - file: ch_Severalvariables/severalvariables_partialderivatives.md
+    - file: ch_Severalvariables/severalvariables_commodities.md
+    - file: ch_Severalvariables/severalvariables_totaldifferentials.md
+    - file: ch_Severalvariables/severalvariables_secondorder.md
+  - file: ch_Optimizationtwovariables/optimizationtwovariables_
+    sections:
+    - file: ch_Optimizationtwovariables/optimizationtwovariables_extrema.md
+    - file: ch_Optimizationtwovariables/optimizationtwovariables_criticalpoints.md
+    - file: ch_Optimizationtwovariables/optimizationtwovariables_saddlepoints.md
+    - file: ch_Optimizationtwovariables/optimizationtwovariables_secondderivativetest.md
+    - file: ch_Optimizationtwovariables/optimizationtwovariables_leastsquares.md
+    - file: ch_Optimizationtwovariables/optimizationtwovariables_lagrangemultipliers.md
+  - file: ch_Doubleintegrals/doubleintegrals_
+    sections:
+    - file: ch_Doubleintegrals/doubleintegrals_review.md
+    - file: ch_Doubleintegrals/doubleintegrals_rectangularregion.md
+    - file: ch_Doubleintegrals/doubleintegrals_planeregion.md
+    - file: ch_Doubleintegrals/doubleintegrals_averagevalue.md
+  - file: ch_Differentialequations/differentialequations_
+    sections:
+    - file: ch_Differentialequations/differentialequations_separable.md
 # - caption: Computational Examples
 #   chapters:
 #   - file: nb_Limits/limits_nb_
