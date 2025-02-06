@@ -19,6 +19,7 @@ kernelspec:
 %load_ext itikz
 ```
 
+(curve:first_derivative_test)=
 ## Using the First Derivative to Classify Critical Points
 
 
@@ -33,7 +34,7 @@ Suppose $c$ is a critical point of the continuous function $f$.
 ```
 
 ### Example 1
-````{admonition} Classify critical points based on graph of $f'$
+````{admonition} Classify critical points based on graph of the first derivative
 :class: tip
 
 The following graph corresponds to $f'(x)$, the first derivative of $f(x)$.  
@@ -52,19 +53,19 @@ Using the graph of $f'(x)$, find and classify all critical points of $f(x)$.  Yo
 The graph of the derivative of a continuous function on the interval (-3,4).  The derivative is equal to zero at x = -2, x = 1, and x = 3.  The derivative decreases on the interval (-3,-1.2), increases on the interval (-1.2,1), decreases on the interval (1,2.4), and increases on the interval (2.4,4).
 ```
 
-```{dropdown} **Step 1:** &nbsp; Determine the critical points of $f(x)$.
+```{dropdown} **Step 1:** &nbsp; Determine the critical points of $f$.
 
-Since $f'(x)$ is continuous for all $x$, and therefore defined for all $x$, the only critical points of $f(x)$ occur where $f'(x) = 0$.  And we were specifically told that the derivative is equal to zero only when $x=-2$, $x=1$, and $x=3$, so these are the three critical points of $f(x)$.
+Since $f'(x)$ is continuous for all $x$, and therefore defined for all $x$, the only critical points of $f$ occur where $f'(x) = 0$.  And we were specifically told that the derivative is equal to zero only when $x=-2$, $x=1$, and $x=3$, so these are the three critical points of $f$.
 ```
 
 
 ```{dropdown} **Step 2:** &nbsp; Classify each critical point.
 
-Since $f'(x)$ changes from positive to negative at $x=-2$, $f(x)$ has a relative maximum at $x=-2$.
+Since $f'(x)$ changes from positive to negative at $x=-2$, $f$ has a relative maximum at $x=-2$.
 
-Since $f'(x)$ does not change sign at $x=1$, $f(x)$ does not have a relative extrema at $x=1$.
+Since $f'(x)$ does not change sign at $x=1$, $f$ does not have a relative extrema at $x=1$.
 
-Since $f'(x)$ changes from negative to positive at $x=3$, $f(x)$ has a relative minimum at $x=3$.
+Since $f'(x)$ changes from negative to positive at $x=3$, $f$ has a relative minimum at $x=3$.
 
 ```
 
@@ -83,9 +84,9 @@ were $x=-1$, $x=0$, and $x=1$.
 Classify each critical point using the First Derivative Test. 
 
 
-````{dropdown} **Step 1:** &nbsp; Break up the domain of &nbsp; $f'(x)$ &nbsp; at each critical point.
+````{dropdown} **Step 1:** &nbsp; Break up the domain of &nbsp; $f'$ &nbsp; at each critical point.
 
-Plug in one number from each subinterval into $f'(x)$ to determine the sign of $f'(x)$ on each interval.
+Plug in one number from each subinterval into $f'$ to determine the sign of $f'$ on each interval.
 
 We have $f'(x) = \dfrac{2x}{3(x^2 - 1)^{2/3}}$.
 
@@ -104,9 +105,9 @@ A number line with positive and negative signs assigned to intervals, which are 
 
 ```{dropdown} **Step 2:** &nbsp; Classify each critical point.
 
-Since $f'(x)$ changes from negative to positive at $x=0$, $f(x)$ has a relative minimum at $x=0$.  
+Since $f'$ changes from negative to positive at $x=0$, $f$ has a relative minimum at $x=0$.  
 
-Since $f'(x)$ does not change sign at $x=-1$ and at $x=1$, $f(x)$ does not have relative extrema at these values of $x$.
+Since $f'$ does not change sign at $x=-1$ and at $x=1$, $f$ does not have relative extrema at these values of $x$.
 ```
 `````
 
@@ -123,9 +124,9 @@ $$f(x) = x^3 +3x^2 - 24x + 1$$
 were $x=-4$ and $x=2$. Classify the critical point using the First Derivative Test. 
 
 
-````{dropdown} **Step 1:** &nbsp; Break up the domain of &nbsp; $f'(x)$ &nbsp; at each critical point.
+````{dropdown} **Step 1:** &nbsp; Break up the domain of &nbsp; $f'$ &nbsp; at each critical point.
 
-Plug in one number from each subinterval into $f'(x)$ to determine the sign of $f'(x)$ on each interval.
+Plug in one number from each subinterval into $f'$ to determine the sign of $f'$ on each interval.
 
 We have $f'(x) = 3(x+4)(x-2)$.
 
@@ -144,10 +145,19 @@ A number line with positive and negative signs assigned to intervals, with posit
 
 ```{dropdown} **Step 2:** &nbsp; Classify each critical point.
 
-Since $f'(x)$ changes from positive to negative at $x=-4$, $f(x)$ has a relative maximum at $x=-4$.  
+Since $f'$ changes from positive to negative at $x=-4$, $f$ has a relative maximum at $x=-4$.  
 
-Since $f'(x)$ changes from negative to positive at $x=2$, $f(x)$ has a relative minimum at $x=2$.
+Since $f'$ changes from negative to positive at $x=2$, $f$ has a relative minimum at $x=2$.
 ```
 `````
 
+
+```{admonition} More Practice
+:class: important
+
+For more examples of applying the First Derivative Test, see
+
+- Optimization: {ref}`optimization:first_derivative_test`
+
+```
 

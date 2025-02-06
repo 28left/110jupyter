@@ -94,9 +94,9 @@ fig = go.Figure()
 
 # Add the surface trace
 u, v = np.mgrid[0:4:100j, 0:2*np.pi:100j]
-x_surface, y_surface = np.mgrid[-2.5:2.5:100j, -2.5:2.5:100j]
-#x_surface = u*np.cos(v)
-#y_surface = u*np.sin(v)
+#x_surface, y_surface = np.mgrid[-2.5:2.5:100j, -2.5:2.5:100j]
+x_surface = u*np.cos(v)/2 + 0.25
+y_surface = u*np.sin(v)/2.828 + 0.25
 z_surface = (x_surface-0.25)**2 + 2*(y_surface-0.25)**2
 fig.add_trace(go.Surface(x=x_surface, y=y_surface, z=z_surface, 
   hoverinfo='none', showscale=False, colorscale=[[0,'darkgray'],[1,'white']])
@@ -133,7 +133,7 @@ fig.add_trace(go.Scatter3d(x=x_curve, y=y_curve, z=z_curve,
 fig.update_layout(
   scene = dict(
       xaxis = dict(visible=True,showgrid=True,showspikes=False,range=[-2.5,2.5]),
-      yaxis = dict(visible=True,showgrid=True,showspikes=False,range=[-2.5,2.5]),
+      yaxis = dict(visible=True,showgrid=True,showspikes=False,range=[-1.5,1.75]),
       zaxis = dict(visible=True,showgrid=True,showspikes=False,range=[0,4])
   ),
   margin=dict(l=0, r=0, b=25, t=0)

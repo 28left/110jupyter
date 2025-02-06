@@ -13,6 +13,7 @@ kernelspec:
 ---
 # The Second Derivative Test
 
+(optimization:second_derivative_test)=
 ## Using the Second Derivative to Classify Critical Points
 
 ```{admonition} The Second Derivative Test
@@ -78,3 +79,12 @@ was $x=0$. Classify the critical point using the Second Derivative Test.
 Since $f'(0) = 0$ and $f''(0) = -2 < 0$, $f(x)$ has a relative maximum at $x=0$.
 ```
 ````
+
+```{admonition} More Practice
+:class: important
+
+For more examples of applying the Second Derivative Test, see
+
+- Curve Sketching: {ref}`curve:second_derivative_test`
+
+```

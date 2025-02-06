@@ -14,6 +14,33 @@ kernelspec:
 (lim:prop_lim)=
 # Properties of Finite Limits
 
+
+```{admonition} Properties
+:class: info
+
+Le $c$ be any real number and suppose $\displaystyle \lim_{x\to a} f(x) = L$ and $\displaystyle \lim_{x\to a} g(x) = M$, where both $L$ and $M$ are finite values.
+
+
+\begin{align*}
+&\text{Limit of a Constant} && \lim_{x\to a} c = c  \\ \\
+&\text{Sum & Difference Properties} && \lim_{x\to a} [f(x) \pm g(x)] = \lim_{x\to a} f(x) \pm \lim_{x\to a} g(x)=L \pm M \\ \\
+&\text{Constant Multiple Property} && \lim_{x\to a} cf(x) = c\lim_{x\to a} f(x) = cL\\ \\
+&\text{Generalized Product Property} && \lim_{x\to a} [f(x)g(x)] = [\lim_{x\to a} f(x)][\lim_{x\to a} g(x)]=LM \\ \\
+&\text{Quotient Property} && \lim_{x\to a} \dfrac{f(x)}{g(x)} = \dfrac{\lim\limits_{x\to a} f(x)}{\lim\limits_{x\to a} g(x)}=\dfrac{L}{M}  ~~~~ \text {if $M\neq 0$} \\ \\
+&\text{Power Property} && \lim_{x\to a} [f(x)]^c = \left[\lim_{x\to a} f(x)\right]^c = L^c ~~~~ \text {if $L^c$ is defined}
+\end{align*}
+```
+
+```{admonition} The Limit of a Polynomial or Rational Function
+:class: note
+
+If $f(x)$ is a polynomial or rational function and $a$ is in the domain of $f(x)$, then
+
+$$\lim_{x\to a} f(x) = f(a)$$
+```
+
+<!--
+
 ````{admonition} Properties
 :class: info
 
@@ -63,3 +90,5 @@ If $f(x)$ is a polynomial or rational function and $a$ is in the domain of $f(x)
 $$\lim_{x\to a} f(x) = f(a)$$
 ```
 ````
+
+-->
