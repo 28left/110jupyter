@@ -141,7 +141,7 @@ Evaluate $\displaystyle \int_{0}^{4} e^x ~dx$.
 The daily marginal revenue function associated with selling $m$ gadgets is given by $R'(m)=0.2m + 50$, where $R'(m)$ is given in dollars per unit.
 
 - Find the daily total revenue realized from the sale of the first 20 gadgets.
-- Find the additional revenue realized when sales increase from 20 to 50 gadgets.
+- Find the additional revenue realized from the sale of the 21st through 50th gadgets.
 
 
 ```{dropdown} **Step 1:** &nbsp; Apply the Fundamental Theorem of Calculus for the first case.
@@ -170,7 +170,9 @@ Therefore, the total revenue from the sale of the first 20 gadgets is $\$1,040$.
 
 ```{dropdown} **Step 2:** &nbsp; Apply the Fundamental Theorem of Calculus for the second case.
 
-By the Fundamental Theorem of Calculus, the additional revenue realized when sales increase from 20 to 50 gadgets is given by
+Note that the additional revenue realized from the sale of the 21st through 50th gadgets is given by $R(50) - R(20)$.  This is because $R(50)$ corresponds to the revenue generated from the sale of gadgets 1 through 50 and $R(20)$ corresponds to the revenue generated from the sale of gadgets 1 through 20.  When we subtract the two values, what remains corresponds to the revenue associated with gadgets 21 through 50.
+
+By the Fundamental Theorem of Calculus, we have
 
 \begin{align*}
   R(50) - R(20) 
@@ -189,6 +191,6 @@ Evaluating the integral, we get
   &=1710.
 \end{align*}
 
-Therefore, the additional revenue realized when sales increase from 20 to 50 gadgets is $\$1,710.$
+Therefore, the sale of gadgets 21 through 50 generate an additional revenue of $\$1,710.$
 ```
 ````

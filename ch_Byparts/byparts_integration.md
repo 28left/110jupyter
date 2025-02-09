@@ -11,6 +11,8 @@ kernelspec:
   language: python
   name: python3
 ---
+
+(parts:integration)=
 # Integration by Parts
 
 ## How to Integrate Products of Different Types of Functions

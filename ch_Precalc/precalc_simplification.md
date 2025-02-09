@@ -401,7 +401,7 @@ A review of how to square a binomial expression using the FOIL method or using t
 
 ### Example 6
 
-````{admonition} Expanding a binomial
+````{admonition} Expanding the square of a binomial
 :class: tip
 
 Expand $(3x-5)^2$ by squaring the binomial.

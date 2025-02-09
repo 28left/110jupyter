@@ -11,6 +11,8 @@ kernelspec:
   language: python
   name: python3
 ---
+
+(definite:substitution)=
 # Substitution for Definite Integrals
 
 ## Changing the Limits of Integration via Substitution

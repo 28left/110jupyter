@@ -28,7 +28,7 @@ is called an _**indeterminate form of type $0/0$**_.
 ```{admonition} How to Evaluate an Indeterminate Form of Type $0/0$
 :class: info
 
-To evaluate an indeterminate form, simplify the ratio $f(x)/g(x)$ by factoring or rationalizing the expression and then canceling out common factors.
+To evaluate an indeterminate form, simplify the ratio $f(x)/g(x)$ by factoring or rationalizing the expression and then canceling out common factors.  Then try to evaluate the limit again using the simplified ratio.
 ```
 
 ### Example 1

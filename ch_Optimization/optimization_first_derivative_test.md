@@ -18,7 +18,7 @@ kernelspec:
 
 %load_ext itikz
 ```
-
+(optimization:first_derivative_test)=
 ## Using the First Derivative to Classify Critical Points
 
 
@@ -102,3 +102,13 @@ A number line with positive and negative signs assigned to intervals, with posit
 Since $f'(x)$ changes from positive to negative at $x=0$, $f(x)$ has a relative maximum at $x=0$.
 ```
 `````
+
+
+```{admonition} More Practice
+:class: important
+
+For more examples of applying the First Derivative Test, see
+
+- Curve Sketching: {ref}`curve:first_derivative_test`
+
+```

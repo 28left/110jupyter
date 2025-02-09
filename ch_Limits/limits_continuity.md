@@ -13,7 +13,7 @@ kernelspec:
 ---
 # Continuity
 
-## Defintions and Properties
+## Definitions and Properties
 
 ```{admonition} Definition
 :class: info
@@ -51,7 +51,7 @@ If $f(x)$ and $g(x)$ are continuous at $x = a$ then:
 Polynomial and rational functions are continuous on their domains.
 
 - Polynomial functions are continuous everywhere.
-- The rational function $\dfrac{p(x)}{q(x)}$ is continuous everywhere $q(x) \neq 0$.
+- The rational function $\dfrac{f(x)}{g(x)}$ is continuous everywhere $g(x) \neq 0$.
 ```
 
 

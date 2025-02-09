@@ -126,3 +126,68 @@ $$x \leq 7$$
 and therefore, the domain of $g\circ f$ is $(-\infty,7]$.
 ```
 ````
+
+
+### Example 3
+
+````{admonition} Simplify a difference quotient
+:class: tip
+
+Let $f(x) = 3x^2 - 5x$.  Simplify 
+
+$$\frac{f(a+h) - f(a)}{h}$$
+
+until the factor of $h$ in the denominator has been cancelled out.
+
+
+```{dropdown} **Step 1:** &nbsp; Evaluate $f(a)$.
+
+To evaluate $f(a)$, replace every occurrence of $x$ in $f(x)$ with $a$.
+
+$$f(a) = 3a^2 - 5a$$
+
+```
+
+
+```{dropdown} **Step 2:** &nbsp; Expand $f(a+h)$.
+
+To evaluate $f(a+h)$, replace every occurrence of $x$ in $f(x)$ with $(a+h)$.
+
+\begin{align*}
+f(a+h) 
+&= 3(a+h)^2 - 5(a+h) \\
+&= 3(a^2 + 2ah + h^2) - 5(a+h) && \text{square the binomial} \\
+&= 3a^2 + 6ah + 3h^2 - 5a - 5h && \text{distribute the $3$ and the $-5$} 
+\end{align*}
+
+```
+
+
+```{dropdown} **Step 3:** &nbsp; Simplify $f(a+h) - f(a)$.
+
+Using **Steps 1** and **2**:
+
+\begin{align*}
+f(a+h)  - f(a)
+&= 3a^2 + 6ah + 3h^2 - 5a - 5h - (3a^2 - 5a)  && \text{Steps 1 and 2}\\
+&= 3a^2 + 6ah + 3h^2 - 5a - 5h - 3a^2 + 5a && \text{distribute the minus sign} \\
+&= 6ah + 3h^2 - 5h && \text{cancel out terms} 
+\end{align*}
+
+```
+
+
+```{dropdown} **Step 4:** &nbsp; Simplify $\dfrac{f(a+h) - f(a)}{h}$.
+
+
+Using **Step 3**:
+
+\begin{align*}
+\frac{f(a+h)  - f(a)}{h}
+&= \frac{6ah + 3h^2 - 5h}{h} && \text{Step 3} \\
+&= \frac{h(6a + 3h - 5)}{h} && \text{pull out a common factor of $h$ in the numerator} \\
+&= 6a + 3h - 5 && \text{cancel out the factor of $h$}
+\end{align*}
+```
+
+````

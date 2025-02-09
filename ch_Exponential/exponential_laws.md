@@ -11,6 +11,8 @@ kernelspec:
   language: python
   name: python3
 ---
+
+(exponential:laws)=
 # Laws of Exponential and Logarithmic Functions
 
 ## Laws, Properties, and Derivatives
