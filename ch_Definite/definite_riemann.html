@@ -6,7 +6,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Riemann Sums and the Definite Integral &#8212; Penn State Math 110 Companion Site</title>
   
@@ -16,31 +16,34 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -71,15 +74,17 @@
                 gtag('config', 'G-2H7BN83HGG');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch_Definite/definite_riemann';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="The Fundamental Theorem of Calculus" href="definite_ftc.html" />
     <link rel="prev" title="Definite Integrals" href="definite_.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -95,19 +100,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -115,7 +109,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -123,8 +116,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -140,7 +133,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -155,6 +149,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../intro.html">
   
@@ -168,21 +164,17 @@
     
     
     <img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-light" alt="Penn State Math 110 Companion Site - Home"/>
-    <script>document.write(`<img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-dark" alt="Penn State Math 110 Companion Site - Home"/>`);</script>
+    <img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-dark pst-js-only" alt="Penn State Math 110 Companion Site - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -329,9 +321,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -428,24 +425,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -474,7 +463,12 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-limit-definition-of-a-definite-integral">The Limit Definition of a Definite Integral</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-interpretation-of-the-definite-integral">Geometric Interpretation of the Definite Integral</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-interpretation-of-the-definite-integral">Geometric Interpretation of the Definite Integral</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-the-definite-integral">Properties of the Definite Integral</a></li>
 </ul>
             </nav>
@@ -487,7 +481,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="riemann-sums-and-the-definite-integral">
+  <section class="tex2jax_ignore mathjax_ignore" id="riemann-sums-and-the-definite-integral">
 <h1>Riemann Sums and the Definite Integral<a class="headerlink" href="#riemann-sums-and-the-definite-integral" title="Link to this heading">#</a></h1>
 <section id="area-under-a-curve-and-riemann-sums">
 <h2>Area Under a Curve and Riemann Sums<a class="headerlink" href="#area-under-a-curve-and-riemann-sums" title="Link to this heading">#</a></h2>
@@ -646,6 +640,139 @@ document.write(`
 <p class="sd-card-text">There is a horizontal x axis with the points a and b labeled. There is a curve y = f(x) plotted on this axis. This curve increases and decreases, has two zeroes, is negative between them, and positive outside of them. It’s concavity is up when it is negative, and down when it is positive. The Region to the right of x=a, above the x-axis, and below the curve is labeled R One. The region below the x axis and above the curve is labeled R Two. The region above the x axis, below the curve, and to the left of x=b is labeled R three.</p>
 </div>
 </details></div>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Using geometry to evaluate a definite integral</p>
+<p>Compute <span class="math notranslate nohighlight">\(\displaystyle \int_0^6 f(x) ~ dx\)</span> where <span class="math notranslate nohighlight">\(f(x)\)</span> is given by the following graph.</p>
+<a class="reference internal image-reference" href="../_images/pic_definite_riemann_example_2_1.png"><img alt="Graph of a piecewise linear function on the interval [0,6]" class="align-center" src="../_images/pic_definite_riemann_example_2_1.png" style="width: 429px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of a continuous function that consists of a sequence of line segments.  Starting at the point (0,2) and continuing from left to right, the line segments go through the points (1,2), (2,1), (3,-1), (4,-1), (5,0), and end at the point (6,2).</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong> Break up the region into rectangular and triangular pieces.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There are a variety of ways to do this, no one way being better than the other.  Make sure that the pieces you create are all between the graph of <span class="math notranslate nohighlight">\(y=f(x)\)</span> and the <span class="math notranslate nohighlight">\(x\)</span>-axis.  One possible way to break up the region is shown below.</p>
+<a class="reference internal image-reference" href="../_images/pic_definite_riemann_example_2_2.png"><img alt="Graph of the region between the curve and the x-axis broken up into rectangular and triangular pieces." class="align-center" src="../_images/pic_definite_riemann_example_2_2.png" style="width: 428px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The region between y=f(x) and the x-axis is shaded and broken up into rectangular and triangular pieces.  Region R_1 is a rectangular region of width 1 and height 2 with its base on the interval [0,1] of the x-axis.  Region R_2 is triangular region of width 1 and height 1 with vertices at the points (1,1), (2,1) and (1,2).  Region R_3 is a rectangular region of width 1 and height 1 with its base on the interval [1,2] of the x-axis.  Region R_4 is a triangular region of width 1/2 and height 1 with vertices at the points (2,0), (2.5,0) and (2,1).  Region R_5 is a triangular region of width 1/2 and height 1 with vertices at the points (2.5,0), (3,0) and (3,-1). Region R_6 is a rectangular region of width 1 and height 1 with its top edge on the interval [3,4] of the x-axis.  Region R_7 is a triangular region of width 1 and height 1 with vertices at the points (4,0), (5,0) and (4,-1).  Region R_8 is a triangular region of width 1 and height 2 with vertices at the points (5,0), (6,0) and (6,2).</p>
+</div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong> Compute the total area of the pieces that are above the <span class="math notranslate nohighlight">\(x\)</span>-axis.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Based on the pieces created in Step 2, this corresponds to regions <span class="math notranslate nohighlight">\(R_1, R_2, R_3, R_4\)</span> and <span class="math notranslate nohighlight">\(R_8\)</span>.  The area of each region is <span class="math notranslate nohighlight">\(2, 1/2, 1, 1/4\)</span> and <span class="math notranslate nohighlight">\(1\)</span>, respectively. The total area of these regions is</p>
+<div class="math notranslate nohighlight">
+\[2 + \frac{1}{2} + 1 + \frac{1}{4} + 1 = \frac{19}{4}.\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong> Compute the total area of the pieces that are below the <span class="math notranslate nohighlight">\(x\)</span>-axis.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Based on the pieces created in Step 2, this corresponds to regions <span class="math notranslate nohighlight">\(R_5, R_6\)</span> and <span class="math notranslate nohighlight">\(R_7\)</span>.  The area of each region is <span class="math notranslate nohighlight">\(1/4, 1\)</span> and <span class="math notranslate nohighlight">\(1/2\)</span>, respectively. The total area of these regions is</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{4} + 1 + \frac{1}{2} = \frac{7}{4}.\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 4:</strong> Evaluate the definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The value of a definite integral is equal to the total area of the corresponding regions that are above the <span class="math notranslate nohighlight">\(x\)</span>-axis minus the total area of the regions that are below the <span class="math notranslate nohighlight">\(x\)</span>-axis.  Using the values computed in Steps 2 and 3, we have</p>
+<div class="math notranslate nohighlight">
+\[\int_0^6 f(x) ~ dx = \frac{19}{4} - \frac{7}{4} = 3.\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Using geometry to evaluate a definite integral</p>
+<p>Evaluate the following definite integral by using its geometric interpretation.</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \int_{0}^{6} 5 - \frac{1}{2}x  ~ dx\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong> Draw the region described by the definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The definite integral corresponds to the area of the region bounded above by the line <span class="math notranslate nohighlight">\(y = 5 - \frac{1}{2}x\)</span>, bounded below by the <span class="math notranslate nohighlight">\(x\)</span>-axis, bounded on the left by the vertical line <span class="math notranslate nohighlight">\(x=0\)</span> (i.e., the <span class="math notranslate nohighlight">\(y\)</span>-axis) and bounded on the right by the vertical line <span class="math notranslate nohighlight">\(x=6\)</span>.</p>
+<a class="reference internal image-reference" href="../_images/pic_definite_riemann_example_3_1.png"><img alt="Region corresponding to the given definite integral" class="align-center" src="../_images/pic_definite_riemann_example_3_1.png" style="width: 291px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A region of the xy-plane is shaded yellow.  The region is bounded above by the line y = 5 - x/2, bounded below by the x-axis, bounded on the left by the y-axis, and bounded on the right by the vertical line x=6.  The value 6 is labeled on the x-axis and the values 2 and 5 are labeled on the y-axis.</p>
+</div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong> Break up the region into rectangular and triangular pieces.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The region described in Step 1 can be broken up into a rectangular region, <span class="math notranslate nohighlight">\(R_1\)</span>, and a triangular region, <span class="math notranslate nohighlight">\(R_2\)</span>, as illustrated below.</p>
+<a class="reference internal image-reference" href="../_images/pic_definite_riemann_example_3_2.png"><img alt="Graph of the region between the curve and the x-axis broken up into rectangular and triangular pieces." class="align-center" src="../_images/pic_definite_riemann_example_3_2.png" style="width: 303px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A region of the xy-plane is shaded yellow and broken up into two pieces.  The lower region, labeled R_1, is a rectangular region of width 6 and height 2.  The base of the rectangle is on the interval [0,6] of the x-axis.  The upper region, labeled R_2, is a triangular region of width 6 and height 3.  The base of the triangle coincides with the top edge of the rectangular region R_1.</p>
+</div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong> Evaluate the definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since regions <span class="math notranslate nohighlight">\(R_1\)</span> and <span class="math notranslate nohighlight">\(R_2\)</span> are both above the <span class="math notranslate nohighlight">\(x\)</span>-axis, the value of the definite integral is the sum of the areas of the two regions.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\int_0^6 5 - \frac{1}{2}x  ~ dx 
+&amp;= \text{Area of region $R_1$} + \text{Area of region $R_2$} \\
+&amp;= 6\cdot 2 + \frac{1}{2}\cdot 6 \cdot 3 \\
+&amp;= 12 + 9 \\
+&amp;= 21
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
+<section id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Using geometry to evaluate a definite integral</p>
+<p>Evaluate the following definite integral by using its geometric interpretation.</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \int_{2}^{14} 5 - \frac{1}{2}x  ~ dx\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong> Draw the region described by the definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The definite integral corresponds to the net area of the region bounded vertically between the line <span class="math notranslate nohighlight">\(y = 5 - \frac{1}{2}x\)</span> and the <span class="math notranslate nohighlight">\(x\)</span>-axis, bounded on the left by the vertical line <span class="math notranslate nohighlight">\(x=2\)</span> and bounded on the right by the vertical line <span class="math notranslate nohighlight">\(x=14\)</span>.</p>
+<a class="reference internal image-reference" href="../_images/pic_definite_riemann_example_4_1.png"><img alt="Region corresponding to the given definite integral" class="align-center" src="../_images/pic_definite_riemann_example_4_1.png" style="width: 607px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">One region of the xy-plane is shaded yellow and another is shaded green.  The yellow region is bounded above by the line y = 5 - x/2, bounded below by the x-axis, bounded on the left by the vertical line x=2, and bounded on the right by the vertical line x=10.  The green region is bounded above by the x-axis, bounded below by the line y = 5 - x/2, bounded on the left by the vertical line x=10, and bounded on the right by the vertical line x=14.  The values 2, 10, and 14 are labeled on the x-axis and the values -2 and 4 are labeled on the y-axis.</p>
+</div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong> Break up the region into rectangular and triangular pieces.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The region described in Step 1 naturally breaks up into two triangular regions, <span class="math notranslate nohighlight">\(R_1\)</span> and <span class="math notranslate nohighlight">\(R_2\)</span>, as illustrated below.</p>
+<a class="reference internal image-reference" href="../_images/pic_definite_riemann_example_4_2.png"><img alt="Graph of the region between the curve and the x-axis broken up into rectangular and triangular pieces." class="align-center" src="../_images/pic_definite_riemann_example_4_2.png" style="width: 617px;" /></a>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">One region of the xy-plane is shaded yellow and another is shaded green.  The yellow region, labeled R_1, is a triangular region of width 8 and height 4.  The vertices of this triangle are the points (2,0), (10,0) and (2,4).  The green region, labeled R_2, is a triangular region of width 4 and height 2.  The vertices of this triangle are the points (10,0), (14,0) and (14,-2).</p>
+</div>
+</details></div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong> Evaluate the definite integral.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since region <span class="math notranslate nohighlight">\(R_1\)</span> is above the <span class="math notranslate nohighlight">\(x\)</span>-axis and <span class="math notranslate nohighlight">\(R_2\)</span> is below the <span class="math notranslate nohighlight">\(x\)</span>-axis, the value of the definite integral is the difference of the areas of the two regions.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\int_2^{14} 5 - \frac{1}{2}x  ~ dx 
+&amp;= \text{Area of region $R_1$} - \text{Area of region $R_2$} \\
+&amp;= \frac{1}{2}\cdot 8 \cdot 4 - \frac{1}{2}\cdot 4 \cdot 2\\
+&amp;= 16 - 4 \\
+&amp;= 12
+\end{align*}\]</div>
+</div>
+</details></div>
+</section>
 </section>
 <section id="properties-of-the-definite-integral">
 <span id="def-int-properties"></span><h2>Properties of the Definite Integral<a class="headerlink" href="#properties-of-the-definite-integral" title="Link to this heading">#</a></h2>
@@ -718,7 +845,8 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -732,7 +860,12 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-limit-definition-of-a-definite-integral">The Limit Definition of a Definite Integral</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-interpretation-of-the-definite-integral">Geometric Interpretation of the Definite Integral</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-interpretation-of-the-definite-integral">Geometric Interpretation of the Definite Integral</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties-of-the-definite-integral">Properties of the Definite Integral</a></li>
 </ul>
   </nav></div>
@@ -782,8 +915,8 @@ By Department of Mathematics, Penn State University Park
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

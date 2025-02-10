@@ -11,6 +11,8 @@ kernelspec:
   language: python
   name: python3
 ---
+
+(indefinite:substitution)=
 # Integration by Substitution
 
 ## Method of Integration by Substitution

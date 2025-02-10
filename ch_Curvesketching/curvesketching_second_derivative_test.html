@@ -6,7 +6,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>The Second Derivative Test &#8212; Penn State Math 110 Companion Site</title>
   
@@ -16,31 +16,34 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -71,15 +74,17 @@
                 gtag('config', 'G-2H7BN83HGG');
             </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]]}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ch_Curvesketching/curvesketching_second_derivative_test';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Intervals of Concavity" href="curvesketching_concavity.html" />
     <link rel="prev" title="The First Derivative Test" href="curvesketching_first_derivative_test.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -95,19 +100,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -115,7 +109,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -123,8 +116,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -140,7 +133,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -155,6 +149,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../intro.html">
   
@@ -168,21 +164,17 @@
     
     
     <img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-light" alt="Penn State Math 110 Companion Site - Home"/>
-    <script>document.write(`<img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-dark" alt="Penn State Math 110 Companion Site - Home"/>`);</script>
+    <img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-dark pst-js-only" alt="Penn State Math 110 Companion Site - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -329,9 +321,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -428,24 +425,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -471,6 +460,8 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-second-derivative-to-classify-critical-points">Using the Second Derivative to Classify Critical Points</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
 </ul>
 </li>
 </ul>
@@ -484,10 +475,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="the-second-derivative-test">
+  <section class="tex2jax_ignore mathjax_ignore" id="the-second-derivative-test">
 <h1>The Second Derivative Test<a class="headerlink" href="#the-second-derivative-test" title="Link to this heading">#</a></h1>
 <section id="using-the-second-derivative-to-classify-critical-points">
-<h2>Using the Second Derivative to Classify Critical Points<a class="headerlink" href="#using-the-second-derivative-to-classify-critical-points" title="Link to this heading">#</a></h2>
+<span id="curve-second-derivative-test"></span><h2>Using the Second Derivative to Classify Critical Points<a class="headerlink" href="#using-the-second-derivative-to-classify-critical-points" title="Link to this heading">#</a></h2>
 <div class="info admonition">
 <p class="admonition-title">The Second Derivative Test</p>
 <p>Suppose <span class="math notranslate nohighlight">\(c\)</span> is a critical point of <span class="math notranslate nohighlight">\(f\)</span> where <span class="math notranslate nohighlight">\(f'(c) = 0\)</span> and <span class="math notranslate nohighlight">\(f''(x)\)</span> is continuous near <span class="math notranslate nohighlight">\(x=c\)</span>.</p>
@@ -504,14 +495,14 @@ document.write(`
 <p>Find the relative extrema of <span class="math notranslate nohighlight">\(f(x) = 12 x^5 - 45 x^4 - 200 x^3 +12\)</span>.</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text"><strong>Step 1:</strong>   Find the critical points of   <span class="math notranslate nohighlight">\(f\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Determine the critical points of <span class="math notranslate nohighlight">\(f\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 f'(x) &amp;= 60 x^4 - 180 x^3 - 600 x^2 \\
 &amp;= 60x^2(x^2-3x-10) &amp;&amp; \text{pull out common factor of $60x^2$}\\
 &amp;= 60x^2(x-5)(x+2) &amp;&amp; \text{factor}\\
 \end{align*}\]</div>
-<p class="sd-card-text">which equals zero when <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=5\)</span>.  Also note that <span class="math notranslate nohighlight">\(f'(x)\)</span> exists for all <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>.  Since the domain of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>, all of these values of <span class="math notranslate nohighlight">\(x\)</span> are critical points.</p>
+<p class="sd-card-text">which equals zero when <span class="math notranslate nohighlight">\(x=-2\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=5\)</span>.  Also note that <span class="math notranslate nohighlight">\(f'\)</span> exists for all <span class="math notranslate nohighlight">\(x\)</span> in the domain of <span class="math notranslate nohighlight">\(f\)</span>.  Since the domain of <span class="math notranslate nohighlight">\(f\)</span> is <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>, all of these values of <span class="math notranslate nohighlight">\(x\)</span> are critical points.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -548,6 +539,161 @@ f''(x)
 </ul>
 </div>
 </details></div>
+</section>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Classify critical points based on graph of the second derivative</p>
+<p>The following graph corresponds to <span class="math notranslate nohighlight">\(f''(x)\)</span>, the second derivative of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y = f''(x)$" src="../_images/pic_curvesketching_secondderivativetest_2.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of the second derivative of a continuous function on the interval (-4,5). The graph of the second derivative is continuous and looks like a cubic polynomial.  From left to right, the graph starts below the x-axis and increases until it crosses the x-axis at x = -1.81.  It continues to increase, then decreases and crosses the x-axis again at x = 1.61.  It continues to decrease, then increases until it crosses the x-axis at x = 4, where the graph increases for all x &gt; 4.  The second derivative is negative at x = -3, positive at x = 0, and equal to zero at x = 4.</p>
+</div>
+</details><p>Classify all critical points of <span class="math notranslate nohighlight">\(f(x)\)</span> using the above graph of <span class="math notranslate nohighlight">\(f''(x)\)</span> and the following information:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f'(x) = 0\)</span> only when <span class="math notranslate nohighlight">\(x=-3\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=4\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(f''(x) = 0\)</span> only when <span class="math notranslate nohighlight">\(x=-1.86\)</span>, <span class="math notranslate nohighlight">\(x=1.61\)</span>, and <span class="math notranslate nohighlight">\(x=4\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(f'(x)\)</span> and <span class="math notranslate nohighlight">\(f''(x)\)</span> are continuous for all <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Determine the critical points of <span class="math notranslate nohighlight">\(f\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'\)</span> is continuous for all <span class="math notranslate nohighlight">\(x\)</span>, and therefore defined for all <span class="math notranslate nohighlight">\(x\)</span>, the only critical points of <span class="math notranslate nohighlight">\(f\)</span> occur where <span class="math notranslate nohighlight">\(f'(x) = 0\)</span>.  And we were specifically told that the derivative is equal to zero only when <span class="math notranslate nohighlight">\(x=-3\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=4\)</span>, so these are the three critical points of <span class="math notranslate nohighlight">\(f\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Classify the critical point at <span class="math notranslate nohighlight">\(x=-3\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">From the given graph of <span class="math notranslate nohighlight">\(f''(x)\)</span>, we can see that <span class="math notranslate nohighlight">\(f''(-3)\)</span> is negative.  Therefore, since <span class="math notranslate nohighlight">\(f'(-3)=0\)</span> and <span class="math notranslate nohighlight">\(f''(-3) &lt; 0\)</span>, by the Second Derivative Test, <span class="math notranslate nohighlight">\(f\)</span> has a relative maximum at <span class="math notranslate nohighlight">\(x = -3\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Classify the critical point at <span class="math notranslate nohighlight">\(x=0\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">From the given graph of <span class="math notranslate nohighlight">\(f''(x)\)</span>, we can see that <span class="math notranslate nohighlight">\(f''(0)\)</span> is positive.  Therefore, since <span class="math notranslate nohighlight">\(f'(0)=0\)</span> and <span class="math notranslate nohighlight">\(f''(0) &gt; 0\)</span>, by the Second Derivative Test, <span class="math notranslate nohighlight">\(f\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x = 0\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Classify the critical point at <span class="math notranslate nohighlight">\(x=4\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(4) = 0\)</span> and <span class="math notranslate nohighlight">\(f''(4) = 0\)</span>, the Second Derivative Test is inconclusive and we proceed to using the First Derivative Test:</p>
+<ul class="simple">
+<li><p class="sd-card-text">From the graph of <span class="math notranslate nohighlight">\(f''(x)\)</span>, note that <span class="math notranslate nohighlight">\(f''(x) &lt; 0\)</span> for <span class="math notranslate nohighlight">\(x\)</span> just before 4 and <span class="math notranslate nohighlight">\(f''(x) &gt; 0\)</span> for <span class="math notranslate nohighlight">\(x\)</span> just after 4.</p></li>
+<li><p class="sd-card-text">This means that <span class="math notranslate nohighlight">\(f'(x)\)</span> is decreasing just before <span class="math notranslate nohighlight">\(x=4\)</span> and increasing just after <span class="math notranslate nohighlight">\(x=4\)</span>.</p></li>
+<li><p class="sd-card-text">But since <span class="math notranslate nohighlight">\(f'(4) = 0\)</span>, <span class="math notranslate nohighlight">\(f'(x)\)</span> must then be positive just before <span class="math notranslate nohighlight">\(x=4\)</span> and positive just after <span class="math notranslate nohighlight">\(x=4\)</span>.  A graph of <span class="math notranslate nohighlight">\(f'(x)\)</span> is shown below.  Notice how <span class="math notranslate nohighlight">\(f'(x)\)</span> is decreasing just before 4 and increasing just after 4.</p></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y = f'(x)$" src="../_images/pic_curvesketching_secondderivativetest_2_2.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A graph of the first derivative of f(x) on the interval [3,5].  The graph starts above the x-axis at x=3, decreases down to the point (4,0) on the x-axis, and then increases on the interval (4,5).  The graph of the derivative never crosses the x-axis on the interval shown.</p>
+</div>
+</details><ul class="simple">
+<li><p class="sd-card-text">In particular, <span class="math notranslate nohighlight">\(f'(x)\)</span> does not change sign at <span class="math notranslate nohighlight">\(x=4\)</span>.</p></li>
+<li><p class="sd-card-text">Therefore, by the First Derivative Test, <span class="math notranslate nohighlight">\(f\)</span> does not have a relative extrema at <span class="math notranslate nohighlight">\(x = 4\)</span>.</p></li>
+</ul>
+</div>
+</details></div>
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Classify critical points based on graph of the second derivative</p>
+<p>The following graph corresponds to <span class="math notranslate nohighlight">\(f''(x)\)</span>, the second derivative of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y = f''(x)$" src="../_images/pic_curvesketching_secondderivativetest_3.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graph of the second derivative of a continuous function on the interval (-4,5). The graph of the second derivative is continuous and looks like a quartic polynomial.  From left to right, the graph starts above the x-axis and decreases until it crosses the x-axis at x = -2.31.  It continues to decrease, then increases until it touches (but does not cross) the x-axis at x = 0.  It then decreases, then increases until it crosses the x-axis at x = 3.11, where the graph increases for all x &gt; 3.11.  The second derivative is positive at x = -3, equal to zero at x = 0, and positive at x = 4.</p>
+</div>
+</details><p>Classify all critical points of <span class="math notranslate nohighlight">\(f(x)\)</span> using the above graph of <span class="math notranslate nohighlight">\(f''(x)\)</span> and the following information:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(f'(x) = 0\)</span> only when <span class="math notranslate nohighlight">\(x=-3\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=4\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(f''(x) = 0\)</span> only when <span class="math notranslate nohighlight">\(x=-2.31\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=3.11\)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(f'(x)\)</span> and <span class="math notranslate nohighlight">\(f''(x)\)</span> are continuous for all <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Determine the critical points of <span class="math notranslate nohighlight">\(f(x)\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(x)\)</span> is continuous for all <span class="math notranslate nohighlight">\(x\)</span>, and therefore defined for all <span class="math notranslate nohighlight">\(x\)</span>, the only critical points of <span class="math notranslate nohighlight">\(f(x)\)</span> occur where <span class="math notranslate nohighlight">\(f'(x) = 0\)</span>.  And we were specifically told that the derivative is equal to zero only when <span class="math notranslate nohighlight">\(x=-3\)</span>, <span class="math notranslate nohighlight">\(x=0\)</span>, and <span class="math notranslate nohighlight">\(x=4\)</span>, so these are the three critical points of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Classify the critical point at <span class="math notranslate nohighlight">\(x=-3\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">From the given graph of <span class="math notranslate nohighlight">\(f''(x)\)</span>, we can see that <span class="math notranslate nohighlight">\(f''(-3)\)</span> is positive.  Therefore, since <span class="math notranslate nohighlight">\(f'(-3)=0\)</span> and <span class="math notranslate nohighlight">\(f''(-3) &gt; 0\)</span>, by the Second Derivative Test, <span class="math notranslate nohighlight">\(f\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x = -3\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>   Classify the critical point at <span class="math notranslate nohighlight">\(x=0\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since <span class="math notranslate nohighlight">\(f'(0)=0\)</span> and <span class="math notranslate nohighlight">\(f''(0) = 0\)</span>, the Second Derivative Test is inconclusive and we proceed to using the First Derivative Test:</p>
+<ul class="simple">
+<li><p class="sd-card-text">From the graph of <span class="math notranslate nohighlight">\(f''(x)\)</span>, note that <span class="math notranslate nohighlight">\(f''(x) &lt; 0\)</span> for <span class="math notranslate nohighlight">\(x\)</span> just before 0 and <span class="math notranslate nohighlight">\(f''(x) &lt; 0\)</span> for <span class="math notranslate nohighlight">\(x\)</span> just after 0.</p></li>
+<li><p class="sd-card-text">This means that <span class="math notranslate nohighlight">\(f'(x)\)</span> is decreasing just before <span class="math notranslate nohighlight">\(x=0\)</span> and decreasing just after <span class="math notranslate nohighlight">\(x=0\)</span>.</p></li>
+<li><p class="sd-card-text">But since <span class="math notranslate nohighlight">\(f'(0) = 0\)</span>, <span class="math notranslate nohighlight">\(f'(x)\)</span> must then be positive just before <span class="math notranslate nohighlight">\(x=0\)</span> and negative just after <span class="math notranslate nohighlight">\(x=0\)</span>.  A graph of <span class="math notranslate nohighlight">\(f'(x)\)</span> is shown below.  Notice how <span class="math notranslate nohighlight">\(f'(x)\)</span> is decreasing just before 0 and decreasing just after 0.</p></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of $y = f'(x)$" src="../_images/pic_curvesketching_secondderivativetest_3_2.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A graph of the first derivative of f(x) on the interval [-2,2].  The graph starts above the x-axis at x=-2, decreases down to the point (0,0) on the x-axis, and then decreases on the interval (0,-2).  The graph of the derivative only crosses the x-axis at the point (0,0) on the interval shown.</p>
+</div>
+</details><ul class="simple">
+<li><p class="sd-card-text">In particular, <span class="math notranslate nohighlight">\(f'(x)\)</span> changes from positive to negative at <span class="math notranslate nohighlight">\(x=0\)</span>.</p></li>
+<li><p class="sd-card-text">Therefore, by the First Derivative Test, <span class="math notranslate nohighlight">\(f\)</span> has a relative maximum at <span class="math notranslate nohighlight">\(x = 0\)</span>.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 4:</strong>   Classify the critical point at <span class="math notranslate nohighlight">\(x=4\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">From the given graph of <span class="math notranslate nohighlight">\(f''(x)\)</span>, we can see that <span class="math notranslate nohighlight">\(f''(4)\)</span> is positive.  Therefore, since <span class="math notranslate nohighlight">\(f'(4)=0\)</span> and <span class="math notranslate nohighlight">\(f''(4) &gt; 0\)</span>, by the Second Derivative Test, <span class="math notranslate nohighlight">\(f\)</span> has a relative minimum at <span class="math notranslate nohighlight">\(x = 4\)</span>.</p>
+</div>
+</details></div>
+<div class="important admonition">
+<p class="admonition-title">More Practice</p>
+<p>For more examples of applying the Second Derivative Test, see</p>
+<ul class="simple">
+<li><p>Optimization: <a class="reference internal" href="../ch_Optimization/optimization_second_derivative_test.html#optimization-second-derivative-test"><span class="std std-ref">Using the Second Derivative to Classify Critical Points</span></a></p></li>
+</ul>
+</div>
 </section>
 </section>
 </section>
@@ -607,7 +753,8 @@ f''(x)
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -618,6 +765,8 @@ f''(x)
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-second-derivative-to-classify-critical-points">Using the Second Derivative to Classify Critical Points</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
 </ul>
 </li>
 </ul>
@@ -668,8 +817,8 @@ By Department of Mathematics, Penn State University Park
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

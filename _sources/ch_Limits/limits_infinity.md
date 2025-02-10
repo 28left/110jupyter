@@ -245,10 +245,10 @@ There is a horizontal x-axis with the points -5, -3, -1, 1, 3, and 5 marked. The
 
 For rational functions, the limit as $x$ approaches positive or negative infinity can be determined by comparing the degree of the polynomial in the numerator to the degree of the polynomial in the denominator.
 
-For infinite limits of Rational Functions, if the 
-- highest power is in the denominator, then the limit will equal $0$
-- highest power is in the numerator, then the limit will equal $\pm\infty$ (DNE)
-- highest power is the same in both the numerator and denominator, then the limit will equal the ratio of the leading coefficients, i.e. the ratio of the coefficients in front of the highest powers in the numerator and the denominator.
+For the limit at infinity of a rational function, if the 
+- highest power is in the denominator, then the limit exists and is equal to $0$.
+- highest power is in the numerator, then the limit does not exist (DNE) and goes to positive or negative infinity, which can be determined by a careful examination of the leading terms.
+- highest power is the same in both the numerator and denominator, then the limit exists and is equal to the ratio of the leading coefficients (i.e., the ratio of the coefficients of the highest powers in the numerator and in the denominator).
 ```
 
 ### Example 4
@@ -263,12 +263,12 @@ Since the highest power of $x$ is in the denominator, the limit exists and is eq
 
 2. $\displaystyle\lim_{x\to-\infty}\frac{6x^{3}+3}{x^{2}+4x-7}$ 
 ```{dropdown} Answer
-Since the highest power of $x$ is in the numerator, the limit does not exist.  
+Since the highest power of $x$ is in the numerator, the limit does not exist (DNE).  
 
-Furthermore, by comparing the leading terms in the numerator and the denominator, we can determine whether the limit goes to postive or negative infinity.  Since the leading term in the numerator, $6x^3$, is negative as $x$ goes to negative infinity and the leading term in the denominator, $x^2$, is postive as $x$ goes to negative infinity, the ratio of the two (negative/positive) is negative.  Therefore, we can conclude that the limit goes to negative infinity.   
+Furthermore, by comparing the leading terms in the numerator and the denominator, we can determine whether the limit goes to postive or negative infinity.  Since the leading term in the numerator, $6x^3$, is negative as $x$ goes to negative infinity and the leading term in the denominator, $x^2$, is postive as $x$ goes to negative infinity, the ratio of the leading terms (negative/positive) is negative.  Therefore, we can conclude that the limit goes to negative infinity ($-\infty$).   
 ```
 3. $\displaystyle\lim_{x\to\infty}\frac{4x^5+3x-8}{9x^5-6x^3}$
 ```{dropdown} Answer
-Since the highest power in the numerator and in the denominator are the same, the limit exists and is equal to the ratio of leading coefficients, which in this case is $4/9$.
+Since the highest power of $x$ in the numerator and in the denominator are the same, the limit exists and is equal to the ratio of leading coefficients, which in this case is $4/9$.
 ```
 ````

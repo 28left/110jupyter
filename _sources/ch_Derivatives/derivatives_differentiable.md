@@ -83,9 +83,9 @@ The graph of a continuous function that increases before x = -1, decreases betwe
 ````{admonition} Continuous but not differentiable at a point
 :class: tip 
 
-The functions defined by the following two graphs are continuous at every point on the graph.  However, both functions are not differentiable at $x=1$.  
+The functions defined by the following two graphs are continuous at every point on the graph (i.e., we can draw both graphs without picking up our pencil).  However, both functions are not differentiable at $x=1$.  
 
-For the graph on the left, the function is not differentiable at $x=1$ since there is a sharp corner on the graph at $x=1$ (i.e., $f'(1)$ does not exist).  The function is differentiable everywhere else.
+For the graph on the left, the function is not differentiable at $x=1$ since there is a sharp corner on the graph at $x=1$ (i.e., $f'(1)$ does not exist).  No matter how much we zoom in on the graph at the point $(1,3)$, it will never look like a single straight line.  The function is differentiable everywhere else.
 
 For the graph on the right, the function is not differentiable at $x=1$ since it has a vertical tangent line at $x=1$ and vertical lines do not have a slope associated with them (i.e., $f'(1)$ does not exist).  The function is differentiable everywhere else.
 

@@ -11,10 +11,47 @@ kernelspec:
   language: python
   name: python3
 ---
+
+(derivative:diff_rules)=
 # Basic Rules of Differentiation
 
 ## The Rules
 
+```{admonition} Formulas of Differentiation
+:class: info
+
+\begin{align*}
+&\text{Derivative of a Constant} && \frac{d}{dx} c = 0  ~~~ \text{for any constant $c$}\\ \\ 
+&\text{Derivative of a Power Function} && \frac{d}{dx}x^n = nx^{n-1} ~~~ \text{for any constant $n$}
+\end{align*}
+```
+
+```{admonition} The Derivative of a Sum, Difference, Product and Quotient
+:class: info
+
+The following is a list of rules of differentiation that can be applied to the sum, difference, product, and quotient of $f$ and $g$, assuming that both $f$ and $g$ are differentiable.
+
+\begin{align*}
+&\text{Constant Multiple Rule} && \frac{d}{dx}[cf(x)] = cf'(x) ~~~ \text{for any constant $c$}\\ \\
+&\text{Sum/Difference Rule} && \frac{d}{dx}[f(x)\pm g(x)] = f'(x) \pm g'(x)\\ \\
+&\text{Product Rule} && \frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)\\ \\
+&\text{Quotient Rule} && \frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}
+\end{align*}
+```
+
+```{admonition} The Derivative of a Composition of Functions
+:class: info
+
+The Chain Rule is a rule of differentiation that can be applied to the composition $g\circ f$, assuming both $f$ and $g$ are differentiable.  The General Power Rule is a specific case of the Chain Rule, where $g(x) = x^n$.
+
+\begin{align*}
+&\text{Chain Rule} && \frac{d}{dx}\left[g(f(x))\right] = g'(f(x))f'(x) \\ \\
+&\text{General Power Rule} && \frac{d}{dx}[f(x)]^n = n[f(x)]^{n-1}f'(x) ~~~ \text{for any constant $n$}
+\end{align*}
+```
+
+
+<!--
 ```{admonition} Derivative of a Constant
 :class: info
 For any real number $c$, 
@@ -87,7 +124,7 @@ $$
 
 This is a special case of the Chain Rule with $g(x) = x^n$.
 ```
-
+-->
 
 
 ### Example 1
@@ -381,7 +418,7 @@ h'(x) &= \frac{x^4\cancel{(4x-7)^2}[20x-35 - 12x]}{(4x-7)^{\cancel{6}4}} \\ \\
 ````{admonition} Rate of Change of Unit Price
 :class: tip
 
-Penn State Learning has a weekly demand funciton for their calculators which is given by
+Penn State Learning has a weekly demand function for their calculators which is given by
 
 $$p = d(x) = 300 - 2x^2$$
 
