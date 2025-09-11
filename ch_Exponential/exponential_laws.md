@@ -117,6 +117,46 @@ Let $a$ and $b$ be positive numbers and $x$ and $y$ be real numbers. Let $m$ and
 ````
 
 
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/2_jV6DfU34s" target="_blank">Laws of Exponents</a> (Links to an external site) <br>
+A review of the laws of exponents with numerous example problems.
+:::
+::::
+````
+
+
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/d70cY4-O5yo" target="_blank">Properties of Logarithms</a> (Links to an external site) <br>
+A review of properties of logarithmic functions with numerous examples.
+:::
+::::
+````
+
+
 ### Example 1
 ````{admonition} Solve for unknown value in the exponent
 :class: tip
@@ -390,11 +430,15 @@ $$\frac{1}{xy} (y +xy') + 7y^6y' = 3x^2+2.$$
 :color: light
 :animate: fade-in
 
+Multiply the left-hand side by $xy$:
 \begin{align*}
   xy\left[ \frac{1}{xy} (y +xy') + 7y^6y' \right]
   &= xy\frac{1}{xy} (y +xy') + xy\cdot 7y^6y' \\
-  &= (y+xy') + 7xy^7y'\\
-  \\
+  &= (y+xy') + 7xy^7y'
+\end{align*}
+
+Multiply the right-hand side by $xy$:
+\begin{align*}
   xy\left[ 3x^2 + 2 \right]
   &= 3x^3y + 2xy.
 \end{align*}

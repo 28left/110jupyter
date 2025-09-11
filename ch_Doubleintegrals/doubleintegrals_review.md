@@ -23,7 +23,7 @@ kernelspec:
 \begin{align*}
 &\text{Integral of a Constant, $k$} && \int k ~dx  = kx + C \\ \\ 
 &\text{Integral of $x^n$, $n\neq -1$} && \int x^n ~dx  = \frac{x^{n+1}}{n+1} + C ~~~ \text{if $n\neq -1$}\\ \\
-&\text{Integral of $1/x$} && \int \frac{1}{x} ~dx = \ln(x) + C \\ \\ 
+&\text{Integral of $1/x$} && \int \frac{1}{x} ~dx = \ln|x| + C \\ \\ 
 &\text{Integral of $e^{ax}$, $a\neq 0$} && \int e^{ax} ~dx = \frac{1}{a}e^{ax} + C ~~~ \text{if $a\neq 0$} 
 \end{align*}
 ```

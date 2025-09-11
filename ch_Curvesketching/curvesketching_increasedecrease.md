@@ -25,6 +25,7 @@ kernelspec:
 
 A function $f$ is _**increasing**_ on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) < f(d)$ whenever $c<d$.
 
+In other words, the graph of the function goes up from left to right on the interval $(a,b)$, as illustrated below.
 ::::{grid} auto
 :::{grid-item-card}
 :margin: auto
@@ -111,6 +112,7 @@ There is a horizontal axis with the points a, c, d, and b marked. It is noted th
 
 A function $f$ is _**decreasing**_ on the interval $(a,b)$ if for any two numbers $c$ and $d$ in $(a,b)$, $f(c) > f(d)$ whenever $c<d$.
 
+In other words, the graph of the function goes down from left to right on the interval $(a,b)$, as illustrated below.
 ::::{grid} auto
 :::{grid-item-card}
 :margin: auto
@@ -187,6 +189,7 @@ There is a horizontal axis with the points a, c, d, and b marked. It is noted th
 
 ```{admonition} What the Sign of $f'$ Tells Us About $f$
 :class: important
+We can use the derivative to determine if a function is increasing or decreasing on a given interval.
 
 - If $f'(x) > 0$ for all $x$ in the interval $(a,b)$, then $f$ is increasing on $(a,b)$.
 - If $f'(x) < 0$ for all $x$ in the interval $(a,b)$, then $f$ is decreasing on $(a,b)$.
@@ -257,8 +260,114 @@ There is a horizontal x-axis with the points 1, 2, 3, 4, 5, 6, and 7 marked. The
     - If $f'(c) < 0$, then $f$ is decreasing on $(a,b)$.
 ```
 
-(curvesketching:increasedecrease:example2)=
+
 ### Example 2
+
+````{admonition} Finding intervals of increase/decrease using the graph of the derivative
+:class: tip
+
+The following graph corresponds to $f'(x)$, the first derivative of $f(x)$.  
+
+Using the graph of $f'(x)$, determine the intervals of increase/decrease of $f(x)$.  You may assume that $f'(x)$ is continuous for all $x$ and $f'(x) = 0$ only when $x = -1$ and $x = 2$.
+
+::::{grid} auto
+:::{grid-item-card}
+:margin: auto
+```{image} ../images/pic_curvesketching_increasedecrease_example_2.png
+:alt: Graph of the derivative of a function
+```
+:::
+::::
+``` {dropdown} Long Text Description
+There is a horizontal x-axis with the points -1, 1, 2, and 3 marked. There is a vertical y-axis with no points marked. The graph of a continuous function is plotted here. The graph of the function touches the x-axis at x = -1 and at x = 2.  The graph is below the x-axis for x < - 1.  The graph is above the x-axis for -1 < x < 2 and for x > 2.
+```
+
+
+
+
+```{dropdown} **Step 1:** &nbsp; Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f'(x) = 0$.
+
+We were given that $f'(x) = 0$ only when $x = -1$ and when $x = 2$.
+```
+
+```{dropdown} **Step 2:**  &nbsp;  Find all values of &nbsp; $x$ &nbsp; such that &nbsp; $f'(x)$ &nbsp; does not exist.
+
+Notice that $f'(x)$ is defined for all real numbers since we were told that $f'(x)$ is continuous for all $x$.
+```
+
+
+```{dropdown} **Step 3:** &nbsp;  Break up the domain of &nbsp; $f$ &nbsp; into subintervals.
+
+Break up the domain of &nbsp; $f$ &nbsp; into subintervals based on the values found in Steps 1 and 2.
+
+Since we found $x=-1$ and $x=2$ to be the only values where $f'(x) = 0$ or where $f'(x)$ is not defined, we break up the domain of $f$ (which is $(-\infty,\infty)$) into the following subintervals:
+
+$$(-\infty,-1), ~(-1,2), ~\hbox{ and }~  (2,\infty)$$
+```
+
+
+```{dropdown} **Step 4:** &nbsp;  Use the graph to determine the sign of $f'$ on each interval.
+
+$\mathbf{(-\infty,-1)}$: Since the graph of $f'(x)$ is below the $x$-axis on this interval, $f'(x) < 0$ for all $x$ on $(-\infty,-1)$.
+
+$\mathbf{(-1,2)}$: Since the graph of $f'(x)$ is above the $x$-axis on this interval, $f'(x) > 0$ for all $x$ on $(-1,2)$.
+
+$\mathbf{(2,\infty)}$: Since the graph of $f'(x)$ is above the $x$-axis on this interval, $f'(x) > 0$ for all $x$ on $(2,\infty)$.
+
+```
+
+
+```{dropdown} **Step 5:** &nbsp;  Use the sign of $f'$ to determine the intervals of increase/decrease of $f$.
+
+Recall that $f$ is increasing on intervals where $f'(x) > 0$ and decreasing on intervals where $f'(x) < 0$.
+
+Therefore, $f$ is increasing on $(-1,2) \cup (2,\infty)$ and decreasing on $(-\infty,-1)$.
+```
+````
+
+
+<!--
+```{code-cell}
+:tags: [remove-cell]
+
+%load_ext itikz
+```
+
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\begin{tikzpicture}[baseline=70,ultra thick,smooth,domain=-4:4,variable=\x,scale=1.5]
+
+% create a white background with a black frame
+\draw [white,thin,fill=white] (-2,-2) rectangle (4,3.5);  
+
+% draw grid
+\draw[xstep=0.5cm, ystep=0.5cm, lightgray, thin] (-1.99,-1.99) grid (3.99,3.49); 
+
+% draw axes
+\draw [->,thick] (-2,0) -- (4,0)  node[below] {$x$};
+\draw [->,thick] (0,-2) -- (0,3.5)  node[right] {$y$};;
+
+\clip (-2,-2) rectangle (4,4);
+
+% (x+2)(x-1)^2(x-3)
+\draw plot [domain=-3:4] (\x,{(\x+1)*(\x-2)*(\x-2)/6}); 
+
+\draw [black,ultra thick] (3.1,3.0) node [above,align=center] {$y=f'(x)$};
+
+% tick marks
+\foreach \x in {-1,1,2,3} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below, scale=1.5] {$\x$};
+
+\end{tikzpicture}
+```
+-->
+
+
+
+(curvesketching:increasedecrease:example3)=
+### Example 3
 
 ````{admonition} Finding intervals of increase/decrease
 :class: tip
@@ -293,20 +402,27 @@ Since we found $x=-3$ and $x=1$ to be the only values where $f'(x)$ could change
 $$(-\infty,-3), ~(-3,1), ~\hbox{ and }~  (1,\infty)$$
 ```
 
-```{dropdown} **Step 5:** &nbsp;  Plug one number from each subinterval into &nbsp; $f'(x)$ &nbsp; to determine the sign of &nbsp; $f'(x)$.
+```{dropdown} **Step 5:** &nbsp;  Plug one number from each subinterval into &nbsp; $f'(x)$ &nbsp; to determine the sign of &nbsp; $f'(x)$ on that interval.
 
 $\mathbf{(-\infty,-3)}$: Plug $x=-4$ into $f'(x)$.
 Since $f'(-4) = 3(-1)(-5) > 0$, 
-$f$ is increasing on $(-\infty,-3)$.
+$f'(x) > 0 $ for all $x$ on $(-\infty,-3)$.
 
 
 $\mathbf{(-3,1)}$: Plug $x=0$ into $f'(x)$.
 Since $f'(0) = 3(3)(-1) < 0$, 
-$f$ is decreasing on $(-3,1)$.
+$f'(x) < 0$ for all $x$ on $(-3,1)$.
 
 $\mathbf{(1,\infty)}$:  Plug $x=2$ into $f'(x)$.
 Since $f'(2) = 3(5)(1) > 0$, 
-$f$ is increasing on $(1,\infty)$.
+$f'(x) > 0$ for all $x$ on $(1,\infty)$.
+```
+
+```{dropdown} **Step 6:** &nbsp;  Use the sign of the derivative to determine the intervals of increase/decrease .
+
+Recall that $f(x)$ is increasing on intervals where $f'(x) >0$ and decreasing on intervals where $f'(x) < 0$.
+
+Therefore, $f(x)$ is increasing on $(-\infty,-3) \cup (1,\infty)$ and decreasing on $(-3,1)$.
 ```
 ````
 
@@ -314,7 +430,7 @@ $f$ is increasing on $(1,\infty)$.
 
 ````{admonition} Graphical Representation of Sign Analysis
 :class: warning
-We will typically represent the above sign analysis by drawing a number line, marking off the values in the domain of $f$ such that $f'(x) = 0$ or $f'(x)$ does not exist, and then putting a $+$ or $-$ above each interval according to the sign of $f'(c)$, where $c$ is the test value taken from the corresponding interval.  The number line associated with the calculations in {ref}`curvesketching:increasedecrease:example2` is shown below.
+We will typically represent the above sign analysis by drawing a number line, marking off the values in the domain of $f$ such that $f'(x) = 0$ or $f'(x)$ does not exist, and then putting a $+$ or $-$ above each interval according to the sign of $f'(c)$, where $c$ is the test value taken from the corresponding interval.  The number line associated with the calculations in {ref}`curvesketching:increasedecrease:example3` is shown below.
 
 ```{image} ../images/pic_curvesketching_intervalsignanalysis.png
 :alt: graphical representation of sign analysis on the number line

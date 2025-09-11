@@ -62,6 +62,28 @@ Suppose we are given the function $y=f(x)$.
 
 
 
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/jcZvmA3rh1E" target="_blank">Functions and the Vertical Line Test</a> (Links to an external site) <br>
+A review of the definition and terminology of a function and the vertical line test.
+:::
+::::
+````
+
+
+
+
 ## Domain Considerations
 
 ```{admonition} Restrictions on the Domain
