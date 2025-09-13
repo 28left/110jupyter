@@ -259,7 +259,7 @@ In the above example of the distributive property of multiplication, only numeri
 :::
 :::{grid-item}
 :columns: 10
-<a href="https://youtu.be/_5A7bGr2vjA" target="_blank">Multiplying Polynomials</a> (Links to an external site) <br>
+<a href="https://youtu.be/zLvp5H2rgVU" target="_blank">Multiplying Polynomials</a> (Links to an external site) <br>
 A review of how to use the distributive property to expand the product of polynomials.
 :::
 ::::

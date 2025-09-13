@@ -255,8 +255,30 @@ The process is broken down into the following five steps.
 2. Replace $bx$ with $rx$ + $sx$.
 3. Group the first two terms and the last two terms of $ax^2 + rx + sx + c$.
 4. Pull out common factors from each group.
-5. Pull out common factor.
+5. Pull out common binomial factor.
 ```
+
+
+
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/tT9MtYPIcKo" target="_blank">Factoring Quadratic Functions</a> (Links to an external site) <br>
+A review of techniques for factoring quadratic functions.
+:::
+::::
+````
+
 
 ### Example 6
 
@@ -292,7 +314,7 @@ $$(6x^2 - 3x) + (10x - 5)$$
 $$3x(2x-1) +  5(2x-1)$$
 ```
 
-```{dropdown} **Step 5:** &nbsp; Pull out common factor of &nbsp; $2x-1$.
+```{dropdown} **Step 5:** &nbsp; Pull out common binomial factor.
 
 $$(2x-1)(3x+5)$$
 
@@ -351,7 +373,7 @@ $$(x^2 - 4x) + (-9x + 36)$$
 $$x(x-4) +  (-9)(x-4)$$
 ```
 
-```{dropdown} **Step 5:** &nbsp; Pull out common factor of &nbsp; $x-4$.
+```{dropdown} **Step 5:** &nbsp; Pull out common binomial factor.
 
 $$(x-4)(x-9)$$
 
@@ -478,5 +500,8 @@ Therefore,
 \end{align*}
 ```
 ````
+
+
+
 
 

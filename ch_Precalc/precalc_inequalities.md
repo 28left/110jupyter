@@ -174,6 +174,26 @@ Based on the graph shown above, $x^2+2x-3 >0$ whenever $x<-3$ or $x>1$.
 
 
 
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/054oO_M1018" target="_blank">Solving Quadratic Inequalities</a> (Links to an external site) <br>
+Several more examples of solving inequalities involving quadratic functions.
+:::
+::::
+````
+
+
 
 
 ### Example 2

@@ -73,7 +73,9 @@ parts:
     - file: ch_Optimization/optimization_TIY.md
   - file: ch_Exponential/exponential_
     sections:
-    - file: ch_Exponential/exponential_functions.md
+    - file: ch_Exponential/exponential_exponential.md
+    - file: ch_Exponential/exponential_logarithmic.md
+    - file: ch_Exponential/exponential_natural.md
     - file: ch_Exponential/exponential_laws.md
     - file: ch_Exponential/exponential_logarithmic_diff.md
     - file: ch_Exponential/exponential_logistic.md
@@ -94,6 +96,7 @@ parts:
   - file: ch_Definite/definite_
     sections:
     - file: ch_Definite/definite_riemann.md
+    - file: ch_Definite/definite_geometric.md
     - file: ch_Definite/definite_ftc.md
     - file: ch_Definite/definite_substitution.md
     - file: ch_Definite/definite_average_value.md

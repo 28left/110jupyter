@@ -20,6 +20,27 @@ kernelspec:
 A _**piecewise function**_ is a function whose domain is broken up into several subintervals and a different rule is used to define the function on each subinterval. 
 ```
 
+
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/ZYQGGx6ipqI" target="_blank">Piecewise Functions</a> (Links to an external site) <br>
+A review of how to evaluate and graph a piecewise defined function.
+:::
+::::
+````
+
+
 ### Example 1
 ```{admonition} A piecewise defined function
 :class: tip
@@ -111,3 +132,5 @@ Since $6 \neq 5$, use $g(x) = \dfrac{x^2 - 25}{x-5}$ to evaluate $g(6)$.
 $$g(6) = \frac{6^2 - 25}{6-5} = 11$$
 ```
 ````
+
+

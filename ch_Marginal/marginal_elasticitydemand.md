@@ -35,6 +35,17 @@ E(p) = -\frac{pf'(p)}{f(p)} %\label{elasticity}
 ```
 
 
+```{admonition} Alternate Notation
+:class: info
+If instead we let $x$ denote the quantity demanded (with the understanding that $x$ is a function of $p$), then _**elasticity of demand at price $p$**_, $E(p)$, can be written as
+
+\begin{align*}
+E(p) = -\frac{dx}{dp} \cdot \frac{p}{x}
+\end{align*}
+In other words, $x = f(p)$ and $\frac{dx}{dp} = f'(p)$.
+```
+
+
 (marginal:elasticitydemand:example1)=
 ### Example 1
 ````{admonition} Elasticity of demand
