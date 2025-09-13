@@ -15,7 +15,33 @@ kernelspec:
 
 ## The Rules
 
-```{admonition} Integral of a Costant
+
+```{admonition} Formulas of Integration
+:class: info
+
+\begin{align*}
+&\text{Integral of a Constant, for any real $k$} && \int k ~dx  = kx + C \\ \\ 
+&\text{Integral of $x^n$, for any real $n\neq -1$} && \int x^n ~dx  = \frac{x^{n+1}}{n+1} + C \\ \\
+&\text{Integral of $1/x$} && \int \frac{1}{x} ~dx = \ln|x| + C \\ \\ 
+&\text{Integral of $e^{x}$} && \int e^{x} ~dx = e^{x} + C  \\ \\
+&\text{Integral of $e^{ax}$, for any real $a\neq 0$} && \int e^{ax} ~dx = \frac{1}{a}e^{ax} + C  
+\end{align*}
+```
+
+
+```{admonition} Rules of Integration
+:class: info
+
+\begin{align*}
+&\text{Constant Multiple Rule} && \int cf(x) ~dx  = c \int f(x) ~dx \\ \\
+&\text{Sum/Difference Rule} && \int f(x) \pm g(x) ~dx = \int f(x) ~dx \pm \int g(x) ~dx\\ \\
+&\text{Substitution Rule, $u=g(x)$, $du=g'(x)~dx$} && \int f(g(x)) g'(x) ~dx = \int f(u) ~du 
+\end{align*}
+```
+
+
+<!--
+```{admonition} Integral of a Constant
 :class: info
 
 For any real number $k$,
@@ -66,6 +92,8 @@ If $u=g(x)$ and $du = g'(x) ~dx$ then
 
 $$\int f(g(x))g'(x) ~dx = \int f(u) ~du$$
 ```
+-->
+
 
 ### Example 1
 ````{admonition} Integral of a constant

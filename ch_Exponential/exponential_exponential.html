@@ -1,0 +1,858 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Exponential Functions &#8212; Penn State Math 110 Companion Site</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/myfile.css?v=3437f865" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-2H7BN83HGG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2H7BN83HGG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2H7BN83HGG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ch_Exponential/exponential_exponential';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Logarithmic Functions" href="exponential_logarithmic.html" />
+    <link rel="prev" title="Exponential &amp; Logarithmic Functions" href="exponential_.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-light" alt="Penn State Math 110 Companion Site - Home"/>
+    <img src="../_static/PSU_SCI_RGB_2C.png" class="logo__image only-dark pst-js-only" alt="Penn State Math 110 Companion Site - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Math 110
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Packets e-book</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Precalc/precalc_.html">Precalculus Review</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_simplification.html">Algebraic Simplification Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_factoring.html">Factoring Techniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_solvingequations.html">Solving Equations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_graphing.html">Graphing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_inequalities.html">Solving Inequalities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_domain.html">The Domain of a Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Precalc/precalc_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Functions/functions_.html">Functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_functionsdomainrange.html">Functions, Domain, and Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_composition.html">Composition of Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_costrevprofit.html">Cost, Revenue, and Profit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_powerpolyrational.html">Power, Polynomial &amp; Rational Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_piecewise.html">Piecewise Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_demandsupply.html">Demand and Supply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_application.html">An Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Functions/functions_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Limits/limits_.html">Limits and Continuity</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_def.html">Limit of a Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_proplim.html">Properties of Finite Limits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_graphs.html">Computing Limits from Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_algebra.html">Computing Limits Algebraically</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_indeterminate.html">Indeterminate Forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_infinity.html">Limits at Infinity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_continuity.html">Continuity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Limits/limits_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Derivatives/derivatives_.html">Derivatives</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_def.html">The Concept of the Derivative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_differentiable.html">Differentiability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_rules.html">Basic Rules of Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Derivatives/derivatives_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Marginal/marginal_.html">Marginal Analysis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_costrevprofit.html">Cost, Revenue, &amp; Profit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_marginalanalysis.html">Marginal Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_elasticitydemand.html">Elasticity of Demand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_elasticityrevenue.html">Elasticity &amp; Total Revenue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Marginal/marginal_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Implicit/implicit_.html">Implicit Differentiation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Implicit/implicit_differentiation.html">Implicit Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Implicit/implicit_relatedrates.html">Related Rates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Implicit/implicit_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Curvesketching/curvesketching_.html">Curve Sketching</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_increasedecrease.html">Intervals of Increase &amp; Decrease</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_relative_extrema.html">Relative Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_critical_points.html">Critical Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_first_derivative_test.html">The First Derivative Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_second_derivative_test.html">The Second Derivative Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_concavity.html">Intervals of Concavity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_inflection.html">Inflection Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_asymptotes.html">Asymptotes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_sketching.html">Curve Sketching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Curvesketching/curvesketching_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Optimization/optimization_.html">Optimization</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_relative_extrema.html">Relative Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_critical_points.html">Critical Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_first_derivative_test.html">The First Derivative Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_second_derivative_test.html">The Second Derivative Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_absolute_extrema.html">Absolute Extrema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_applications.html">Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Optimization/optimization_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="exponential_.html">Exponential &amp; Logarithmic Functions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Exponential Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exponential_logarithmic.html">Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exponential_natural.html">The Natural Exponential and Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exponential_laws.html">Laws of Exponential and Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exponential_logarithmic_diff.html">Logarithmic Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exponential_logistic.html">Logistic Growth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exponential_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_.html">Compound Interest</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_notation.html">Notation and Terminology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_accumulated_amount.html">Accumulated Amount Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_present_value.html">Present Value Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Compoundinterest/compoundinterest_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Indefinite/indefinite_.html">Indefinite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_integrals.html">Indefinite Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_rules.html">Basic Rules of Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_init_value.html">Initial Value Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_substitution.html">Integration by Substitution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Indefinite/indefinite_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Definite/definite_.html">Definite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_riemann.html">Riemann Sums and the Definite Integral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_geometric.html">Geometric Interpretation of the Definite Integral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_ftc.html">The Fundamental Theorem of Calculus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_substitution.html">Substitution for Definite Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_average_value.html">Average Value of a Function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_.html">Applications of Definite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_area_between_curves.html">Area Between Two Curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_consumer_producer_total_surplus.html">Consumer, Producer, &amp; Total Surplus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_income_streams_annuities.html">Income Streams &amp; Annuities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Applicationintegrals/applicationintegrals_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Byparts/byparts_.html">Integration by Parts &amp; Improper Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_integration.html">Integration by Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application.html">Application of Integration by Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_improper.html">Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_application_improper.html">Application of Improper Integrals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Byparts/byparts_TIY.html">Try It Yourself</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Other</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Other/privacy.html">Privacy</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/ch_Exponential/exponential_exponential.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Exponential Functions</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-and-properties-of-exponential-functions">Definition and Properties of Exponential Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="exponential-functions">
+<h1>Exponential Functions<a class="headerlink" href="#exponential-functions" title="Link to this heading">#</a></h1>
+<section id="definition-and-properties-of-exponential-functions">
+<h2>Definition and Properties of Exponential Functions<a class="headerlink" href="#definition-and-properties-of-exponential-functions" title="Link to this heading">#</a></h2>
+<div class="info admonition">
+<p class="admonition-title">Definition of an Exponential Function</p>
+<p>For any constant <span class="math notranslate nohighlight">\(b&gt;0\)</span> and <span class="math notranslate nohighlight">\(b\neq 1\)</span>, the function</p>
+<div class="math notranslate nohighlight">
+\[f(x) = b^x\]</div>
+<p>is called the <em><strong>exponential function with base <span class="math notranslate nohighlight">\(b\)</span></strong></em>.</p>
+</div>
+<div class="info admonition">
+<p class="admonition-title">Properties of Exponential Functions</p>
+<p>For a function <span class="math notranslate nohighlight">\(y = b^x\)</span>, the following properties hold:</p>
+<ul class="simple">
+<li><p>Its domain is <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span> and range is <span class="math notranslate nohighlight">\((0,\infty)\)</span>.</p></li>
+<li><p>Its graph passes through the point <span class="math notranslate nohighlight">\((0,1)\)</span> (i.e., <span class="math notranslate nohighlight">\(b^0 = 1\)</span>).</p></li>
+<li><p>It is continuous on <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(b&gt;1\)</span></p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(b^x\)</span> is increasing on <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to -\infty} b^x = 0\)</span>  and <span class="math notranslate nohighlight">\(\lim\limits_{x\to \infty} b^x = \infty\)</span> <br><br></p></li>
+</ul>
+</li>
+<li><p>If <span class="math notranslate nohighlight">\(0 &lt; b &lt;1\)</span></p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(b^x\)</span> is decreasing on <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x\to -\infty} b^x = \infty\)</span>  and <span class="math notranslate nohighlight">\(\lim\limits_{x\to \infty} b^x = 0\)</span></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Video Resource</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 sd-p-1 docutils">
+<img alt="UnderstandTheMath" src="../_images/UnderstandTheMath.png" />
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><a href="https://youtu.be/q2j7M7l41LE" target="_blank">Introduction to Exponential Functions</a> (Links to an external site) <br>
+A review of the definition, properties, graph, and real world applications of exponential functions.</p>
+</div>
+</div>
+</div>
+</div>
+<section id="example-1">
+<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Graphs of exponential growth functions</p>
+<p>The graphs of the exponential functions <span class="math notranslate nohighlight">\(5^x\)</span>, <span class="math notranslate nohighlight">\(2^x\)</span>, and <span class="math notranslate nohighlight">\((3/2)^x\)</span> are all shown below.  Since the base associated with each function is greater than one, each exponential function is increasing and goes to infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to infinity.  For this reason, exponential functions with a base greater than one are referred to as <strong>exponential growth functions</strong>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_exponential_functions_exponential_growth.png"><img alt="Graphs of various exponential growth functions" src="../_images/pic_exponential_functions_exponential_growth.png" style="width: 500px;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graphs of 5 to the power of x, 2 to the power of x, and 3/2 to the power of x are all shown on the same coordinate axes.  The values -3, -1, 1, and 3 are marked on the x-axis and the values 1, 2, 3, and 4 are marked on the y-axis.</p>
+<p class="sd-card-text">From left-to-right, the graph of y = 5 to the power of x starts very close to and above the x-axis.  The graph slowly increases to the point (0,1) and continues to increase for positive values of x.  The steepness of the curve also increases from left-to-right.</p>
+<p class="sd-card-text">From left-to-right, the graph of y = 2 to the power of x starts very close to and above the graph of y = 5 to the power of x.  The graph slowly increases to the point (0,1), at which point it crosses the graph of y = 5 to the power of x.  It continues to increase for positive values of x, staying below the graph of y = 5 to the power of x.  The steepness of the curve also increases from left-to-right, but it is not as steep as the graph of y = 5 to the power of x.</p>
+<p class="sd-card-text">From left-to-right, the graph of y = 3/2 to the power of x starts very close to and above the graph of y = 2 to the power of x.  The graph slowly increases to the point (0,1), at which point it crosses the graphs of y = 5 to the power of x and y = 2 to the power of x.  It continues to increase for positive values of x, staying below the graph of y = 2 to the power of x.  The steepness of the curve also increases from left-to-right, but it is not as steep as the graph of y = 2 to the power of x.</p>
+</div>
+</details></div>
+<!--
+\begin{tikzpicture}[scale=1.4]
+\tikzstyle{every node}=[font=\large]
+ 
+% create a white background, with a black frame
+%\draw [fill=white] (-7.5,-1.5) rectangle (7.5,3.5); 
+
+% draw a grid
+\draw[step=5mm, lightgray, thin] (-4.99,0) grid (4.99,4.99); 
+%\draw[step=1cm, gray] (0,-0) grid (6.5,3.5); 
+
+% draw axes
+\draw [->,thick] (-5,0) -- (5,0) node[below] {$x$}; 
+\draw [->,thick] (0,-0.5) -- (0,5) node[right] {$y$};
+
+% tick marks
+\foreach \x in {-3,-1,1,3} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {\x};
+\foreach \y in {1,2,3,4} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {\y};
+
+% plot curve
+\clip (-5,-1) rectangle (5,5);
+\draw[ultra thick,domain=-5:3.96,smooth,samples=100,red] plot (\x,{pow(1.5,\x)}) node [below right,fill=white] {$\left(\frac{3}{2}\right)^x$};
+\draw[ultra thick,domain=-5:2.316,smooth,samples=100,blue] plot (\x,{pow(2,\x)}) node [below right,fill=white] {$2^x$};
+\draw[ultra thick,domain=-5:1,smooth,samples=100] plot (\x,{pow(5,\x)}) node [below right,fill=white] {$5^x$};
+
+\end{tikzpicture}
+
+-->
+</section>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Graphs of exponential decay functions</p>
+<p>The graphs of the exponential functions <span class="math notranslate nohighlight">\((2/3)^x\)</span>, <span class="math notranslate nohighlight">\((1/2)^x\)</span>, and <span class="math notranslate nohighlight">\((1/5)^x\)</span> are all shown below.  Since the base associated with each function is between zero and one, each exponential function is decreasing and goes to zero as <span class="math notranslate nohighlight">\(x\)</span> goes to infinity.  For this reason, exponential functions with a base between zero and one are referred to as <strong>exponential decay functions</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<a class="reference internal image-reference" href="../_images/pic_exponential_functions_exponential_decay.png"><img alt="Graphs of various exponential decay functions" src="../_images/pic_exponential_functions_exponential_decay.png" style="width: 500px;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The graphs of 2/3 to the power of x, 1/2 to the power of x, and 1/5 to the power of x are all shown on the same coordinate axes.  The values -3, -1, 1, and 3 are marked on the x-axis and the values 1, 2, 3, and 4 are marked on the y-axis.</p>
+<p class="sd-card-text">From left-to-right, the graph of y = 2/3 to the power of x starts very far above the x-axis.  The graph quickly decreases to the point (0,1) and continues to decrease for positive values of x, getting closer and closer to the x-axis, but always staying above it.  The steepness of the curve decreases from left-to-right.</p>
+<p class="sd-card-text">From left-to-right, the graph of y = 1/2 to the power of x starts very far above the graph of y = 2/3 to the power of x.  The graph quickly decreases to the point (0,1), at which point it crosses the graph of y = 2/3 to the power of x.  It continues to decrease for positive values of x, staying below the graph of y = 2/3 to the power of x while getting closer and closer to the x-axis from above.  The steepness of the curve also decreases from left-to-right.</p>
+<p class="sd-card-text">From left-to-right, the graph of y = 1/5 to the power of x starts very far above the graph of y = 1/2 to the power of x.  The graph quickly decreases to the point (0,1), at which point it crosses the graphs of y = 1/2 to the power of x and y = 2/3 to the power of x.  It continues to decrease for positive values of x, staying below the graph of y = 1/2 to the power of x while getting closer and closer to the x-axis from above.  The steepness of the curve also decreases from left-to-right.</p>
+</div>
+</details></div>
+<!--
+\begin{tikzpicture}[scale=1.4]
+\tikzstyle{every node}=[font=\large]
+ 
+% create a white background, with a black frame
+%\draw [fill=white] (-7.5,-1.5) rectangle (7.5,3.5); 
+
+% draw a grid
+\draw[step=5mm, lightgray, thin] (-4.99,0) grid (4.99,4.99); 
+%\draw[step=1cm, gray] (0,-0) grid (6.5,3.5); 
+
+% draw axes
+\draw [->,thick] (-5,0) -- (5,0) node[below] {$x$}; 
+\draw [->,thick] (0,-0.5) -- (0,5) node[right] {$y$};
+
+% tick marks
+\foreach \x in {-3,-1,1,3} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below] {\x};
+\foreach \y in {1,2,3,4} 
+	\draw [thick] (2pt,\y cm) -- (-2pt,\y cm) node[left] {\y};
+
+% plot curve
+\clip (-5,-1) rectangle (5,5);
+\draw[ultra thick,domain=-5:3.96,smooth,samples=100,red] plot (-\x,{pow(1.5,\x)}) node [below left,fill=white] {$\left(\frac{2}{3}\right)^x$};
+\draw[ultra thick,domain=-5:2.316,smooth,samples=100,blue] plot (-\x,{pow(2,\x)}) node [below left,fill=white] {$\left(\frac{1}{2}\right)^x$};
+\draw[ultra thick,domain=-5:1,smooth,samples=100] plot (-\x,{pow(5,\x)})node [below left,fill=white] {$\left(\frac{1}{5}\right)^x$};
+
+\end{tikzpicture}
+-->
+</section>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Limits of exponential functions</p>
+<p>Evaluate the following limits by first evaluating the limit of the exponent and then applying the corresponding limit property of exponential functions to evaluate the given limit.</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} 2^{-x^7}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(-x^7\)</span>, goes to positive infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to negative infinity.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to positive infinity and the base is bigger than one, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to \infty} b^x = \infty\]</div>
+<p class="sd-card-text">for <span class="math notranslate nohighlight">\(b&gt;1\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} 2^{-x^7} = \infty\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="2">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to \infty} 4^{-x^2}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(-x^2\)</span>, goes to negative infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to positive infinity.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to negative infinity and the base is bigger than one, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to -\infty} b^x = 0\]</div>
+<p class="sd-card-text">for <span class="math notranslate nohighlight">\(b&gt;1\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to \infty} 4^{-x^2} = 0\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="3">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to 0^+} (1/3)^{5/x}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(5/x\)</span>, goes to positive infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to zero from the right.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to positive infinity and the base is between zero and one, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to \infty} b^x = 0\]</div>
+<p class="sd-card-text">for <span class="math notranslate nohighlight">\(0&lt;b&lt;1\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to 0^+} (1/3)^{5/x} = 0\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="4">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to 0^-} (2/7)^{3/x}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(3/x\)</span>, goes to negative infinity as <span class="math notranslate nohighlight">\(x\)</span> goes to zero from the left.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to negative infinity and the base is between zero and one, we’ll apply the property that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to -\infty} b^x = \infty\]</div>
+<p class="sd-card-text">for <span class="math notranslate nohighlight">\(0&lt;b&lt;1\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to 0^-} (2/7)^{3/x} = \infty\)</span>.</p>
+</div>
+</details><hr class="docutils" />
+<ol class="arabic simple" start="5">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} 5^{4/x}\)</span></p></li>
+</ol>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Evaluate the limit of the exponent.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The exponent, <span class="math notranslate nohighlight">\(4/x\)</span>, goes to zero as <span class="math notranslate nohighlight">\(x\)</span> goes to negative infinity.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>   Evaluate the given limit.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since the exponent goes to zero, we don’t need to apply any of the above properties of exponential functions regarding limits at infinity.  Instead, we can make use of the fact that exponential functions are continuous everywhere.  In particular, exponential functions are continuous at zero, which means that</p>
+<div class="math notranslate nohighlight">
+\[\lim_{x\to 0} b^x = b^0 = 1\]</div>
+<p class="sd-card-text">for all <span class="math notranslate nohighlight">\(b&gt;0\)</span>.  Therefore, <span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} 5^{4/x} = 1\)</span>.</p>
+</div>
+</details><br>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./ch_Exponential"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="exponential_.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Exponential &amp; Logarithmic Functions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="exponential_logarithmic.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Logarithmic Functions</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-and-properties-of-exponential-functions">Definition and Properties of Exponential Functions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Department of Mathematics, Penn State University Park
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright The Pennsylvania State University, 2021. This material is not licensed for resale.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

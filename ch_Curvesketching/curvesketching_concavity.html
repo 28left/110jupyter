@@ -264,7 +264,9 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Exponential/exponential_.html">Exponential &amp; Logarithmic Functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_functions.html">Exponential and Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_exponential.html">Exponential Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_logarithmic.html">Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_natural.html">The Natural Exponential and Logarithmic Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_laws.html">Laws of Exponential and Logarithmic Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_logarithmic_diff.html">Logarithmic Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_logistic.html">Logistic Growth</a></li>
@@ -288,6 +290,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Definite/definite_.html">Definite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_riemann.html">Riemann Sums and the Definite Integral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_geometric.html">Geometric Interpretation of the Definite Integral</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_ftc.html">The Fundamental Theorem of Calculus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_substitution.html">Substitution for Definite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_average_value.html">Average Value of a Function</a></li>
@@ -460,10 +463,12 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-concavity-using-the-second-derivative">Finding Intervals of Concavity using the Second Derivative</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
 </ul>
 </li>
 </ul>
@@ -484,10 +489,12 @@
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
 <p>A function is <em><strong>concave up</strong></em> on an interval if its derivative is increasing on the interval.</p>
+<p>The graph of a function that is concave up on an interval will resemble a portion of a parabola that opens up on that interval.</p>
 </div>
 <div class="info admonition">
 <p class="admonition-title">Definition</p>
 <p>A function is <em><strong>concave down</strong></em> on an interval if its derivative is decreasing on the interval.</p>
+<p>The graph of a function that is concave down on an interval will resemble a portion of a parabola that opens down on that interval.</p>
 </div>
 <div class="important admonition">
 <p class="admonition-title">What the Sign of <span class="math notranslate nohighlight">\(f''\)</span> Tells Us About <span class="math notranslate nohighlight">\(f\)</span>.</p>
@@ -501,6 +508,7 @@
 <div class="tip admonition">
 <p class="admonition-title">Finding intervals of concavity from the graph of a function</p>
 <p>The following is the graph of a continuous function that is concave down on the interval <span class="math notranslate nohighlight">\((1,4)\)</span> and concave up on the interval <span class="math notranslate nohighlight">\((4,7)\)</span>.</p>
+<p>Notice how the graph resembles a parabola that opens down on the interval <span class="math notranslate nohighlight">\((1,4)\)</span> and resembles a parabola that opens up on the interval <span class="math notranslate nohighlight">\((4,7)\)</span>.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
 <div class="sd-col sd-d-flex-row sd-m-auto docutils">
@@ -551,6 +559,88 @@
 ```
 -->
 </section>
+<section id="example-2">
+<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Finding intervals of concavity using the graph of the derivative</p>
+<p>The following graph corresponds to <span class="math notranslate nohighlight">\(f'(x)\)</span>, the first derivative of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Using the graph of <span class="math notranslate nohighlight">\(f'(x)\)</span>, determine the intervals of concavity of <span class="math notranslate nohighlight">\(f(x)\)</span>.  You may assume that <span class="math notranslate nohighlight">\(f'(x)\)</span> is continuous for all <span class="math notranslate nohighlight">\(x\)</span> and that <span class="math notranslate nohighlight">\(f'(x)\)</span> has relative extrema only at <span class="math notranslate nohighlight">\(x = -1\)</span>, <span class="math notranslate nohighlight">\(x = 1\)</span>, and <span class="math notranslate nohighlight">\(x = 4\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of the derivative of a function" src="../_images/pic_curvesketching_concavity_example_2.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x-axis with the points -2, -1, 1, 2, 3, 4 and 5 marked. There is a vertical y-axis with no points marked. The graph of a continuous function is plotted here. The function is decreasing for x &lt; -1, increasing for -1 &lt; x &lt; 1, decreasing for 1 &lt; x &lt; 4, and increasing for x &gt; 4.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>    Use the graph to determine the intervals of increase/decrease of <span class="math notranslate nohighlight">\(f'\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Since we were given that the only relative extrema of <span class="math notranslate nohighlight">\(f'\)</span> are at <span class="math notranslate nohighlight">\(x = -1\)</span>, <span class="math notranslate nohighlight">\(x = 1\)</span>, and <span class="math notranslate nohighlight">\(x = 4\)</span>, we can assume these are the only places where the increasing/decreasing behavior of <span class="math notranslate nohighlight">\(f'\)</span> changes.  In other words, we only have to determine the behavior of <span class="math notranslate nohighlight">\(f'\)</span> on each of the following intervals:</p>
+<div class="math notranslate nohighlight">
+\[(-\infty,-1), ~(-1,1), ~(1,4) ~\hbox{ and }~  (4,\infty)\]</div>
+<p class="sd-card-text">Using the given graph of the first derivative, we have that</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f'\)</span> is decreasing on <span class="math notranslate nohighlight">\((-\infty,-1)\)</span>,</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f'\)</span> is increasing on <span class="math notranslate nohighlight">\((-1,1)\)</span>,</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f'\)</span> is decreasing on <span class="math notranslate nohighlight">\((1,4)\)</span>, and</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(f'\)</span> is increasing on <span class="math notranslate nohighlight">\((4,\infty)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>    Determine the intervals of concavity of <span class="math notranslate nohighlight">\(f\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Recall that <span class="math notranslate nohighlight">\(f\)</span> is concave up on intervals where <span class="math notranslate nohighlight">\(f'\)</span> is increasing and concave down on intervals where <span class="math notranslate nohighlight">\(f'\)</span> is decreasing.</p>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(f\)</span> is concave up on <span class="math notranslate nohighlight">\((-1,1) \cup (4,\infty)\)</span> and concave down on <span class="math notranslate nohighlight">\((-\infty,-1) \cup (1,4)\)</span>.</p>
+</div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-cell]
+
+%load_ext itikz
+```
+
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\begin{tikzpicture}[baseline=70,ultra thick,smooth,domain=-4:4,variable=\x,scale=1.5]
+
+% create a white background with a black frame
+\draw [white,thin,fill=white] (-3,-2) rectangle (4,4);  
+
+% draw grid
+\draw[xstep=0.5cm, ystep=0.5cm, lightgray, thin] (-2.99,-0.99) grid (5.99,2.99); 
+
+% draw axes
+\draw [->,thick] (-3,0) -- (6,0)  node[below] {$x$};
+\draw [->,thick] (0,-1) -- (0,3)  node[right] {$y$};;
+
+
+\clip (-3,-1) rectangle (6,3);
+
+%
+\draw plot [domain=-3:6] (\x,{((\x)*(\x)*(\x)*(\x)/4 - 4*(\x)*(\x)*(\x)/3 - (\x)*(\x)/2 + 4*(\x))/10 + 0.5}); 
+
+
+\draw [black,ultra thick] (5,2.5) node [above,align=center] {$y=f'(x)$};
+
+
+% tick marks
+\foreach \x in {-2,-1,1,2,3,4,5} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below, scale=1.5] {$\x$};
+
+\end{tikzpicture}
+```
+-->
+</section>
 </section>
 <section id="finding-intervals-of-concavity-using-the-second-derivative">
 <h2>Finding Intervals of Concavity using the Second Derivative<a class="headerlink" href="#finding-intervals-of-concavity-using-the-second-derivative" title="Link to this heading">#</a></h2>
@@ -567,8 +657,103 @@
 </li>
 </ul>
 </div>
-<section id="example-2">
-<h3>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h3>
+<section id="example-3">
+<h3>Example 3<a class="headerlink" href="#example-3" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Finding intervals of concavity using the graph of the second derivative</p>
+<p>The following graph corresponds to <span class="math notranslate nohighlight">\(f''(x)\)</span>, the second derivative of <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<p>Using the graph of <span class="math notranslate nohighlight">\(f''(x)\)</span>, determine the intervals of concavity of <span class="math notranslate nohighlight">\(f(x)\)</span>.  You may assume that <span class="math notranslate nohighlight">\(f''(x)\)</span> is continuous for all <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(f''(x) = 0\)</span> only when <span class="math notranslate nohighlight">\(x = -2\)</span> and <span class="math notranslate nohighlight">\(x = 1\)</span>.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-auto sd-row-cols-xs-auto sd-row-cols-sm-auto sd-row-cols-md-auto sd-row-cols-lg-auto docutils">
+<div class="sd-col sd-d-flex-row sd-m-auto docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<img alt="Graph of the second derivative of a function" src="../_images/pic_curvesketching_concavity_example_3.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Long Text Description</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">There is a horizontal x-axis with the points -4, -3, -2, -1, 1, and 2 marked. There is a vertical y-axis with no points marked. The graph of a continuous function is plotted here. The graph of the function touches the x-axis at x = -2 and at x = 1.  The graph is above the x-axis for x &lt; - 2 and for -2 &lt; x &lt; 1.  The graph is below the x-axis for x &gt; 1.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 1:</strong>   Find all values of   <span class="math notranslate nohighlight">\(x\)</span>   such that   <span class="math notranslate nohighlight">\(f''(x) = 0\)</span>.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">We were given that <span class="math notranslate nohighlight">\(f''(x) = 0\)</span> only when <span class="math notranslate nohighlight">\(x = -2\)</span> and when <span class="math notranslate nohighlight">\(x = 1\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 2:</strong>     Find all values of   <span class="math notranslate nohighlight">\(x\)</span>   such that   <span class="math notranslate nohighlight">\(f''(x)\)</span>   does not exist.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Notice that <span class="math notranslate nohighlight">\(f''(x)\)</span> is defined for all real numbers since we were told that <span class="math notranslate nohighlight">\(f''(x)\)</span> is continuous for all <span class="math notranslate nohighlight">\(x\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 3:</strong>    Break up the domain of   <span class="math notranslate nohighlight">\(f\)</span>   into subintervals.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Break up the domain of   <span class="math notranslate nohighlight">\(f\)</span>   into subintervals based on the values found in Steps 1 and 2.</p>
+<p class="sd-card-text">Since we found <span class="math notranslate nohighlight">\(x=-2\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span> to be the only values where <span class="math notranslate nohighlight">\(f''(x) = 0\)</span> or where <span class="math notranslate nohighlight">\(f''(x)\)</span> is not defined, we break up the domain of <span class="math notranslate nohighlight">\(f\)</span> (which is <span class="math notranslate nohighlight">\((-\infty,\infty)\)</span>) into the following subintervals:</p>
+<div class="math notranslate nohighlight">
+\[(-\infty,-2), ~(-2,1), ~\hbox{ and }~  (1,\infty)\]</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 4:</strong>    Use the graph to determine the sign of <span class="math notranslate nohighlight">\(f''(x)\)</span> on each interval.</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(\mathbf{(-\infty,-2)}\)</span>: Since the graph of <span class="math notranslate nohighlight">\(f''(x)\)</span> is above the <span class="math notranslate nohighlight">\(x\)</span>-axis on this interval, <span class="math notranslate nohighlight">\(f''(x) &gt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> on <span class="math notranslate nohighlight">\((-\infty,-2)\)</span>.</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(\mathbf{(-2,1)}\)</span>: Since the graph of <span class="math notranslate nohighlight">\(f''(x)\)</span> is above the <span class="math notranslate nohighlight">\(x\)</span>-axis on this interval, <span class="math notranslate nohighlight">\(f''(x) &gt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> on <span class="math notranslate nohighlight">\((-2,1)\)</span>.</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(\mathbf{(1,\infty)}\)</span>: Since the graph of <span class="math notranslate nohighlight">\(f''(x)\)</span> is below the <span class="math notranslate nohighlight">\(x\)</span>-axis on this interval, <span class="math notranslate nohighlight">\(f''(x) &lt; 0\)</span> for all <span class="math notranslate nohighlight">\(x\)</span> on <span class="math notranslate nohighlight">\((1,\infty)\)</span>.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Step 5:</strong>    Use the sign of <span class="math notranslate nohighlight">\(f''\)</span> to determine the intervals of concavity of <span class="math notranslate nohighlight">\(f\)</span> .</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Recall that <span class="math notranslate nohighlight">\(f(x)\)</span> is concave up on intervals where <span class="math notranslate nohighlight">\(f''(x) &gt; 0\)</span> and concave down on intervals where <span class="math notranslate nohighlight">\(f''(x) &lt; 0\)</span>.</p>
+<p class="sd-card-text">Therefore, <span class="math notranslate nohighlight">\(f(x)\)</span> is concave up on <span class="math notranslate nohighlight">\((-\infty,-2) \cup (-2,1)\)</span> and concave down on <span class="math notranslate nohighlight">\((1,\infty)\)</span>.</p>
+</div>
+</details></div>
+<!--
+```{code-cell}
+:tags: [remove-cell]
+
+%load_ext itikz
+```
+
+```{code-cell}
+:tags: [remove-input]
+
+%%itikz
+\begin{tikzpicture}[baseline=70,ultra thick,smooth,domain=-4:4,variable=\x,scale=1.5]
+
+% create a white background with a black frame
+\draw [white,thin,fill=white] (-3,-2) rectangle (4,4);  
+
+% draw grid
+\draw[xstep=0.5cm, ystep=0.5cm, lightgray, thin] (-4.99,-2.99) grid (2.99,2.99); 
+
+% draw axes
+\draw [->,thick] (-5,0) -- (3,0)  node[below] {$x$};
+\draw [->,thick] (0,-3) -- (0,3)  node[right] {$y$};;
+
+
+\clip (-5,-3) rectangle (3,3);
+
+%
+\draw plot [domain=-5:3] (\x,{((\x+2)*(\x+2)*(1-\x))/10 }); 
+
+
+\draw [black,ultra thick] (-3.3,2.5) node [above,align=center] {$y=f''(x)$};
+
+
+% tick marks
+\foreach \x in {-4,-3,-2,-1,1,2} 
+	\draw [thick] (\x cm,2pt) -- (\x cm,-2pt) node[below, scale=1.5] {$\x$};
+
+\end{tikzpicture}
+```
+-->
+</section>
+<section id="example-4">
+<h3>Example 4<a class="headerlink" href="#example-4" title="Link to this heading">#</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Finding intervals of concavity</p>
 <p>If the second derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> is</p>
@@ -685,10 +870,12 @@ f''(7) &amp;= \frac{(7)(7-4)}{7-6} &gt;0
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-intervals-of-concavity-using-the-second-derivative">Finding Intervals of Concavity using the Second Derivative</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2">Example 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-3">Example 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-4">Example 4</a></li>
 </ul>
 </li>
 </ul>

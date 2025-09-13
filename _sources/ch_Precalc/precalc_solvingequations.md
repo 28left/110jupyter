@@ -68,6 +68,26 @@ We can check our work by plugging in $x=-2$ and $x=6$ into the given polynomial 
 ````
 
 
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/SX_JEzLCmuM" target="_blank">Solving Quadratic Equations by Factoring</a> (Links to an external site) <br>
+Several more examples of solving quadratic equations.
+:::
+::::
+````
+
+
 ### Example 2
 
 ````{admonition} Solving a rational equation

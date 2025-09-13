@@ -264,7 +264,9 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Exponential/exponential_.html">Exponential &amp; Logarithmic Functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_functions.html">Exponential and Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_exponential.html">Exponential Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_logarithmic.html">Logarithmic Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_natural.html">The Natural Exponential and Logarithmic Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_laws.html">Laws of Exponential and Logarithmic Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_logarithmic_diff.html">Logarithmic Differentiation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Exponential/exponential_logistic.html">Logistic Growth</a></li>
@@ -288,6 +290,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch_Definite/definite_.html">Definite Integrals</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_riemann.html">Riemann Sums and the Definite Integral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_geometric.html">Geometric Interpretation of the Definite Integral</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_ftc.html">The Fundamental Theorem of Calculus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_substitution.html">Substitution for Definite Integrals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../ch_Definite/definite_average_value.html">Average Value of a Function</a></li>
@@ -486,45 +489,78 @@
 <section id="the-rules">
 <h2>The Rules<a class="headerlink" href="#the-rules" title="Link to this heading">#</a></h2>
 <div class="info admonition">
-<p class="admonition-title">Integral of a Costant</p>
-<p>For any real number <span class="math notranslate nohighlight">\(k\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\int k ~dx = kx + C\]</div>
+<p class="admonition-title">Formulas of Integration</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+&amp;\text{Integral of a Constant, for any real $k$} &amp;&amp; \int k ~dx  = kx + C \\ \\ 
+&amp;\text{Integral of $x^n$, for any real $n\neq -1$} &amp;&amp; \int x^n ~dx  = \frac{x^{n+1}}{n+1} + C \\ \\
+&amp;\text{Integral of $1/x$} &amp;&amp; \int \frac{1}{x} ~dx = \ln|x| + C \\ \\ 
+&amp;\text{Integral of $e^{x}$} &amp;&amp; \int e^{x} ~dx = e^{x} + C  \\ \\
+&amp;\text{Integral of $e^{ax}$, for any real $a\neq 0$} &amp;&amp; \int e^{ax} ~dx = \frac{1}{a}e^{ax} + C  
+\end{align*}\]</div>
 </div>
 <div class="info admonition">
-<p class="admonition-title">The Power Rule</p>
-<p>For any real number <span class="math notranslate nohighlight">\(n\neq -1\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\int x^n ~dx = \frac{x^{n+1}}{n+1} + C\]</div>
+<p class="admonition-title">Rules of Integration</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+&amp;\text{Constant Multiple Rule} &amp;&amp; \int cf(x) ~dx  = c \int f(x) ~dx \\ \\
+&amp;\text{Sum/Difference Rule} &amp;&amp; \int f(x) \pm g(x) ~dx = \int f(x) ~dx \pm \int g(x) ~dx\\ \\
+&amp;\text{Substitution Rule, $u=g(x)$, $du=g'(x)~dx$} &amp;&amp; \int f(g(x)) g'(x) ~dx = \int f(u) ~du 
+\end{align*}\]</div>
 </div>
-<div class="info admonition">
-<p class="admonition-title">The Constant Multiple Rule</p>
-<p>For any real number <span class="math notranslate nohighlight">\(k\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\int kf(x) ~dx = k\int f(x) ~dx\]</div>
-</div>
-<div class="info admonition">
-<p class="admonition-title">The Sum Rule</p>
-<div class="math notranslate nohighlight">
-\[\int f(x)\pm g(x) ~dx = \int f(x) ~dx \pm \int g(x) ~dx\]</div>
-</div>
-<div class="info admonition">
-<p class="admonition-title">Integral of <span class="math notranslate nohighlight">\(e^x\)</span></p>
-<p>For any real number <span class="math notranslate nohighlight">\(a\neq 0\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[\int e^x ~dx = e^x + C ~~~~~ \text{and} ~~~~~ \int e^{ax} ~dx = \frac{e^{ax}}{a} + C\]</div>
-</div>
-<div class="info admonition">
-<p class="admonition-title">Integral of <span class="math notranslate nohighlight">\(1/x\)</span></p>
-<div class="math notranslate nohighlight">
-\[\int \frac{1}{x} ~dx = \ln|x| + C\]</div>
-</div>
-<div class="info admonition">
-<p class="admonition-title">The Substitution Rule</p>
-<p>If <span class="math notranslate nohighlight">\(u=g(x)\)</span> and <span class="math notranslate nohighlight">\(du = g'(x) ~dx\)</span> then</p>
-<div class="math notranslate nohighlight">
-\[\int f(g(x))g'(x) ~dx = \int f(u) ~du\]</div>
-</div>
+<!--
+```{admonition} Integral of a Constant
+:class: info
+
+For any real number $k$,
+
+$$\int k ~dx = kx + C$$
+```
+
+```{admonition} The Power Rule
+:class: info
+
+For any real number $n\neq -1$,
+
+$$\int x^n ~dx = \frac{x^{n+1}}{n+1} + C$$
+```
+
+```{admonition} The Constant Multiple Rule
+:class: info
+
+For any real number $k$,
+
+$$\int kf(x) ~dx = k\int f(x) ~dx$$
+```
+
+```{admonition} The Sum Rule
+:class: info
+
+$$\int f(x)\pm g(x) ~dx = \int f(x) ~dx \pm \int g(x) ~dx$$
+```
+
+```{admonition} Integral of $e^x$
+:class: info
+
+For any real number $a\neq 0$,
+
+$$\int e^x ~dx = e^x + C ~~~~~ \text{and} ~~~~~ \int e^{ax} ~dx = \frac{e^{ax}}{a} + C$$
+```
+
+```{admonition} Integral of $1/x$
+:class: info
+
+$$\int \frac{1}{x} ~dx = \ln|x| + C$$
+```
+
+```{admonition} The Substitution Rule
+:class: info
+
+If $u=g(x)$ and $du = g'(x) ~dx$ then
+
+$$\int f(g(x))g'(x) ~dx = \int f(u) ~du$$
+```
+-->
 <section id="example-1">
 <h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
 <div class="tip admonition">

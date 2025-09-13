@@ -152,6 +152,26 @@ A review of the slope-intercept and point-slope form of the equation of a line.
 ````
 
 
+````{admonition} Video Resource
+:class: important
+
+::::{grid} 2
+:::{grid-item}
+:columns: 1
+:padding: 1
+```{image} ../images/UnderstandTheMath.png
+:alt: UnderstandTheMath
+```
+:::
+:::{grid-item}
+:columns: 10
+<a href="https://youtu.be/IgZ-5oqDlkQ" target="_blank">The Graph of a Line</a> (Links to an external site) <br>
+A review of graphing a line in slope-intercept and point-slope form.
+:::
+::::
+````
+
+
 
 
 ### Example 1
@@ -267,7 +287,7 @@ There is a horizontal x-axis with the points 2 and 4 marked. There is a vertical
 \draw[very thin,color=lightgray,step=1] (-1.9,-1.9) grid (7.9,13.9);
 \draw[->] (-2,0) -- (8,0) node[below] {$x$};
 \draw[->] (0,-2) -- (0,14) node[right] {$y$};
-\node at (4.5, 10.5){$y - 3 = -2(x-4)$};
+\node at (4.5, 10.5){$y = -2(x-4) + 3$};
 
 % draw slope
 %\draw[dashed,red,thick] (-1,13)|- ++(1,-2) |- ++(1,-2) |- ++(1,-2) |- ++(1,-2) |- ++(1,-2) |- ++(1,-2) |- ++(1,-2);
