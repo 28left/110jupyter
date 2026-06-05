@@ -255,7 +255,6 @@ $$\lim_{x\to 0^+} \log_{b}(x) = \infty$$
 
 for $0<b<1$.  Therefore, $\lim\limits_{x\to \infty} \log_{1/5}\left(\dfrac{2}{x}\right) = \infty$.
 ```
----
 
 ````
 
